@@ -12,3 +12,7 @@ type Coordinates struct {
 func (coords Coordinates) formatURL() string {
 	return fmt.Sprintf("%3.3f;%3.3f", coords.Longitude, coords.Latitude)
 }
+
+func (coords Coordinates) String() string {
+	return fmt.Sprintf("Longitude %3.3f ; Latitude %3.3f", coords.Longitude, coords.Latitude)
+}
