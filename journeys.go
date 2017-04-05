@@ -2,10 +2,6 @@ package gonavitia
 
 import "time"
 
-type JourneyResults struct {
-	Journeys []Journey
-}
-
 // A JourneyQualification qualifies a Journey, see const declaration.
 type JourneyQualification string
 
@@ -70,3 +66,25 @@ type Cost struct {
 	Value    float64 `json:"value"`
 	Currency string  `json:"currency"`
 }
+
+// TravelerType is a Traveler's type
+// Defines speeds & accessibility values for different types of people
+type TravelerType string
+
+// The defined types of the api
+const (
+	// A standard Traveler
+	TravelerStandard TravelerType = "standard"
+
+	// A slow walker
+	TravelerSlowWalker = "slow_walker"
+
+	// A fast walker
+	TravelerFastWalker = "fast_walker"
+
+	// A Traveler with luggage
+	TravelerWithLuggage = "luggage"
+
+	// A Traveler in a wheelchair
+	TravelerInWheelchair = "wheelchair"
+)
