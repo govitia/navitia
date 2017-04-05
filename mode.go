@@ -1,11 +1,13 @@
 package gonavitia
 
+// A Mode represents a non-public transportation mode
 type Mode string
 
 const (
-	ModeWalking Mode = "Walking"
-	ModeBike         = "Bike"
-	ModeCar          = "Car"
+	ModeWalking   Mode = "walking"
+	ModeBike           = "bike"
+	ModeCar            = "car"
+	ModeBikeShare      = "bss"
 )
 
 type CommercialModeID string
@@ -24,6 +26,7 @@ type PhysicalMode struct {
 	CommercialModes []CommercialMode `json:"commercial_mode"`
 }
 
+// PhysicalModes is defined to help a programmer list all possible physical modes
 var PhysicalModes = map[string]PhysicalModeID{
 	"Air":  PhysicalModeAir,
 	"Boat": PhysicalModeBoat,
