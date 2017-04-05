@@ -1,6 +1,11 @@
 package gonavitia
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+	"github.com/pkg/errors"
+	"net/http"
+)
 
 type RemoteErrorID string
 
@@ -39,7 +44,7 @@ type RemoteError struct {
 }
 
 // String formats the error in a human-readable format
-func (err RemoteError) String() string {
+func (err RemoteError) Error() string {
 
 	var s string
 
@@ -55,4 +60,19 @@ func (err RemoteError) String() string {
 	}
 
 	return s
+}
+
+// parseRemoteError parses a non 200 OK status-coded response and returns the error
+func parseRemoteError(resp *http.Response, err error) error {
+	var remoteErr = &RemoteError{StatusCode: resp.StatusCode}
+
+	// Parse it
+	dec := json.NewDecoder(resp.Body)
+	err = dec.Decode(&remoteErr)
+	if err != nil {
+		return errors.Wrap(err, "JSON decoding failed")
+	}
+
+	// Return
+	return remoteErr
 }

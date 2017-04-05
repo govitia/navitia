@@ -51,11 +51,10 @@ func (s *Session) Coverage(count uint) (*CoverageResults, error) {
 
 	// Check it
 	if err != nil {
-		err = errors.Wrap(err, "Error in request")
-		return results, err
+		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, errors.Errorf("Didn't get right code: %d instead of 200", resp.StatusCode)
+		return results, parseRemoteError(resp, err)
 	}
 
 	// Parse it
@@ -88,11 +87,10 @@ func (s *Session) RegionByID(id RegionID) (*CoverageResults, error) {
 
 	// Check it
 	if err != nil {
-		err = errors.Wrap(err, "Error in request")
-		return results, err
+		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, errors.Errorf("Didn't get right code: %d instead of 200", resp.StatusCode)
+		return results, parseRemoteError(resp, err)
 	}
 
 	// Parse it
@@ -125,11 +123,10 @@ func (s *Session) RegionByPos(coords Coordinates) (*CoverageResults, error) {
 
 	// Check it
 	if err != nil {
-		err = errors.Wrap(err, "Error in request")
-		return results, err
+		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, errors.Errorf("Didn't get right code: %d instead of 200", resp.StatusCode)
+		return results, parseRemoteError(resp, err)
 	}
 
 	// Parse it
