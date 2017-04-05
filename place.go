@@ -1,5 +1,9 @@
 package gonavitia
 
+// TODO: Rename Place to PlaceResults as a way to parse the results
+// Create Place the interface with ID() method
+// And make StopArea, POI, Address & StopPoint satisfy it
+
 type PlaceID string
 
 type Place struct {
