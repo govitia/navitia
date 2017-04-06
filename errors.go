@@ -39,7 +39,7 @@ var RemoteErrorsDescriptions = map[RemoteErrorID]string{
 // A RemoteError represents an error sent by the server
 type RemoteError struct {
 	StatusCode int
-	ID         RemoteErrorID `json:"error"`
+	ID         RemoteErrorID `json:"id"`
 	Message    string        `json:"message"`
 }
 
@@ -70,7 +70,7 @@ func parseRemoteError(resp *http.Response, err error) error {
 	dec := json.NewDecoder(resp.Body)
 	err = dec.Decode(&remoteErr)
 	if err != nil {
-		return errors.Wrap(err, "JSON decoding failed")
+		return errors.Wrap(err, "parseRemoteError: error while decoding JSON")
 	}
 
 	// Return

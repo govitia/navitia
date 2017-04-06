@@ -66,3 +66,5 @@ func nextAppend(res results) error {
 	err = res.add(newResults)
 	return err
 }
+
+type datetime string

@@ -1,4 +1,4 @@
-package gonavitia
+package types
 
 type Equipment string
 

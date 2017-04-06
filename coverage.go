@@ -1,6 +1,7 @@
 package gonavitia
 
 import (
+	"./types"
 	"encoding/json"
 	"github.com/pkg/errors"
 	"strconv"
@@ -12,7 +13,7 @@ const coverageEndpoint string = "coverage"
 // A CoverageResults holds results for a coverage query
 type CoverageResults struct {
 	// The list of regions retrieved
-	Regions []Region `json:"Regions"`
+	Regions []types.Region `json:"Regions"`
 
 	// Paging information
 	Paging Paging `json:"Pagination"`
@@ -70,7 +71,7 @@ func (s *Session) Coverage(count uint) (*CoverageResults, error) {
 }
 
 // RegionByID provides information about a specific region
-func (s *Session) RegionByID(id RegionID) (*CoverageResults, error) {
+func (s *Session) RegionByID(id types.RegionID) (*CoverageResults, error) {
 	var results = &CoverageResults{session: s, createdAt: time.Now()}
 
 	// Build the URL
@@ -106,16 +107,20 @@ func (s *Session) RegionByID(id RegionID) (*CoverageResults, error) {
 }
 
 // RegionByPos provides information about the region englobing the specific position
-func (s *Session) RegionByPos(coords Coordinates) (*CoverageResults, error) {
+func (s *Session) RegionByPos(coords types.Coordinates) (*CoverageResults, error) {
 	var results = &CoverageResults{session: s, createdAt: time.Now()}
 
 	// Build the URL
-	url := s.APIURL + "/" + coverageEndpoint + "/" + coords.formatURL()
+	coordsFormatted, err := coords.FormatURL()
+	if err != nil {
+		return results, errors.Wrap(err, "error while formatting url")
+	}
+	url := s.APIURL + "/" + coverageEndpoint + "/" + coordsFormatted
 
 	// Get the request
 	req, err := s.newRequest(url)
 	if err != nil {
-		return results, err
+		return results, errors.Wrap(err, "error while preparing new request")
 	}
 
 	// Execute the request

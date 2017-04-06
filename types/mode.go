@@ -1,13 +1,15 @@
-package gonavitia
+package types
 
 // A Mode represents a non-public transportation mode
 type Mode string
 
 const (
-	ModeWalking   Mode = "walking"
-	ModeBike           = "bike"
-	ModeCar            = "car"
-	ModeBikeShare      = "bss"
+	ModeWalking Mode = "walking"
+	ModeBike         = "bike"
+	ModeCar          = "car"
+
+	// Not used in Section
+	ModeBikeShare = "bss"
 )
 
 type CommercialModeID string

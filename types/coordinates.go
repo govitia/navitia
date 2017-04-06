@@ -1,4 +1,4 @@
-package gonavitia
+package types
 
 import (
 	"fmt"
@@ -9,8 +9,8 @@ type Coordinates struct {
 	Longitude float64 `json:"lon"`
 }
 
-func (coords Coordinates) formatURL() string {
-	return fmt.Sprintf("%3.3f;%3.3f", coords.Longitude, coords.Latitude)
+func (coords Coordinates) FormatURL() (string, error) {
+	return fmt.Sprintf("%3.3f;%3.3f", coords.Longitude, coords.Latitude), nil
 }
 
 func (coords Coordinates) String() string {
