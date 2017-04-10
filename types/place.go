@@ -1,5 +1,7 @@
 package types
 
+//import "github.com/pkg/errors"
+
 // A Place isn't something directly used by the Navitia.io api
 // However, it allows the library user to use idiomatic go when working with the library
 // If you want a countainer, see PlaceCountainer
@@ -18,6 +20,40 @@ type Place interface {
 
 	// PlaceType returns the name of the type of the Place
 	PlaceType() string
+}
+
+// PlaceCountainer is the ugly countainer sent by Navitia to make us all cry.
+// However, as this can be useful. May be removed from the public API in gonavitia v0.
+type PlaceCountainer struct {
+	ID           ID     `json:"id"`
+	Name         string `json:"name"`
+	Quality      uint   `json:"quality,omitempty"`
+	EmbeddedType string `json:"embedded_type"`
+
+	// Four possibilitiess
+	StopArea             *StopArea             `json:"stop_area,omitempty"`
+	POI                  *POI                  `json:"POI,omitempty"`
+	Address              *Address              `json:"address,omitempty"`
+	StopPoint            *StopPoint            `json:"stop_point,omitempty"`
+	AdministrativeRegion *AdministrativeRegion `json:"administrative_region,omitempty"`
+}
+
+// Place returns the Place countained in the PlaceCountainer
+func (pc PlaceCountainer) Place() (Place, error) {
+	switch pc.EmbeddedType {
+	case "stop_area":
+		return pc.StopArea, nil
+	case "poi":
+		return pc.POI, nil
+	case "address":
+		return pc.Address, nil
+	case "stop_point":
+		return pc.StopPoint, nil
+	case "administrative_region":
+		return pc.AdministrativeRegion, nil
+	default:
+		return nil, nil //errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType)
+	}
 }
 
 // A StopArea represents a stop area: a place where a public transportation method may stop for a traveller.
