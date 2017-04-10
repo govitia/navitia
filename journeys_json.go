@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/pkg/errors"
 	"golang.org/x/text/currency"
+	"strconv"
 	"time"
 )
 
@@ -115,6 +116,33 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 	}
 	// Now let's create the correct amount
 	f.Total = unit.Amount(data.Cost.Value)
+
+	return nil
+}
+
+// UnmarshalJSON implements json.Unmarshaller for CO2Emissions
+func (c *CO2Emissions) UnmarshalJSON(b []byte) error {
+	// First let's create the analogous structure
+	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
+	data := &struct {
+		Unit  *string `json:"unit"`
+		Value string  `json:"value"`
+	}{
+		Unit: &c.Unit,
+	}
+
+	// Now unmarshall the raw data into the analogous structure
+	err := json.Unmarshal(b, data)
+	if err != nil {
+		return errors.Wrap(err, "Error while unmarshalling journey")
+	}
+
+	// Now parse the value
+	f, err := strconv.ParseFloat(data.Value, 64)
+	if err != nil {
+		return errors.Wrap(err, "Error while parsing CO2 emissions value")
+	}
+	c.Value = f
 
 	return nil
 }

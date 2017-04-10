@@ -51,6 +51,8 @@ type Journey struct {
 	Requested time.Time
 	Arrival   time.Time
 
+	CO2Emissions CO2Emissions
+
 	Sections []Section
 
 	From Place
@@ -62,6 +64,12 @@ type Journey struct {
 
 	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
 	Status JourneyStatus
+}
+
+// CO2Emissions countains the
+type CO2Emissions struct {
+	Unit  string
+	Value float64
 }
 
 // JourneyStatus codes for known journey status information
