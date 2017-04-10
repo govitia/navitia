@@ -2,6 +2,7 @@ package types
 
 import (
 	"github.com/pkg/errors"
+	"net/url"
 	"strings"
 )
 
@@ -14,6 +15,11 @@ func (id ID) Check() error {
 		return errors.Errorf("ID invalid: an empty string \"\" is not a valid ID")
 	}
 	return nil
+}
+
+// QueryEscape formats the given ID so that it can be safely used in a URL query
+func (id ID) QueryEscape() string {
+	return url.QueryEscape(string(id))
 }
 
 // typeNames stores navitia-side name of types that may appear in IDs
