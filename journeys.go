@@ -1,6 +1,9 @@
 package types
 
-import "time"
+import (
+	"golang.org/x/text/currency"
+	"time"
+)
 
 // A JourneyQualification qualifies a Journey, see const declaration.
 type JourneyQualification string
@@ -80,15 +83,8 @@ const (
 
 // Fare is the fare of some thing
 type Fare struct {
-	Total Cost `json:"total"`
-	Found bool `json:"found"`
-}
-
-// Cost is the cost of something
-// I know value should NOT be float, but that's what the api gives us
-type Cost struct {
-	Value    float64 `json:"value"`
-	Currency string  `json:"currency"`
+	Total currency.Amount
+	Found bool
 }
 
 // TravelerType is a Traveler's type
