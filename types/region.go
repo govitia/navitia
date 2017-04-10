@@ -1,6 +1,9 @@
 package types
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // A Region holds information about a geographical region, including its ID, name & shape
 type Region struct {
@@ -8,13 +11,13 @@ type Region struct {
 	Name   string `json:"name"`
 	Status string `json:"status"`
 
-	//DatasetCreation time.Time `json:"dataset_created_at"`
-	//LastLoaded      time.Time `json:"last_load_at"`
+	DatasetCreation time.Time `json:"dataset_created_at"`
+	LastLoaded      time.Time `json:"last_load_at"`
 
-	//ProductionStart time.Time `json:"start_production_date"`
-	//ProductionEnd   time.Time `json:"end_production_date"`
+	ProductionStart time.Time `json:"start_production_date"`
+	ProductionEnd   time.Time `json:"end_production_date"`
 
-	Error error `json:"error"`
+	Error string `json:"error"`
 }
 
 // String stringifies a region
