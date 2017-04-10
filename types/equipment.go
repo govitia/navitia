@@ -1,8 +1,9 @@
 package types
 
+// An Equipment codes for specific equipment the public transport object has
 type Equipment string
 
-// Known equipments
+// EquipmentWheelchairAccessibility are known equipments
 const (
 	EquipmentWheelchairAccessibility Equipment = "has_wheelchair_accessibility"
 	EquipmentBikeAccepted                      = "has_bike_accepted"

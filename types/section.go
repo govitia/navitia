@@ -41,8 +41,8 @@ const (
 	SectionLanding = "landing"
 )
 
-// sectionTypes, as it isn't useful to the library user, stays unexported
-var sectionTypes = map[SectionType]string{
+// SectionTypes is the type of a section
+var SectionTypes = map[SectionType]string{
 	SectionPublicTransport:   "Public transport section",
 	SectionStreetNetwork:     "Street section",
 	SectionWaiting:           "Waiting section between transport",
@@ -56,12 +56,10 @@ var sectionTypes = map[SectionType]string{
 	SectionLanding:           "Landing off the plane",
 }
 
-type SectionID string
-
 // A Section holds information about a specific section
 type Section struct {
 	Type SectionType `json:"type"`
-	ID   SectionID   `json:"id"`
+	ID   ID          `json:"id"`
 	Mode Mode        `json:"mode"`
 
 	From Place `json:"from"`
@@ -77,16 +75,21 @@ type Section struct {
 // A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport)
 type PTMethod string
 
+// PTMethodXXX codes for known PTMethod
 const (
-	// No on-demand transport. Line does not contain any estimated stop times, nor zonal stop point location. No need to call too.
+	// PTMethodRegular: No on-demand transport. Line does not contain any estimated stop times, nor zonal stop point location. No need to call too.
 	PTMethodRegular PTMethod = "regular"
-	// No on-demand transport. However, line has at least one estimated date time.
+
+	// PTMethodDateTimeEstimated: No on-demand transport. However, line has at least one estimated date time.
 	PTMethodDateTimeEstimated = "had_date_time_estimated"
-	// Line does not contain any estimated stop times, nor zonal stop point location. But you will have to call to take it.
+
+	// PTMethodODTStopTime: Line does not contain any estimated stop times, nor zonal stop point location. But you will have to call to take it.
 	PTMethodODTStopTime = "odt_with_stop_time"
-	// Line can contain some estimated stop times, but no zonal stop point location. And you will have to call to take it.
+
+	// PTMethodODTStopPoint: Line can contain some estimated stop times, but no zonal stop point location. And you will have to call to take it.
 	PTMethodODTStopPoint = "odt_with_stop_point"
-	// Line can contain some estimated stop times, and zonal stop point location. And you will have to call to take it. Well, not really a public transport line, more a cab…
+
+	// PTMethodODTZone: Line can contain some estimated stop times, and zonal stop point location. And you will have to call to take it. Well, not really a public transport line, more a cab…
 	PTMethodODTZone = "odt_with_zone"
 )
 
@@ -98,11 +101,11 @@ type DisplayInformations struct {
 	// A direction to take
 	Direction string `json:"direction"`
 
-	// The commercial mode
-	CommercialMode CommercialModeID `json:"commercial_mode"`
+	// The commercial mode in ID Form
+	CommercialMode ID `json:"commercial_mode"`
 
-	// The physical mode
-	PhysicalMode PhysicalModeID `json:"physical_mode"`
+	// The physical mode in ID Form
+	PhysicalMode ID `json:"physical_mode"`
 
 	// The label of the object
 	Label string `json:"label"`

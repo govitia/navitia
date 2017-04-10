@@ -35,6 +35,8 @@ var JourneyQualifications = map[string]JourneyQualification{
 	"No public transit, prefer bike-sharing": JourneyNoPTBikeShare,
 }
 
+// DateTimeFormat is the format used by the Navitia Api for use with time pkg.
+// Few external use-cases but still there are some
 const DateTimeFormat string = "20060102150405" // YYYYMMDDThhmmss
 
 // A Journey holds information about a possible journey
@@ -59,8 +61,11 @@ type Journey struct {
 	Status JourneyStatus
 }
 
+// JourneyStatus codes for known journey status information
+// For example, reduced service, detours or moved stops.
 type JourneyStatus string
 
+// JourneyStatusXXX are known JourneyStatuse
 const (
 	JourneyStatusNoService         JourneyStatus = "NO_SERVICE"
 	JourneyStatusReducedService                  = "REDUCED_SERVICE"

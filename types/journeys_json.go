@@ -11,7 +11,7 @@ func parseDateTime(datetime string) (time.Time, error) {
 	return time.Now(), nil
 }
 
-// Journey implements json.Unmarshaller
+// UnmarshalJSON implements json.Unmarshaller for a Journey
 func (j Journey) UnmarshalJSON(b []byte) error {
 	var data map[string]string
 	err := json.Unmarshal(b, &data)
