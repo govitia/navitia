@@ -10,9 +10,9 @@ type Coordinates struct {
 	Longitude float64 `json:"lon"`
 }
 
-// FormatURL formats the coordinates for use in queries
-func (coords Coordinates) FormatURL() (string, error) {
-	return fmt.Sprintf("%3.3f;%3.3f", coords.Longitude, coords.Latitude), nil
+// QueryEscape formats & escapes the coordinates for use in queries
+func (coords Coordinates) QueryEscape() string {
+	return fmt.Sprintf("%3.3f;%3.3f", coords.Longitude, coords.Latitude)
 }
 
 // String pretty-prints a Coordinates and satisifes the Stringer interface
