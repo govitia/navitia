@@ -1,8 +1,8 @@
 package gonavitia
 
 import (
-	"./types"
 	"encoding/json"
+	"github.com/aabizri/gonavitia/types"
 	"github.com/pkg/errors"
 	"net/url"
 	"strconv"

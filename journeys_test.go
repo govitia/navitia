@@ -1,7 +1,7 @@
 package gonavitia
 
 import (
-	"./types"
+	"github.com/aabizri/gonavitia/types"
 	"testing"
 )
 
