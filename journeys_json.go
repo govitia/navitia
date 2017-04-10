@@ -8,16 +8,6 @@ import (
 	"time"
 )
 
-// parseDateTime parses a time formatted under iso-date-time as indicated in the Navitia api.
-// This is simply parsing a date formatted under the standard ISO 8601.
-func parseDateTime(datetime string) (time.Time, error) {
-	res, err := time.Parse(DateTimeFormat, datetime)
-	if err != nil {
-		err = errors.Wrap(err, "parseDateTime: error while parsing datetime")
-	}
-	return res, err
-}
-
 // UnmarshalJSON implements json.Unmarshaller for a Journey
 func (j *Journey) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
