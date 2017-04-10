@@ -55,7 +55,7 @@ func (s *Session) Coverage(count uint) (*CoverageResults, error) {
 		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, parseRemoteError(resp, err)
+		return results, parseRemoteError(resp)
 	}
 
 	// Parse it
@@ -91,7 +91,7 @@ func (s *Session) RegionByID(id types.RegionID) (*CoverageResults, error) {
 		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, parseRemoteError(resp, err)
+		return results, parseRemoteError(resp)
 	}
 
 	// Parse it
@@ -131,7 +131,7 @@ func (s *Session) RegionByPos(coords types.Coordinates) (*CoverageResults, error
 		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, parseRemoteError(resp, err)
+		return results, parseRemoteError(resp)
 	}
 
 	// Parse it

@@ -66,12 +66,12 @@ func (err RemoteError) Error() string {
 }
 
 // parseRemoteError parses a non 200 OK status-coded response and returns the error
-func parseRemoteError(resp *http.Response, err error) error {
+func parseRemoteError(resp *http.Response) error {
 	var remoteErr = &RemoteError{StatusCode: resp.StatusCode}
 
 	// Parse it
 	dec := json.NewDecoder(resp.Body)
-	err = dec.Decode(&remoteErr)
+	err := dec.Decode(&remoteErr)
 	if err != nil {
 		return errors.Wrap(err, "parseRemoteError: error while decoding JSON")
 	}

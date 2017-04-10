@@ -215,7 +215,7 @@ func (s *Session) Journeys(params JourneyRequest) (*JourneyResults, error) {
 		return results, errors.Wrap(err, "errror while executing request")
 	}
 	if resp.StatusCode != 200 {
-		return results, parseRemoteError(resp, err)
+		return results, parseRemoteError(resp)
 	}
 
 	// Parse it
