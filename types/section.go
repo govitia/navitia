@@ -1,5 +1,7 @@
 package types
 
+import "time"
+
 // A SectionType codifies the type of section that can be encountered
 type SectionType string
 
@@ -58,18 +60,47 @@ var SectionTypes = map[SectionType]string{
 
 // A Section holds information about a specific section
 type Section struct {
-	Type SectionType `json:"type"`
-	ID   ID          `json:"id"`
-	Mode Mode        `json:"mode"`
+	Type SectionType
+	ID   ID
+	Mode Mode
 
-	From Place `json:"from"`
-	To   Place `json:"to"`
+	// Arrival time & departure time
+	Departure time.Time
+	Arrival   time.Time
+
+	// Duration of travel
+	Duration time.Duration
+
+	// From & To
+	From Place
+	To   Place
+
+	// List of the stop times of this section
+	StopTimes []StopTime
 
 	// Information to display
-	Display DisplayInformations `json:"display_informations"`
+	Display DisplayInformations
 
 	// Additional informations, from what I can see this is always a PTMethod
-	Additional PTMethod `json:"additional_informations"`
+	Additional []PTMethod
+}
+
+// A StopTime stores info about a stop in a route: when the vehicle comes in, when it comes out, and what stop it is.
+type StopTime struct {
+	// The PTDateTime of the stop, this stores the info about the arrival & departure
+	PTDateTime PTDateTime
+
+	// The stop point in question
+	StopPoint StopPoint
+}
+
+// A PTDateTime (pt stands for “public transport”) is a complex date time object to manage the difference between stop and leaving times at a stop.
+type PTDateTime struct {
+	// Date/Time of departure
+	Departure time.Time
+
+	// Date/Time of arrival
+	Arrival time.Time
 }
 
 // A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport)
