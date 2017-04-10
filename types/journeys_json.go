@@ -2,65 +2,119 @@ package types
 
 import (
 	"encoding/json"
-	"strconv"
+	"github.com/pkg/errors"
+	"golang.org/x/text/currency"
 	"time"
 )
 
+// parseDateTime parses a time formatted under iso-date-time as indicated in the Navitia api.
+// This is simply parsing a date formatted under the standard ISO 8601.
 func parseDateTime(datetime string) (time.Time, error) {
-	//TODO
-	return time.Now(), nil
+	res, err := time.Parse(DateTimeFormat, datetime)
+	if err != nil {
+		err = errors.Wrap(err, "parseDateTime: error while parsing datetime")
+	}
+	return res, err
 }
 
 // UnmarshalJSON implements json.Unmarshaller for a Journey
-func (j Journey) UnmarshalJSON(b []byte) error {
-	var data map[string]string
-	err := json.Unmarshal(b, &data)
-	if err != nil {
-		return err
+func (j *Journey) UnmarshalJSON(b []byte) error {
+	// First let's create the analogous structure
+	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
+	data := &struct {
+		Duration  int64 `json:"duration"`
+		Transfers *uint `json:"nb_transfers"`
+
+		Departure string `json:"departure_date_time"`
+		Requested string `json:"requested_date_time"`
+		Arrival   string `json:"arrival_date_time"`
+
+		Sections *[]Section `json:"sections"`
+
+		From PlaceCountainer `json:"from"`
+		To   PlaceCountainer `json:"to"`
+
+		Type *JourneyQualification `json:"type"`
+
+		Fare *Fare `json:"fare"`
+
+		Status *JourneyStatus `json:"status"`
+	}{
+		Transfers: &j.Transfers,
+		Sections:  &j.Sections,
+		Type:      &j.Type,
+		Fare:      &j.Fare,
+		Status:    &j.Status,
 	}
 
-	for key, value := range data {
-		switch {
-		case key == "duration":
-			parsed, err := strconv.ParseInt(value, 10, 64)
-			if err != nil {
-				return err
-			}
-			j.Duration = time.Duration(parsed) / time.Second
-		case key == "transfers":
-			parsed, err := strconv.ParseUint(value, 10, 64)
-			if err != nil {
-				return err
-			}
-			j.Transfers = uint(parsed)
-		case key == "departure_date_time":
-			time, err := parseDateTime(value)
-			if err != nil {
-				return err
-			}
-			j.Departure = time
-		case key == "requested_date_time":
-			time, err := parseDateTime(value)
-			if err != nil {
-				return err
-			}
-			j.Requested = time
-		case key == "arrival_date_time":
-			time, err := parseDateTime(value)
-			if err != nil {
-				return err
-			}
-			j.Arrival = time
-		case key == "sections":
-			var sections = &[]Section{}
-			// Parse
-			err := json.Unmarshal([]byte(value), sections)
-			if err != nil {
-				return err
-			}
-		case key == "type":
-			j.Type = JourneyQualification(value)
-		}
+	// Now unmarshall the raw data into the analogous structure
+	err := json.Unmarshal(b, data)
+	if err != nil {
+		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
+
+	// As the given duration is in second, let's multiply it by one second to have the correct value
+	j.Duration = time.Duration(data.Duration) * time.Second
+
+	// For departure, requested and arrival, we use parseDateTime
+	j.Departure, err = parseDateTime(data.Departure)
+	if err != nil {
+		return errors.Wrap(err, "Error while parsing datetime")
+	}
+	j.Requested, err = parseDateTime(data.Requested)
+	if err != nil {
+		return errors.Wrap(err, "Error while parsing datetime")
+	}
+	j.Arrival, err = parseDateTime(data.Arrival)
+	if err != nil {
+		return errors.Wrap(err, "Error while parsing datetime")
+	}
+
+	// For the places, we directly use the embedded type !
+	j.From, err = data.From.Place()
+	if err != nil {
+		return errors.Wrap(err, "Error while parsing places")
+	}
+	j.To, err = data.To.Place()
+	if err != nil {
+		return errors.Wrap(err, "Error while parsing places")
+	}
+
+	return nil
+}
+
+// UnmarshalJSON implements json.Unmarshaller for a Fare
+func (f *Fare) UnmarshalJSON(b []byte) error {
+	// First let's create the analogous structure
+	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
+	data := &struct {
+		Found *bool `json:"found"`
+		Cost  struct {
+			Value    string `json:"value"`
+			Currency string `json:"currency"`
+		} `json:"cost"`
+	}{
+		Found: &f.Found,
+	}
+
+	// Now unmarshall the raw data into the analogous structure
+	err := json.Unmarshal(b, data)
+	if err != nil {
+		return errors.Wrap(err, "Error while unmarshalling journey")
+	}
+
+	// Let's convert the cost now
+	// If we have no defined fare, let's skip that part
+	if data.Cost.Value == "" || data.Cost.Currency == "" {
+		return nil
+	}
+	// First get the currency unit
+	unit, err := currency.ParseISO(data.Cost.Currency)
+	if err != nil {
+		return errors.Wrap(err, "Error while dealing with currency unit !")
+	}
+	// Now let's create the correct amount
+	f.Total = unit.Amount(data.Cost.Value)
+
 	return nil
 }
