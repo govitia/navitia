@@ -7,7 +7,7 @@ import (
 
 // Return a journey request
 // TODO: Add random
-func helper_GenerateJourneyRequest() JourneyRequest {
+func helperGenerateJourneyRequest() JourneyRequest {
 	return JourneyRequest{}
 }
 
@@ -28,7 +28,7 @@ func Test_Journeys(t *testing.T) {
 		t.Skip(skipNoKey)
 	}
 
-	params := helper_GenerateJourneyRequest()
+	params := helperGenerateJourneyRequest()
 	coords := types.Coordinates{48.847002, 2.377310}
 	params.From = coords
 
