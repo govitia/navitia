@@ -3,33 +3,34 @@ package types
 // A Mode represents a non-public transportation mode
 type Mode string
 
+// ModeXXX are known non-public transportation mode
 const (
-	ModeWalking Mode = "walking"
-	ModeBike         = "bike"
-	ModeCar          = "car"
+	ModeWalking string = "walking"
+	ModeBike           = "bike"
+	ModeCar            = "car"
 
 	// Not used in Section
 	ModeBikeShare = "bss"
 )
 
-type CommercialModeID string
-
+// A CommercialMode codes for a commercial method of transportation
 type CommercialMode struct {
-	ID            CommercialModeID `json:"id"`
-	Name          string           `json:"name"`
-	PhysicalModes []PhysicalMode   `json:"physical_modes"`
+	// A CommercialMode ID is in the form of "commercial_mode:something"
+	ID            ID             `json:"id"`
+	Name          string         `json:"name"`
+	PhysicalModes []PhysicalMode `json:"physical_modes"`
 }
 
-type PhysicalModeID string
-
+// A PhysicalMode codes for a physical method of transportation
+// For example, air travel, bus, metro and train.
 type PhysicalMode struct {
-	ID              PhysicalModeID   `json:"id"`
+	ID              ID               `json:"id"`
 	Name            string           `json:"name"`
 	CommercialModes []CommercialMode `json:"commercial_mode"`
 }
 
-// PhysicalModes is defined to help a programmer list all possible physical modes
-var PhysicalModes = map[string]PhysicalModeID{
+// PhysicalModes is defined to help the user list all possible physical modes in ID form
+var PhysicalModes = map[string]ID{
 	"Air":  PhysicalModeAir,
 	"Boat": PhysicalModeBoat,
 	"Bus":  PhysicalModeBus,
@@ -47,20 +48,21 @@ var PhysicalModes = map[string]PhysicalModeID{
 	"Tramway":             PhysicalModeTramway,
 }
 
+// PhysicalModeXXX are the possible physical modes in ID form
 const (
-	PhysicalModeAir               PhysicalModeID = "physical_mode:Air"
-	PhysicalModeBoat                             = "physical_mode:Boat"
-	PhysicalModeBus                              = "physical_mode:Bus"
-	PhysicalModeBusRapidTransit                  = "physical_mode:BusRapidTransit"
-	PhysicalModeCoach                            = "physical_mode:Coach"
-	PhysicalModeFerry                            = "physical_mode:Ferry"
-	PhysicalModeFunicular                        = "physical_mode:Funicular"
-	PhysicalModeLocalTrain                       = "physical_mode:LocalTrain"
-	PhysicalModeLongDistanceTrain                = "physical_mode:LongDistanceTrain"
-	PhysicalModeMetro                            = "physical_mode:Metro"
-	PhysicalModeRapidTransit                     = "physical_mode:RapidTransit"
-	PhysicalModeShuttle                          = "physical_mode:Shuttle"
-	PhysicalModeTaxi                             = "physical_mode:Taxi"
-	PhysicalModeTrain                            = "physical_mode:Train"
-	PhysicalModeTramway                          = "physical_mode:Tramway"
+	PhysicalModeAir               ID = "physical_mode:Air"
+	PhysicalModeBoat                 = "physical_mode:Boat"
+	PhysicalModeBus                  = "physical_mode:Bus"
+	PhysicalModeBusRapidTransit      = "physical_mode:BusRapidTransit"
+	PhysicalModeCoach                = "physical_mode:Coach"
+	PhysicalModeFerry                = "physical_mode:Ferry"
+	PhysicalModeFunicular            = "physical_mode:Funicular"
+	PhysicalModeLocalTrain           = "physical_mode:LocalTrain"
+	PhysicalModeLongDistanceTrain    = "physical_mode:LongDistanceTrain"
+	PhysicalModeMetro                = "physical_mode:Metro"
+	PhysicalModeRapidTransit         = "physical_mode:RapidTransit"
+	PhysicalModeShuttle              = "physical_mode:Shuttle"
+	PhysicalModeTaxi                 = "physical_mode:Taxi"
+	PhysicalModeTrain                = "physical_mode:Train"
+	PhysicalModeTramway              = "physical_mode:Tramway"
 )
