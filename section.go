@@ -126,6 +126,9 @@ const (
 
 // A DisplayInformations hold informations useful to display
 type DisplayInformations struct {
+	// The headsign associated with the object
+	Headsign string `json:"headsign"`
+
 	// The name of the belonging network
 	Network string `json:"network"`
 
@@ -143,6 +146,9 @@ type DisplayInformations struct {
 
 	// Hexadecimal color of the line
 	Color string `json:"color"`
+
+	// The text color for this section
+	TextColor Color `json:"text_color"`
 
 	// The code of the line
 	Code string `json:"code"`
