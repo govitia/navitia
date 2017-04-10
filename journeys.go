@@ -40,25 +40,25 @@ var JourneyQualifications = map[string]JourneyQualification{
 
 // DateTimeFormat is the format used by the Navitia Api for use with time pkg.
 // Few external use-cases but still there are some
-const DateTimeFormat string = "20060102150405" // YYYYMMDDThhmmss
+const DateTimeFormat string = "20060102T150405" // YYYYMMDDThhmmss
 
 // A Journey holds information about a possible journey
 type Journey struct {
-	Duration  time.Duration `json:"duration"`
-	Transfers uint          `json:"nb_transfers"`
+	Duration  time.Duration
+	Transfers uint
 
-	Departure time.Time `json:"departure_date_time"`
-	Requested time.Time `json:"requested_date_time"`
-	Arrival   time.Time `json:"arrival_date_time"`
+	Departure time.Time
+	Requested time.Time
+	Arrival   time.Time
 
-	Sections []Section `json:"sections"`
+	Sections []Section
 
-	From Place `json:"from"`
-	To   Place `json:"to"`
+	From Place
+	To   Place
 
-	Type JourneyQualification `json:"type"`
+	Type JourneyQualification
 
-	Fare Fare `json:"fare"`
+	Fare Fare
 
 	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
 	Status JourneyStatus
