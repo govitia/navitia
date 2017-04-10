@@ -36,4 +36,5 @@ type Line struct {
 }
 
 // Color is an RGB representation of a color
+// TODO: Transition to color.NRGBA
 type Color string
