@@ -7,8 +7,10 @@ import (
 	"net/http"
 )
 
+// RemoteErrorID is an ID for a remote error
 type RemoteErrorID string
 
+// RemoteErrXXX are the known error ids that can be returned by the navitia server
 const (
 	// 404 Errors
 
@@ -24,7 +26,7 @@ const (
 	RemoteErrUnableToParse = "unable_to_parse"
 )
 
-// Human-readable descriptions for a given remote error ID
+// RemoteErrorsDescriptions countains human-readable descriptions for a given remote error ID
 // Can also be used as a list of known error IDs
 var RemoteErrorsDescriptions = map[RemoteErrorID]string{
 	RemoteErrDateOutOfBounds:       "When the given date is out of bounds of the production dates of the region",
@@ -43,7 +45,8 @@ type RemoteError struct {
 	Message    string        `json:"message"`
 }
 
-// String formats the error in a human-readable format
+// Error formats the error in a human-readable format
+// Also allows it to satisfy the error interface
 func (err RemoteError) Error() string {
 
 	var s string

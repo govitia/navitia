@@ -7,13 +7,13 @@ import (
 )
 
 const (
-	// APIProtocol is the protocol to be used
+	// DefaultAPIProtocol is the protocol to be used
 	DefaultAPIProtocol = "https"
 
-	// APIHostname is the known Navitia API hostname
+	// DefaultAPIHostname is the known Navitia API hostname
 	DefaultAPIHostname = "api.navitia.io"
 
-	// APIVersion is the used API Version
+	// DefaultAPIVersion is the used API Version
 	DefaultAPIVersion = "v1"
 
 	defaultAPIURL = DefaultAPIProtocol + "://" + DefaultAPIHostname + "/" + DefaultAPIVersion

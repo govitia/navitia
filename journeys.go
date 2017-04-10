@@ -9,6 +9,7 @@ import (
 	"time"
 )
 
+// JourneyResults countains the results of a Journey request
 type JourneyResults struct {
 	Journeys []types.Journey
 
@@ -16,6 +17,7 @@ type JourneyResults struct {
 	populatedAt time.Time
 }
 
+// JourneyRequest countain the parameters needed to make a Journey request
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
