@@ -2,14 +2,11 @@ package types
 
 import "fmt"
 
-// A RegionID represents the ID of a Region
-type RegionID string
-
 // A Region holds information about a geographical region, including its ID, name & shape
 type Region struct {
-	ID     RegionID `json:"id"`
-	Name   string   `json:"name"`
-	Status string   `json:"status"`
+	ID     ID     `json:"id"`
+	Name   string `json:"name"`
+	Status string `json:"status"`
 
 	//DatasetCreation time.Time `json:"dataset_created_at"`
 	//LastLoaded      time.Time `json:"last_load_at"`
