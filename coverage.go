@@ -71,7 +71,8 @@ func (s *Session) Coverage(count uint) (*CoverageResults, error) {
 }
 
 // RegionByID provides information about a specific region
-func (s *Session) RegionByID(id types.RegionID) (*CoverageResults, error) {
+// If the ID provided isn't an ID of a region, this WILL fail.
+func (s *Session) RegionByID(id types.ID) (*CoverageResults, error) {
 	var results = &CoverageResults{session: s, createdAt: time.Now()}
 
 	// Build the URL
@@ -111,10 +112,7 @@ func (s *Session) RegionByPos(coords types.Coordinates) (*CoverageResults, error
 	var results = &CoverageResults{session: s, createdAt: time.Now()}
 
 	// Build the URL
-	coordsFormatted, err := coords.FormatURL()
-	if err != nil {
-		return results, errors.Wrap(err, "error while formatting url")
-	}
+	coordsFormatted := coords.QueryEscape()
 	url := s.APIURL + "/" + coverageEndpoint + "/" + coordsFormatted
 
 	// Get the request

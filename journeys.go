@@ -21,8 +21,8 @@ type JourneyResults struct {
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
-	From types.PositionID
-	To   types.PositionID
+	From types.QueryEscaper
+	To   types.QueryEscaper
 
 	Date          time.Time
 	DateIsArrival bool
@@ -102,7 +102,7 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	addIDSlice := func(key string, ids []types.ID) {
 		if len(ids) != 0 {
 			for _, id := range ids {
-				params.Add(key, id.FormatURL())
+				params.Add(key, id.QueryEscape())
 			}
 		}
 	}
@@ -122,18 +122,10 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 
 	// Encode the from and to
 	if from := req.From; from != nil {
-		formatted, err := from.FormatURL()
-		if err != nil {
-			return params, errors.Wrap(err, "error while formatting from field")
-		}
-		params.Add("from", formatted)
+		params.Add("from", from.QueryEscape())
 	}
 	if to := req.To; to != nil {
-		formatted, err := to.FormatURL()
-		if err != nil {
-			return params, errors.Wrap(err, "error while formatting to field")
-		}
-		params.Add("to", formatted)
+		params.Add("to", to.QueryEscape())
 	}
 
 	if datetime := req.Date; !datetime.IsZero() {
