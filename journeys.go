@@ -1,6 +1,7 @@
 package types
 
 import (
+	"fmt"
 	"golang.org/x/text/currency"
 	"time"
 )
@@ -64,6 +65,14 @@ type Journey struct {
 
 	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
 	Status JourneyStatus
+}
+
+// String pretty-prints the journey
+// WIP, later let's add more of the data
+func (j Journey) String() string {
+	format := "%s (%s) --(%s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
+	timeFormat := "02/01 @ 15:04"
+	return fmt.Sprintf(format, j.From.PlaceName(), j.Departure.Format(timeFormat), j.Duration.String(), j.To.PlaceName(), j.Arrival.Format(timeFormat))
 }
 
 // CO2Emissions countains the
