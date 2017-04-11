@@ -17,7 +17,7 @@ func TestJourneyUnmarshal_NoCompare(t *testing.T) {
 	// For each of them, let's run a subtest
 	for i, reader := range input {
 		// Create a name for this run
-		name := strconv.FormatInt(int64(i), 10)
+		name := strconv.Itoa(i)
 
 		// Create the run function
 		rfunc := func(t *testing.T) {
