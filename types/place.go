@@ -1,6 +1,6 @@
 package types
 
-//import "github.com/pkg/errors"
+import "github.com/pkg/errors"
 
 // A Place isn't something directly used by the Navitia.io api
 // However, it allows the library user to use idiomatic go when working with the library
@@ -39,7 +39,16 @@ type PlaceCountainer struct {
 }
 
 // Place returns the Place countained in the PlaceCountainer
+// If PlaceCountainer is empty, Place returns nil
+// If there's no place indicated but PlaceCountainer isn't empty, Place returns an error as well as a nil Place.
 func (pc PlaceCountainer) Place() (Place, error) {
+	// If PlaceCountainer is empty, return nil
+	empty := PlaceCountainer{}
+	if pc == empty {
+		return nil, nil
+	}
+
+	// Check for each type
 	switch pc.EmbeddedType {
 	case "stop_area":
 		return pc.StopArea, nil
@@ -52,7 +61,7 @@ func (pc PlaceCountainer) Place() (Place, error) {
 	case "administrative_region":
 		return pc.AdministrativeRegion, nil
 	default:
-		return nil, nil //errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType)
+		return nil, errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType)
 	}
 }
 
