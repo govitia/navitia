@@ -75,6 +75,9 @@ type Section struct {
 	From Place
 	To   Place
 
+	// The path taken by this section
+	Path []PathSegment
+
 	// List of the stop times of this section
 	StopTimes []StopTime
 

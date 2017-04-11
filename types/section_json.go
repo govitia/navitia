@@ -20,6 +20,7 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		StopTimes  *[]StopTime          `json:"stop_date_times"`
 		Display    *DisplayInformations `json:"display_informations"`
 		Additional *[]PTMethod          `json:"additional_informations"`
+		Path       *[]PathSegment       `json:"path"`
 
 		// Values to process
 		Departure string `json:"departure_date_time"`
@@ -32,6 +33,7 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		Display:    &s.Display,
 		Additional: &s.Additional,
 		StopTimes:  &s.StopTimes,
+		Path:       &s.Path,
 	}
 
 	// Now unmarshall the raw data into the analogous structure
