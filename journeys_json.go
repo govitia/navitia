@@ -54,11 +54,11 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	}
 	j.Requested, err = parseDateTime(data.Requested)
 	if err != nil {
-		return unmarshalErr(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return unmarshalErr(err, "Requested", "requested_date_time", data.Requested, "parseDateTime failed")
 	}
 	j.Arrival, err = parseDateTime(data.Arrival)
 	if err != nil {
-		return unmarshalErr(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return unmarshalErr(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
 	}
 
 	// For the places, we directly use the embedded type !

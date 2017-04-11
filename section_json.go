@@ -11,25 +11,20 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
-		Type *SectionType `json:"type"`
-		ID   *ID          `json:"id"`
-		Mode *Mode        `json:"mode"`
+		// Pointers to the corresponding real values
+		From       PlaceCountainer      `json:"from"`
+		To         PlaceCountainer      `json:"to"`
+		Type       *SectionType         `json:"type"`
+		ID         *ID                  `json:"id"`
+		Mode       *Mode                `json:"mode"`
+		StopTimes  *[]StopTime          `json:"stop_date_times"`
+		Display    *DisplayInformations `json:"display_informations"`
+		Additional *[]PTMethod          `json:"additional_informations"`
 
+		// Values to process
 		Departure string `json:"departure_date_time"`
 		Arrival   string `json:"arrival_date_time"`
-
-		From PlaceCountainer `json:"from"`
-		To   PlaceCountainer `json:"to"`
-
-		StopTimes *[]StopTime `json:"stop_date_times"`
-
-		Duration int64
-
-		// Information to display
-		Display *DisplayInformations `json:"display_informations"`
-
-		// Additional informations, from what I can see this is always a PTMethod
-		Additional *[]PTMethod `json:"additional_informations"`
+		Duration  int64  `json:"duration"`
 	}{
 		Type:       &s.Type,
 		ID:         &s.ID,
@@ -48,21 +43,21 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	// Now process the two PlaceCountainer
 	s.From, err = data.From.Place()
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing places")
+		return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
 	}
 	s.To, err = data.To.Place()
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing places")
+		return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
 	}
 
 	// For departure and arrival, we use parseDateTime
 	s.Departure, err = parseDateTime(data.Departure)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return unmarshalErr(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
 	}
 	s.Arrival, err = parseDateTime(data.Arrival)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return unmarshalErr(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
 	}
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
