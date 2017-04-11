@@ -15,6 +15,8 @@ type JourneyResults struct {
 
 	createdAt   time.Time
 	populatedAt time.Time
+
+	session *Session
 }
 
 // JourneyRequest countain the parameters needed to make a Journey request
@@ -179,14 +181,11 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	return params, nil
 }
 
-const journeysEndpoint string = "journeys"
-
-// Journeys computes a list of journeys according to the parameters given
-func (s *Session) Journeys(params JourneyRequest) (*JourneyResults, error) {
-	var results = &JourneyResults{createdAt: time.Now()}
+// journeys is the internal function used by Journeys functions
+func (s *Session) journeys(url string, params JourneyRequest) (*JourneyResults, error) {
+	var results = &JourneyResults{createdAt: time.Now(), session: s}
 
 	// Get the request
-	url := s.APIURL + "/" + journeysEndpoint
 	req, err := s.newRequest(url)
 	if err != nil {
 		return results, errors.Wrap(err, "error while creating request")
@@ -220,4 +219,24 @@ func (s *Session) Journeys(params JourneyRequest) (*JourneyResults, error) {
 
 	// Return
 	return results, err
+}
+
+const journeysEndpoint string = "journeys"
+
+// Journeys computes a list of journeys according to the parameters given
+func (s *Session) Journeys(params JourneyRequest) (*JourneyResults, error) {
+	// Create the URL
+	url := s.APIURL + "/" + journeysEndpoint
+
+	// Call
+	return s.journeys(url, params)
+}
+
+// JourneysR computes a list of journeys according to the parameters given and in a specific region
+func (s *Session) JourneysR(params JourneyRequest, regionID string) (*JourneyResults, error) {
+	// Create the URL
+	url := s.APIURL + "/coverage/" + regionID + "/" + journeysEndpoint
+
+	// Call
+	return s.journeys(url, params)
 }
