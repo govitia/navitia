@@ -10,7 +10,13 @@ import (
 
 // parseDateTime parses a time formatted under iso-date-time as indicated in the Navitia api.
 // This is simply parsing a date formatted under the standard ISO 8601.
+// If the given string is empty (i.e ""), then the zero value of time.Time will be returned
 func parseDateTime(datetime string) (time.Time, error) {
+	// If there's no datetime given, just return the zero value
+	if datetime == "" {
+		return time.Time{}, nil
+	}
+
 	res, err := time.Parse(DateTimeFormat, datetime)
 	if err != nil {
 		err = errors.Wrap(err, "parseDateTime: error while parsing datetime")
