@@ -203,7 +203,7 @@ func (s *Session) journeys(url string, params JourneyRequest) (*JourneyResults, 
 
 	// Check it
 	if err != nil {
-		return results, errors.Wrap(err, "errror while executing request")
+		return results, errors.Wrap(err, "error while executing request")
 	}
 	if resp.StatusCode != 200 {
 		return results, parseRemoteError(resp)
