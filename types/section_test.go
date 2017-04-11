@@ -6,10 +6,10 @@ import (
 	"testing"
 )
 
-// TestJourneyUnmarshal_NoCompare tries to unmarshal all json test data for this type, but doesn't compare its response to a known correct output.
-func TestJourneyUnmarshal_NoCompare(t *testing.T) {
+// TestSectionUnmarshal_NoCompare tries to unmarshal all json test data for this type, but doesn't compare its response to a known correct output.
+func TestSectionUnmarshal_NoCompare(t *testing.T) {
 	// Get the input
-	input := testData["journey"]
+	input := testData["section"]
 	if len(input) == 0 {
 		t.Skip("No data to test")
 	}
@@ -21,7 +21,7 @@ func TestJourneyUnmarshal_NoCompare(t *testing.T) {
 
 		// Create the run function
 		rfunc := func(t *testing.T) {
-			var j = &Journey{}
+			var j = &Section{}
 			dec := json.NewDecoder(reader)
 			err := dec.Decode(j)
 			if err != nil {
