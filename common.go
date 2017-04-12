@@ -41,3 +41,40 @@ const (
 type QueryEscaper interface {
 	QueryEscape() string
 }
+
+// A DisplayInformations hold informations useful to display
+// Used by Section ["section"], RouteSchedule ["route_schedule"], StopSchedule ["stop_schedule"], Departure ["departure"], Arrival ["arrival"].
+type DisplayInformations struct {
+	// The headsign associated with the object
+	Headsign string `json:"headsign"`
+
+	// The name of the belonging network
+	Network string `json:"network"`
+
+	// A direction to take
+	Direction string `json:"direction"`
+
+	// The commercial mode in ID Form
+	CommercialMode ID `json:"commercial_mode"`
+
+	// The physical mode in ID Form
+	PhysicalMode ID `json:"physical_mode"`
+
+	// The label of the object
+	Label string `json:"label"`
+
+	// Hexadecimal color of the line
+	Color string `json:"color"`
+
+	// The text color for this section
+	TextColor Color `json:"text_color"`
+
+	// The code of the line
+	Code string `json:"code"`
+
+	// Description
+	Description string `json:"description"`
+
+	// Equipments on this object
+	Equipments []Equipment `json:"equipments"`
+}
