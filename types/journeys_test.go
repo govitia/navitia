@@ -22,6 +22,9 @@ func TestJourneyString(t *testing.T) {
 	}
 
 	departure, err := time.Parse("2006-01-02T15:04:05", "2017-04-11T21:33:55")
+	if err != nil {
+		t.Fatal(err)
+	}
 	arrival, err := time.Parse("2006-01-02T15:04:05", "2017-04-11T22:24:13")
 	if err != nil {
 		t.Fatal(err)
