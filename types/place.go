@@ -1,6 +1,9 @@
 package types
 
-import "github.com/pkg/errors"
+import (
+	"fmt"
+	"github.com/pkg/errors"
+)
 
 // A Place isn't something directly used by the Navitia.io api
 // However, it allows the library user to use idiomatic go when working with the library
@@ -20,6 +23,9 @@ type Place interface {
 
 	// PlaceType returns the name of the type of the Place
 	PlaceType() string
+
+	// String() for string printing
+	String() string
 }
 
 // PlaceCountainer is the ugly countainer sent by Navitia to make us all cry.
@@ -103,6 +109,20 @@ func (sa StopArea) PlaceType() string {
 	return "stop_area"
 }
 
+// String pretty-prints the StopArea.
+// Satisifes Stringer and helps satisfy Place
+func (sa StopArea) String() string {
+	var label string
+	if sa.Label == "" {
+		label = sa.Name
+	} else {
+		label = sa.Label
+	}
+
+	format := "%s (id: %s)"
+	return fmt.Sprintf(format, label, sa.ID)
+}
+
 // A POI is a Point Of Interest. A loosely-defined place.
 type POI struct {
 	ID   ID     `json:"id"`
@@ -122,16 +142,30 @@ func (poi POI) PlaceID() ID {
 	return poi.ID
 }
 
-// PlaceName returns the name of the POI
+// PlaceName returns the name of the POI.
 // Helps satisfy Place
 func (poi POI) PlaceName() string {
 	return poi.Name
 }
 
-// PlaceType returns the type of place, in this case "poi"
+// PlaceType returns the type of place, in this case "poi".
 // Helps satisfy Place
 func (poi POI) PlaceType() string {
 	return "poi"
+}
+
+// String pretty-prints the POI.
+// Satisifes Stringer and helps satisfy Place
+func (poi POI) String() string {
+	var label string
+	if poi.Label == "" {
+		label = poi.Name
+	} else {
+		label = poi.Label
+	}
+
+	format := "%s (id: %s)"
+	return fmt.Sprintf(format, label, poi.ID)
 }
 
 // A POIType codes for the type of the point of interest
@@ -179,6 +213,20 @@ func (add Address) PlaceType() string {
 	return "address"
 }
 
+// String pretty-prints the Address.
+// Satisifes Stringer and helps satisfy Place
+func (add Address) String() string {
+	var label string
+	if add.Label == "" {
+		label = add.Name
+	} else {
+		label = add.Label
+	}
+
+	format := "%s (id: %s)"
+	return fmt.Sprintf(format, label, add.ID)
+}
+
 // A StopPoint codes for a stop point in a line: a location where vehicles can pickup or drop off passengers.
 type StopPoint struct {
 	ID ID `json:"id"`
@@ -215,6 +263,13 @@ func (sp StopPoint) PlaceName() string {
 // Helps satisfy Place
 func (sp StopPoint) PlaceType() string {
 	return "stop_point"
+}
+
+// String pretty-prints the StopPoint.
+// Satisifes Stringer and helps satisfy Place
+func (sp StopPoint) String() string {
+	format := "%s (id: %s)"
+	return fmt.Sprintf(format, sp.Name, sp.ID)
 }
 
 // An AdministrativeRegion represents an administrative region: a region under the control/responsibility of a specific organisation.
@@ -254,4 +309,18 @@ func (ar AdministrativeRegion) PlaceName() string {
 // Helps satisfy Place
 func (ar AdministrativeRegion) PlaceType() string {
 	return "administrative_region"
+}
+
+// String pretty-prints the AdministrativeRegion.
+// Satisifes Stringer and helps satisfy Place
+func (ar AdministrativeRegion) String() string {
+	var label string
+	if ar.Label == "" {
+		label = ar.Name
+	} else {
+		label = ar.Label
+	}
+
+	format := "%s (id: %s)"
+	return fmt.Sprintf(format, label, ar.ID)
 }
