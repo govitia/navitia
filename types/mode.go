@@ -30,22 +30,22 @@ type PhysicalMode struct {
 }
 
 // PhysicalModes is defined to help the user list all possible physical modes in ID form
-var PhysicalModes = map[string]ID{
-	"Air":  PhysicalModeAir,
-	"Boat": PhysicalModeBoat,
-	"Bus":  PhysicalModeBus,
-	"Bus (rapid transit)": PhysicalModeBusRapidTransit,
-	"Coach":               PhysicalModeCoach,
-	"Ferry":               PhysicalModeFerry,
-	"Funicular":           PhysicalModeFunicular,
-	"Local train":         PhysicalModeLocalTrain,
-	"Long-distance train": PhysicalModeLongDistanceTrain,
-	"Metro":               PhysicalModeMetro,
-	"Rapid transit":       PhysicalModeRapidTransit,
-	"Shuttle":             PhysicalModeShuttle,
-	"Taxi":                PhysicalModeTaxi,
-	"Train":               PhysicalModeTrain,
-	"Tramway":             PhysicalModeTramway,
+var PhysicalModes = map[ID]string{
+	PhysicalModeAir:               "Air",
+	PhysicalModeBoat:              "Boat",
+	PhysicalModeBus:               "Bus",
+	PhysicalModeBusRapidTransit:   "Bus (Rapid Transit)",
+	PhysicalModeCoach:             "Coach",
+	PhysicalModeFerry:             "Ferry",
+	PhysicalModeFunicular:         "Funicular",
+	PhysicalModeLocalTrain:        "Local Train",
+	PhysicalModeLongDistanceTrain: "Long-distance Train",
+	PhysicalModeMetro:             "Metro",
+	PhysicalModeRapidTransit:      "Rapid Transit",
+	PhysicalModeShuttle:           "Shuttle",
+	PhysicalModeTaxi:              "Taxi",
+	PhysicalModeTrain:             "Train",
+	PhysicalModeTramway:           "Tramway",
 }
 
 // PhysicalModeXXX are the possible physical modes in ID form
