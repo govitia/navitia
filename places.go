@@ -1,6 +1,7 @@
 package gonavitia
 
 import (
+	"fmt"
 	"github.com/aabizri/gonavitia/types"
 	"net/url"
 )
@@ -11,6 +12,14 @@ type PlacesResults struct {
 
 	Logging
 	session *Session
+}
+
+func (res PlacesResults) String() string {
+	var msg string
+	for i, place := range res.Places {
+		msg += fmt.Sprintf("Place #%d:\t%v\n", i, place) //TODO: When types implements a String() method on its Place type, use it
+	}
+	return msg
 }
 
 type PlacesRequest struct {
