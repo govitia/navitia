@@ -1,6 +1,7 @@
 package gonavitia
 
 import (
+	"fmt"
 	"github.com/aabizri/gonavitia/types"
 	"net/url"
 	"strconv"
@@ -23,7 +24,7 @@ func (jr JourneyResults) String() string {
 		if i != 0 {
 			msg += "\n"
 		}
-		msg += journey.String()
+		msg += fmt.Sprintf("Journey #%d:\t%s", i, journey.String())
 	}
 	return msg
 }
