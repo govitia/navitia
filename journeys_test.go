@@ -33,8 +33,8 @@ func Test_Journeys(t *testing.T) {
 	params.From = coords
 
 	res, err := testSession.Journeys(params)
-	t.Logf("Got results: %s", res.String())
+	t.Logf("Got results: \n%s", res.String())
 	if err != nil {
-		t.Fatalf("Got error in Journey(): %v\n\tParameters: %#v", err, params, res)
+		t.Fatalf("Got error in Journey(): %v\n\tParameters: %#v", err, params)
 	}
 }
