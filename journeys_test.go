@@ -27,12 +27,25 @@ func TestJourneyString(t *testing.T) {
 		t.Fatal(err)
 	}
 
+	section := Section{
+		From:      from,
+		To:        to,
+		Departure: departure,
+		Arrival:   arrival,
+		Duration:  time.Duration(3018) * time.Second,
+		Display: DisplayInformations{
+			Label:        "11",
+			PhysicalMode: "Métro",
+		},
+	}
+
 	journey := Journey{
 		From:      from,
 		To:        to,
 		Departure: departure,
 		Arrival:   arrival,
 		Duration:  time.Duration(3018) * time.Second,
+		Sections:  []Section{section},
 	}
 
 	t.Logf("For journey we have: %s", journey.String())
