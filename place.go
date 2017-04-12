@@ -65,7 +65,7 @@ func (pc PlaceCountainer) Place() (Place, error) {
 	}
 }
 
-// A StopArea represents a stop area: a place where a public transportation method may stop for a traveller.
+// A StopArea represents a stop area: a nameable zone, where there are some stop points.
 type StopArea struct {
 	ID   ID     `json:"id"`
 	Name string `json:"name"`
@@ -141,7 +141,7 @@ type POIType struct {
 	Name string `json:"name"`
 }
 
-// An Address codes for a real-world address
+// An Address codes for a real-world address: a point located in a street.
 type Address struct {
 	ID   ID     `json:"id"`
 	Name string `json:"name"`
@@ -179,7 +179,7 @@ func (add Address) PlaceType() string {
 	return "address"
 }
 
-// A StopPoint codes for a stop point in a line
+// A StopPoint codes for a stop point in a line: a location where vehicles can pickup or drop off passengers.
 type StopPoint struct {
 	ID ID `json:"id"`
 
@@ -218,6 +218,7 @@ func (sp StopPoint) PlaceType() string {
 }
 
 // An AdministrativeRegion represents an administrative region: a region under the control/responsibility of a specific organisation.
+// It can be a city, a district, a neightborhood, etc.
 type AdministrativeRegion struct {
 	ID   ID     `json:"id"`
 	Name string `json:"name"`
