@@ -113,15 +113,6 @@ type StopTime struct {
 	StopPoint StopPoint
 }
 
-// A PTDateTime (pt stands for “public transport”) is a complex date time object to manage the difference between stop and leaving times at a stop.
-type PTDateTime struct {
-	// Date/Time of departure
-	Departure time.Time
-
-	// Date/Time of arrival
-	Arrival time.Time
-}
-
 // A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport)
 type PTMethod string
 

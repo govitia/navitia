@@ -26,6 +26,8 @@ Currently supported types
 */
 package types
 
+import "time"
+
 // DataFreshness codes for a specific data freshness requirement: realtime or base_schedule
 type DataFreshness string
 
@@ -77,4 +79,17 @@ type DisplayInformations struct {
 
 	// Equipments on this object
 	Equipments []Equipment `json:"equipments"`
+}
+
+// A PTDateTime (pt stands for “public transport”) is a complex date time object to manage the difference between stop and leaving times at a stop.
+// It is used by:
+// 	- Row in Schedule
+// 	- StopSchedule
+// 	- StopDatetime
+type PTDateTime struct {
+	// Date/Time of departure
+	Departure time.Time
+
+	// Date/Time of arrival
+	Arrival time.Time
 }
