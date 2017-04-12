@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/aabizri/gonavitia/types"
 	"net/url"
+	"strconv"
 )
 
 // PlacesResults doesn't have pagination
@@ -17,7 +18,7 @@ type PlacesResults struct {
 func (res PlacesResults) String() string {
 	var msg string
 	for i, place := range res.Places {
-		msg += fmt.Sprintf("Place #%d (%s): %v\n", i, place.PlaceType(), place) //TODO: When types implements a String() method on its Place type, use it
+		msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.PlaceType(), place.String())
 	}
 	return msg
 }
@@ -34,6 +35,9 @@ type PlacesRequest struct {
 	DisableGeoJson bool
 
 	Around types.Coordinates // If given, it will prioritize objects around these coordinates
+
+	// Maximum amount of results
+	Count uint
 }
 
 // toURL formats a Places request to url
@@ -54,6 +58,10 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 		params["disable_geojson"] = []string{"true"}
 	}
 
+	if req.Count != 0 {
+		countStr := strconv.FormatUint(uint64(req.Count), 10)
+		params["count"] = []string{countStr}
+	}
 	return params, nil
 }
 
