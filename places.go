@@ -5,7 +5,7 @@ import (
 	"net/url"
 )
 
-// No pagination here
+// PlacesResults doesn't have pagination
 type PlacesResults struct {
 	Places []types.Place
 
