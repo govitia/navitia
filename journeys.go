@@ -1,9 +1,7 @@
 package gonavitia
 
 import (
-	"encoding/json"
 	"github.com/aabizri/gonavitia/types"
-	"github.com/pkg/errors"
 	"net/url"
 	"strconv"
 	"time"
@@ -13,8 +11,7 @@ import (
 type JourneyResults struct {
 	Journeys []types.Journey
 
-	createdAt   time.Time
-	populatedAt time.Time
+	Logging
 
 	session *Session
 }
@@ -195,41 +192,8 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 
 // journeys is the internal function used by Journeys functions
 func (s *Session) journeys(url string, params JourneyRequest) (*JourneyResults, error) {
-	var results = &JourneyResults{createdAt: time.Now(), session: s}
-
-	// Get the request
-	req, err := s.newRequest(url)
-	if err != nil {
-		return results, errors.Wrap(err, "error while creating request")
-	}
-
-	// Encode the parameters
-	values, err := params.toURL()
-	if err != nil {
-		return results, errors.Wrap(err, "error while retrieving url values to be encoded")
-	}
-	req.URL.RawQuery = values.Encode()
-
-	// Execute the request
-	resp, err := s.client.Do(req)
-
-	// Check it
-	if err != nil {
-		return results, errors.Wrap(err, "error while executing request")
-	}
-	if resp.StatusCode != 200 {
-		return results, parseRemoteError(resp)
-	}
-
-	// Parse it
-	dec := json.NewDecoder(resp.Body)
-	err = dec.Decode(results)
-	if err != nil {
-		return results, errors.Wrap(err, "JSON decoding failed")
-	}
-	results.populatedAt = time.Now()
-
-	// Return
+	var results = &JourneyResults{session: s}
+	err := s.request(url, params, results)
 	return results, err
 }
 
