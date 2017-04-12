@@ -68,7 +68,11 @@ type Journey struct {
 func (j Journey) String() string {
 	format := "%s (%s) --(%s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
 	timeFormat := "02/01 @ 15:04"
-	return fmt.Sprintf(format, j.From.PlaceName(), j.Departure.Format(timeFormat), j.Duration.String(), j.To.PlaceName(), j.Arrival.Format(timeFormat))
+	message := fmt.Sprintf(format, j.From.PlaceName(), j.Departure.Format(timeFormat), j.Duration.String(), j.To.PlaceName(), j.Arrival.Format(timeFormat))
+	for _, section := range j.Sections {
+		message += "\n\t" + section.String()
+	}
+	return message
 }
 
 // CO2Emissions countains the

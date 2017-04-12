@@ -19,6 +19,18 @@ type JourneyResults struct {
 	session *Session
 }
 
+// String satisfies stringer, pretty-prints JourneyResults
+func (jr JourneyResults) String() string {
+	var msg string
+	for i, journey := range jr.Journeys {
+		if i != 0 {
+			msg += "\n"
+		}
+		msg += journey.String()
+	}
+	return msg
+}
+
 // JourneyRequest countain the parameters needed to make a Journey request
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined

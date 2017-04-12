@@ -1,6 +1,9 @@
 package types
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 // A SectionType codifies the type of section that can be encountered
 type SectionType string
@@ -86,6 +89,19 @@ type Section struct {
 
 	// Additional informations, from what I can see this is always a PTMethod
 	Additional []PTMethod
+}
+
+// String satisfies Stringer
+func (s Section) String() string {
+	var info string
+	if s.Display.Label != "" && s.Display.PhysicalMode != "" {
+		info = string(s.Display.PhysicalMode) + " " + s.Display.Label
+	} else if s.Mode != "" {
+		info = string(s.Mode)
+	}
+	format := "%s (%s) --(%s | %s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
+	timeFormat := "02/01 @ 15:04"
+	return fmt.Sprintf(format, s.From.PlaceName(), s.Departure.Format(timeFormat), info, s.Duration.String(), s.To.PlaceName(), s.Arrival.Format(timeFormat))
 }
 
 // A StopTime stores info about a stop in a route: when the vehicle comes in, when it comes out, and what stop it is.
