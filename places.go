@@ -17,7 +17,7 @@ type PlacesResults struct {
 func (res PlacesResults) String() string {
 	var msg string
 	for i, place := range res.Places {
-		msg += fmt.Sprintf("Place #%d:\t%v\n", i, place) //TODO: When types implements a String() method on its Place type, use it
+		msg += fmt.Sprintf("Place #%d (%s): %v\n", i, place.PlaceType(), place) //TODO: When types implements a String() method on its Place type, use it
 	}
 	return msg
 }
