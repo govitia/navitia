@@ -25,6 +25,14 @@ func (r placeRequest) messages() []json.RawMessage {
 	return r.Places
 }
 
+type coverageRequest struct {
+	Regions []json.RawMessage `json:"regions"`
+}
+
+func (r coverageRequest) messages() []json.RawMessage {
+	return r.Regions
+}
+
 type request interface {
 	messages() []json.RawMessage
 }
@@ -145,6 +153,16 @@ func main() {
 					return
 				}
 				req = tmp
+			case "region":
+				tmp := &coverageRequest{}
+				// Decode to it
+				err := dec.Decode(tmp)
+				if err != nil {
+					stat, _ := file.Stat()
+					fmt.Printf("Error while decoding %s: %v\n", stat.Name(), err)
+					return
+				}
+				req = tmp
 			default:
 				fmt.Printf("Incorrect category")
 				return
@@ -169,7 +187,9 @@ func main() {
 				}
 
 				// Write to it
-				_, err = nfile.Write([]byte(message))
+				enc := json.NewEncoder(nfile)
+				enc.SetIndent("", "\t")
+				err = enc.Encode(message)
 				if err != nil {
 					fmt.Printf("Error while writing to file %s: %v\n", npath, err)
 				}
