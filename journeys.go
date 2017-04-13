@@ -36,6 +36,7 @@ type JourneyRequest struct {
 	From types.QueryEscaper
 	To   types.QueryEscaper
 
+	// When do you want to depart ? Or is DateIsArrival when do you want to arrive at your destination.
 	Date          time.Time
 	DateIsArrival bool
 
