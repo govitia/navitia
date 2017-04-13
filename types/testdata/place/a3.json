@@ -1,1 +1,51 @@
-{"embedded_type":"poi","quality":80,"id":"poi:n639606894","name":"Rue Moncey (Paris)","poi":{"poi_type":{"name":"Station VLS","id":"poi_type:amenity:bicycle_rental"},"name":"Rue Moncey","coord":{"lat":"48.8801859","lon":"2.3312932"},"label":"Rue Moncey (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"address":{"house_number":2,"id":"2.3312932;48.8801859","name":"Rue Moncey","coord":{"lat":"48.8801859","lon":"2.3312932"},"label":"2 Rue Moncey (Paris)"},"id":"poi:n639606894","properties":{"amenity":"bicycle_rental","capacity":"N\/A","name":"Rue Moncey","wheelchair":"no","operator":"JCDecaux","network":"V\u00e9lib'"}}}
+{
+	"embedded_type": "poi",
+	"quality": 80,
+	"id": "poi:n639606894",
+	"name": "Rue Moncey (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Rue Moncey",
+		"coord": {
+			"lat": "48.8801859",
+			"lon": "2.3312932"
+		},
+		"label": "Rue Moncey (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 2,
+			"id": "2.3312932;48.8801859",
+			"name": "Rue Moncey",
+			"coord": {
+				"lat": "48.8801859",
+				"lon": "2.3312932"
+			},
+			"label": "2 Rue Moncey (Paris)"
+		},
+		"id": "poi:n639606894",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "N\/A",
+			"name": "Rue Moncey",
+			"wheelchair": "no",
+			"operator": "JCDecaux",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

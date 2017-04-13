@@ -1,1 +1,51 @@
-{"embedded_type":"poi","quality":60,"id":"poi:n439919694","name":"Beaubourg - 46 Rue Beaubourg - 75003 Paris (Paris)","poi":{"poi_type":{"name":"Station VLS","id":"poi_type:amenity:bicycle_rental"},"name":"Beaubourg - 46 Rue Beaubourg - 75003 Paris","coord":{"lat":"48.8610006","lon":"2.353484"},"label":"Beaubourg - 46 Rue Beaubourg - 75003 Paris (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"address":{"house_number":26,"id":"2.353484;48.8610006","name":"Rue Geoffroy l'Angevin","coord":{"lat":"48.8610006","lon":"2.353484"},"label":"26 Rue Geoffroy l'Angevin (Paris)"},"id":"poi:n439919694","properties":{"amenity":"bicycle_rental","capacity":"18","name":"Beaubourg - 46 Rue Beaubourg - 75003 Paris","operator":"JCDecaux","ref":"3010","network":"V\u00e9lib'"}}}
+{
+	"embedded_type": "poi",
+	"quality": 60,
+	"id": "poi:n439919694",
+	"name": "Beaubourg - 46 Rue Beaubourg - 75003 Paris (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Beaubourg - 46 Rue Beaubourg - 75003 Paris",
+		"coord": {
+			"lat": "48.8610006",
+			"lon": "2.353484"
+		},
+		"label": "Beaubourg - 46 Rue Beaubourg - 75003 Paris (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 26,
+			"id": "2.353484;48.8610006",
+			"name": "Rue Geoffroy l'Angevin",
+			"coord": {
+				"lat": "48.8610006",
+				"lon": "2.353484"
+			},
+			"label": "26 Rue Geoffroy l'Angevin (Paris)"
+		},
+		"id": "poi:n439919694",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "18",
+			"name": "Beaubourg - 46 Rue Beaubourg - 75003 Paris",
+			"operator": "JCDecaux",
+			"ref": "3010",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

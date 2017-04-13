@@ -1,1 +1,52 @@
-{"embedded_type":"poi","quality":70,"id":"poi:n1490011488","name":"Avenue des Gobelins (Paris)","poi":{"poi_type":{"name":"Station VLS","id":"poi_type:amenity:bicycle_rental"},"name":"Avenue des Gobelins","coord":{"lat":"48.8371959","lon":"2.3514837"},"label":"Avenue des Gobelins (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"address":{"house_number":22,"id":"2.3514837;48.8371959","name":"Avenue des Gobelins","coord":{"lat":"48.8371959","lon":"2.3514837"},"label":"22 Avenue des Gobelins (Paris)"},"id":"poi:n1490011488","properties":{"amenity":"bicycle_rental","capacity":"40","name":"Avenue des Gobelins","wheelchair":"no","operator":"JCDecaux","ref":"0527","network":"V\u00e9lib'"}}}
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n1490011488",
+	"name": "Avenue des Gobelins (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Avenue des Gobelins",
+		"coord": {
+			"lat": "48.8371959",
+			"lon": "2.3514837"
+		},
+		"label": "Avenue des Gobelins (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 22,
+			"id": "2.3514837;48.8371959",
+			"name": "Avenue des Gobelins",
+			"coord": {
+				"lat": "48.8371959",
+				"lon": "2.3514837"
+			},
+			"label": "22 Avenue des Gobelins (Paris)"
+		},
+		"id": "poi:n1490011488",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "40",
+			"name": "Avenue des Gobelins",
+			"wheelchair": "no",
+			"operator": "JCDecaux",
+			"ref": "0527",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

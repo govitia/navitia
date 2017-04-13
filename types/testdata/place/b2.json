@@ -1,1 +1,51 @@
-{"embedded_type":"poi","quality":70,"id":"poi:n340398579","name":"Avenue de Gravelle (Paris)","poi":{"poi_type":{"name":"Station VLS","id":"poi_type:amenity:bicycle_rental"},"name":"Avenue de Gravelle","coord":{"lat":"48.8243871","lon":"2.4184684"},"label":"Avenue de Gravelle (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"address":{"house_number":0,"id":"2.4184684;48.8243871","name":"Rue du Bac","coord":{"lat":"48.8243871","lon":"2.4184684"},"label":"Rue du Bac"},"id":"poi:n340398579","properties":{"amenity":"bicycle_rental","capacity":"50","name":"Avenue de Gravelle","operator":"JCDecaux","ref":"12126","network":"V\u00e9lib'"}}}
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n340398579",
+	"name": "Avenue de Gravelle (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Avenue de Gravelle",
+		"coord": {
+			"lat": "48.8243871",
+			"lon": "2.4184684"
+		},
+		"label": "Avenue de Gravelle (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 0,
+			"id": "2.4184684;48.8243871",
+			"name": "Rue du Bac",
+			"coord": {
+				"lat": "48.8243871",
+				"lon": "2.4184684"
+			},
+			"label": "Rue du Bac"
+		},
+		"id": "poi:n340398579",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "50",
+			"name": "Avenue de Gravelle",
+			"operator": "JCDecaux",
+			"ref": "12126",
+			"network": "V\u00e9lib'"
+		}
+	}
+}
