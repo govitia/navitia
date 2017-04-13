@@ -62,6 +62,7 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	}
 
 	// For the places, we directly use the embedded type !
+	// Warning: it is possible for a countainer to be empty, in those cases a nil Place will be present
 	j.From, err = data.From.Place()
 	if err != nil {
 		return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
