@@ -3,11 +3,10 @@ package types
 import (
 	"flag"
 	"fmt"
-	"io"
+	"github.com/pkg/errors"
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"strings"
 )
 
 var (
@@ -16,14 +15,15 @@ var (
 )
 
 // testData stores io.Readers for each of the files found in the directory
-var testData = make(map[string][]io.ReadCloser, len(typesList))
+var testData = make(map[string][]*os.File, len(typesList))
 
 // this is the list of potential types
 // must be lower case
 var typesList = []string{
 	"journey",
 	"section",
-	"coverage",
+	"region",
+	"place",
 }
 
 func init() {
@@ -48,30 +48,34 @@ func init() {
 }
 
 func load() error {
-	files, err := ioutil.ReadDir(testDataPath)
+	subdirs, err := ioutil.ReadDir(testDataPath)
 	if err != nil {
-		return err
+		return errors.Wrapf(err, "Error while reading %s's files", testDataPath)
 	}
 
-	// Now we'll iterate through the files, checking if their name include a type, and if so adding them to testData
-	for _, finfo := range files {
-		// Get the name
-		fileName := finfo.Name()
-		for _, typeName := range typesList {
-			// If the fileName includes the typeName, then add it to the list
-			if strings.Contains(fileName, typeName) {
-				// Open the file
-				fpath := filepath.Join(testDataPath, fileName)
-				freader, err := os.Open(fpath)
+	// Iterate through the subdirs
+	for _, dinfo := range subdirs {
+		if dinfo.IsDir() {
+			dpath := filepath.Join(testDataPath, dinfo.Name())
+			files, err := ioutil.ReadDir(dpath)
+			if err != nil {
+				return errors.Wrapf(err, "error while reading %s's files", dpath)
+			}
+
+			// Now we'll iterate through the files, checking if their name include a type, and if so adding them to testData
+			for _, finfo := range files {
+				// Get the name
+				fileName := finfo.Name()
+
+				// Open it
+				path := filepath.Join(testDataPath, dinfo.Name(), fileName)
+				f, err := os.Open(path)
 				if err != nil {
 					return err
 				}
 
-				// Add it to the slice
-				testData[typeName] = append(testData[typeName], freader)
-
-				// Break off
-				break
+				// Add it
+				testData[dinfo.Name()] = append(testData[dinfo.Name()], f)
 			}
 		}
 	}

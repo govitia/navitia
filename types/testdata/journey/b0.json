@@ -1,0 +1,1153 @@
+{
+            "arrival_date_time": "20170413T141146",
+            "calendars": [
+                {
+                    "active_periods": [
+                        {
+                            "begin": "20170326",
+                            "end": "20170417"
+                        }
+                    ],
+                    "exceptions": [
+                        {
+                            "datetime": "20170402",
+                            "type": "remove"
+                        },
+                        {
+                            "datetime": "20170409",
+                            "type": "remove"
+                        },
+                        {
+                            "datetime": "20170415",
+                            "type": "add"
+                        }
+                    ],
+                    "week_pattern": {
+                        "friday": true,
+                        "monday": true,
+                        "saturday": false,
+                        "sunday": true,
+                        "thursday": true,
+                        "tuesday": true,
+                        "wednesday": true
+                    }
+                }
+            ],
+            "co2_emission": {
+                "unit": "gEC",
+                "value": 39.556
+            },
+            "departure_date_time": "20170413T133945",
+            "duration": 1921,
+            "durations": {
+                "total": 1921,
+                "walking": 1081
+            },
+            "fare": {
+                "found": false,
+                "links": [
+                ],
+                "total": {
+                    "currency": "",
+                    "value": "0.0"
+                }
+            },
+            "links": [
+                {
+                    "href": "https://api.navitia.io/v1/coverage/fr-idf/journeys?allowed_id%5B%5D=stop_area%3AOIF%3ASA%3A8739305&allowed_id%5B%5D=stop_area%3AOIF%3ASA%3A8754700&to=2.2922926%3B48.8583736&from=2.3749036%3B48.8467927&min_nb_journeys=5",
+                    "rel": "same_journey_schedules",
+                    "templated": false,
+                    "type": "journeys"
+                }
+            ],
+            "nb_transfers": 0,
+            "requested_date_time": "20170413T133734",
+            "sections": [
+                {
+                    "arrival_date_time": "20170413T135400",
+                    "co2_emission": {
+                        "unit": "",
+                        "value": 0.0
+                    },
+                    "departure_date_time": "20170413T133945",
+                    "duration": 855,
+                    "from": {
+                        "address": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                },
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.8467927",
+                                "lon": "2.3749036"
+                            },
+                            "house_number": 9,
+                            "id": "2.3749036;48.8467927",
+                            "label": "9 Rue Abel (Paris)",
+                            "name": "Rue Abel"
+                        },
+                        "embedded_type": "address",
+                        "id": "2.3749036;48.8467927",
+                        "name": "9 Rue Abel (Paris)",
+                        "quality": 0
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.3749393938,
+                                48.8467686088
+                            ],
+                            [
+                                2.3749393938,
+                                48.8467686088
+                            ],
+                            [
+                                2.374414,
+                                48.845988
+                            ],
+                            [
+                                2.374362,
+                                48.845932
+                            ],
+                            [
+                                2.37418,
+                                48.845844
+                            ],
+                            [
+                                2.373971,
+                                48.845713
+                            ],
+                            [
+                                2.372006,
+                                48.844257
+                            ],
+                            [
+                                2.371002,
+                                48.843604
+                            ],
+                            [
+                                2.370734,
+                                48.843413
+                            ],
+                            [
+                                2.37059,
+                                48.843335
+                            ],
+                            [
+                                2.370326,
+                                48.843194
+                            ],
+                            [
+                                2.370285,
+                                48.843171
+                            ],
+                            [
+                                2.370258,
+                                48.843155
+                            ],
+                            [
+                                2.370234,
+                                48.843144
+                            ],
+                            [
+                                2.368039,
+                                48.841998
+                            ],
+                            [
+                                2.367888,
+                                48.8419
+                            ],
+                            [
+                                2.367777,
+                                48.841975
+                            ],
+                            [
+                                2.366689,
+                                48.842783
+                            ],
+                            [
+                                2.366352,
+                                48.84303
+                            ],
+                            [
+                                2.366289,
+                                48.843066
+                            ],
+                            [
+                                2.366211,
+                                48.843111
+                            ],
+                            [
+                                2.365939,
+                                48.842926
+                            ],
+                            [
+                                2.365939,
+                                48.842926
+                            ],
+                            [
+                                2.365433,
+                                48.842528
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 957
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_12_0",
+                    "links": [
+                    ],
+                    "mode": "walking",
+                    "path": [
+                        {
+                            "direction": 0,
+                            "duration": 90,
+                            "length": 101,
+                            "name": "Rue Abel"
+                        },
+                        {
+                            "direction": 22,
+                            "duration": 14,
+                            "length": 16,
+                            "name": "Boulevard Diderot"
+                        },
+                        {
+                            "direction": -7,
+                            "duration": 328,
+                            "length": 367,
+                            "name": "Rue Van Gogh"
+                        },
+                        {
+                            "direction": 8,
+                            "duration": 40,
+                            "length": 45,
+                            "name": ""
+                        },
+                        {
+                            "direction": -4,
+                            "duration": 183,
+                            "length": 205,
+                            "name": "Pont Charles de Gaulle"
+                        },
+                        {
+                            "direction": -6,
+                            "duration": 13,
+                            "length": 15,
+                            "name": ""
+                        },
+                        {
+                            "direction": 90,
+                            "duration": 161,
+                            "length": 180,
+                            "name": "Quai d'Austerlitz"
+                        },
+                        {
+                            "direction": -87,
+                            "duration": 26,
+                            "length": 29,
+                            "name": ""
+                        },
+                        {
+                            "direction": 0,
+                            "duration": 0,
+                            "length": 0,
+                            "name": "Cour Seine"
+                        }
+                    ],
+                    "to": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:8754702:800:C",
+                        "name": "Gare d'Austerlitz RER C (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "41333"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF8754702:800:C"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:8754702:800:C"
+                                }
+                            ],
+                            "commercial_modes": [
+                                {
+                                    "id": "commercial_mode:rapidtransit",
+                                    "name": "RER"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.842528",
+                                "lon": "2.365433"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:8754702:800:C",
+                            "label": "Gare d'Austerlitz RER C (Paris)",
+                            "links": [
+                            ],
+                            "name": "Gare d'Austerlitz RER C",
+                            "physical_modes": [
+                                {
+                                    "id": "physical_mode:RapidTransit",
+                                    "name": "Train de banlieue / RER"
+                                }
+                            ],
+                            "stop_area": {
+                                "administrative_regions": [
+                                    {
+                                        "coord": {
+                                            "lat": "48.856609",
+                                            "lon": "2.351499"
+                                        },
+                                        "id": "admin:fr:75056",
+                                        "insee": "75056",
+                                        "label": "Paris",
+                                        "level": 8,
+                                        "name": "Paris",
+                                        "zip_code": ""
+                                    }
+                                ],
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8754700"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8754700"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.843578",
+                                    "lon": "2.364651"
+                                },
+                                "id": "stop_area:OIF:SA:8754700",
+                                "label": "Gare d'Austerlitz (Paris)",
+                                "links": [
+                                ],
+                                "name": "Gare d'Austerlitz",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "type": "street_network"
+                },
+                {
+                    "additional_informations": [
+                        "regular"
+                    ],
+                    "arrival_date_time": "20170413T140800",
+                    "base_arrival_date_time": "20170413T140800",
+                    "base_departure_date_time": "20170413T135400",
+                    "co2_emission": {
+                        "unit": "gEC",
+                        "value": 39.556
+                    },
+                    "departure_date_time": "20170413T135400",
+                    "display_informations": {
+                        "code": "C",
+                        "color": "FCD946",
+                        "commercial_mode": "RER",
+                        "description": "",
+                        "direction": "Gare de Versailles Ch\u00e2teau - Rive Gauche (Versailles)",
+                        "equipments": [
+                        ],
+                        "headsign": "VICK",
+                        "label": "C",
+                        "links": [
+                        ],
+                        "network": "RER",
+                        "physical_mode": "Train de banlieue / RER",
+                        "text_color": "FFFFFF"
+                    },
+                    "duration": 840,
+                    "from": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:8754702:800:C",
+                        "name": "Gare d'Austerlitz RER C (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "41333"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF8754702:800:C"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:8754702:800:C"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.842528",
+                                "lon": "2.365433"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:8754702:800:C",
+                            "label": "Gare d'Austerlitz RER C (Paris)",
+                            "links": [
+                            ],
+                            "name": "Gare d'Austerlitz RER C",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8754700"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8754700"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.843578",
+                                    "lon": "2.364651"
+                                },
+                                "id": "stop_area:OIF:SA:8754700",
+                                "label": "Gare d'Austerlitz (Paris)",
+                                "links": [
+                                ],
+                                "name": "Gare d'Austerlitz",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.365433,
+                                48.842528
+                            ],
+                            [
+                                2.346035,
+                                48.853336
+                            ],
+                            [
+                                2.32562,
+                                48.860708
+                            ],
+                            [
+                                2.313911,
+                                48.862902
+                            ],
+                            [
+                                2.30099,
+                                48.862662
+                            ],
+                            [
+                                2.290392,
+                                48.857293
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 6380
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_13_0",
+                    "links": [
+                        {
+                            "id": "vehicle_journey:OIF:82209457-1_354848-1_dst_2",
+                            "type": "vehicle_journey"
+                        },
+                        {
+                            "id": "line:OIF:800:COIF741",
+                            "type": "line"
+                        },
+                        {
+                            "id": "route:OIF:800:C_R",
+                            "type": "route"
+                        },
+                        {
+                            "id": "commercial_mode:rapidtransit",
+                            "type": "commercial_mode"
+                        },
+                        {
+                            "id": "physical_mode:RapidTransit",
+                            "type": "physical_mode"
+                        },
+                        {
+                            "id": "network:RER",
+                            "type": "network"
+                        }
+                    ],
+                    "stop_date_times": [
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135300",
+                            "base_arrival_date_time": "20170413T135300",
+                            "base_departure_date_time": "20170413T135400",
+                            "departure_date_time": "20170413T135400",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "41333"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8754702:800:C"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:8754702:800:C"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.842528",
+                                    "lon": "2.365433"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:8754702:800:C",
+                                "label": "Gare d'Austerlitz RER C (Paris)",
+                                "links": [
+                                ],
+                                "name": "Gare d'Austerlitz RER C"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135700",
+                            "base_arrival_date_time": "20170413T135700",
+                            "base_departure_date_time": "20170413T135800",
+                            "departure_date_time": "20170413T135800",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "41335"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8754731:800:C"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:8754731:800:C"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.853336",
+                                    "lon": "2.346035"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:8754731:800:C",
+                                "label": "Saint-Michel Notre-Dame RER C (Paris)",
+                                "links": [
+                                ],
+                                "name": "Saint-Michel Notre-Dame RER C"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140000",
+                            "base_arrival_date_time": "20170413T140000",
+                            "base_departure_date_time": "20170413T140100",
+                            "departure_date_time": "20170413T140100",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "41334"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8754730:800:C"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:8754730:800:C"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.860708",
+                                    "lon": "2.32562"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:8754730:800:C",
+                                "label": "Mus\u00e9e d'Orsay (Paris)",
+                                "links": [
+                                ],
+                                "name": "Mus\u00e9e d'Orsay"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140300",
+                            "base_arrival_date_time": "20170413T140300",
+                            "base_departure_date_time": "20170413T140400",
+                            "departure_date_time": "20170413T140400",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "41208"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739303:800:C"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:8739303:800:C"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.862902",
+                                    "lon": "2.313911"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:8739303:800:C",
+                                "label": "Invalides (Paris)",
+                                "links": [
+                                ],
+                                "name": "Invalides"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140600",
+                            "base_arrival_date_time": "20170413T140600",
+                            "base_departure_date_time": "20170413T140600",
+                            "departure_date_time": "20170413T140600",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "41209"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739304:800:C"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:8739304:800:C"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.862662",
+                                    "lon": "2.30099"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:8739304:800:C",
+                                "label": "Pont de l'Alma (Paris)",
+                                "links": [
+                                ],
+                                "name": "Pont de l'Alma"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140800",
+                            "base_arrival_date_time": "20170413T140800",
+                            "base_departure_date_time": "20170413T140900",
+                            "departure_date_time": "20170413T140900",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "41210"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305:800:C"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:8739305:800:C"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.857293",
+                                    "lon": "2.290392"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:8739305:800:C",
+                                "label": "Champ de Mars Tour Eiffel (Paris)",
+                                "links": [
+                                ],
+                                "name": "Champ de Mars Tour Eiffel"
+                            }
+                        }
+                    ],
+                    "to": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:8739305:800:C",
+                        "name": "Champ de Mars Tour Eiffel (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "41210"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF8739305:800:C"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:8739305:800:C"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.857293",
+                                "lon": "2.290392"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:8739305:800:C",
+                            "label": "Champ de Mars Tour Eiffel (Paris)",
+                            "links": [
+                            ],
+                            "name": "Champ de Mars Tour Eiffel",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8739305"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.8572",
+                                    "lon": "2.293234"
+                                },
+                                "id": "stop_area:OIF:SA:8739305",
+                                "label": "Champ de Mars Tour Eiffel (Paris)",
+                                "links": [
+                                ],
+                                "name": "Champ de Mars Tour Eiffel",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "type": "public_transport"
+                },
+                {
+                    "arrival_date_time": "20170413T141146",
+                    "co2_emission": {
+                        "unit": "",
+                        "value": 0.0
+                    },
+                    "departure_date_time": "20170413T140800",
+                    "duration": 226,
+                    "from": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:8739305:800:C",
+                        "name": "Champ de Mars Tour Eiffel (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                },
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "41210"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF8739305:800:C"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:8739305:800:C"
+                                },
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "41210"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF8739305:800:C"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:8739305:800:C"
+                                }
+                            ],
+                            "commercial_modes": [
+                                {
+                                    "id": "commercial_mode:rapidtransit",
+                                    "name": "RER"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.857293",
+                                "lon": "2.290392"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:8739305:800:C",
+                            "label": "Champ de Mars Tour Eiffel (Paris)",
+                            "links": [
+                            ],
+                            "name": "Champ de Mars Tour Eiffel",
+                            "physical_modes": [
+                                {
+                                    "id": "physical_mode:RapidTransit",
+                                    "name": "Train de banlieue / RER"
+                                }
+                            ],
+                            "stop_area": {
+                                "administrative_regions": [
+                                    {
+                                        "coord": {
+                                            "lat": "48.856609",
+                                            "lon": "2.351499"
+                                        },
+                                        "id": "admin:fr:75056",
+                                        "insee": "75056",
+                                        "label": "Paris",
+                                        "level": 8,
+                                        "name": "Paris",
+                                        "zip_code": ""
+                                    }
+                                ],
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8739305"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8739305"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.8572",
+                                    "lon": "2.293234"
+                                },
+                                "id": "stop_area:OIF:SA:8739305",
+                                "label": "Champ de Mars Tour Eiffel (Paris)",
+                                "links": [
+                                ],
+                                "name": "Champ de Mars Tour Eiffel",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.290392,
+                                48.857293
+                            ],
+                            [
+                                2.2902998397,
+                                48.8574374498
+                            ],
+                            [
+                                2.290517,
+                                48.857576
+                            ],
+                            [
+                                2.290641,
+                                48.857504
+                            ],
+                            [
+                                2.290688,
+                                48.857477
+                            ],
+                            [
+                                2.290747,
+                                48.857439
+                            ],
+                            [
+                                2.290973,
+                                48.857209
+                            ],
+                            [
+                                2.291011,
+                                48.857233
+                            ],
+                            [
+                                2.291064,
+                                48.857272
+                            ],
+                            [
+                                2.291097,
+                                48.857294
+                            ],
+                            [
+                                2.291075,
+                                48.857309
+                            ],
+                            [
+                                2.290908,
+                                48.857414
+                            ],
+                            [
+                                2.291025,
+                                48.857486
+                            ],
+                            [
+                                2.291388,
+                                48.857826
+                            ],
+                            [
+                                2.2922745574,
+                                48.8584013995
+                            ],
+                            [
+                                2.2922745574,
+                                48.8584013995
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 253
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_14_0",
+                    "links": [
+                    ],
+                    "mode": "walking",
+                    "path": [
+                        {
+                            "direction": 0,
+                            "duration": 19,
+                            "length": 21,
+                            "name": ""
+                        },
+                        {
+                            "direction": 0,
+                            "duration": 14,
+                            "length": 16,
+                            "name": ""
+                        },
+                        {
+                            "direction": 3,
+                            "duration": 5,
+                            "length": 6,
+                            "name": ""
+                        },
+                        {
+                            "direction": 13,
+                            "duration": 28,
+                            "length": 31,
+                            "name": ""
+                        },
+                        {
+                            "direction": -101,
+                            "duration": 3,
+                            "length": 3,
+                            "name": ""
+                        },
+                        {
+                            "direction": -4,
+                            "duration": 5,
+                            "length": 6,
+                            "name": ""
+                        },
+                        {
+                            "direction": 3,
+                            "duration": 3,
+                            "length": 3,
+                            "name": ""
+                        },
+                        {
+                            "direction": -89,
+                            "duration": 17,
+                            "length": 19,
+                            "name": ""
+                        },
+                        {
+                            "direction": 93,
+                            "duration": 132,
+                            "length": 148,
+                            "name": "Quai Branly"
+                        }
+                    ],
+                    "to": {
+                        "address": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                },
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.8583736",
+                                "lon": "2.2922926"
+                            },
+                            "house_number": 69,
+                            "id": "2.2922926;48.8583736",
+                            "label": "69 Quai Branly (Paris)",
+                            "name": "Quai Branly"
+                        },
+                        "embedded_type": "address",
+                        "id": "2.2922926;48.8583736",
+                        "name": "69 Quai Branly (Paris)",
+                        "quality": 0
+                    },
+                    "type": "street_network"
+                }
+            ],
+            "status": "",
+            "tags": [
+                "walking",
+                "ecologic"
+            ],
+            "type": "best"
+        }
