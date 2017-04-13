@@ -12,7 +12,7 @@ func FuzzJourney(data []byte) int {
 	}
 
 	// Now that it is unmarshalled, let's the string method !
-	_ = j.String()
+	j.String()
 
 	return 1
 }
