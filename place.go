@@ -44,14 +44,117 @@ type PlaceCountainer struct {
 	AdministrativeRegion *AdministrativeRegion `json:"administrative_region,omitempty"`
 }
 
+// ErrInvalidPlaceCountainer is returned after a check on a PlaceCountainer
+type ErrInvalidPlaceCountainer struct {
+	// If the PlaceCountainer has a zero ID.
+	NoID bool
+
+	// If the PlaceCountainer has a zero EmbeddedType.
+	NoEmbeddedType bool
+
+	// If the PlaceCountainer has an unknown EmbeddedType
+	UnknownEmbeddedType bool
+
+	// If the PlaceCountainer has a known EmbeddedType but the corresponding concrete value is nil.
+	NilConcretePlaceValue bool
+
+	// TODO:
+	// If the PlaceCountainer has more than one non-nil concrete place values.
+	// MultipleNonNilConcretePlaceValues bool
+}
+
+// Error satisfies the error interface
+func (err ErrInvalidPlaceCountainer) Error() string {
+	// Count the number of anomalies
+	var anomalies uint
+
+	msg := "Error: Invalid non-empty PlaceCountainer (%d anomalies):"
+
+	if err.NoID {
+		msg += "\n\tNo ID specified"
+		anomalies++
+	}
+	if err.NoEmbeddedType {
+		msg += "\n\tEmpty EmbeddedType"
+		anomalies++
+	}
+	if err.UnknownEmbeddedType {
+		msg += "\n\tUnknown EmbeddedType"
+		anomalies++
+	}
+	if err.NilConcretePlaceValue {
+		msg += "\n\tKnown EmbeddedType but nil corresponding concrete value"
+		anomalies++
+	}
+
+	return fmt.Sprintf(msg, anomalies)
+}
+
+// IsEmpty returns whether or not pc is empty
+func (pc PlaceCountainer) IsEmpty() bool {
+	empty := PlaceCountainer{}
+	return pc == empty
+}
+
+// Checks the validity of the PlaceCountainer. Returns an ErrInvalidPlaceCountainer.
+//
+// An empty PlaceCountainer is valid. But those cases aren't:
+// 	- If the PlaceCountainer has a zero ID.
+// 	- If the PlaceCountainer has a zero EmbeddedType.
+// 	- If the PlaceCountainer has an unknown EmbeddedType.
+// 	- If the PlaceCountainer has a known EmbeddedType but the corresponding concrete value is nil.
+func (pc PlaceCountainer) Check() error {
+	if pc.IsEmpty() {
+		return nil
+	}
+	err := ErrInvalidPlaceCountainer{}
+
+	// Check for zero ID
+	err.NoID = (pc.ID == "")
+
+	// Check if known EmbeddedType but the corresponding concrete value is nil.
+	// Also check for empty and unknown embedded type
+	absent := &err.NilConcretePlaceValue
+	switch pc.EmbeddedType {
+	case "stop_area":
+		*absent = (pc.StopArea == nil)
+	case "poi":
+		*absent = (pc.POI == nil)
+	case "address":
+		*absent = (pc.Address == nil)
+	case "stop_point":
+		*absent = (pc.StopPoint == nil)
+	case "administrative_region":
+		*absent = (pc.AdministrativeRegion == nil)
+	default:
+		// Check for an empty embedded type
+		err.NoEmbeddedType = (pc.EmbeddedType == "")
+		// In case its not empty yet doesn't match with a known type
+		err.UnknownEmbeddedType = !err.NoEmbeddedType
+	}
+
+	emptyErr := ErrInvalidPlaceCountainer{}
+	if err != emptyErr {
+		return err
+	} else {
+		return nil
+	}
+}
+
 // Place returns the Place countained in the PlaceCountainer
-// If PlaceCountainer is empty, Place returns nil
-// If there's no place indicated but PlaceCountainer isn't empty, Place returns an error as well as a nil Place.
+// If PlaceCountainer is empty, Place returns (nil,nil).
+// Check() is run on the PlaceCountainer.
 func (pc PlaceCountainer) Place() (Place, error) {
 	// If PlaceCountainer is empty, return nil
 	empty := PlaceCountainer{}
 	if pc == empty {
 		return nil, nil
+	}
+
+	// Check validity
+	err := pc.Check()
+	if err != nil {
+		return nil, err
 	}
 
 	// Check for each type
@@ -67,7 +170,7 @@ func (pc PlaceCountainer) Place() (Place, error) {
 	case "administrative_region":
 		return pc.AdministrativeRegion, nil
 	default:
-		return nil, errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType)
+		return nil, errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType) // THIS IS VERY SERIOUS AS WE ALREADY CHECKED THE STRUCTURE
 	}
 }
 
