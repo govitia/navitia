@@ -1,4 +1,4 @@
-# gonavitia/types is a library for dealing with types returned by the [Navitia](navitia.io) API. [![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=dev)](https://travis-ci.org/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/gonavitia/types?status.svg)](https://godoc.org/github.com/aabizri/gonavitia/types)
+# gonavitia/types is a library for dealing with types returned by the [Navitia](navitia.io) API. [![Build Status](https://travis-ci.org/aabizri/navitia-types.svg?branch=dev)](https://travis-ci.org/aabizri/navitia-types) [![GoDoc](https://godoc.org/github.com/aabizri/navitia/types?status.svg)](https://godoc.org/github.com/aabizri/navitia/types)
 
 Package types implements support for the types used in the Navitia API (see doc.navitia.io), simplified and modified for idiomatic Go use.
 
@@ -7,6 +7,7 @@ This package is still a work in progress. It is not API-Stable, and won't be unt
 This package was and is developped as a supporting library for the [gonavitia API client](https://github.com/aabizri/gonavitia) but can be used to build other API clients.
 
 ## Install
+
 Simply run `go get -u github.com/aabizri/gonavitia/types`.
 
 ## Coverage
