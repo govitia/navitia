@@ -1,7 +1,7 @@
 #!/bin/bash
 shopt -s extglob
 declare -A functionNames
-functionNames=(["FuzzJourney"]="journey")
+functionNames=(["FuzzJourney"]="journey" ["FuzzPlaceCountainer"]="place")
 
 echo "Functions that will be built:"
 printf "\t- %s\n" "${!functionNames[@]}"
