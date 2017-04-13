@@ -24,7 +24,7 @@ func (jr JourneyResults) String() string {
 		if i != 0 {
 			msg += "\n"
 		}
-		msg += fmt.Sprintf("Journey #%d:\t%s", i, journey.String())
+		msg += fmt.Sprintf("Journey #%d: %s\n", i, journey.String())
 	}
 	return msg
 }
