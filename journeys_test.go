@@ -69,14 +69,21 @@ func TestJourneyUnmarshal_NoCompare(t *testing.T) {
 	}
 
 	// For each of them, let's run a subtest
-	for i, reader := range input {
+	for i, file := range input {
 		// Create a name for this run
-		name := strconv.Itoa(i)
+		var name string
+		stat, err := file.Stat()
+		if err != nil {
+			t.Errorf("Error while retrieving name for pass %d: %v", i, err)
+			name = strconv.Itoa(i)
+		} else {
+			name = stat.Name()
+		}
 
 		// Create the run function
 		rfunc := func(t *testing.T) {
 			var j = &Journey{}
-			dec := json.NewDecoder(reader)
+			dec := json.NewDecoder(file)
 			err := dec.Decode(j)
 			if err != nil {
 				t.Errorf("Error while unmarshalling: %v", err)

@@ -1,0 +1,2128 @@
+{
+            "arrival_date_time": "20170413T143254",
+            "calendars": [
+                {
+                    "active_periods": [
+                        {
+                            "begin": "20170411",
+                            "end": "20170414"
+                        }
+                    ],
+                    "week_pattern": {
+                        "friday": false,
+                        "monday": false,
+                        "saturday": false,
+                        "sunday": false,
+                        "thursday": true,
+                        "tuesday": true,
+                        "wednesday": true
+                    }
+                }
+            ],
+            "co2_emission": {
+                "unit": "gEC",
+                "value": 314.4221
+            },
+            "departure_date_time": "20170413T134249",
+            "duration": 3005,
+            "durations": {
+                "total": 3005,
+                "walking": 641
+            },
+            "fare": {
+                "found": false,
+                "links": [
+                ],
+                "total": {
+                    "currency": "",
+                    "value": "0.0"
+                }
+            },
+            "links": [
+                {
+                    "href": "https://api.navitia.io/v1/coverage/fr-idf/journeys?allowed_id%5B%5D=stop_area%3AOIF%3ASA%3A8768600&allowed_id%5B%5D=stop_area%3AOIF%3ASA%3A8739305&allowed_id%5B%5D=stop_area%3AOIF%3ASA%3A8738102&to=2.2922926%3B48.8583736&from=2.3749036%3B48.8467927&min_nb_journeys=5",
+                    "rel": "same_journey_schedules",
+                    "templated": false,
+                    "type": "journeys"
+                }
+            ],
+            "nb_transfers": 1,
+            "requested_date_time": "20170413T133734",
+            "sections": [
+                {
+                    "arrival_date_time": "20170413T134600",
+                    "co2_emission": {
+                        "unit": "",
+                        "value": 0.0
+                    },
+                    "departure_date_time": "20170413T134249",
+                    "duration": 191,
+                    "from": {
+                        "address": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                },
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.8467927",
+                                "lon": "2.3749036"
+                            },
+                            "house_number": 9,
+                            "id": "2.3749036;48.8467927",
+                            "label": "9 Rue Abel (Paris)",
+                            "name": "Rue Abel"
+                        },
+                        "embedded_type": "address",
+                        "id": "2.3749036;48.8467927",
+                        "name": "9 Rue Abel (Paris)",
+                        "quality": 0
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.3749393938,
+                                48.8467686088
+                            ],
+                            [
+                                2.3749393938,
+                                48.8467686088
+                            ],
+                            [
+                                2.374414,
+                                48.845988
+                            ],
+                            [
+                                2.374362,
+                                48.845932
+                            ],
+                            [
+                                2.37418,
+                                48.845844
+                            ],
+                            [
+                                2.373767,
+                                48.845795
+                            ],
+                            [
+                                2.373679,
+                                48.84579
+                            ],
+                            [
+                                2.373698,
+                                48.845707
+                            ],
+                            [
+                                2.373867,
+                                48.845725
+                            ],
+                            [
+                                2.37388,
+                                48.845686
+                            ],
+                            [
+                                2.373896,
+                                48.845634
+                            ],
+                            [
+                                2.3734655071,
+                                48.8455830729
+                            ],
+                            [
+                                2.373468,
+                                48.845562
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 213
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_0_0",
+                    "links": [
+                    ],
+                    "mode": "walking",
+                    "path": [
+                        {
+                            "direction": 0,
+                            "duration": 90,
+                            "length": 101,
+                            "name": "Rue Abel"
+                        },
+                        {
+                            "direction": 22,
+                            "duration": 46,
+                            "length": 52,
+                            "name": "Boulevard Diderot"
+                        },
+                        {
+                            "direction": -94,
+                            "duration": 8,
+                            "length": 9,
+                            "name": ""
+                        },
+                        {
+                            "direction": -91,
+                            "duration": 11,
+                            "length": 12,
+                            "name": ""
+                        },
+                        {
+                            "direction": 87,
+                            "duration": 8,
+                            "length": 9,
+                            "name": ""
+                        },
+                        {
+                            "direction": 0,
+                            "duration": 28,
+                            "length": 31,
+                            "name": ""
+                        }
+                    ],
+                    "to": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59233",
+                        "name": "Gare de Lyon (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "22083"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59233"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59233"
+                                }
+                            ],
+                            "commercial_modes": [
+                                {
+                                    "id": "commercial_mode:metro",
+                                    "name": "M\u00e9tro"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.845562",
+                                "lon": "2.373468"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59233",
+                            "label": "Gare de Lyon (Paris)",
+                            "links": [
+                            ],
+                            "name": "Gare de Lyon",
+                            "physical_modes": [
+                                {
+                                    "id": "physical_mode:Metro",
+                                    "name": "M\u00e9tro"
+                                }
+                            ],
+                            "stop_area": {
+                                "administrative_regions": [
+                                    {
+                                        "coord": {
+                                            "lat": "48.856609",
+                                            "lon": "2.351499"
+                                        },
+                                        "id": "admin:fr:75056",
+                                        "insee": "75056",
+                                        "label": "Paris",
+                                        "level": 8,
+                                        "name": "Paris",
+                                        "zip_code": ""
+                                    }
+                                ],
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8768600"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8768600"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.844825",
+                                    "lon": "2.373039"
+                                },
+                                "id": "stop_area:OIF:SA:8768600",
+                                "label": "Gare de Lyon (Paris)",
+                                "links": [
+                                ],
+                                "name": "Gare de Lyon",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "type": "street_network"
+                },
+                {
+                    "additional_informations": [
+                        "regular"
+                    ],
+                    "arrival_date_time": "20170413T140600",
+                    "base_arrival_date_time": "20170413T140600",
+                    "base_departure_date_time": "20170413T134600",
+                    "co2_emission": {
+                        "unit": "gEC",
+                        "value": 23.505
+                    },
+                    "departure_date_time": "20170413T134600",
+                    "display_informations": {
+                        "code": "1",
+                        "color": "F2C931",
+                        "commercial_mode": "M\u00e9tro",
+                        "description": "",
+                        "direction": "La D\u00e9fense (Grande Arche) (Puteaux)",
+                        "equipments": [
+                        ],
+                        "headsign": "OIF:79516015-1_53420-1",
+                        "label": "1",
+                        "links": [
+                        ],
+                        "network": "METRO",
+                        "physical_mode": "M\u00e9tro",
+                        "text_color": "FFFFFF"
+                    },
+                    "duration": 1200,
+                    "from": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59233",
+                        "name": "Gare de Lyon (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "22083"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59233"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59233"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.845562",
+                                "lon": "2.373468"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59233",
+                            "label": "Gare de Lyon (Paris)",
+                            "links": [
+                            ],
+                            "name": "Gare de Lyon",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8768600"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8768600"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.844825",
+                                    "lon": "2.373039"
+                                },
+                                "id": "stop_area:OIF:SA:8768600",
+                                "label": "Gare de Lyon (Paris)",
+                                "links": [
+                                ],
+                                "name": "Gare de Lyon",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.373468,
+                                48.845562
+                            ],
+                            [
+                                2.369238,
+                                48.852978
+                            ],
+                            [
+                                2.361353,
+                                48.855137
+                            ],
+                            [
+                                2.352092,
+                                48.857359
+                            ],
+                            [
+                                2.347952,
+                                48.858572
+                            ],
+                            [
+                                2.340992,
+                                48.860883
+                            ],
+                            [
+                                2.336592,
+                                48.862375
+                            ],
+                            [
+                                2.329113,
+                                48.864783
+                            ],
+                            [
+                                2.321212,
+                                48.865681
+                            ],
+                            [
+                                2.314141,
+                                48.867747
+                            ],
+                            [
+                                2.310272,
+                                48.869014
+                            ],
+                            [
+                                2.300788,
+                                48.872049
+                            ],
+                            [
+                                2.295146,
+                                48.873934
+                            ],
+                            [
+                                2.289462,
+                                48.875676
+                            ],
+                            [
+                                2.282484,
+                                48.878009
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 7835
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_1_0",
+                    "links": [
+                        {
+                            "id": "vehicle_journey:OIF:79516015-1_53420-1",
+                            "type": "vehicle_journey"
+                        },
+                        {
+                            "id": "line:OIF:100110001:1OIF439",
+                            "type": "line"
+                        },
+                        {
+                            "id": "route:OIF:100110001:1",
+                            "type": "route"
+                        },
+                        {
+                            "id": "commercial_mode:metro",
+                            "type": "commercial_mode"
+                        },
+                        {
+                            "id": "physical_mode:Metro",
+                            "type": "physical_mode"
+                        },
+                        {
+                            "id": "network:OIF:439",
+                            "type": "network"
+                        }
+                    ],
+                    "stop_date_times": [
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T134600",
+                            "base_arrival_date_time": "20170413T134600",
+                            "base_departure_date_time": "20170413T134600",
+                            "departure_date_time": "20170413T134600",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22083"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59233"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59233"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.845562",
+                                    "lon": "2.373468"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59233",
+                                "label": "Gare de Lyon (Paris)",
+                                "links": [
+                                ],
+                                "name": "Gare de Lyon"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T134800",
+                            "base_arrival_date_time": "20170413T134800",
+                            "base_departure_date_time": "20170413T134800",
+                            "departure_date_time": "20170413T134800",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22089"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59238"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59238"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.852978",
+                                    "lon": "2.369238"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59238",
+                                "label": "Bastille (Paris)",
+                                "links": [
+                                ],
+                                "name": "Bastille"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135000",
+                            "base_arrival_date_time": "20170413T135000",
+                            "base_departure_date_time": "20170413T135000",
+                            "departure_date_time": "20170413T135000",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22074"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59225"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59225"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.855137",
+                                    "lon": "2.361353"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59225",
+                                "label": "Saint-Paul (le Marais) (Paris)",
+                                "links": [
+                                ],
+                                "name": "Saint-Paul (le Marais)"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135200",
+                            "base_arrival_date_time": "20170413T135200",
+                            "base_departure_date_time": "20170413T135200",
+                            "departure_date_time": "20170413T135200",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22091"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59590"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59590"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.857359",
+                                    "lon": "2.352092"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59590",
+                                "label": "H\u00f4tel de Ville (Paris)",
+                                "links": [
+                                ],
+                                "name": "H\u00f4tel de Ville"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135300",
+                            "base_arrival_date_time": "20170413T135300",
+                            "base_departure_date_time": "20170413T135300",
+                            "departure_date_time": "20170413T135300",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22087"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59585"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59585"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.858572",
+                                    "lon": "2.347952"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59585",
+                                "label": "Ch\u00e2telet (Paris)",
+                                "links": [
+                                ],
+                                "name": "Ch\u00e2telet"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135400",
+                            "base_arrival_date_time": "20170413T135400",
+                            "base_departure_date_time": "20170413T135400",
+                            "departure_date_time": "20170413T135400",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22081"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59231"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59231"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.860883",
+                                    "lon": "2.340992"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59231",
+                                "label": "Louvre-Rivoli (Paris)",
+                                "links": [
+                                ],
+                                "name": "Louvre-Rivoli"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135500",
+                            "base_arrival_date_time": "20170413T135500",
+                            "base_departure_date_time": "20170413T135500",
+                            "departure_date_time": "20170413T135500",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22079"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59591"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59591"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.862375",
+                                    "lon": "2.336592"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59591",
+                                "label": "Palais-Royal (Mus\u00e9e du Louvre) (Paris)",
+                                "links": [
+                                ],
+                                "name": "Palais-Royal (Mus\u00e9e du Louvre)"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135700",
+                            "base_arrival_date_time": "20170413T135700",
+                            "base_departure_date_time": "20170413T135700",
+                            "departure_date_time": "20170413T135700",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22075"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59226"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59226"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.864783",
+                                    "lon": "2.329113"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59226",
+                                "label": "Tuileries (Paris)",
+                                "links": [
+                                ],
+                                "name": "Tuileries"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T135800",
+                            "base_arrival_date_time": "20170413T135800",
+                            "base_departure_date_time": "20170413T135800",
+                            "departure_date_time": "20170413T135800",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22085"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59235"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59235"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.865681",
+                                    "lon": "2.321212"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59235",
+                                "label": "Concorde (Paris)",
+                                "links": [
+                                ],
+                                "name": "Concorde"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140000",
+                            "base_arrival_date_time": "20170413T140000",
+                            "base_departure_date_time": "20170413T140000",
+                            "departure_date_time": "20170413T140000",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22090"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59592"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59592"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.867747",
+                                    "lon": "2.314141"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59592",
+                                "label": "Champs-Elys\u00e9es-Cl\u00e9menceau (Paris)",
+                                "links": [
+                                ],
+                                "name": "Champs-Elys\u00e9es-Cl\u00e9menceau"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140100",
+                            "base_arrival_date_time": "20170413T140100",
+                            "base_departure_date_time": "20170413T140100",
+                            "departure_date_time": "20170413T140100",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22082"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59232"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59232"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.869014",
+                                    "lon": "2.310272"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59232",
+                                "label": "Franklin-Roosevelt (Paris)",
+                                "links": [
+                                ],
+                                "name": "Franklin-Roosevelt"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140200",
+                            "base_arrival_date_time": "20170413T140200",
+                            "base_departure_date_time": "20170413T140200",
+                            "departure_date_time": "20170413T140200",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22084"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59234"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59234"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.872049",
+                                    "lon": "2.300788"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59234",
+                                "label": "George V (Paris)",
+                                "links": [
+                                ],
+                                "name": "George V"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140400",
+                            "base_arrival_date_time": "20170413T140400",
+                            "base_departure_date_time": "20170413T140400",
+                            "departure_date_time": "20170413T140400",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22086"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59236"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59236"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.873934",
+                                    "lon": "2.295146"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59236",
+                                "label": "Charles de Gaulle-Etoile (Paris)",
+                                "links": [
+                                ],
+                                "name": "Charles de Gaulle-Etoile"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140500",
+                            "base_arrival_date_time": "20170413T140500",
+                            "base_departure_date_time": "20170413T140500",
+                            "departure_date_time": "20170413T140500",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22088"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59237"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59237"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.875676",
+                                    "lon": "2.289462"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59237",
+                                "label": "Argentine (Paris)",
+                                "links": [
+                                ],
+                                "name": "Argentine"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T140600",
+                            "base_arrival_date_time": "20170413T140600",
+                            "base_departure_date_time": "20170413T140600",
+                            "departure_date_time": "20170413T140600",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "22078"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59229"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59229"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.878009",
+                                    "lon": "2.282484"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59229",
+                                "label": "Porte Maillot (Paris)",
+                                "links": [
+                                ],
+                                "name": "Porte Maillot"
+                            }
+                        }
+                    ],
+                    "to": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59229",
+                        "name": "Porte Maillot (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "22078"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59229"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59229"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.878009",
+                                "lon": "2.282484"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59229",
+                            "label": "Porte Maillot (Paris)",
+                            "links": [
+                            ],
+                            "name": "Porte Maillot",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8738102"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8738102"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.87769",
+                                    "lon": "2.282718"
+                                },
+                                "id": "stop_area:OIF:SA:8738102",
+                                "label": "Porte Maillot (Paris)",
+                                "links": [
+                                ],
+                                "name": "Porte Maillot",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "type": "public_transport"
+                },
+                {
+                    "arrival_date_time": "20170413T141136",
+                    "co2_emission": {
+                        "unit": "",
+                        "value": 0.0
+                    },
+                    "departure_date_time": "20170413T140600",
+                    "duration": 336,
+                    "from": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59229",
+                        "name": "Porte Maillot (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "22078"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59229"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59229"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.878009",
+                                "lon": "2.282484"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59229",
+                            "label": "Porte Maillot (Paris)",
+                            "links": [
+                            ],
+                            "name": "Porte Maillot",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8738102"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8738102"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.87769",
+                                    "lon": "2.282718"
+                                },
+                                "id": "stop_area:OIF:SA:8738102",
+                                "label": "Porte Maillot (Paris)",
+                                "links": [
+                                ],
+                                "name": "Porte Maillot",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.282484,
+                                48.878009
+                            ],
+                            [
+                                2.283412,
+                                48.876572
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 173
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_2_0",
+                    "links": [
+                    ],
+                    "to": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59:3813011",
+                        "name": "Porte Maillot (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "25325"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59:3813011"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59:3813011"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.876572",
+                                "lon": "2.283412"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59:3813011",
+                            "label": "Porte Maillot (Paris)",
+                            "links": [
+                            ],
+                            "name": "Porte Maillot",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8738102"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8738102"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.87769",
+                                    "lon": "2.282718"
+                                },
+                                "id": "stop_area:OIF:SA:8738102",
+                                "label": "Porte Maillot (Paris)",
+                                "links": [
+                                ],
+                                "name": "Porte Maillot",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "transfer_type": "walking",
+                    "type": "transfer"
+                },
+                {
+                    "arrival_date_time": "20170413T141700",
+                    "co2_emission": {
+                        "unit": "",
+                        "value": 0.0
+                    },
+                    "departure_date_time": "20170413T141136",
+                    "duration": 324,
+                    "id": "section_3_0",
+                    "links": [
+                    ],
+                    "type": "waiting"
+                },
+                {
+                    "additional_informations": [
+                        "regular"
+                    ],
+                    "arrival_date_time": "20170413T143100",
+                    "base_arrival_date_time": "20170413T143100",
+                    "base_departure_date_time": "20170413T141700",
+                    "co2_emission": {
+                        "unit": "gEC",
+                        "value": 290.9171
+                    },
+                    "departure_date_time": "20170413T141700",
+                    "display_informations": {
+                        "code": "82",
+                        "color": "f68f4b",
+                        "commercial_mode": "Bus",
+                        "description": "",
+                        "direction": "Luxembourg (Paris)",
+                        "equipments": [
+                        ],
+                        "headsign": "OIF:82314426-1_383647-1",
+                        "label": "82",
+                        "links": [
+                        ],
+                        "network": "RATP",
+                        "physical_mode": "Bus",
+                        "text_color": "000000"
+                    },
+                    "duration": 840,
+                    "from": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59:3813011",
+                        "name": "Porte Maillot (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "25325"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59:3813011"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59:3813011"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.876572",
+                                "lon": "2.283412"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59:3813011",
+                            "label": "Porte Maillot (Paris)",
+                            "links": [
+                            ],
+                            "name": "Porte Maillot",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8738102"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8738102"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.87769",
+                                    "lon": "2.282718"
+                                },
+                                "id": "stop_area:OIF:SA:8738102",
+                                "label": "Porte Maillot (Paris)",
+                                "links": [
+                                ],
+                                "name": "Porte Maillot",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.283412,
+                                48.876572
+                            ],
+                            [
+                                2.284041,
+                                48.874262
+                            ],
+                            [
+                                2.284711,
+                                48.87162
+                            ],
+                            [
+                                2.28609,
+                                48.869105
+                            ],
+                            [
+                                2.289648,
+                                48.866886
+                            ],
+                            [
+                                2.293055,
+                                48.865189
+                            ],
+                            [
+                                2.293056,
+                                48.864074
+                            ],
+                            [
+                                2.291274,
+                                48.861207
+                            ],
+                            [
+                                2.292774,
+                                48.859212
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 2243
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_4_0",
+                    "links": [
+                        {
+                            "id": "vehicle_journey:OIF:82314426-1_383647-1",
+                            "type": "vehicle_journey"
+                        },
+                        {
+                            "id": "line:OIF:100100082:82OIF442",
+                            "type": "line"
+                        },
+                        {
+                            "id": "route:OIF:100100082:82_R",
+                            "type": "route"
+                        },
+                        {
+                            "id": "commercial_mode:bus",
+                            "type": "commercial_mode"
+                        },
+                        {
+                            "id": "physical_mode:Bus",
+                            "type": "physical_mode"
+                        },
+                        {
+                            "id": "network:RTP",
+                            "type": "network"
+                        }
+                    ],
+                    "stop_date_times": [
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T141700",
+                            "base_arrival_date_time": "20170413T141700",
+                            "base_departure_date_time": "20170413T141700",
+                            "departure_date_time": "20170413T141700",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "25325"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3813011"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3813011"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.876572",
+                                    "lon": "2.283412"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3813011",
+                                "label": "Porte Maillot (Paris)",
+                                "links": [
+                                ],
+                                "name": "Porte Maillot"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T141800",
+                            "base_arrival_date_time": "20170413T141800",
+                            "base_departure_date_time": "20170413T141800",
+                            "departure_date_time": "20170413T141800",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "25324"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3813009"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3813009"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.874262",
+                                    "lon": "2.284041"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3813009",
+                                "label": "Alphand (Paris)",
+                                "links": [
+                                ],
+                                "name": "Alphand"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T142000",
+                            "base_arrival_date_time": "20170413T142000",
+                            "base_departure_date_time": "20170413T142000",
+                            "departure_date_time": "20170413T142000",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "25326"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3813007"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3813007"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.87162",
+                                    "lon": "2.284711"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3813007",
+                                "label": "Foch (Paris)",
+                                "links": [
+                                ],
+                                "name": "Foch"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T142200",
+                            "base_arrival_date_time": "20170413T142200",
+                            "base_departure_date_time": "20170413T142200",
+                            "departure_date_time": "20170413T142200",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "23506"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3813005"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3813005"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.869105",
+                                    "lon": "2.28609"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3813005",
+                                "label": "Victor Hugo - Poincar\u00e9 (Paris)",
+                                "links": [
+                                ],
+                                "name": "Victor Hugo - Poincar\u00e9"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T142500",
+                            "base_arrival_date_time": "20170413T142500",
+                            "base_departure_date_time": "20170413T142500",
+                            "departure_date_time": "20170413T142500",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "23496"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3813002"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3813002"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.866886",
+                                    "lon": "2.289648"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3813002",
+                                "label": "Kl\u00e9ber - Boissi\u00e8re (Paris)",
+                                "links": [
+                                ],
+                                "name": "Kl\u00e9ber - Boissi\u00e8re"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T142700",
+                            "base_arrival_date_time": "20170413T142700",
+                            "base_departure_date_time": "20170413T142700",
+                            "departure_date_time": "20170413T142700",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "25777"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3813000"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3813000"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.865189",
+                                    "lon": "2.293055"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3813000",
+                                "label": "L\u00fcbeck (Paris)",
+                                "links": [
+                                ],
+                                "name": "L\u00fcbeck"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T142800",
+                            "base_arrival_date_time": "20170413T142800",
+                            "base_departure_date_time": "20170413T142800",
+                            "departure_date_time": "20170413T142800",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "23177"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3812998"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3812998"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.864074",
+                                    "lon": "2.293056"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3812998",
+                                "label": "Iena (Paris)",
+                                "links": [
+                                ],
+                                "name": "Iena"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T143000",
+                            "base_arrival_date_time": "20170413T143000",
+                            "base_departure_date_time": "20170413T143000",
+                            "departure_date_time": "20170413T143000",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "37376"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3812996"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3812996"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.861207",
+                                    "lon": "2.291274"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3812996",
+                                "label": "Varsovie (Paris)",
+                                "links": [
+                                ],
+                                "name": "Varsovie"
+                            }
+                        },
+                        {
+                            "additional_informations": [
+                            ],
+                            "arrival_date_time": "20170413T143100",
+                            "base_arrival_date_time": "20170413T143100",
+                            "base_departure_date_time": "20170413T143100",
+                            "departure_date_time": "20170413T143100",
+                            "links": [
+                            ],
+                            "stop_point": {
+                                "codes": [
+                                    {
+                                        "type": "ZDEr_ID_REF_A",
+                                        "value": "9107"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF59:3812994"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopPoint:59:3812994"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.859212",
+                                    "lon": "2.292774"
+                                },
+                                "equipments": [
+                                ],
+                                "id": "stop_point:OIF:SP:59:3812994",
+                                "label": "Tour Eiffel (Paris)",
+                                "links": [
+                                ],
+                                "name": "Tour Eiffel"
+                            }
+                        }
+                    ],
+                    "to": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59:3812994",
+                        "name": "Tour Eiffel (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "9107"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59:3812994"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59:3812994"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.859212",
+                                "lon": "2.292774"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59:3812994",
+                            "label": "Tour Eiffel (Paris)",
+                            "links": [
+                            ],
+                            "name": "Tour Eiffel",
+                            "stop_area": {
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8739305"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.8572",
+                                    "lon": "2.293234"
+                                },
+                                "id": "stop_area:OIF:SA:8739305",
+                                "label": "Champ de Mars Tour Eiffel (Paris)",
+                                "links": [
+                                ],
+                                "name": "Champ de Mars Tour Eiffel",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "type": "public_transport"
+                },
+                {
+                    "arrival_date_time": "20170413T143254",
+                    "co2_emission": {
+                        "unit": "",
+                        "value": 0.0
+                    },
+                    "departure_date_time": "20170413T143100",
+                    "duration": 114,
+                    "from": {
+                        "embedded_type": "stop_point",
+                        "id": "stop_point:OIF:SP:59:3812994",
+                        "name": "Tour Eiffel (Paris)",
+                        "quality": 0,
+                        "stop_point": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                },
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "codes": [
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "9107"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59:3812994"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59:3812994"
+                                },
+                                {
+                                    "type": "ZDEr_ID_REF_A",
+                                    "value": "9107"
+                                },
+                                {
+                                    "type": "external_code",
+                                    "value": "OIF59:3812994"
+                                },
+                                {
+                                    "type": "source",
+                                    "value": "StopPoint:59:3812994"
+                                }
+                            ],
+                            "commercial_modes": [
+                                {
+                                    "id": "commercial_mode:bus",
+                                    "name": "Bus"
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.859212",
+                                "lon": "2.292774"
+                            },
+                            "equipments": [
+                            ],
+                            "id": "stop_point:OIF:SP:59:3812994",
+                            "label": "Tour Eiffel (Paris)",
+                            "links": [
+                            ],
+                            "name": "Tour Eiffel",
+                            "physical_modes": [
+                                {
+                                    "id": "physical_mode:Bus",
+                                    "name": "Bus"
+                                }
+                            ],
+                            "stop_area": {
+                                "administrative_regions": [
+                                    {
+                                        "coord": {
+                                            "lat": "48.856609",
+                                            "lon": "2.351499"
+                                        },
+                                        "id": "admin:fr:75056",
+                                        "insee": "75056",
+                                        "label": "Paris",
+                                        "level": 8,
+                                        "name": "Paris",
+                                        "zip_code": ""
+                                    }
+                                ],
+                                "codes": [
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8739305"
+                                    },
+                                    {
+                                        "type": "external_code",
+                                        "value": "OIF8739305"
+                                    },
+                                    {
+                                        "type": "source",
+                                        "value": "StopArea:8739305"
+                                    }
+                                ],
+                                "coord": {
+                                    "lat": "48.8572",
+                                    "lon": "2.293234"
+                                },
+                                "id": "stop_area:OIF:SA:8739305",
+                                "label": "Champ de Mars Tour Eiffel (Paris)",
+                                "links": [
+                                ],
+                                "name": "Champ de Mars Tour Eiffel",
+                                "timezone": "Europe/Paris"
+                            }
+                        }
+                    },
+                    "geojson": {
+                        "coordinates": [
+                            [
+                                2.292774,
+                                48.859212
+                            ],
+                            [
+                                2.2928096264,
+                                48.8592569129
+                            ],
+                            [
+                                2.293044,
+                                48.859071
+                            ],
+                            [
+                                2.293156,
+                                48.858976
+                            ],
+                            [
+                                2.293032,
+                                48.858893
+                            ],
+                            [
+                                2.2922745574,
+                                48.8584013995
+                            ],
+                            [
+                                2.2922745574,
+                                48.8584013995
+                            ]
+                        ],
+                        "properties": [
+                            {
+                                "length": 127
+                            }
+                        ],
+                        "type": "LineString"
+                    },
+                    "id": "section_5_0",
+                    "links": [
+                    ],
+                    "mode": "walking",
+                    "path": [
+                        {
+                            "direction": 0,
+                            "duration": 34,
+                            "length": 38,
+                            "name": "Pont d'I\u00e9na"
+                        },
+                        {
+                            "direction": 82,
+                            "duration": 80,
+                            "length": 90,
+                            "name": "Quai Branly"
+                        }
+                    ],
+                    "to": {
+                        "address": {
+                            "administrative_regions": [
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                },
+                                {
+                                    "coord": {
+                                        "lat": "48.856609",
+                                        "lon": "2.351499"
+                                    },
+                                    "id": "admin:fr:75056",
+                                    "insee": "75056",
+                                    "label": "Paris",
+                                    "level": 8,
+                                    "name": "Paris",
+                                    "zip_code": ""
+                                }
+                            ],
+                            "coord": {
+                                "lat": "48.8583736",
+                                "lon": "2.2922926"
+                            },
+                            "house_number": 69,
+                            "id": "2.2922926;48.8583736",
+                            "label": "69 Quai Branly (Paris)",
+                            "name": "Quai Branly"
+                        },
+                        "embedded_type": "address",
+                        "id": "2.2922926;48.8583736",
+                        "name": "69 Quai Branly (Paris)",
+                        "quality": 0
+                    },
+                    "type": "street_network"
+                }
+            ],
+            "status": "",
+            "tags": [
+                "walking",
+                "ecologic"
+            ],
+            "type": "less_fallback_walk"
+        }
