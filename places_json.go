@@ -6,6 +6,7 @@ import (
 	"github.com/pkg/errors"
 )
 
+// UnmarshalJSON implements json.Unmarshaler for PlacesResults
 func (res *PlacesResults) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	data := &struct {

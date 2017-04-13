@@ -15,6 +15,7 @@ type PlacesResults struct {
 	session *Session
 }
 
+// String implements Stringer and pretty-prints a PlacesResults
 func (res PlacesResults) String() string {
 	var msg string
 	for i, place := range res.Places {
@@ -23,6 +24,7 @@ func (res PlacesResults) String() string {
 	return msg
 }
 
+// PlacesRequest is the query you need to build before passing it to Places
 type PlacesRequest struct {
 	Query string // The search item
 
@@ -32,7 +34,7 @@ type PlacesRequest struct {
 
 	AdminURI []string // If given it will filter the search by specific admin uris
 
-	DisableGeoJson bool
+	DisableGeoJSON bool
 
 	Around types.Coordinates // If given, it will prioritize objects around these coordinates
 
@@ -54,7 +56,7 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 		params["admin_uri[]"] = req.AdminURI
 	}
 
-	if req.DisableGeoJson {
+	if req.DisableGeoJSON {
 		params["disable_geojson"] = []string{"true"}
 	}
 
@@ -83,7 +85,7 @@ func (s *Session) Places(params PlacesRequest) (*PlacesResults, error) {
 	return s.places(url, params)
 }
 
-// Places search in all geographical objects within a given region using their names, returning a list of places.
+// PlacesR search in all geographical objects within a given region using their names, returning a list of places.
 func (s *Session) PlacesR(params PlacesRequest, regionID string) (*PlacesResults, error) {
 	// Create the URL
 	url := s.APIURL + "/coverage/" + regionID + "/" + placesEndpoint
