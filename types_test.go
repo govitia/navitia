@@ -2,7 +2,6 @@ package types
 
 import (
 	"flag"
-	"fmt"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"os"
@@ -43,8 +42,6 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
-
-	fmt.Printf("Loaded: %#v\n", testData)
 }
 
 func load() error {
