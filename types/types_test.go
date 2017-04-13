@@ -53,7 +53,7 @@ func load() error {
 	// Iterate through the subdirs
 	for _, dinfo := range subdirs {
 		if dinfo.IsDir() {
-			dpath := filepath.Join(testDataPath, dinfo.Name())
+			dpath := filepath.Join(testDataPath, dinfo.Name(), "known")
 			files, err := ioutil.ReadDir(dpath)
 			if err != nil {
 				return errors.Wrapf(err, "error while reading %s's files", dpath)
@@ -65,7 +65,7 @@ func load() error {
 				fileName := finfo.Name()
 
 				// Open it
-				path := filepath.Join(testDataPath, dinfo.Name(), fileName)
+				path := filepath.Join(dpath, fileName)
 				f, err := os.Open(path)
 				if err != nil {
 					return err
