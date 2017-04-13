@@ -51,7 +51,7 @@ func TestJourneyString(t *testing.T) {
 		Sections:  []Section{section},
 	}
 
-	want := "Boulevard d'Algérie (11/04 @ 21:33) --(50m18s)--> Boulevard Arago (11/04 @ 22:24)\n\tBoulevard d'Algérie (11/04 @ 21:33) --(Métro 11 | 50m18s)--> Boulevard Arago (11/04 @ 22:24)"
+	want := "Boulevard d'Algérie (11/04 @ 21:33) --(50m18s)--> Boulevard Arago (11/04 @ 22:24)\n\t0: Boulevard d'Algérie (11/04 @ 21:33) --(Métro 11 | 50m18s)--> Boulevard Arago (11/04 @ 22:24)"
 
 	if journey.String() != want {
 		t.Error("Output of String isn't what was expected")
