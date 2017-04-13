@@ -64,11 +64,26 @@ type Journey struct {
 }
 
 // String pretty-prints the journey
+// Warning: it is possible for a journey to have From and/or To nil, in those cases it will be replaced by "unknown"
 // WIP, later let's add more of the data
 func (j Journey) String() string {
-	format := "%s (%s) --(%s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
+	// However, it is possible for a journey not to have From and/or To information !
+	// As such, in those cases it will be marked as "unknown"
+	var format string = "%s (%s) --(%s)--> %s (%s)" // in the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
 	timeFormat := "02/01 @ 15:04"
-	message := fmt.Sprintf(format, j.From.PlaceName(), j.Departure.Format(timeFormat), j.Duration.String(), j.To.PlaceName(), j.Arrival.Format(timeFormat))
+
+	var (
+		from string = "unknown"
+		to   string = "unknown"
+	)
+	if j.From != nil {
+		from = j.From.PlaceName()
+	}
+	if j.To != nil {
+		to = j.To.PlaceName()
+	}
+
+	message := fmt.Sprintf(format, from, j.Departure.Format(timeFormat), j.Duration.String(), to, j.Arrival.Format(timeFormat))
 	for _, section := range j.Sections {
 		message += "\n\t" + section.String()
 	}

@@ -92,6 +92,7 @@ type Section struct {
 }
 
 // String satisfies Stringer
+// Warning: it is possible for a section to have From and/or To nil, in those cases it will be replaced by "unknown"
 func (s Section) String() string {
 	var info string
 	if s.Display.Label != "" && s.Display.PhysicalMode != "" {
@@ -99,9 +100,23 @@ func (s Section) String() string {
 	} else if s.Mode != "" {
 		info = string(s.Mode)
 	}
+
+	// Warning: it is possible for a section not to have From and/or To information !
+	// As such, in those cases it will be marked as "unknown"
+	var (
+		from string = "unknown"
+		to   string = "unknown"
+	)
+	if s.From != nil {
+		from = s.From.PlaceName()
+	}
+	if s.To != nil {
+		to = s.To.PlaceName()
+	}
+
 	format := "%s (%s) --(%s | %s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
 	timeFormat := "02/01 @ 15:04"
-	return fmt.Sprintf(format, s.From.PlaceName(), s.Departure.Format(timeFormat), info, s.Duration.String(), s.To.PlaceName(), s.Arrival.Format(timeFormat))
+	return fmt.Sprintf(format, from, s.Departure.Format(timeFormat), info, s.Duration.String(), to, s.Arrival.Format(timeFormat))
 }
 
 // A StopTime stores info about a stop in a route: when the vehicle comes in, when it comes out, and what stop it is.
