@@ -1,1 +1,41 @@
-{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"RATMKFDO"},{"type":"source","value":"MKFDO"}],"name":"Malakoff \u2014 Rue Etienne Dolet","links":[],"coord":{"lat":"48.814668","lon":"2.296999"},"label":"Malakoff \u2014 Rue Etienne Dolet (Malakoff)","administrative_regions":[{"insee":"92046","name":"Malakoff","level":8,"coord":{"lat":"48.817406","lon":"2.297158"},"label":"Malakoff (92240)","id":"admin:fr:92046","zip_code":"92240"}],"timezone":"Europe\/Paris","id":"stop_area:RAT:SA:MKFDO"},"name":"Malakoff \u2014 Rue Etienne Dolet (Malakoff)","id":"stop_area:RAT:SA:MKFDO"}
+{
+	"embedded_type": "stop_area",
+	"quality": 60,
+	"stop_area": {
+		"codes": [
+			{
+				"type": "external_code",
+				"value": "RATMKFDO"
+			},
+			{
+				"type": "source",
+				"value": "MKFDO"
+			}
+		],
+		"name": "Malakoff \u2014 Rue Etienne Dolet",
+		"links": [],
+		"coord": {
+			"lat": "48.814668",
+			"lon": "2.296999"
+		},
+		"label": "Malakoff \u2014 Rue Etienne Dolet (Malakoff)",
+		"administrative_regions": [
+			{
+				"insee": "92046",
+				"name": "Malakoff",
+				"level": 8,
+				"coord": {
+					"lat": "48.817406",
+					"lon": "2.297158"
+				},
+				"label": "Malakoff (92240)",
+				"id": "admin:fr:92046",
+				"zip_code": "92240"
+			}
+		],
+		"timezone": "Europe\/Paris",
+		"id": "stop_area:RAT:SA:MKFDO"
+	},
+	"name": "Malakoff \u2014 Rue Etienne Dolet (Malakoff)",
+	"id": "stop_area:RAT:SA:MKFDO"
+}
