@@ -19,6 +19,9 @@ func (id ID) Check() error {
 
 // QueryEscape formats the given ID so that it can be safely used in a URL query
 func (id ID) QueryEscape() string {
+	if strings.Contains(string(id), ";") {
+		return string(id)
+	}
 	return url.QueryEscape(string(id))
 }
 
