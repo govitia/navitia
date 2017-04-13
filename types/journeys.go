@@ -84,8 +84,8 @@ func (j Journey) String() string {
 	}
 
 	message := fmt.Sprintf(format, from, j.Departure.Format(timeFormat), j.Duration.String(), to, j.Arrival.Format(timeFormat))
-	for _, section := range j.Sections {
-		message += "\n\t" + section.String()
+	for i, section := range j.Sections {
+		message += fmt.Sprintf("\n\t%d: %s",i,section.String())
 	}
 	return message
 }
