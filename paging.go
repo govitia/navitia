@@ -1,4 +1,4 @@
-package gonavitia
+package navitia
 
 // Paging olds key paging information
 type Paging struct {

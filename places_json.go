@@ -1,8 +1,8 @@
-package gonavitia
+package navitia
 
 import (
 	"encoding/json"
-	"github.com/aabizri/gonavitia/types"
+	"github.com/aabizri/navitia/types"
 	"github.com/pkg/errors"
 )
 

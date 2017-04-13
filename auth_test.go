@@ -1,4 +1,4 @@
-package gonavitia
+package navitia
 
 import (
 	"testing"

@@ -1,8 +1,8 @@
-package gonavitia
+package navitia
 
 import (
 	"fmt"
-	"github.com/aabizri/gonavitia/types"
+	"github.com/aabizri/navitia/types"
 	"net/url"
 	"strconv"
 	"time"

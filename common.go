@@ -1,3 +1,3 @@
-package gonavitia
+package navitia
 
 type datetime string
