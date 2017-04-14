@@ -1,2 +1,2 @@
 *.zip
-workdir
+Fuzz*Dir/
