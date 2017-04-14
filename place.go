@@ -96,7 +96,7 @@ func (pc PlaceCountainer) IsEmpty() bool {
 	return pc == empty
 }
 
-// Checks the validity of the PlaceCountainer. Returns an ErrInvalidPlaceCountainer.
+// Check checks the validity of the PlaceCountainer. Returns an ErrInvalidPlaceCountainer.
 //
 // An empty PlaceCountainer is valid. But those cases aren't:
 // 	- If the PlaceCountainer has a zero ID.
@@ -136,9 +136,9 @@ func (pc PlaceCountainer) Check() error {
 	emptyErr := ErrInvalidPlaceCountainer{}
 	if err != emptyErr {
 		return err
-	} else {
-		return nil
 	}
+
+	return nil
 }
 
 // Place returns the Place countained in the PlaceCountainer

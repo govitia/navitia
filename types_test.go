@@ -46,7 +46,7 @@ type typeTestData struct {
 }
 
 // testData stores a map which maps each category to their data
-var testData map[string]typeTestData = make(map[string]typeTestData, len(typesList))
+var testData = make(map[string]typeTestData, len(typesList))
 
 // this is the list of potential types
 // must be lower case
@@ -94,10 +94,10 @@ func extractKnown(path string) (map[string]testPair, error) {
 		name := finfo.Name()
 
 		// Build the path
-		path := filepath.Join(path, name)
+		filePath := filepath.Join(path, name)
 
 		// Open the file
-		file, err := os.Open(path)
+		file, err := os.Open(filePath)
 		if err != nil {
 			return testpairs, err
 		}
@@ -135,10 +135,10 @@ func extractCorpus(path string) (map[string][]byte, error) {
 		name := finfo.Name()
 
 		// Build the path
-		path := filepath.Join(path, name)
+		dirPath := filepath.Join(path, name)
 
 		// Open the file
-		file, err := os.Open(path)
+		file, err := os.Open(dirPath)
 		if err != nil {
 			return corpus, err
 		}
@@ -173,10 +173,10 @@ func extractBench(path string) (map[string][]byte, error) {
 		name := finfo.Name()
 
 		// Build the path
-		path := filepath.Join(path, name)
+		filePath := filepath.Join(path, name)
 
 		// Open the file
-		file, err := os.Open(path)
+		file, err := os.Open(filePath)
 		if err != nil {
 			return bench, err
 		}
@@ -257,9 +257,6 @@ func load() error {
 
 	// Subloads
 	err = loadPC()
-	if err != nil {
-		return err
-	}
 
-	return nil
+	return err
 }

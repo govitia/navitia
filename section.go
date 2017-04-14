@@ -104,8 +104,8 @@ func (s Section) String() string {
 	// Warning: it is possible for a section not to have From and/or To information !
 	// As such, in those cases it will be marked as "unknown"
 	var (
-		from string = "unknown"
-		to   string = "unknown"
+		from = "unknown"
+		to   = "unknown"
 	)
 	if s.From != nil {
 		from = s.From.PlaceName()

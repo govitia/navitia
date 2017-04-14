@@ -19,9 +19,9 @@ func FuzzPlaceCountainer(data []byte) int {
 		return 0
 	}
 
-	place.PlaceName()
-	place.PlaceID()
-	place.PlaceType()
+	_ = place.PlaceName()
+	_ = place.PlaceID()
+	_ = place.PlaceType()
 
 	return 1
 }

@@ -105,7 +105,7 @@ func BenchmarkJourneyUnmarshal(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				// Unmarshal a Journey
 				var j = &Journey{}
-				j.UnmarshalJSON(in)
+				_ = j.UnmarshalJSON(in)
 			}
 		}
 	}

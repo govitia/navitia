@@ -12,7 +12,7 @@ func FuzzRegion(data []byte) int {
 	}
 
 	// Now that it is unmarshalled, let's the string method !
-	r.String()
+	_ = r.String()
 
 	return 1
 }

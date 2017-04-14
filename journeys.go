@@ -69,12 +69,12 @@ type Journey struct {
 func (j Journey) String() string {
 	// However, it is possible for a journey not to have From and/or To information !
 	// As such, in those cases it will be marked as "unknown"
-	var format string = "%s (%s) --(%s)--> %s (%s)" // in the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
+	var format = "%s (%s) --(%s)--> %s (%s)" // in the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
 	timeFormat := "02/01 @ 15:04"
 
 	var (
-		from string = "unknown"
-		to   string = "unknown"
+		from = "unknown"
+		to   = "unknown"
 	)
 	if j.From != nil {
 		from = j.From.PlaceName()
