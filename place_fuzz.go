@@ -13,7 +13,8 @@ func FuzzPlaceCountainer(data []byte) int {
 		return 0
 	}
 
-	// Now that it is unmarshalled, let's test the Place method !
+	// Let's test the .Place method !
+	// No need to check before as .Check is called in .Place !
 	place, err := pc.Place()
 	if err != nil {
 		return 0
