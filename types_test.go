@@ -174,7 +174,6 @@ func extractBench(path string) (map[string][]byte, error) {
 
 		// Build the path
 		path := filepath.Join(path, name)
-		fmt.Printf("Adding %s to bench files\n", path)
 
 		// Open the file
 		file, err := os.Open(path)
@@ -205,15 +204,12 @@ func getCategory(path string) (typeTestData, error) {
 	if err != nil {
 		return data, err
 	}
-	fmt.Printf("Category subdirs (%s)\n", path)
 
 	// Iterate through the subdirs
 	for _, dinfo := range subdirs {
-		fmt.Printf("Iterate through %s...\n", dinfo.Name())
 		if dinfo.IsDir() {
 			switch dinfo.Name() {
 			case "known":
-				fmt.Println("Calling known")
 				knownPath := filepath.Join(path, "known")
 				data.known, err = extractKnown(knownPath)
 				if err != nil {
