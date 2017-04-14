@@ -1,13 +1,11 @@
 package types
 
 import (
-	"encoding/json"
-	"strconv"
 	"testing"
 	"time"
 )
 
-// TestJourneyString tests the String method
+// TestJourneyString tests the String method without first unmarshalling
 func TestJourneyString(t *testing.T) {
 	from := Address{
 		ID:    "2.399803859568057;48.88150165806373",
@@ -63,34 +61,61 @@ func TestJourneyString(t *testing.T) {
 // TestJourneyUnmarshal_NoCompare tries to unmarshal all json test data for this type, but doesn't compare its response to a known correct output.
 func TestJourneyUnmarshal_NoCompare(t *testing.T) {
 	// Get the input
-	input := testData["journey"]
-	if len(input) == 0 {
+	pairs := testData["journey"].known
+	if len(pairs) == 0 {
 		t.Skip("No data to test")
 	}
 
-	// For each of them, let's run a subtest
-	for i, file := range input {
-		// Create a name for this run
-		var name string
-		stat, err := file.Stat()
-		if err != nil {
-			t.Errorf("Error while retrieving name for pass %d: %v", i, err)
-			name = strconv.Itoa(i)
-		} else {
-			name = stat.Name()
-		}
-
-		// Create the run function
-		rfunc := func(t *testing.T) {
+	// Create the run function generator, allowing us to run this in parallel
+	rgen := func(data []byte) func(t *testing.T) {
+		return func(t *testing.T) {
 			var j = &Journey{}
-			dec := json.NewDecoder(file)
-			err := dec.Decode(j)
+
+			err := j.UnmarshalJSON(data)
 			if err != nil {
 				t.Errorf("Error while unmarshalling: %v", err)
 			}
+
+			str := j.String()
+			t.Log("\n" + str)
 		}
+	}
+
+	// For each of them, let's run a subtest
+	for name, pair := range pairs {
+		// Get the run function
+		rfunc := rgen(pair.raw)
 
 		// Run !
 		t.Run(name, rfunc)
+	}
+}
+
+// BenchmarkJourneyUnmarshal benchmarks Journey unmarshalling via subbenchmarks
+func BenchmarkJourneyUnmarshal(b *testing.B) {
+	// Get the bench data
+	data := testData["journey"].bench
+	if len(data) == 0 {
+		b.Skip("No data to test")
+	}
+
+	// Run function generator, allowing parallel run
+	runGen := func(in []byte) func(*testing.B) {
+		return func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				// Unmarshal a Journey
+				var j = &Journey{}
+				j.UnmarshalJSON(in)
+			}
+		}
+	}
+
+	// Loop over all corpus
+	for name, datum := range data {
+		// Get run function
+		runFunc := runGen(datum)
+
+		// Run it !
+		b.Run(name, runFunc)
 	}
 }
