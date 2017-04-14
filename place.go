@@ -145,7 +145,7 @@ func (pc PlaceCountainer) Check() error {
 // If PlaceCountainer is empty, Place returns (nil,nil).
 // Check() is run on the PlaceCountainer.
 func (pc PlaceCountainer) Place() (Place, error) {
-	// If PlaceCountainer is empty, return nil
+	// If PlaceCountainer is empty, return a nil Place
 	empty := PlaceCountainer{}
 	if pc == empty {
 		return nil, nil
