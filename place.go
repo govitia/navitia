@@ -29,7 +29,7 @@ type Place interface {
 }
 
 // PlaceCountainer is the ugly countainer sent by Navitia to make us all cry.
-// However, as this can be useful. May be removed from the public API in gonavitia v0.
+// However, this can be useful. May be removed from the public API in gonavitia v0.
 type PlaceCountainer struct {
 	ID           ID     `json:"id"`
 	Name         string `json:"name"`
@@ -96,6 +96,22 @@ func (pc PlaceCountainer) IsEmpty() bool {
 	return pc == empty
 }
 
+var placeTypes = []string{
+	embeddedStopArea,
+	embeddedPOI,
+	embeddedAddress,
+	embeddedStopPoint,
+	embeddedAddress,
+}
+
+const (
+	embeddedStopArea  string = "stop_area"
+	embeddedPOI              = "poi"
+	embeddedAddress          = "address"
+	embeddedStopPoint        = "stop_point"
+	embeddedAdmin            = "administrative_region"
+)
+
 // Check checks the validity of the PlaceCountainer. Returns an ErrInvalidPlaceCountainer.
 //
 // An empty PlaceCountainer is valid. But those cases aren't:
@@ -116,15 +132,15 @@ func (pc PlaceCountainer) Check() error {
 	// Also check for empty and unknown embedded type
 	absent := &err.NilConcretePlaceValue
 	switch pc.EmbeddedType {
-	case "stop_area":
+	case embeddedStopArea:
 		*absent = (pc.StopArea == nil)
-	case "poi":
+	case embeddedPOI:
 		*absent = (pc.POI == nil)
-	case "address":
+	case embeddedAddress:
 		*absent = (pc.Address == nil)
-	case "stop_point":
+	case embeddedStopPoint:
 		*absent = (pc.StopPoint == nil)
-	case "administrative_region":
+	case embeddedAdmin:
 		*absent = (pc.AdministrativeRegion == nil)
 	default:
 		// Check for an empty embedded type
@@ -159,15 +175,15 @@ func (pc PlaceCountainer) Place() (Place, error) {
 
 	// Check for each type
 	switch pc.EmbeddedType {
-	case "stop_area":
+	case embeddedStopArea:
 		return pc.StopArea, nil
-	case "poi":
+	case embeddedPOI:
 		return pc.POI, nil
-	case "address":
+	case embeddedAddress:
 		return pc.Address, nil
-	case "stop_point":
+	case embeddedStopPoint:
 		return pc.StopPoint, nil
-	case "administrative_region":
+	case embeddedAdmin:
 		return pc.AdministrativeRegion, nil
 	default:
 		return nil, errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType) // THIS IS VERY SERIOUS AS WE ALREADY CHECKED THE STRUCTURE
@@ -209,7 +225,7 @@ func (sa StopArea) PlaceName() string {
 // PlaceType returns the type of place, in this case "stop_area"
 // Helps satisfy Place
 func (sa StopArea) PlaceType() string {
-	return "stop_area"
+	return embeddedStopArea
 }
 
 // String pretty-prints the StopArea.
@@ -254,7 +270,7 @@ func (poi POI) PlaceName() string {
 // PlaceType returns the type of place, in this case "poi".
 // Helps satisfy Place
 func (poi POI) PlaceType() string {
-	return "poi"
+	return embeddedPOI
 }
 
 // String pretty-prints the POI.
@@ -313,7 +329,7 @@ func (add Address) PlaceName() string {
 // PlaceType returns the type of place, in this case "address"
 // Helps satisfy Place
 func (add Address) PlaceType() string {
-	return "address"
+	return embeddedAddress
 }
 
 // String pretty-prints the Address.
@@ -365,7 +381,7 @@ func (sp StopPoint) PlaceName() string {
 // PlaceType returns the type of place, in this case "stop_point"
 // Helps satisfy Place
 func (sp StopPoint) PlaceType() string {
-	return "stop_point"
+	return embeddedStopPoint
 }
 
 // String pretty-prints the StopPoint.
@@ -411,7 +427,7 @@ func (ar AdministrativeRegion) PlaceName() string {
 // PlaceType returns the type of place, in this case "administrative_region"
 // Helps satisfy Place
 func (ar AdministrativeRegion) PlaceType() string {
-	return "administrative_region"
+	return embeddedAdmin
 }
 
 // String pretty-prints the AdministrativeRegion.
