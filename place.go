@@ -158,13 +158,13 @@ func (pc PlaceCountainer) Check() error {
 }
 
 // Place returns the Place countained in the PlaceCountainer
-// If PlaceCountainer is empty, Place returns (nil,nil).
+// If PlaceCountainer is empty, Place returns an error.
 // Check() is run on the PlaceCountainer.
 func (pc PlaceCountainer) Place() (Place, error) {
-	// If PlaceCountainer is empty, return a nil Place
+	// If PlaceCountainer is empty, return an error
 	empty := PlaceCountainer{}
 	if pc == empty {
-		return nil, nil
+		return nil, errors.Errorf("this place countainer is empty, can't extract a Place from it")
 	}
 
 	// Check validity
@@ -186,7 +186,7 @@ func (pc PlaceCountainer) Place() (Place, error) {
 	case embeddedAdmin:
 		return pc.AdministrativeRegion, nil
 	default:
-		return nil, errors.Errorf("No known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType) // THIS IS VERY SERIOUS AS WE ALREADY CHECKED THE STRUCTURE
+		return nil, errors.Errorf("no known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType) // THIS IS VERY SERIOUS AS WE ALREADY CHECKED THE STRUCTURE
 	}
 }
 
