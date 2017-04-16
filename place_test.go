@@ -33,7 +33,7 @@ func loadPC() error {
 	return nil
 }
 
-// TestPlaceCountainer_Place_NoCompare tries to unmarshal all json test data for this type, and then call a few functions on it.
+// TestPlaceCountainer_Place_NoCompare tests the PlaceCountainer.Place method
 func TestPlaceCountainer_Place_NoCompare(t *testing.T) {
 	// Get the input
 	data := placeCountainers
@@ -67,6 +67,7 @@ func TestPlaceCountainer_Place_NoCompare(t *testing.T) {
 	}
 }
 
+// TestPlaceCountainer_Check_NoCompare tests the PlaceCountainer.Check method
 func TestPlaceCountainer_Check_NoCompare(t *testing.T) {
 	// Get the input
 	data := placeCountainers
