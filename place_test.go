@@ -94,3 +94,38 @@ func TestPlaceCountainer_Check_NoCompare(t *testing.T) {
 		t.Run(name, rfunc)
 	}
 }
+
+// BenchmarkPlaceCountainerCheck benchmarks Place.Check through subbenchmarks
+func BenchmarkPlaceCountainerCheck(b *testing.B) {
+	// Get the bench data
+	data := testData["place"].bench
+	if len(data) == 0 {
+		b.Skip("No data to test")
+	}
+
+	// Run function generator, allowing parallel run
+	runGen := func(in PlaceCountainer) func(*testing.B) {
+		return func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				// Call .Check
+				_ = in.Check()
+			}
+		}
+	}
+
+	// Loop over all corpus
+	for name, datum := range data {
+		var pc = PlaceCountainer{}
+
+		err := json.Unmarshal(datum, &pc)
+		if err != nil {
+			b.Errorf("Error while unmarshalling: %v", err)
+		}
+
+		// Get run function
+		runFunc := runGen(pc)
+
+		// Run it !
+		b.Run(name, runFunc)
+	}
+}
