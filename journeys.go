@@ -9,6 +9,9 @@ import (
 )
 
 // JourneyResults countains the results of a Journey request
+//
+// Warning: types.Journey.From / types.Journey.To aren't garanteed to be filled.
+// Based on very basic inspection, it seems they aren't filled when there are sections...
 type JourneyResults struct {
 	Journeys []types.Journey
 
