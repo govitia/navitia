@@ -162,8 +162,7 @@ func (pc PlaceCountainer) Check() error {
 // Check() is run on the PlaceCountainer.
 func (pc PlaceCountainer) Place() (Place, error) {
 	// If PlaceCountainer is empty, return an error
-	empty := PlaceCountainer{}
-	if pc == empty {
+	if pc.IsEmpty() {
 		return nil, errors.Errorf("this place countainer is empty, can't extract a Place from it")
 	}
 
