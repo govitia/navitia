@@ -4,7 +4,11 @@ import (
 	"fmt"
 )
 
-// Coordinates code for coordinates
+// Coordinates code for coordinates used throughout the API
+//
+// This is the Go representation of "Coord"
+//
+// See http://doc.navitia.io/#standard-objects
 type Coordinates struct {
 	Latitude  float64 `json:"lat"`
 	Longitude float64 `json:"lon"`

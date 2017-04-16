@@ -9,7 +9,7 @@ import (
 // A JourneyQualification qualifies a Journey, see const declaration.
 type JourneyQualification string
 
-// JourneySomething qualify journeys
+// JourneyXXX qualify journeys
 const (
 	JourneyBest          JourneyQualification = "best"
 	JourneyRapid                              = "rapid"
