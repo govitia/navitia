@@ -29,7 +29,7 @@ package types
 import "time"
 
 // Version is the version of this package
-const Version = "dev"
+const Version = "v0.1"
 
 // DataFreshness codes for a specific data freshness requirement: realtime or base_schedule
 type DataFreshness string
