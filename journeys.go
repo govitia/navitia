@@ -24,19 +24,21 @@ const (
 	JourneyNoPTBikeShare                      = "non_pt_bss"
 )
 
-// JourneyQualifications is a user-friendly map of all journey qualification
-var JourneyQualifications = map[string]JourneyQualification{
-	"Best":                                   JourneyBest,
-	"Rapid":                                  JourneyRapid,
-	"Comfort":                                JourneyComfort,
-	"Car":                                    JourneyCar,
-	"Less walking":                           JourneyLessWalk,
-	"Less biking":                            JourneyLessBike,
-	"Less bike sharing":                      JourneyLessBikeShare,
-	"Fastest":                                JourneyFastest,
-	"No public transit, prefer walking":      JourneyNoPTWalk,
-	"No public transit, prefer biking":       JourneyNoPTBike,
-	"No public transit, prefer bike-sharing": JourneyNoPTBikeShare,
+// JourneyQualifications is a user-friendly slice of all journey qualification
+//
+// As it might be used in requests, this is exported
+var JourneyQualifications = []JourneyQualification{
+	JourneyBest,
+	JourneyRapid,
+	JourneyComfort,
+	JourneyCar,
+	JourneyLessWalk,
+	JourneyLessBike,
+	JourneyLessBikeShare,
+	JourneyFastest,
+	JourneyNoPTWalk,
+	JourneyNoPTBike,
+	JourneyNoPTBikeShare,
 }
 
 // A Journey holds information about a possible journey
