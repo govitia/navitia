@@ -20,15 +20,29 @@ const (
 	EquipmentBikeDepot                         = "has_bike_depot"
 )
 
-// Equipments is a map of equipments to their description
-var Equipments = map[Equipment]string{
-//TODO
+// knownEquipments lists all the known equipments
+var knownEquipments = []Equipment{
+	EquipmentWheelchairAccessibility,
+	EquipmentBikeAccepted,
+	EquipmentAirConditioned,
+	EquipmentVisualAnnouncement,
+	EquipmentAudibleAnnouncement,
+	EquipmentAppropriateEscort,
+	EquipmentAppropriateSignage,
+	EquipmentSchoolVehicle,
+	EquipmentWheelchairBoarding,
+	EquipmentSheltered,
+	EquipmentElevator,
+	EquipmentEscalator,
+	EquipmentBikeDepot,
 }
 
-// Equipment can be stringified with its description
-func (eq Equipment) String() string {
-	if desc, ok := Equipments[eq]; ok {
-		return desc
+// Known reports whether an equipment is known
+func (eq Equipment) Known() bool {
+	for _, k := range knownEquipments {
+		if eq == k {
+			return true
+		}
 	}
-	return string(eq)
+	return false
 }
