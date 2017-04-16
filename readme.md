@@ -2,7 +2,7 @@
 
 Package types implements support for the types used in the Navitia API (see doc.navitia.io), simplified and modified for idiomatic Go use.
 
-This is version 0.1 of the package. It is not completely API-Stable, and won't be until the v1 release, however stability shouldn't be too affected.
+This is version -dev of the package. It is not completely API-Stable, and won't be until the v1 release, however stability shouldn't be too affected.
 
 This package was and is developped as a supporting library for the [navitia API client](https://github.com/aabizri/navitia) but can be used to build other navitia API clients.
 
