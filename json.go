@@ -44,6 +44,9 @@ func parseDateTime(datetime string) (time.Time, error) {
 // UnmarshalError is returned when unmarshalling fails
 // It implements both error and github.com/pkg/errors's causer
 type UnmarshalError struct {
+	// Type on which the unmarshaller where the error occured works
+	Type string
+
 	// JSON Key where failure occured
 	Key string
 
@@ -67,7 +70,7 @@ func (err UnmarshalError) Cause() error {
 
 // Error implements error
 func (err UnmarshalError) Error() string {
-	msg := fmt.Sprintf("Unmarshalling %s (json: \"%s\") with value \"%v\" failed", err.Name, err.Key, err.Value)
+	msg := fmt.Sprintf("(*%s).UnmarshalJSON: Unmarshalling %s (json: \"%s\") with value \"%v\" failed", err.Type, err.Name, err.Key, err.Value)
 	if err.Message != "" {
 		msg += ": " + err.Message
 	}
@@ -77,9 +80,27 @@ func (err UnmarshalError) Error() string {
 	return msg
 }
 
-// unmarshalErr creates a new UnmarshalError
-func unmarshalErr(underlyingErr error, name string, key string, value interface{}, message string) error {
+// unmarshalErrorer allows us to make better error messages
+type unmarshalErrorMaker struct {
+	Type string
+}
+
+// err creates a new UnmarshalError
+func (gen unmarshalErrorMaker) err(underlyingErr error, name string, key string, value interface{}, message string) error {
 	return UnmarshalError{
+		Type:       gen.Type,
+		Key:        key,
+		Name:       name,
+		Value:      value,
+		Message:    message,
+		Underlying: underlyingErr,
+	}
+}
+
+// unmarshalErr creates a new UnmarshalError
+func unmarshalErr(underlyingErr error, type_ string, name string, key string, value interface{}, message string) error {
+	return UnmarshalError{
+		Type:       type_,
 		Key:        key,
 		Name:       name,
 		Value:      value,

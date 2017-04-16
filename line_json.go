@@ -32,6 +32,9 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 		PhysicalModes:  &l.PhysicalModes,
 	}
 
+	// Create the error generator
+	gen := unmarshalErrorMaker{"Line"}
+
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
@@ -44,7 +47,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	if str := data.Color; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return errors.Wrapf(err, "Line.UnmarshalJSON: error while parsing color (given \"color\":\"%s\")", str)
+			return gen.err(err, "Color", "color", str, "error in parseColor")
 		}
 		l.Color = clr
 	}
@@ -77,14 +80,14 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 		t := &l.OpeningTime
 		t.Hours, t.Minutes, t.Seconds, err = parseTime(str)
 		if err != nil {
-			return errors.Wrap(err, "Line.UnmarshalJSON: error while parsing OpeningTime")
+			return gen.err(err, "OpeningTime", "opening_time", str, "error in parseTime")
 		}
 	}
 	if str := data.ClosingTime; len(str) == 6 {
 		t := &l.ClosingTime
 		t.Hours, t.Minutes, t.Seconds, err = parseTime(str)
 		if err != nil {
-			return errors.Wrap(err, "Line.UnmarshalJSON: error while parsing OpeningTime")
+			return gen.err(err, "ClosingTime", "closing_time", str, "error in parseTime")
 		}
 	}
 

@@ -44,6 +44,9 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 		Status:    &j.Status,
 	}
 
+	// Let's create the error generator
+	gen := unmarshalErrorMaker{"Journey"}
+
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
@@ -56,15 +59,15 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	// For departure, requested and arrival, we use parseDateTime
 	j.Departure, err = parseDateTime(data.Departure)
 	if err != nil {
-		return unmarshalErr(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
 	}
 	j.Requested, err = parseDateTime(data.Requested)
 	if err != nil {
-		return unmarshalErr(err, "Requested", "requested_date_time", data.Requested, "parseDateTime failed")
+		return gen.err(err, "Requested", "requested_date_time", data.Requested, "parseDateTime failed")
 	}
 	j.Arrival, err = parseDateTime(data.Arrival)
 	if err != nil {
-		return unmarshalErr(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
 	}
 
 	// For the places, we directly use the embedded type !
@@ -72,14 +75,14 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	if !data.From.IsEmpty() {
 		j.From, err = data.From.Place()
 		if err != nil {
-			return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
+			return gen.err(err, "From", "from", data.From, " .Place() failed")
 		}
 	}
 
 	if !data.To.IsEmpty() {
 		j.To, err = data.To.Place()
 		if err != nil {
-			return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
+			return gen.err(err, "To", "to", data.To, " .Place() failed")
 		}
 	}
 
@@ -114,7 +117,7 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 	// First get the currency unit
 	unit, err := currency.ParseISO(data.Cost.Currency)
 	if err != nil {
-		return errors.Wrap(err, "Error while dealing with currency unit !")
+		return unmarshalErr(err, "Fare", "N/A", "cost.currency", data.Cost.Currency, "error while retrieving currency unit via currency.ParseISO")
 	}
 	// Now let's create the correct amount
 	f.Total = unit.Amount(data.Cost.Value)
@@ -136,13 +139,13 @@ func (c *CO2Emissions) UnmarshalJSON(b []byte) error {
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
-		return errors.Wrap(err, "Error while unmarshalling journey")
+		return errors.Wrap(err, "Error while unmarshalling CO2Emissions")
 	}
 
 	// Now parse the value
 	f, err := strconv.ParseFloat(data.Value, 64)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing CO2 emissions value")
+		return unmarshalErr(err, "CO2Emissions", "Value", "value", data.Value, "error in strconv.ParseFloat")
 	}
 	c.Value = f
 

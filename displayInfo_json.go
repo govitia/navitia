@@ -36,6 +36,9 @@ func (di *DisplayInformations) UnmarshalJSON(b []byte) error {
 		Equipments:     &di.Equipments,
 	}
 
+	// Create the error generator
+	gen := unmarshalErrorMaker{"DisplayInformations"}
+
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
@@ -47,14 +50,14 @@ func (di *DisplayInformations) UnmarshalJSON(b []byte) error {
 	if str := data.Color; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return errors.Wrapf(err, "DisplayInformations.UnmarshalJSON: error while parsing color (given \"color\":\"%s\")", str)
+			return gen.err(err, "Color", "color", str, "error in parseColor")
 		}
 		di.Color = clr
 	}
 	if str := data.TextColor; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return errors.Wrapf(err, "DisplayInformations.UnmarshalJSON: error while parsing text color (given \"color\":\"%s\")", str)
+			return gen.err(err, "TextColor", "text_color", str, "error in parseColor")
 		}
 		di.TextColor = clr
 	}

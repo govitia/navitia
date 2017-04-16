@@ -42,6 +42,9 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		Path:       &s.Path,
 	}
 
+	// Create the error generator
+	gen := unmarshalErrorMaker{"Section"}
+
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
@@ -52,24 +55,24 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	if !data.From.IsEmpty() {
 		s.From, err = data.From.Place()
 		if err != nil {
-			return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
+			return gen.err(err, "From", "from", data.From, " .Place() failed")
 		}
 	}
 	if !data.To.IsEmpty() {
 		s.To, err = data.To.Place()
 		if err != nil {
-			return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
+			return gen.err(err, "To", "to", data.To, " .Place() failed")
 		}
 	}
 
 	// For departure and arrival, we use parseDateTime
 	s.Departure, err = parseDateTime(data.Departure)
 	if err != nil {
-		return unmarshalErr(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
 	}
 	s.Arrival, err = parseDateTime(data.Arrival)
 	if err != nil {
-		return unmarshalErr(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
 	}
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
