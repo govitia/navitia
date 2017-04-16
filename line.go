@@ -26,11 +26,19 @@ type Line struct {
 	// For example: "79BB92" in Hex
 	Color color.Color
 
-	// OpeningTime is the opening time of the line in HHMMSS format
-	OpeningTime string
+	// OpeningTime is the opening time of the line
+	OpeningTime struct {
+		Hours   uint8
+		Minutes uint8
+		Seconds uint8
+	}
 
-	// ClosingTime is the closing time of the line in HHMMSS format
-	ClosingTime string
+	// ClosingTime is the closing time of the line
+	ClosingTime struct {
+		Hours   uint8
+		Minutes uint8
+		Seconds uint8
+	}
 
 	// Routes countains the routes of the line
 	Routes []Route
