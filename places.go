@@ -19,7 +19,9 @@ type PlacesResults struct {
 func (res PlacesResults) String() string {
 	var msg string
 	for i, place := range res.Places {
-		msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.PlaceType(), place.String())
+		if place != nil {
+			msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.PlaceType(), place.String())
+		}
 	}
 	return msg
 }

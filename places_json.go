@@ -22,11 +22,15 @@ func (res *PlacesResults) UnmarshalJSON(b []byte) error {
 	// Now iterate through the places and populate res.Places
 	res.Places = make([]types.Place, len(data.Places))
 	for i, pc := range data.Places {
-		place, err := pc.Place()
-		if err != nil {
-			return errors.Wrap(err, "Error while retrieving Place")
+		if !pc.IsEmpty() {
+			place, err := pc.Place()
+			if err != nil {
+				return errors.Wrap(err, "Error while retrieving Place")
+			}
+			// TODO: Deal with the errors with nuance
+
+			res.Places[i] = place
 		}
-		res.Places[i] = place
 	}
 
 	// Return
