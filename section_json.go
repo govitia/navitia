@@ -18,8 +18,6 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
 		// Pointers to the corresponding real values
-		From       PlaceCountainer      `json:"from"`
-		To         PlaceCountainer      `json:"to"`
 		Type       *SectionType         `json:"type"`
 		ID         *ID                  `json:"id"`
 		Mode       *Mode                `json:"mode"`
@@ -29,9 +27,11 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		Path       *[]PathSegment       `json:"path"`
 
 		// Values to process
-		Departure string `json:"departure_date_time"`
-		Arrival   string `json:"arrival_date_time"`
-		Duration  int64  `json:"duration"`
+		From      PlaceCountainer `json:"from"`
+		To        PlaceCountainer `json:"to"`
+		Departure string          `json:"departure_date_time"`
+		Arrival   string          `json:"arrival_date_time"`
+		Duration  int64           `json:"duration"`
 	}{
 		Type:       &s.Type,
 		ID:         &s.ID,

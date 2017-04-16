@@ -78,7 +78,6 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 			return gen.err(err, "From", "from", data.From, " .Place() failed")
 		}
 	}
-
 	if !data.To.IsEmpty() {
 		j.To, err = data.To.Place()
 		if err != nil {
