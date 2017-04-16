@@ -6,7 +6,13 @@ import (
 	"time"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for a Section
+/*
+UnmarshalJSON implements json.Unmarshaller for a Section
+
+Behaviour:
+	- If "from" is empty, then don't populate the From field.
+	- Same for "to"
+*/
 func (s *Section) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
@@ -43,13 +49,17 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now process the two PlaceCountainer
-	s.From, err = data.From.Place()
-	if err != nil {
-		return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
+	if !data.From.IsEmpty() {
+		s.From, err = data.From.Place()
+		if err != nil {
+			return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
+		}
 	}
-	s.To, err = data.To.Place()
-	if err != nil {
-		return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
+	if !data.To.IsEmpty() {
+		s.To, err = data.To.Place()
+		if err != nil {
+			return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
+		}
 	}
 
 	// For departure and arrival, we use parseDateTime

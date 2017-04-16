@@ -8,7 +8,13 @@ import (
 	"time"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for a Journey
+/*
+UnmarshalJSON implements json.Unmarshaller for a Journey
+
+Behaviour:
+	- If "from" is empty, then don't populate the From field.
+	- Same for "to"
+*/
 func (j *Journey) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
@@ -62,14 +68,19 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	}
 
 	// For the places, we directly use the embedded type !
-	// Warning: it is possible for a countainer to be empty, in those cases a nil Place will be present
-	j.From, err = data.From.Place()
-	if err != nil {
-		return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
+	// Warning: it is possible for a countainer to be empty, so we don't fill up the Place in those cases
+	if !data.From.IsEmpty() {
+		j.From, err = data.From.Place()
+		if err != nil {
+			return unmarshalErr(err, "From", "from", data.From, " .Place() failed")
+		}
 	}
-	j.To, err = data.To.Place()
-	if err != nil {
-		return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
+
+	if !data.To.IsEmpty() {
+		j.To, err = data.To.Place()
+		if err != nil {
+			return unmarshalErr(err, "To", "to", data.To, " .Place() failed")
+		}
 	}
 
 	return nil
