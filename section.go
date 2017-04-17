@@ -85,7 +85,7 @@ type Section struct {
 	StopTimes []StopTime
 
 	// Information to display
-	Display DisplayInformations
+	Display Display
 
 	// Additional informations, from what I can see this is always a PTMethod
 	Additional []PTMethod

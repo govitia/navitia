@@ -22,7 +22,7 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		ID         *ID                  `json:"id"`
 		Mode       *Mode                `json:"mode"`
 		StopTimes  *[]StopTime          `json:"stop_date_times"`
-		Display    *DisplayInformations `json:"display_informations"`
+		Display    *Display `json:"display_informations"`
 		Additional *[]PTMethod          `json:"additional_informations"`
 		Path       *[]PathSegment       `json:"path"`
 

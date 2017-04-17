@@ -5,8 +5,8 @@ import (
 	"github.com/pkg/errors"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for a DisplayInformations
-func (di *DisplayInformations) UnmarshalJSON(b []byte) error {
+// UnmarshalJSON implements json.Unmarshaller for a Display
+func (d *Display) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
@@ -25,24 +25,24 @@ func (di *DisplayInformations) UnmarshalJSON(b []byte) error {
 		Color     string `json:"color"`
 		TextColor string `json:"text_color"`
 	}{
-		Headsign:       &di.Headsign,
-		Network:        &di.Network,
-		Direction:      &di.Direction,
-		CommercialMode: &di.CommercialMode,
-		PhysicalMode:   &di.PhysicalMode,
-		Label:          &di.Label,
-		Code:           &di.Code,
-		Description:    &di.Description,
-		Equipments:     &di.Equipments,
+		Headsign:       &d.Headsign,
+		Network:        &d.Network,
+		Direction:      &d.Direction,
+		CommercialMode: &d.CommercialMode,
+		PhysicalMode:   &d.PhysicalMode,
+		Label:          &d.Label,
+		Code:           &d.Code,
+		Description:    &d.Description,
+		Equipments:     &d.Equipments,
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"DisplayInformations"}
+	gen := unmarshalErrorMaker{"Display"}
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
-		return errors.Wrap(err, "DisplayInformations.UnmarshalJSON: error while unmarshalling Line")
+		return errors.Wrap(err, "Display.UnmarshalJSON: error while unmarshalling Line")
 	}
 
 	// Now process the value
@@ -52,14 +52,14 @@ func (di *DisplayInformations) UnmarshalJSON(b []byte) error {
 		if err != nil {
 			return gen.err(err, "Color", "color", str, "error in parseColor")
 		}
-		di.Color = clr
+		d.Color = clr
 	}
 	if str := data.TextColor; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
 			return gen.err(err, "TextColor", "text_color", str, "error in parseColor")
 		}
-		di.TextColor = clr
+		d.TextColor = clr
 	}
 
 	return nil

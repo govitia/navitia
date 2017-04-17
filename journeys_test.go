@@ -34,7 +34,7 @@ func TestJourneyString(t *testing.T) {
 		Departure: departure,
 		Arrival:   arrival,
 		Duration:  time.Duration(3018) * time.Second,
-		Display: DisplayInformations{
+		Display: Display{
 			Label:        "11",
 			PhysicalMode: "Métro",
 		},

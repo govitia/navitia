@@ -22,7 +22,7 @@ Currently supported types
 	- POI ["poi"]
 	- Line ["line"]
 	- Route ["route"]
-	- And others, such as DisplayInformations ["display_informations"], PTDateTime ["pt-date-time"], StopTime ["stop_time"], Coordinates ["coord"].
+	- And others, such as Display ["display_informations"], PTDateTime ["pt-date-time"], StopTime ["stop_time"], Coordinates ["coord"].
 */
 package types
 
