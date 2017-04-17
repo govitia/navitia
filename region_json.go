@@ -83,6 +83,7 @@ func (r *Region) UnmarshalJSON(b []byte) error {
 
 }
 
+// convertWktMPtoGeomMP converts a wkt MultiPolygon to a geom MultiPolygon
 func convertWktMPtoGeomMP(in *wkt.MultiPolygon) (*geom.MultiPolygon, error) {
 	// Now let's convert it to a geom format
 	// First let's create the geom.MultiPolygon
