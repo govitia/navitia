@@ -15,7 +15,7 @@ const (
 
 // A CommercialMode codes for a commercial method of transportation.
 //
-// Note that in contrast with physical modes, commercial modes aren't normalized, if you want to query with them, it is best to use a PhysicalMode.
+// Note that in contrast with physical modes, commercial modes aren't normalised, if you want to query with them, it is best to use a PhysicalMode.
 //
 // See http://doc.navitia.io/#public-transport-objects
 type CommercialMode struct {
@@ -33,7 +33,7 @@ type CommercialMode struct {
 // A PhysicalMode codes for a physical method of transportation
 // For example, air travel, bus, metro and train.
 //
-// As well, note that physical modes are normalized and fastened, see the list in PhysicalModes
+// As well, note that physical modes are normalised and fastened, see the list in PhysicalModes
 //
 // See http://doc.navitia.io/#public-transport-objects
 type PhysicalMode struct {

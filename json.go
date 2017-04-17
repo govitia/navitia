@@ -44,10 +44,10 @@ func parseDateTime(datetime string) (time.Time, error) {
 // UnmarshalError is returned when unmarshalling fails
 // It implements both error and github.com/pkg/errors's causer
 type UnmarshalError struct {
-	// Type on which the unmarshaller where the error occured works
+	// Type on which the unmarshaller where the error occurred works
 	Type string
 
-	// JSON Key where failure occured
+	// JSON Key where failure occurred
 	Key string
 
 	// Name of the key in package

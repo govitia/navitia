@@ -231,7 +231,7 @@ func (sa StopArea) PlaceType() string {
 }
 
 // String pretty-prints the StopArea.
-// Satisifes Stringer and helps satisfy Place
+// Satisfies Stringer and helps satisfy Place
 func (sa StopArea) String() string {
 	var label string
 	if sa.Label == "" {
@@ -276,7 +276,7 @@ func (poi POI) PlaceType() string {
 }
 
 // String pretty-prints the POI.
-// Satisifes Stringer and helps satisfy Place
+// Satisfies Stringer and helps satisfy Place
 func (poi POI) String() string {
 	var label string
 	if poi.Label == "" {
@@ -335,7 +335,7 @@ func (add Address) PlaceType() string {
 }
 
 // String pretty-prints the Address.
-// Satisifes Stringer and helps satisfy Place
+// Satisfies Stringer and helps satisfy Place
 func (add Address) String() string {
 	var label string
 	if add.Label == "" {
@@ -387,7 +387,7 @@ func (sp StopPoint) PlaceType() string {
 }
 
 // String pretty-prints the StopPoint.
-// Satisifes Stringer and helps satisfy Place
+// Satisfies Stringer and helps satisfy Place
 func (sp StopPoint) String() string {
 	format := "%s (id: %s)"
 	return fmt.Sprintf(format, sp.Name, sp.ID)
@@ -433,7 +433,7 @@ func (ar AdministrativeRegion) PlaceType() string {
 }
 
 // String pretty-prints the AdministrativeRegion.
-// Satisifes Stringer and helps satisfy Place
+// Satisfies Stringer and helps satisfy Place
 func (ar AdministrativeRegion) String() string {
 	var label string
 	if ar.Label == "" {
