@@ -411,7 +411,7 @@ type AdministrativeRegion struct {
 	Level int `json:"level"`
 
 	// Zip code of the administrative region
-	ZipCode string
+	ZipCode string `json:"zip_code"`
 }
 
 // PlaceID returns the ID associated with the AdministrativeRegion
