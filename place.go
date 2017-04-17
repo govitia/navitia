@@ -40,11 +40,11 @@ type PlaceContainer struct {
 	EmbeddedType string `json:"embedded_type"`
 
 	// Four possibilitiess
-	StopArea             *StopArea             `json:"stop_area,omitempty"`
-	POI                  *POI                  `json:"POI,omitempty"`
-	Address              *Address              `json:"address,omitempty"`
-	StopPoint            *StopPoint            `json:"stop_point,omitempty"`
-	Admin *Admin `json:"administrative_region,omitempty"`
+	StopArea  *StopArea  `json:"stop_area,omitempty"`
+	POI       *POI       `json:"POI,omitempty"`
+	Address   *Address   `json:"address,omitempty"`
+	StopPoint *StopPoint `json:"stop_point,omitempty"`
+	Admin     *Admin     `json:"administrative_region,omitempty"`
 }
 
 // ErrInvalidPlaceContainer is returned after a check on a PlaceContainer
