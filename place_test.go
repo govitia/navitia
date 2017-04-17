@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-var placeCountainers map[string]*PlaceCountainer
+var placeContainers map[string]*PlaceContainer
 
 func loadPC() error {
 	// Get the input
@@ -15,10 +15,10 @@ func loadPC() error {
 		return nil
 	}
 
-	pcs := make(map[string]*PlaceCountainer, len(data))
-	// For each of them, unmarshal and add to placeCountainers
+	pcs := make(map[string]*PlaceContainer, len(data))
+	// For each of them, unmarshal and add to placeContainers
 	for name, datum := range data {
-		var pc = PlaceCountainer{}
+		var pc = PlaceContainer{}
 
 		err := json.Unmarshal(datum.raw, &pc)
 		if err != nil {
@@ -28,21 +28,21 @@ func loadPC() error {
 		pcs[name] = &pc
 	}
 
-	placeCountainers = pcs
+	placeContainers = pcs
 
 	return nil
 }
 
-// TestPlaceCountainer_Place_NoCompare tests the PlaceCountainer.Place method
-func TestPlaceCountainer_Place_NoCompare(t *testing.T) {
+// TestPlaceContainer_Place_NoCompare tests the PlaceContainer.Place method
+func TestPlaceContainer_Place_NoCompare(t *testing.T) {
 	// Get the input
-	data := placeCountainers
+	data := placeContainers
 	if len(data) == 0 {
 		t.Skip("No data to test")
 	}
 
 	// Create the run function generator, allowing us to run it in parallel
-	rgen := func(pc *PlaceCountainer) func(t *testing.T) {
+	rgen := func(pc *PlaceContainer) func(t *testing.T) {
 		return func(t *testing.T) {
 			place, err := pc.Place()
 			if err != nil {
@@ -67,16 +67,16 @@ func TestPlaceCountainer_Place_NoCompare(t *testing.T) {
 	}
 }
 
-// TestPlaceCountainer_Check_NoCompare tests the PlaceCountainer.Check method
-func TestPlaceCountainer_Check_NoCompare(t *testing.T) {
+// TestPlaceContainer_Check_NoCompare tests the PlaceContainer.Check method
+func TestPlaceContainer_Check_NoCompare(t *testing.T) {
 	// Get the input
-	data := placeCountainers
+	data := placeContainers
 	if len(data) == 0 {
 		t.Skip("No data to test")
 	}
 
 	// Create the run function generator, allowing us to run it in parallel
-	rgen := func(pc *PlaceCountainer) func(t *testing.T) {
+	rgen := func(pc *PlaceContainer) func(t *testing.T) {
 		return func(t *testing.T) {
 			err := pc.Check()
 			if err != nil {
@@ -95,8 +95,8 @@ func TestPlaceCountainer_Check_NoCompare(t *testing.T) {
 	}
 }
 
-// BenchmarkPlaceCountainerCheck benchmarks Place.Check through subbenchmarks
-func BenchmarkPlaceCountainerCheck(b *testing.B) {
+// BenchmarkPlaceContainerCheck benchmarks Place.Check through subbenchmarks
+func BenchmarkPlaceContainerCheck(b *testing.B) {
 	// Get the bench data
 	data := testData["place"].bench
 	if len(data) == 0 {
@@ -104,7 +104,7 @@ func BenchmarkPlaceCountainerCheck(b *testing.B) {
 	}
 
 	// Run function generator, allowing parallel run
-	runGen := func(in PlaceCountainer) func(*testing.B) {
+	runGen := func(in PlaceContainer) func(*testing.B) {
 		return func(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				// Call .Check
@@ -115,7 +115,7 @@ func BenchmarkPlaceCountainerCheck(b *testing.B) {
 
 	// Loop over all corpus
 	for name, datum := range data {
-		var pc = PlaceCountainer{}
+		var pc = PlaceContainer{}
 
 		err := json.Unmarshal(datum, &pc)
 		if err != nil {

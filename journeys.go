@@ -92,7 +92,7 @@ func (j Journey) String() string {
 	return message
 }
 
-// CO2Emissions countains the
+// CO2Emissions contains the
 type CO2Emissions struct {
 	Unit  string
 	Value float64

@@ -5,9 +5,11 @@ import (
 	"github.com/pkg/errors"
 )
 
-// A Place isn't something directly used by the Navitia.io api
-// However, it allows the library user to use idiomatic go when working with the library
-// If you want a countainer, see PlaceCountainer
+// A Place isn't something directly used by the Navitia.io api.
+//
+// However, it allows the library user to use idiomatic go when working with the library.
+// If you want a countainer, see PlaceContainer
+//
 // Place is satisfied by:
 // 	- StopArea
 // 	- POI
@@ -28,9 +30,10 @@ type Place interface {
 	String() string
 }
 
-// PlaceCountainer is the ugly countainer sent by Navitia to make us all cry.
-// However, this can be useful. May be removed from the public API in gonavitia v0.
-type PlaceCountainer struct {
+// PlaceContainer is the ugly countainer sent by Navitia to make us all cry :(
+//
+// However, this can be useful. May be removed from the public API in gonavitia v1.
+type PlaceContainer struct {
 	ID           ID     `json:"id"`
 	Name         string `json:"name"`
 	Quality      uint   `json:"quality,omitempty"`
@@ -44,31 +47,31 @@ type PlaceCountainer struct {
 	AdministrativeRegion *AdministrativeRegion `json:"administrative_region,omitempty"`
 }
 
-// ErrInvalidPlaceCountainer is returned after a check on a PlaceCountainer
-type ErrInvalidPlaceCountainer struct {
-	// If the PlaceCountainer has a zero ID.
+// ErrInvalidPlaceContainer is returned after a check on a PlaceContainer
+type ErrInvalidPlaceContainer struct {
+	// If the PlaceContainer has a zero ID.
 	NoID bool
 
-	// If the PlaceCountainer has a zero EmbeddedType.
+	// If the PlaceContainer has a zero EmbeddedType.
 	NoEmbeddedType bool
 
-	// If the PlaceCountainer has an unknown EmbeddedType
+	// If the PlaceContainer has an unknown EmbeddedType
 	UnknownEmbeddedType bool
 
-	// If the PlaceCountainer has a known EmbeddedType but the corresponding concrete value is nil.
+	// If the PlaceContainer has a known EmbeddedType but the corresponding concrete value is nil.
 	NilConcretePlaceValue bool
 
 	// TODO:
-	// If the PlaceCountainer has more than one non-nil concrete place values.
+	// If the PlaceContainer has more than one non-nil concrete place values.
 	// MultipleNonNilConcretePlaceValues bool
 }
 
 // Error satisfies the error interface
-func (err ErrInvalidPlaceCountainer) Error() string {
+func (err ErrInvalidPlaceContainer) Error() string {
 	// Count the number of anomalies
 	var anomalies uint
 
-	msg := "Error: Invalid non-empty PlaceCountainer (%d anomalies):"
+	msg := "Error: Invalid non-empty PlaceContainer (%d anomalies):"
 
 	if err.NoID {
 		msg += "\n\tNo ID specified"
@@ -91,8 +94,8 @@ func (err ErrInvalidPlaceCountainer) Error() string {
 }
 
 // IsEmpty returns whether or not pc is empty
-func (pc PlaceCountainer) IsEmpty() bool {
-	empty := PlaceCountainer{}
+func (pc PlaceContainer) IsEmpty() bool {
+	empty := PlaceContainer{}
 	return pc == empty
 }
 
@@ -112,18 +115,18 @@ const (
 	embeddedAdmin            = "administrative_region"
 )
 
-// Check checks the validity of the PlaceCountainer. Returns an ErrInvalidPlaceCountainer.
+// Check checks the validity of the PlaceContainer. Returns an ErrInvalidPlaceContainer.
 //
-// An empty PlaceCountainer is valid. But those cases aren't:
-// 	- If the PlaceCountainer has a zero ID.
-// 	- If the PlaceCountainer has a zero EmbeddedType.
-// 	- If the PlaceCountainer has an unknown EmbeddedType.
-// 	- If the PlaceCountainer has a known EmbeddedType but the corresponding concrete value is nil.
-func (pc PlaceCountainer) Check() error {
+// An empty PlaceContainer is valid. But those cases aren't:
+// 	- If the PlaceContainer has a zero ID.
+// 	- If the PlaceContainer has a zero EmbeddedType.
+// 	- If the PlaceContainer has an unknown EmbeddedType.
+// 	- If the PlaceContainer has a known EmbeddedType but the corresponding concrete value is nil.
+func (pc PlaceContainer) Check() error {
 	if pc.IsEmpty() {
 		return nil
 	}
-	err := ErrInvalidPlaceCountainer{}
+	err := ErrInvalidPlaceContainer{}
 
 	// Check for zero ID
 	err.NoID = (pc.ID == "")
@@ -149,7 +152,7 @@ func (pc PlaceCountainer) Check() error {
 		err.UnknownEmbeddedType = !err.NoEmbeddedType
 	}
 
-	emptyErr := ErrInvalidPlaceCountainer{}
+	emptyErr := ErrInvalidPlaceContainer{}
 	if err != emptyErr {
 		return err
 	}
@@ -157,11 +160,11 @@ func (pc PlaceCountainer) Check() error {
 	return nil
 }
 
-// Place returns the Place countained in the PlaceCountainer
-// If PlaceCountainer is empty, Place returns an error.
-// Check() is run on the PlaceCountainer.
-func (pc PlaceCountainer) Place() (Place, error) {
-	// If PlaceCountainer is empty, return an error
+// Place returns the Place countained in the PlaceContainer
+// If PlaceContainer is empty, Place returns an error.
+// Check() is run on the PlaceContainer.
+func (pc PlaceContainer) Place() (Place, error) {
+	// If PlaceContainer is empty, return an error
 	if pc.IsEmpty() {
 		return nil, errors.Errorf("this place countainer is empty, can't extract a Place from it")
 	}

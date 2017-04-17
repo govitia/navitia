@@ -40,7 +40,7 @@ type Line struct {
 		Seconds uint8
 	}
 
-	// Routes countains the routes of the line
+	// Routes contains the routes of the line
 	Routes []Route
 
 	// CommercialMode of the line

@@ -4,8 +4,8 @@ package types
 
 import "encoding/json"
 
-func FuzzPlaceCountainer(data []byte) int {
-	var pc = &PlaceCountainer{}
+func FuzzPlaceContainer(data []byte) int {
+	var pc = &PlaceContainer{}
 
 	// Let's unmarshal, this is not our job so "bleh"
 	err := json.Unmarshal(data, pc)
@@ -20,11 +20,11 @@ func FuzzPlaceCountainer(data []byte) int {
 		return 0
 	}
 
-	// If we have an empty PlaceCountainer but a non-nil place, panic !
-	// But if we have both empty PlaceCountainer and nil place, exit with 1, as this is the expected behaviour.
+	// If we have an empty PlaceContainer but a non-nil place, panic !
+	// But if we have both empty PlaceContainer and nil place, exit with 1, as this is the expected behaviour.
 	if pc.IsEmpty() {
 		if place != nil {
-			panic("Error: empty PlaceCountainer but non-nil place")
+			panic("Error: empty PlaceContainer but non-nil place")
 		}
 		return 1
 	}

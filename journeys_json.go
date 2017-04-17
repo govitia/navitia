@@ -28,8 +28,8 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 
 		Sections *[]Section `json:"sections"`
 
-		From PlaceCountainer `json:"from"`
-		To   PlaceCountainer `json:"to"`
+		From PlaceContainer `json:"from"`
+		To   PlaceContainer `json:"to"`
 
 		Type *JourneyQualification `json:"type"`
 
