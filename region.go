@@ -2,7 +2,7 @@ package types
 
 import (
 	"fmt"
-	//"github.com/paulmach/go.geojson"
+	"github.com/twpayne/go-geom"
 	"time"
 )
 
@@ -12,7 +12,7 @@ type Region struct {
 	Name   string
 	Status string
 
-	Shape string // Temporary: Should be a geojson geometry object, why isn't it ?
+	Shape *geom.MultiPolygon
 
 	DatasetCreation time.Time
 	LastLoaded      time.Time

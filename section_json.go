@@ -2,8 +2,9 @@ package types
 
 import (
 	"encoding/json"
-	"github.com/paulmach/go.geojson"
 	"github.com/pkg/errors"
+	"github.com/twpayne/go-geom"
+	"github.com/twpayne/go-geom/encoding/geojson"
 	"time"
 )
 
@@ -19,26 +20,25 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
 		// Pointers to the corresponding real values
-		Type       *SectionType      `json:"type"`
-		ID         *ID               `json:"id"`
-		Mode       *Mode             `json:"mode"`
-		GeoJSON    *geojson.Geometry `json:"geojson"`
-		StopTimes  *[]StopTime       `json:"stop_date_times"`
-		Display    *Display          `json:"display_informations"`
-		Additional *[]PTMethod       `json:"additional_informations"`
-		Path       *[]PathSegment    `json:"path"`
+		Type       *SectionType   `json:"type"`
+		ID         *ID            `json:"id"`
+		Mode       *Mode          `json:"mode"`
+		StopTimes  *[]StopTime    `json:"stop_date_times"`
+		Display    *Display       `json:"display_informations"`
+		Additional *[]PTMethod    `json:"additional_informations"`
+		Path       *[]PathSegment `json:"path"`
 
 		// Values to process
-		From      PlaceContainer `json:"from"`
-		To        PlaceContainer `json:"to"`
-		Departure string         `json:"departure_date_time"`
-		Arrival   string         `json:"arrival_date_time"`
-		Duration  int64          `json:"duration"`
+		From      PlaceContainer    `json:"from"`
+		To        PlaceContainer    `json:"to"`
+		Departure string            `json:"departure_date_time"`
+		Arrival   string            `json:"arrival_date_time"`
+		Duration  int64             `json:"duration"`
+		Geo       *geojson.Geometry `json:"geojson"`
 	}{
 		Type:       &s.Type,
 		ID:         &s.ID,
 		Mode:       &s.Mode,
-		GeoJSON:    &s.GeoJSON,
 		Display:    &s.Display,
 		Additional: &s.Additional,
 		StopTimes:  &s.StopTimes,
@@ -80,6 +80,22 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
 	s.Duration = time.Duration(data.Duration) * time.Second
+
+	// Now let's deal with the geom
+	if data.Geo != nil {
+		// Let's decode it
+		geot, err := data.Geo.Decode()
+		if err != nil {
+			return gen.err(err, "Geo", "geojson", data.Geo, "Geo.Decode() failed")
+		}
+		// And let's assert the type
+		geo, ok := geot.(*geom.LineString)
+		if !ok {
+			return gen.err(err, "Geo", "geojson", data.Geo, "Geo type assertion failed!")
+		}
+		// Now let's assign it
+		s.Geo = geo
+	}
 
 	return nil
 }

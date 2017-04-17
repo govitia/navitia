@@ -2,7 +2,7 @@ package types
 
 import (
 	"fmt"
-	"github.com/paulmach/go.geojson"
+	"github.com/twpayne/go-geom"
 	"time"
 )
 
@@ -83,7 +83,7 @@ type Section struct {
 	Path []PathSegment
 
 	// The path in geojson format
-	GeoJSON geojson.Geometry
+	Geo *geom.LineString
 
 	// List of the stop times of this section
 	StopTimes []StopTime
