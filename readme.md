@@ -20,6 +20,7 @@ Currently supported types (with corresponding navitia type names in brackets, [s
 	- Journey ["journey"]
 	- Section ["section"]
 	- Region ["region"]
+	- Isochrone ["isochrone"]
 	- Place (This is an interface for your ease-of-use, which is implemented by the five following types)
 	- Address ["address"]
 	- StopPoint ["stop_point"]
