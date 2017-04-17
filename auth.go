@@ -46,11 +46,6 @@ func NewCustom(key string, url string, client *http.Client) (*Session, error) {
 	}, nil
 }
 
-// UseClient sets a given *http.Client to be used for further queries
-func (s *Session) UseClient(client *http.Client) {
-	s.client = client
-}
-
 // newRequest creates a newRequest with the correct auth set
 func (s *Session) newRequest(url string) (*http.Request, error) {
 	// Create the request
