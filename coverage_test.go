@@ -1,7 +1,6 @@
 package navitia
 
 import (
-	//"fmt"
 	"testing"
 )
 
