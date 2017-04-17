@@ -88,6 +88,7 @@ func convertWktMPtoGeomMP(in *wkt.MultiPolygon) (*geom.MultiPolygon, error) {
 	// Now let's convert it to a geom format
 	// First let's create the geom.MultiPolygon
 	mp := geom.NewMultiPolygon(geom.XY)
+
 	// Then let's iterate through the polygons, and convert each of them from wkt.Coord to geom.Coord
 	var multipolygonCoords = make([][][]geom.Coord, len(in.Polygons))
 	for i, k := range in.Polygons {
@@ -104,6 +105,7 @@ func convertWktMPtoGeomMP(in *wkt.MultiPolygon) (*geom.MultiPolygon, error) {
 		}
 		multipolygonCoords[i] = polygonCoords
 	}
+
 	// Now assign it !
 	mp, err := mp.SetCoords(multipolygonCoords)
 	if err != nil {

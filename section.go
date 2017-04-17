@@ -6,6 +6,39 @@ import (
 	"time"
 )
 
+// A Section holds information about a specific section
+type Section struct {
+	Type SectionType
+	ID   ID
+	Mode Mode
+
+	// From & To
+	From Place
+	To   Place
+
+	// Arrival time & departure time
+	Departure time.Time
+	Arrival   time.Time
+
+	// Duration of travel
+	Duration time.Duration
+
+	// The path taken by this section
+	Path []PathSegment
+
+	// The path in geojson format
+	Geo *geom.LineString
+
+	// List of the stop times of this section
+	StopTimes []StopTime
+
+	// Information to display
+	Display Display
+
+	// Additional informations, from what I can see this is always a PTMethod
+	Additional []PTMethod
+}
+
 // A SectionType codifies the type of section that can be encountered
 type SectionType string
 
@@ -62,40 +95,8 @@ var SectionTypes = map[SectionType]string{
 	SectionLanding:           "Landing off the plane",
 }
 
-// A Section holds information about a specific section
-type Section struct {
-	Type SectionType
-	ID   ID
-	Mode Mode
-
-	// From & To
-	From Place
-	To   Place
-
-	// Arrival time & departure time
-	Departure time.Time
-	Arrival   time.Time
-
-	// Duration of travel
-	Duration time.Duration
-
-	// The path taken by this section
-	Path []PathSegment
-
-	// The path in geojson format
-	Geo *geom.LineString
-
-	// List of the stop times of this section
-	StopTimes []StopTime
-
-	// Information to display
-	Display Display
-
-	// Additional informations, from what I can see this is always a PTMethod
-	Additional []PTMethod
-}
-
-// String satisfies Stringer
+// String satisfies Stringer.
+//
 // Warning: it is possible for a section to have From and/or To nil, in those cases it will be replaced by "unknown"
 func (s Section) String() string {
 	var info string
