@@ -1,6 +1,7 @@
 package navitia
 
 import (
+	"context"
 	"fmt"
 	"github.com/aabizri/navitia/types"
 	"net/url"
@@ -70,28 +71,32 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 }
 
 // places is the internal function used by Places functions
-func (s *Session) places(url string, params PlacesRequest) (*PlacesResults, error) {
+func (s *Session) places(ctx context.Context, url string, params PlacesRequest) (*PlacesResults, error) {
 	var results = &PlacesResults{session: s}
-	err := s.request(url, params, results)
+	err := s.request(ctx, url, params, results)
 	return results, err
 }
 
 const placesEndpoint = "places"
 
-// Places search in all geographical objects using their names, returning a list of corresponding places.
-func (s *Session) Places(params PlacesRequest) (*PlacesResults, error) {
+// Places searches in all geographical objects using their names, returning a list of corresponding places.
+//
+// It is context aware.
+func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
 	url := s.APIURL + "/" + placesEndpoint
 
 	// Call
-	return s.places(url, params)
+	return s.places(ctx, url, params)
 }
 
-// PlacesR search in all geographical objects within a given region using their names, returning a list of places.
-func (s *Session) PlacesR(params PlacesRequest, regionID string) (*PlacesResults, error) {
+// PlacesR searches in all geographical objects within a given region using their names, returning a list of places.
+//
+// It is context aware.
+func (s *Session) PlacesR(ctx context.Context, params PlacesRequest, regionID string) (*PlacesResults, error) {
 	// Create the URL
 	url := s.APIURL + "/coverage/" + regionID + "/" + placesEndpoint
 
 	// Call
-	return s.places(url, params)
+	return s.places(ctx, url, params)
 }

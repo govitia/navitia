@@ -1,6 +1,7 @@
 package navitia
 
 import (
+	"context"
 	"testing"
 )
 
@@ -9,7 +10,7 @@ func Test_Coverage(t *testing.T) {
 		t.Skip(skipNoKey)
 	}
 
-	res, err := testSession.Coverage(0)
+	res, err := testSession.Coverage(context.Background(), 0)
 	t.Logf("Received res: %v", *res)
 	if err != nil {
 		t.Fatalf("Got error in Coverage(%d): %v", 0, err)

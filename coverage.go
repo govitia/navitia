@@ -1,6 +1,7 @@
 package navitia
 
 import (
+	"context"
 	"github.com/aabizri/navitia/types"
 	"net/url"
 	"strconv"
@@ -38,48 +39,46 @@ func (req coverageRequest) toURL() (url.Values, error) {
 	return params, nil
 }
 
-func (s *Session) coverage(url string, params coverageRequest) (*CoverageResults, error) {
+func (s *Session) coverage(ctx context.Context, url string, params coverageRequest) (*CoverageResults, error) {
 	var results = &CoverageResults{session: s}
-	err := s.request(url, params, results)
+	err := s.request(ctx, url, params, results)
 	return results, err
 }
 
 // Coverage lists the areas covered by the Navitia API
 // count is the number of items to return, if count=0, then it will return the default number
-// BUG: Count doesn't work, server-side
-func (s *Session) Coverage(count uint) (*CoverageResults, error) {
+//
+// It is context aware.
+//
+// BUG: Count doesn't work, server-side.
+func (s *Session) Coverage(ctx context.Context, count uint) (*CoverageResults, error) {
 	// Create the URL
 	url := s.APIURL + "/" + coverageEndpoint
 
-	// Create the query
-	params := coverageRequest{Count: count}
-
 	// Call and return
-	return s.coverage(url, params)
+	return s.coverage(ctx, url, coverageRequest{Count: count})
 }
 
 // RegionByID provides information about a specific region
 // If the ID provided isn't an ID of a region, this WILL fail.
-func (s *Session) RegionByID(id types.ID) (*CoverageResults, error) {
+//
+// It is context aware.
+func (s *Session) RegionByID(ctx context.Context, id types.ID) (*CoverageResults, error) {
 	// Build the URL
 	url := s.APIURL + "/" + coverageEndpoint + "/" + string(id)
 
-	// Create the query
-	params := coverageRequest{}
-
 	// Call and return
-	return s.coverage(url, params)
+	return s.coverage(ctx, url, coverageRequest{})
 }
 
-// RegionByPos provides information about the region englobing the specific position
-func (s *Session) RegionByPos(coords types.Coordinates) (*CoverageResults, error) {
+// RegionByPos provides information about the region englobing the specific position.
+//
+// It is context aware.
+func (s *Session) RegionByPos(ctx context.Context, coords types.Coordinates) (*CoverageResults, error) {
 	// Build the URL
 	coordsFormatted := coords.QueryEscape()
 	url := s.APIURL + "/" + coverageEndpoint + "/" + coordsFormatted
 
-	// Create the query
-	params := coverageRequest{}
-
 	// Call and return
-	return s.coverage(url, params)
+	return s.coverage(ctx, url, coverageRequest{})
 }

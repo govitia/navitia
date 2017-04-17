@@ -1,15 +1,10 @@
 package navitia
 
 import (
+	"context"
 	"github.com/aabizri/navitia/types"
 	"testing"
 )
-
-// Return a journey request
-// TODO: Add random
-func helperGenerateJourneyRequest() JourneyRequest {
-	return JourneyRequest{}
-}
 
 func Test_JourneyRequest_toUrl(t *testing.T) {
 	// First an empty struct
@@ -28,11 +23,13 @@ func Test_Journeys(t *testing.T) {
 		t.Skip(skipNoKey)
 	}
 
-	params := helperGenerateJourneyRequest()
+	ctx := context.Background()
+
+	params := JourneyRequest{}
 	coords := types.Coordinates{48.847002, 2.377310}
 	params.From = coords
 
-	res, err := testSession.Journeys(params)
+	res, err := testSession.Journeys(ctx, params)
 	t.Logf("Got results: \n%s", res.String())
 	if err != nil {
 		t.Fatalf("Got error in Journey(): %v\n\tParameters: %#v", err, params)

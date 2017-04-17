@@ -1,6 +1,7 @@
 package navitia
 
 import (
+	"context"
 	"encoding/json"
 	"github.com/pkg/errors"
 	"net/url"
@@ -17,7 +18,7 @@ type results interface {
 }
 
 // request does a request given a url, query and results to populate
-func (s *Session) request(url string, query query, results results) error {
+func (s *Session) request(ctx context.Context, url string, query query, results results) error {
 	// Store creation time
 	results.creating()
 
@@ -26,6 +27,7 @@ func (s *Session) request(url string, query query, results results) error {
 	if err != nil {
 		return errors.Wrap(err, "error while creating request")
 	}
+	req = req.WithContext(ctx)
 
 	// Encode the parameters
 	values, err := query.toURL()
@@ -44,6 +46,13 @@ func (s *Session) request(url string, query query, results results) error {
 	}
 	if resp.StatusCode != 200 {
 		return parseRemoteError(resp)
+	}
+
+	// Check for cancellation
+	select {
+	case <-ctx.Done():
+		return ctx.Err()
+	default:
 	}
 
 	// Parse it
