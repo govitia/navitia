@@ -15,7 +15,7 @@ import (
 // 	- POI
 // 	- Address
 // 	- StopPoint
-// 	- AdministrativeRegion
+// 	- Admin
 type Place interface {
 	// PlaceID returns the ID associated with the Place
 	PlaceID() ID
@@ -44,7 +44,7 @@ type PlaceContainer struct {
 	POI                  *POI                  `json:"POI,omitempty"`
 	Address              *Address              `json:"address,omitempty"`
 	StopPoint            *StopPoint            `json:"stop_point,omitempty"`
-	AdministrativeRegion *AdministrativeRegion `json:"administrative_region,omitempty"`
+	Admin *Admin `json:"administrative_region,omitempty"`
 }
 
 // ErrInvalidPlaceContainer is returned after a check on a PlaceContainer
@@ -144,7 +144,7 @@ func (pc PlaceContainer) Check() error {
 	case embeddedStopPoint:
 		*absent = (pc.StopPoint == nil)
 	case embeddedAdmin:
-		*absent = (pc.AdministrativeRegion == nil)
+		*absent = (pc.Admin == nil)
 	default:
 		// Check for an empty embedded type
 		err.NoEmbeddedType = (pc.EmbeddedType == "")
@@ -186,7 +186,7 @@ func (pc PlaceContainer) Place() (Place, error) {
 	case embeddedStopPoint:
 		return pc.StopPoint, nil
 	case embeddedAdmin:
-		return pc.AdministrativeRegion, nil
+		return pc.Admin, nil
 	default:
 		return nil, errors.Errorf("no known embedded type indicated (we have \"%s\"), can't return a place !", pc.EmbeddedType) // THIS IS VERY SERIOUS AS WE ALREADY CHECKED THE STRUCTURE
 	}
@@ -206,7 +206,7 @@ type StopArea struct {
 	Coord Coordinates `json:"coord"`
 
 	// Administrative regions of the stop area in which is placed the stop area
-	AdministrativeRegions []AdministrativeRegion `json:"administrative_regions"`
+	Admins []Admin `json:"administrative_regions"`
 
 	// Stop points countained in this stop area
 	StopPoints []StopPoint `json:"stop_points"`
@@ -313,7 +313,7 @@ type Address struct {
 	HouseNumber uint `json:"house_number"`
 
 	// Administrative regions of the stop area in which is placed the stop area
-	AdministrativeRegions []AdministrativeRegion `json:"administrative_regions"`
+	Admins []Admin `json:"administrative_regions"`
 }
 
 // PlaceID returns the ID associated with the Address
@@ -359,7 +359,7 @@ type StopPoint struct {
 	Coord Coordinates `json:"coord"`
 
 	// Administrative regions of the stop point
-	AdministrativeRegions []AdministrativeRegion `json:"administrative_regions"`
+	Admins []Admin `json:"administrative_regions"`
 
 	// List of equipments of the stop point
 	Equipments []Equipment `json:"equipment"`
@@ -393,9 +393,9 @@ func (sp StopPoint) String() string {
 	return fmt.Sprintf(format, sp.Name, sp.ID)
 }
 
-// An AdministrativeRegion represents an administrative region: a region under the control/responsibility of a specific organisation.
+// An Admin represents an administrative region: a region under the control/responsibility of a specific organisation.
 // It can be a city, a district, a neightborhood, etc.
-type AdministrativeRegion struct {
+type Admin struct {
 	ID   ID     `json:"id"`
 	Name string `json:"name"`
 
@@ -414,27 +414,27 @@ type AdministrativeRegion struct {
 	ZipCode string `json:"zip_code"`
 }
 
-// PlaceID returns the ID associated with the AdministrativeRegion
+// PlaceID returns the ID associated with the Admin
 // Helps satisfy Place
-func (ar AdministrativeRegion) PlaceID() ID {
+func (ar Admin) PlaceID() ID {
 	return ar.ID
 }
 
-// PlaceName returns the name of the AdministrativeRegion
+// PlaceName returns the name of the Admin
 // Helps satisfy Place
-func (ar AdministrativeRegion) PlaceName() string {
+func (ar Admin) PlaceName() string {
 	return ar.Name
 }
 
 // PlaceType returns the type of place, in this case "administrative_region"
 // Helps satisfy Place
-func (ar AdministrativeRegion) PlaceType() string {
+func (ar Admin) PlaceType() string {
 	return embeddedAdmin
 }
 
-// String pretty-prints the AdministrativeRegion.
+// String pretty-prints the Admin.
 // Satisfies Stringer and helps satisfy Place
-func (ar AdministrativeRegion) String() string {
+func (ar Admin) String() string {
 	var label string
 	if ar.Label == "" {
 		label = ar.Name

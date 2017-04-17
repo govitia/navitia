@@ -18,7 +18,7 @@ Currently supported types
 	- Address ["address"]
 	- StopPoint ["stop_point"]
 	- StopArea ["stop_area"]
-	- AdministrativeRegion ["administrative_region"]
+	- Admin ["administrative_region"]
 	- POI ["poi"]
 	- Line ["line"]
 	- Route ["route"]
