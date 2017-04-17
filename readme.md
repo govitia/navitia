@@ -2,7 +2,7 @@
 
 This is the development version of navitia.
 
-It needs at least go 1.7 to work as tests use testing.T.Run for subtests.
+It needs at least go 1.7 to work as we use context & tests use testing.T.Run for subtests.
 
 ## Install
 
@@ -15,6 +15,7 @@ It needs at least go 1.7 to work as tests use testing.T.Run for subtests.
 - Places [/places]: Allows you to search in all geographical objects using their names, returning a list of places. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-geographical-objects)
 
 ## Getting started
+
 
 ### Creating a new session
 
