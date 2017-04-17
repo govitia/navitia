@@ -2,6 +2,7 @@ package types
 
 import (
 	"encoding/json"
+	//"github.com/paulmach/go.geojson"
 	"github.com/pkg/errors"
 )
 
@@ -12,6 +13,8 @@ func (r *Region) UnmarshalJSON(b []byte) error {
 		ID     *ID     `json:"id"`
 		Name   *string `json:"name"`
 		Status *string `json:"status"`
+
+		Shape *string `json:"shape"` // Should be a geojson geometry object, why isn't it ?
 
 		DatasetCreation string `json:"dataset_created_at"`
 		LastLoaded      string `json:"last_load_at"`
@@ -24,6 +27,7 @@ func (r *Region) UnmarshalJSON(b []byte) error {
 		ID:     &r.ID,
 		Name:   &r.Name,
 		Status: &r.Status,
+		Shape:  &r.Shape,
 		Error:  &r.Error,
 	}
 

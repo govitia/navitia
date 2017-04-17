@@ -2,6 +2,7 @@ package types
 
 import (
 	"encoding/json"
+	"github.com/paulmach/go.geojson"
 	"github.com/pkg/errors"
 	"time"
 )
@@ -18,13 +19,14 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
 		// Pointers to the corresponding real values
-		Type       *SectionType   `json:"type"`
-		ID         *ID            `json:"id"`
-		Mode       *Mode          `json:"mode"`
-		StopTimes  *[]StopTime    `json:"stop_date_times"`
-		Display    *Display       `json:"display_informations"`
-		Additional *[]PTMethod    `json:"additional_informations"`
-		Path       *[]PathSegment `json:"path"`
+		Type       *SectionType      `json:"type"`
+		ID         *ID               `json:"id"`
+		Mode       *Mode             `json:"mode"`
+		GeoJSON    *geojson.Geometry `json:"geojson"`
+		StopTimes  *[]StopTime       `json:"stop_date_times"`
+		Display    *Display          `json:"display_informations"`
+		Additional *[]PTMethod       `json:"additional_informations"`
+		Path       *[]PathSegment    `json:"path"`
 
 		// Values to process
 		From      PlaceContainer `json:"from"`
@@ -36,6 +38,7 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		Type:       &s.Type,
 		ID:         &s.ID,
 		Mode:       &s.Mode,
+		GeoJSON:    &s.GeoJSON,
 		Display:    &s.Display,
 		Additional: &s.Additional,
 		StopTimes:  &s.StopTimes,

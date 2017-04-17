@@ -2,6 +2,7 @@ package types
 
 import (
 	"fmt"
+	"github.com/paulmach/go.geojson"
 	"time"
 )
 
@@ -67,6 +68,10 @@ type Section struct {
 	ID   ID
 	Mode Mode
 
+	// From & To
+	From Place
+	To   Place
+
 	// Arrival time & departure time
 	Departure time.Time
 	Arrival   time.Time
@@ -74,12 +79,11 @@ type Section struct {
 	// Duration of travel
 	Duration time.Duration
 
-	// From & To
-	From Place
-	To   Place
-
 	// The path taken by this section
 	Path []PathSegment
+
+	// The path in geojson format
+	GeoJSON geojson.Geometry
 
 	// List of the stop times of this section
 	StopTimes []StopTime

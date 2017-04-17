@@ -2,22 +2,25 @@ package types
 
 import (
 	"fmt"
+	//"github.com/paulmach/go.geojson"
 	"time"
 )
 
 // A Region holds information about a geographical region, including its ID, name & shape
 type Region struct {
-	ID     ID     `json:"id"`
-	Name   string `json:"name"`
-	Status string `json:"status"`
+	ID     ID
+	Name   string
+	Status string
 
-	DatasetCreation time.Time `json:"dataset_created_at"`
-	LastLoaded      time.Time `json:"last_load_at"`
+	Shape string // Temporary: Should be a geojson geometry object, why isn't it ?
 
-	ProductionStart time.Time `json:"start_production_date"`
-	ProductionEnd   time.Time `json:"end_production_date"`
+	DatasetCreation time.Time
+	LastLoaded      time.Time
 
-	Error string `json:"error"`
+	ProductionStart time.Time
+	ProductionEnd   time.Time
+
+	Error string
 }
 
 // String stringifies a region
