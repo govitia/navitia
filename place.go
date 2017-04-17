@@ -9,11 +9,11 @@ import (
 // However, it allows the library user to use idiomatic go when working with the library
 // If you want a countainer, see PlaceCountainer
 // Place is satisfied by:
-// - StopArea
-// - POI
-// - Address
-// - StopPoint
-// - AdministrativeRegion
+// 	- StopArea
+// 	- POI
+// 	- Address
+// 	- StopPoint
+// 	- AdministrativeRegion
 type Place interface {
 	// PlaceID returns the ID associated with the Place
 	PlaceID() ID
