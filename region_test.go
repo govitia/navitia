@@ -33,3 +33,31 @@ func TestRegionUnmarshal_NoCompare(t *testing.T) {
 		t.Run(name, rfunc)
 	}
 }
+
+// BenchmarkRegionUnmarshal benchmarks Region unmarshalling via subbenchmarks
+func BenchmarkRegionUnmarshal(b *testing.B) {
+	// Get the bench data
+	data := testData["region"].bench
+	if len(data) == 0 {
+		b.Skip("No data to test")
+	}
+
+	// Run function generator, allowing parallel run
+	runGen := func(in []byte) func(*testing.B) {
+		return func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				var r = &Region{}
+				_ = r.UnmarshalJSON(in)
+			}
+		}
+	}
+
+	// Loop over all corpus
+	for name, datum := range data {
+		// Get run function
+		runFunc := runGen(datum)
+
+		// Run it !
+		b.Run(name, runFunc)
+	}
+}
