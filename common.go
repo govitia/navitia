@@ -29,7 +29,7 @@ Currently supported types
 package types
 
 // Version is the version of this package
-const Version = "v0.2"
+const Version = "dev"
 
 // A QueryEscaper implements QueryEscape, which returns an escaped representation of the type for use in URL queries.
 // Implemented by both ID and Coordinates
