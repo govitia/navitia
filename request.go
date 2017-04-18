@@ -14,16 +14,17 @@ type query interface {
 	toURL() (url.Values, error)
 }
 
+// results is implemented by every Result type
 type results interface {
 	creating()
 	sending()
 	parsing()
 }
 
-// request does a request given a url, query and results to populate
-func (s *Session) request(ctx context.Context, url string, query query, results results) error {
+// requestURL requests a url, with the query already encoded in, and decodes the result in res.
+func (s *Session) requestURL(ctx context.Context, url string, res results) error {
 	// Store creation time
-	results.creating()
+	res.creating()
 
 	// Create the request
 	req, err := http.NewRequest("GET", url, nil)
@@ -37,16 +38,10 @@ func (s *Session) request(ctx context.Context, url string, query query, results 
 	// Add basic auth
 	req.SetBasicAuth(s.APIKey, "")
 
-	// Encode the parameters
-	values, err := query.toURL()
-	if err != nil {
-		return errors.Wrap(err, "error while retrieving url values to be encoded")
-	}
-	req.URL.RawQuery = values.Encode()
-
 	// Execute the request
 	resp, err := s.client.Do(req)
-	results.sending()
+	defer resp.Body.Close()
+	res.sending()
 
 	// Check the response
 	if err != nil {
@@ -68,12 +63,25 @@ func (s *Session) request(ctx context.Context, url string, query query, results 
 
 	// Parse the now limited body
 	dec := json.NewDecoder(reader)
-	err = dec.Decode(results)
+	err = dec.Decode(res)
 	if err != nil {
 		return errors.Wrap(err, "JSON decoding failed")
 	}
-	results.parsing()
+	res.parsing()
 
 	// Return
 	return err
+}
+
+// request does a request given a url, query and results to populate
+func (s *Session) request(ctx context.Context, baseURL string, query query, res results) error {
+	// Encode the parameters
+	values, err := query.toURL()
+	if err != nil {
+		return errors.Wrap(err, "error while retrieving url values to be encoded")
+	}
+	url := baseURL + "?" + values.Encode()
+
+	// Call requestURL
+	return s.requestURL(ctx, url, res)
 }
