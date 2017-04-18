@@ -56,14 +56,13 @@ func Test_Journeys_Paging(t *testing.T) {
 		t.Fatalf("Got error in Journey(): %v\n\tParameters: %#v", err, params)
 	}
 
-	var paginated *JourneyResults = res
-	for i := 0; paginated.Paging.Next != nil && i < 6; i++ {
+	for i := 0; res.Paging.Next != nil && i < 6; i++ {
 		p := JourneyResults{}
-		err = paginated.Paging.Next(ctx, testSession, &p)
-		t.Logf("Next n°%d results:\n%s", i, p.String())
+		err = res.Paging.Next(ctx, testSession, &p)
+		t.Logf("Next (#%d) results:\n%s", i, p.String())
 		if err != nil {
 			t.Fatalf("Got error in Paging.Next (pass %d): %v", i, err)
 		}
-		paginated = &p
+		res = &p
 	}
 }
