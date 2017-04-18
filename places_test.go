@@ -37,6 +37,28 @@ func Test_Places(t *testing.T) {
 			t.Fatalf("Got error in Places(): %v\n\tParameters: %#v", err, params)
 		}
 	})
+
+	// Run a test with paging
+	// Unfortunately it seems that /places doesn't yet support paging :(
+	/*
+		t.Run("paging",func(t *testing.T) {
+			res,err := testSession.Places(ctx, params)
+			if err != nil {
+				t.Fatalf("Got error in Places(): %v\n\tParameters: %#v", err, params)
+			}
+
+			var paginated *PlacesResults = res
+			for i := 0; paginated.Paging.Next != nil && i < 6; i++ {
+				p := PlacesResults{}
+				err = paginated.Paging.Next(ctx, testSession, &p)
+				t.Logf("Next n°%d results:\n%s", i, p.String())
+				if err != nil {
+					t.Fatalf("Got error in Paging.Next (pass %d): %v", i, err)
+				}
+				paginated = &p
+			}
+		})*.
+	*/
 }
 
 func Test_PlacesResultsUnmarshal_NoCompare(t *testing.T) {
