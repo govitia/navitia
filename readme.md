@@ -16,7 +16,6 @@ It needs at least go 1.7 to work as we use context & tests use testing.T.Run for
 
 ## Getting started
 
-
 ### Creating a new session
 
 First, you should have an API key from navitia.io, if you don't already have one, it's [this way !](https://www.navitia.io/register/)
@@ -72,6 +71,38 @@ res, _ := session.Journeys(context.Background(),request)
 // Print it (JourneysResults implements Stringer)
 fmt.Println(res)
 ```
+
+### Paging
+
+We'll use a Journey, to showcase the paging:
+
+```golang
+
+// Obtain a journey like last time...
+
+// Create a value to store the paginated result
+var paginated *JourneyResults = res
+
+// Iterate by checking if the Paging.Next function is not nil !
+for paginated.Paging.Next != nil {
+	// Create a new JourneyResults to hold the data
+	p := JourneyResults{}
+	
+	// Call the function
+	_ = paginated.Paging.Next(ctx, testSession, &p)
+
+	// Assign a pointer to the previously created data structure to paginated
+	paginated = &p
+}
+```
+Obviously, you'll want to stop paginating at some point, and most importantly do something with the value.
+An example is on the way !
+
+## What's new in the development version ?
+
+- Paging support
+- Bugfix where the response body was never closed
+- Limited the size of responses
 
 ## Going further
 
