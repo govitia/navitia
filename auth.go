@@ -3,8 +3,6 @@ package navitia
 import (
 	"net/http"
 	"time"
-
-	"github.com/pkg/errors"
 )
 
 const (
@@ -18,6 +16,10 @@ const (
 	DefaultAPIVersion = "v1"
 
 	defaultAPIURL = DefaultAPIProtocol + "://" + DefaultAPIHostname + "/" + DefaultAPIVersion
+
+	// Maximum size of response in bytes
+	// 10 megabytes
+	maxSize int64 = 10 * (1000 * 1000)
 )
 
 var defaultClient = &http.Client{}
@@ -31,8 +33,10 @@ type Session struct {
 	created time.Time
 }
 
-// New creates a new session given an API Key
-// It acts as a convenience wrapper to NewCustom
+// New creates a new session given an API Key.
+// It acts as a convenience wrapper to NewCustom.
+//
+// Warning: No Timeout is indicated in the default http client, and as such, it is strongly advised to use NewCustom with a custom *http.Client !
 func New(key string) (*Session, error) {
 	return NewCustom(key, defaultAPIURL, defaultClient)
 }
@@ -45,18 +49,4 @@ func NewCustom(key string, url string, client *http.Client) (*Session, error) {
 		created: time.Now(),
 		client:  client,
 	}, nil
-}
-
-// newRequest creates a newRequest with the correct auth set
-func (s *Session) newRequest(url string) (*http.Request, error) {
-	// Create the request
-	newReq, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return newReq, errors.Wrapf(err, "couldn't create new request (for %s)", url)
-	}
-
-	// Add basic auth
-	newReq.SetBasicAuth(s.APIKey, "")
-
-	return newReq, err
 }

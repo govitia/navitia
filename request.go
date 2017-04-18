@@ -3,6 +3,8 @@ package navitia
 import (
 	"context"
 	"encoding/json"
+	"io"
+	"net/http"
 	"net/url"
 
 	"github.com/pkg/errors"
@@ -23,12 +25,17 @@ func (s *Session) request(ctx context.Context, url string, query query, results 
 	// Store creation time
 	results.creating()
 
-	// Get the request
-	req, err := s.newRequest(url)
+	// Create the request
+	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		return errors.Wrap(err, "error while creating request")
+		return errors.Wrapf(err, "couldn't create new request (for %s)", url)
 	}
+
+	// Add context to the request
 	req = req.WithContext(ctx)
+
+	// Add basic auth
+	req.SetBasicAuth(s.APIKey, "")
 
 	// Encode the parameters
 	values, err := query.toURL()
@@ -41,7 +48,7 @@ func (s *Session) request(ctx context.Context, url string, query query, results 
 	resp, err := s.client.Do(req)
 	results.sending()
 
-	// Check it
+	// Check the response
 	if err != nil {
 		return errors.Wrap(err, "error while executing request")
 	}
@@ -56,8 +63,11 @@ func (s *Session) request(ctx context.Context, url string, query query, results 
 	default:
 	}
 
-	// Parse it
-	dec := json.NewDecoder(resp.Body)
+	// Limit the reader
+	reader := io.LimitReader(resp.Body, maxSize)
+
+	// Parse the now limited body
+	dec := json.NewDecoder(reader)
 	err = dec.Decode(results)
 	if err != nil {
 		return errors.Wrap(err, "JSON decoding failed")
