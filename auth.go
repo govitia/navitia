@@ -1,9 +1,10 @@
 package navitia
 
 import (
-	"github.com/pkg/errors"
 	"net/http"
 	"time"
+
+	"github.com/pkg/errors"
 )
 
 const (

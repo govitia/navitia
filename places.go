@@ -3,9 +3,10 @@ package navitia
 import (
 	"context"
 	"fmt"
-	"github.com/aabizri/navitia/types"
 	"net/url"
 	"strconv"
+
+	"github.com/aabizri/navitia/types"
 )
 
 // PlacesResults doesn't have pagination

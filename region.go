@@ -2,9 +2,10 @@ package navitia
 
 import (
 	"context"
-	"github.com/aabizri/navitia/types"
 	"net/url"
 	"strconv"
+
+	"github.com/aabizri/navitia/types"
 )
 
 const regionEndpoint string = "coverage"

@@ -3,8 +3,9 @@ package navitia
 import (
 	"context"
 	"encoding/json"
-	"github.com/pkg/errors"
 	"net/url"
+
+	"github.com/pkg/errors"
 )
 
 type query interface {

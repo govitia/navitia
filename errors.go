@@ -3,8 +3,9 @@ package navitia
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/pkg/errors"
 	"net/http"
+
+	"github.com/pkg/errors"
 )
 
 // RemoteErrorID is an ID for a remote error

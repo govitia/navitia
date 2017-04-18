@@ -2,8 +2,9 @@ package navitia
 
 import (
 	"context"
-	"github.com/aabizri/navitia/types"
 	"testing"
+
+	"github.com/aabizri/navitia/types"
 )
 
 func Test_Places_Basic(t *testing.T) {

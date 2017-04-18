@@ -3,10 +3,11 @@ package navitia
 import (
 	"context"
 	"fmt"
-	"github.com/aabizri/navitia/types"
 	"net/url"
 	"strconv"
 	"time"
+
+	"github.com/aabizri/navitia/types"
 )
 
 // JourneyResults contains the results of a Journey request
