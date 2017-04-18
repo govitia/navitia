@@ -14,12 +14,14 @@ Currently supported types
 	- Journey ["journey"]
 	- Section ["section"]
 	- Region ["region"]
+	- Isochrone ["isochrone"]
 	- Place (This is an interface for your ease-of-use, which is implemented by the five following types)
 	- Address ["address"]
 	- StopPoint ["stop_point"]
 	- StopArea ["stop_area"]
 	- Admin ["administrative_region"]
 	- POI ["poi"]
+	- PlaceContainer ["place"] (this is the official type returned by the navitia api)
 	- Line ["line"]
 	- Route ["route"]
 	- And others, such as Display ["display_informations"], PTDateTime ["pt-date-time"], StopTime ["stop_time"], Coordinates ["coord"].
@@ -27,7 +29,7 @@ Currently supported types
 package types
 
 // Version is the version of this package
-const Version = "dev"
+const Version = "v0.2"
 
 // A QueryEscaper implements QueryEscape, which returns an escaped representation of the type for use in URL queries.
 // Implemented by both ID and Coordinates
