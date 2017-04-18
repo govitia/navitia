@@ -10,10 +10,6 @@ This package was and is developped as a supporting library for the [navitia API 
 Simply run `go get -u github.com/aabizri/navitia/types`.
 
 ## Coverage
-This support includes or will include, for each type.
-- JSON Unmarshalling via UnmarshalJSON(b []byte), in the format of the navitia.io API
-- Validity Checking via Check()
-- Pretty-printing via String()
 
 Currently supported types (with corresponding navitia type names in brackets, [see the navitia doc](doc.navitia.io))
 - Journey ["journey"]
