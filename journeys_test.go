@@ -27,7 +27,7 @@ func Test_Journeys(t *testing.T) {
 	ctx := context.Background()
 
 	params := JourneyRequest{}
-	coords := types.Coordinates{48.847002, 2.377310}
+	coords := types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
 	params.From = coords
 
 	res, err := testSession.Journeys(ctx, params)
