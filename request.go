@@ -40,7 +40,6 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 
 	// Execute the request
 	resp, err := s.client.Do(req)
-	defer resp.Body.Close()
 	res.sending()
 
 	// Check the response
@@ -50,6 +49,9 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	if resp.StatusCode != 200 {
 		return parseRemoteError(resp)
 	}
+
+	// Defer the close
+	defer resp.Body.Close()
 
 	// Check for cancellation
 	select {

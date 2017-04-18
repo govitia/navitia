@@ -15,20 +15,19 @@ import (
 // Warning: types.Journey.From / types.Journey.To aren't guaranteed to be filled.
 // Based on very basic inspection, it seems they aren't filled when there are sections...
 type JourneyResults struct {
-	Journeys []types.Journey
+	Journeys []types.Journey `json:"journeys"`
 
-	Logging
+	Paging Paging `json:"links"`
+
+	Logging `json:"-"`
 
 	session *Session
 }
 
 // String satisfies stringer, pretty-prints JourneyResults
 func (jr JourneyResults) String() string {
-	var msg string
+	var msg string = fmt.Sprintf("There are %d results\n", len(jr.Journeys))
 	for i, journey := range jr.Journeys {
-		if i != 0 {
-			msg += "\n"
-		}
 		msg += fmt.Sprintf("Journey #%d: %s\n", i, journey.String())
 	}
 	return msg
