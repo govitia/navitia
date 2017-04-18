@@ -197,28 +197,28 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 }
 
 // journeys is the internal function used by Journeys functions
-func (s *Session) journeys(ctx context.Context, url string, params JourneyRequest) (*JourneyResults, error) {
+func (s *Session) journeys(ctx context.Context, url string, req JourneyRequest) (*JourneyResults, error) {
 	var results = &JourneyResults{session: s}
-	err := s.request(ctx, url, params, results)
+	err := s.request(ctx, url, req, results)
 	return results, err
 }
 
 const journeysEndpoint string = "journeys"
 
 // Journeys computes a list of journeys according to the parameters given
-func (s *Session) Journeys(ctx context.Context, params JourneyRequest) (*JourneyResults, error) {
+func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
 	url := s.APIURL + "/" + journeysEndpoint
 
 	// Call
-	return s.journeys(ctx, url, params)
+	return s.journeys(ctx, url, req)
 }
 
 // JourneysR computes a list of journeys according to the parameters given and in a specific region
-func (s *Session) JourneysR(ctx context.Context, params JourneyRequest, regionID string) (*JourneyResults, error) {
+func (s *Session) JourneysR(ctx context.Context, req JourneyRequest, regionID string) (*JourneyResults, error) {
 	// Create the URL
 	url := s.APIURL + "/coverage/" + regionID + "/" + journeysEndpoint
 
 	// Call
-	return s.journeys(ctx, url, params)
+	return s.journeys(ctx, url, req)
 }

@@ -10,10 +10,13 @@ import (
 )
 
 // PlacesResults doesn't have pagination
+//
+// Unfortunately it seems that the endpoint doesn't support paging :(
 type PlacesResults struct {
 	Places []types.Place
 
 	Logging
+
 	session *Session
 }
 
@@ -36,11 +39,13 @@ type PlacesRequest struct {
 	// It can either be a stop_area, an address, a poi or an administrative_region
 	Types []string
 
-	AdminURI []string // If given it will filter the search by specific admin uris
+	// If given it will filter the search by specific admin uris
+	AdminURI []string
 
 	DisableGeoJSON bool
 
-	Around types.Coordinates // If given, it will prioritise objects around these coordinates
+	// If given, it will prioritise objects around these coordinates
+	Around types.Coordinates
 
 	// Maximum amount of results
 	Count uint

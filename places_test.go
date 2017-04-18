@@ -7,7 +7,7 @@ import (
 	"github.com/aabizri/navitia/types"
 )
 
-func Test_Places_Basic(t *testing.T) {
+func Test_Places(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}

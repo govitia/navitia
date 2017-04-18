@@ -3,7 +3,7 @@ package navitia
 import (
 	"context"
 	"encoding/json"
-	//"github.com/aabizri/navitia/types"
+
 	"github.com/pkg/errors"
 )
 
