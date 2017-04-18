@@ -64,6 +64,7 @@ func (s *Session) Regions(ctx context.Context, req RegionRequest) (*RegionResult
 }
 
 // RegionByID provides information about a specific region.
+//
 // If the ID provided isn't an ID of a region, this WILL fail.
 //
 // It is context aware.
