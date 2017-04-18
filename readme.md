@@ -1,8 +1,11 @@
 # navitia is a Go client for the [navitia](navitia.io) API for public transit & transportation [![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=dev)](https://travis-ci.org/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/navitia?status.svg)](https://godoc.org/github.com/aabizri/navitia)
 
-This is the development version of navitia.
+This is navitia -dev.
 
-It needs at least go 1.7 to work as we use context & tests use testing.T.Run for subtests.
+## Dependencies
+
+- It needs at least go 1.7 to work as we use context & tests use testing.T.Run for subtests.
+- The dependencies are directly pulled in by `go get`, but for you
 
 ## Install
 
@@ -16,7 +19,7 @@ It needs at least go 1.7 to work as we use context & tests use testing.T.Run for
 
 ## Getting started
 
-### Creating a new session
+### Creating a new session
 
 First, you should have an API key from navitia.io, if you don't already have one, it's [this way !](https://www.navitia.io/register/)
 ```golang
@@ -72,9 +75,10 @@ res, _ := session.Journeys(context.Background(),request)
 fmt.Println(res)
 ```
 
-### Paging
+### Paging
 
-We'll use a Journey, to showcase the paging:
+Unfortunately, paging isn't supported by Regions nor by Places requests. You'll have to play with the `PlacesRequest.Count` value in the latter case.
+We'll use a Journey to showcase the paging:
 
 ```golang
 
@@ -98,11 +102,14 @@ for paginated.Paging.Next != nil {
 Obviously, you'll want to stop paginating at some point, and most importantly do something with the value.
 An example is on the way !
 
-## What's new in the development version ?
+## What's new in the development version ?
 
 - Paging support
 - Bugfix where the response body was never closed
 - Limited the size of responses
+- Coverage has been renamed to Regions
+- Regions (ex-Coverage), RegionByPos and RegionByID have a new parameter needed: RegionRequest
+- No more Session.Use
 
 ## Going further
 
