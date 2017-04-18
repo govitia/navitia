@@ -9,9 +9,9 @@ import (
 	"time"
 )
 
-// JourneyResults countains the results of a Journey request
+// JourneyResults contains the results of a Journey request
 //
-// Warning: types.Journey.From / types.Journey.To aren't garanteed to be filled.
+// Warning: types.Journey.From / types.Journey.To aren't guaranteed to be filled.
 // Based on very basic inspection, it seems they aren't filled when there are sections...
 type JourneyResults struct {
 	Journeys []types.Journey
@@ -33,7 +33,7 @@ func (jr JourneyResults) String() string {
 	return msg
 }
 
-// JourneyRequest countain the parameters needed to make a Journey request
+// JourneyRequest contain the parameters needed to make a Journey request
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
@@ -44,7 +44,7 @@ type JourneyRequest struct {
 	Date          time.Time
 	DateIsArrival bool
 
-	// The traveler's type
+	// The traveller's type
 	Traveler types.TravelerType
 
 	// Define the freshness of data to use to compute journeys

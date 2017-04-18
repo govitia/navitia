@@ -11,7 +11,7 @@ var (
 	testSession *Session
 )
 
-// Initialize testing function
+// Initialise testing function
 func init() {
 	// Populate flags
 	flag.Parse()

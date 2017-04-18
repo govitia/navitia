@@ -26,7 +26,7 @@ const (
 	RemoteErrUnableToParse = "unable_to_parse"
 )
 
-// RemoteErrorsDescriptions countains human-readable descriptions for a given remote error ID
+// RemoteErrorsDescriptions contains human-readable descriptions for a given remote error ID
 // Can also be used as a list of known error IDs
 var RemoteErrorsDescriptions = map[RemoteErrorID]string{
 	RemoteErrDateOutOfBounds:       "When the given date is out of bounds of the production dates of the region",

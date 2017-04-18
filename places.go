@@ -39,7 +39,7 @@ type PlacesRequest struct {
 
 	DisableGeoJSON bool
 
-	Around types.Coordinates // If given, it will prioritize objects around these coordinates
+	Around types.Coordinates // If given, it will prioritise objects around these coordinates
 
 	// Maximum amount of results
 	Count uint
