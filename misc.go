@@ -1,10 +1,11 @@
 package types
 
 import (
-	"github.com/pkg/errors"
 	"image/color"
 	"strconv"
 	"time"
+
+	"github.com/pkg/errors"
 )
 
 // DataFreshness codes for a specific data freshness requirement: realtime or base_schedule

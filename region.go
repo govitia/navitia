@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	"github.com/twpayne/go-geom"
 	"time"
+
+	"github.com/twpayne/go-geom"
 )
 
 // A Region holds information about a geographical region, including its ID, name & shape

@@ -2,6 +2,7 @@ package types
 
 import (
 	"encoding/json"
+
 	"github.com/mb0/wkt"
 	"github.com/pkg/errors"
 	"github.com/twpayne/go-geom"

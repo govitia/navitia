@@ -3,10 +3,11 @@ package types
 import (
 	"flag"
 	"fmt"
-	"github.com/pkg/errors"
 	"io/ioutil"
 	"os"
 	"path/filepath"
+
+	"github.com/pkg/errors"
 )
 
 var (

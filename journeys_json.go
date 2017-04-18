@@ -2,10 +2,11 @@ package types
 
 import (
 	"encoding/json"
-	"github.com/pkg/errors"
-	"golang.org/x/text/currency"
 	"strconv"
 	"time"
+
+	"github.com/pkg/errors"
+	"golang.org/x/text/currency"
 )
 
 /*

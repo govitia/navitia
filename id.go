@@ -1,9 +1,10 @@
 package types
 
 import (
-	"github.com/pkg/errors"
 	"net/url"
 	"strings"
+
+	"github.com/pkg/errors"
 )
 
 // An ID is used throughout the library, it is something used by the navitia API and useful to communicate with it.

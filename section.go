@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	"github.com/twpayne/go-geom"
 	"time"
+
+	"github.com/twpayne/go-geom"
 )
 
 // A Section holds information about a specific section

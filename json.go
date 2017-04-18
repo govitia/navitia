@@ -4,9 +4,10 @@ package types
 
 import (
 	"fmt"
-	"github.com/pkg/errors"
 	"strings"
 	"time"
+
+	"github.com/pkg/errors"
 )
 
 const (

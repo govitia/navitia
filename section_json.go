@@ -2,10 +2,11 @@ package types
 
 import (
 	"encoding/json"
+	"time"
+
 	"github.com/pkg/errors"
 	"github.com/twpayne/go-geom"
 	"github.com/twpayne/go-geom/encoding/geojson"
-	"time"
 )
 
 /*

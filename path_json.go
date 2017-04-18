@@ -2,8 +2,9 @@ package types
 
 import (
 	"encoding/json"
-	"github.com/pkg/errors"
 	"time"
+
+	"github.com/pkg/errors"
 )
 
 // UnmarshalJSON implements json.Unmarshaller for a PathSegment

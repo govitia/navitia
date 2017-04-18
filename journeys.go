@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	"golang.org/x/text/currency"
 	"time"
+
+	"golang.org/x/text/currency"
 )
 
 // A JourneyQualification qualifies a Journey, see const declaration.
