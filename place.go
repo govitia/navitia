@@ -213,25 +213,29 @@ type StopArea struct {
 	StopPoints []StopPoint `json:"stop_points"`
 }
 
-// PlaceID returns the ID associated with the StopArea
-// Helps satisfy Place
+// PlaceID returns the ID associated with the StopArea.
+//
+// Helps satisfy Place.
 func (sa StopArea) PlaceID() ID {
 	return sa.ID
 }
 
-// PlaceName returns the name of the StopArea
-// Helps satisfy Place
+// PlaceName returns the name of the StopArea.
+//
+// Helps satisfy Place.
 func (sa StopArea) PlaceName() string {
 	return sa.Name
 }
 
-// PlaceType returns the type of place, in this case "stop_area"
-// Helps satisfy Place
+// PlaceType returns the type of place, in this case "stop_area".
+//
+// Helps satisfy Place.
 func (sa StopArea) PlaceType() string {
 	return embeddedStopArea
 }
 
 // String pretty-prints the StopArea.
+//
 // Satisfies Stringer and helps satisfy Place
 func (sa StopArea) String() string {
 	var label string
@@ -259,25 +263,29 @@ type POI struct {
 }
 
 // PlaceID returns the ID associated with the POI.
-// Helps satisfy Place
+//
+// Helps satisfy Place.
 func (poi POI) PlaceID() ID {
 	return poi.ID
 }
 
 // PlaceName returns the name of the POI.
-// Helps satisfy Place
+//
+// Helps satisfy Place.
 func (poi POI) PlaceName() string {
 	return poi.Name
 }
 
 // PlaceType returns the type of place, in this case "poi".
-// Helps satisfy Place
+//
+// Helps satisfy Place.
 func (poi POI) PlaceType() string {
 	return embeddedPOI
 }
 
 // String pretty-prints the POI.
-// Satisfies Stringer and helps satisfy Place
+//
+// Satisfies Stringer and helps satisfy Place.
 func (poi POI) String() string {
 	var label string
 	if poi.Label == "" {
@@ -291,7 +299,6 @@ func (poi POI) String() string {
 }
 
 // A POIType codes for the type of the point of interest
-// TODO: A list of usual types ?
 type POIType struct {
 	ID   ID     `json:"id"`
 	Name string `json:"name"`
@@ -317,26 +324,30 @@ type Address struct {
 	Admins []Admin `json:"administrative_regions"`
 }
 
-// PlaceID returns the ID associated with the Address
-// Helps satisfy Place
+// PlaceID returns the ID associated with the Address.
+//
+// Helps satisfy Place.
 func (add Address) PlaceID() ID {
 	return add.ID
 }
 
-// PlaceName returns the name of the Address
-// Helps satisfy Place
+// PlaceName returns the name of the Address.
+//
+// Helps satisfy Place.
 func (add Address) PlaceName() string {
 	return add.Name
 }
 
-// PlaceType returns the type of place, in this case "address"
-// Helps satisfy Place
+// PlaceType returns the type of place, in this case "address".
+//
+// Helps satisfy Place.
 func (add Address) PlaceType() string {
 	return embeddedAddress
 }
 
 // String pretty-prints the Address.
-// Satisfies Stringer and helps satisfy Place
+//
+// Satisfies Stringer and helps satisfy Place.
 func (add Address) String() string {
 	var label string
 	if add.Label == "" {
@@ -369,26 +380,30 @@ type StopPoint struct {
 	StopArea *StopArea `json:"stop_area"`
 }
 
-// PlaceID returns the ID associated with the Stop Point
-// Helps satisfy Place
+// PlaceID returns the ID associated with the Stop Point.
+//
+// Helps satisfy Place.
 func (sp StopPoint) PlaceID() ID {
 	return sp.ID
 }
 
-// PlaceName returns the name of the Stop Point
-// Helps satisfy Place
+// PlaceName returns the name of the Stop Point.
+//
+// Helps satisfy Place.
 func (sp StopPoint) PlaceName() string {
 	return sp.Name
 }
 
-// PlaceType returns the type of place, in this case "stop_point"
-// Helps satisfy Place
+// PlaceType returns the type of place, in this case "stop_point".
+//
+// Helps satisfy Place.
 func (sp StopPoint) PlaceType() string {
 	return embeddedStopPoint
 }
 
 // String pretty-prints the StopPoint.
-// Satisfies Stringer and helps satisfy Place
+//
+// Satisfies Stringer and helps satisfy Place.
 func (sp StopPoint) String() string {
 	format := "%s (id: %s)"
 	return fmt.Sprintf(format, sp.Name, sp.ID)
@@ -415,26 +430,30 @@ type Admin struct {
 	ZipCode string `json:"zip_code"`
 }
 
-// PlaceID returns the ID associated with the Admin
-// Helps satisfy Place
+// PlaceID returns the ID associated with the Admin.
+//
+// Helps satisfy Place.
 func (ar Admin) PlaceID() ID {
 	return ar.ID
 }
 
-// PlaceName returns the name of the Admin
-// Helps satisfy Place
+// PlaceName returns the name of the Admin.
+//
+// Helps satisfy Place.
 func (ar Admin) PlaceName() string {
 	return ar.Name
 }
 
-// PlaceType returns the type of place, in this case "administrative_region"
-// Helps satisfy Place
+// PlaceType returns the type of place, in this case "administrative_region".
+//
+// Helps satisfy Place.
 func (ar Admin) PlaceType() string {
 	return embeddedAdmin
 }
 
 // String pretty-prints the Admin.
-// Satisfies Stringer and helps satisfy Place
+//
+// Satisfies Stringer and helps satisfy Place.
 func (ar Admin) String() string {
 	var label string
 	if ar.Label == "" {
