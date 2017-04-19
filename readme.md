@@ -110,6 +110,7 @@ An example is on the way !
 - Coverage has been renamed to Regions
 - Regions (ex-Coverage), RegionByPos and RegionByID have a new parameter needed: RegionRequest
 - No more Session.Use
+- Un-export RemoteErrorsDescriptions
 
 ## Going further
 
