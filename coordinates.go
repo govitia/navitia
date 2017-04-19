@@ -17,25 +17,25 @@ type Coordinates struct {
 // PlaceID formats & escapes the coordinates for use in queries as an ID
 //
 // Helps satisfy Place.
-func (coords Coordinates) PlaceID() string {
-	return fmt.Sprintf("%3.3f;%3.3f", coords.Longitude, coords.Latitude)
+func (c Coordinates) PlaceID() string {
+	return fmt.Sprintf("%3.3f;%3.3f", c.Longitude, c.Latitude)
 }
 
 // PlaceName returns a name for this coordinate.
 //
 // Helps satisfy Place.
-func (coords Coordinates) PlaceName() string {
-	return coords.PlaceID()
+func (c Coordinates) PlaceName() string {
+	return c.PlaceID()
 }
 
 // PlaceType returns "coord".
 //
 // Helps satisfy Place.
-func (coords Coordinates) PlaceType() string {
+func (c Coordinates) PlaceType() string {
 	return "coord"
 }
 
 // String pretty-prints a Coordinates and satisfies the Stringer interface
-func (coords Coordinates) String() string {
-	return fmt.Sprintf("Longitude %3.3f ; Latitude %3.3f", coords.Longitude, coords.Latitude)
+func (c Coordinates) String() string {
+	return fmt.Sprintf("Longitude %3.3f ; Latitude %3.3f", c.Longitude, c.Latitude)
 }
