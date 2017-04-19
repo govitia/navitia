@@ -30,9 +30,3 @@ package types
 
 // Version is the version of this package
 const Version = "dev"
-
-// A QueryEscaper implements QueryEscape, which returns an escaped representation of the type for use in URL queries.
-// Implemented by both ID and Coordinates
-type QueryEscaper interface {
-	QueryEscape() string
-}
