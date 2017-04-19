@@ -12,6 +12,7 @@ Simply run `go get -u github.com/aabizri/navitia/types`.
 ## Coverage
 
 Preview of the supported types, see [the doc](https://godoc.org/github.com/aabizri/navitia-types) for more information, and the [navitia.io doc](http://doc.navitia.io) for information about the remote API.
+
 |Type Name|Description|Navitia Name|
 |---|---|---|
 |[`Journey`](https://godoc.org/github.com/aabizri/navitia-types#Journey)|A journey (X-->Y)|"journey"|
@@ -22,6 +23,7 @@ Preview of the supported types, see [the doc](https://godoc.org/github.com/aabiz
 |[`Place`](https://godoc.org/github.com/aabizri/navitia-types#Place)|Place is an interface implemented by `Address`, [`StopPoint`](https://godoc.org/github.com/aabizri/navitia-types#StopPoint), [`StopArea`](https://godoc.org/github.com/aabizri/navitia-types#StopArea), [`POI`](https://godoc.org/github.com/aabizri/navitia-types#POI), [`Admin`](https://godoc.org/github.com/aabizri/navitia-types#Admin) & [`Coordinates`](https://godoc.org/github.com/aabizri/navitia-types#Coordinates).|
 |[`Line`](https://godoc.org/github.com/aabizri/navitia-types#Line)|A public transit line.|"line"|
 |[`Route`](https://godoc.org/github.com/aabizri/navitia-types#Route)|A specific route within a `Line`.|"route"|
+
 And others, such as [`Display`](https://godoc.org/github.com/aabizri/navitia-types#Display) ["display_informations"], [`PTDateTime`](https://godoc.org/github.com/aabizri/navitia-types#PTDateTime) ["pt-date-time"], [`StopTime`](https://godoc.org/github.com/aabizri/navitia-types#StopTime) ["stop_time"]
 
 ## Getting started
