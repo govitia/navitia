@@ -99,9 +99,9 @@ func (gen unmarshalErrorMaker) err(underlyingErr error, name string, key string,
 }
 
 // unmarshalErr creates a new UnmarshalError
-func unmarshalErr(underlyingErr error, type_ string, name string, key string, value interface{}, message string) error {
+func unmarshalErr(underlyingErr error, t string, name string, key string, value interface{}, message string) error {
 	return UnmarshalError{
-		Type:       type_,
+		Type:       t,
 		Key:        key,
 		Name:       name,
 		Value:      value,
