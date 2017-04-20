@@ -2,11 +2,16 @@ package types
 
 import (
 	"encoding/json"
+	"sync"
 
 	"github.com/pkg/errors"
 )
 
+// UnmarshalJSON satisfies the json.Unmarshaller interface
 func (c *Container) UnmarshalJSON(b []byte) error {
+	// Set up a mutex
+	c.mu = &sync.RWMutex{}
+
 	// Unmarshal into a map
 	data := map[string]json.RawMessage{}
 	err := json.Unmarshal(b, &data)
@@ -39,7 +44,6 @@ func (c *Container) UnmarshalJSON(b []byte) error {
 			return err
 		}
 	}
-
 	// Now, unmarshal the last one
 	if embedded, ok := data[c.EmbeddedType]; ok {
 		c.embeddedJSON = embedded

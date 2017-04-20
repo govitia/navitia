@@ -139,8 +139,11 @@ func (c *Container) Object() (Object, error) {
 	}
 
 	// If we already have an embedded object, return it
-	if obj := c.embeddedObject; obj != nil {
-		return obj, nil
+	c.mu.RLock()
+	o := c.embeddedObject
+	c.mu.RUnlock()
+	if o != nil {
+		return o, nil
 	}
 
 	// Create the receiver
@@ -179,7 +182,9 @@ func (c *Container) Object() (Object, error) {
 	}
 
 	// Let's add it to the container
+	c.mu.Lock()
 	c.embeddedObject = obj
+	c.mu.Unlock()
 
 	// Let's return it
 	return obj, nil
