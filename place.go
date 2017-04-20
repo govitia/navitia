@@ -9,15 +9,13 @@ import (
 // However, it allows the library user to use idiomatic go when working with the library.
 // If you want a countainer, see Container
 //
-// Place is satisfied by these types:
+// Place is held by these types:
 // 	- StopArea
 // 	- POI
 // 	- Address
 // 	- StopPoint
 // 	- Admin
-type Place interface {
-	fmt.Stringer
-}
+type Place interface{}
 
 // A StopArea represents a stop area: a nameable zone, where there are some stop points.
 type StopArea struct {

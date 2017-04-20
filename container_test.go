@@ -103,23 +103,49 @@ func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 	}
 
 	// Run function generator, allowing parallel run
-	runGen := func(in []byte) func(*testing.B) {
-		return func(b *testing.B) {
+	// Returns three functions: one without .Object() being called, one with, one one with only the call to .Object being recorded
+	runGen := func(in []byte) (without func(*testing.B), with func(*testing.B), only func(*testing.B)) {
+		without = func(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				// Unmarshal a Journey
 				var c = &Container{}
 				_ = c.UnmarshalJSON(in)
 			}
 		}
+
+		with = func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				// Unmarshal a Journey
+				var c = &Container{}
+				_ = c.UnmarshalJSON(in)
+
+				_, _ = c.Object()
+			}
+		}
+
+		only = func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				// Unmarshal a Journey
+				b.StopTimer()
+				var c = &Container{}
+				_ = c.UnmarshalJSON(in)
+				b.StartTimer()
+				_, _ = c.Object()
+			}
+		}
+
+		return
 	}
 
 	// Loop over all corpus
 	for name, datum := range data {
 		// Get run function
-		runFunc := runGen(datum)
+		without, with, only := runGen(datum)
 
 		// Run it !
-		b.Run(name, runFunc)
+		b.Run(name+"_without", without)
+		b.Run(name+"_with", with)
+		b.Run(name+"_only", only)
 	}
 }
 
