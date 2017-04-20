@@ -36,7 +36,7 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 
 		Fare *Fare `json:"fare"`
 
-		Status *JourneyStatus `json:"status"`
+		Status *Effect `json:"status"`
 	}{
 		Transfers: &j.Transfers,
 		Sections:  &j.Sections,

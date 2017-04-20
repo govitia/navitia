@@ -63,7 +63,7 @@ type Journey struct {
 	Fare Fare
 
 	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
-	Status JourneyStatus
+	Status Effect
 }
 
 // String pretty-prints the journey
@@ -98,23 +98,6 @@ type CO2Emissions struct {
 	Unit  string
 	Value float64
 }
-
-// JourneyStatus codes for known journey status information
-// For example, reduced service, detours or moved stops.
-type JourneyStatus string
-
-// JourneyStatusXXX are known JourneyStatuse
-const (
-	JourneyStatusNoService         JourneyStatus = "NO_SERVICE"
-	JourneyStatusReducedService                  = "REDUCED_SERVICE"
-	JourneyStatusSignificantDelay                = "SIGNIFICANT_DELAY"
-	JourneyStatusDetour                          = "DETOUR"
-	JourneyStatusAdditionalService               = "ADDITIONAL_SERVICE"
-	JourneyStatusModifiedService                 = "MODIFIED_SERVICE"
-	JourneyStatusOtherEffect                     = "OTHER_EFFECT"
-	JourneyStatusUnknownEffect                   = "UNKNOWN_EFFECT"
-	JourneyStatusStopMoved                       = "STOP_MOVED"
-)
 
 // Fare is the fare of some thing
 type Fare struct {
