@@ -100,22 +100,6 @@ func (pc PlaceContainer) IsEmpty() bool {
 	return pc == empty
 }
 
-var placeTypes = []string{
-	embeddedStopArea,
-	embeddedPOI,
-	embeddedAddress,
-	embeddedStopPoint,
-	embeddedAddress,
-}
-
-const (
-	embeddedStopArea  string = "stop_area"
-	embeddedPOI              = "poi"
-	embeddedAddress          = "address"
-	embeddedStopPoint        = "stop_point"
-	embeddedAdmin            = "administrative_region"
-)
-
 // Check checks the validity of the PlaceContainer. Returns an ErrInvalidPlaceContainer.
 //
 // An empty PlaceContainer is valid. But those cases aren't:

@@ -58,3 +58,11 @@ type PTDateTime struct {
 	// Date/Time of arrival
 	Arrival time.Time
 }
+
+// A Code is associated to a dataset
+//
+// Every object managed by Navitia comes with its own list of ids. You will find some source ids, merge ids, etc. in “codes” list in json responses. Be careful, these codes may not be unique. The navitia id is the only unique id.
+type Code struct {
+	Type  string
+	Value string
+}
