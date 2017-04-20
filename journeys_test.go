@@ -93,8 +93,8 @@ func TestJourneyUnmarshal_NoCompare(t *testing.T) {
 	}
 }
 
-// BenchmarkJourneyUnmarshal benchmarks Journey unmarshalling via subbenchmarks
-func BenchmarkJourneyUnmarshal(b *testing.B) {
+// BenchmarkJourney_UnmarshalJSON benchmarks Journey unmarshalling via subbenchmarks
+func BenchmarkJourney_UnmarshalJSON(b *testing.B) {
 	// Get the bench data
 	data := testData["journey"].bench
 	if len(data) == 0 {
