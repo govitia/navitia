@@ -23,6 +23,8 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		// Pointers to the corresponding real values
 		Type       *SectionType   `json:"type"`
 		ID         *ID            `json:"id"`
+		From       *Container     `json:"from"`
+		To         *Container     `json:"to"`
 		Mode       *Mode          `json:"mode"`
 		StopTimes  *[]StopTime    `json:"stop_date_times"`
 		Display    *Display       `json:"display_informations"`
@@ -30,8 +32,6 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		Path       *[]PathSegment `json:"path"`
 
 		// Values to process
-		From      PlaceContainer    `json:"from"`
-		To        PlaceContainer    `json:"to"`
 		Departure string            `json:"departure_date_time"`
 		Arrival   string            `json:"arrival_date_time"`
 		Duration  int64             `json:"duration"`
@@ -39,6 +39,8 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	}{
 		Type:       &s.Type,
 		ID:         &s.ID,
+		From:       &s.From,
+		To:         &s.To,
 		Mode:       &s.Mode,
 		Display:    &s.Display,
 		Additional: &s.Additional,
@@ -53,20 +55,6 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	err := json.Unmarshal(b, data)
 	if err != nil {
 		return errors.Wrap(err, "Error while unmarshalling journey")
-	}
-
-	// Now process the two PlaceContainer
-	if !data.From.IsEmpty() {
-		s.From, err = data.From.Place()
-		if err != nil {
-			return gen.err(err, "From", "from", data.From, " .Place() failed")
-		}
-	}
-	if !data.To.IsEmpty() {
-		s.To, err = data.To.Place()
-		if err != nil {
-			return gen.err(err, "To", "to", data.To, " .Place() failed")
-		}
 	}
 
 	// For departure and arrival, we use parseDateTime

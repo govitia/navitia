@@ -44,12 +44,17 @@ type Container struct {
 	EmbeddedType string
 	Quality      int
 
-	embedded json.RawMessage
+	embeddedJSON   json.RawMessage
+	embeddedObject Object
 }
 
 func (c *Container) UnmarshalJSON(b []byte) error {
 	// Unmarshal into a map
 	data := map[string]json.RawMessage{}
+	err := json.Unmarshal(b, &data)
+	if err != nil {
+		return errors.Wrap(err, "Couldn't unmarshal into a map")
+	}
 
 	// From a map, extract the ID, Name & EmbeddedType
 	if id, ok := data["id"]; ok {
@@ -79,7 +84,7 @@ func (c *Container) UnmarshalJSON(b []byte) error {
 
 	// Now, unmarshal the last one
 	if embedded, ok := data[c.EmbeddedType]; ok {
-		c.embedded = embedded
+		c.embeddedJSON = embedded
 	}
 
 	return nil
@@ -120,6 +125,10 @@ func (err ErrInvalidContainer) Error() string {
 	return fmt.Sprintf(msg, anomalies)
 }
 
+func (c Container) Empty() bool {
+	return c.ID == "" && c.Name == "" && c.EmbeddedType == "" && c.Quality == 0 && len(c.embeddedJSON) == 0 && c.embeddedObject == nil
+}
+
 // Check checks the validity of the Container. Returns an ErrInvalidContainer.
 //
 // An empty Container is valid. But those cases aren't:
@@ -127,13 +136,13 @@ func (err ErrInvalidContainer) Error() string {
 // 	- If the Container has an empty EmbeddedType.
 // 	- If the Container has an unknown EmbeddedType.
 func (c Container) Check() error {
-	// Check if its empty
-	if c.ID == "" && c.Name == "" && c.EmbeddedType == "" && c.Quality == 0 && len(c.embedded) == 0 {
+	// Check if the container is empty
+	if c.Empty() {
 		return nil
 	}
 
 	// Create the error to be populated
-	err := ErrInvalidPlaceContainer{}
+	err := ErrInvalidContainer{}
 
 	// Check for zero ID
 	err.NoID = (c.ID == "")
@@ -155,7 +164,7 @@ func (c Container) Check() error {
 	err.UnknownEmbeddedType = !known
 
 	// Check if there's any change
-	emptyErr := ErrInvalidPlaceContainer{}
+	emptyErr := ErrInvalidContainer{}
 	if err != emptyErr {
 		return err
 	}
@@ -169,6 +178,11 @@ func (c Container) Check() error {
 func (c *Container) Object() (Object, error) {
 	if c.EmbeddedType == "" {
 		return nil, nil
+	}
+
+	// If we already have an embedded object, return it
+	if obj := c.embeddedObject; obj != nil {
+		return obj, nil
 	}
 
 	// Create the receiver
@@ -201,10 +215,13 @@ func (c *Container) Object() (Object, error) {
 	}
 
 	// Unmarshal into the receiver
-	err := json.Unmarshal(c.embedded, obj)
+	err := json.Unmarshal(c.embeddedJSON, obj)
 	if err != nil {
 		return nil, errors.Wrapf(err, "couldn't unmarshal the embedded type (%s)", c.EmbeddedType)
 	}
+
+	// Let's add it to the container
+	c.embeddedObject = obj
 
 	// Let's return it
 	return obj, nil

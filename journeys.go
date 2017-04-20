@@ -55,8 +55,8 @@ type Journey struct {
 
 	Sections []Section
 
-	From Place
-	To   Place
+	From Container
+	To   Container
 
 	Type JourneyQualification
 
@@ -79,11 +79,11 @@ func (j Journey) String() string {
 		from = "unknown"
 		to   = "unknown"
 	)
-	if j.From != nil {
-		from = j.From.PlaceName()
+	if !j.From.Empty() {
+		from = j.From.Name
 	}
-	if j.To != nil {
-		to = j.To.PlaceName()
+	if !j.To.Empty() {
+		to = j.To.Name
 	}
 
 	message := fmt.Sprintf(format, from, j.Departure.Format(timeFormat), j.Duration.String(), to, j.Arrival.Format(timeFormat))

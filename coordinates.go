@@ -14,25 +14,9 @@ type Coordinates struct {
 	Latitude  float64 `json:"lat"`
 }
 
-// PlaceID formats & escapes the coordinates for use in queries as an ID
-//
-// Helps satisfy Place.
-func (c Coordinates) PlaceID() string {
-	return fmt.Sprintf("%3.3f;%3.3f", c.Longitude, c.Latitude)
-}
-
-// PlaceName returns a name for this coordinate.
-//
-// Helps satisfy Place.
-func (c Coordinates) PlaceName() string {
-	return c.PlaceID()
-}
-
-// PlaceType returns "coord".
-//
-// Helps satisfy Place.
-func (c Coordinates) PlaceType() string {
-	return "coord"
+// ID formats & escapes the coordinates for use in queries as an ID
+func (c Coordinates) ID() ID {
+	return ID(fmt.Sprintf("%3.3f;%3.3f", c.Longitude, c.Latitude))
 }
 
 // String pretty-prints a Coordinates and satisfies the Stringer interface

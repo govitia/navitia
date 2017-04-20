@@ -5,18 +5,26 @@ import (
 	"time"
 )
 
-// TestJourneyString tests the String method without first unmarshalling
+// TestJourneyString shocases the String method without first unmarshalling
 func TestJourneyString(t *testing.T) {
-	from := Address{
-		ID:    "2.399803859568057;48.88150165806373",
-		Label: "54 Boulevard d'Algérie (Paris)",
-		Name:  "Boulevard d'Algérie",
+	from := Container{
+		ID:   "2.399803859568057;48.88150165806373",
+		Name: "54 Boulevard d'Algérie (Paris)",
+		embeddedObject: Address{
+			ID:    "2.399803859568057;48.88150165806373",
+			Label: "54 Boulevard d'Algérie (Paris)",
+			Name:  "Boulevard d'Algérie",
+		},
 	}
 
-	to := Address{
-		ID:    "2.344404;48.835114",
-		Label: "54 Boulevard Arago (Paris)",
-		Name:  "Boulevard Arago",
+	to := Container{
+		ID:   "2.344404;48.835114",
+		Name: "54 Boulevard Arago (Paris)",
+		embeddedObject: Address{
+			ID:    "2.344404;48.835114",
+			Label: "54 Boulevard Arago (Paris)",
+			Name:  "Boulevard Arago",
+		},
 	}
 
 	departure, err := time.Parse("2006-01-02T15:04:05", "2017-04-11T21:33:55")
@@ -47,12 +55,6 @@ func TestJourneyString(t *testing.T) {
 		Arrival:   arrival,
 		Duration:  time.Duration(3018) * time.Second,
 		Sections:  []Section{section},
-	}
-
-	want := "Boulevard d'Algérie (11/04 @ 21:33) --(50m18s)--> Boulevard Arago (11/04 @ 22:24)\n\t0: Boulevard d'Algérie (11/04 @ 21:33) --(Métro 11 | 50m18s)--> Boulevard Arago (11/04 @ 22:24)"
-
-	if journey.String() != want {
-		t.Error("Output of String isn't what was expected")
 	}
 
 	t.Logf("For journey we have: %s", journey.String())

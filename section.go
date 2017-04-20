@@ -14,8 +14,8 @@ type Section struct {
 	Mode Mode
 
 	// From & To
-	From Place
-	To   Place
+	From Container
+	To   Container
 
 	// Arrival time & departure time
 	Departure time.Time
@@ -113,11 +113,11 @@ func (s Section) String() string {
 		from = "unknown"
 		to   = "unknown"
 	)
-	if s.From != nil {
-		from = s.From.PlaceName()
+	if !s.From.Empty() {
+		from = s.From.Name
 	}
-	if s.To != nil {
-		to = s.To.PlaceName()
+	if !s.To.Empty() {
+		to = s.To.Name
 	}
 
 	format := "%s (%s) --(%s | %s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"

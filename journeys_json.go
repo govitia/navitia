@@ -29,8 +29,8 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 
 		Sections *[]Section `json:"sections"`
 
-		From PlaceContainer `json:"from"`
-		To   PlaceContainer `json:"to"`
+		From *Container `json:"from"`
+		To   *Container `json:"to"`
 
 		Type *JourneyQualification `json:"type"`
 
@@ -40,6 +40,8 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	}{
 		Transfers: &j.Transfers,
 		Sections:  &j.Sections,
+		From:      &j.From,
+		To:        &j.To,
 		Type:      &j.Type,
 		Fare:      &j.Fare,
 		Status:    &j.Status,
@@ -69,21 +71,6 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	j.Arrival, err = parseDateTime(data.Arrival)
 	if err != nil {
 		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
-	}
-
-	// For the places, we directly use the embedded type !
-	// Warning: it is possible for a countainer to be empty, so we don't fill up the Place in those cases
-	if !data.From.IsEmpty() {
-		j.From, err = data.From.Place()
-		if err != nil {
-			return gen.err(err, "From", "from", data.From, " .Place() failed")
-		}
-	}
-	if !data.To.IsEmpty() {
-		j.To, err = data.To.Place()
-		if err != nil {
-			return gen.err(err, "To", "to", data.To, " .Place() failed")
-		}
 	}
 
 	return nil
