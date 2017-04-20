@@ -1,7 +1,6 @@
 package types
 
 import (
-	"net/url"
 	"strings"
 
 	"github.com/pkg/errors"
@@ -18,14 +17,6 @@ func (id ID) Check() error {
 	return nil
 }
 
-// QueryEscape formats the given ID so that it can be safely used in a URL query
-func (id ID) QueryEscape() string {
-	if strings.Contains(string(id), ";") {
-		return string(id)
-	}
-	return url.QueryEscape(string(id))
-}
-
 // typeNames stores navitia-side name of types that may appear in IDs
 var typeNames = map[string]bool{
 	"network":         true,
@@ -39,10 +30,11 @@ var typeNames = map[string]bool{
 	"stop_point":      true,
 }
 
-// Type gets the type of object this ID refers to
+// Type gets the type of object this ID refers to.
+//
 // Possible types: network, line, route, stop_area, commercial_mode, physical_mode, company, admin, stop_point.
-// Note that this doesn't always work. WIP
-// If no type is found, type returns an empty string
+//
+// This is just guessing, if no type is found, type returns an empty string.
 func (id ID) Type() string {
 	splitted := strings.Split(string(id), ":")
 	if len(splitted) == 0 {
