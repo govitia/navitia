@@ -39,7 +39,7 @@ func (d *Disruption) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Disruption"}
+	gen := unmarshalErrorMaker{"Disruption", b}
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -68,7 +68,7 @@ func (p *Period) UnmarshalJSON(b []byte) error {
 	}{}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Period"}
+	gen := unmarshalErrorMaker{"Period", b}
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -109,7 +109,7 @@ func (s *Severity) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Severity"}
+	gen := unmarshalErrorMaker{"Severity", b}
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)

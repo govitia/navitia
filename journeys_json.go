@@ -47,14 +47,14 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 		Status:    &j.Status,
 	}
 
-	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Journey"}
-
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
+
+	// Let's create the error generator
+	gen := unmarshalErrorMaker{"Journey", b}
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
 	j.Duration = time.Duration(data.Duration) * time.Second
@@ -96,16 +96,21 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
 
+	// Let's create the error generator
+	gen := unmarshalErrorMaker{"Fare", b}
+
 	// Let's convert the cost now
 	// If we have no defined fare, let's skip that part
 	if data.Cost.Value == "" || data.Cost.Currency == "" {
 		return nil
 	}
+
 	// First get the currency unit
 	unit, err := currency.ParseISO(data.Cost.Currency)
 	if err != nil {
-		return unmarshalErr(err, "Fare", "N/A", "cost.currency", data.Cost.Currency, "error while retrieving currency unit via currency.ParseISO")
+		return gen.err(err, "Total", "cost.currency", data.Cost.Currency, "error while retrieving currency unit via currency.ParseISO")
 	}
+
 	// Now let's create the correct amount
 	f.Total = unit.Amount(data.Cost.Value)
 
@@ -129,10 +134,13 @@ func (c *CO2Emissions) UnmarshalJSON(b []byte) error {
 		return errors.Wrap(err, "Error while unmarshalling CO2Emissions")
 	}
 
+	// Let's create the error generator
+	gen := unmarshalErrorMaker{"CO2Emissions", b}
+
 	// Now parse the value
 	f, err := strconv.ParseFloat(data.Value, 64)
 	if err != nil {
-		return unmarshalErr(err, "CO2Emissions", "Value", "value", data.Value, "error in strconv.ParseFloat")
+		return gen.err(err, "Value", "value", data.Value, "error in strconv.ParseFloat")
 	}
 	c.Value = f
 

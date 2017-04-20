@@ -34,7 +34,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Line"}
+	gen := unmarshalErrorMaker{"Line", b}
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)

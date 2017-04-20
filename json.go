@@ -62,6 +62,9 @@ type UnmarshalError struct {
 
 	// Underlying error
 	Underlying error
+
+	// Full JSON data
+	JSON []byte
 }
 
 // Cause implements github.com/pkg/error's causer
@@ -84,6 +87,7 @@ func (err UnmarshalError) Error() string {
 // unmarshalErrorer allows us to make better error messages
 type unmarshalErrorMaker struct {
 	Type string
+	JSON []byte
 }
 
 // err creates a new UnmarshalError
@@ -95,17 +99,6 @@ func (gen unmarshalErrorMaker) err(underlyingErr error, name string, key string,
 		Value:      value,
 		Message:    message,
 		Underlying: underlyingErr,
-	}
-}
-
-// unmarshalErr creates a new UnmarshalError
-func unmarshalErr(underlyingErr error, t string, name string, key string, value interface{}, message string) error {
-	return UnmarshalError{
-		Type:       t,
-		Key:        key,
-		Name:       name,
-		Value:      value,
-		Message:    message,
-		Underlying: underlyingErr,
+		JSON:       gen.JSON,
 	}
 }

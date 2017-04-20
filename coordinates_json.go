@@ -21,14 +21,17 @@ func (c *Coordinates) UnmarshalJSON(b []byte) error {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
 
+	// Create the error generator
+	gen := unmarshalErrorMaker{"Coordinates", b}
+
 	// Now parse the values
-	c.Latitude, err = strconv.ParseFloat(data.Latitude, 64)
-	if err != nil {
-		return errors.Wrap(err, "Error while parsing float in coordinates")
-	}
 	c.Longitude, err = strconv.ParseFloat(data.Longitude, 64)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing float in coordinates")
+		return gen.err(err, "Longitude", "lon", data.Longitude, "error in strconv.ParseFloat")
+	}
+	c.Latitude, err = strconv.ParseFloat(data.Latitude, 64)
+	if err != nil {
+		return gen.err(err, "Latitude", "lat", data.Latitude, "error in strconv.ParseFloat")
 	}
 
 	return nil

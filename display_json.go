@@ -37,16 +37,16 @@ func (d *Display) UnmarshalJSON(b []byte) error {
 		Equipments:     &d.Equipments,
 	}
 
-	// Create the error generator
-	gen := unmarshalErrorMaker{"Display"}
-
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
 		return errors.Wrap(err, "Display.UnmarshalJSON: error while unmarshalling Line")
 	}
 
-	// Now process the value
+	// Create the error generator
+	gen := unmarshalErrorMaker{"Display", b}
+
+	// Now process the values
 	// We expect a color string length of 6 because it should be coded in hexadecimal
 	if str := data.Color; len(str) == 6 {
 		clr, err := parseColor(str)

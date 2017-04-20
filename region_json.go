@@ -41,40 +41,47 @@ func (r *Region) UnmarshalJSON(b []byte) error {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
 
-	// Now we use parseDateTime
+	// Let's create the error generator
+	gen := unmarshalErrorMaker{"Region", b}
+
+	// Now let's process the values
+	// First the times
 	r.DatasetCreation, err = parseDateTime(data.DatasetCreation)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return gen.err(err, "DatasetCreation", "dataset_created_at", data.DatasetCreation, "Error while parsing datetime")
 	}
 	r.LastLoaded, err = parseDateTime(data.LastLoaded)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return gen.err(err, "LastLoaded", "last_load_at", data.LastLoaded, "Error while parsing datetime")
 	}
 	r.ProductionStart, err = parseDateTime(data.ProductionStart)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return gen.err(err, "ProductionStart", "start_production_date", data.ProductionStart, "Error while parsing datetime")
 	}
 	r.ProductionEnd, err = parseDateTime(data.ProductionEnd)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return gen.err(err, "ProductionEnd", "end_production_date", data.ProductionEnd, "Error while parsing datetime")
 	}
 
 	// And now let's have some FUN, deal with the "shape" key.
-	// First, let's check if the string isn't empty, it would be so awesome
+	// First, let's check if the string isn't empty, cause that would be so awesome...
 	if data.Shape != "" {
+		// Parse the MKT
 		out, err := wkt.Parse([]byte(data.Shape))
 		if err != nil {
-			return errors.Wrapf(err, "error while fuck (out = %v)", out)
+			return gen.err(err, "Shape", "shape", out, "error in wkt.Parse")
 		}
+
 		// Now, out should be a wkt.MultiPolygon
 		wktmp, ok := out.(*wkt.MultiPolygon)
 		if !ok {
-			return errors.Errorf("Expected out to be of type wkt.MultiPolygon, but it isn't !")
+			return gen.err(nil, "Shape", "shape", out, "expected out to be of type wkt.MultiPolygon, but it isn't !")
 		}
 
+		// Call our funny little function to convert that to a geom format
 		mp, err := convertWktMPtoGeomMP(wktmp)
 		if err != nil {
-			return errors.Wrap(err, "Error while convert *wkt.MultiPolygon to *geom.MultiPolygon")
+			return gen.err(err, "Shape", "shape", wktmp, "error while converting *wkt.MultiPolygon to *geom.MultiPolygon via convertWktMPtoGeomMP")
 		}
 
 		r.Shape = mp

@@ -48,14 +48,14 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 		Path:       &s.Path,
 	}
 
-	// Create the error generator
-	gen := unmarshalErrorMaker{"Section"}
-
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
+
+	// Create the error generator
+	gen := unmarshalErrorMaker{"Section", b}
 
 	// For departure and arrival, we use parseDateTime
 	s.Departure, err = parseDateTime(data.Departure)
@@ -103,14 +103,17 @@ func (ptdt *PTDateTime) UnmarshalJSON(b []byte) error {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
 
+	// Create the error generator
+	gen := unmarshalErrorMaker{"PTDateTime", b}
+
 	// Now we use parseDateTime
 	ptdt.Departure, err = parseDateTime(data.Departure)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
 	}
 	ptdt.Arrival, err = parseDateTime(data.Arrival)
 	if err != nil {
-		return errors.Wrap(err, "Error while parsing datetime")
+		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
 	}
 
 	return nil
