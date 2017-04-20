@@ -1,6 +1,8 @@
 package types
 
 import (
+	"fmt"
+	"strings"
 	"testing"
 )
 
@@ -32,6 +34,32 @@ func TestRegionUnmarshal_NoCompare(t *testing.T) {
 		// Run !
 		t.Run(name, rfunc)
 	}
+}
+
+// TestRegionUnmarshal_ShapeInvalidMKT tests known invalid MKT (well-known text) -encoded Region.Shape inputs for (*Region).UnmarshalJSON
+func TestRegionUnmarshal_ShapeInvalidMKT(t *testing.T) {
+	// Shapes
+	var shapes = [...]string{
+		"MULTIPOLYGON(((-11.33535 51.29165,0,0,-11.33535 51.29165))",
+		"MULTIPOLYGON((",
+		"MULTIPOLYGON(((-11.33535 51.29165,0,0,-11.33535 51.29165)",
+		"MULTIPOLYGON(",
+		"POLYGON(",
+		"MULTIPOLYGON(((0",
+	}
+
+	// Run
+	for i, s := range shapes {
+		in := []byte(fmt.Sprintf(`{"shape": "%s"}`, s))
+		r := &Region{}
+		err := r.UnmarshalJSON(in)
+		if err == nil {
+			t.Errorf("No error in run #%d even though we expected one", i)
+		} else if !strings.Contains(err.Error(), "EOF") {
+			t.Errorf("Unexpected error in run #%d with [%s]: %v", i, in, err)
+		}
+	}
+
 }
 
 // BenchmarkRegionUnmarshal benchmarks Region unmarshalling via subbenchmarks
