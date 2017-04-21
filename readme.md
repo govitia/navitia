@@ -102,19 +102,19 @@ for paginated.Paging.Next != nil {
 Obviously, you'll want to stop paginating at some point, and most importantly do something with the value.
 An example is on the way !
 
+### Going further
+
+Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia)
+
 ## What's new in the development version ?
 
 - Paging support
 - Bugfix where the response body was never closed
 - Limited the size of responses
-- Coverage has been renamed to Regions
-- Regions (ex-Coverage), RegionByPos and RegionByID have a new parameter needed: RegionRequest
-- No more Session.Use
-- Un-export RemoteErrorsDescriptions
-
-## Going further
-
-Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia)
+- `Coverage` has been renamed to `Regions`
+- `Regions` (ex-`Coverage`), `RegionByPos` and `RegionByID` have a new parameter needed: `RegionRequest`
+- No more `Session.Use`
+- Un-export `RemoteErrorsDescriptions`
 
 ## Footnotes
 
