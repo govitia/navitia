@@ -2,6 +2,7 @@ package navitia
 
 import (
 	"flag"
+	"net/http"
 )
 
 const skipNoKey string = "No api key supplied, skipping (provide one using -key flag)"
@@ -19,7 +20,7 @@ func init() {
 	// Create session
 	if *apiKey != "" {
 		var err error
-		testSession, err = New(*apiKey)
+		testSession, err = NewCustom(*apiKey, "http://api.navitia.io/v1", http.DefaultClient)
 		if err != nil {
 			panic(err)
 		}
