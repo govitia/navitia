@@ -6,7 +6,7 @@ package types
 type Route struct {
 	// Identifier of the route
 	// For example: "route:RAT:M6"
-	ID string `json:"id"`
+	ID ID `json:"id"`
 
 	// Name of the route
 	// For example:"Nation - Charles de Gaule Etoile"
@@ -20,5 +20,5 @@ type Route struct {
 
 	// Direction is the direction of the route
 	// Note: As direction is a Place, it can be a POI in some data
-	Direction Place `json:"direction"`
+	Direction Container `json:"direction"`
 }
