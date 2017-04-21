@@ -72,7 +72,7 @@ type ErrInvalidContainer struct {
 	// If the Container has a zero ID.
 	NoID bool
 
-	// If the PlaceContainer has a zero EmbeddedType.
+	// If the PlaceContainer has an EmbeddedType yet non-empty embedded content.
 	NoEmbeddedType bool
 
 	// If the PlaceContainer has an unknown EmbeddedType
@@ -91,7 +91,7 @@ func (err ErrInvalidContainer) Error() string {
 		anomalies++
 	}
 	if err.NoEmbeddedType {
-		msg += "\n\tEmpty EmbeddedType"
+		msg += "\n\tEmpty EmbeddedType yet non-empty embedded content"
 		anomalies++
 	}
 	if err.UnknownEmbeddedType {
@@ -111,7 +111,7 @@ func (c *Container) Empty() bool {
 //
 // An empty Container is valid. But those cases aren't:
 // 	- If the Container has an empty ID.
-// 	- If the Container has an empty EmbeddedType.
+// 	- If the Container has an empty EmbeddedType & a non-empty embedded struct inside.
 // 	- If the Container has an unknown EmbeddedType.
 func (c *Container) Check() error {
 	// Check if the container is empty
@@ -125,13 +125,15 @@ func (c *Container) Check() error {
 	// Check for zero ID
 	err.NoID = (c.ID == "")
 
-	// Check if the embedded type is empty
-	if c.EmbeddedType == "" {
+	// Check if the embedded type is empty & there is a non-empty embedded content inside, that's an error
+	if c.EmbeddedType == "" && (len(c.embeddedJSON) != 0 || c.embeddedObject != nil) {
 		err.NoEmbeddedType = true
 		return err
+	} else if c.EmbeddedType == "" { // Else, if the embedded type indicator is empty, the rest is useless
+		return nil
 	}
 
-	// Check if the declared EmbeddedType is known.
+	// Else, check if the declared EmbeddedType is known.
 	var known bool
 	for _, ket := range embeddedTypes {
 		if c.EmbeddedType == ket {
