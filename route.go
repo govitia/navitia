@@ -6,19 +6,19 @@ package types
 type Route struct {
 	// Identifier of the route
 	// For example: "route:RAT:M6"
-	ID ID `json:"id"`
+	ID ID
 
 	// Name of the route
 	// For example:"Nation - Charles de Gaule Etoile"
-	Name string `json:"name"`
+	Name string
 
 	// Frequence is true when the route has frequency, if it doesn't it stays false
-	Frequence bool `json:"is_frequence"`
+	Frequence bool
 
 	// Line is the line it is connected to
-	Line Line `json:"line"`
+	Line Line
 
 	// Direction is the direction of the route
 	// Note: As direction is a Place, it can be a POI in some data
-	Direction Container `json:"direction"`
+	Direction Container
 }
