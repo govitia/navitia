@@ -22,9 +22,6 @@ func TestSectionUnmarshal_NoCompare(t *testing.T) {
 			if err != nil {
 				t.Errorf("Error while unmarshalling: %v", err)
 			}
-
-			str := s.String()
-			t.Log("\n" + str)
 		}
 	}
 

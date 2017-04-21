@@ -18,8 +18,3 @@ type Coordinates struct {
 func (c Coordinates) ID() ID {
 	return ID(fmt.Sprintf("%3.3f;%3.3f", c.Longitude, c.Latitude))
 }
-
-// String pretty-prints a Coordinates and satisfies the Stringer interface
-func (c Coordinates) String() string {
-	return fmt.Sprintf("Longitude %3.3f ; Latitude %3.3f", c.Longitude, c.Latitude)
-}

@@ -1,7 +1,6 @@
 package types
 
 import (
-	"fmt"
 	"time"
 
 	"github.com/twpayne/go-geom"
@@ -35,14 +34,4 @@ type Region struct {
 	// An error in the dataset.
 	// This comes from the server, not from this package.
 	Error string
-}
-
-// String stringifies a region
-func (r Region) String() string {
-	format := `ID: %s
-Name: %s
-Status: %s
-Error: %v
-`
-	return fmt.Sprintf(format, r.ID, r.Name, r.Status, r.Error)
 }

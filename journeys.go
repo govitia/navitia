@@ -1,7 +1,6 @@
 package types
 
 import (
-	"fmt"
 	"time"
 
 	"golang.org/x/text/currency"
@@ -64,33 +63,6 @@ type Journey struct {
 
 	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
 	Status Effect
-}
-
-// String pretty-prints the journey
-// Warning: it is possible for a journey to have From and/or To nil, in those cases it will be replaced by "unknown"
-// WIP, later let's add more of the data
-func (j Journey) String() string {
-	// However, it is possible for a journey not to have From and/or To information !
-	// As such, in those cases it will be marked as "unknown"
-	var format = "%s (%s) --(%s)--> %s (%s)" // in the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
-	timeFormat := "02/01 @ 15:04"
-
-	var (
-		from = "unknown"
-		to   = "unknown"
-	)
-	if !j.From.Empty() {
-		from = j.From.Name
-	}
-	if !j.To.Empty() {
-		to = j.To.Name
-	}
-
-	message := fmt.Sprintf(format, from, j.Departure.Format(timeFormat), j.Duration.String(), to, j.Arrival.Format(timeFormat))
-	for i, section := range j.Sections {
-		message += fmt.Sprintf("\n\t%d: %s", i, section.String())
-	}
-	return message
 }
 
 // CO2Emissions contains the

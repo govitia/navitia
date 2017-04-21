@@ -1,7 +1,6 @@
 package types
 
 import (
-	"fmt"
 	"time"
 
 	"github.com/twpayne/go-geom"
@@ -94,35 +93,6 @@ var SectionTypes = map[SectionType]string{
 	SectionBikeSharePutBack:  "Putting back a bike from a bike sharing system (bss)",
 	SectionBoarding:          "Boarding on plane",
 	SectionLanding:           "Landing off the plane",
-}
-
-// String satisfies Stringer.
-//
-// Warning: it is possible for a section to have From and/or To nil, in those cases it will be replaced by "unknown"
-func (s Section) String() string {
-	var info string
-	if s.Display.Label != "" && s.Display.PhysicalMode != "" {
-		info = string(s.Display.PhysicalMode) + " " + s.Display.Label
-	} else if s.Mode != "" {
-		info = string(s.Mode)
-	}
-
-	// Warning: it is possible for a section not to have From and/or To information !
-	// As such, in those cases it will be marked as "unknown"
-	var (
-		from = "unknown"
-		to   = "unknown"
-	)
-	if !s.From.Empty() {
-		from = s.From.Name
-	}
-	if !s.To.Empty() {
-		to = s.To.Name
-	}
-
-	format := "%s (%s) --(%s | %s)--> %s (%s)" // In the form "Paris Gare de Lyon (02/01 @ 15:04) --(45m)--> Paris Saint Lazare (02/01 @ 15:49)"
-	timeFormat := "02/01 @ 15:04"
-	return fmt.Sprintf(format, from, s.Departure.Format(timeFormat), info, s.Duration.String(), to, s.Arrival.Format(timeFormat))
 }
 
 // A StopTime stores info about a stop in a route: when the vehicle comes in, when it comes out, and what stop it is.
