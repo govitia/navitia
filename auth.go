@@ -2,6 +2,7 @@ package navitia
 
 import (
 	"net/http"
+	"path"
 	"time"
 )
 
@@ -38,7 +39,7 @@ type Session struct {
 //
 // Warning: No Timeout is indicated in the default http client, and as such, it is strongly advised to use NewCustom with a custom *http.Client !
 func New(key string) (*Session, error) {
-	return NewCustom(key, defaultAPIURL, defaultClient)
+	return NewCustom(key, path.Clean(defaultAPIURL), defaultClient)
 }
 
 // NewCustom creates a custom new session given an API key, URL to api base & http client
