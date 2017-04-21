@@ -8,7 +8,7 @@ import (
 	"github.com/aabizri/navitia/types"
 )
 
-func TestDeparturesSA(t *testing.T) {
+func TestConnectionsSA(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}
@@ -23,29 +23,40 @@ func TestDeparturesSA(t *testing.T) {
 	ctx := context.Background()
 
 	// Common request (for now)
-	req := DeparturesRequest{}
+	req := ConnectionsRequest{}
 
 	// Create the run function generator, allowing us to run this in parallel
-	rgen := func(region types.ID, resource types.ID) func(t *testing.T) {
-		return func(t *testing.T) {
+	//
+	// Creates two versions: one calling DeparturesSA the other ArrivalsSA
+	rgen := func(region types.ID, resource types.ID) (func(t *testing.T), func(t *testing.T)) {
+		depFunc := func(t *testing.T) {
 			res, err := testSession.DeparturesSA(ctx, req, region, resource)
 			t.Log(res)
 			if err != nil {
 				t.Errorf("Got error: %v", err)
 			}
 		}
+		arrFunc := func(t *testing.T) {
+			res, err := testSession.ArrivalsSA(ctx, req, region, resource)
+			t.Log(res)
+			if err != nil {
+				t.Errorf("Got error: %v", err)
+			}
+		}
+		return depFunc, arrFunc
 	}
 
 	// For each of them, let's run a subtest
 	for i, sa := range resources {
 		// Get the run function
-		rfunc := rgen(region, sa)
+		depFunc, arrFunc := rgen(region, sa)
 
 		// Create the name
 		name := strconv.Itoa(i)
 
 		// Run !
-		t.Run(name, rfunc)
+		t.Run(name+"_departures", depFunc)
+		t.Run(name+"_arrivals", arrFunc)
 	}
 
 }
