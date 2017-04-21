@@ -20,7 +20,8 @@ Preview of the supported types, see [the doc](https://godoc.org/github.com/aabiz
 |[`Region`](https://godoc.org/github.com/aabizri/navitia-types#Region)|A region covered by the API|"region"|
 |[`Isochrone`](https://godoc.org/github.com/aabizri/navitia-types#Region)|A region covered by the API|"isochrone"|
 |[`Container`](https://godoc.org/github.com/aabizri/navitia-types#Container)|This contains a Place or a PTObject|"place"/"pt_object"|
-|[`Place`](https://godoc.org/github.com/aabizri/navitia-types#Place)|Place is an interface implemented by `Address`, [`StopPoint`](https://godoc.org/github.com/aabizri/navitia-types#StopPoint), [`StopArea`](https://godoc.org/github.com/aabizri/navitia-types#StopArea), [`POI`](https://godoc.org/github.com/aabizri/navitia-types#POI), [`Admin`](https://godoc.org/github.com/aabizri/navitia-types#Admin) & [`Coordinates`](https://godoc.org/github.com/aabizri/navitia-types#Coordinates).|
+|[`Place`](https://godoc.org/github.com/aabizri/navitia-types#Place)|Place is an interface, by convention holding an `Address`, [`StopPoint`](https://godoc.org/github.com/aabizri/navitia-types#StopPoint), [`StopArea`](https://godoc.org/github.com/aabizri/navitia-types#StopArea), [`POI`](https://godoc.org/github.com/aabizri/navitia-types#POI), [`Admin`](https://godoc.org/github.com/aabizri/navitia-types#Admin) & [`Coordinates`](https://godoc.org/github.com/aabizri/navitia-types#Coordinates).|
+|[`PTObject`](https://godoc.org/github.com/aabizri/navitia-types#Place)|PTObject is an interface representing a Public Transportation object|
 |[`Line`](https://godoc.org/github.com/aabizri/navitia-types#Line)|A public transit line.|"line"|
 |[`Route`](https://godoc.org/github.com/aabizri/navitia-types#Route)|A specific route within a `Line`.|"route"|
 
@@ -39,9 +40,7 @@ func main() {
 	data := []byte{"some journey's json"}
 	var j types.Journey
 	_ = j.UnmarshalJSON(data)
-	fmt.Println(j.String())
 }
-
 ```
 
 ### Going further
