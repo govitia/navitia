@@ -65,7 +65,7 @@ type Journey struct {
 	Status Effect
 }
 
-// CO2Emissions contains the
+// CO2Emissions holds how much CO2 is emitted.
 type CO2Emissions struct {
 	Unit  string
 	Value float64

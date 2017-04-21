@@ -6,7 +6,7 @@ import (
 	"github.com/twpayne/go-geom"
 )
 
-// A Region holds information about a geographical region, including its ID, name & shape
+// A Region holds information about a geographical region, including its ID, name & shape.
 type Region struct {
 	// Identifier of the region
 	ID ID

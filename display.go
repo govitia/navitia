@@ -3,8 +3,6 @@ package types
 import "image/color"
 
 // A Display holds informations useful to display.
-//
-// Used by Section ["section"], RouteSchedule ["route_schedule"], StopSchedule ["stop_schedule"], Departure ["departure"], Arrival ["arrival"].
 type Display struct {
 	// The headsign associated with the object
 	Headsign string
