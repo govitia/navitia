@@ -28,7 +28,7 @@ type JourneyResults struct {
 func (jr JourneyResults) String() string {
 	var msg string = fmt.Sprintf("There are %d results\n", len(jr.Journeys))
 	for i, journey := range jr.Journeys {
-		msg += fmt.Sprintf("Journey #%d: %s\n", i, journey.String())
+		msg += fmt.Sprintf("Journey #%d: %v\n", i, journey)
 	}
 	return msg
 }
@@ -37,8 +37,8 @@ func (jr JourneyResults) String() string {
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
-	From types.QueryEscaper
-	To   types.QueryEscaper
+	From types.ID
+	To   types.ID
 
 	// When do you want to depart ? Or is DateIsArrival when do you want to arrive at your destination.
 	Date          time.Time
@@ -119,7 +119,7 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	addIDSlice := func(key string, ids []types.ID) {
 		if len(ids) != 0 {
 			for _, id := range ids {
-				params.Add(key, id.QueryEscape())
+				params.Add(key, string(id))
 			}
 		}
 	}
@@ -138,11 +138,11 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	}
 
 	// Encode the from and to
-	if from := req.From; from != nil {
-		params.Add("from", from.QueryEscape())
+	if from := req.From; from != "" {
+		params.Add("from", string(from))
 	}
-	if to := req.To; to != nil {
-		params.Add("to", to.QueryEscape())
+	if to := req.To; to != "" {
+		params.Add("to", string(to))
 	}
 
 	if datetime := req.Date; !datetime.IsZero() {

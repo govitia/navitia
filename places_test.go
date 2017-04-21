@@ -2,6 +2,7 @@ package navitia
 
 import (
 	"context"
+	"encoding/json"
 	"testing"
 
 	"github.com/aabizri/navitia/types"
@@ -51,7 +52,7 @@ func Test_PlacesResultsUnmarshal_NoCompare(t *testing.T) {
 		return func(t *testing.T) {
 			var pr = &PlacesResults{}
 
-			err := pr.UnmarshalJSON(data)
+			err := json.Unmarshal(data, pr)
 			if err != nil {
 				t.Errorf("Error while unmarshalling: %v", err)
 			}

@@ -1,4 +1,4 @@
 [submodule "types"]
 	path = types
 	url = https://github.com/aabizri/navitia-types
-	branch = v0.2
+	branch = dev

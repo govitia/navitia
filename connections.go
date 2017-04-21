@@ -151,7 +151,7 @@ func (s *Session) DeparturesSP(ctx context.Context, req ConnectionsRequest, regi
 // DeparturesC requests the departures from a point described by coordinates.
 func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
 	// Create the URL
-	coordsQ := url.PathEscape(coords.QueryEscape())
+	coordsQ := string(coords.ID())
 	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
 
 	return s.connections(ctx, url, req)
@@ -176,7 +176,7 @@ func (s *Session) ArrivalsSP(ctx context.Context, req ConnectionsRequest, region
 // ArrivalsC requests the arrivals from a point described by coordinates.
 func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
 	// Create the URL
-	coordsQ := url.PathEscape(coords.QueryEscape())
+	coordsQ := string(coords.ID())
 	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint
 
 	return s.connections(ctx, url, req)

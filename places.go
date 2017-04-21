@@ -13,9 +13,9 @@ import (
 //
 // Unfortunately it seems that the endpoint doesn't support paging :(
 type PlacesResults struct {
-	Places []types.Place
+	Places []types.Container `json:"places"`
 
-	Logging
+	Logging `json:"-"`
 
 	session *Session
 }
@@ -24,8 +24,8 @@ type PlacesResults struct {
 func (res PlacesResults) String() string {
 	var msg string
 	for i, place := range res.Places {
-		if place != nil {
-			msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.PlaceType(), place.String())
+		if !place.Empty() {
+			msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.EmbeddedType, place.Name)
 		}
 	}
 	return msg

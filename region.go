@@ -81,8 +81,8 @@ func (s *Session) RegionByID(ctx context.Context, req RegionRequest, id types.ID
 // It is context aware.
 func (s *Session) RegionByPos(ctx context.Context, req RegionRequest, coords types.Coordinates) (*RegionResults, error) {
 	// Build the URL
-	coordsFormatted := coords.QueryEscape()
-	url := s.APIURL + "/" + regionEndpoint + "/" + coordsFormatted
+	coordsQ := string(coords.ID())
+	url := s.APIURL + "/" + regionEndpoint + "/" + coordsQ
 
 	// Call and return
 	return s.region(ctx, url, req)
