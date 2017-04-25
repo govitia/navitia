@@ -1,8 +1,5 @@
 package types
 
-// A Mode represents a non-public transportation mode
-type Mode string
-
 // ModeXXX are known non-public transportation mode
 const (
 	ModeWalking string = "walking"

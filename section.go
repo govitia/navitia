@@ -10,7 +10,7 @@ import (
 type Section struct {
 	Type SectionType
 	ID   ID
-	Mode Mode
+	Mode string
 
 	// From & To
 	From Container
