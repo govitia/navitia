@@ -2,7 +2,6 @@ package navitia
 
 import (
 	"context"
-	"fmt"
 	"net/url"
 	"strconv"
 	"time"
@@ -24,13 +23,9 @@ type JourneyResults struct {
 	session *Session
 }
 
-// String satisfies stringer, pretty-prints JourneyResults
-func (jr JourneyResults) String() string {
-	var msg string = fmt.Sprintf("There are %d results\n", len(jr.Journeys))
-	for i, journey := range jr.Journeys {
-		msg += fmt.Sprintf("Journey #%d: %v\n", i, journey)
-	}
-	return msg
+// Count returns the number of results available in a JourneyRequest
+func (jr *JourneyResults) Count() int {
+	return len(jr.Journeys)
 }
 
 // JourneyRequest contain the parameters needed to make a Journey request
