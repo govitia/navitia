@@ -121,7 +121,7 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	addModes := func(key string, modes []string) {
 		if len(modes) != 0 {
 			for _, mode := range modes {
-				params.Add(key, string(mode))
+				params.Add(key, mode)
 			}
 		}
 	}
