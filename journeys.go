@@ -54,10 +54,10 @@ type JourneyRequest struct {
 
 	// Force the first section mode if it isn't a public transport mode
 	// Note: The parameter is inclusive, not exclusive. As such if you want to forbid a mode you have to include all modes except that one.
-	FirstSectionModes []types.Mode
+	FirstSectionModes []string
 
 	// Same, but for the last section
-	LastSectionModes []types.Mode
+	LastSectionModes []string
 
 	// MaxDurationToPT is the maximum allowed duration to reach the public transport.
 	// Use this to limit the walking/biking part.
@@ -118,7 +118,7 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 			}
 		}
 	}
-	addModes := func(key string, modes []types.Mode) {
+	addModes := func(key string, modes []string) {
 		if len(modes) != 0 {
 			for _, mode := range modes {
 				params.Add(key, string(mode))
