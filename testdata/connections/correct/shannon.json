@@ -1,0 +1,2327 @@
+{
+    "departures": [
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6751vn10-132-e16-123I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T170800",
+                "base_arrival_date_time": "20170427T170800",
+                "base_departure_date_time": "20170427T170800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T170800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6750w310-132-e16-124I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T173800",
+                "base_arrival_date_time": "20170427T173800",
+                "base_departure_date_time": "20170427T173800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T173800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6754vn10-132-e16-123I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T180800",
+                "base_arrival_date_time": "20170427T180800",
+                "base_departure_date_time": "20170427T180800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T180800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6752vn10-132-e16-129I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T183800",
+                "base_arrival_date_time": "20170427T183800",
+                "base_departure_date_time": "20170427T183800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T183800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6755w310-132-e16-124I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T193800",
+                "base_arrival_date_time": "20170427T193800",
+                "base_departure_date_time": "20170427T193800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T193800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6756vc10-132-e16-123I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T203800",
+                "base_arrival_date_time": "20170427T203800",
+                "base_departure_date_time": "20170427T203800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T203800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6757uo10-132-e16-124I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T213800",
+                "base_arrival_date_time": "20170427T213800",
+                "base_departure_date_time": "20170427T213800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T213800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6759vc10-132-e16-129I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T223800",
+                "base_arrival_date_time": "20170427T223800",
+                "base_departure_date_time": "20170427T223800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T223800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6760w310-132-e16-124I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170427T233800",
+                "base_arrival_date_time": "20170427T233800",
+                "base_departure_date_time": "20170427T233800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170427T233800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        },
+        {
+            "display_informations": {
+                "code": "343",
+                "color": "000000",
+                "commercial_mode": "Bus",
+                "description": "",
+                "direction": "Glentworth, Limerick Bus Station",
+                "equipments": [
+                ],
+                "headsign": "Ennis Bus Station - Limer",
+                "label": "343",
+                "links": [
+                ],
+                "network": "Bus \u00c9ireann",
+                "physical_mode": "Bus",
+                "text_color": "FFFFFF"
+            },
+            "links": [
+                {
+                    "id": "line:OEA:10-132-e16-1",
+                    "type": "line"
+                },
+                {
+                    "id": "vehicle_journey:OEA:6761vc10-132-e16-124I-1",
+                    "type": "vehicle_journey"
+                },
+                {
+                    "id": "route:OEA:10-132-e16-1_R",
+                    "type": "route"
+                },
+                {
+                    "id": "commercial_mode:Bus",
+                    "type": "commercial_mode"
+                },
+                {
+                    "id": "physical_mode:Bus",
+                    "type": "physical_mode"
+                },
+                {
+                    "id": "network:OEA:01",
+                    "type": "network"
+                }
+            ],
+            "route": {
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA10-132-e16-1_R"
+                    },
+                    {
+                        "type": "source",
+                        "value": "10-132-e16-1"
+                    }
+                ],
+                "direction": {
+                    "embedded_type": "stop_area",
+                    "id": "stop_area:OEA:SA:CTP8400B6350301",
+                    "name": "Glentworth, Limerick Bus Station",
+                    "quality": 0,
+                    "stop_area": {
+                        "codes": [
+                            {
+                                "type": "external_code",
+                                "value": "OEACTP8400B6350301"
+                            },
+                            {
+                                "type": "source",
+                                "value": "CTP8400B6350301"
+                            }
+                        ],
+                        "coord": {
+                            "lat": "52.658542",
+                            "lon": "-8.624509"
+                        },
+                        "id": "stop_area:OEA:SA:CTP8400B6350301",
+                        "label": "Glentworth, Limerick Bus Station",
+                        "links": [
+                        ],
+                        "name": "Glentworth, Limerick Bus Station",
+                        "timezone": "Europe/Dublin"
+                    }
+                },
+                "direction_type": "",
+                "geojson": {
+                    "coordinates": [
+                    ],
+                    "type": "MultiLineString"
+                },
+                "id": "route:OEA:10-132-e16-1_R",
+                "is_frequence": "False",
+                "line": {
+                    "closing_time": "232000",
+                    "code": "343",
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEA10-132-e16-1"
+                        },
+                        {
+                            "type": "source",
+                            "value": "10-132-e16-1"
+                        }
+                    ],
+                    "color": "000000",
+                    "geojson": {
+                        "coordinates": [
+                        ],
+                        "type": "MultiLineString"
+                    },
+                    "id": "line:OEA:10-132-e16-1",
+                    "links": [
+                    ],
+                    "name": "",
+                    "opening_time": "050500",
+                    "text_color": "FFFFFF"
+                },
+                "links": [
+                ],
+                "name": "Ennis Bus Station - Glentworth, Limerick Bus Station",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ]
+            },
+            "stop_date_time": {
+                "additional_informations": [
+                ],
+                "arrival_date_time": "20170428T001800",
+                "base_arrival_date_time": "20170428T001800",
+                "base_departure_date_time": "20170428T001800",
+                "data_freshness": "base_schedule",
+                "departure_date_time": "20170428T001800",
+                "links": [
+                ]
+            },
+            "stop_point": {
+                "administrative_regions": [
+                    {
+                        "coord": {
+                            "lat": "52.702267",
+                            "lon": "-8.927898000000001"
+                        },
+                        "id": "admin:osm:6800554",
+                        "insee": "",
+                        "label": "Clenagh",
+                        "level": 9,
+                        "name": "Clenagh",
+                        "zip_code": ""
+                    }
+                ],
+                "codes": [
+                    {
+                        "type": "external_code",
+                        "value": "OEA8360B337651"
+                    },
+                    {
+                        "type": "source",
+                        "value": "8360B337651"
+                    }
+                ],
+                "commercial_modes": [
+                    {
+                        "id": "commercial_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "coord": {
+                    "lat": "52.705837",
+                    "lon": "-8.877245"
+                },
+                "equipments": [
+                ],
+                "id": "stop_point:OEA:SP:8360B337651",
+                "label": "Shannon (Town Hall)",
+                "links": [
+                ],
+                "name": "Shannon (Town Hall)",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "stop_area": {
+                    "administrative_regions": [
+                        {
+                            "coord": {
+                                "lat": "52.702267",
+                                "lon": "-8.927898000000001"
+                            },
+                            "id": "admin:osm:6800554",
+                            "insee": "",
+                            "label": "Clenagh",
+                            "level": 9,
+                            "name": "Clenagh",
+                            "zip_code": ""
+                        }
+                    ],
+                    "codes": [
+                        {
+                            "type": "external_code",
+                            "value": "OEACTP8360B337651"
+                        },
+                        {
+                            "type": "source",
+                            "value": "CTP8360B337651"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.705837",
+                        "lon": "-8.877245"
+                    },
+                    "id": "stop_area:OEA:SA:CTP8360B337651",
+                    "label": "Shannon (Town Hall)",
+                    "links": [
+                    ],
+                    "name": "Shannon (Town Hall)",
+                    "timezone": "Europe/Dublin"
+                }
+            }
+        }
+    ],
+    "disruptions": [
+    ],
+    "exceptions": [
+    ],
+    "feed_publishers": [
+        {
+            "id": "ie",
+            "license": "CC",
+            "name": "Transport For Ireland",
+            "url": "http://www.transportforireland.ie/transitData/PT_Data.html"
+        },
+        {
+            "id": "OEA",
+            "license": "CC",
+            "name": "OEA - Bus Eireann",
+            "url": "http://www.transportforireland.ie/transitData/PT_Data.html"
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/stop_points/{stop_point.id}",
+            "rel": "stop_points",
+            "templated": true,
+            "type": "stop_point"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/commercial_modes/{commercial_modes.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_modes"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/routes/{route.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "route"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/vehicle_journeys/{vehicle_journey.id}",
+            "rel": "vehicle_journeys",
+            "templated": true,
+            "type": "vehicle_journey"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/physical_modes/{physical_mode.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_mode"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/networks/{network.id}",
+            "rel": "networks",
+            "templated": true,
+            "type": "network"
+        },
+        {
+            "href": "https://api.navitia.io/v1/coverage/ie/stop_areas/stop_area:OEA:SA:CTP8360B337651/departures?from_datetime=20170427T170408",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "notes": [
+    ],
+    "pagination": {
+        "items_on_page": 10,
+        "items_per_page": 10,
+        "start_page": 0,
+        "total_result": 10
+    }
+}
