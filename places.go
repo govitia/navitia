@@ -4,12 +4,15 @@ import (
 	"context"
 	"fmt"
 	"net/url"
+	"sort"
 	"strconv"
 
 	"github.com/aabizri/navitia/types"
 )
 
-// PlacesResults doesn't have pagination
+// PlacesResults doesn't have pagination.
+//
+// PlacesResults support sort.Interface, it can be sorted !
 //
 // Unfortunately it seems that the endpoint doesn't support paging :(
 type PlacesResults struct {
@@ -18,6 +21,27 @@ type PlacesResults struct {
 	Logging `json:"-"`
 
 	session *Session
+}
+
+// Len is the number of Places in the results.
+//
+// It has the same bahaviour as Count
+func (pr *PlacesResults) Len() int {
+	return len(pr.Places)
+}
+
+// Less reports if the quality of the Place with the index i is less than that of the Place with the index j
+//
+// Note: In most use cases, that's the opposite of the desired behaviour, so simply use sort.Reverse and ta-da !
+func (pr *PlacesResults) Less(i, j int) bool {
+	return pr.Places[i].Quality < pr.Places[j].Quality
+}
+
+// Swap swaps the Place of index i and the Place of index j
+func (pr *PlacesResults) Swap(i, j int) {
+	tmp := pr.Places[i]
+	pr.Places[i] = pr.Places[j]
+	pr.Places[j] = tmp
 }
 
 // String implements Stringer and pretty-prints a PlacesResults
@@ -85,6 +109,12 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 func (s *Session) places(ctx context.Context, url string, params PlacesRequest) (*PlacesResults, error) {
 	var results = &PlacesResults{session: s}
 	err := s.request(ctx, url, params, results)
+
+	// Sort the places if quality is defined on the results, no need to expand some call
+	// Justification for the if condition: If at least of of the results quality is 0, then all of them are 0.
+	if results.Count() != 0 && results.Places[0].Quality != 0 {
+		sort.Sort(sort.Reverse(results))
+	}
 	return results, err
 }
 
