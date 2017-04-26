@@ -29,4 +29,4 @@ Currently supported types
 package types
 
 // Version is the version of this package
-const Version = "v0.3"
+const Version = "-dev"
