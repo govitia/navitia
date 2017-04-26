@@ -108,6 +108,7 @@ Obviously, this is a very simple example of what navitia can do, [check out the 
 
 ## What's new in the development version ?
 
+- **Pretty-printing !** via the `pretty` subpackage
 - Paging support
 - Bugfix where the response body was never closed
 - Limited the size of responses
@@ -115,6 +116,11 @@ Obviously, this is a very simple example of what navitia can do, [check out the 
 - `Regions` (ex-`Coverage`), `RegionByPos` and `RegionByID` have a new parameter needed: `RegionRequest`
 - No more `Session.Use`
 - Un-export `RemoteErrorsDescriptions`
+- PlacesResults support `sort.Interface`
+- `PlacesResults` has a new method, `Count`
+- No more `JourneyResults.String`
+- New `JourneyResults.Count` to count the number of journeys in the results
+- And others, see `git log`
 
 ## Footnotes
 
