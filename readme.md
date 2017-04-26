@@ -49,8 +49,7 @@ Obviously, this is a very simple example of what navitia-types can do, [check ou
 
 ## What's new in dev
 
-- `Coordinates` now implements `Place`
-- Remove now useless `QueryEscaper` interface
+- `Container` is now a type that can be used as a Place Container or as a PTObject Container, which helps everyone! 
 
 ## TODO
 
