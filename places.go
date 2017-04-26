@@ -31,6 +31,11 @@ func (pr *PlacesResults) String() string {
 	return msg
 }
 
+// Count returns the number of results available in a PlacesResults
+func (pr *PlacesResults) Count() int {
+	return len(pr.Places)
+}
+
 // PlacesRequest is the query you need to build before passing it to Places
 type PlacesRequest struct {
 	Query string // The search item
