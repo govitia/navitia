@@ -21,9 +21,9 @@ type PlacesResults struct {
 }
 
 // String implements Stringer and pretty-prints a PlacesResults
-func (res PlacesResults) String() string {
+func (pr *PlacesResults) String() string {
 	var msg string
-	for i, place := range res.Places {
+	for i, place := range pr.Places {
 		if !place.Empty() {
 			msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.EmbeddedType, place.Name)
 		}
