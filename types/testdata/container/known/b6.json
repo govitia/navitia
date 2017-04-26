@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n272853313",
+	"name": "Avenue Henri Martin (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Avenue Henri Martin",
+		"coord": {
+			"lat": "48.864084",
+			"lon": "2.2768625"
+		},
+		"label": "Avenue Henri Martin (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 71,
+			"id": "2.2768625;48.864084",
+			"name": "Avenue Henri Martin",
+			"coord": {
+				"lat": "48.864084",
+				"lon": "2.2768625"
+			},
+			"label": "71 Avenue Henri Martin (Paris)"
+		},
+		"id": "poi:n272853313",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "34",
+			"name": "Avenue Henri Martin",
+			"operator": "JCDecaux",
+			"ref": "16013",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"embedded_type": "poi",
+	"quality": 50,
+	"id": "poi:n672727214",
+	"name": "Commissariat de police Javel-Grenelle (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Police, gendarmerie",
+			"id": "poi_type:amenity:police"
+		},
+		"name": "Commissariat de police Javel-Grenelle",
+		"coord": {
+			"lat": "48.8433337",
+			"lon": "2.2768334"
+		},
+		"label": "Commissariat de police Javel-Grenelle (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 34,
+			"id": "2.2768334;48.8433337",
+			"name": "Rue Balard",
+			"coord": {
+				"lat": "48.8433337",
+				"lon": "2.2768334"
+			},
+			"label": "34 Commissariat de police Javel-Grenelle (Paris)"
+		},
+		"id": "poi:n672727214",
+		"properties": {
+			"addr:housenumber": "34",
+			"amenity": "police",
+			"addr:city": "Paris",
+			"addr:postcode": "75015",
+			"name": "Commissariat de police Javel-Grenelle",
+			"addr:country": "FR",
+			"addr:street": "Rue Balard"
+		}
+	}
+}

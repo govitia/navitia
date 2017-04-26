@@ -1,0 +1,23 @@
+{
+    "id": "ce7e265d-5762-45b6-ab4d-a1df643dd48d",
+    "status": "active",
+    "disruption_id": "ce7e265d-5762-45b6-ab4d-a1df643dd48d",
+    "impact_id": "ce7e265d-5762-45b6-ab4d-a1df643dd48d",
+    "severity": {
+        "name": "trip delayed",
+        "effect": "SIGNIFICANT_DELAYS"
+    },
+    "application_periods": [
+        {
+            "begin": "20160608T215400",
+            "end": "20160608T230959"
+        }
+    ],
+    "messages": [
+        {"text": "Strike"}
+    ],
+    "updated_at": "20160617T132624",
+    "impacted_objects": [],
+    "cause": "Cause...",
+    "category": "incident"
+}

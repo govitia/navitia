@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 60,
+	"id": "poi:n2304319864",
+	"name": "10 Avenue des Minimes (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Parking v\u00e9lo",
+			"id": "poi_type:amenity:bicycle_parking"
+		},
+		"name": "10 Avenue des Minimes",
+		"coord": {
+			"lat": "48.8411291",
+			"lon": "2.4320878"
+		},
+		"label": "10 Avenue des Minimes (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 0,
+			"id": "2.4320878;48.8411291",
+			"name": "Rue Louis Besquel",
+			"coord": {
+				"lat": "48.8411291",
+				"lon": "2.4320878"
+			},
+			"label": "Rue Louis Besquel"
+		},
+		"id": "poi:n2304319864",
+		"properties": {
+			"amenity": "bicycle_parking",
+			"capacity": "20",
+			"name": "10 Avenue des Minimes",
+			"supervised": "no",
+			"covered": "no",
+			"bicycle_parking": "stands"
+		}
+	}
+}

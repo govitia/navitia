@@ -1,0 +1,41 @@
+{
+	"embedded_type": "stop_area",
+	"quality": 50,
+	"stop_area": {
+		"codes": [
+			{
+				"type": "external_code",
+				"value": "RATLMPGR"
+			},
+			{
+				"type": "source",
+				"value": "LMPGR"
+			}
+		],
+		"name": "La Motte-Picquet \u2014 Grenelle",
+		"links": [],
+		"coord": {
+			"lat": "48.84916",
+			"lon": "2.297949"
+		},
+		"label": "La Motte-Picquet \u2014 Grenelle (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"timezone": "Europe\/Paris",
+		"id": "stop_area:RAT:SA:LMPGR"
+	},
+	"name": "La Motte-Picquet \u2014 Grenelle (Paris)",
+	"id": "stop_area:RAT:SA:LMPGR"
+}

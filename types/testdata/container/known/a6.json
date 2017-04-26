@@ -1,0 +1,52 @@
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n272853107",
+	"name": "Rue de Siam (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Rue de Siam",
+		"coord": {
+			"lat": "48.861679",
+			"lon": "2.2753896"
+		},
+		"label": "Rue de Siam (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 1,
+			"id": "2.2753896;48.861679",
+			"name": "Rue de Siam",
+			"coord": {
+				"lat": "48.861679",
+				"lon": "2.2753896"
+			},
+			"label": "1 Rue de Siam (Paris)"
+		},
+		"id": "poi:n272853107",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "16",
+			"name": "Rue de Siam",
+			"source": "survey",
+			"operator": "JCDecaux",
+			"ref": "16017",
+			"network": "V\u00e9lib'"
+		}
+	}
+}
