@@ -1,0 +1,19 @@
+{
+    "id":"line:RAT:M6",
+    "name":"Nation - Charles de Gaule Etoile",
+    "code":"6",
+    "color":"79BB92",
+    "opening_time":"053000",
+    "closing_time":"013600",
+    "routes":[],
+    "commercial_mode":{
+        "id":"commercial_mode:Metro",
+        "name":"Metro"
+    },
+    "physical_modes":[
+        {
+            "name":"Métro",
+            "id":"physical_mode:Metro"
+        }
+    ]
+}

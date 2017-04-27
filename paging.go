@@ -1,68 +1,55 @@
 package navitia
 
-// Paging olds key paging information
+import (
+	"context"
+	"encoding/json"
+
+	"github.com/pkg/errors"
+)
+
+// Paging holds potential Previous / Next functions
 type Paging struct {
-	// The page number of this response
-	PageNumber uint
+	// Next results
+	Next func(ctx context.Context, s *Session, res results) error
 
-	// The number of items on this page
-	ItemsRetrievedOnLastRequest uint
-
-	// The number of items retrieved, including anterior paging actions
-	ItemsRetrievedToal uint
-
-	// The total number of items we could get
-	ItemsTotal uint
-
-	// The URL to call to request the previous page
-	previousURL string
-
-	// The URL to call to request the next page
-	nextURL string
+	// Previous results
+	Previous func(ctx context.Context, s *Session, res results) error
 }
 
-// resultsPager is satisfied by nearly every result
-type resultsPager interface {
-	// retrieve retrieves the specified url and parses it
-	retrieve(url string) (results, error)
-
-	// add appends the given result to the one worked on
-	add(newres results) error
-
-	// paging retrieves the paging struct
-	paging() Paging
-}
-
-// next retrieves the next elements
-func next(res resultsPager) (results, error) {
-	newResults, err := res.retrieve(res.paging().nextURL)
-	return newResults, err
-}
-
-// previous retrieves the previous elements
-func previous(res resultsPager) (results, error) {
-	newResults, err := res.retrieve(res.paging().previousURL)
-	return newResults, err
-}
-
-// previousAppend retrieves the previous elements & append them to the current one
-func previousAppend(res resultsPager) error {
-	newResults, err := res.retrieve(res.paging().previousURL)
-	if err != nil {
+// createPagingFunc creates a paging func (either Previous or Next)
+func createPagingFunc(url string) func(ctx context.Context, s *Session, res results) error {
+	f := func(ctx context.Context, s *Session, res results) error {
+		err := s.requestURL(ctx, url, res)
 		return err
 	}
-
-	err = res.add(newResults)
-	return err
+	return f
 }
 
-// nextAppend retrieves the next elements & append them to the current one
-func nextAppend(res resultsPager) error {
-	newResults, err := res.retrieve(res.paging().nextURL)
+// UnmarshalJSON unmarshals a Paging type from a Links data structure
+func (p *Paging) UnmarshalJSON(b []byte) error {
+	var links []link
+	err := json.Unmarshal(b, &links)
 	if err != nil {
-		return err
+		return errors.Wrap(err, "error while unmarshalling links")
 	}
 
-	err = res.add(newResults)
-	return err
+	// Iterate through the links
+	for _, l := range links {
+		switch l.Type {
+		case "next":
+			p.Next = createPagingFunc(l.Href)
+		case "previous":
+			p.Previous = createPagingFunc(l.Href)
+		}
+	}
+
+	// Return
+	return nil
+}
+
+type link struct {
+	Href      string
+	Rel       string
+	Templated bool
+	Type      string
 }

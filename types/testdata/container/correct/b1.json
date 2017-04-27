@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n4037878821",
+	"name": "13, Avenue Foch (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Parking v\u00e9lo",
+			"id": "poi_type:amenity:bicycle_parking"
+		},
+		"name": "13, Avenue Foch",
+		"coord": {
+			"lat": "48.845978",
+			"lon": "2.440875"
+		},
+		"label": "13, Avenue Foch (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 11,
+			"id": "2.440875;48.845978",
+			"name": "Avenue Foch",
+			"coord": {
+				"lat": "48.845978",
+				"lon": "2.440875"
+			},
+			"label": "11 Avenue Foch"
+		},
+		"id": "poi:n4037878821",
+		"properties": {
+			"amenity": "bicycle_parking",
+			"name": "13, Avenue Foch",
+			"access": "permissive",
+			"operator": "10",
+			"covered": "no",
+			"bicycle_parking": "rack"
+		}
+	}
+}

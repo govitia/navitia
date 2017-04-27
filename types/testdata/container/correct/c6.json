@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 40,
+	"id": "poi:n439924298",
+	"name": "Grenier Saint-Lazare - 34 Rue Grenier Saint-Lazare - 75003 Paris (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Grenier Saint-Lazare - 34 Rue Grenier Saint-Lazare - 75003 Paris",
+		"coord": {
+			"lat": "48.8631013",
+			"lon": "2.3527609"
+		},
+		"label": "Grenier Saint-Lazare - 34 Rue Grenier Saint-Lazare - 75003 Paris (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 34,
+			"id": "2.3527609;48.8631013",
+			"name": "Rue du Grenier Saint-Lazare",
+			"coord": {
+				"lat": "48.8631013",
+				"lon": "2.3527609"
+			},
+			"label": "34 Rue du Grenier Saint-Lazare (Paris)"
+		},
+		"id": "poi:n439924298",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "31",
+			"name": "Grenier Saint-Lazare - 34 Rue Grenier Saint-Lazare - 75003 Paris",
+			"operator": "JCDecaux",
+			"ref": "3014",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

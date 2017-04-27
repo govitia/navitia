@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 80,
+	"id": "poi:n682262148",
+	"name": "Rue Chabanais (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Rue Chabanais",
+		"coord": {
+			"lat": "48.8669921",
+			"lon": "2.3366321"
+		},
+		"label": "Rue Chabanais (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 1,
+			"id": "2.3366321;48.8669921",
+			"name": "Rue Chabanais",
+			"coord": {
+				"lat": "48.8669921",
+				"lon": "2.3366321"
+			},
+			"label": "1 Rue Chabanais (Paris)"
+		},
+		"id": "poi:n682262148",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"name": "Rue Chabanais",
+			"source": "cadastre-dgi-fr source : Direction G\u00e9n\u00e9rale des Imp\u00f4ts - Cadastre. Mise \u00e0 jour : 2010",
+			"operator": "JCDecaux",
+			"ref": "02007",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

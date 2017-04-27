@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n272852792",
+	"name": "Rue Fran\u00e7ois Ponsard (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Rue Fran\u00e7ois Ponsard",
+		"coord": {
+			"lat": "48.8583046",
+			"lon": "2.2742742"
+		},
+		"label": "Rue Fran\u00e7ois Ponsard (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 4,
+			"id": "2.2742742;48.8583046",
+			"name": "Chauss\u00e9e de la Muette",
+			"coord": {
+				"lat": "48.8583046",
+				"lon": "2.2742742"
+			},
+			"label": "4 Chauss\u00e9e de la Muette (Paris)"
+		},
+		"id": "poi:n272852792",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "23",
+			"name": "Rue Fran\u00e7ois Ponsard",
+			"operator": "JCDecaux",
+			"ref": "16021",
+			"network": "V\u00e9lib'"
+		}
+	}
+}

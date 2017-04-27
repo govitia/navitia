@@ -1,0 +1,878 @@
+	"{\"\":\"\",\"\":[{\"\":[{\"\":" +
+	"\"\",\"\":\"\"}],\"\":[{\"\":\"" +
+	"\",\"\":\"\"},{\"\":\"\",\"\":\"" +
+	"\"},{\"\":\"\",\"\":\"\"}],\"\"" +
+	":{\"\":true,\"\":true,\"\"" +
+	":false,\"\":true,\"\":tr" +
+	"ue,\"\":true,\"\":true}}" +
+	"],\"\":{\"\":\"\",\"\":9},\"\"" +
+	":\"\",\"\":1,\"\":{\"\":1,\"\"" +
+	":1},\"\":{\"\":false,\"\":" +
+	"[],\"\":{\"\":\"\",\"\":\"\"}}" +
+	",\"\":[{\"\":\"\",\"\":\"\",\"\"" +
+	":false,\"\":\"\"}],\"\":0," +
+	"\"\":\"\",\"sections\":[{\"" +
+	"\":\"\",\"\":{\"\":\"\",\"\":0." +
+	"0},\"\":\"\",\"\":5,\"\":{\"\"" +
+	":{\"\":[{\"\":{\"\":\"\",\"\":" +
+	"\"\"},\"\":\"\",\"\":\"\",\"\":\"" +
+	"\",\"\":8,\"\":\"\",\"\":\"\"}," +
+	"{\"\":{\"\":\"\",\"\":\"\"},\"\"" +
+	":\"\",\"\":\"\",\"\":\"\",\"\":8" +
+	",\"\":\"\",\"\":\"\"}],\"\":{\"" +
+	"\":\"\",\"\":\"\"},\"\":9,\"\":" +
+	"\"\",\"\":\"\",\"\":\"\"},\"\":\"" +
+	"\",\"\":\"\",\"\":\"\",\"\":0}," +
+	"\"\":{\"\":[[2,8],[2,8]," +
+	"[2,8],[2,8],[2,8],[2" +
+	",8],[2,8],[2,8],[2,8" +
+	"],[2,8],[2,8],[2,8]," +
+	"[2,8],[2,8],[2,8],[2" +
+	",8],[2,8],[2,8],[2,8" +
+	"],[2,8],[2,8],[2,8]," +
+	"[2,8],[2,8]],\"\":[{\"\"" +
+	":7}],\"\":\"\"},\"\":\"\",\"\"" +
+	":[],\"\":\"\",\"\":[{\"\":0," +
+	"\"\":0,\"\":1,\"\":\"\"},{\"\"" +
+	":2,\"\":4,\"\":6,\"\":\"\"}," +
+	"{\"\":7,\"\":8,\"\":7,\"\":\"" +
+	"\"},{\"\":8,\"\":0,\"\":5,\"" +
+	"\":\"\"},{\"\":4,\"\":3,\"\":" +
+	"2,\"\":\"\"},{\"\":6,\"\":3," +
+	"\"\":5,\"\":\"\"},{\"\":0,\"\"" +
+	":1,\"\":0,\"\":\"\"},{\"\":7" +
+	",\"\":6,\"\":9,\"\":\"\"},{\"" +
+	"\":0,\"\":0,\"\":0,\"\":\"\"}" +
+	"],\"\":{\"\":\"\",\"\":\"\",\"\"" +
+	":\"\",\"\":0,\"\":{\"\":[{\"\"" +
+	":{\"\":\"\",\"\":\"\"},\"\":\"\"" +
+	",\"\":\"\",\"\":\"\",\"\":8,\"\"" +
+	":\"\",\"\":\"\"}],\"\":[{\"\":" +
+	"\"\",\"\":\"\"},{\"\":\"\",\"\":" +
+	"\"\"},{\"\":\"\",\"\":\"\"}],\"" +
+	"commercial_modes\": [" +
+	"\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"id\"" +
+	": \"commercial_mode:r" +
+	"apidtransit\",\n\t\t\t\t\t\t" +
+	"\t\"name\": \"RER\"\n\t\t\t\t\t" +
+	"\t}\n\t\t\t\t\t],\n\t\t\t\t\t\"coo" +
+	"rd\": {\n\t\t\t\t\t\t\"lat\": " +
+	"\"48.842528\",\n\t\t\t\t\t\t\"" +
+	"lon\": \"2.365433\"\n\t\t\t" +
+	"\t\t},\n\t\t\t\t\t\"equipment" +
+	"s\": [],\n\t\t\t\t\t\"id\": \"" +
+	"stop_point:OIF:SP:87" +
+	"54702:800:C\",\n\t\t\t\t\t\"" +
+	"label\": \"Gare d'Aust" +
+	"erlitz RER C (Paris)" +
+	"\",\n\t\t\t\t\t\"links\": []," +
+	"\n\t\t\t\t\t\"name\": \"Gare " +
+	"d'Austerlitz RER C\"," +
+	"\n\t\t\t\t\t\"physical_mode" +
+	"s\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t" +
+	"\t\"id\": \"physical_mod" +
+	"e:RapidTransit\",\n\t\t\t" +
+	"\t\t\t\t\"name\": \"Train d" +
+	"e banlieue / RER\"\n\t\t" +
+	"\t\t\t\t}\n\t\t\t\t\t],\n\t\t\t\t\t\"" +
+	"stop_area\": {\n\t\t\t\t\t\t" +
+	"\"administrative_regi" +
+	"ons\": [\n\t\t\t\t\t\t\t{\n\t\t\t" +
+	"\t\t\t\t\t\"coord\": {\n\t\t\t\t" +
+	"\t\t\t\t\t\"lat\": \"48.8566" +
+	"09\",\n\t\t\t\t\t\t\t\t\t\"lon\":" +
+	" \"2.351499\"\n\t\t\t\t\t\t\t\t" +
+	"},\n\t\t\t\t\t\t\t\t\"id\": \"ad" +
+	"min:fr:75056\",\n\t\t\t\t\t" +
+	"\t\t\t\"insee\": \"75056\"," +
+	"\n\t\t\t\t\t\t\t\t\"label\": \"P" +
+	"aris\",\n\t\t\t\t\t\t\t\t\"leve" +
+	"l\": 8,\n\t\t\t\t\t\t\t\t\"name" +
+	"\": \"Paris\",\n\t\t\t\t\t\t\t\t" +
+	"\"zip_code\": \"\"\n\t\t\t\t\t" +
+	"\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"" +
+	"codes\": [\n\t\t\t\t\t\t\t{\n\t" +
+	"\t\t\t\t\t\t\t\"type\": \"exte" +
+	"rnal_code\",\n\t\t\t\t\t\t\t\t" +
+	"\"value\": \"OIF8754700" +
+	"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{" +
+	"\n\t\t\t\t\t\t\t\t\"type\": \"so" +
+	"urce\",\n\t\t\t\t\t\t\t\t\"valu" +
+	"e\": \"StopArea:875470" +
+	"0\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]," +
+	"\n\t\t\t\t\t\t\"coord\": {\n\t\t" +
+	"\t\t\t\t\t\"lat\": \"48.8435" +
+	"78\",\n\t\t\t\t\t\t\t\"lon\": \"" +
+	"2.364651\"\n\t\t\t\t\t\t},\n\t" +
+	"\t\t\t\t\t\"id\": \"stop_are" +
+	"a:OIF:SA:8754700\",\n\t" +
+	"\t\t\t\t\t\"label\": \"Gare " +
+	"d'Austerlitz (Paris)" +
+	"\",\n\t\t\t\t\t\t\"links\": []" +
+	",\n\t\t\t\t\t\t\"name\": \"Gar" +
+	"e d'Austerlitz\",\n\t\t\t" +
+	"\t\t\t\"timezone\": \"Euro" +
+	"pe/Paris\"\n\t\t\t\t\t}\n\t\t\t" +
+	"\t}\n\t\t\t},\n\t\t\t\"type\": " +
+	"\"street_network\"\n\t\t}" +
+	",\n\t\t{\n\t\t\t\"additional" +
+	"_informations\": [\n\t\t" +
+	"\t\t\"regular\"\n\t\t\t],\n\t\t" +
+	"\t\"arrival_date_time\"" +
+	": \"20170413T140800\"," +
+	"\n\t\t\t\"base_arrival_da" +
+	"te_time\": \"20170413T" +
+	"140800\",\n\t\t\t\"base_de" +
+	"parture_date_time\": " +
+	"\"20170413T135400\",\n\t" +
+	"\t\t\"co2_emission\": {\n" +
+	"\t\t\t\t\"unit\": \"gEC\",\n\t" +
+	"\t\t\t\"value\": 39.556\n\t" +
+	"\t\t},\n\t\t\t\"departure_d" +
+	"ate_time\": \"20170413" +
+	"T135400\",\n\t\t\t\"displa" +
+	"y_informations\": {\n\t" +
+	"\t\t\t\"code\": \"C\",\n\t\t\t\t" +
+	"\"color\": \"FCD946\",\n\t" +
+	"\t\t\t\"commercial_mode\"" +
+	": \"RER\",\n\t\t\t\t\"descri" +
+	"ption\": \"\",\n\t\t\t\t\"dir" +
+	"ection\": \"Gare de Ve" +
+	"rsailles Ch\\u00e2tea" +
+	"u - Rive Gauche (Ver" +
+	"sailles)\",\n\t\t\t\t\"equi" +
+	"pments\": [],\n\t\t\t\t\"he" +
+	"adsign\": \"VICK\",\n\t\t\t" +
+	"\t\"label\": \"C\",\n\t\t\t\t\"" +
+	"links\": [],\n\t\t\t\t\"net" +
+	"work\": \"RER\",\n\t\t\t\t\"p" +
+	"hysical_mode\": \"Trai" +
+	"n de banlieue / RER\"" +
+	",\n\t\t\t\t\"text_color\": " +
+	"\"FFFFFF\"\n\t\t\t},\n\t\t\t\"d" +
+	"uration\": 840,\n\t\t\t\"f" +
+	"rom\": {\n\t\t\t\t\"embedde" +
+	"d_type\": \"stop_point" +
+	"\",\n\t\t\t\t\"id\": \"stop_p" +
+	"oint:OIF:SP:8754702:" +
+	"800:C\",\n\t\t\t\t\"name\": " +
+	"\"Gare d'Austerlitz R" +
+	"ER C (Paris)\",\n\t\t\t\t\"" +
+	"quality\": 0,\n\t\t\t\t\"st" +
+	"op_point\": {\n\t\t\t\t\t\"a" +
+	"dministrative_region" +
+	"s\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t" +
+	"\t\"coord\": {\n\t\t\t\t\t\t\t\t" +
+	"\"lat\": \"48.856609\",\n" +
+	"\t\t\t\t\t\t\t\t\"lon\": \"2.35" +
+	"1499\"\n\t\t\t\t\t\t\t},\n\t\t\t\t" +
+	"\t\t\t\"id\": \"admin:fr:7" +
+	"5056\",\n\t\t\t\t\t\t\t\"insee" +
+	"\": \"75056\",\n\t\t\t\t\t\t\t\"" +
+	"label\": \"Paris\",\n\t\t\t" +
+	"\t\t\t\t\"level\": 8,\n\t\t\t\t" +
+	"\t\t\t\"name\": \"Paris\",\n" +
+	"\t\t\t\t\t\t\t\"zip_code\": \"" +
+	"\"\n\t\t\t\t\t\t}\n\t\t\t\t\t],\n\t\t" +
+	"\t\t\t\"codes\": [\n\t\t\t\t\t\t" +
+	"{\n\t\t\t\t\t\t\t\"type\": \"ZD" +
+	"Er_ID_REF_A\",\n\t\t\t\t\t\t" +
+	"\t\"value\": \"41333\"\n\t\t" +
+	"\t\t\t\t},\n\t\t\t\t\t\t{\n\t\t\t\t\t" +
+	"\t\t\"type\": \"external_" +
+	"code\",\n\t\t\t\t\t\t\t\"value" +
+	"\": \"OIF8754702:800:C" +
+	"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t" +
+	"\t\t\t\t\t\t\"type\": \"sourc" +
+	"e\",\n\t\t\t\t\t\t\t\"value\": " +
+	"\"StopPoint:8754702:8" +
+	"00:C\"\n\t\t\t\t\t\t}\n\t\t\t\t\t]" +
+	",\n\t\t\t\t\t\"coord\": {\n\t\t" +
+	"\t\t\t\t\"lat\": \"48.84252" +
+	"8\",\n\t\t\t\t\t\t\"lon\": \"2." +
+	"365433\"\n\t\t\t\t\t},\n\t\t\t\t" +
+	"\t\"equipments\": [],\n\t" +
+	"\t\t\t\t\"id\": \"stop_poin" +
+	"t:OIF:SP:8754702:800" +
+	":C\",\n\t\t\t\t\t\"label\": \"" +
+	"Gare d'Austerlitz RE" +
+	"R C (Paris)\",\n\t\t\t\t\t\"" +
+	"links\": [],\n\t\t\t\t\t\"na" +
+	"me\": \"Gare d'Austerl" +
+	"itz RER C\",\n\t\t\t\t\t\"st" +
+	"op_area\": {\n\t\t\t\t\t\t\"c" +
+	"odes\": [\n\t\t\t\t\t\t\t{\n\t\t" +
+	"\t\t\t\t\t\t\"type\": \"exter" +
+	"nal_code\",\n\t\t\t\t\t\t\t\t\"" +
+	"value\": \"OIF8754700\"" +
+	"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n" +
+	"\t\t\t\t\t\t\t\t\"type\": \"sou" +
+	"rce\",\n\t\t\t\t\t\t\t\t\"value" +
+	"\": \"StopArea:8754700" +
+	"\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t],\n" +
+	"\t\t\t\t\t\t\"coord\": {\n\t\t\t" +
+	"\t\t\t\t\"lat\": \"48.84357" +
+	"8\",\n\t\t\t\t\t\t\t\"lon\": \"2" +
+	".364651\"\n\t\t\t\t\t\t},\n\t\t" +
+	"\t\t\t\t\"id\": \"stop_area" +
+	":OIF:SA:8754700\",\n\t\t" +
+	"\t\t\t\t\"label\": \"Gare d" +
+	"'Austerlitz (Paris)\"" +
+	",\n\t\t\t\t\t\t\"links\": []," +
+	"\n\t\t\t\t\t\t\"name\": \"Gare" +
+	" d'Austerlitz\",\n\t\t\t\t" +
+	"\t\t\"timezone\": \"Europ" +
+	"e/Paris\"\n\t\t\t\t\t}\n\t\t\t\t" +
+	"}\n\t\t\t},\n\t\t\t\"geojson\"" +
+	": {\n\t\t\t\t\"coordinate\"" +
+	": [\n\t\t\t\t\t[\n\t\t\t\t\t\t2.3" +
+	"65433,\n\t\t\t\t\t\t48.8425" +
+	"28\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t" +
+	"\t\t\t\t2.346035,\n\t\t\t\t\t\t" +
+	"48.853336\n\t\t\t\t\t],\n\t\t" +
+	"\t\t\t[\n\t\t\t\t\t\t2.32562,\n" +
+	"\t\t\t\t\t\t48.860708\n\t\t\t\t" +
+	"\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2.3" +
+	"13911,\n\t\t\t\t\t\t48.8629" +
+	"02\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t" +
+	"\t\t\t\t2.30099,\n\t\t\t\t\t\t4" +
+	"8.862662\n\t\t\t\t\t],\n\t\t\t" +
+	"\t\t[\n\t\t\t\t\t\t2.290392,\n" +
+	"\t\t\t\t\t\t48.857293\n\t\t\t\t" +
+	"\t]\n\t\t\t\t],\n\t\t\t\t\"prope" +
+	"rties\": [\n\t\t\t\t\t{\n\t\t\t" +
+	"\t\t\t\"length\": 6380\n\t\t" +
+	"\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"typ" +
+	"e\": \"LineString\"\n\t\t\t" +
+	"},\n\t\t\t\"id\": \"section" +
+	"_13_0\",\n\t\t\t\"links\": " +
+	"[\n\t\t\t\t{\n\t\t\t\t\t\"id\": \"" +
+	"vehicle_journey:OIF:" +
+	"82209457-1_354848-1_" +
+	"dst_2\",\n\t\t\t\t\t\"type\":" +
+	" \"vehicle_journey\"\n\t" +
+	"\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"id" +
+	"\": \"line:OIF:800:COI" +
+	"F741\",\n\t\t\t\t\t\"type\": " +
+	"\"line\"\n\t\t\t\t},\n\t\t\t\t{\n" +
+	"\t\t\t\t\t\"id\": \"route:OI" +
+	"F:800:C_R\",\n\t\t\t\t\t\"ty" +
+	"pe\": \"route\"\n\t\t\t\t},\n" +
+	"\t\t\t\t{\n\t\t\t\t\t\"id\": \"co" +
+	"mmercial_mode:rapidt" +
+	"ransit\",\n\t\t\t\t\t\"type\"" +
+	": \"commercial_mode\"\n" +
+	"\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"i" +
+	"d\": \"physical_mode:R" +
+	"apidTransit\",\n\t\t\t\t\t\"" +
+	"type\": \"physical_mod" +
+	"e\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t" +
+	"\t\"id\": \"network:RER\"" +
+	",\n\t\t\t\t\t\"type\": \"netw" +
+	"ork\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t" +
+	"\"stop_date_times\": [" +
+	"\n\t\t\t\t{\n\t\t\t\t\t\"additio" +
+	"nal_informations\": [" +
+	"],\n\t\t\t\t\t\"arrival_dat" +
+	"e_time\": \"20170413T1" +
+	"35300\",\n\t\t\t\t\t\"base_a" +
+	"rrival_date_time\": \"" +
+	"20170413T135300\",\n\t\t" +
+	"\t\t\t\"base_departure_d" +
+	"ate_time\": \"20170413" +
+	"T135400\",\n\t\t\t\t\t\"depa" +
+	"rture_date_time\": \"2" +
+	"0170413T135400\",\n\t\t\t" +
+	"\t\t\"links\": [],\n\t\t\t\t\t" +
+	"\"stop_point\": {\n\t\t\t\t" +
+	"\t\t\"codes\": [\n\t\t\t\t\t\t\t" +
+	"{\n\t\t\t\t\t\t\t\t\"type\": \"Z" +
+	"DEr_ID_REF_A\",\n\t\t\t\t\t" +
+	"\t\t\t\"value\": \"41333\"\n" +
+	"\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t" +
+	"\t\t\t\t\t\t\t\"type\": \"exte" +
+	"rnal_code\",\n\t\t\t\t\t\t\t\t" +
+	"\"value\": \"OIF8754702" +
+	":800:C\"\n\t\t\t\t\t\t\t},\n\t\t" +
+	"\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type" +
+	"\": \"source\",\n\t\t\t\t\t\t\t" +
+	"\t\"value\": \"StopPoint" +
+	":8754702:800:C\"\n\t\t\t\t" +
+	"\t\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t\t\t" +
+	"\"coord\": {\n\t\t\t\t\t\t\t\"l" +
+	"at\": \"48.842528\",\n\t\t" +
+	"\t\t\t\t\t\"lon\": \"2.36543" +
+	"3\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"e" +
+	"quipments\": [],\n\t\t\t\t" +
+	"\t\t\"id\": \"stop_point:" +
+	"OIF:SP:8754702:800:C" +
+	"\",\n\t\t\t\t\t\t\"label\": \"G" +
+	"are d'Austerlitz RER" +
+	" C (Paris)\",\n\t\t\t\t\t\t\"" +
+	"links\": [],\n\t\t\t\t\t\t\"n" +
+	"ame\": \"Gare d'Auster" +
+	"litz RER C\"\n\t\t\t\t\t}\n\t" +
+	"\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"ad" +
+	"ditional_information" +
+	"s\": [],\n\t\t\t\t\t\"arriva" +
+	"l_date_time\": \"20170" +
+	"413T135700\",\n\t\t\t\t\t\"b" +
+	"ase_arrival_date_tim" +
+	"e\": \"20170413T135700" +
+	"\",\n\t\t\t\t\t\"base_depart" +
+	"ure_date_time\": \"201" +
+	"70413T135800\",\n\t\t\t\t\t" +
+	"\"departure_date_time" +
+	"\": \"20170413T135800\"" +
+	",\n\t\t\t\t\t\"links\": [],\n" +
+	"\t\t\t\t\t\"stop_point\": {" +
+	"\n\t\t\t\t\t\t\"codes\": [\n\t\t" +
+	"\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type" +
+	"\": \"ZDEr_ID_REF_A\",\n" +
+	"\t\t\t\t\t\t\t\t\"value\": \"41" +
+	"335\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t" +
+	"\t\t{\n\t\t\t\t\t\t\t\t\"type\": " +
+	"\"external_code\",\n\t\t\t" +
+	"\t\t\t\t\t\"value\": \"OIF87" +
+	"54731:800:C\"\n\t\t\t\t\t\t\t" +
+	"},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t" +
+	"\"type\": \"source\",\n\t\t" +
+	"\t\t\t\t\t\t\"value\": \"Stop" +
+	"Point:8754731:800:C\"" +
+	"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t],\n\t" +
+	"\t\t\t\t\t\"coord\": {\n\t\t\t\t" +
+	"\t\t\t\"lat\": \"48.853336" +
+	"\",\n\t\t\t\t\t\t\t\"lon\": \"2." +
+	"346035\"\n\t\t\t\t\t\t},\n\t\t\t" +
+	"\t\t\t\"equipments\": []," +
+	"\n\t\t\t\t\t\t\"id\": \"stop_p" +
+	"oint:OIF:SP:8754731:" +
+	"800:C\",\n\t\t\t\t\t\t\"label" +
+	"\": \"Saint-Michel Not" +
+	"re-Dame RER C (Paris" +
+	")\",\n\t\t\t\t\t\t\"links\": [" +
+	"],\n\t\t\t\t\t\t\"name\": \"Sa" +
+	"int-Michel Notre-Dam" +
+	"e RER C\"\n\t\t\t\t\t}\n\t\t\t\t" +
+	"},\n\t\t\t\t{\n\t\t\t\t\t\"addit" +
+	"ional_informations\":" +
+	" [],\n\t\t\t\t\t\"arrival_d" +
+	"ate_time\": \"20170413" +
+	"T140000\",\n\t\t\t\t\t\"base" +
+	"_arrival_date_time\":" +
+	" \"20170413T140000\",\n" +
+	"\t\t\t\t\t\"base_departure" +
+	"_date_time\": \"201704" +
+	"13T140100\",\n\t\t\t\t\t\"de" +
+	"parture_date_time\": " +
+	"\"20170413T140100\",\n\t" +
+	"\t\t\t\t\"links\": [],\n\t\t\t" +
+	"\t\t\"stop_point\": {\n\t\t" +
+	"\t\t\t\t\"codes\": [\n\t\t\t\t\t" +
+	"\t\t{\n\t\t\t\t\t\t\t\t\"type\": " +
+	"\"ZDEr_ID_REF_A\",\n\t\t\t" +
+	"\t\t\t\t\t\"value\": \"41334" +
+	"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{" +
+	"\n\t\t\t\t\t\t\t\t\"type\": \"ex" +
+	"ternal_code\",\n\t\t\t\t\t\t" +
+	"\t\t\"value\": \"OIF87547" +
+	"30:800:C\"\n\t\t\t\t\t\t\t},\n" +
+	"\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"ty" +
+	"pe\": \"source\",\n\t\t\t\t\t" +
+	"\t\t\t\"value\": \"StopPoi" +
+	"nt:8754730:800:C\"\n\t\t" +
+	"\t\t\t\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t" +
+	"\t\t\"coord\": {\n\t\t\t\t\t\t\t" +
+	"\"lat\": \"48.860708\",\n" +
+	"\t\t\t\t\t\t\t\"lon\": \"2.325" +
+	"62\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"" +
+	"equipments\": [],\n\t\t\t" +
+	"\t\t\t\"id\": \"stop_point" +
+	":OIF:SP:8754730:800:" +
+	"C\",\n\t\t\t\t\t\t\"label\": \"" +
+	"Mus\\u00e9e d'Orsay (" +
+	"Paris)\",\n\t\t\t\t\t\t\"link" +
+	"s\": [],\n\t\t\t\t\t\t\"name\"" +
+	": \"Mus\\u00e9e d'Orsa" +
+	"y\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t" +
+	"\t{\n\t\t\t\t\t\"additional_" +
+	"informations\": [],\n\t" +
+	"\t\t\t\t\"arrival_date_ti" +
+	"me\": \"20170413T14030" +
+	"0\",\n\t\t\t\t\t\"base_arriv" +
+	"al_date_time\": \"2017" +
+	"0413T140300\",\n\t\t\t\t\t\"" +
+	"base_departure_date_" +
+	"time\": \"20170413T140" +
+	"400\",\n\t\t\t\t\t\"departur" +
+	"e_date_time\": \"20170" +
+	"413T140400\",\n\t\t\t\t\t\"l" +
+	"inks\": [],\n\t\t\t\t\t\"sto" +
+	"p_point\": {\n\t\t\t\t\t\t\"c" +
+	"odes\": [\n\t\t\t\t\t\t\t{\n\t\t" +
+	"\t\t\t\t\t\t\"type\": \"ZDEr_" +
+	"ID_REF_A\",\n\t\t\t\t\t\t\t\t\"" +
+	"value\": \"41208\"\n\t\t\t\t" +
+	"\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t" +
+	"\t\t\t\"type\": \"external" +
+	"_code\",\n\t\t\t\t\t\t\t\t\"val" +
+	"ue\": \"OIF8739303:800" +
+	":C\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t" +
+	"\t{\n\t\t\t\t\t\t\t\t\"type\": \"" +
+	"source\",\n\t\t\t\t\t\t\t\t\"va" +
+	"lue\": \"StopPoint:873" +
+	"9303:800:C\"\n\t\t\t\t\t\t\t}" +
+	"\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"coo" +
+	"rd\": {\n\t\t\t\t\t\t\t\"lat\":" +
+	" \"48.862902\",\n\t\t\t\t\t\t" +
+	"\t\"lon\": \"2.313911\"\n\t" +
+	"\t\t\t\t\t},\n\t\t\t\t\t\t\"equip" +
+	"ments\": [],\n\t\t\t\t\t\t\"i" +
+	"d\": \"stop_point:OIF:" +
+	"SP:8739303:800:C\",\n\t" +
+	"\t\t\t\t\t\"label\": \"Inval" +
+	"ides (Paris)\",\n\t\t\t\t\t" +
+	"\t\"links\": [],\n\t\t\t\t\t\t" +
+	"\"name\": \"Invalides\"\n" +
+	"\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n" +
+	"\t\t\t\t\t\"additional_inf" +
+	"ormations\": [],\n\t\t\t\t" +
+	"\t\"arrival_date_time\"" +
+	": \"20170413T140600\"," +
+	"\n\t\t\t\t\t\"base_arrival_" +
+	"date_time\": \"2017041" +
+	"3T140600\",\n\t\t\t\t\t\"bas" +
+	"e_departure_date_tim" +
+	"e\": \"20170413T140600" +
+	"\",\n\t\t\t\t\t\"departure_d" +
+	"ate_time\": \"20170413" +
+	"T140600\",\n\t\t\t\t\t\"link" +
+	"s\": [],\n\t\t\t\t\t\"stop_p" +
+	"oint\": {\n\t\t\t\t\t\t\"code" +
+	"s\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t" +
+	"\t\t\t\"type\": \"ZDEr_ID_" +
+	"REF_A\",\n\t\t\t\t\t\t\t\t\"val" +
+	"ue\": \"41209\"\n\t\t\t\t\t\t\t" +
+	"},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t" +
+	"\"type\": \"external_co" +
+	"de\",\n\t\t\t\t\t\t\t\t\"value\"" +
+	": \"OIF8739304:800:C\"" +
+	"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n" +
+	"\t\t\t\t\t\t\t\t\"type\": \"sou" +
+	"rce\",\n\t\t\t\t\t\t\t\t\"value" +
+	"\": \"StopPoint:873930" +
+	"4:800:C\"\n\t\t\t\t\t\t\t}\n\t\t" +
+	"\t\t\t\t],\n\t\t\t\t\t\t\"coord\"" +
+	": {\n\t\t\t\t\t\t\t\"lat\": \"4" +
+	"8.862662\",\n\t\t\t\t\t\t\t\"l" +
+	"on\": \"2.30099\"\n\t\t\t\t\t" +
+	"\t},\n\t\t\t\t\t\t\"equipment" +
+	"s\": [],\n\t\t\t\t\t\t\"id\": " +
+	"\"stop_point:OIF:SP:8" +
+	"739304:800:C\",\n\t\t\t\t\t" +
+	"\t\"label\": \"Pont de l" +
+	"'Alma (Paris)\",\n\t\t\t\t" +
+	"\t\t\"links\": [],\n\t\t\t\t\t" +
+	"\t\"name\": \"Pont de l'" +
+	"Alma\"\n\t\t\t\t\t}\n\t\t\t\t},\n" +
+	"\t\t\t\t{\n\t\t\t\t\t\"addition" +
+	"al_informations\": []" +
+	",\n\t\t\t\t\t\"arrival_date" +
+	"_time\": \"20170413T14" +
+	"0800\",\n\t\t\t\t\t\"base_ar" +
+	"rival_date_time\": \"2" +
+	"0170413T140800\",\n\t\t\t" +
+	"\t\t\"base_departure_da" +
+	"te_time\": \"20170413T" +
+	"140900\",\n\t\t\t\t\t\"depar" +
+	"ture_date_time\": \"20" +
+	"170413T140900\",\n\t\t\t\t" +
+	"\t\"links\": [],\n\t\t\t\t\t\"" +
+	"stop_point\": {\n\t\t\t\t\t" +
+	"\t\"codes\": [\n\t\t\t\t\t\t\t{" +
+	"\n\t\t\t\t\t\t\t\t\"type\": \"ZD" +
+	"Er_ID_REF_A\",\n\t\t\t\t\t\t" +
+	"\t\t\"value\": \"41210\"\n\t" +
+	"\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t" +
+	"\t\t\t\t\t\t\"type\": \"exter" +
+	"nal_code\",\n\t\t\t\t\t\t\t\t\"" +
+	"value\": \"OIF8739305:" +
+	"800:C\"\n\t\t\t\t\t\t\t},\n\t\t\t" +
+	"\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\"" +
+	": \"source\",\n\t\t\t\t\t\t\t\t" +
+	"\"value\": \"StopPoint:" +
+	"8739305:800:C\"\n\t\t\t\t\t" +
+	"\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"" +
+	"coord\": {\n\t\t\t\t\t\t\t\"la" +
+	"t\": \"48.857293\",\n\t\t\t" +
+	"\t\t\t\t\"lon\": \"2.290392" +
+	"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"eq" +
+	"uipments\": [],\n\t\t\t\t\t" +
+	"\t\"id\": \"stop_point:O" +
+	"IF:SP:8739305:800:C\"" +
+	",\n\t\t\t\t\t\t\"label\": \"Ch" +
+	"amp de Mars Tour Eif" +
+	"fel (Paris)\",\n\t\t\t\t\t\t" +
+	"\"links\": [],\n\t\t\t\t\t\t\"" +
+	"name\": \"Champ de Mar" +
+	"s Tour Eiffel\"\n\t\t\t\t\t" +
+	"}\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"to" +
+	"\": {\n\t\t\t\t\"embedded_t" +
+	"ype\": \"stop_point\",\n" +
+	"\t\t\t\t\"id\": \"stop_poin" +
+	"t:OIF:SP:8739305:800" +
+	":C\",\n\t\t\t\t\"name\": \"Ch" +
+	"amp de Mars Tour Eif" +
+	"fel (Paris)\",\n\t\t\t\t\"q" +
+	"uality\": 0,\n\t\t\t\t\"sto" +
+	"p_point\": {\n\t\t\t\t\t\"ad" +
+	"ministrative_regions" +
+	"\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t" +
+	"\"coord\": {\n\t\t\t\t\t\t\t\t\"" +
+	"lat\": \"48.856609\",\n\t" +
+	"\t\t\t\t\t\t\t\"lon\": \"2.351" +
+	"499\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t" +
+	"\t\t\"id\": \"admin:fr:75" +
+	"056\",\n\t\t\t\t\t\t\t\"insee\"" +
+	": \"75056\",\n\t\t\t\t\t\t\t\"l" +
+	"abel\": \"Paris\",\n\t\t\t\t" +
+	"\t\t\t\"level\": 8,\n\t\t\t\t\t" +
+	"\t\t\"name\": \"Paris\",\n\t" +
+	"\t\t\t\t\t\t\"zip_code\": \"\"" +
+	"\n\t\t\t\t\t\t}\n\t\t\t\t\t],\n\t\t\t" +
+	"\t\t\"codes\": [\n\t\t\t\t\t\t{" +
+	"\n\t\t\t\t\t\t\t\"type\": \"ZDE" +
+	"r_ID_REF_A\",\n\t\t\t\t\t\t\t" +
+	"\"value\": \"41210\"\n\t\t\t" +
+	"\t\t\t},\n\t\t\t\t\t\t{\n\t\t\t\t\t\t" +
+	"\t\"type\": \"external_c" +
+	"ode\",\n\t\t\t\t\t\t\t\"value\"" +
+	": \"OIF8739305:800:C\"" +
+	"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t\t" +
+	"\t\t\t\t\t\"type\": \"source" +
+	"\",\n\t\t\t\t\t\t\t\"value\": \"" +
+	"StopPoint:8739305:80" +
+	"0:C\"\n\t\t\t\t\t\t}\n\t\t\t\t\t]," +
+	"\n\t\t\t\t\t\"coord\": {\n\t\t\t" +
+	"\t\t\t\"lat\": \"48.857293" +
+	"\",\n\t\t\t\t\t\t\"lon\": \"2.2" +
+	"90392\"\n\t\t\t\t\t},\n\t\t\t\t\t" +
+	"\"equipments\": [],\n\t\t" +
+	"\t\t\t\"id\": \"stop_point" +
+	":OIF:SP:8739305:800:" +
+	"C\",\n\t\t\t\t\t\"label\": \"C" +
+	"hamp de Mars Tour Ei" +
+	"ffel (Paris)\",\n\t\t\t\t\t" +
+	"\"links\": [],\n\t\t\t\t\t\"n" +
+	"ame\": \"Champ de Mars" +
+	" Tour Eiffel\",\n\t\t\t\t\t" +
+	"\"stop_area\": {\n\t\t\t\t\t" +
+	"\t\"codes\": [\n\t\t\t\t\t\t\t{" +
+	"\n\t\t\t\t\t\t\t\t\"type\": \"ex" +
+	"ternal_code\",\n\t\t\t\t\t\t" +
+	"\t\t\"value\": \"OIF87393" +
+	"05\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t" +
+	"\t{\n\t\t\t\t\t\t\t\t\"type\": \"" +
+	"source\",\n\t\t\t\t\t\t\t\t\"va" +
+	"lue\": \"StopArea:8739" +
+	"305\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t" +
+	"],\n\t\t\t\t\t\t\"coord\": {\n" +
+	"\t\t\t\t\t\t\t\"lat\": \"48.85" +
+	"72\",\n\t\t\t\t\t\t\t\"lon\": \"" +
+	"2.293234\"\n\t\t\t\t\t\t},\n\t" +
+	"\t\t\t\t\t\"id\": \"stop_are" +
+	"a:OIF:SA:8739305\",\n\t" +
+	"\t\t\t\t\t\"label\": \"Champ" +
+	" de Mars Tour Eiffel" +
+	" (Paris)\",\n\t\t\t\t\t\t\"li" +
+	"nks\": [],\n\t\t\t\t\t\t\"nam" +
+	"e\": \"Champ de Mars T" +
+	"our Eiffel\",\n\t\t\t\t\t\t\"" +
+	"timezone\": \"Europe/P" +
+	"aris\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t" +
+	"\t\t},\n\t\t\t\"type\": \"pub" +
+	"lic_transport\"\n\t\t},\n" +
+	"\t\t{\n\t\t\t\"arrival_date" +
+	"_time\": \"20170413T14" +
+	"1146\",\n\t\t\t\"co2_emiss" +
+	"ion\": {\n\t\t\t\t\"unit\": " +
+	"\"\",\n\t\t\t\t\"value\": 0.0" +
+	"\n\t\t\t},\n\t\t\t\"departure" +
+	"_date_time\": \"201704" +
+	"13T140800\",\n\t\t\t\"dura" +
+	"tion\": 226,\n\t\t\t\"from" +
+	"\": {\n\t\t\t\t\"embedded_t" +
+	"ype\": \"stop_point\",\n" +
+	"\t\t\t\t\"id\": \"stop_poin" +
+	"t:OIF:SP:8739305:800" +
+	":C\",\n\t\t\t\t\"name\": \"Ch" +
+	"amp de Mars Tour Eif" +
+	"fel (Paris)\",\n\t\t\t\t\"q" +
+	"uality\": 0,\n\t\t\t\t\"sto" +
+	"p_point\": {\n\t\t\t\t\t\"ad" +
+	"ministrative_regions" +
+	"\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t" +
+	"\"coord\": {\n\t\t\t\t\t\t\t\t\"" +
+	"lat\": \"48.856609\",\n\t" +
+	"\t\t\t\t\t\t\t\"lon\": \"2.351" +
+	"499\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t" +
+	"\t\t\"id\": \"admin:fr:75" +
+	"056\",\n\t\t\t\t\t\t\t\"insee\"" +
+	": \"75056\",\n\t\t\t\t\t\t\t\"l" +
+	"abel\": \"Paris\",\n\t\t\t\t" +
+	"\t\t\t\"level\": 8,\n\t\t\t\t\t" +
+	"\t\t\"name\": \"Paris\",\n\t" +
+	"\t\t\t\t\t\t\"zip_code\": \"\"" +
+	"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t\t" +
+	"\t\t\t\t\t\"coord\": {\n\t\t\t\t" +
+	"\t\t\t\t\"lat\": \"48.85660" +
+	"9\",\n\t\t\t\t\t\t\t\t\"lon\": \"" +
+	"2.351499\"\n\t\t\t\t\t\t\t},\n" +
+	"\t\t\t\t\t\t\t\"id\": \"admin:" +
+	"fr:75056\",\n\t\t\t\t\t\t\t\"i" +
+	"nsee\": \"75056\",\n\t\t\t\t" +
+	"\t\t\t\"label\": \"Paris\"," +
+	"\n\t\t\t\t\t\t\t\"level\": 8,\n" +
+	"\t\t\t\t\t\t\t\"name\": \"Pari" +
+	"s\",\n\t\t\t\t\t\t\t\"zip_code" +
+	"\": \"\"\n\t\t\t\t\t\t}\n\t\t\t\t\t]" +
+	",\n\t\t\t\t\t\"codes\": [\n\t\t" +
+	"\t\t\t\t{\n\t\t\t\t\t\t\t\"type\":" +
+	" \"ZDEr_ID_REF_A\",\n\t\t" +
+	"\t\t\t\t\t\"value\": \"41210" +
+	"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t" +
+	"\t\t\t\t\t\t\"type\": \"exter" +
+	"nal_code\",\n\t\t\t\t\t\t\t\"v" +
+	"alue\": \"OIF8739305:8" +
+	"00:C\"\n\t\t\t\t\t\t},\n\t\t\t\t\t" +
+	"\t{\n\t\t\t\t\t\t\t\"type\": \"s" +
+	"ource\",\n\t\t\t\t\t\t\t\"valu" +
+	"e\": \"StopPoint:87393" +
+	"05:800:C\"\n\t\t\t\t\t\t},\n\t" +
+	"\t\t\t\t\t{\n\t\t\t\t\t\t\t\"type\"" +
+	": \"ZDEr_ID_REF_A\",\n\t" +
+	"\t\t\t\t\t\t\"value\": \"4121" +
+	"0\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n" +
+	"\t\t\t\t\t\t\t\"type\": \"exte" +
+	"rnal_code\",\n\t\t\t\t\t\t\t\"" +
+	"value\": \"OIF8739305:" +
+	"800:C\"\n\t\t\t\t\t\t},\n\t\t\t\t" +
+	"\t\t{\n\t\t\t\t\t\t\t\"type\": \"" +
+	"source\",\n\t\t\t\t\t\t\t\"val" +
+	"ue\": \"StopPoint:8739" +
+	"305:800:C\"\n\t\t\t\t\t\t}\n\t" +
+	"\t\t\t\t],\n\t\t\t\t\t\"commerc" +
+	"ial_modes\": [\n\t\t\t\t\t\t" +
+	"{\n\t\t\t\t\t\t\t\"id\": \"comm" +
+	"ercial_mode:rapidtra" +
+	"nsit\",\n\t\t\t\t\t\t\t\"name\"" +
+	": \"RER\"\n\t\t\t\t\t\t}\n\t\t\t\t" +
+	"\t],\n\t\t\t\t\t\"coord\": {\n" +
+	"\t\t\t\t\t\t\"lat\": \"48.857" +
+	"293\",\n\t\t\t\t\t\t\"lon\": \"" +
+	"2.290392\"\n\t\t\t\t\t},\n\t\t" +
+	"\t\t\t\"equipments\": []," +
+	"\n\t\t\t\t\t\"id\": \"stop_po" +
+	"int:OIF:SP:8739305:8" +
+	"00:C\",\n\t\t\t\t\t\"label\":" +
+	" \"Champ de Mars Tour" +
+	" Eiffel (Paris)\",\n\t\t" +
+	"\t\t\t\"links\": [],\n\t\t\t\t" +
+	"\t\"name\": \"Champ de M" +
+	"ars Tour Eiffel\",\n\t\t" +
+	"\t\t\t\"physical_modes\":" +
+	" [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"i" +
+	"d\": \"physical_mode:R" +
+	"apidTransit\",\n\t\t\t\t\t\t" +
+	"\t\"name\": \"Train de b" +
+	"anlieue / RER\"\n\t\t\t\t\t" +
+	"\t}\n\t\t\t\t\t],\n\t\t\t\t\t\"sto" +
+	"p_area\": {\n\t\t\t\t\t\t\"ad" +
+	"ministrative_regions" +
+	"\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t" +
+	"\t\t\"coord\": {\n\t\t\t\t\t\t\t" +
+	"\t\t\"lat\": \"48.856609\"" +
+	",\n\t\t\t\t\t\t\t\t\t\"lon\": \"2" +
+	".351499\"\n\t\t\t\t\t\t\t\t},\n" +
+	"\t\t\t\t\t\t\t\t\"id\": \"admin" +
+	":fr:75056\",\n\t\t\t\t\t\t\t\t" +
+	"\"insee\": \"75056\",\n\t\t" +
+	"\t\t\t\t\t\t\"label\": \"Pari" +
+	"s\",\n\t\t\t\t\t\t\t\t\"level\":" +
+	" 8,\n\t\t\t\t\t\t\t\t\"name\": " +
+	"\"Paris\",\n\t\t\t\t\t\t\t\t\"zi" +
+	"p_code\": \"\"\n\t\t\t\t\t\t\t}" +
+	"\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"cod" +
+	"es\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t" +
+	"\t\t\t\t\"type\": \"externa" +
+	"l_code\",\n\t\t\t\t\t\t\t\t\"va" +
+	"lue\": \"OIF8739305\"\n\t" +
+	"\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t" +
+	"\t\t\t\t\t\t\"type\": \"sourc" +
+	"e\",\n\t\t\t\t\t\t\t\t\"value\":" +
+	" \"StopArea:8739305\"\n" +
+	"\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t" +
+	"\t\t\t\t\t\t\t\"type\": \"exte" +
+	"rnal_code\",\n\t\t\t\t\t\t\t\t" +
+	"\"value\": \"OIF8739305" +
+	"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{" +
+	"\n\t\t\t\t\t\t\t\t\"type\": \"so" +
+	"urce\",\n\t\t\t\t\t\t\t\t\"valu" +
+	"e\": \"StopArea:873930" +
+	"5\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]," +
+	"\n\t\t\t\t\t\t\"coord\": {\n\t\t" +
+	"\t\t\t\t\t\"lat\": \"48.8572" +
+	"\",\n\t\t\t\t\t\t\t\"lon\": \"2." +
+	"293234\"\n\t\t\t\t\t\t},\n\t\t\t" +
+	"\t\t\t\"id\": \"stop_area:" +
+	"OIF:SA:8739305\",\n\t\t\t" +
+	"\t\t\t\"label\": \"Champ d" +
+	"e Mars Tour Eiffel (" +
+	"Paris)\",\n\t\t\t\t\t\t\"link" +
+	"s\": [],\n\t\t\t\t\t\t\"name\"" +
+	": \"Champ de Mars Tou" +
+	"r Eiffel\",\n\t\t\t\t\t\t\"ti" +
+	"mezone\": \"Europe/Par" +
+	"is\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t" +
+	"},\n\t\t\t\"geojson\": {\n\t" +
+	"\t\t\t\"coordinates\": [\n" +
+	"\t\t\t\t\t[\n\t\t\t\t\t\t2.29039" +
+	"2,\n\t\t\t\t\t\t48.857293\n\t" +
+	"\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t" +
+	"2.2902998397,\n\t\t\t\t\t\t" +
+	"48.8574374498\n\t\t\t\t\t]" +
+	",\n\t\t\t\t\t[\n\t\t\t\t\t\t2.290" +
+	"517,\n\t\t\t\t\t\t48.857576" +
+	"\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t" +
+	"\t\t2.290641,\n\t\t\t\t\t\t48" +
+	".857504\n\t\t\t\t\t],\n\t\t\t\t" +
+	"\t[\n\t\t\t\t\t\t2.290688,\n\t" +
+	"\t\t\t\t\t48.857477\n\t\t\t\t\t" +
+	"],\n\t\t\t\t\t[\n\t\t\t\t\t\t2.29" +
+	"0747,\n\t\t\t\t\t\t48.85743" +
+	"9\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t" +
+	"\t\t\t2.290973,\n\t\t\t\t\t\t4" +
+	"8.857209\n\t\t\t\t\t],\n\t\t\t" +
+	"\t\t[\n\t\t\t\t\t\t2.291011,\n" +
+	"\t\t\t\t\t\t48.857233\n\t\t\t\t" +
+	"\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2.2" +
+	"91064,\n\t\t\t\t\t\t48.8572" +
+	"72\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t" +
+	"\t\t\t\t2.291097,\n\t\t\t\t\t\t" +
+	"48.857294\n\t\t\t\t\t],\n\t\t" +
+	"\t\t\t[\n\t\t\t\t\t\t2.291075," +
+	"\n\t\t\t\t\t\t48.857309\n\t\t\t" +
+	"\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2." +
+	"290908,\n\t\t\t\t\t\t48.857" +
+	"414\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t" +
+	"\t\t\t\t\t2.291025,\n\t\t\t\t\t" +
+	"\t48.857486\n\t\t\t\t\t],\n\t" +
+	"\t\t\t\t[\n\t\t\t\t\t\t2.291388" +
+	",\n\t\t\t\t\t\t48.857826\n\t\t" +
+	"\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2" +
+	".2922745574,\n\t\t\t\t\t\t4" +
+	"8.8584013995\n\t\t\t\t\t]," +
+	"\n\t\t\t\t\t[\n\t\t\t\t\t\t2.2922" +
+	"745574,\n\t\t\t\t\t\t48.858" +
+	"4013995\n\t\t\t\t\t]\n\t\t\t\t]" +
+	",\n\t\t\t\t\"properties\": " +
+	"[\n\t\t\t\t\t{\n\t\t\t\t\t\t\"leng" +
+	"th\": 253\n\t\t\t\t\t}\n\t\t\t\t" +
+	"],\n\t\t\t\t\"type\": \"Line" +
+	"String\"\n\t\t\t},\n\t\t\t\"id" +
+	"\": \"section_14_0\",\n\t" +
+	"\t\t\"links\": [],\n\t\t\t\"m" +
+	"ode\": \"walking\",\n\t\t\t" +
+	"\"path\": [\n\t\t\t\t{\n\t\t\t\t" +
+	"\t\"direction\": 0,\n\t\t\t" +
+	"\t\t\"duration\": 19,\n\t\t" +
+	"\t\t\t\"length\": 21,\n\t\t\t" +
+	"\t\t\"name\": \"\"\n\t\t\t\t},\n" +
+	"\t\t\t\t{\n\t\t\t\t\t\"directio" +
+	"n\": 0,\n\t\t\t\t\t\"duratio" +
+	"n\": 14,\n\t\t\t\t\t\"length" +
+	"\": 16,\n\t\t\t\t\t\"name\": " +
+	"\"\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t" +
+	"\t\"direction\": 3,\n\t\t\t" +
+	"\t\t\"duration\": 5,\n\t\t\t" +
+	"\t\t\"length\": 6,\n\t\t\t\t\t" +
+	"\"name\": \"\"\n\t\t\t\t},\n\t\t" +
+	"\t\t{\n\t\t\t\t\t\"direction\"" +
+	": 13,\n\t\t\t\t\t\"duration" +
+	"\": 28,\n\t\t\t\t\t\"length\"" +
+	": 31,\n\t\t\t\t\t\"name\": \"" +
+	"\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t" +
+	"\"direction\": -101,\n\t" +
+	"\t\t\t\t\"duration\": 3,\n\t" +
+	"\t\t\t\t\"length\": 3,\n\t\t\t" +
+	"\t\t\"name\": \"\"\n\t\t\t\t},\n" +
+	"\t\t\t\t{\n\t\t\t\t\t\"directio" +
+	"n\": -4,\n\t\t\t\t\t\"durati" +
+	"on\": 5,\n\t\t\t\t\t\"length" +
+	"\": 6,\n\t\t\t\t\t\"name\": \"" +
+	"\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t" +
+	"\"direction\": 3,\n\t\t\t\t" +
+	"\t\"duration\": 3,\n\t\t\t\t" +
+	"\t\"length\": 3,\n\t\t\t\t\t\"" +
+	"name\": \"\"\n\t\t\t\t},\n\t\t\t" +
+	"\t{\n\t\t\t\t\t\"direction\":" +
+	" -89,\n\t\t\t\t\t\"duration" +
+	"\": 17,\n\t\t\t\t\t\"length\"" +
+	": 19,\n\t\t\t\t\t\"name\": \"" +
+	"\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t" +
+	"\"direction\": 93,\n\t\t\t" +
+	"\t\t\"duration\": 132,\n\t" +
+	"\t\t\t\t\"length\": 148,\n\t" +
+	"\t\t\t\t\"name\": \"Quai Br" +
+	"anly\"\n\t\t\t\t}\n\t\t\t],\n\t\t" +
+	"\t\"to\": {\n\t\t\t\t\"addres" +
+	"s\": {\n\t\t\t\t\t\"administ" +
+	"rative_regions\": [\n\t" +
+	"\t\t\t\t\t{\n\t\t\t\t\t\t\t\"coord" +
+	"\": {\n\t\t\t\t\t\t\t\t\"lat\": " +
+	"\"48.856609\",\n\t\t\t\t\t\t\t" +
+	"\t\"lon\": \"2.351499\"\n\t" +
+	"\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"id\"" +
+	": \"admin:fr:75056\",\n" +
+	"\t\t\t\t\t\t\t\"insee\": \"750" +
+	"56\",\n\t\t\t\t\t\t\t\"label\":" +
+	" \"Paris\",\n\t\t\t\t\t\t\t\"le" +
+	"vel\": 8,\n\t\t\t\t\t\t\t\"nam" +
+	"e\": \"Paris\",\n\t\t\t\t\t\t\t" +
+	"\"zip_code\": \"\"\n\t\t\t\t\t" +
+	"\t},\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"" +
+	"coord\": {\n\t\t\t\t\t\t\t\t\"l" +
+	"at\": \"48.856609\",\n\t\t" +
+	"\t\t\t\t\t\t\"lon\": \"2.3514" +
+	"99\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t" +
+	"\t\"id\": \"admin:fr:750" +
+	"56\",\n\t\t\t\t\t\t\t\"insee\":" +
+	" \"75056\",\n\t\t\t\t\t\t\t\"la" +
+	"bel\": \"Paris\",\n\t\t\t\t\t" +
+	"\t\t\"level\": 8,\n\t\t\t\t\t\t" +
+	"\t\"name\": \"Paris\",\n\t\t" +
+	"\t\t\t\t\t\"zip_code\": \"\"\n" +
+	"\t\t\t\t\t\t}\n\t\t\t\t\t],\n\t\t\t\t" +
+	"\t\"coord\": {\n\t\t\t\t\t\t\"l" +
+	"at\": \"48.8583736\",\n\t" +
+	"\t\t\t\t\t\"lon\": \"2.29229" +
+	"26\"\n\t\t\t\t\t},\n\t\t\t\t\t\"ho" +
+	"use_number\": 69,\n\t\t\t" +
+	"\t\t\"id\": \"2.2922926;4" +
+	"8.8583736\",\n\t\t\t\t\t\"la" +
+	"bel\": \"69 Quai Branl" +
+	"y (Paris)\",\n\t\t\t\t\t\"na" +
+	"me\": \"Quai Branly\"\n\t" +
+	"\t\t\t},\n\t\t\t\t\"embedded_" +
+	"type\": \"address\",\n\t\t" +
+	"\t\t\"id\": \"2.2922926;4" +
+	"8.8583736\",\n\t\t\t\t\"nam" +
+	"e\": \"69 Quai Branly " +
+	"(Paris)\",\n\t\t\t\t\"quali" +
+	"ty\": 0\n\t\t\t},\n\t\t\t\"typ" +
+	"e\": \"street_network\"" +
+	"\n\t\t}\n\t],\n\t\"status\": " +
+	"\"\",\n\t\"tags\": [\n\t\t\"wa" +
+	"lking\",\n\t\t\"ecologic\"" +
+	"\n\t],\n\t\"type\": \"best\"" +
+	"\n}"

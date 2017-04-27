@@ -3,8 +3,9 @@ package navitia
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/pkg/errors"
 	"net/http"
+
+	"github.com/pkg/errors"
 )
 
 // RemoteErrorID is an ID for a remote error
@@ -14,21 +15,22 @@ type RemoteErrorID string
 const (
 	// 404 Errors
 
-	RemoteErrDateOutOfBounds       RemoteErrorID = "date_out_of_bounds"
-	RemoteErrNoOrigin                            = "no_origin"
-	RemoteErrNoDestination                       = "no_destination"
-	RemoteErrNoOriginNoDestination               = "nor_origin_nor_destination"
-	RemoteErrUnknownObject                       = "unknown_object"
+	RemoteErrDateOutOfBounds       RemoteErrorID = "date_out_of_bounds"         // When the given date is out of bounds of the production dates of the region
+	RemoteErrNoOrigin                            = "no_origin"                  // Couldn’t find an origin for the journeys
+	RemoteErrNoDestination                       = "no_destination"             // Couldn’t find an destination for the journeys
+	RemoteErrNoOriginNoDestination               = "nor_origin_nor_destination" // Couldn’t find an origin nor a destination for the journeys
+	RemoteErrUnknownObject                       = "unknown_object"             // Unknown Object
 
 	// 400 Errors
 
-	RemoteErrBadFilter     = "bad_filter"
-	RemoteErrUnableToParse = "unable_to_parse"
+	RemoteErrBadFilter     = "bad_filter"      // Bad filter (with custom filter)
+	RemoteErrUnableToParse = "unable_to_parse" // Unable to parse mal-formed custom filter"
 )
 
-// RemoteErrorsDescriptions countains human-readable descriptions for a given remote error ID
+// remoteErrorsDescriptions contains human-readable descriptions for a given remote error ID
+//
 // Can also be used as a list of known error IDs
-var RemoteErrorsDescriptions = map[RemoteErrorID]string{
+var remoteErrorsDescriptions = map[RemoteErrorID]string{
 	RemoteErrDateOutOfBounds:       "When the given date is out of bounds of the production dates of the region",
 	RemoteErrNoOrigin:              "Couldn’t find an origin for the journeys",
 	RemoteErrNoDestination:         "Couldn’t find an destination for the journeys",
@@ -54,7 +56,7 @@ func (err RemoteError) Error() string {
 	// If this is a 40x error then use our information about errors
 	if err.StatusCode == 404 || err.StatusCode == 400 {
 		s = fmt.Sprintf("request error (id: %s):", err.ID)
-		if desc, ok := RemoteErrorsDescriptions[err.ID]; ok {
+		if desc, ok := remoteErrorsDescriptions[err.ID]; ok {
 			s += fmt.Sprintf(" %s:", desc)
 		}
 		s += err.Message

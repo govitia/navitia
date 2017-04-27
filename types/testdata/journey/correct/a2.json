@@ -1,0 +1,1564 @@
+{
+	"arrival_date_time": "20170413T142300",
+	"calendars": [
+		{
+			"active_periods": [
+				{
+					"begin": "20170327",
+					"end": "20171028"
+				}
+			],
+			"week_pattern": {
+				"friday": true,
+				"monday": true,
+				"saturday": false,
+				"sunday": false,
+				"thursday": true,
+				"tuesday": true,
+				"wednesday": true
+			}
+		}
+	],
+	"co2_emission": {
+		"unit": "gEC",
+		"value": 24.642
+	},
+	"departure_date_time": "20170413T133846",
+	"duration": 2654,
+	"durations": {
+		"total": 2654,
+		"walking": 1394
+	},
+	"fare": {
+		"found": false,
+		"links": [],
+		"total": {
+			"currency": "",
+			"value": "0.0"
+		}
+	},
+	"links": [
+		{
+			"href": "https://api.navitia.io/v1/journeys?allowed_id%5B%5D=stop_area%3ARAT%3ASA%3ABERCY\u0026allowed_id%5B%5D=stop_area%3ARAT%3ASA%3ABIRHA\u0026to=2.2922926%3B48.8583736\u0026min_nb_journeys=5\u0026from=2.3749036%3B48.8467927",
+			"rel": "same_journey_schedules",
+			"templated": false,
+			"type": "journeys"
+		}
+	],
+	"nb_transfers": 0,
+	"requested_date_time": "20170413T133729",
+	"sections": [
+		{
+			"arrival_date_time": "20170413T135400",
+			"co2_emission": {
+				"unit": "",
+				"value": 0.0
+			},
+			"departure_date_time": "20170413T133846",
+			"duration": 914,
+			"from": {
+				"address": {
+					"administrative_regions": [
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						},
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						}
+					],
+					"coord": {
+						"lat": "48.8467927",
+						"lon": "2.3749036"
+					},
+					"house_number": 9,
+					"id": "2.3749036;48.8467927",
+					"label": "9 Rue Abel (Paris)",
+					"name": "Rue Abel"
+				},
+				"embedded_type": "address",
+				"id": "2.3749036;48.8467927",
+				"name": "9 Rue Abel (Paris)",
+				"quality": 0
+			},
+			"geojson": {
+				"coordinates": [
+					[
+						2.3749393938,
+						48.8467686088
+					],
+					[
+						2.3749393938,
+						48.8467686088
+					],
+					[
+						2.374414,
+						48.845988
+					],
+					[
+						2.374362,
+						48.845932
+					],
+					[
+						2.37418,
+						48.845844
+					],
+					[
+						2.373943,
+						48.84582
+					],
+					[
+						2.373767,
+						48.845796
+					],
+					[
+						2.373792,
+						48.845464
+					],
+					[
+						2.373805,
+						48.845425
+					],
+					[
+						2.373847,
+						48.845418
+					],
+					[
+						2.373983,
+						48.845334
+					],
+					[
+						2.373818,
+						48.845053
+					],
+					[
+						2.373755,
+						48.845003
+					],
+					[
+						2.373743,
+						48.844994
+					],
+					[
+						2.373642,
+						48.844914
+					],
+					[
+						2.373561,
+						48.844848
+					],
+					[
+						2.37348,
+						48.844783
+					],
+					[
+						2.373398,
+						48.844717
+					],
+					[
+						2.373361,
+						48.844685
+					],
+					[
+						2.373334,
+						48.844663
+					],
+					[
+						2.373331,
+						48.844661
+					],
+					[
+						2.373317,
+						48.844649
+					],
+					[
+						2.373359,
+						48.84462
+					],
+					[
+						2.373401,
+						48.844594
+					],
+					[
+						2.373445,
+						48.844571
+					],
+					[
+						2.373455,
+						48.844565
+					],
+					[
+						2.373501,
+						48.844538
+					],
+					[
+						2.373551,
+						48.844514
+					],
+					[
+						2.373405,
+						48.844412
+					],
+					[
+						2.373352,
+						48.844383
+					],
+					[
+						2.373266,
+						48.844376
+					],
+					[
+						2.373248,
+						48.844363
+					],
+					[
+						2.37314,
+						48.844343
+					],
+					[
+						2.373019,
+						48.84426
+					],
+					[
+						2.372903,
+						48.844193
+					],
+					[
+						2.372788,
+						48.844121
+					],
+					[
+						2.372975,
+						48.844008
+					],
+					[
+						2.374275,
+						48.843236
+					],
+					[
+						2.374467,
+						48.843129
+					],
+					[
+						2.374786,
+						48.842954
+					],
+					[
+						2.37557,
+						48.842532
+					],
+					[
+						2.376195,
+						48.842196
+					],
+					[
+						2.37642,
+						48.842101
+					],
+					[
+						2.378351,
+						48.840925
+					],
+					[
+						2.378429,
+						48.840877
+					],
+					[
+						2.378542,
+						48.84081
+					],
+					[
+						2.378653,
+						48.840741
+					],
+					[
+						2.379142,
+						48.840541
+					],
+					[
+						2.379462,
+						48.84048
+					],
+					[
+						2.3795882525,
+						48.8404504149
+					],
+					[
+						2.379583,
+						48.840428
+					]
+				],
+				"properties": [
+					{
+						"length": 1023
+					}
+				],
+				"type": "LineString"
+			},
+			"id": "section_14_0",
+			"links": [],
+			"mode": "walking",
+			"path": [
+				{
+					"direction": 0,
+					"duration": 90,
+					"length": 101,
+					"name": "Rue Abel"
+				},
+				{
+					"direction": 22,
+					"duration": 40,
+					"length": 45,
+					"name": "Boulevard Diderot"
+				},
+				{
+					"direction": -81,
+					"duration": 33,
+					"length": 37,
+					"name": ""
+				},
+				{
+					"direction": -10,
+					"duration": 3,
+					"length": 3,
+					"name": ""
+				},
+				{
+					"direction": -63,
+					"duration": 2,
+					"length": 2,
+					"name": ""
+				},
+				{
+					"direction": 29,
+					"duration": 12,
+					"length": 13,
+					"name": ""
+				},
+				{
+					"direction": 68,
+					"duration": 81,
+					"length": 91,
+					"name": ""
+				},
+				{
+					"direction": 6,
+					"duration": 1,
+					"length": 1,
+					"name": ""
+				},
+				{
+					"direction": -81,
+					"duration": 6,
+					"length": 7,
+					"name": ""
+				},
+				{
+					"direction": -5,
+					"duration": 3,
+					"length": 3,
+					"name": ""
+				},
+				{
+					"direction": 4,
+					"duration": 0,
+					"length": 0,
+					"name": ""
+				},
+				{
+					"direction": -1,
+					"duration": 4,
+					"length": 4,
+					"name": ""
+				},
+				{
+					"direction": -6,
+					"duration": 4,
+					"length": 4,
+					"name": ""
+				},
+				{
+					"direction": 97,
+					"duration": 17,
+					"length": 19,
+					"name": "Hall 1"
+				},
+				{
+					"direction": 33,
+					"duration": 27,
+					"length": 30,
+					"name": ""
+				},
+				{
+					"direction": 5,
+					"duration": 20,
+					"length": 22,
+					"name": ""
+				},
+				{
+					"direction": -94,
+					"duration": 563,
+					"length": 631,
+					"name": "Rue de Bercy"
+				},
+				{
+					"direction": 0,
+					"duration": 8,
+					"length": 9,
+					"name": "Boulevard de Bercy"
+				}
+			],
+			"to": {
+				"embedded_type": "stop_point",
+				"id": "stop_point:RAT:SP:BERCY1",
+				"name": "Bercy (Paris)",
+				"quality": 0,
+				"stop_point": {
+					"administrative_regions": [
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						}
+					],
+					"codes": [
+						{
+							"type": "external_code",
+							"value": "RATBERCY1"
+						},
+						{
+							"type": "source",
+							"value": "BERCY1"
+						}
+					],
+					"commercial_modes": [
+						{
+							"id": "commercial_mode:Metro",
+							"name": "Metro"
+						}
+					],
+					"coord": {
+						"lat": "48.840428",
+						"lon": "2.379583"
+					},
+					"equipments": [],
+					"id": "stop_point:RAT:SP:BERCY1",
+					"label": "Bercy (Paris)",
+					"links": [],
+					"name": "Bercy",
+					"physical_modes": [
+						{
+							"id": "physical_mode:Metro",
+							"name": "M\u00e9tro"
+						}
+					],
+					"stop_area": {
+						"administrative_regions": [
+							{
+								"coord": {
+									"lat": "48.856609",
+									"lon": "2.351499"
+								},
+								"id": "admin:fr:75056",
+								"insee": "75056",
+								"label": "Paris",
+								"level": 8,
+								"name": "Paris",
+								"zip_code": ""
+							}
+						],
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATBERCY"
+							},
+							{
+								"type": "source",
+								"value": "BERCY"
+							}
+						],
+						"coord": {
+							"lat": "48.840428",
+							"lon": "2.379583"
+						},
+						"id": "stop_area:RAT:SA:BERCY",
+						"label": "Bercy (Paris)",
+						"links": [],
+						"name": "Bercy",
+						"timezone": "Europe/Paris"
+					}
+				}
+			},
+			"type": "street_network"
+		},
+		{
+			"additional_informations": [
+				"regular"
+			],
+			"arrival_date_time": "20170413T141500",
+			"base_arrival_date_time": "20170413T141500",
+			"base_departure_date_time": "20170413T135400",
+			"co2_emission": {
+				"unit": "gEC",
+				"value": 24.642
+			},
+			"departure_date_time": "20170413T135400",
+			"display_informations": {
+				"code": "6",
+				"color": "79BB92",
+				"commercial_mode": "Metro",
+				"description": "",
+				"direction": "Charles de Gaulle \u2014 \u00c9toile (Paris)",
+				"equipments": [],
+				"headsign": "Charles de Gaulle Etoile",
+				"label": "6",
+				"links": [],
+				"network": "RATP",
+				"physical_mode": "M\u00e9tro",
+				"text_color": "000000"
+			},
+			"duration": 1260,
+			"from": {
+				"embedded_type": "stop_point",
+				"id": "stop_point:RAT:SP:BERCY1",
+				"name": "Bercy (Paris)",
+				"quality": 0,
+				"stop_point": {
+					"administrative_regions": [
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						}
+					],
+					"codes": [
+						{
+							"type": "external_code",
+							"value": "RATBERCY1"
+						},
+						{
+							"type": "source",
+							"value": "BERCY1"
+						}
+					],
+					"coord": {
+						"lat": "48.840428",
+						"lon": "2.379583"
+					},
+					"equipments": [],
+					"id": "stop_point:RAT:SP:BERCY1",
+					"label": "Bercy (Paris)",
+					"links": [],
+					"name": "Bercy",
+					"stop_area": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATBERCY"
+							},
+							{
+								"type": "source",
+								"value": "BERCY"
+							}
+						],
+						"coord": {
+							"lat": "48.840428",
+							"lon": "2.379583"
+						},
+						"id": "stop_area:RAT:SA:BERCY",
+						"label": "Bercy (Paris)",
+						"links": [],
+						"name": "Bercy",
+						"timezone": "Europe/Paris"
+					}
+				}
+			},
+			"geojson": {
+				"coordinates": [
+					[
+						2.379583,
+						48.840428
+					],
+					[
+						2.373784,
+						48.837399
+					],
+					[
+						2.367165,
+						48.834408
+					],
+					[
+						2.362045,
+						48.83271
+					],
+					[
+						2.355721,
+						48.831406
+					],
+					[
+						2.349438,
+						48.829612
+					],
+					[
+						2.343939,
+						48.831365
+					],
+					[
+						2.33622,
+						48.833252
+					],
+					[
+						2.331893,
+						48.833592
+					],
+					[
+						2.330583,
+						48.838964
+					],
+					[
+						2.326171,
+						48.840334
+					],
+					[
+						2.322635,
+						48.843043
+					],
+					[
+						2.312656,
+						48.842938
+					],
+					[
+						2.310184,
+						48.845131
+					],
+					[
+						2.301808,
+						48.847456
+					],
+					[
+						2.297949,
+						48.84916
+					],
+					[
+						2.29277,
+						48.850806
+					],
+					[
+						2.288783,
+						48.854333
+					]
+				],
+				"properties": [
+					{
+						"length": 8214
+					}
+				],
+				"type": "LineString"
+			},
+			"id": "section_15_0",
+			"links": [
+				{
+					"id": "vehicle_journey:RAT:RATAM6REGA5929-1_dst_2",
+					"type": "vehicle_journey"
+				},
+				{
+					"id": "line:RAT:M6",
+					"type": "line"
+				},
+				{
+					"id": "route:RAT:M6",
+					"type": "route"
+				},
+				{
+					"id": "commercial_mode:Metro",
+					"type": "commercial_mode"
+				},
+				{
+					"id": "physical_mode:Metro",
+					"type": "physical_mode"
+				},
+				{
+					"id": "network:RAT:1",
+					"type": "network"
+				}
+			],
+			"stop_date_times": [
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T135400",
+					"base_arrival_date_time": "20170413T135400",
+					"base_departure_date_time": "20170413T135400",
+					"departure_date_time": "20170413T135400",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATBERCY1"
+							},
+							{
+								"type": "source",
+								"value": "BERCY1"
+							}
+						],
+						"coord": {
+							"lat": "48.840428",
+							"lon": "2.379583"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:BERCY1",
+						"label": "Bercy (Paris)",
+						"links": [],
+						"name": "Bercy"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T135600",
+					"base_arrival_date_time": "20170413T135600",
+					"base_departure_date_time": "20170413T135600",
+					"departure_date_time": "20170413T135600",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATQDLGA1"
+							},
+							{
+								"type": "source",
+								"value": "QDLGA1"
+							}
+						],
+						"coord": {
+							"lat": "48.837399",
+							"lon": "2.373784"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:QDLGA1",
+						"label": "Quai de la Gare (Paris)",
+						"links": [],
+						"name": "Quai de la Gare"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T135700",
+					"base_arrival_date_time": "20170413T135700",
+					"base_departure_date_time": "20170413T135700",
+					"departure_date_time": "20170413T135700",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATCHEVA1"
+							},
+							{
+								"type": "source",
+								"value": "CHEVA1"
+							}
+						],
+						"coord": {
+							"lat": "48.834408",
+							"lon": "2.367165"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:CHEVA1",
+						"label": "Chevaleret (Paris)",
+						"links": [],
+						"name": "Chevaleret"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T135800",
+					"base_arrival_date_time": "20170413T135800",
+					"base_departure_date_time": "20170413T135800",
+					"departure_date_time": "20170413T135800",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATNATLE1"
+							},
+							{
+								"type": "source",
+								"value": "NATLE1"
+							}
+						],
+						"coord": {
+							"lat": "48.83271",
+							"lon": "2.362045"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:NATLE1",
+						"label": "Nationale (Paris)",
+						"links": [],
+						"name": "Nationale"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T135900",
+					"base_arrival_date_time": "20170413T135900",
+					"base_departure_date_time": "20170413T135900",
+					"departure_date_time": "20170413T135900",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATPLITA3"
+							},
+							{
+								"type": "source",
+								"value": "PLITA3"
+							}
+						],
+						"coord": {
+							"lat": "48.831406",
+							"lon": "2.355721"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:PLITA3",
+						"label": "Place d'Italie (Paris)",
+						"links": [],
+						"name": "Place d'Italie"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140000",
+					"base_arrival_date_time": "20170413T140000",
+					"base_departure_date_time": "20170413T140000",
+					"departure_date_time": "20170413T140000",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATCORVI1"
+							},
+							{
+								"type": "source",
+								"value": "CORVI1"
+							}
+						],
+						"coord": {
+							"lat": "48.829612",
+							"lon": "2.349438"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:CORVI1",
+						"label": "Corvisart (Paris)",
+						"links": [],
+						"name": "Corvisart"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140200",
+					"base_arrival_date_time": "20170413T140200",
+					"base_departure_date_time": "20170413T140200",
+					"departure_date_time": "20170413T140200",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATGLACI1"
+							},
+							{
+								"type": "source",
+								"value": "GLACI1"
+							}
+						],
+						"coord": {
+							"lat": "48.831365",
+							"lon": "2.343939"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:GLACI1",
+						"label": "Glaci\u00e8re (Paris)",
+						"links": [],
+						"name": "Glaci\u00e8re"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140300",
+					"base_arrival_date_time": "20170413T140300",
+					"base_departure_date_time": "20170413T140300",
+					"departure_date_time": "20170413T140300",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATSTJAC1"
+							},
+							{
+								"type": "source",
+								"value": "STJAC1"
+							}
+						],
+						"coord": {
+							"lat": "48.833252",
+							"lon": "2.33622"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:STJAC1",
+						"label": "Saint-Jacques (Paris)",
+						"links": [],
+						"name": "Saint-Jacques"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140400",
+					"base_arrival_date_time": "20170413T140400",
+					"base_departure_date_time": "20170413T140400",
+					"departure_date_time": "20170413T140400",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATDENRO3"
+							},
+							{
+								"type": "source",
+								"value": "DENRO3"
+							}
+						],
+						"coord": {
+							"lat": "48.833592",
+							"lon": "2.331893"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:DENRO3",
+						"label": "Denfert-Rochereau (Paris)",
+						"links": [],
+						"name": "Denfert-Rochereau"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140500",
+					"base_arrival_date_time": "20170413T140500",
+					"base_departure_date_time": "20170413T140500",
+					"departure_date_time": "20170413T140500",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATRASPA3"
+							},
+							{
+								"type": "source",
+								"value": "RASPA3"
+							}
+						],
+						"coord": {
+							"lat": "48.838964",
+							"lon": "2.330583"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:RASPA3",
+						"label": "Raspail (Paris)",
+						"links": [],
+						"name": "Raspail"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140600",
+					"base_arrival_date_time": "20170413T140600",
+					"base_departure_date_time": "20170413T140600",
+					"departure_date_time": "20170413T140600",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATEDGQU1"
+							},
+							{
+								"type": "source",
+								"value": "EDGQU1"
+							}
+						],
+						"coord": {
+							"lat": "48.840334",
+							"lon": "2.326171"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:EDGQU1",
+						"label": "Edgar Quinet (Paris)",
+						"links": [],
+						"name": "Edgar Quinet"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140800",
+					"base_arrival_date_time": "20170413T140800",
+					"base_departure_date_time": "20170413T140800",
+					"departure_date_time": "20170413T140800",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATMONTP3"
+							},
+							{
+								"type": "source",
+								"value": "MONTP3"
+							}
+						],
+						"coord": {
+							"lat": "48.843043",
+							"lon": "2.322635"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:MONTP3",
+						"label": "Montparnasse \u2014 Bienven\u00fce (Paris)",
+						"links": [],
+						"name": "Montparnasse \u2014 Bienven\u00fce"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T140900",
+					"base_arrival_date_time": "20170413T140900",
+					"base_departure_date_time": "20170413T140900",
+					"departure_date_time": "20170413T140900",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATPASTE1"
+							},
+							{
+								"type": "source",
+								"value": "PASTE1"
+							}
+						],
+						"coord": {
+							"lat": "48.842938",
+							"lon": "2.312656"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:PASTE1",
+						"label": "Pasteur (Paris)",
+						"links": [],
+						"name": "Pasteur"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T141000",
+					"base_arrival_date_time": "20170413T141000",
+					"base_departure_date_time": "20170413T141000",
+					"departure_date_time": "20170413T141000",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATSEVLE1"
+							},
+							{
+								"type": "source",
+								"value": "SEVLE1"
+							}
+						],
+						"coord": {
+							"lat": "48.845131",
+							"lon": "2.310184"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:SEVLE1",
+						"label": "S\u00e8vres \u2014 Lecourbe (Paris)",
+						"links": [],
+						"name": "S\u00e8vres \u2014 Lecourbe"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T141200",
+					"base_arrival_date_time": "20170413T141200",
+					"base_departure_date_time": "20170413T141200",
+					"departure_date_time": "20170413T141200",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATCAMBR1"
+							},
+							{
+								"type": "source",
+								"value": "CAMBR1"
+							}
+						],
+						"coord": {
+							"lat": "48.847456",
+							"lon": "2.301808"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:CAMBR1",
+						"label": "Cambronne (Paris)",
+						"links": [],
+						"name": "Cambronne"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T141300",
+					"base_arrival_date_time": "20170413T141300",
+					"base_departure_date_time": "20170413T141300",
+					"departure_date_time": "20170413T141300",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATLMPGR1"
+							},
+							{
+								"type": "source",
+								"value": "LMPGR1"
+							}
+						],
+						"coord": {
+							"lat": "48.84916",
+							"lon": "2.297949"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:LMPGR1",
+						"label": "La Motte-Picquet \u2014 Grenelle (Paris)",
+						"links": [],
+						"name": "La Motte-Picquet \u2014 Grenelle"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T141400",
+					"base_arrival_date_time": "20170413T141400",
+					"base_departure_date_time": "20170413T141400",
+					"departure_date_time": "20170413T141400",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATDUPLE1"
+							},
+							{
+								"type": "source",
+								"value": "DUPLE1"
+							}
+						],
+						"coord": {
+							"lat": "48.850806",
+							"lon": "2.29277"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:DUPLE1",
+						"label": "Dupleix (Paris)",
+						"links": [],
+						"name": "Dupleix"
+					}
+				},
+				{
+					"additional_informations": [],
+					"arrival_date_time": "20170413T141500",
+					"base_arrival_date_time": "20170413T141500",
+					"base_departure_date_time": "20170413T141500",
+					"departure_date_time": "20170413T141500",
+					"links": [],
+					"stop_point": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATBIRHA1"
+							},
+							{
+								"type": "source",
+								"value": "BIRHA1"
+							}
+						],
+						"coord": {
+							"lat": "48.854333",
+							"lon": "2.288783"
+						},
+						"equipments": [],
+						"id": "stop_point:RAT:SP:BIRHA1",
+						"label": "Bir-Hakeim Tour Eiffel (Paris)",
+						"links": [],
+						"name": "Bir-Hakeim Tour Eiffel"
+					}
+				}
+			],
+			"to": {
+				"embedded_type": "stop_point",
+				"id": "stop_point:RAT:SP:BIRHA1",
+				"name": "Bir-Hakeim Tour Eiffel (Paris)",
+				"quality": 0,
+				"stop_point": {
+					"administrative_regions": [
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						}
+					],
+					"codes": [
+						{
+							"type": "external_code",
+							"value": "RATBIRHA1"
+						},
+						{
+							"type": "source",
+							"value": "BIRHA1"
+						}
+					],
+					"coord": {
+						"lat": "48.854333",
+						"lon": "2.288783"
+					},
+					"equipments": [],
+					"id": "stop_point:RAT:SP:BIRHA1",
+					"label": "Bir-Hakeim Tour Eiffel (Paris)",
+					"links": [],
+					"name": "Bir-Hakeim Tour Eiffel",
+					"stop_area": {
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATBIRHA"
+							},
+							{
+								"type": "source",
+								"value": "BIRHA"
+							}
+						],
+						"coord": {
+							"lat": "48.854333",
+							"lon": "2.288783"
+						},
+						"id": "stop_area:RAT:SA:BIRHA",
+						"label": "Bir-Hakeim Tour Eiffel (Paris)",
+						"links": [],
+						"name": "Bir-Hakeim Tour Eiffel",
+						"timezone": "Europe/Paris"
+					}
+				}
+			},
+			"type": "public_transport"
+		},
+		{
+			"arrival_date_time": "20170413T142300",
+			"co2_emission": {
+				"unit": "",
+				"value": 0.0
+			},
+			"departure_date_time": "20170413T141500",
+			"duration": 480,
+			"from": {
+				"embedded_type": "stop_point",
+				"id": "stop_point:RAT:SP:BIRHA1",
+				"name": "Bir-Hakeim Tour Eiffel (Paris)",
+				"quality": 0,
+				"stop_point": {
+					"administrative_regions": [
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						},
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						}
+					],
+					"codes": [
+						{
+							"type": "external_code",
+							"value": "RATBIRHA1"
+						},
+						{
+							"type": "source",
+							"value": "BIRHA1"
+						},
+						{
+							"type": "external_code",
+							"value": "RATBIRHA1"
+						},
+						{
+							"type": "source",
+							"value": "BIRHA1"
+						}
+					],
+					"commercial_modes": [
+						{
+							"id": "commercial_mode:Metro",
+							"name": "Metro"
+						}
+					],
+					"coord": {
+						"lat": "48.854333",
+						"lon": "2.288783"
+					},
+					"equipments": [],
+					"id": "stop_point:RAT:SP:BIRHA1",
+					"label": "Bir-Hakeim Tour Eiffel (Paris)",
+					"links": [],
+					"name": "Bir-Hakeim Tour Eiffel",
+					"physical_modes": [
+						{
+							"id": "physical_mode:Metro",
+							"name": "M\u00e9tro"
+						}
+					],
+					"stop_area": {
+						"administrative_regions": [
+							{
+								"coord": {
+									"lat": "48.856609",
+									"lon": "2.351499"
+								},
+								"id": "admin:fr:75056",
+								"insee": "75056",
+								"label": "Paris",
+								"level": 8,
+								"name": "Paris",
+								"zip_code": ""
+							}
+						],
+						"codes": [
+							{
+								"type": "external_code",
+								"value": "RATBIRHA"
+							},
+							{
+								"type": "source",
+								"value": "BIRHA"
+							},
+							{
+								"type": "external_code",
+								"value": "RATBIRHA"
+							},
+							{
+								"type": "source",
+								"value": "BIRHA"
+							}
+						],
+						"coord": {
+							"lat": "48.854333",
+							"lon": "2.288783"
+						},
+						"id": "stop_area:RAT:SA:BIRHA",
+						"label": "Bir-Hakeim Tour Eiffel (Paris)",
+						"links": [],
+						"name": "Bir-Hakeim Tour Eiffel",
+						"timezone": "Europe/Paris"
+					}
+				}
+			},
+			"geojson": {
+				"coordinates": [
+					[
+						2.288783,
+						48.854333
+					],
+					[
+						2.2887558956,
+						48.8543069173
+					],
+					[
+						2.288649,
+						48.854418
+					],
+					[
+						2.288881,
+						48.854606
+					],
+					[
+						2.289158,
+						48.854874
+					],
+					[
+						2.289209,
+						48.854927
+					],
+					[
+						2.289424,
+						48.855178
+					],
+					[
+						2.289504,
+						48.855306
+					],
+					[
+						2.290908,
+						48.857414
+					],
+					[
+						2.291025,
+						48.857486
+					],
+					[
+						2.291388,
+						48.857826
+					],
+					[
+						2.2922745574,
+						48.8584013995
+					],
+					[
+						2.2922745574,
+						48.8584013995
+					]
+				],
+				"properties": [
+					{
+						"length": 537
+					}
+				],
+				"type": "LineString"
+			},
+			"id": "section_16_0",
+			"links": [],
+			"mode": "walking",
+			"path": [
+				{
+					"direction": 0,
+					"duration": 13,
+					"length": 15,
+					"name": "Boulevard de Grenelle"
+				},
+				{
+					"direction": 0,
+					"duration": 24,
+					"length": 27,
+					"name": "Place des Martyrs Juifs du V\u00e9lodrome"
+				},
+				{
+					"direction": -5,
+					"duration": 443,
+					"length": 496,
+					"name": "Quai Branly"
+				}
+			],
+			"to": {
+				"address": {
+					"administrative_regions": [
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						},
+						{
+							"coord": {
+								"lat": "48.856609",
+								"lon": "2.351499"
+							},
+							"id": "admin:fr:75056",
+							"insee": "75056",
+							"label": "Paris",
+							"level": 8,
+							"name": "Paris",
+							"zip_code": ""
+						}
+					],
+					"coord": {
+						"lat": "48.8583736",
+						"lon": "2.2922926"
+					},
+					"house_number": 69,
+					"id": "2.2922926;48.8583736",
+					"label": "69 Quai Branly (Paris)",
+					"name": "Quai Branly"
+				},
+				"embedded_type": "address",
+				"id": "2.2922926;48.8583736",
+				"name": "69 Quai Branly (Paris)",
+				"quality": 0
+			},
+			"type": "street_network"
+		}
+	],
+	"status": "",
+	"tags": [
+		"walking",
+		"ecologic"
+	],
+	"type": "comfort"
+}

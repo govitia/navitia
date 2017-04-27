@@ -1,46 +1,45 @@
 package navitia
 
 import (
-	"fmt"
-	"github.com/aabizri/navitia/types"
+	"context"
 	"net/url"
 	"strconv"
 	"time"
+
+	"github.com/aabizri/navitia/types"
 )
 
-// JourneyResults countains the results of a Journey request
+// JourneyResults contains the results of a Journey request
+//
+// Warning: types.Journey.From / types.Journey.To aren't guaranteed to be filled.
+// Based on very basic inspection, it seems they aren't filled when there are sections...
 type JourneyResults struct {
-	Journeys []types.Journey
+	Journeys []types.Journey `json:"journeys"`
 
-	Logging
+	Paging Paging `json:"links"`
+
+	Logging `json:"-"`
 
 	session *Session
 }
 
-// String satisfies stringer, pretty-prints JourneyResults
-func (jr JourneyResults) String() string {
-	var msg string
-	for i, journey := range jr.Journeys {
-		if i != 0 {
-			msg += "\n"
-		}
-		msg += fmt.Sprintf("Journey #%d: %s\n", i, journey.String())
-	}
-	return msg
+// Count returns the number of results available in a JourneyResults
+func (jr *JourneyResults) Count() int {
+	return len(jr.Journeys)
 }
 
-// JourneyRequest countain the parameters needed to make a Journey request
+// JourneyRequest contain the parameters needed to make a Journey request
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
-	From types.QueryEscaper
-	To   types.QueryEscaper
+	From types.ID
+	To   types.ID
 
 	// When do you want to depart ? Or is DateIsArrival when do you want to arrive at your destination.
 	Date          time.Time
 	DateIsArrival bool
 
-	// The traveler's type
+	// The traveller's type
 	Traveler types.TravelerType
 
 	// Define the freshness of data to use to compute journeys
@@ -55,10 +54,10 @@ type JourneyRequest struct {
 
 	// Force the first section mode if it isn't a public transport mode
 	// Note: The parameter is inclusive, not exclusive. As such if you want to forbid a mode you have to include all modes except that one.
-	FirstSectionModes []types.Mode
+	FirstSectionModes []string
 
 	// Same, but for the last section
-	LastSectionModes []types.Mode
+	LastSectionModes []string
 
 	// MaxDurationToPT is the maximum allowed duration to reach the public transport.
 	// Use this to limit the walking/biking part.
@@ -115,14 +114,14 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	addIDSlice := func(key string, ids []types.ID) {
 		if len(ids) != 0 {
 			for _, id := range ids {
-				params.Add(key, id.QueryEscape())
+				params.Add(key, string(id))
 			}
 		}
 	}
-	addModes := func(key string, modes []types.Mode) {
+	addModes := func(key string, modes []string) {
 		if len(modes) != 0 {
 			for _, mode := range modes {
-				params.Add(key, string(mode))
+				params.Add(key, mode)
 			}
 		}
 	}
@@ -134,11 +133,11 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	}
 
 	// Encode the from and to
-	if from := req.From; from != nil {
-		params.Add("from", from.QueryEscape())
+	if from := req.From; from != "" {
+		params.Add("from", string(from))
 	}
-	if to := req.To; to != nil {
-		params.Add("to", to.QueryEscape())
+	if to := req.To; to != "" {
+		params.Add("to", string(to))
 	}
 
 	if datetime := req.Date; !datetime.IsZero() {
@@ -193,28 +192,28 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 }
 
 // journeys is the internal function used by Journeys functions
-func (s *Session) journeys(url string, params JourneyRequest) (*JourneyResults, error) {
+func (s *Session) journeys(ctx context.Context, url string, req JourneyRequest) (*JourneyResults, error) {
 	var results = &JourneyResults{session: s}
-	err := s.request(url, params, results)
+	err := s.request(ctx, url, req, results)
 	return results, err
 }
 
 const journeysEndpoint string = "journeys"
 
 // Journeys computes a list of journeys according to the parameters given
-func (s *Session) Journeys(params JourneyRequest) (*JourneyResults, error) {
+func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
 	url := s.APIURL + "/" + journeysEndpoint
 
 	// Call
-	return s.journeys(url, params)
+	return s.journeys(ctx, url, req)
 }
 
-// JourneysR computes a list of journeys according to the parameters given and in a specific region
-func (s *Session) JourneysR(params JourneyRequest, regionID string) (*JourneyResults, error) {
+// Journeys computes a list of journeys according to the parameters given in a specific scope
+func (scope *Scope) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
-	url := s.APIURL + "/coverage/" + regionID + "/" + journeysEndpoint
+	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + journeysEndpoint
 
 	// Call
-	return s.journeys(url, params)
+	return scope.session.journeys(ctx, url, req)
 }

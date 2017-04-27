@@ -1,9 +1,11 @@
 package navitia
 
 import (
-	"github.com/pkg/errors"
 	"net/http"
+	"path"
 	"time"
+
+	"github.com/aabizri/navitia/types"
 )
 
 const (
@@ -17,6 +19,10 @@ const (
 	DefaultAPIVersion = "v1"
 
 	defaultAPIURL = DefaultAPIProtocol + "://" + DefaultAPIHostname + "/" + DefaultAPIVersion
+
+	// Maximum size of response in bytes
+	// 10 megabytes
+	maxSize int64 = 10 * (1000 * 1000)
 )
 
 var defaultClient = &http.Client{}
@@ -30,10 +36,12 @@ type Session struct {
 	created time.Time
 }
 
-// New creates a new session given an API Key
-// It acts as a convenience wrapper to NewCustom
+// New creates a new session given an API Key.
+// It acts as a convenience wrapper to NewCustom.
+//
+// Warning: No Timeout is indicated in the default http client, and as such, it is strongly advised to use NewCustom with a custom *http.Client !
 func New(key string) (*Session, error) {
-	return NewCustom(key, defaultAPIURL, defaultClient)
+	return NewCustom(key, path.Clean(defaultAPIURL), defaultClient)
 }
 
 // NewCustom creates a custom new session given an API key, URL to api base & http client
@@ -46,21 +54,15 @@ func NewCustom(key string, url string, client *http.Client) (*Session, error) {
 	}, nil
 }
 
-// UseClient sets a given *http.Client to be used for further queries
-func (s *Session) UseClient(client *http.Client) {
-	s.client = client
+// A Scope is a coverage-scoped question, allowing you to query information about a specific region.
+//
+// It is needed for every non-global request you wish to make, and helps have better results with some global request too!
+type Scope struct {
+	region  types.ID
+	session *Session
 }
 
-// newRequest creates a newRequest with the correct auth set
-func (s *Session) newRequest(url string) (*http.Request, error) {
-	// Create the request
-	newReq, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return newReq, errors.Wrapf(err, "couldn't create new request (for %s)", url)
-	}
-
-	// Add basic auth
-	newReq.SetBasicAuth(s.APIKey, "")
-
-	return newReq, err
+// Scope creates a coverage-scoped session given a region ID.
+func (s *Session) Scope(region types.ID) *Scope {
+	return &Scope{region: region, session: s}
 }

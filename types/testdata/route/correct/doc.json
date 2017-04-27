@@ -1,0 +1,13 @@
+{
+    "id":"route:RAT:M6",
+    "name":"Nation - Charles de Gaule Etoile",
+    "is_frequence":"False",
+    "line":{
+        "id":"line:RAT:M6",
+        "name":"Nation - Charles de Gaule Etoile"
+    },
+    "direction":{
+        "id":"stop_area:RAT:SA:GAUET",
+        "name":"Charles de Gaulle - Etoile (Paris)"
+    }
+}

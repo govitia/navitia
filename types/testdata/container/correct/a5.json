@@ -1,0 +1,51 @@
+{
+	"embedded_type": "poi",
+	"quality": 70,
+	"id": "poi:n439912307",
+	"name": "Hittorf - Rue Hittorf - 75010 Paris (Paris)",
+	"poi": {
+		"poi_type": {
+			"name": "Station VLS",
+			"id": "poi_type:amenity:bicycle_rental"
+		},
+		"name": "Hittorf - Rue Hittorf - 75010 Paris",
+		"coord": {
+			"lat": "48.8720809",
+			"lon": "2.3576446"
+		},
+		"label": "Hittorf - Rue Hittorf - 75010 Paris (Paris)",
+		"administrative_regions": [
+			{
+				"insee": "75056",
+				"name": "Paris",
+				"level": 8,
+				"coord": {
+					"lat": "48.856609",
+					"lon": "2.351499"
+				},
+				"label": "Paris",
+				"id": "admin:fr:75056",
+				"zip_code": ""
+			}
+		],
+		"address": {
+			"house_number": 14,
+			"id": "2.3576446;48.8720809",
+			"name": "Rue Hittorf",
+			"coord": {
+				"lat": "48.8720809",
+				"lon": "2.3576446"
+			},
+			"label": "14 Rue Hittorf (Paris)"
+		},
+		"id": "poi:n439912307",
+		"properties": {
+			"amenity": "bicycle_rental",
+			"capacity": "17",
+			"name": "Hittorf - Rue Hittorf - 75010 Paris",
+			"operator": "JCDecaux",
+			"ref": "10009",
+			"network": "V\u00e9lib'"
+		}
+	}
+}
