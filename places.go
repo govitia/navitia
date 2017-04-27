@@ -10,11 +10,9 @@ import (
 	"github.com/aabizri/navitia/types"
 )
 
-// PlacesResults doesn't have pagination.
+// PlacesResults doesn't have pagination, as the remote API doesn't support it.
 //
-// PlacesResults support sort.Interface, it can be sorted !
-//
-// Unfortunately it seems that the endpoint doesn't support paging :(
+// PlacesResults can be sorted, it implements sort.Interface.
 type PlacesResults struct {
 	Places []types.Container `json:"places"`
 
@@ -24,8 +22,6 @@ type PlacesResults struct {
 }
 
 // Len is the number of Places in the results.
-//
-// It has the same bahaviour as Count
 func (pr *PlacesResults) Len() int {
 	return len(pr.Places)
 }
@@ -53,11 +49,6 @@ func (pr *PlacesResults) String() string {
 		}
 	}
 	return msg
-}
-
-// Count returns the number of results available in a PlacesResults
-func (pr *PlacesResults) Count() int {
-	return len(pr.Places)
 }
 
 // PlacesRequest is the query you need to build before passing it to Places
@@ -112,7 +103,7 @@ func (s *Session) places(ctx context.Context, url string, params PlacesRequest) 
 
 	// Sort the places if quality is defined on the results, no need to expand some call
 	// Justification for the if condition: If at least of of the results quality is 0, then all of them are 0.
-	if results.Count() != 0 && results.Places[0].Quality != 0 {
+	if results.Len() != 0 && results.Places[0].Quality != 0 {
 		sort.Sort(sort.Reverse(results))
 	}
 	return results, err
