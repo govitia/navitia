@@ -2,7 +2,7 @@
 
 Package types implements support for the types used in the Navitia API (see doc.navitia.io), simplified and modified for idiomatic Go use.
 
-This is navitia/types -dev. It is not API-Stable, and won't be until the v1 release of navitia, but it's getting closer !
+This is navitia/types v0.2. It is not API-Stable, and won't be until the v1 release of navitia, but it's getting closer !
 This package was and is developped as a supporting library for the [navitia API client](https://github.com/aabizri/navitia) but can be used to build other navitia API clients.
 
 ## Install
@@ -47,9 +47,16 @@ func main() {
 
 Obviously, this is a very simple example of what navitia/types can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia/types)
 
-## What's new in -dev
+## What's new in v0.2
 
 - Merge back into the `navitia` tree !
+- `Container` is now a type that can be used as a Place Container or as a PTObject Container, which helps everyone!
+- No more `String` methods
+- Better unmarshalling, including better error handling, along with better testing
+- Benchmarks !
+- `Disruption` support, along with what it entails.
+- Rename `JourneyStatus` to `Effect`
+- And others ! See `git log` for more information !
 
 ## TODO
 
