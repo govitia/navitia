@@ -2,7 +2,6 @@ package navitia
 
 import (
 	"context"
-	"fmt"
 	"net/url"
 	"sort"
 	"strconv"
@@ -38,17 +37,6 @@ func (pr *PlacesResults) Swap(i, j int) {
 	tmp := pr.Places[i]
 	pr.Places[i] = pr.Places[j]
 	pr.Places[j] = tmp
-}
-
-// String implements Stringer and pretty-prints a PlacesResults
-func (pr *PlacesResults) String() string {
-	var msg string
-	for i, place := range pr.Places {
-		if !place.Empty() {
-			msg += fmt.Sprintf("Place #%d (%s): %s\n", i, place.EmbeddedType, place.Name)
-		}
-	}
-	return msg
 }
 
 // PlacesRequest is the query you need to build before passing it to Places
