@@ -10,29 +10,49 @@ import (
 
 // these are the types that can be embedded
 const (
-	embeddedStopArea       string = "stop_area"             // This is a Place & a PT Object
-	embeddedPOI                   = "poi"                   // This is a place
-	embeddedAddress               = "address"               // This is a place
-	embeddedStopPoint             = "stop_point"            // This is a place
-	embeddedAdmin                 = "administrative_region" // This is a place
-	embeddedLine                  = "line"                  // This is a PT Object
-	embeddedRoute                 = "route"                 // This is a PT Object
-	embeddedNetwork               = "network"               // This is a PT Object
-	embeddedCommercialMode        = "commercial_mode"       // This is a PT Object
-	embeddedTrip                  = "trip"                  // This is a PT Object
+	EmbeddedStopArea       string = "stop_area"             // This is a Place & a PT Object
+	EmbeddedPOI                   = "poi"                   // This is a place
+	EmbeddedAddress               = "address"               // This is a place
+	EmbeddedStopPoint             = "stop_point"            // This is a place
+	EmbeddedAdmin                 = "administrative_region" // This is a place
+	EmbeddedLine                  = "line"                  // This is a PT Object
+	EmbeddedRoute                 = "route"                 // This is a PT Object
+	EmbeddedNetwork               = "network"               // This is a PT Object
+	EmbeddedCommercialMode        = "commercial_mode"       // This is a PT Object
+	EmbeddedTrip                  = "trip"                  // This is a PT Object
 )
 
-var embeddedTypes = [...]string{
-	embeddedStopArea,
-	embeddedPOI,
-	embeddedAddress,
-	embeddedStopPoint,
-	embeddedAdmin,
-	embeddedLine,
-	embeddedRoute,
-	embeddedNetwork,
-	embeddedCommercialMode,
-	embeddedTrip,
+// EmbeddedTypes lists all the possible embedded types you can find in a Container
+var EmbeddedTypes = [...]string{
+	EmbeddedStopArea,
+	EmbeddedPOI,
+	EmbeddedAddress,
+	EmbeddedStopPoint,
+	EmbeddedAdmin,
+	EmbeddedLine,
+	EmbeddedRoute,
+	EmbeddedNetwork,
+	EmbeddedCommercialMode,
+	EmbeddedTrip,
+}
+
+// embeddedTypesPlace stores a list of embedded types you can find in a container containing a Place
+var embeddedTypesPlace = [...]string{
+	EmbeddedStopArea,
+	EmbeddedPOI,
+	EmbeddedAddress,
+	EmbeddedStopPoint,
+	EmbeddedAdmin,
+}
+
+// embeddedTypesPTObject stores a list of embedded types you can find in a container containing a PTObject
+var embeddedTypesPTObject = [...]string{
+	EmbeddedStopArea,
+	EmbeddedLine,
+	EmbeddedRoute,
+	EmbeddedNetwork,
+	EmbeddedCommercialMode,
+	EmbeddedTrip,
 }
 
 // An Object is what is contained by a Container
@@ -58,13 +78,13 @@ type Container struct {
 // IsPlace returns true if the container's content is a Place
 func (c *Container) IsPlace() bool {
 	t := c.EmbeddedType
-	return t == embeddedStopArea || t == embeddedPOI || t == embeddedAddress || t == embeddedStopPoint || t == embeddedAdmin
+	return t == EmbeddedStopArea || t == EmbeddedPOI || t == EmbeddedAddress || t == EmbeddedStopPoint || t == EmbeddedAdmin
 }
 
 // IsPTObject returns true if the container's content is a PTObject
 func (c *Container) IsPTObject() bool {
 	t := c.EmbeddedType
-	return t == embeddedStopArea || t == embeddedLine || t == embeddedRoute || t == embeddedNetwork || t == embeddedCommercialMode || t == embeddedTrip
+	return t == EmbeddedStopArea || t == EmbeddedLine || t == EmbeddedRoute || t == EmbeddedNetwork || t == EmbeddedCommercialMode || t == EmbeddedTrip
 }
 
 // ErrInvalidContainer is returned after a check on a Container
@@ -135,7 +155,7 @@ func (c *Container) Check() error {
 
 	// Else, check if the declared EmbeddedType is known.
 	var known bool
-	for _, ket := range embeddedTypes {
+	for _, ket := range EmbeddedTypes {
 		if c.EmbeddedType == ket {
 			known = true
 			break
@@ -173,25 +193,25 @@ func (c *Container) Object() (Object, error) {
 
 	// Switch through
 	switch c.EmbeddedType {
-	case embeddedStopArea:
+	case EmbeddedStopArea:
 		obj = &StopArea{}
-	case embeddedPOI:
+	case EmbeddedPOI:
 		obj = &POI{}
-	case embeddedAddress:
+	case EmbeddedAddress:
 		obj = &Address{}
-	case embeddedStopPoint:
+	case EmbeddedStopPoint:
 		obj = &StopPoint{}
-	case embeddedAdmin:
+	case EmbeddedAdmin:
 		obj = &Admin{}
-	case embeddedLine:
+	case EmbeddedLine:
 		obj = &Line{}
-	case embeddedRoute:
+	case EmbeddedRoute:
 		obj = &Route{}
-	case embeddedNetwork:
+	case EmbeddedNetwork:
 		obj = &Network{}
-	case embeddedCommercialMode:
+	case EmbeddedCommercialMode:
 		obj = &CommercialMode{}
-	case embeddedTrip:
+	case EmbeddedTrip:
 		obj = &Trip{}
 	default:
 		return nil, errors.Errorf("no known embedded type indicated (we have \"%s\"), can't return a place !", c.EmbeddedType)
