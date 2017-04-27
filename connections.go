@@ -83,8 +83,8 @@ type ConnectionsRequest struct {
 	// Freshness of the data
 	Freshness types.DataFreshness
 
-	// Enable GEO information in the results (heavier & slower)
-	GEO bool
+	// Enables GeoJSON data in the reply. GeoJSON objects can be VERY large ! >1MB.
+	Geo bool
 }
 
 func (req ConnectionsRequest) toURL() (url.Values, error) {
@@ -113,7 +113,7 @@ func (req ConnectionsRequest) toURL() (url.Values, error) {
 	}
 
 	// Add GEO
-	if !req.GEO {
+	if !req.Geo {
 		values.Add("disable_geojson", "true")
 	}
 

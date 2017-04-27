@@ -30,8 +30,8 @@ type RegionRequest struct {
 	// BUG: Count doesn't work, server-side.
 	Count uint
 
-	// Disable GeoJSON for the reply. GeoJSON object can be VERY large ! >1MB;
-	DisableGeoJSON bool
+	// Enables Geo data (in MKT format) in the reply. Geo objects can be large and slower to parse.
+	Geo bool
 }
 
 func (req RegionRequest) toURL() (url.Values, error) {
@@ -40,6 +40,10 @@ func (req RegionRequest) toURL() (url.Values, error) {
 	if count := req.Count; count != 0 {
 		countStr := strconv.FormatUint(uint64(count), 10)
 		params["count"] = []string{countStr}
+	}
+
+	if !req.Geo {
+		params["disable_geojson"] = []string{"true"}
 	}
 
 	return params, nil

@@ -50,7 +50,8 @@ type PlacesRequest struct {
 	// If given it will filter the search by specific admin uris
 	AdminURI []string
 
-	DisableGeoJSON bool
+	// Enables GeoJSON data in the reply. GeoJSON objects can be VERY large ! >1MB.
+	Geo bool
 
 	// If given, it will prioritise objects around these coordinates
 	Around types.Coordinates
@@ -73,7 +74,7 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 		params["admin_uri[]"] = req.AdminURI
 	}
 
-	if req.DisableGeoJSON {
+	if !req.Geo {
 		params["disable_geojson"] = []string{"true"}
 	}
 
