@@ -1,7 +1,7 @@
 # navitia is a Go client for the [navitia](navitia.io) API for public transit & transportation
-[![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=master)](https://travis-ci.org/aabizri/navitia) [![Go Report Card](https://goreportcard.com/badge/github.com/aabizri/navitia)](https://goreportcard.com/report/github.com/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/navitia?status.svg)](https://godoc.org/github.com/aabizri/navitia)
+[![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=dev)](https://travis-ci.org/aabizri/navitia) [![Go Report Card](https://goreportcard.com/badge/github.com/aabizri/navitia)](https://goreportcard.com/report/github.com/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/navitia?status.svg)](https://godoc.org/github.com/aabizri/navitia)
 
-This is navitia v0.2.
+This is navitia -dev.
 
 ## Dependencies
 
@@ -17,6 +17,7 @@ This is navitia v0.2.
 - Coverage [/coverage]: You can easily navigate through regions covered by navitia.io, with the coverage api. The shape of the region is provided in GeoJSON, though this is not yet implemented. [(navitia.io doc)](http://doc.navitia.io/#coverage)
 - Journeys [/journeys]: This computes journeys or isochrone tables. [(navitia.io doc)](http://doc.navitia.io/#journeys)
 - Places [/places]: Allows you to search in all geographical objects using their names, returning a list of places. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-geographical-objects)
+- Connections (Departures & Arrivals) [/departures,/arrivals]: Retrieve departures & arrivals for a specific ressource or place. [(navitia.io doc)](http://doc.navitia.io/#departures)
 
 ## Getting started
 
@@ -130,23 +131,9 @@ res, _ := scope.Places(context.Background(),req)
 
 Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia)
 
-## What's new in v0.2 ?
+## What's new in dev ?
 
-- **Pretty-printing !** via the `pretty` subpackage
-- Paging support
-- Bugfix where the response body was never closed
-- Limited the size of responses
-- `Coverage` has been renamed to `Regions`
-- `Regions` (ex-`Coverage`), `RegionByPos` and `RegionByID` have a new parameter needed: `RegionRequest`
-- No more `Session.Use`
-- Un-export `RemoteErrorsDescriptions`
-- PlacesResults support `sort.Interface`
-- `PlacesResults` has a new method, `Count`
-- No more `String` methods: use pretty !
-- New `JourneyResults.Count` to count the number of journeys in the results
-- And others, see `git log`
-- Exported EmbeddedTypes
-- Overhauled testing subsystem
+- Let's see
 
 ## Footnotes
 
