@@ -16,6 +16,8 @@ func Test_Regions(t *testing.T) {
 
 	// Run the query with GeoJSON
 	t.Run("with_geojson", func(t *testing.T) {
+		req := req
+		req.Geo = true
 		res, err := testSession.Regions(ctx, req)
 		if err != nil {
 			t.Fatalf("error in Regions: %v\n\tParameters: %#v\n\tReceived: %#v", err, req, res)
@@ -25,7 +27,6 @@ func Test_Regions(t *testing.T) {
 	// Run the query without GeoJSON
 	t.Run("without_geojson", func(t *testing.T) {
 		req := req
-		req.DisableGeoJSON = true
 		res, err := testSession.Regions(ctx, req)
 		if err != nil {
 			t.Fatalf("error in Regions: %v\n\tParameters: %#v\n\tReceived: %#v", err, req, res)
