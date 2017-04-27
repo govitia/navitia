@@ -11,8 +11,5 @@ func FuzzJourney(data []byte) int {
 		return 0
 	}
 
-	// Now that it is unmarshalled, let's the string method !
-	_ = j.String()
-
 	return 1
 }
