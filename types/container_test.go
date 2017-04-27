@@ -11,7 +11,7 @@ var containers map[string]*Container
 // loadPC loads the containers in their final form for testing
 func loadPC() error {
 	// Get the input
-	known := testData["container"].known
+	known := testData["container"].correct
 	if len(known) == 0 {
 		return nil
 	}
@@ -21,7 +21,7 @@ func loadPC() error {
 	for name, datum := range known {
 		var c = &Container{}
 
-		err := c.UnmarshalJSON(datum.raw)
+		err := c.UnmarshalJSON(datum)
 		if err != nil {
 			return fmt.Errorf("Error while unmarshalling: %v", err)
 		}
