@@ -45,7 +45,7 @@ func main() {
 
 ### Going further
 
-Obviously, this is a very simple example of what navitia-types can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia/types)
+Obviously, this is a very simple example of what navitia/types can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia/types)
 
 ## What's new in -dev
 
