@@ -26,7 +26,7 @@ var DefaultPlacesResultsConf = PlacesResultsConf{
 // PrettyWrite writes a pretty-printed account of a navitia.PlacesResults to out.
 func (conf PlacesResultsConf) PrettyWrite(pr *navitia.PlacesResults, out io.Writer) error {
 	// Buffers to line-up the reads, sequentially
-	buffers := make([]io.Reader, pr.Count())
+	buffers := make([]io.Reader, pr.Len())
 
 	// Waitgroup for each goroutine
 	wg := sync.WaitGroup{}
@@ -52,7 +52,7 @@ func (conf PlacesResultsConf) PrettyWrite(pr *navitia.PlacesResults, out io.Writ
 	}
 
 	// Create the overall message
-	msg := conf.Count.Sprintf("(%d places found)\n", pr.Count())
+	msg := conf.Count.Sprintf("(%d places found)\n", pr.Len())
 
 	// Create the reader
 	readers := append([]io.Reader{strings.NewReader(msg)}, buffers...)
