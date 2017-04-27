@@ -2,23 +2,18 @@ package navitia
 
 import (
 	"net/http"
-	"path"
 	"time"
 
 	"github.com/aabizri/navitia/types"
 )
 
 const (
-	// DefaultAPIProtocol is the protocol to be used
-	DefaultAPIProtocol = "https"
+	// NavitiaAPIURL is the navitia.io API URL.
+	// It is also the default one when New is used.
+	NavitiaAPIURL = "https://api.navitia.io/v1"
 
-	// DefaultAPIHostname is the known Navitia API hostname
-	DefaultAPIHostname = "api.navitia.io"
-
-	// DefaultAPIVersion is the used API Version
-	DefaultAPIVersion = "v1"
-
-	defaultAPIURL = DefaultAPIProtocol + "://" + DefaultAPIHostname + "/" + DefaultAPIVersion
+	// SNCFAPIURL is the SNCF (French National Railway Company) API URL.
+	SNCFAPIURL = "https://api.sncf.com/v1"
 
 	// Maximum size of response in bytes
 	// 10 megabytes
@@ -41,7 +36,7 @@ type Session struct {
 //
 // Warning: No Timeout is indicated in the default http client, and as such, it is strongly advised to use NewCustom with a custom *http.Client !
 func New(key string) (*Session, error) {
-	return NewCustom(key, path.Clean(defaultAPIURL), defaultClient)
+	return NewCustom(key, NavitiaAPIURL, defaultClient)
 }
 
 // NewCustom creates a custom new session given an API key, URL to api base & http client
