@@ -23,9 +23,8 @@ func Test_Places(t *testing.T) {
 	// Run a simple search
 	t.Run("simple", func(t *testing.T) {
 		res, err := testSession.Places(ctx, params)
-		t.Logf("Got results: \n%s", res.String())
 		if err != nil {
-			t.Fatalf("Got error in Places(): %v\n\tParameters: %#v", err, params)
+			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 		}
 	})
 
@@ -33,9 +32,8 @@ func Test_Places(t *testing.T) {
 	t.Run("proximity", func(t *testing.T) {
 		params.Around = types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
 		res, err := testSession.Places(ctx, params)
-		t.Logf("Got results: \n%s", res.String())
 		if err != nil {
-			t.Fatalf("Got error in Places(): %v\n\tParameters: %#v", err, params)
+			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 		}
 	})
 }
@@ -47,9 +45,15 @@ func Test_Places(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_PlacesResults_Unmarshal(t *testing.T) {
+	// Declare this test to be run in parallel
+	t.Parallel()
+
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			var pr = &PlacesResults{}
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
@@ -70,6 +74,9 @@ func Test_PlacesResults_Unmarshal(t *testing.T) {
 	// Create the sub functions (those will be the correct and incorrect version of this test)
 	sub := func(data map[string][]byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			// If we have no data, we skip
 			if len(data) == 0 {
 				t.Skip("no data provided, skipping...")

@@ -33,14 +33,14 @@ func TestConnectionsSA(t *testing.T) {
 			res, err := testSession.DeparturesSA(ctx, req, region, resource)
 			t.Log(res)
 			if err != nil {
-				t.Errorf("Got error: %v", err)
+				t.Errorf("error in DeparturesSA: %v\n\tResource: %s\n\tParameters: %#v\n\tReceived: %#v", err, resource, req, res)
 			}
 		}
 		arrFunc := func(t *testing.T) {
 			res, err := testSession.ArrivalsSA(ctx, req, region, resource)
 			t.Log(res)
 			if err != nil {
-				t.Errorf("Got error: %v", err)
+				t.Errorf("error in ArrivalsSA: %v\n\tResource: %s\n\tParameters: %#v\n\tReceived: %#v", err, resource, req, res)
 			}
 		}
 		return depFunc, arrFunc
@@ -68,9 +68,15 @@ func TestConnectionsSA(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_ConnectionsResults_Unmarshal(t *testing.T) {
+	// Declare this test to be run in parallel
+	t.Parallel()
+
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			var cr = &ConnectionsResults{}
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type

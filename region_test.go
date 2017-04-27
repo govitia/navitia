@@ -17,9 +17,8 @@ func Test_Regions(t *testing.T) {
 	// Run the query with GeoJSON
 	t.Run("with_geojson", func(t *testing.T) {
 		res, err := testSession.Regions(ctx, req)
-		t.Logf("Received res: %v", *res)
 		if err != nil {
-			t.Fatalf("Got error in Regions: %v", err)
+			t.Fatalf("error in Regions: %v\n\tParameters: %#v\n\tReceived: %#v", err, req, res)
 		}
 	})
 
@@ -28,9 +27,8 @@ func Test_Regions(t *testing.T) {
 		req := req
 		req.DisableGeoJSON = true
 		res, err := testSession.Regions(ctx, req)
-		t.Logf("Received res: %v", *res)
 		if err != nil {
-			t.Fatalf("Got error in Regions: %v", err)
+			t.Fatalf("error in Regions: %v\n\tParameters: %#v\n\tReceived: %#v", err, req, res)
 		}
 	})
 }
@@ -42,9 +40,15 @@ func Test_Regions(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_RegionResults_Unmarshal(t *testing.T) {
+	// Declare this test to be run in parallel
+	t.Parallel()
+
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			var rr = &RegionResults{}
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
@@ -65,6 +69,9 @@ func Test_RegionResults_Unmarshal(t *testing.T) {
 	// Create the sub functions (those will be the correct and incorrect version of this test)
 	sub := func(data map[string][]byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			// If we have no data, we skip
 			if len(data) == 0 {
 				t.Skip("no data provided, skipping...")

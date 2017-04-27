@@ -9,15 +9,16 @@ import (
 )
 
 func Test_JourneyRequest_toUrl(t *testing.T) {
-	// First an empty struct
+	// Declare this test to be run in parallel
+	t.Parallel()
+
 	req, err := JourneyRequest{}.toURL()
 	if err != nil {
-		t.Errorf("failure: toURL returned error: %v", err)
+		t.Fatalf("error in JourneyRequest.ToURL: %v\n\tReceived: %#v", err, req)
 	}
 	if len(req) != 0 {
-		t.Errorf("failure: toURL created fields for non-specified parameters")
+		t.Fatalf("error in JourneyRequest.ToURL: toURL created fields for non-specified parameters\n\tReceived: %#v", req)
 	}
-	t.Logf("Result: %v", req)
 }
 
 func Test_Journeys(t *testing.T) {
@@ -27,14 +28,13 @@ func Test_Journeys(t *testing.T) {
 
 	ctx := context.Background()
 
-	params := JourneyRequest{}
+	req := JourneyRequest{}
 	coords := types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
-	params.From = coords.ID()
+	req.From = coords.ID()
 
-	res, err := testSession.Journeys(ctx, params)
-	t.Logf("Got results: \n%#v", res)
+	res, err := testSession.Journeys(ctx, req)
 	if err != nil {
-		t.Fatalf("Got error in Journey(): %v\n\tParameters: %#v", err, params)
+		t.Fatalf("error in Journeys: %v\n\tParameters: %#v\n\tReceived: %#v", err, req, res)
 	}
 }
 
@@ -51,21 +51,20 @@ func Test_Journeys_Paging(t *testing.T) {
 	}
 
 	res, err := testSession.Journeys(ctx, params)
-	t.Logf("Got results: \n%#v", res)
-	t.Logf("Paging: %#v", res.Paging)
 	if err != nil {
-		t.Fatalf("Got error in Journey(): %v\n\tParameters: %#v", err, params)
+		t.Fatalf("error in initial call to Journeys: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 	}
 
-	for i := 0; res.Paging.Next != nil && i < 6; i++ {
+	var i uint
+	for i = 0; res.Paging.Next != nil && i < 6; i++ {
 		p := JourneyResults{}
 		err = res.Paging.Next(ctx, testSession, &p)
-		t.Logf("Next (#%d) results:\n%#v", i, p)
 		if err != nil {
-			t.Fatalf("Got error in Paging.Next (pass %d): %v", i, err)
+			t.Fatalf("error in call #%d to res.Paging.Next: %v\n\tReceived: %#v", i, err, p)
 		}
 		res = &p
 	}
+	t.Logf("Paging finished with %d iterations", i)
 }
 
 // Test_JourneysResults_Unmarshal tests unmarshalling for JourneyResults.
@@ -75,9 +74,15 @@ func Test_Journeys_Paging(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_JourneysResults_Unmarshal(t *testing.T) {
+	// Declare this test to be run in parallel
+	t.Parallel()
+
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			var jr = &JourneyResults{}
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
@@ -98,6 +103,9 @@ func Test_JourneysResults_Unmarshal(t *testing.T) {
 	// Create the sub functions (those will be the correct and incorrect version of this test)
 	sub := func(data map[string][]byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
+			// Declare this test to be run in parallel
+			t.Parallel()
+
 			// If we have no data, we skip
 			if len(data) == 0 {
 				t.Skip("no data provided, skipping...")
