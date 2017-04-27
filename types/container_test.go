@@ -8,17 +8,17 @@ import (
 
 var containers map[string]*Container
 
-// loadPC loads the containers in their final form for testing
-func loadPC() error {
+// loadContainers loads the containers in their final form for testing
+func loadContainers() error {
 	// Get the input
-	known := testData["container"].correct
-	if len(known) == 0 {
+	corpus := testData["container"].correct
+	if len(corpus) == 0 {
 		return nil
 	}
 
-	cs := make(map[string]*Container, len(known))
+	cs := make(map[string]*Container, len(corpus))
 	// For each of them, unmarshal and add to containers
-	for name, datum := range known {
+	for name, datum := range corpus {
 		var c = &Container{}
 
 		err := c.UnmarshalJSON(datum)

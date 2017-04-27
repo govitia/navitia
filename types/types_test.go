@@ -181,5 +181,8 @@ func load() error {
 		testData[name] = data
 	}
 
+	// Load containers
+	err = loadContainers()
+
 	return err
 }
