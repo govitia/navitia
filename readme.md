@@ -121,6 +121,7 @@ Obviously, this is a very simple example of what navitia can do, [check out the 
 - No more `JourneyResults.String`
 - New `JourneyResults.Count` to count the number of journeys in the results
 - And others, see `git log`
+- Overhauled testing subsystem
 
 ## Footnotes
 
