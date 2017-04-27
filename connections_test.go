@@ -31,14 +31,14 @@ func TestConnectionsSA(t *testing.T) {
 	// Creates two versions: one calling DeparturesSA the other ArrivalsSA
 	rgen := func(region types.ID, resource types.ID) (func(t *testing.T), func(t *testing.T)) {
 		depFunc := func(t *testing.T) {
-			res, err := testSession.DeparturesSA(ctx, req, region, resource)
+			res, err := testSession.Scope(region).DeparturesSA(ctx, req, resource)
 			t.Log(res)
 			if err != nil {
 				t.Errorf("error in DeparturesSA: %v\n\tResource: %s\n\tParameters: %#v\n\tReceived: %#v", err, resource, req, res)
 			}
 		}
 		arrFunc := func(t *testing.T) {
-			res, err := testSession.ArrivalsSA(ctx, req, region, resource)
+			res, err := testSession.Scope(region).ArrivalsSA(ctx, req, resource)
 			t.Log(res)
 			if err != nil {
 				t.Errorf("error in ArrivalsSA: %v\n\tResource: %s\n\tParameters: %#v\n\tReceived: %#v", err, resource, req, res)

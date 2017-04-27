@@ -131,13 +131,13 @@ func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResu
 	return s.places(ctx, url, params)
 }
 
-// PlacesR searches in all geographical objects within a given region using their names, returning a list of places.
+// Places searches in all geographical objects within a coverage using their names, returning a list of places.
 //
 // It is context aware.
-func (s *Session) PlacesR(ctx context.Context, params PlacesRequest, regionID string) (*PlacesResults, error) {
+func (scope *Scope) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
-	url := s.APIURL + "/coverage/" + regionID + "/" + placesEndpoint
+	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
 
 	// Call
-	return s.places(ctx, url, params)
+	return scope.session.places(ctx, url, params)
 }
