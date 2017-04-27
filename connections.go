@@ -67,7 +67,7 @@ type ConnectionsRequest struct {
 	// From what time on do you want to see the results ?
 	From time.Time
 
-	// Maximum duration between From and the retrived results.
+	// Maximum duration between From and the retrieved results.
 	//
 	// Default value is 24 hours
 	Duration time.Duration
