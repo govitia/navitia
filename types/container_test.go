@@ -75,9 +75,9 @@ func TestContainer_Check_NoCompare(t *testing.T) {
 	}
 
 	// Create the run function generator, allowing us to run it in parallel
-	rgen := func(pc *Container) func(t *testing.T) {
+	rgen := func(c *Container) func(t *testing.T) {
 		return func(t *testing.T) {
-			err := pc.Check()
+			err := c.Check()
 			if err != nil {
 				t.Errorf("Check gave us invalid results: %v", err)
 			}
@@ -181,5 +181,79 @@ func BenchmarkContainer_Check(b *testing.B) {
 
 		// Run it !
 		b.Run(name, runFunc)
+	}
+}
+
+// TestContainer_IsXXX tests (*Container).IsPlace and (*Container).IsPTObject
+func TestContainer_IsXXX(t *testing.T) {
+	t.Run("IsPlace", func(t *testing.T) {
+		for _, et := range embeddedTypesPlace {
+			c := &Container{EmbeddedType: et}
+			if !c.IsPlace() {
+				t.Errorf("IsPlace for embedded type %s: expected true got false", et)
+			}
+		}
+		for _, et := range embeddedTypesPTObject {
+			if et != EmbeddedStopArea {
+				c := &Container{EmbeddedType: et}
+				if c.IsPlace() {
+					t.Errorf("IsPlace for embedded type %s: expected false got true", et)
+				}
+			}
+		}
+	})
+
+	t.Run("IsPTObject", func(t *testing.T) {
+		for _, et := range embeddedTypesPTObject {
+			c := &Container{EmbeddedType: et}
+			if !c.IsPTObject() {
+				t.Errorf("IsPTObject for embedded type %s: expected true got false", et)
+			}
+		}
+		for _, et := range embeddedTypesPlace {
+			if et != EmbeddedStopArea {
+				c := &Container{EmbeddedType: et}
+				if c.IsPTObject() {
+					t.Errorf("IsPTObject for embedded type %s: expected false got true", et)
+				}
+			}
+		}
+	})
+}
+
+// TestContainer_Empty tests that (*Container).Empty reports correctly whether or not the container is truly empty
+func TestContainer_Empty(t *testing.T) {
+	emptyContainer := Container{}
+	nonEmptyContainers := []Container{
+		{
+			ID: "test",
+		},
+		{
+			Name: "test",
+		},
+		{
+			EmbeddedType: "test",
+		},
+		{
+			Quality: 10,
+		},
+		{
+			embeddedObject: new(Object),
+		},
+		{
+			embeddedJSON: json.RawMessage("that's not very raw"),
+		},
+	}
+
+	// If the empty container isn't reported as such, error
+	if !emptyContainer.Empty() {
+		t.Errorf("Calling (*Container).Empty on an empty container returned with false when we expected true")
+	}
+
+	// Iterate through the test non-empty containers
+	for _, c := range nonEmptyContainers {
+		if c.Empty() {
+			t.Errorf("Calling (*Container).Empty on a non-empty container returned true when we expected false. Container: %#v", c)
+		}
 	}
 }
