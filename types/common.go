@@ -6,4 +6,4 @@ This package was and is developed as a supporting library for the gonavitia API 
 package types
 
 // Version is the version of this package
-const Version = "-dev"
+const Version = "v0.2"

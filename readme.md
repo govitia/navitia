@@ -1,6 +1,7 @@
-# navitia is a Go client for the [navitia](navitia.io) API for public transit & transportation [![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=dev)](https://travis-ci.org/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/navitia?status.svg)](https://godoc.org/github.com/aabizri/navitia)
+# navitia is a Go client for the [navitia](navitia.io) API for public transit & transportation
+[![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=master)](https://travis-ci.org/aabizri/navitia) [![Go Report Card](https://goreportcard.com/badge/github.com/aabizri/navitia)](https://goreportcard.com/report/github.com/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/navitia?status.svg)](https://godoc.org/github.com/aabizri/navitia)
 
-This is navitia -dev.
+This is navitia v0.2.
 
 ## Dependencies
 
@@ -36,7 +37,7 @@ import(
 )
 
 // Create a request
-req := JourneyRequest{
+req := navitia.PlacesRequest{
 	Query: "10 rue du caire, Paris",
 	Types: []string{"address"},
 	Count: 1,
@@ -102,11 +103,34 @@ for paginated.Paging.Next != nil {
 Obviously, you'll want to stop paginating at some point, and most importantly do something with the value.
 An example is on the way !
 
+### Scoping
+
+When you wish to make some requests requiring a specific coverage, or have more meaningful results in global requests, you create a `Scope`
+
+```golang
+import (
+	"github.com/aabizri/navitia"
+	"github.com/aabizri/navitia/types"
+	"context"
+)
+
+var (
+	session *navitia.Session
+	regionID types.ID
+	req navitia.PlacesRequest
+)
+
+scope := session.Scope(regionID)
+
+// Requests places in this scope
+res, _ := scope.Places(context.Background(),req)
+```
+
 ### Going further
 
 Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia)
 
-## What's new in the development version ?
+## What's new in v0.2 ?
 
 - **Pretty-printing !** via the `pretty` subpackage
 - Paging support
@@ -118,9 +142,10 @@ Obviously, this is a very simple example of what navitia can do, [check out the 
 - Un-export `RemoteErrorsDescriptions`
 - PlacesResults support `sort.Interface`
 - `PlacesResults` has a new method, `Count`
-- No more `JourneyResults.String`
+- No more `String` methods: use pretty !
 - New `JourneyResults.Count` to count the number of journeys in the results
 - And others, see `git log`
+- Exported EmbeddedTypes
 - Overhauled testing subsystem
 
 ## Footnotes
