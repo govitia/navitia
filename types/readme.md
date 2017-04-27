@@ -64,7 +64,7 @@ Obviously, this is a very simple example of what navitia-types can do, [check ou
 - `ErrInvalidPlaceContainer.Error`
 - `Equipment.Known`
 - Every Type should have at least one file to be tested against
-- Apply the same overhaul as in navitia
+- Globalise mutual code in unmarshal testers
 
 ## Footnotes
 
