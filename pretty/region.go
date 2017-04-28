@@ -31,7 +31,11 @@ const defaultDateTimeLayout = "02/01/2006"
 // PrettyWrite writes a pretty-printed account of a navitia.PlacesResults to out.
 func (conf RegionConf) PrettyWrite(r *types.Region, out io.Writer) error {
 	format := "%s (id: %s) [%s-%s]"
-	msg := fmt.Sprintf(format, conf.Name.Sprint(r.Name), conf.ID.Sprint(r.ID), conf.Start.Sprint(r.ProductionStart.Format(conf.DateTimeLayout)), conf.End.Sprint(r.ProductionEnd.Format(conf.DateTimeLayout)))
+	msg := fmt.Sprintf(format,
+		conf.Name.Sprint(r.Name),
+		conf.ID.Sprint(r.ID),
+		conf.Start.Sprint(r.ProductionStart.Format(conf.DateTimeLayout)),
+		conf.End.Sprint(r.ProductionEnd.Format(conf.DateTimeLayout)))
 	out.Write([]byte(msg))
 
 	return nil
