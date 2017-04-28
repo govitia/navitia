@@ -64,27 +64,27 @@ func load(path string) (map[string][]*os.File, error) {
 		dirName := dinfo.Name()
 		if !dinfo.IsDir() {
 			fmt.Printf("Skipping %s...\n", dirName)
-		} else {
-			fmt.Printf("Processing %s directory...\n", dirName)
-			files, err := ioutil.ReadDir(filepath.Join(originPath, dirName))
+			continue // Skip this iteration
+		}
+		fmt.Printf("Processing %s directory...\n", dirName)
+		files, err := ioutil.ReadDir(filepath.Join(originPath, dirName))
+		if err != nil {
+			fmt.Printf("Error while reading %s directory !: %v\n", dirName, err)
+			return originFiles, err
+		}
+		for _, finfo := range files {
+			fmt.Printf("\tProcessing %s...\n", finfo.Name())
+			fname := finfo.Name()
+			if fname[len(fname)-4:] != "json" {
+				fmt.Printf("\t\tSkipping\n")
+				continue // Skip this iteration
+			}
+			path := filepath.Join(originPath, dirName, fname)
+			f, err := os.Open(path)
 			if err != nil {
-				fmt.Printf("Error while reading %s directory !: %v\n", dirName, err)
-				return originFiles, err
+				fmt.Printf("\t\tError while opening file %s! : %v\n", path, err)
 			}
-			for _, finfo := range files {
-				fmt.Printf("\tProcessing %s...\n", finfo.Name())
-				fname := finfo.Name()
-				if fname[len(fname)-4:] != "json" {
-					fmt.Printf("\t\tSkipping\n")
-				} else {
-					path := filepath.Join(originPath, dirName, fname)
-					f, err := os.Open(path)
-					if err != nil {
-						fmt.Printf("\t\tError while opening file %s! : %v\n", path, err)
-					}
-					originFiles[dirName] = append(originFiles[dirName], f)
-				}
-			}
+			originFiles[dirName] = append(originFiles[dirName], f)
 		}
 	}
 

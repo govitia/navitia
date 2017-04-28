@@ -133,26 +133,27 @@ func getCategory(path string) (typeTestData, error) {
 
 	// Iterate through the subdirs
 	for _, dinfo := range subdirs {
-		if dinfo.IsDir() {
-			switch dinfo.Name() {
-			case "correct":
-				correctPath := filepath.Join(path, "correct")
-				data.correct, err = extractCorpus(correctPath)
-				if err != nil {
-					return data, err
-				}
-			case "incorrect":
-				incorrectPath := filepath.Join(path, "incorrect")
-				data.incorrect, err = extractCorpus(incorrectPath)
-				if err != nil {
-					return data, err
-				}
-			case "bench":
-				benchPath := filepath.Join(path, "bench")
-				data.bench, err = extractCorpus(benchPath)
-				if err != nil {
-					return data, err
-				}
+		if !dinfo.IsDir() {
+			continue // skip this iteration
+		}
+		switch dinfo.Name() {
+		case "correct":
+			correctPath := filepath.Join(path, "correct")
+			data.correct, err = extractCorpus(correctPath)
+			if err != nil {
+				return data, err
+			}
+		case "incorrect":
+			incorrectPath := filepath.Join(path, "incorrect")
+			data.incorrect, err = extractCorpus(incorrectPath)
+			if err != nil {
+				return data, err
+			}
+		case "bench":
+			benchPath := filepath.Join(path, "bench")
+			data.bench, err = extractCorpus(benchPath)
+			if err != nil {
+				return data, err
 			}
 		}
 	}
