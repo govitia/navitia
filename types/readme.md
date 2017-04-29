@@ -1,4 +1,5 @@
-# navitia/types is a library for working with types returned by the [Navitia](navitia.io) API. [![GoDoc](https://godoc.org/github.com/aabizri/navitia/types?status.svg)](https://godoc.org/github.com/aabizri/navitia/types)
+# navitia/types is a library for working with types returned by the [Navitia](navitia.io) API.
+[![GoDoc](https://godoc.org/github.com/aabizri/navitia/types?status.svg)](https://godoc.org/github.com/aabizri/navitia/types)
 
 Package types implements support for the types used in the Navitia API (see doc.navitia.io), simplified and modified for idiomatic Go use.
 
