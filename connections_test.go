@@ -72,3 +72,56 @@ func TestConnectionsSA(t *testing.T) {
 func Test_ConnectionsResults_Unmarshal(t *testing.T) {
 	testutils.UnmarshalTest(t, testData["connections"], reflect.TypeOf(ConnectionsResults{}))
 }
+
+func Test_ConnectionsResults_Unmarshal_Compare(t *testing.T) {
+	equalFunc := func(x, y interface{}) bool {
+		a, ok := x.(*ConnectionsResults)
+		if !ok {
+			return false
+		}
+
+		b, ok := y.(*ConnectionsResults)
+		if !ok {
+			return false
+		}
+
+		if len(a.Connections) != len(b.Connections) {
+			return false
+		}
+
+		for i := 0; i < len(a.Connections); i++ {
+			// compare a.Connections[i] and b.Connections[i]
+		}
+
+		return true
+	}
+	testutils.UnmarshalAndCompare(t, knownConnections, reflect.TypeOf(ConnectionsResults{}), equalFunc)
+}
+
+var knownConnections = map[string]testutils.TestPair{
+	"one": testutils.TestPair{
+		Raw: []byte(`
+{
+	"departures": [{
+		"display_informations": {
+			"code": "4"
+		}
+	},
+	{
+		"display_informations": {
+			"code": "4"
+		}
+	}
+	]
+}`),
+		Correct: &ConnectionsResults{
+			Connections: []Connection{
+				Connection{
+					Display: types.Display{
+						Code: "4",
+					},
+				},
+			},
+		},
+	},
+}
