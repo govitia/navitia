@@ -1,4 +1,4 @@
-package navitia
+package testutils
 
 import (
 	"encoding/json"
@@ -6,12 +6,17 @@ import (
 	"testing"
 )
 
-// testUnmarshal is a helper to test unmarshalling for any value implementing results.
+// UnmarshalTest is a helper to test unmarshalling for any value implementing results.
 //
 // This launches both a "correct" and "incorrect" subtest, allowing us to test both cases.
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
-func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
+func UnmarshalTest(t *testing.T, data *TestData, resultsType reflect.Type) {
+	// Skip if no data is provided
+	if data == nil {
+		t.Skip("no data provided, skipping...")
+	}
+
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
@@ -19,10 +24,9 @@ func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
 			t.Parallel()
 
 			// Create a pointer to a new value of the type indicated in resultsType
-			// We know it is a results, so we assert it, this way we don't get any silent fails.
-			var res results = reflect.New(resultsType).Interface().(results)
+			var res interface{} = reflect.New(resultsType).Interface()
 
-			// We use encoding/json's unmarshaller, as we don't have one for this type
+			// We use encoding/json's unmarshaller, which internally uses the type's UnmarshalJSON if it exists
 			err := json.Unmarshal(data, res)
 
 			// We check that the result is what we expect:
@@ -60,6 +64,6 @@ func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
 	}
 
 	// Run !
-	t.Run("correct", sub(data.correct, true))
-	t.Run("incorrect", sub(data.incorrect, false))
+	t.Run("correct", sub(data.Correct, true))
+	t.Run("incorrect", sub(data.Incorrect, false))
 }

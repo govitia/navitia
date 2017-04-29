@@ -11,7 +11,7 @@ var containers map[string]*Container
 // loadContainers loads the containers in their final form for testing
 func loadContainers() error {
 	// Get the input
-	corpus := testData["container"].correct
+	corpus := testData["container"].Correct
 	if len(corpus) == 0 {
 		return nil
 	}
@@ -97,7 +97,7 @@ func TestContainer_Check_NoCompare(t *testing.T) {
 // BenchmarkContainer_UnmarshalJSON benchmarks Container.UnmarshalJSON through benchmarks
 func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 	// Get the bench data
-	data := testData["container"].bench
+	data := testData["container"].Bench
 	if len(data) == 0 {
 		b.Skip("No data to test")
 	}
@@ -146,41 +146,6 @@ func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 		b.Run(name+"_without", without)
 		b.Run(name+"_with", with)
 		b.Run(name+"_only", only)
-	}
-}
-
-// BenchmarkContainer_Check benchmarks Container.Check through subbenchmarks
-func BenchmarkContainer_Check(b *testing.B) {
-	// Get the bench data
-	data := testData["container"].bench
-	if len(data) == 0 {
-		b.Skip("No data to test")
-	}
-
-	// Run function generator, allowing parallel run
-	runGen := func(in Container) func(*testing.B) {
-		return func(b *testing.B) {
-			for i := 0; i < b.N; i++ {
-				// Call .Check
-				_ = in.Check()
-			}
-		}
-	}
-
-	// Loop over all corpus
-	for name, datum := range data {
-		var c = Container{}
-
-		err := json.Unmarshal(datum, &c)
-		if err != nil {
-			b.Errorf("Error while unmarshalling: %v", err)
-		}
-
-		// Get run function
-		runFunc := runGen(c)
-
-		// Run it !
-		b.Run(name, runFunc)
 	}
 }
 

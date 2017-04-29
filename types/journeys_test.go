@@ -3,6 +3,8 @@ package types
 import (
 	"reflect"
 	"testing"
+
+	"github.com/aabizri/navitia/testutils"
 )
 
 // Test_Journey_Unmarshal tests unmarshalling for Journey.
@@ -12,13 +14,13 @@ import (
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_Journey_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["journey"], reflect.TypeOf(Journey{}))
+	testutils.UnmarshalTest(t, testData["journey"], reflect.TypeOf(Journey{}))
 }
 
 // BenchmarkJourney_UnmarshalJSON benchmarks Journey unmarshalling via subbenchmarks
 func BenchmarkJourney_UnmarshalJSON(b *testing.B) {
 	// Get the bench data
-	data := testData["journey"].bench
+	data := testData["journey"].Bench
 	if len(data) == 0 {
 		b.Skip("No data to test")
 	}

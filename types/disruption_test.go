@@ -3,6 +3,8 @@ package types
 import (
 	"reflect"
 	"testing"
+
+	"github.com/aabizri/navitia/testutils"
 )
 
 // Test_Disruption_Unmarshal tests unmarshalling for Disruption.
@@ -12,5 +14,5 @@ import (
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_Disruption_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["disruption"], reflect.TypeOf(Disruption{}))
+	testutils.UnmarshalTest(t, testData["disruption"], reflect.TypeOf(Disruption{}))
 }

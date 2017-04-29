@@ -5,6 +5,7 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/aabizri/navitia/testutils"
 	"github.com/aabizri/navitia/types"
 )
 
@@ -45,5 +46,5 @@ func Test_Places(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_PlacesResults_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["places"], reflect.TypeOf(PlacesResults{}))
+	testutils.UnmarshalTest(t, testData["places"], reflect.TypeOf(PlacesResults{}))
 }

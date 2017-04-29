@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/aabizri/navitia/testutils"
 	"github.com/aabizri/navitia/types"
 )
 
@@ -69,5 +70,5 @@ func TestConnectionsSA(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_ConnectionsResults_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["connections"], reflect.TypeOf(ConnectionsResults{}))
+	testutils.UnmarshalTest(t, testData["connections"], reflect.TypeOf(ConnectionsResults{}))
 }

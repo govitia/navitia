@@ -5,6 +5,7 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/aabizri/navitia/testutils"
 	"github.com/aabizri/navitia/types"
 )
 
@@ -73,5 +74,5 @@ func Test_Journeys_Paging(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_JourneysResults_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["journeys"], reflect.TypeOf(JourneyResults{}))
+	testutils.UnmarshalTest(t, testData["journeys"], reflect.TypeOf(JourneyResults{}))
 }

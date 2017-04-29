@@ -4,6 +4,8 @@ import (
 	"context"
 	"reflect"
 	"testing"
+
+	"github.com/aabizri/navitia/testutils"
 )
 
 func Test_Regions(t *testing.T) {
@@ -41,5 +43,5 @@ func Test_Regions(t *testing.T) {
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_RegionResults_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["coverage"], reflect.TypeOf(RegionResults{}))
+	testutils.UnmarshalTest(t, testData["coverage"], reflect.TypeOf(RegionResults{}))
 }

@@ -5,6 +5,8 @@ import (
 	"reflect"
 	"strings"
 	"testing"
+
+	"github.com/aabizri/navitia/testutils"
 )
 
 // Test_Region_Unmarshal tests unmarshalling for Region.
@@ -14,7 +16,7 @@ import (
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_Region_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["region"], reflect.TypeOf(Region{}))
+	testutils.UnmarshalTest(t, testData["region"], reflect.TypeOf(Region{}))
 }
 
 // TestRegionUnmarshal_ShapeInvalidMKT tests known invalid MKT (well-known text) -encoded Region.Shape inputs for (*Region).UnmarshalJSON
@@ -46,7 +48,7 @@ func TestRegionUnmarshal_ShapeInvalidMKT(t *testing.T) {
 // BenchmarkRegionUnmarshal benchmarks Region unmarshalling via subbenchmarks
 func BenchmarkRegionUnmarshal(b *testing.B) {
 	// Get the bench data
-	data := testData["region"].bench
+	data := testData["region"].Bench
 	if len(data) == 0 {
 		b.Skip("No data to test")
 	}

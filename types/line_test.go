@@ -3,6 +3,8 @@ package types
 import (
 	"reflect"
 	"testing"
+
+	"github.com/aabizri/navitia/testutils"
 )
 
 // Test_Line_Unmarshal tests unmarshalling for Line.
@@ -12,13 +14,13 @@ import (
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func Test_Line_Unmarshal(t *testing.T) {
-	testUnmarshal(t, testData["line"], reflect.TypeOf(Line{}))
+	testutils.UnmarshalTest(t, testData["line"], reflect.TypeOf(Line{}))
 }
 
 // BenchmarkLineUnmarshal benchmarks Line unmarshalling via subbenchmarks
 func BenchmarkLineUnmarshal(b *testing.B) {
 	// Get the bench data
-	data := testData["line"].bench
+	data := testData["line"].Bench
 	if len(data) == 0 {
 		b.Skip("No data to test")
 	}
