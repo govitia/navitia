@@ -1,5 +1,5 @@
 # Package testutils implements utils for testing JSON no-compare unmarshalling.
-[![GoDoc](https://godoc.org/github.com/aabizri/navitia/types?status.svg)](https://godoc.org/github.com/aabizri/navitia/types)
+[![GoDoc](https://godoc.org/github.com/aabizri/navitia/testutils?status.svg)](https://godoc.org/github.com/aabizri/navitia/testutils)
 
 ## What is this ?
 
