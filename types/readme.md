@@ -50,7 +50,7 @@ Obviously, this is a very simple example of what navitia/types can do, [check ou
 
 ## What's new in dev ?
 
-- Let's see !
+- Moved testdata loading & unmarshal testing to `navitia/testutils`, rewriting it in the process to be betters
 
 ## TODO
 
