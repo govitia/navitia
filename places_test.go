@@ -3,6 +3,7 @@ package navitia
 import (
 	"context"
 	"reflect"
+	"sort"
 	"testing"
 
 	"github.com/aabizri/navitia/testutils"
@@ -37,6 +38,30 @@ func Test_Places(t *testing.T) {
 			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 		}
 	})
+}
+
+func Test_Scope_Places_Sort(t *testing.T) {
+	if *apiKey == "" {
+		t.Skip(skipNoKey)
+	}
+
+	params := PlacesRequest{
+		Query: "avenue de la libération",
+	}
+
+	// Create the root context
+	ctx := context.Background()
+
+	// Run a simple search
+	res, err := testSession.Scope("fr-idf").Places(ctx, params)
+	if err != nil {
+		t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
+	}
+
+	// Check if sorted
+	if !sort.IsSorted(sort.Reverse(res)) {
+		t.Errorf("PlacesResults isn't sorted !")
+	}
 }
 
 // Test_PlacesResults_Unmarshal tests unmarshalling for PlacesResults.
