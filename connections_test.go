@@ -99,7 +99,7 @@ func Test_ConnectionsResults_Unmarshal_Compare(t *testing.T) {
 }
 
 var knownConnections = map[string]testutils.TestPair{
-	"one": testutils.TestPair{
+	"one": {
 		Raw: []byte(`
 {
 	"departures": [{
@@ -116,12 +116,12 @@ var knownConnections = map[string]testutils.TestPair{
 }`),
 		Correct: &ConnectionsResults{
 			Connections: []Connection{
-				Connection{
+				{
 					Display: types.Display{
 						Code: "4",
 					},
 				},
-				Connection{
+				{
 					Display: types.Display{
 						Code: "4",
 					},
