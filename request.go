@@ -43,10 +43,12 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	res.sending()
 
 	// Check the response
-	if err != nil {
+	switch {
+	case err == context.Canceled:
+		return err
+	case err != nil:
 		return errors.Wrap(err, "error while executing request")
-	}
-	if resp.StatusCode != 200 {
+	case resp.StatusCode != 200:
 		return parseRemoteError(resp)
 	}
 

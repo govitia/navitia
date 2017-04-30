@@ -3,9 +3,13 @@ package navitia
 import (
 	"context"
 	"flag"
+	"net/http"
 	"os"
 	"path/filepath"
+	"testing"
 	"time"
+
+	"net/http/httputil"
 
 	"github.com/aabizri/navitia/testutils"
 )
@@ -49,4 +53,25 @@ var typesList = []string{
 	"coverage",
 	"places",
 	"connections",
+}
+
+type mockClient struct {
+	tester *testing.T
+}
+
+func (mc mockClient) Do(req *http.Request) (*http.Response, error) {
+	data, err := httputil.DumpRequestOut(req, true)
+	if err != nil {
+		return nil, err
+	}
+
+	time.Sleep(10 * time.Millisecond)
+	mc.tester.Log(data)
+	return &http.Response{}, nil
+}
+
+func newMockClient(t *testing.T) interface {
+	Do(req *http.Request) (*http.Response, error)
+} {
+	return mockClient{t}
 }

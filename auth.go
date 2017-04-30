@@ -27,7 +27,9 @@ type Session struct {
 	APIKey string
 	APIURL string
 
-	client  *http.Client
+	client interface {
+		Do(req *http.Request) (*http.Response, error)
+	}
 	created time.Time
 }
 
