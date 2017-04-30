@@ -4,12 +4,11 @@ import (
 	"context"
 	"flag"
 	"net/http"
+	"net/http/httptest"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
-
-	"net/http/httputil"
 
 	"github.com/aabizri/navitia/testutils"
 )
@@ -55,23 +54,20 @@ var typesList = []string{
 	"connections",
 }
 
+// A mockClient implements the correct interface for the http client in the session, always responding with 200 and non-nil but empty body.
 type mockClient struct {
 	tester *testing.T
 }
 
 func (mc mockClient) Do(req *http.Request) (*http.Response, error) {
-	data, err := httputil.DumpRequestOut(req, true)
-	if err != nil {
-		return nil, err
-	}
-
 	time.Sleep(10 * time.Millisecond)
-	mc.tester.Log(data)
-	return &http.Response{}, nil
+	resp := httptest.NewRecorder().Result()
+	return resp, nil
 }
 
-func newMockClient(t *testing.T) interface {
-	Do(req *http.Request) (*http.Response, error)
-} {
-	return mockClient{t}
+func mockSession(t *testing.T) *Session {
+	return &Session{
+		APIURL: NavitiaAPIURL,
+		client: mockClient{t},
+	}
 }
