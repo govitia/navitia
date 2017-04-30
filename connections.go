@@ -47,7 +47,7 @@ func (cr *ConnectionsResults) UnmarshalJSON(b []byte) error {
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
 	if err != nil {
-		return errors.Wrap(err, "ConnectionsResults.UnmarshalJSON: error while unmarshalling Line")
+		return errors.Wrap(err, "ConnectionsResults.UnmarshalJSON: error while unmarshalling")
 	}
 
 	// Now process the values

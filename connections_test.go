@@ -18,7 +18,7 @@ func TestConnectionsSA(t *testing.T) {
 	region := types.ID("fr-idf")
 	resources := []types.ID{
 		"stop_area:OIF:SA:59346",
-		"stop_area:OIF:SA:59586",
+		//"stop_area:OIF:SA:59586",
 	}
 
 	// Create the context
@@ -89,9 +89,9 @@ func Test_ConnectionsResults_Unmarshal_Compare(t *testing.T) {
 			return false
 		}
 
-		for i := 0; i < len(a.Connections); i++ {
+		/*for i := 0; i < len(a.Connections); i++ {
 			// compare a.Connections[i] and b.Connections[i]
-		}
+		}*/
 
 		return true
 	}
@@ -116,6 +116,11 @@ var knownConnections = map[string]testutils.TestPair{
 }`),
 		Correct: &ConnectionsResults{
 			Connections: []Connection{
+				Connection{
+					Display: types.Display{
+						Code: "4",
+					},
+				},
 				Connection{
 					Display: types.Display{
 						Code: "4",
