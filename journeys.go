@@ -23,8 +23,8 @@ type JourneyResults struct {
 	session *Session
 }
 
-// Count returns the number of results available in a JourneyResults
-func (jr *JourneyResults) Count() int {
+// Len returns the number of results available in a JourneyResults
+func (jr *JourneyResults) Len() int {
 	return len(jr.Journeys)
 }
 

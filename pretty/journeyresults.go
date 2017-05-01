@@ -25,7 +25,7 @@ var DefaultJourneyResultsConf = JourneyResultsConf{
 // PrettyWrite writes a pretty-printed navitia.JourneyResults to out
 func (conf JourneyResultsConf) PrettyWrite(jr *navitia.JourneyResults, out io.Writer) error {
 	// Buffers to line-up the reads, sequentially
-	buffers := make([]io.Reader, jr.Count())
+	buffers := make([]io.Reader, jr.Len())
 	// Waitgroup for each goroutine
 	wg := sync.WaitGroup{}
 
