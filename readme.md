@@ -31,12 +31,6 @@ session, err := navitia.New(APIKEY)
 ### Finding places
 
 ```golang
-import(
-	"github.com/aabizri/navitia"
-	"github.com/aabizri/navitia/types"
-	"context"
-)
-
 // Create a request
 req := navitia.PlacesRequest{
 	Query: "10 rue du caire, Paris",
@@ -45,36 +39,40 @@ req := navitia.PlacesRequest{
 }
 
 // Execute it
-res, _ := session.Places(context.Background(),req)
+ctx := context.Background()
+res, _ := session.Places(ctx, req)
 
 // Create a variable to store it
-var myPlace types.Place
+var myPlace types.Container
 
 // Check if there are enough results, and then assign the first element as your place
-if places := res.Places; len(places) != 0 {
-	myPlace = res.Places
+if len(res.Places) != 0 {
+	myPlace = res.Places[0]
 }
+
+// Print the name
+fmt.Printf("Name: %s\n", myPlace.Name)
 ```
 ### Calculating a journey
 
 ```golang
-import(
-	"github.com/aabizri/navitia"
-	"fmt"
-	"context"
+var (
+	myPlace types.Container
+	thatOtherPlace types.Container
 )
 
 // Create a request, having already found two corresponding places
 request := navitia.JourneyRequest{
-	From: myPlace,
-	To: thatOtherPlace,
+	From: myPlace.ID,
+	To:   thatOtherPlace.ID,
 }
 
 // Execute it
-res, _ := session.Journeys(context.Background(),request)
+ctx := context.Background()
+res, _ := session.Journeys(ctx, request)
 
-// Print it (JourneysResults implements Stringer)
-fmt.Println(res)
+// Print the duration of the first journey
+fmt.Printf("Duration of journey #0: %s\n", res.Journeys[0].Duration.String())
 ```
 
 ### Paging
@@ -83,7 +81,6 @@ Unfortunately, paging isn't supported by Regions nor by Places requests. You'll 
 We'll use a Journey to showcase the paging:
 
 ```golang
-
 // Obtain a journey like last time...
 
 // Create a value to store the paginated result
@@ -109,18 +106,13 @@ An example is on the way !
 When you wish to make some requests requiring a specific coverage, or have more meaningful results in global requests, you create a `Scope`
 
 ```golang
-import (
-	"github.com/aabizri/navitia"
-	"github.com/aabizri/navitia/types"
-	"context"
-)
-
 var (
 	session *navitia.Session
 	regionID types.ID
 	req navitia.PlacesRequest
 )
 
+// Create the scope
 scope := session.Scope(regionID)
 
 // Requests places in this scope
