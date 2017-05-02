@@ -16,8 +16,6 @@ type PlacesResults struct {
 	Places []types.Container `json:"places"`
 
 	Logging `json:"-"`
-
-	session *Session
 }
 
 // Len is the number of Places in the results.
@@ -87,7 +85,7 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 
 // places is the internal function used by Places functions
 func (s *Session) places(ctx context.Context, url string, params PlacesRequest) (*PlacesResults, error) {
-	var results = &PlacesResults{session: s}
+	var results = &PlacesResults{}
 	err := s.request(ctx, url, params, results)
 
 	// Sort the places if quality is defined on the results, no need to expand some call
