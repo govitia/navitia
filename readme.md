@@ -20,6 +20,7 @@ This is navitia -dev.
 - Connections (Departures & Arrivals) [/departures,/arrivals]: Retrieve departures & arrivals for a specific resource or place. [(navitia.io doc)](http://doc.navitia.io/#departures)
 - Inverted Geocoding (Finding your address from your coordinates) [/coords]: Retrieve the address & associated region ID given some coordinates [(navitia.io doc)](http://doc.navitia.io/#inverted-geocoding)
 - Public Transportation searching [/pt_objects]: Allows you to search in all public transportation objects using their names, returning a list of public transportation objects. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-public-transport-objects)
+- Public Transporation Objects exploration [/lines, /networks, etc.]: Allows you to explore public transportation objects in a given region, returning a list of these. This is highly untested and very probably broken for now, but that's why it's not on master. [(navitia.io doc)](http://doc.navitia.io/#public-transportation-objects-exploration)
 
 ## Getting started
 
