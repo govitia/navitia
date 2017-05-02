@@ -17,8 +17,9 @@ This is navitia -dev.
 - Coverage [/coverage]: You can easily navigate through regions covered by navitia.io, with the coverage api. The shape of the region is provided in GeoJSON, though this is not yet implemented. [(navitia.io doc)](http://doc.navitia.io/#coverage)
 - Journeys [/journeys]: This computes journeys or isochrone tables. [(navitia.io doc)](http://doc.navitia.io/#journeys)
 - Places [/places]: Allows you to search in all geographical objects using their names, returning a list of places. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-geographical-objects)
-- Connections (Departures & Arrivals) [/departures,/arrivals]: Retrieve departures & arrivals for a specific ressource or place. [(navitia.io doc)](http://doc.navitia.io/#departures)
+- Connections (Departures & Arrivals) [/departures,/arrivals]: Retrieve departures & arrivals for a specific resource or place. [(navitia.io doc)](http://doc.navitia.io/#departures)
 - Inverted Geocoding (Finding your address from your coordinates) [/coords]: Retrieve the address & associated region ID given some coordinates [(navitia.io doc)](http://doc.navitia.io/#inverted-geocoding)
+- Public Transportation searching [/pt_objects]: Allows you to search in all public transportation objects using their names, returning a list of public transportation objects. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-public-transport-objects)
 
 ## Getting started
 
