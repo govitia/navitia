@@ -14,8 +14,9 @@ func TestRequestContextCancellation(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
 	cancel()
 
-	// Create the mock session
-	mock := mockSession(t)
+	// Create the mock session, which does not cancel context
+	mc := mockClient{ContextCancelling: false} // This is the default as well
+	mock := mockSession(mc)
 
 	// Launch
 	err := mock.request(ctx, "https://api.navitia.io/v1/", &PlacesRequest{}, &PlacesResults{})
@@ -23,3 +24,5 @@ func TestRequestContextCancellation(t *testing.T) {
 		t.Errorf("request didn't cancel request, got instead: %v", err)
 	}
 }
+
+// TODO: Other errors, yay !

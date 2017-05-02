@@ -7,7 +7,6 @@ import (
 	"net/http/httptest"
 	"os"
 	"path/filepath"
-	"testing"
 	"time"
 
 	"github.com/aabizri/navitia/testutils"
@@ -56,18 +55,65 @@ var typesList = []string{
 
 // A mockClient implements the correct interface for the http client in the session, always responding with 200 and non-nil but empty body.
 type mockClient struct {
-	tester *testing.T
+	// StatusCode is the status code that should be returned
+	StatusCode int
+
+	// Return error
+	Error error
+
+	// Whether or not the context should or should not be checked for cancellation
+	ContextCancelling bool
+
+	// What data should we return
+	Data []byte
+
+	// Duration to sleep on
+	Sleep time.Duration
 }
 
 func (mc mockClient) Do(req *http.Request) (*http.Response, error) {
-	time.Sleep(10 * time.Millisecond)
-	resp := httptest.NewRecorder().Result()
+	// First, sleep
+	time.Sleep(mc.Sleep)
+
+	// If we're told to return an error
+	if mc.Error != nil {
+		return nil, mc.Error
+	}
+
+	// Check for cancellation
+	if mc.ContextCancelling {
+		ctx := req.Context()
+		select {
+		case <-ctx.Done():
+			return nil, ctx.Err()
+		default:
+		}
+	}
+
+	// Produce the response
+	rec := httptest.NewRecorder()
+
+	// Write the header if not zero
+	if code := mc.StatusCode; code != 0 {
+		rec.WriteHeader(code)
+	}
+
+	// Write the data if not nil
+	if mc.Data != nil {
+		_, err := rec.Write(mc.Data)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	// Obtain results & return
+	resp := rec.Result()
 	return resp, nil
 }
 
-func mockSession(t *testing.T) *Session {
+func mockSession(mc mockClient) *Session {
 	return &Session{
 		APIURL: NavitiaAPIURL,
-		client: mockClient{t},
+		client: mc,
 	}
 }
