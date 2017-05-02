@@ -56,15 +56,12 @@ type PTObjectsRequest struct {
 // toURL formats a PTObjects request to url
 func (req PTObjectsRequest) toURL() (url.Values, error) {
 	params := url.Values{
-		"q": []string{req.Query},
+		"q":               []string{req.Query},
+		"disable_geojson": []string{strconv.FormatBool(!req.Geo)},
 	}
 
 	if len(req.Types) != 0 {
 		params["type[]"] = req.Types
-	}
-
-	if !req.Geo {
-		params["disable_geojson"] = []string{"true"}
 	}
 
 	if req.Count != 0 {
