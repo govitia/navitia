@@ -203,7 +203,7 @@ const journeysEndpoint string = "journeys"
 // Journeys computes a list of journeys according to the parameters given
 func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
-	url := s.APIURL + "/" + journeysEndpoint
+	url := s.apiURL + "/" + journeysEndpoint
 
 	// Call
 	return s.journeys(ctx, url, req)
@@ -212,7 +212,7 @@ func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyRes
 // Journeys computes a list of journeys according to the parameters given in a specific scope
 func (scope *Scope) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + journeysEndpoint
+	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + journeysEndpoint
 
 	// Call
 	return scope.session.journeys(ctx, url, req)

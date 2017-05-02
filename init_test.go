@@ -20,7 +20,7 @@ func init() {
 	// Create session
 	if *apiKey != "" {
 		var err error
-		testSession, err = NewCustom(*apiKey, "http://api.navitia.io/v1", http.DefaultClient)
+		testSession, err = NewCustom(*apiKey, http.DefaultClient, SetAPIURL("http://api.navitia.io/v1"))
 		if err != nil {
 			panic(err)
 		}

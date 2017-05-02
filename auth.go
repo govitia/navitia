@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/aabizri/navitia/types"
+	"github.com/pkg/errors"
 )
 
 const (
@@ -20,16 +21,15 @@ const (
 	maxSize int64 = 10 * (1000 * 1000)
 )
 
-var defaultClient = &http.Client{}
-
 // Session holds a current session, it is thread-safe
 type Session struct {
-	APIKey string
-	APIURL string
+	apiKey string
+	apiURL string
 
 	client interface {
 		Do(req *http.Request) (*http.Response, error)
 	}
+
 	created time.Time
 }
 
@@ -38,17 +38,40 @@ type Session struct {
 //
 // Warning: No Timeout is indicated in the default http client, and as such, it is strongly advised to use NewCustom with a custom *http.Client !
 func New(key string) (*Session, error) {
-	return NewCustom(key, NavitiaAPIURL, defaultClient)
+	return NewCustom(key, http.DefaultClient)
 }
 
-// NewCustom creates a custom new session given an API key, URL to api base & http client
-func NewCustom(key string, url string, client *http.Client) (*Session, error) {
-	return &Session{
-		APIKey:  key,
-		APIURL:  url,
+// SetAPIURL sets an APIURL in a session
+func SetAPIURL(APIURL string) func(*Session) error {
+	return func(s *Session) error {
+		if s == nil {
+			return errors.New("nil session")
+		}
+		s.apiURL = APIURL
+		return nil
+	}
+}
+
+// NewCustom creates a custom new session given an API key, URL to api base & http client.
+// It can also be given additional configuration functions.
+func NewCustom(key string, client *http.Client, options ...func(*Session) error) (*Session, error) {
+	// Establish the basic value
+	s := &Session{
+		apiKey:  key,
 		created: time.Now(),
 		client:  client,
-	}, nil
+	}
+
+	// Iterate through options
+	for i, f := range options {
+		err := f(s)
+		if err != nil {
+			return nil, errors.Wrapf(err, "NewCustom: error while parsing option %d", i)
+		}
+	}
+
+	// Return
+	return s, nil
 }
 
 // A Scope is a coverage-scoped question, allowing you to query information about a specific region.

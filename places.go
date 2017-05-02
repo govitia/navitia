@@ -105,7 +105,7 @@ const placesEndpoint = "places"
 // It is context aware.
 func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
-	url := s.APIURL + "/" + placesEndpoint
+	url := s.apiURL + "/" + placesEndpoint
 
 	// Call
 	return s.places(ctx, url, params)
@@ -116,7 +116,7 @@ func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResu
 // It is context aware.
 func (scope *Scope) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
+	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
 
 	// Call
 	return scope.session.places(ctx, url, params)

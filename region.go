@@ -61,7 +61,7 @@ func (s *Session) region(ctx context.Context, url string, params RegionRequest) 
 // It is context aware.
 func (s *Session) Regions(ctx context.Context, req RegionRequest) (*RegionResults, error) {
 	// Create the URL
-	url := s.APIURL + "/" + regionEndpoint
+	url := s.apiURL + "/" + regionEndpoint
 
 	// Call and return
 	return s.region(ctx, url, req)
@@ -74,7 +74,7 @@ func (s *Session) Regions(ctx context.Context, req RegionRequest) (*RegionResult
 // It is context aware.
 func (s *Session) RegionByID(ctx context.Context, req RegionRequest, id types.ID) (*RegionResults, error) {
 	// Build the URL
-	url := s.APIURL + "/" + regionEndpoint + "/" + string(id)
+	url := s.apiURL + "/" + regionEndpoint + "/" + string(id)
 
 	// Call and return
 	return s.region(ctx, url, req)
@@ -86,7 +86,7 @@ func (s *Session) RegionByID(ctx context.Context, req RegionRequest, id types.ID
 func (s *Session) RegionByPos(ctx context.Context, req RegionRequest, coords types.Coordinates) (*RegionResults, error) {
 	// Build the URL
 	coordsQ := string(coords.ID())
-	url := s.APIURL + "/" + regionEndpoint + "/" + coordsQ
+	url := s.apiURL + "/" + regionEndpoint + "/" + coordsQ
 
 	// Call and return
 	return s.region(ctx, url, req)

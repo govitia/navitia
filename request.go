@@ -36,7 +36,7 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	req = req.WithContext(ctx)
 
 	// Add basic auth
-	req.SetBasicAuth(s.APIKey, "")
+	req.SetBasicAuth(s.apiKey, "")
 
 	// Execute the request
 	resp, err := s.client.Do(req)

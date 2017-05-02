@@ -113,7 +113,7 @@ func (mc mockClient) Do(req *http.Request) (*http.Response, error) {
 
 func mockSession(mc mockClient) *Session {
 	return &Session{
-		APIURL: NavitiaAPIURL,
+		apiURL: NavitiaAPIURL,
 		client: mc,
 	}
 }

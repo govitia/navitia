@@ -135,7 +135,7 @@ const (
 // DeparturesSA requests the departures for a given StopArea
 func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
+	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -143,7 +143,7 @@ func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, re
 // DeparturesSP requests the departures for a given StopPoint
 func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
+	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -152,7 +152,7 @@ func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, re
 func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
 	// Create the URL
 	coordsQ := string(coords.ID())
-	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
+	url := s.apiURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
 
 	return s.connections(ctx, url, req)
 }
@@ -160,7 +160,7 @@ func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coord
 // ArrivalsSA requests the arrivals for a given StopArea in a given region.
 func (scope *Scope) ArrivalsSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
+	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -168,7 +168,7 @@ func (scope *Scope) ArrivalsSA(ctx context.Context, req ConnectionsRequest, reso
 // ArrivalsSP requests the arrivals for a given StopPoint in a given region.
 func (scope *Scope) ArrivalsSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
+	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -177,7 +177,7 @@ func (scope *Scope) ArrivalsSP(ctx context.Context, req ConnectionsRequest, reso
 func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
 	// Create the URL
 	coordsQ := string(coords.ID())
-	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint
+	url := s.apiURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint
 
 	return s.connections(ctx, url, req)
 }
