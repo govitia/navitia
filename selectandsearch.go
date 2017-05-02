@@ -6,15 +6,25 @@ import (
 	"fmt"
 	"net/url"
 	"strconv"
+	"time"
 
 	"github.com/aabizri/navitia/types"
 	"github.com/pkg/errors"
 )
 
 // SelectAndSearchResults doesn't have pagination, as the remote API doesn't support it.
-//
-// SelectAndSearchResults can be sorted, it implements sort.Interface.
 type SelectAndSearchResults struct {
+	// PTObjects are of one of these types, according to the request that was given.
+	//	-[]types.CommercialMode
+	// 	-[]types.Line
+	//	-[]types.Network
+	// 	-[]types.Route
+	// 	-[]types.StopArea
+	// 	-[]types.StopPoint
+	// 	-[]types.PhysicalMode
+	// 	-[]types.Company
+	// 	-[]types.VehicleJourney [NOT IMPLEMENTED YET]
+	// 	-[]types.Disruption
 	PTObjects interface{}
 
 	Logging `json:"-"`
@@ -91,12 +101,30 @@ type SelectAndSearchRequest struct {
 
 	// Maximum amount of results
 	Count uint
+
+	// Request for specific pickup line. It refers to the odt section.
+	// Warning: Only works with Line request
+	//
+	// It can take one of these values:
+	// 	"all": no filter, provide all public transport lines, whatever its type
+	// 	"scheduled": provide only regular lines
+	// 	"with_stops": to get regular, “odt_with_stop_time” and “odt_with_stop_point” lines.
+	// 	"zonal"" : to get “odt_with_zone” lines with non-detailed journeys
+	ODTLevel string // NOT IMPLEMENTED
+
+	// If coordinates are specified in the filtering, does a proximity search with given radius.
+	// Default value: 200meters.
+	Radius uint // NOT IMPLEMENTED
+
+	// Since and Until are used for Vehicle Journeys & Disruptions to filter for a period.
+	// TODO: Implement them.
+	Since time.Time
+	Until time.Time
 }
 
 // toURL formats a SelectAndSearchRequest request to url.Values
 func (req SelectAndSearchRequest) toURL() (url.Values, error) {
 	params := url.Values{
-		"q":               []string{req.Query},
 		"depth":           []string{strconv.FormatUint(uint64(req.Depth), 10)},
 		"disable_geojson": []string{strconv.FormatBool(!req.Geo)},
 	}
