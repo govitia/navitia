@@ -63,7 +63,7 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	}
 
 	// Limit the reader
-	reader := io.LimitReader(resp.Body, maxSize)
+	reader := io.LimitReader(resp.Body, s.maxResponseSize)
 
 	// Parse the now limited body
 	dec := json.NewDecoder(reader)

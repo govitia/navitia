@@ -18,13 +18,15 @@ const (
 
 	// Maximum size of response in bytes
 	// 10 megabytes
-	maxSize int64 = 10 * (1000 * 1000)
+	defaultMaxResponseSize int64 = 10 * (1000 * 1000)
 )
 
 // Session holds a current session, it is thread-safe
 type Session struct {
 	apiKey string
 	apiURL string
+
+	maxResponseSize int64
 
 	client interface {
 		Do(req *http.Request) (*http.Response, error)
@@ -42,6 +44,8 @@ func New(key string) (*Session, error) {
 }
 
 // SetAPIURL sets an APIURL in a session
+//
+// The default is NavitiaAPIURL
 func SetAPIURL(APIURL string) func(*Session) error {
 	return func(s *Session) error {
 		if s == nil {
@@ -52,14 +56,29 @@ func SetAPIURL(APIURL string) func(*Session) error {
 	}
 }
 
+// SetMaxResponseSize sets the max response size allowed.
+//
+// The default is 10Mb
+func SetMaxResponseSize(size int64) func(*Session) error {
+	return func(s *Session) error {
+		if s == nil {
+			return errors.New("nil session")
+		}
+		s.maxResponseSize = size
+		return nil
+	}
+}
+
 // NewCustom creates a custom new session given an API key, URL to api base & http client.
 // It can also be given additional configuration functions.
 func NewCustom(key string, client *http.Client, options ...func(*Session) error) (*Session, error) {
 	// Establish the basic value
 	s := &Session{
-		apiKey:  key,
-		created: time.Now(),
-		client:  client,
+		apiKey:          key,
+		apiURL:          NavitiaAPIURL,
+		maxResponseSize: defaultMaxResponseSize,
+		created:         time.Now(),
+		client:          client,
 	}
 
 	// Iterate through options
