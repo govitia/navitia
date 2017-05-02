@@ -33,26 +33,25 @@ func (sasr *SelectAndSearchResults) UnmarshalJSON(b []byte) error {
 	// Switch on it
 	for k := range first {
 		switch k {
-		case types.EmbeddedCommercialMode + "s":
+		case CommercialModesSelector:
 			recv = []types.CommercialMode{}
-		case types.EmbeddedLine + "s":
+		case LinesSelector:
 			recv = []types.Line{}
-		case types.EmbeddedNetwork + "s":
+		case NetworksSelector:
 			recv = []types.Network{}
-		case types.EmbeddedRoute + "s":
+		case RoutesSelector:
 			recv = []types.Route{}
-		case types.EmbeddedStopArea + "s":
+		case StopAreasSelector:
 			recv = []types.StopArea{}
-		case types.EmbeddedStopPoint + "s":
+		case StopPointsSelector:
 			recv = []types.StopPoint{}
-		//case types.EmbeddedPhysicalMode + "s":
-		case "physical_modes":
+		case PhysicalModesSelector:
 			recv = []types.PhysicalMode{}
-		case "companies":
+		case CompaniesSelector:
 			recv = []types.Company{}
-		/*case "vehicle_journeys":
+		/*case VehicleJourneysSelector:
 		recv = []types.VehicleJourneys*/
-		case "disruptions":
+		case DisruptionsSelector:
 			recv = []types.Disruption{}
 		}
 
