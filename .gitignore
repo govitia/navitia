@@ -1,2 +1,4 @@
 Fuzz*
 .vscode
+*.prof
+*.test
