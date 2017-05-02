@@ -18,6 +18,7 @@ This is navitia -dev.
 - Journeys [/journeys]: This computes journeys or isochrone tables. [(navitia.io doc)](http://doc.navitia.io/#journeys)
 - Places [/places]: Allows you to search in all geographical objects using their names, returning a list of places. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-geographical-objects)
 - Connections (Departures & Arrivals) [/departures,/arrivals]: Retrieve departures & arrivals for a specific ressource or place. [(navitia.io doc)](http://doc.navitia.io/#departures)
+- Inverted Geocoding (Finding your address from your coordinates) [/coords]: Retrieve the address & associated region ID given some coordinates [(navitia.io doc)](http://doc.navitia.io/#inverted-geocoding)
 
 ## Getting started
 
@@ -126,6 +127,9 @@ Obviously, this is a very simple example of what navitia can do, [check out the 
 ## What's new in dev ?
 
 - Moved testdata loading & unmarshal testing to `navitia/testutils`, rewriting it in the process to be better
+- API-Break: Changed NewCustom and unexported APIURL and APIKey in Session.
+- Request testing
+- New /coords service (Coords) for finding out an address and associated region ID given coordinates.
 
 ## Footnotes
 
