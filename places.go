@@ -114,7 +114,7 @@ func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResu
 // It is context aware.
 func (scope *Scope) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
+	url := scope.baseURL + "/" + placesEndpoint
 
 	// Call
 	return scope.session.places(ctx, url, params)

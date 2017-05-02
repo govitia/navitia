@@ -212,7 +212,7 @@ func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyRes
 // Journeys computes a list of journeys according to the parameters given in a specific scope
 func (scope *Scope) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + journeysEndpoint
+	url := scope.baseURL + "/" + journeysEndpoint
 
 	// Call
 	return scope.session.journeys(ctx, url, req)

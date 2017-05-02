@@ -98,10 +98,12 @@ func NewCustom(key string, client *http.Client, options ...func(*Session) error)
 // It is needed for every non-global request you wish to make, and helps have better results with some global request too!
 type Scope struct {
 	region  types.ID
+	baseURL string
 	session *Session
 }
 
 // Scope creates a coverage-scoped session given a region ID.
 func (s *Session) Scope(region types.ID) *Scope {
-	return &Scope{region: region, session: s}
+	base := s.apiURL + "/coverage/" + string(region)
+	return &Scope{region: region, baseURL: base, session: s}
 }

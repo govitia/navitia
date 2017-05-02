@@ -135,7 +135,7 @@ const (
 // DeparturesSA requests the departures for a given StopArea
 func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
+	url := scope.baseURL + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -143,7 +143,7 @@ func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, re
 // DeparturesSP requests the departures for a given StopPoint
 func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
+	url := scope.baseURL + "/stop_points/" + string(resource) + "/" + departuresEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -160,7 +160,7 @@ func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coord
 // ArrivalsSA requests the arrivals for a given StopArea in a given region.
 func (scope *Scope) ArrivalsSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
+	url := scope.baseURL + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
@@ -168,7 +168,7 @@ func (scope *Scope) ArrivalsSA(ctx context.Context, req ConnectionsRequest, reso
 // ArrivalsSP requests the arrivals for a given StopPoint in a given region.
 func (scope *Scope) ArrivalsSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
+	url := scope.baseURL + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
 
 	return scope.session.connections(ctx, url, req)
 }
