@@ -84,7 +84,7 @@ func (s *Session) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNe
 func (scope *Scope) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNearRequest) (*PlacesNearResults, error) {
 	// Build the url
 	coords := fmt.Sprintf("%3.3f;%3.3f", lng, lat)
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + coords + "/" + placesNearEndpoint
+	url := scope.baseURL + "/" + coords + "/" + placesNearEndpoint
 
 	// Call & return
 	return scope.session.placesNear(ctx, url, req)
@@ -93,7 +93,7 @@ func (scope *Scope) PlacesNear(ctx context.Context, lat, lng float64, req Places
 // PlacesNearResource searches for places near a resource in a specific coverage.
 func (scope *Scope) PlacesNearResource(ctx context.Context, resourceType string, resourceID types.ID, req PlacesNearRequest) (*PlacesNearResults, error) {
 	// Build the url
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + resourceType + "/" + string(resourceID) + "/" + placesNearEndpoint
+	url := scope.baseURL + "/" + resourceType + "/" + string(resourceID) + "/" + placesNearEndpoint
 
 	// Call & return
 	return scope.session.placesNear(ctx, url, req)
