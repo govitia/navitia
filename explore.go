@@ -3,7 +3,6 @@ package navitia
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"net/url"
 	"strconv"
 	"time"
@@ -166,21 +165,11 @@ const (
 	DisruptionsSelector     = "disruptions"
 )
 
-// ExploreRegion searches in all elements of the given selector (lines, networks, etc.) within a coverage, returning a list of ptObjects of the specific type.
-func (scope *Scope) ExploreRegion(ctx context.Context, selector string, opts ExploreRequest) (*ExploreResults, error) {
+// Explore searches in all elements of the given selector (lines, networks, etc.) within a scope, returning a list of ptObjects of the specific type.
+func (scope *Scope) Explore(ctx context.Context, selector string, opts ExploreRequest) (*ExploreResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + selector
+	url := scope.baseURL + "/" + selector
 
 	// Call
 	return scope.session.explore(ctx, url, opts)
-}
-
-// Explore searches in all elements of the given selector (lines, networks, etc.) within the region covering the given coordinates, returning a list of ptObjects of the specific type.
-func (s *Session) Explore(ctx context.Context, selector string, lat, lng float64, opts ExploreRequest) (*ExploreResults, error) {
-	// Create the URL
-	coords := fmt.Sprintf("%3.3f;%3.3f", lng, lat)
-	url := s.apiURL + "/" + coords + "/" + selector
-
-	// Call
-	return s.explore(ctx, url, opts)
 }
