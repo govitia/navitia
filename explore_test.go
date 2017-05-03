@@ -19,21 +19,10 @@ func Test_Explore(t *testing.T) {
 	// Create the root context
 	ctx := context.Background()
 
-	// Run a normal, global search
-	t.Run("global", func(t *testing.T) {
-		res, err := testSession.Explore(ctx, LinesSelector, 48.847002, 2.377310, params)
-		if err != nil {
-			t.Fatalf("error in Explore: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
-		}
-	})
-
-	// Run a scoped search
-	t.Run("scoped", func(t *testing.T) {
-		res, err := scope.ExploreRegion(ctx, LinesSelector, params)
-		if err != nil {
-			t.Fatalf("error in Explore: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
-		}
-	})
+	res, err := scope.Explore(ctx, LinesSelector, params)
+	if err != nil {
+		t.Fatalf("error in Explore: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
+	}
 
 }
 
