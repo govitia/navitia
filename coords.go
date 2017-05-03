@@ -2,7 +2,6 @@ package navitia
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/aabizri/navitia/types"
 	"github.com/pkg/errors"
@@ -19,10 +18,9 @@ const coordsEndpoint = "coords"
 // Coords , given some coordinates, answers you
 // 	- Your detailed postal address
 // 	- The right coverage, that is the region ID that can be used to scope future requests
-func (s *Session) Coords(ctx context.Context, lat, lng float64) (address *types.Address, regionID types.ID, err error) {
+func (s *Session) Coords(ctx context.Context, coords types.Coordinates) (address *types.Address, regionID types.ID, err error) {
 	// Build the URL
-	coords := fmt.Sprintf("%9.6f;%9.6f", lng, lat)
-	url := s.apiURL + "/" + coordsEndpoint + "/" + coords
+	url := s.apiURL + "/" + coordsEndpoint + "/" + string(coords.ID())
 
 	// Create the result value
 	res := &coordsResults{}
