@@ -102,7 +102,7 @@ type Scope struct {
 	session *Session
 }
 
-// Scope creates a coverage-scoped session given a region ID.
+// Scope creates a coverage-scoped session given a region ID or a coordinate's ids.
 func (s *Session) Scope(region types.ID) *Scope {
 	base := s.apiURL + "/coverage/" + string(region)
 	return &Scope{region: region, baseURL: base, session: s}
