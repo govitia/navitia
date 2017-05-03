@@ -12,8 +12,8 @@ import (
 	"github.com/pkg/errors"
 )
 
-// SelectAndSearchResults doesn't have pagination, as the remote API doesn't support it.
-type SelectAndSearchResults struct {
+// ExploreResults doesn't have pagination, as the remote API doesn't support it.
+type ExploreResults struct {
 	// PTObjects are of one of these types, according to the request that was given.
 	//	-[]types.CommercialMode
 	// 	-[]types.Line
@@ -30,10 +30,16 @@ type SelectAndSearchResults struct {
 	Logging `json:"-"`
 }
 
-// UnmarshalJSON implements unmarshalling for SelectAndSearchResults
-func (sasr *SelectAndSearchResults) UnmarshalJSON(b []byte) error {
+// UnmarshalJSON implements unmarshalling for ExploreResults
+func (sasr *ExploreResults) UnmarshalJSON(b []byte) error {
+	// first will hold the preliminary values
 	first := make(map[string]json.RawMessage)
 
+	// Unmarshal to first
+	err := json.Unmarshal(b, &first)
+	if err != nil {
+		return errors.Wrap(err, "error in first-pass unmarshalling")
+	}
 	// Create a value
 	var (
 		recv   interface{}
@@ -74,22 +80,23 @@ func (sasr *SelectAndSearchResults) UnmarshalJSON(b []byte) error {
 
 	// If we have found nothing, return an error
 	if recv == nil {
-		return errors.New("error: no known receive types known")
+		return errors.New("error: no known key in response")
 	}
 
 	// Else, let's unmarshal
-	err := json.Unmarshal(second, recv)
+	err = json.Unmarshal(second, &recv)
 	if err != nil {
 		return errors.Wrap(err, "error while unmarshalling")
 	}
 
 	// Now assign it to sasr.PTObjects
 	sasr.PTObjects = recv
+
 	return nil
 }
 
-// SelectAndSearchRequest is the query you need to build before passing it to SelectAndSearch function
-type SelectAndSearchRequest struct {
+// ExploreRequest is the query you need to build before passing it to Explore function
+type ExploreRequest struct {
 	Query string // The search item
 
 	// Depth can expand the data by making it more verbose.
@@ -122,8 +129,8 @@ type SelectAndSearchRequest struct {
 	Until time.Time
 }
 
-// toURL formats a SelectAndSearchRequest request to url.Values
-func (req SelectAndSearchRequest) toURL() (url.Values, error) {
+// toURL formats a ExploreRequest request to url.Values
+func (req ExploreRequest) toURL() (url.Values, error) {
 	params := url.Values{
 		"depth":           []string{strconv.FormatUint(uint64(req.Depth), 10)},
 		"disable_geojson": []string{strconv.FormatBool(!req.Geo)},
@@ -137,9 +144,9 @@ func (req SelectAndSearchRequest) toURL() (url.Values, error) {
 	return params, nil
 }
 
-// selectAndSearch is the internal function used by SelectAndSearch functions
-func (s *Session) selectAndSearch(ctx context.Context, url string, params PTObjectsRequest) (*SelectAndSearchResults, error) {
-	var results = &SelectAndSearchResults{}
+// selectAndSearch is the internal function used by Explore functions
+func (s *Session) explore(ctx context.Context, url string, params ExploreRequest) (*ExploreResults, error) {
+	var results = &ExploreResults{}
 	err := s.request(ctx, url, params, results)
 
 	return results, err
@@ -159,21 +166,21 @@ const (
 	DisruptionsSelector     = "disruptions"
 )
 
-// SelectAndSearch searches in all elements of the given selector (lines, networks, etc.) within a coverage using their names, returning a list of ptObjects of the specific type.
-func (scope *Scope) SelectAndSearch(ctx context.Context, params PTObjectsRequest, selector string) (*SelectAndSearchResults, error) {
+// ExploreRegion searches in all elements of the given selector (lines, networks, etc.) within a coverage, returning a list of ptObjects of the specific type.
+func (scope *Scope) ExploreRegion(ctx context.Context, selector string, opts ExploreRequest) (*ExploreResults, error) {
 	// Create the URL
 	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + selector
 
 	// Call
-	return scope.session.selectAndSearch(ctx, url, params)
+	return scope.session.explore(ctx, url, opts)
 }
 
-// SelectAndSearchC searches in all elements of the given selector (lines, networks, etc.) within the region covering the given coordinates using their names, returning a list of ptObjects of the specific type.
-func (s *Session) SelectAndSearchC(ctx context.Context, params PTObjectsRequest, selector string, lat, lng float64) (*SelectAndSearchResults, error) {
+// Explore searches in all elements of the given selector (lines, networks, etc.) within the region covering the given coordinates, returning a list of ptObjects of the specific type.
+func (s *Session) Explore(ctx context.Context, selector string, lat, lng float64, opts ExploreRequest) (*ExploreResults, error) {
 	// Create the URL
 	coords := fmt.Sprintf("%3.3f;%3.3f", lng, lat)
 	url := s.apiURL + "/" + coords + "/" + selector
 
 	// Call
-	return s.selectAndSearch(ctx, url, params)
+	return s.explore(ctx, url, opts)
 }
