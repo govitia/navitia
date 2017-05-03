@@ -73,7 +73,7 @@ const placesNearEndpoint = "places_nearby"
 // PlacesNear searches for places near a point.
 func (s *Session) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNearRequest) (*PlacesNearResults, error) {
 	// Build the url
-	coords := fmt.Sprintf("%3.3f;%3.3f", lat, lng)
+	coords := fmt.Sprintf("%3.3f;%3.3f", lng, lat)
 	url := s.apiURL + "/coord/" + coords + "/" + placesNearEndpoint
 
 	// Call & return
@@ -83,7 +83,7 @@ func (s *Session) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNe
 // PlacesNear searches for places near a point in a specific coverage.
 func (scope *Scope) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNearRequest) (*PlacesNearResults, error) {
 	// Build the url
-	coords := fmt.Sprintf("%3.3f;%3.3f", lat, lng)
+	coords := fmt.Sprintf("%3.3f;%3.3f", lng, lat)
 	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + coords + "/" + placesNearEndpoint
 
 	// Call & return
