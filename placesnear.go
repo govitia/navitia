@@ -2,7 +2,6 @@ package navitia
 
 import (
 	"context"
-	"fmt"
 	"net/url"
 	"strconv"
 
@@ -71,20 +70,19 @@ func (s *Session) placesNear(ctx context.Context, url string, req PlacesNearRequ
 const placesNearEndpoint = "places_nearby"
 
 // PlacesNear searches for places near a point.
-func (s *Session) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNearRequest) (*PlacesNearResults, error) {
+// It acts similarly to session.Scope(Coords.ID()).PlacesNear(Coords.ID())
+func (s *Session) PlacesNear(ctx context.Context, coords types.Coordinates, req PlacesNearRequest) (*PlacesNearResults, error) {
 	// Build the url
-	coords := fmt.Sprintf("%9.6f;%9.6f", lng, lat)
-	url := s.apiURL + "/coord/" + coords + "/" + placesNearEndpoint
+	url := s.apiURL + "/coord/" + string(coords.ID()) + "/" + placesNearEndpoint
 
 	// Call & return
 	return s.placesNear(ctx, url, req)
 }
 
 // PlacesNear searches for places near a point in a specific coverage.
-func (scope *Scope) PlacesNear(ctx context.Context, lat, lng float64, req PlacesNearRequest) (*PlacesNearResults, error) {
+func (scope *Scope) PlacesNear(ctx context.Context, coords types.Coordinates, req PlacesNearRequest) (*PlacesNearResults, error) {
 	// Build the url
-	coords := fmt.Sprintf("%9.6f;%9.6f", lng, lat)
-	url := scope.baseURL + "/" + coords + "/" + placesNearEndpoint
+	url := scope.baseURL + "/" + string(coords.ID()) + "/" + placesNearEndpoint
 
 	// Call & return
 	return scope.session.placesNear(ctx, url, req)
