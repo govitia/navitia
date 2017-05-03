@@ -115,11 +115,20 @@ var (
 	req navitia.PlacesRequest
 )
 
-// Create the scope
+// Create the scope based on a regionID
 scope := session.Scope(regionID)
 
 // Requests places in this scope
 res, _ := scope.Places(context.Background(),req)
+```
+
+Or you can also use coordinates for creating a scope that can then be used just like the previous way
+
+```golang
+var coords types.Coordinates
+
+// Create the scope based on coordinates
+scope := session.Scope(coords.ID())
 ```
 
 ### Going further
@@ -131,7 +140,9 @@ Obviously, this is a very simple example of what navitia can do, [check out the 
 - Moved testdata loading & unmarshal testing to `navitia/testutils`, rewriting it in the process to be better
 - API-Break: Changed NewCustom and unexported APIURL and APIKey in Session.
 - Request testing
-- New /coords service (Coords) for finding out an address and associated region ID given coordinates.
+- New /coords method (Coords) for finding out an address and associated region ID given coordinates.
+- New exploration method (Explore) for listing all public transportation objects of a specific type in a region.
+- New places nearby (PlacesNear) method for finding out the places nearby (duh).
 
 ## Footnotes
 
