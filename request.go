@@ -47,7 +47,7 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	case err == context.Canceled:
 		return err
 	case err != nil:
-		return errors.Wrap(err, "error while executing request")
+		return errors.Wrapf(err, "error while executing request (for %s)", url)
 	case resp.StatusCode != 200:
 		return parseRemoteError(resp)
 	}

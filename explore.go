@@ -148,7 +148,7 @@ func (s *Session) explore(ctx context.Context, url string, params ExploreRequest
 	var results = &ExploreResults{}
 	err := s.request(ctx, url, params, results)
 
-	return results, err
+	return results, errors.Wrapf(err, "error in call to explore for url %s", url)
 }
 
 // XXXSelector are used in PTObjectsSelect to select a specific category of public transportation objects to be selected
