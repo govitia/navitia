@@ -61,7 +61,8 @@ type PlacesRequest struct {
 // toURL formats a Places request to url
 func (req PlacesRequest) toURL() (url.Values, error) {
 	params := url.Values{
-		"q": []string{req.Query},
+		"q":               []string{req.Query},
+		"disable_geojson": []string{strconv.FormatBool(!req.Geo)},
 	}
 
 	if len(req.Types) != 0 {
@@ -70,10 +71,6 @@ func (req PlacesRequest) toURL() (url.Values, error) {
 
 	if len(req.AdminURI) != 0 {
 		params["admin_uri[]"] = req.AdminURI
-	}
-
-	if !req.Geo {
-		params["disable_geojson"] = []string{"true"}
 	}
 
 	if req.Count != 0 {
