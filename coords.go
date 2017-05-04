@@ -8,8 +8,8 @@ import (
 )
 
 type coordsResults struct {
-	Regions []types.Region `json:"regions"`
-	Address types.Address  `json:"address"`
+	Regions []types.ID    `json:"regions"`
+	Address types.Address `json:"address"`
 	Logging `json:"-"`
 }
 
@@ -32,10 +32,10 @@ func (s *Session) Coords(ctx context.Context, coords types.Coordinates) (address
 	}
 
 	// Validate the response
-	if res != nil || len(res.Regions) == 0 {
+	if res == nil || len(res.Regions) == 0 {
 		return nil, "", errors.Wrap(err, "Coords: invalid response")
 	}
 
 	// Return the correct values
-	return &res.Address, res.Regions[0].ID, nil
+	return &res.Address, res.Regions[0], nil
 }

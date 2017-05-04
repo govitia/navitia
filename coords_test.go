@@ -22,4 +22,5 @@ func Test_Coords(t *testing.T) {
 	if err != nil {
 		t.Fatalf("error in (*Session).Coords: %v\n\tInput coordinates: %s\n\tReceived:\n\t\tAddress: %s\n\t\tRegion: %s\n", err, coords.ID(), address.Label, regionID)
 	}
+	t.Logf("Coords %s return:\n\tAddress: \t%s\n\tRegion: \t%s\n", coords.ID(), address.Label, regionID)
 }
