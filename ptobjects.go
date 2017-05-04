@@ -40,10 +40,11 @@ func (pr *PTObjectsResults) Swap(i, j int) {
 
 // PTObjectsRequest is the query you need to build before passing it to PTObjects
 type PTObjectsRequest struct {
-	Query string // The search item
+	query string // The search item, set by PTObjects
 
 	// Types are the type of objects to query
-	// It can either be a stop_area, an address, a poi or an administrative_region
+	// It can be a network, a commercial mode, a line, a route or a stop area.
+	// By default it is all of them.
 	Types []string
 
 	// Enables GeoJSON data in the reply. GeoJSON objects can be VERY large ! >1MB.
@@ -56,7 +57,7 @@ type PTObjectsRequest struct {
 // toURL formats a PTObjects request to url
 func (req PTObjectsRequest) toURL() (url.Values, error) {
 	params := url.Values{
-		"q":               []string{req.Query},
+		"q":               []string{req.query},
 		"disable_geojson": []string{strconv.FormatBool(!req.Geo)},
 	}
 
@@ -82,9 +83,12 @@ const ptObjectsEndpoint = "pt_objects"
 // - types.Line
 // - types.Route
 // - types.StopArea
-func (scope *Scope) PTObjects(ctx context.Context, params PTObjectsRequest) (*PTObjectsResults, error) {
+func (scope *Scope) PTObjects(ctx context.Context, query string, params PTObjectsRequest) (*PTObjectsResults, error) {
 	// Create the URL
-	url := scope.session.apiURL + "/coverage/" + string(scope.region) + "/" + ptObjectsEndpoint
+	url := scope.baseURL + "/" + ptObjectsEndpoint
+
+	// Add the query to the request
+	params.query = query
 
 	// Create the results
 	var results = &PTObjectsResults{}
