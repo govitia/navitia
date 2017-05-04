@@ -116,14 +116,13 @@ type ExploreRequest struct {
 	// 	"scheduled": provide only regular lines
 	// 	"with_stops": to get regular, “odt_with_stop_time” and “odt_with_stop_point” lines.
 	// 	"zonal"" : to get “odt_with_zone” lines with non-detailed journeys
-	ODTLevel string // NOT IMPLEMENTED
+	ODTLevel string
 
 	// If coordinates are specified in the filtering, does a proximity search with given radius.
 	// Default value: 200meters.
-	Radius uint // NOT IMPLEMENTED
+	Radius uint
 
 	// Since and Until are used for Vehicle Journeys & Disruptions to filter for a period.
-	// TODO: Implement them.
 	Since time.Time
 	Until time.Time
 }
