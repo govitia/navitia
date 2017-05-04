@@ -112,7 +112,7 @@ type ExploreRequest struct {
 	// Warning: Only works with Line request
 	//
 	// It can take one of these values:
-	// 	"all": no filter, provide all public transport lines, whatever its type
+	// 	"all": no filter, provide all public transport lines, whatever its type (Default)
 	// 	"scheduled": provide only regular lines
 	// 	"with_stops": to get regular, “odt_with_stop_time” and “odt_with_stop_point” lines.
 	// 	"zonal"" : to get “odt_with_zone” lines with non-detailed journeys
@@ -140,10 +140,31 @@ func (req ExploreRequest) toURL() (url.Values, error) {
 		params["count"] = []string{countStr}
 	}
 
+	if req.ODTLevel != "" {
+		params["odt_level"] = []string{req.ODTLevel}
+	}
+
+	if req.Radius != 0 {
+		radiusStr := strconv.FormatUint(uint64(req.Radius), 10)
+		params["distance"] = []string{radiusStr}
+	}
+
+	// Deal with since and/or until
+	if since := req.Since; !since.IsZero() {
+		sinceStr := since.Format(types.DateTimeFormat)
+		params["since"] = []string{sinceStr}
+	}
+	if until := req.Until; !until.IsZero() {
+		if until.After(req.Since) {
+			return params, errors.New("toURL: until date is after before date")
+		}
+		untilStr := until.Format(types.DateTimeFormat)
+		params["until"] = []string{untilStr}
+	}
 	return params, nil
 }
 
-// selectAndSearch is the internal function used by Explore functions
+// explore is the internal function used by Explore functions
 func (s *Session) explore(ctx context.Context, url string, params ExploreRequest) (*ExploreResults, error) {
 	var results = &ExploreResults{}
 	err := s.request(ctx, url, params, results)
