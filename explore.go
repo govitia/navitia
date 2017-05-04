@@ -96,8 +96,6 @@ func (sasr *ExploreResults) UnmarshalJSON(b []byte) error {
 
 // ExploreRequest is the query you need to build before passing it to Explore function
 type ExploreRequest struct {
-	Query string // The search item
-
 	// Depth can expand the data by making it more verbose.
 	// Acceptable values are 0 (light), 1 (regular), 2 (rich), 3 (verbose)
 	Depth uint8
@@ -123,6 +121,8 @@ type ExploreRequest struct {
 	Radius uint
 
 	// Since and Until are used for Vehicle Journeys & Disruptions to filter for a period.
+	// 	-On vehicle_journey this filter is applied using only the first stop time.
+	// 	-On disruption this filter must intersect with one application period. “since” is included and “until” is excluded.
 	Since time.Time
 	Until time.Time
 }
@@ -139,8 +139,11 @@ func (req ExploreRequest) toURL() (url.Values, error) {
 		params["count"] = []string{countStr}
 	}
 
-	if req.ODTLevel != "" {
-		params["odt_level"] = []string{req.ODTLevel}
+	if ol := req.ODTLevel; ol != "" {
+		if ol != "all" && ol != "scheduled" && ol != "with_stops" && ol != "zonal" {
+			return params, errors.Errorf("toURL: ODTLevel unknown (%s)", ol)
+		}
+		params["odt_level"] = []string{ol}
 	}
 
 	if req.Radius != 0 {
@@ -148,7 +151,7 @@ func (req ExploreRequest) toURL() (url.Values, error) {
 		params["distance"] = []string{radiusStr}
 	}
 
-	// Deal with since and/or until
+	// Deal with since and/or until, checking that the interval is correct
 	if since := req.Since; !since.IsZero() {
 		sinceStr := since.Format(types.DateTimeFormat)
 		params["since"] = []string{sinceStr}

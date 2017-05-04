@@ -26,6 +26,30 @@ func Test_Explore(t *testing.T) {
 
 }
 
+/*
+// Generates all permutations of ExploreRequest
+func genExploreRequests() (valid struct {
+	Reqs []ExploreRequest
+	Val  url.Values
+}, invalid struct {
+	Reqs []ExploreRequest
+	Val  url.Values
+}) {
+	// Always valid
+	geo := [...]bool{true, false}
+	counts := [...]uint{0, 2, 4, 6, 8, 16, 32, 64, 128, 256, 512, 1024}
+	radius := [...]uint{0, 64, 128, 256, 512, 1024, 2048}
+	baseLen := len(geo) * len(counts) * len(radius)
+
+	// Valid values for their corresponding fields
+	vDepths := [...]uint8{0, 1, 2, 3}
+	vOdtlevels := [...]string{"", "all", "scheduled", "with_stops", "zonal"}
+
+	// Invalid values
+	iDepths := [...]uint8{4, 8, 32, 64, 128}
+	iOdtlevels := [...]string{"this", "is", "invalid", "m8"}
+} */
+
 // Test_ExploreResults_Unmarshal tests unmarshalling for ExploreResults.
 // As the unmarshalling is done by ourselves, this allows us to check that our unmarshaller works correctly.
 //
