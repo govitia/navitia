@@ -18,7 +18,6 @@ func TestConnectionsSA(t *testing.T) {
 	region := types.ID("fr-idf")
 	resources := []types.ID{
 		"stop_area:OIF:SA:59346",
-		//"stop_area:OIF:SA:59586",
 	}
 
 	// Create the context
@@ -71,6 +70,35 @@ func TestConnectionsSA(t *testing.T) {
 //	If we expect an error but we don't get one, the test fails
 func Test_ConnectionsResults_Unmarshal(t *testing.T) {
 	testutils.UnmarshalTest(t, testData["connections"], reflect.TypeOf(ConnectionsResults{}))
+}
+
+// Benchmark_ConnectionsResults_Unmarshal benchmarks ConnectionsResults unmarshalling via subbenchmarks
+func Benchmark_ConnectionsResults_Unmarshal(b *testing.B) {
+	// Get the bench data
+	data := testData["connections"].Bench
+	if len(data) == 0 {
+		b.Skip("No data to test")
+	}
+
+	// Run function generator, allowing parallel run
+	runGen := func(in []byte) func(*testing.B) {
+		return func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				// Unmarshal a ConnectionsResults
+				var ptr = &ConnectionsResults{}
+				_ = ptr.UnmarshalJSON(in)
+			}
+		}
+	}
+
+	// Loop over all corpus
+	for name, datum := range data {
+		// Get run function
+		runFunc := runGen(datum)
+
+		// Run it !
+		b.Run(name, runFunc)
+	}
 }
 
 func Test_ConnectionsResults_Unmarshal_Compare(t *testing.T) {
