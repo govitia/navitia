@@ -8,13 +8,15 @@ import (
 	"github.com/aabizri/navitia/testutils"
 )
 
-func Test_Regions(t *testing.T) {
+func Test_Regions_Online(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}
 
 	ctx := context.Background()
-	req := RegionRequest{}
+	req := RegionRequest{
+		Count: 1000, // We want the biggest count to cause the biggest stress
+	}
 
 	// Run the query with GeoJSON
 	t.Run("with_geojson", func(t *testing.T) {

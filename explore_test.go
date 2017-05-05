@@ -8,12 +8,14 @@ import (
 	"github.com/aabizri/navitia/testutils"
 )
 
-func Test_Explore(t *testing.T) {
+func Test_Explore_Online(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}
 
-	params := ExploreRequest{}
+	params := ExploreRequest{
+		Count: 1000, // We want the biggest count to cause the biggest stress
+	}
 	scope := testSession.Scope("fr-idf")
 
 	// Create the root context

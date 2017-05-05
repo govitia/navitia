@@ -10,7 +10,7 @@ import (
 	"github.com/aabizri/navitia/types"
 )
 
-func TestConnectionsSA(t *testing.T) {
+func Test_ConnectionsSA_Online(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}
@@ -24,7 +24,9 @@ func TestConnectionsSA(t *testing.T) {
 	ctx := context.Background()
 
 	// Common request (for now)
-	req := ConnectionsRequest{}
+	req := ConnectionsRequest{
+		Count: 1000, // We want the biggest count to cause the biggest stress
+	}
 
 	// Create the run function generator, allowing us to run this in parallel
 	//
@@ -32,14 +34,14 @@ func TestConnectionsSA(t *testing.T) {
 	rgen := func(region types.ID, resource types.ID) (func(t *testing.T), func(t *testing.T)) {
 		depFunc := func(t *testing.T) {
 			res, err := testSession.Scope(region).DeparturesSA(ctx, req, resource)
-			t.Log(res)
+
 			if err != nil {
 				t.Errorf("error in DeparturesSA: %v\n\tResource: %s\n\tParameters: %#v\n\tReceived: %#v", err, resource, req, res)
 			}
 		}
 		arrFunc := func(t *testing.T) {
 			res, err := testSession.Scope(region).ArrivalsSA(ctx, req, resource)
-			t.Log(res)
+
 			if err != nil {
 				t.Errorf("error in ArrivalsSA: %v\n\tResource: %s\n\tParameters: %#v\n\tReceived: %#v", err, resource, req, res)
 			}

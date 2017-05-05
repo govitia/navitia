@@ -53,6 +53,7 @@ var typesList = []string{
 	"connections",
 	"explore",
 	"ptobjects",
+	"placesnearby",
 }
 
 // A mockClient implements the correct interface for the http client in the session, always responding with 200 and non-nil but empty body.

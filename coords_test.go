@@ -7,7 +7,7 @@ import (
 	"github.com/aabizri/navitia/types"
 )
 
-func Test_Coords(t *testing.T) {
+func Test_CoordsTest_Online(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}

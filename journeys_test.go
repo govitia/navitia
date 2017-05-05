@@ -22,14 +22,16 @@ func Test_JourneyRequest_toUrl(t *testing.T) {
 	}
 }
 
-func Test_Journeys(t *testing.T) {
+func Test_Journeys_Online(t *testing.T) {
 	if *apiKey == "" {
 		t.Skip(skipNoKey)
 	}
 
 	ctx := context.Background()
 
-	req := JourneyRequest{}
+	req := JourneyRequest{
+		Count: 1000, // We want the biggest count to cause the biggest stress
+	}
 	coords := types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
 	req.From = coords.ID()
 
@@ -47,8 +49,9 @@ func Test_Journeys_Paging(t *testing.T) {
 	ctx := context.Background()
 
 	params := JourneyRequest{
-		From: types.Coordinates{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
-		To:   types.Coordinates{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
+		From:  types.Coordinates{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
+		To:    types.Coordinates{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
+		Count: 1000,                                                             // We want the biggest count to cause the biggest stress
 	}
 
 	res, err := testSession.Journeys(ctx, params)
