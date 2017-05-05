@@ -16,6 +16,8 @@ import (
 type PTObjectsResults struct {
 	PTObjects []types.Container `json:"pt_objects"`
 
+	Paging Paging `json:"links"`
+
 	Logging `json:"-"`
 }
 
