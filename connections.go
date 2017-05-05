@@ -15,6 +15,7 @@ import (
 // ConnectionsResults holds the results of a departures or arrivals request.
 type ConnectionsResults struct {
 	Connections []types.Connection
+	Disruptions []types.Disruption
 
 	Paging Paging `json:"links"`
 
@@ -27,13 +28,15 @@ func (cr *ConnectionsResults) UnmarshalJSON(b []byte) error {
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
 		// Pointers to the corresponding real values
-		Paging *Paging `json:"links"`
+		Paging      *Paging `json:"links"`
+		Disruptions *[]types.Disruption
 
 		// Value to process
 		Departures *[]types.Connection `json:"departures"`
 		Arrivals   *[]types.Connection `json:"arrivals"`
 	}{
-		Paging: &cr.Paging,
+		Disruptions: &cr.Disruptions,
+		Paging:      &cr.Paging,
 	}
 
 	// Now unmarshall the raw data into the analogous structure
