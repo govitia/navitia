@@ -19,7 +19,7 @@ import (
 )
 
 // FileSizeLimit is the maximum size of files we accept, 10 megabytes currently
-const FileSizeLimit = 10 * (1000 * 1000)
+const FileSizeLimit = 30 * (1000 * 1000)
 
 // A TestPair is a pair of JSON data along with the go representation they should have
 type TestPair struct {

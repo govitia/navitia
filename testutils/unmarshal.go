@@ -2,6 +2,7 @@ package testutils
 
 import (
 	"encoding/json"
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -34,7 +35,22 @@ func UnmarshalTest(t *testing.T, data *TestData, resultsType reflect.Type) {
 			//	If we expect an error (correct == false) but we don't get one, the test has failes
 			// 	In all other cases, the test is successful !
 			if err != nil && correct {
-				t.Errorf("expected no errors but got one: %v", err)
+				var msg string
+				switch concrete := err.(type) {
+				case *json.SyntaxError:
+					msg += fmt.Sprintf("syntax error: syntax error after %d bytes", concrete.Offset)
+				case *json.UnmarshalTypeError:
+					msg += fmt.Sprintf("type error: JSON value (%s) not appropriate for the type (%s) of the key (json field: \"%s\") at offset %d",
+						concrete.Value,
+						concrete.Type.Name(),
+						concrete.Field,
+						concrete.Offset,
+					)
+				}
+				if msg != "" {
+					msg += ": "
+				}
+				t.Errorf("expected no errors but got one: "+msg+"%v", msg, err)
 			} else if err == nil && !correct {
 				t.Errorf("expected an error but didn't get one !")
 			}
