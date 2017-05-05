@@ -48,6 +48,8 @@ func (sasr *ExploreResults) UnmarshalJSON(b []byte) error {
 		if err != nil {
 			return errors.Wrap(err, "error while unmarshalling links (paging info)")
 		}
+		// Remove "links" from the map
+		delete(first, "links")
 	} else {
 		return errors.New("No \"links\" field found in returned data")
 	}
@@ -85,20 +87,21 @@ func (sasr *ExploreResults) UnmarshalJSON(b []byte) error {
 
 		// If we have found something, let's break
 		if recv != nil {
+			// Assign the raw json value to second
 			second = first[k]
 			break
 		}
 	}
 
 	// If we have found nothing, return an error
-	if recv == nil {
+	if recv == nil || second == nil || len(second) == 0 {
 		return errors.New("error: no known key in response")
 	}
 
 	// Else, let's unmarshal
 	err = json.Unmarshal(second, &recv)
 	if err != nil {
-		return errors.Wrap(err, "error while unmarshalling")
+		return errors.Wrap(err, "error in second pass of json.Unmarshal")
 	}
 
 	// Now assign it to sasr.PTObjects
