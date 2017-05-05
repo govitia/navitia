@@ -75,6 +75,7 @@ type JourneyRequest struct {
 	MaxJourneys uint
 
 	// Count fixes the amount of journeys to be returned, overriding minimum & maximum amount
+	// Warning: If the count is too high, the remote server may timeout ! It is thus often better to set MinJourneys and/or MaxJourneys !
 	// Note: if Count=0 then it isn't taken into account
 	Count uint
 

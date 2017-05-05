@@ -30,10 +30,10 @@ func Test_Journeys_Online(t *testing.T) {
 	ctx := context.Background()
 
 	req := JourneyRequest{
-		Count: 1000, // We want the biggest count to cause the biggest stress
+		From:        types.Coordinates{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
+		To:          types.Coordinates{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
+		MinJourneys: 100,                                                              // We want the biggest count to cause the biggest stress
 	}
-	coords := types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
-	req.From = coords.ID()
 
 	res, err := testSession.Journeys(ctx, req)
 	if err != nil {
@@ -49,9 +49,9 @@ func Test_Journeys_Paging(t *testing.T) {
 	ctx := context.Background()
 
 	params := JourneyRequest{
-		From:  types.Coordinates{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
-		To:    types.Coordinates{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
-		Count: 1000,                                                             // We want the biggest count to cause the biggest stress
+		From:        types.Coordinates{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
+		To:          types.Coordinates{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
+		MinJourneys: 100,                                                              // We want the biggest count to cause the biggest stress
 	}
 
 	res, err := testSession.Journeys(ctx, params)
@@ -60,7 +60,8 @@ func Test_Journeys_Paging(t *testing.T) {
 	}
 
 	var i uint
-	for i = 0; res.Paging.Next != nil && i < 6; i++ {
+	for i = 0; res.Paging.Next != nil && i < 2; i++ {
+		t.Logf("paging step %d", i)
 		p := JourneyResults{}
 		err = res.Paging.Next(ctx, testSession, &p)
 		if err != nil {
@@ -68,7 +69,7 @@ func Test_Journeys_Paging(t *testing.T) {
 		}
 		res = &p
 	}
-	t.Logf("Paging finished with %d iterations", i)
+	t.Logf("Paging finished with %d iterations", i+1)
 }
 
 // Test_JourneysResults_Unmarshal tests unmarshalling for JourneyResults.
