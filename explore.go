@@ -24,7 +24,7 @@ type ExploreResults struct {
 	// 	-[]types.Company
 	// 	-[]types.VehicleJourney [NOT IMPLEMENTED YET]
 	// 	-[]types.Disruption
-	PTObjects interface{}
+	Objects interface{}
 
 	Paging Paging
 
@@ -102,7 +102,7 @@ func (sasr *ExploreResults) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now assign it to sasr.PTObjects
-	sasr.PTObjects = recv
+	sasr.Objects = recv
 
 	return nil
 }
