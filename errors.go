@@ -4,8 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-
-	"github.com/pkg/errors"
 )
 
 // RemoteErrorID is an ID for a remote error
@@ -31,7 +29,7 @@ const (
 //
 // Can also be used as a list of known error IDs
 var remoteErrorsDescriptions = map[RemoteErrorID]string{
-	RemoteErrDateOutOfBounds:       "When the given date is out of bounds of the production dates of the region",
+	RemoteErrDateOutOfBounds:       "The given date is out of bounds of the production dates of the region",
 	RemoteErrNoOrigin:              "Couldn’t find an origin for the journeys",
 	RemoteErrNoDestination:         "Couldn’t find an destination for the journeys",
 	RemoteErrNoOriginNoDestination: "Couldn’t find an origin nor a destination for the journeys",
@@ -75,7 +73,8 @@ func parseRemoteError(resp *http.Response) error {
 	dec := json.NewDecoder(resp.Body)
 	err := dec.Decode(&remoteErr)
 	if err != nil {
-		return errors.Wrap(err, "parseRemoteError: error while decoding JSON")
+		//return errors.Wrap(err, "parseRemoteError: error while decoding JSON")
+		_ = err
 	}
 
 	// Return
