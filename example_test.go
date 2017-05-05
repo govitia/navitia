@@ -13,25 +13,32 @@ var session *navitia.Session
 func ExampleSession_Places() {
 	// Create a request
 	req := navitia.PlacesRequest{
-		Query: "10 rue du caire, Paris",
+		// We only want addresses, omit if you want to allow everything
 		Types: []string{"address"},
-		Count: 1,
+
+		// We simply wish for six results.
+		Count: 6,
 	}
 
-	// Execute it
+	// Execute it, query for "rue du caire"
 	ctx := context.Background()
-	res, _ := session.Places(ctx, req)
+	res, _ := session.Places(ctx, "rue du caire", req)
 
 	// Create a variable to store it
-	var myPlace types.Container
+	var (
+		myPlace   types.Container
+		myAddress types.Address
+	)
 
 	// Check if there are enough results, and then assign the first element as your place
-	if len(res.Places) != 0 {
+	if len(res.Places) == 0 {
 		myPlace = res.Places[0]
+		obj, _ := myPlace.Place()
+		myAddress = obj.(types.Address)
 	}
 
 	// Print the name
-	fmt.Printf("Name: %s\n", myPlace.Name)
+	fmt.Printf("Name: %s, house number %d\n", myPlace.Name, myAddress.HouseNumber)
 }
 
 var (

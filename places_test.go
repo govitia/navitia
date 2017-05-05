@@ -15,8 +15,9 @@ func Test_Places(t *testing.T) {
 		t.Skip(skipNoKey)
 	}
 
-	params := PlacesRequest{
-		Query: "avenue",
+	query := "avenue"
+	opt := PlacesRequest{
+		Count: 1000, // We want the biggest count to cause the biggest stress
 	}
 
 	// Create the root context
@@ -24,18 +25,18 @@ func Test_Places(t *testing.T) {
 
 	// Run a simple search
 	t.Run("simple", func(t *testing.T) {
-		res, err := testSession.Places(ctx, params)
+		res, err := testSession.Places(ctx, query, opt)
 		if err != nil {
-			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
+			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, opt, res)
 		}
 	})
 
 	// Run a search with proximity
 	t.Run("proximity", func(t *testing.T) {
-		params.Around = types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
-		res, err := testSession.Places(ctx, params)
+		opt.Around = types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
+		res, err := testSession.Places(ctx, query, opt)
 		if err != nil {
-			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
+			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, opt, res)
 		}
 	})
 }
@@ -45,17 +46,18 @@ func Test_Scope_Places_Sort(t *testing.T) {
 		t.Skip(skipNoKey)
 	}
 
-	params := PlacesRequest{
-		Query: "avenue de la libération",
+	query := "avenue de la libération"
+	opt := PlacesRequest{
+		Count: 1000,
 	}
 
 	// Create the root context
 	ctx := context.Background()
 
 	// Run a simple search
-	res, err := testSession.Scope("fr-idf").Places(ctx, params)
+	res, err := testSession.Scope("fr-idf").Places(ctx, query, opt)
 	if err != nil {
-		t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
+		t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, opt, res)
 	}
 
 	// Check if sorted

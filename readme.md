@@ -34,16 +34,15 @@ session, err := navitia.New(APIKEY)
 ### Finding places
 
 ```golang
-// Create a request
-req := navitia.PlacesRequest{
-	Query: "10 rue du caire, Paris",
+// Create a request for a single place, don't do that in the real world
+opt := navitia.PlacesRequest{
 	Types: []string{"address"},
 	Count: 1,
 }
 
 // Execute it
 ctx := context.Background()
-res, _ := session.Places(ctx, req)
+res, _ := session.Places(ctx, "10 rue du caire", opt)
 
 // Create a variable to store it
 var myPlace types.Container
