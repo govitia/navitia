@@ -2,6 +2,7 @@ package navitia
 
 import (
 	"context"
+	"encoding/json"
 	"reflect"
 	"sort"
 	"testing"
@@ -74,4 +75,33 @@ func Test_Scope_Places_Sort(t *testing.T) {
 //	If we expect an error but we don't get one, the test fails
 func Test_PlacesResults_Unmarshal(t *testing.T) {
 	testutils.UnmarshalTest(t, testData["places"], reflect.TypeOf(PlacesResults{}))
+}
+
+// Benchmark_PlacesResults_Unmarshal benchmarks PlacesResults unmarshalling via subbenchmarks
+func Benchmark_PlacesResults_Unmarshal(b *testing.B) {
+	// Get the bench data
+	data := testData["places"].Bench
+	if len(data) == 0 {
+		b.Skip("No data to test")
+	}
+
+	// Run function generator, allowing parallel run
+	runGen := func(in []byte) func(*testing.B) {
+		return func(b *testing.B) {
+			for i := 0; i < b.N; i++ {
+				// Unmarshal a PlacesResults
+				var ptr = &PlacesResults{}
+				_ = json.Unmarshal(in, ptr)
+			}
+		}
+	}
+
+	// Loop over all corpus
+	for name, datum := range data {
+		// Get run function
+		runFunc := runGen(datum)
+
+		// Run it !
+		b.Run(name, runFunc)
+	}
 }
