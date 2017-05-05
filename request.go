@@ -42,6 +42,9 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	resp, err := s.client.Do(req)
 	res.sending()
 
+	// Defer the close
+	defer resp.Body.Close()
+
 	// Check the response
 	switch {
 	case err == context.Canceled:
@@ -51,9 +54,6 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	case resp.StatusCode != 200:
 		return parseRemoteError(resp)
 	}
-
-	// Defer the close
-	defer resp.Body.Close()
 
 	// Check for cancellation
 	select {
