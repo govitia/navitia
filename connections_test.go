@@ -145,7 +145,7 @@ var knownConnections = map[string]testutils.TestPair{
 	]
 }`),
 		Correct: &ConnectionsResults{
-			Connections: []Connection{
+			Connections: []types.Connection{
 				{
 					Display: types.Display{
 						Code: "4",

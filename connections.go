@@ -12,17 +12,9 @@ import (
 	"github.com/pkg/errors"
 )
 
-// A Connection is either a Departure or an Arrival
-type Connection struct {
-	Display   types.Display
-	StopPoint types.StopPoint
-	Route     types.Route
-	//StopDateTime
-}
-
 // ConnectionsResults holds the results of a departures or arrivals request.
 type ConnectionsResults struct {
-	Connections []Connection
+	Connections []types.Connection
 
 	Paging Paging `json:"links"`
 
@@ -38,8 +30,8 @@ func (cr *ConnectionsResults) UnmarshalJSON(b []byte) error {
 		Paging *Paging `json:"links"`
 
 		// Value to process
-		Departures *[]Connection `json:"departures"`
-		Arrivals   *[]Connection `json:"arrivals"`
+		Departures *[]types.Connection `json:"departures"`
+		Arrivals   *[]types.Connection `json:"arrivals"`
 	}{
 		Paging: &cr.Paging,
 	}
