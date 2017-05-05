@@ -26,6 +26,8 @@ type ExploreResults struct {
 	// 	-[]types.Disruption
 	PTObjects interface{}
 
+	Paging Paging
+
 	Logging `json:"-"`
 }
 
@@ -39,6 +41,17 @@ func (sasr *ExploreResults) UnmarshalJSON(b []byte) error {
 	if err != nil {
 		return errors.Wrap(err, "error in first-pass unmarshalling")
 	}
+
+	// Extract paging information and unmarshal it
+	if links, ok := first["links"]; ok {
+		err = json.Unmarshal(links, &sasr.Paging)
+		if err != nil {
+			return errors.Wrap(err, "error while unmarshalling links (paging info)")
+		}
+	} else {
+		return errors.New("No \"links\" field found in returned data")
+	}
+
 	// Create a value
 	var (
 		recv   interface{}
