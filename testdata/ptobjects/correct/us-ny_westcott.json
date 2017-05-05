@@ -1,1 +1,425 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":60,"stop_area":{"name":"Westcott St & Dell St","links":[],"coord":{"lat":"43.042053","lon":"-76.119426"},"label":"Westcott St & Dell St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP5841"},"name":"Westcott St & Dell St (Syracuse)","id":"stop_area:OYT:SA:CTP5841"},{"embedded_type":"stop_area","quality":60,"stop_area":{"name":"Westcott St & Hawthorne St","links":[],"coord":{"lat":"43.043978","lon":"-76.119534"},"label":"Westcott St & Hawthorne St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP5813"},"name":"Westcott St & Hawthorne St (Syracuse)","id":"stop_area:OYT:SA:CTP5813"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OYTCTP380"},{"type":"gtfs_stop_code","value":"EfaWesNE"},{"type":"source","value":"CTP380"}],"name":"E.Fayette St & Westcott St","links":[],"coord":{"lat":"43.048311","lon":"-76.11985900000001"},"label":"E.Fayette St & Westcott St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP380"},"name":"E.Fayette St & Westcott St (Syracuse)","id":"stop_area:OYT:SA:CTP380"},{"embedded_type":"stop_area","quality":50,"stop_area":{"name":"E.Genesee St & Westcott St","links":[],"coord":{"lat":"43.045572","lon":"-76.119877"},"label":"E.Genesee St & Westcott St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP1635"},"name":"E.Genesee St & Westcott St (Syracuse)","id":"stop_area:OYT:SA:CTP1635"},{"embedded_type":"stop_area","quality":50,"stop_area":{"name":"Euclid Ave & Westcott St","links":[],"coord":{"lat":"43.036825","lon":"-76.11905400000001"},"label":"Euclid Ave & Westcott St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP1714"},"name":"Euclid Ave & Westcott St (Syracuse)","id":"stop_area:OYT:SA:CTP1714"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OYTCTP10596"},{"type":"gtfs_stop_code","value":"MeaWesSW"},{"type":"source","value":"CTP10596"}],"name":"Meadowbrook Dr & Westcott St","links":[],"coord":{"lat":"43.026314","lon":"-76.118247"},"label":"Meadowbrook Dr & Westcott St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP10596"},"name":"Meadowbrook Dr & Westcott St (Syracuse)","id":"stop_area:OYT:SA:CTP10596"},{"embedded_type":"stop_area","quality":50,"stop_area":{"name":"Westcott St & E Genesee St","links":[],"coord":{"lat":"43.045518","lon":"-76.119679"},"label":"Westcott St & E Genesee St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP10201"},"name":"Westcott St & E Genesee St (Syracuse)","id":"stop_area:OYT:SA:CTP10201"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OYTCTP1713"},{"type":"gtfs_stop_code","value":"WesEucNW"},{"type":"source","value":"CTP1713"}],"name":"Westcott St & Euclid Ave","links":[],"coord":{"lat":"43.036878","lon":"-76.11897999999999"},"label":"Westcott St & Euclid Ave (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP1713"},"name":"Westcott St & Euclid Ave (Syracuse)","id":"stop_area:OYT:SA:CTP1713"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OYTCTP5968"},{"type":"gtfs_stop_code","value":"BrsWesNE"},{"type":"source","value":"CTP5968"}],"name":"Broad St & Westcott St","links":[],"coord":{"lat":"43.03045","lon":"-76.118313"},"label":"Broad St & Westcott St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP5968"},"name":"Broad St & Westcott St (Syracuse)","id":"stop_area:OYT:SA:CTP5968"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OYTCTP5967"},{"type":"gtfs_stop_code","value":"WesBrsSE"},{"type":"source","value":"CTP5967"}],"name":"Westcott St & Broad St","links":[],"coord":{"lat":"43.030226","lon":"-76.11833799999999"},"label":"Westcott St & Broad St (Syracuse)","administrative_regions":[{"insee":"","name":"Syracuse","level":8,"coord":{"lat":"43.040927","lon":"-76.14375800000001"},"label":"Syracuse","id":"admin:osm:174916","zip_code":""}],"timezone":"America\/New_York","id":"stop_area:OYT:SA:CTP5967"},"name":"Westcott St & Broad St (Syracuse)","id":"stop_area:OYT:SA:CTP5967"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-ny\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"us-ny","license":"OpenData","name":"USA - New York State"},{"url":"http:\/\/www.njtransit.com","id":"NJB","license":"Terms of Use","name":"NJB - New Jersey Transit bus"},{"url":"http:\/\/www.cdta.org","id":"OCD","license":"Terms of Use","name":"OCD - CDTA"},{"url":"http:\/\/www.centro.org","id":"OYT","license":"No Terms of Use","name":"OYT - Centro - central NY RTA"},{"url":"http:\/\/www.mta.info\/","id":"STI","license":"Terms of Use","name":"STI - Bus Staten Island"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "name": "Westcott St & Dell St",
+        "links": [],
+        "coord": {
+          "lat": "43.042053",
+          "lon": "-76.119426"
+        },
+        "label": "Westcott St & Dell St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP5841"
+      },
+      "name": "Westcott St & Dell St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP5841"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "name": "Westcott St & Hawthorne St",
+        "links": [],
+        "coord": {
+          "lat": "43.043978",
+          "lon": "-76.119534"
+        },
+        "label": "Westcott St & Hawthorne St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP5813"
+      },
+      "name": "Westcott St & Hawthorne St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP5813"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OYTCTP380"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "EfaWesNE"
+          },
+          {
+            "type": "source",
+            "value": "CTP380"
+          }
+        ],
+        "name": "E.Fayette St & Westcott St",
+        "links": [],
+        "coord": {
+          "lat": "43.048311",
+          "lon": "-76.11985900000001"
+        },
+        "label": "E.Fayette St & Westcott St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP380"
+      },
+      "name": "E.Fayette St & Westcott St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP380"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "name": "E.Genesee St & Westcott St",
+        "links": [],
+        "coord": {
+          "lat": "43.045572",
+          "lon": "-76.119877"
+        },
+        "label": "E.Genesee St & Westcott St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP1635"
+      },
+      "name": "E.Genesee St & Westcott St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP1635"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "name": "Euclid Ave & Westcott St",
+        "links": [],
+        "coord": {
+          "lat": "43.036825",
+          "lon": "-76.11905400000001"
+        },
+        "label": "Euclid Ave & Westcott St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP1714"
+      },
+      "name": "Euclid Ave & Westcott St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP1714"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OYTCTP10596"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "MeaWesSW"
+          },
+          {
+            "type": "source",
+            "value": "CTP10596"
+          }
+        ],
+        "name": "Meadowbrook Dr & Westcott St",
+        "links": [],
+        "coord": {
+          "lat": "43.026314",
+          "lon": "-76.118247"
+        },
+        "label": "Meadowbrook Dr & Westcott St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP10596"
+      },
+      "name": "Meadowbrook Dr & Westcott St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP10596"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "name": "Westcott St & E Genesee St",
+        "links": [],
+        "coord": {
+          "lat": "43.045518",
+          "lon": "-76.119679"
+        },
+        "label": "Westcott St & E Genesee St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP10201"
+      },
+      "name": "Westcott St & E Genesee St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP10201"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OYTCTP1713"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "WesEucNW"
+          },
+          {
+            "type": "source",
+            "value": "CTP1713"
+          }
+        ],
+        "name": "Westcott St & Euclid Ave",
+        "links": [],
+        "coord": {
+          "lat": "43.036878",
+          "lon": "-76.11897999999999"
+        },
+        "label": "Westcott St & Euclid Ave (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP1713"
+      },
+      "name": "Westcott St & Euclid Ave (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP1713"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OYTCTP5968"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "BrsWesNE"
+          },
+          {
+            "type": "source",
+            "value": "CTP5968"
+          }
+        ],
+        "name": "Broad St & Westcott St",
+        "links": [],
+        "coord": {
+          "lat": "43.03045",
+          "lon": "-76.118313"
+        },
+        "label": "Broad St & Westcott St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP5968"
+      },
+      "name": "Broad St & Westcott St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP5968"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OYTCTP5967"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "WesBrsSE"
+          },
+          {
+            "type": "source",
+            "value": "CTP5967"
+          }
+        ],
+        "name": "Westcott St & Broad St",
+        "links": [],
+        "coord": {
+          "lat": "43.030226",
+          "lon": "-76.11833799999999"
+        },
+        "label": "Westcott St & Broad St (Syracuse)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Syracuse",
+            "level": 8,
+            "coord": {
+              "lat": "43.040927",
+              "lon": "-76.14375800000001"
+            },
+            "label": "Syracuse",
+            "id": "admin:osm:174916",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/New_York",
+        "id": "stop_area:OYT:SA:CTP5967"
+      },
+      "name": "Westcott St & Broad St (Syracuse)",
+      "id": "stop_area:OYT:SA:CTP5967"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-ny/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "us-ny",
+      "license": "OpenData",
+      "name": "USA - New York State"
+    },
+    {
+      "url": "http://www.njtransit.com",
+      "id": "NJB",
+      "license": "Terms of Use",
+      "name": "NJB - New Jersey Transit bus"
+    },
+    {
+      "url": "http://www.cdta.org",
+      "id": "OCD",
+      "license": "Terms of Use",
+      "name": "OCD - CDTA"
+    },
+    {
+      "url": "http://www.centro.org",
+      "id": "OYT",
+      "license": "No Terms of Use",
+      "name": "OYT - Centro - central NY RTA"
+    },
+    {
+      "url": "http://www.mta.info/",
+      "id": "STI",
+      "license": "Terms of Use",
+      "name": "STI - Bus Staten Island"
+    }
+  ]
+}

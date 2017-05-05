@@ -1,1 +1,513 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP94009"},{"type":"gtfs_stop_code","value":"8400261-1"},{"type":"source","value":"CTP94009"}],"name":"Koordi","links":[],"coord":{"lat":"58.328835","lon":"25.70726"},"label":"Koordi (Viljandi vald)","administrative_regions":[{"insee":"","name":"Viljandi vald","level":8,"coord":{"lat":"58.366047","lon":"25.587748"},"label":"Viljandi vald","id":"admin:osm:354299","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP94009"},"name":"Koordi (Viljandi vald)","id":"stop_area:OEE:SA:CTP94009"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP132705"},{"type":"gtfs_stop_code","value":"8490021-1"},{"type":"source","value":"CTP132705"}],"name":"Rehtla","links":[],"coord":{"lat":"58.38908","lon":"25.542569"},"label":"Rehtla (Viljandi vald)","administrative_regions":[{"insee":"","name":"Viljandi vald","level":8,"coord":{"lat":"58.366047","lon":"25.587748"},"label":"Viljandi vald","id":"admin:osm:354299","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP132705"},"name":"Rehtla (Viljandi vald)","id":"stop_area:OEE:SA:CTP132705"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP22450"},{"type":"gtfs_stop_code","value":"8400900-1"},{"type":"source","value":"CTP22450"}],"name":"S\u00fcteoja","links":[],"coord":{"lat":"58.371364","lon":"25.379087"},"label":"S\u00fcteoja (Viljandi vald)","administrative_regions":[{"insee":"","name":"Viljandi vald","level":8,"coord":{"lat":"58.366047","lon":"25.587748"},"label":"Viljandi vald","id":"admin:osm:354299","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP22450"},"name":"S\u00fcteoja (Viljandi vald)","id":"stop_area:OEE:SA:CTP22450"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP25389"},{"type":"gtfs_stop_code","value":"8400919-1"},{"type":"source","value":"CTP25389"}],"name":"Tamme","links":[],"coord":{"lat":"58.359913","lon":"25.403068"},"label":"Tamme (Viljandi vald)","administrative_regions":[{"insee":"","name":"Viljandi vald","level":8,"coord":{"lat":"58.366047","lon":"25.587748"},"label":"Viljandi vald","id":"admin:osm:354299","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP25389"},"name":"Tamme (Viljandi vald)","id":"stop_area:OEE:SA:CTP25389"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP21151"},{"type":"gtfs_stop_code","value":"8400421-1"},{"type":"source","value":"CTP21151"}],"name":"Loodi kauplus","links":[],"coord":{"lat":"58.285717","lon":"25.583737"},"label":"Loodi kauplus (Viljandi vald)","administrative_regions":[{"insee":"","name":"Viljandi vald","level":8,"coord":{"lat":"58.366047","lon":"25.587748"},"label":"Viljandi vald","id":"admin:osm:354299","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP21151"},"name":"Loodi kauplus (Viljandi vald)","id":"stop_area:OEE:SA:CTP21151"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP91919"},{"type":"gtfs_stop_code","value":"8401051-1"},{"type":"source","value":"CTP91919"}],"name":"Vana-V\u00f5idu tee","links":[],"coord":{"lat":"58.383526","lon":"25.672374"},"label":"Vana-V\u00f5idu tee (Viljandi vald)","administrative_regions":[{"insee":"","name":"Viljandi vald","level":8,"coord":{"lat":"58.366047","lon":"25.587748"},"label":"Viljandi vald","id":"admin:osm:354299","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP91919"},"name":"Vana-V\u00f5idu tee (Viljandi vald)","id":"stop_area:OEE:SA:CTP91919"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP20781"},{"type":"gtfs_stop_code","value":"7000185-1"},{"type":"source","value":"CTP20781"}],"name":"Kodila tee","links":[],"coord":{"lat":"59.024531","lon":"24.682651"},"label":"Kodila tee (Rapla vald) (M\u00e4rjamaa vald)","administrative_regions":[{"insee":"","name":"Rapla vald","level":8,"coord":{"lat":"58.996082","lon":"24.799585"},"label":"Rapla vald","id":"admin:osm:351883","zip_code":""},{"insee":"","name":"M\u00e4rjamaa vald","level":8,"coord":{"lat":"58.904152","lon":"24.430487"},"label":"M\u00e4rjamaa vald","id":"admin:osm:352332","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP20781"},"name":"Kodila tee (Rapla vald) (M\u00e4rjamaa vald)","id":"stop_area:OEE:SA:CTP20781"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP1001"},{"type":"gtfs_stop_code","value":"05701-1"},{"type":"source","value":"CTP1001"}],"name":"Valdeku","links":[],"coord":{"lat":"59.380876","lon":"24.70038"},"label":"Valdeku (Tallinna linn)","administrative_regions":[{"insee":"","name":"Tallinna linn","level":8,"coord":{"lat":"59.437214","lon":"24.745367"},"label":"Tallinna linn","id":"admin:osm:350902","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP1001"},"name":"Valdeku (Tallinna linn)","id":"stop_area:OEE:SA:CTP1001"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP1489"},{"type":"gtfs_stop_code","value":"16504-1"},{"type":"source","value":"CTP1489"}],"name":"Iru","links":[],"coord":{"lat":"59.460194","lon":"24.904722"},"label":"Iru (Tallinna linn) (J\u00f5el\u00e4htme vald)","administrative_regions":[{"insee":"","name":"Tallinna linn","level":8,"coord":{"lat":"59.437214","lon":"24.745367"},"label":"Tallinna linn","id":"admin:osm:350902","zip_code":""},{"insee":"","name":"J\u00f5el\u00e4htme vald","level":8,"coord":{"lat":"59.440685","lon":"25.144594"},"label":"J\u00f5el\u00e4htme vald","id":"admin:osm:350208","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP1489"},"name":"Iru (Tallinna linn) (J\u00f5el\u00e4htme vald)","id":"stop_area:OEE:SA:CTP1489"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OEECTP129018"},{"type":"gtfs_stop_code","value":"13602-1"},{"type":"source","value":"CTP129018"}],"name":"Kanali tee","links":[],"coord":{"lat":"59.40821","lon":"24.80799"},"label":"Kanali tee (Tallinna linn) (Rae vald)","administrative_regions":[{"insee":"","name":"Tallinna linn","level":8,"coord":{"lat":"59.437214","lon":"24.745367"},"label":"Tallinna linn","id":"admin:osm:350902","zip_code":""},{"insee":"","name":"Rae vald","level":8,"coord":{"lat":"59.355839","lon":"24.902359"},"label":"Rae vald","id":"admin:osm:352240","zip_code":""}],"timezone":"Europe\/Tallinn","id":"stop_area:OEE:SA:CTP129018"},"name":"Kanali tee (Tallinna linn) (Rae vald)","id":"stop_area:OEE:SA:CTP129018"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/ee\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"ee","license":"OpenData","name":"Estonia"},{"url":"http:\/\/www.mnt.ee","id":"OEE","license":"Terms of Use","name":"OEE - Estonia"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP94009"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "8400261-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP94009"
+          }
+        ],
+        "name": "Koordi",
+        "links": [],
+        "coord": {
+          "lat": "58.328835",
+          "lon": "25.70726"
+        },
+        "label": "Koordi (Viljandi vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Viljandi vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.366047",
+              "lon": "25.587748"
+            },
+            "label": "Viljandi vald",
+            "id": "admin:osm:354299",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP94009"
+      },
+      "name": "Koordi (Viljandi vald)",
+      "id": "stop_area:OEE:SA:CTP94009"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP132705"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "8490021-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP132705"
+          }
+        ],
+        "name": "Rehtla",
+        "links": [],
+        "coord": {
+          "lat": "58.38908",
+          "lon": "25.542569"
+        },
+        "label": "Rehtla (Viljandi vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Viljandi vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.366047",
+              "lon": "25.587748"
+            },
+            "label": "Viljandi vald",
+            "id": "admin:osm:354299",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP132705"
+      },
+      "name": "Rehtla (Viljandi vald)",
+      "id": "stop_area:OEE:SA:CTP132705"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP22450"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "8400900-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP22450"
+          }
+        ],
+        "name": "Süteoja",
+        "links": [],
+        "coord": {
+          "lat": "58.371364",
+          "lon": "25.379087"
+        },
+        "label": "Süteoja (Viljandi vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Viljandi vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.366047",
+              "lon": "25.587748"
+            },
+            "label": "Viljandi vald",
+            "id": "admin:osm:354299",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP22450"
+      },
+      "name": "Süteoja (Viljandi vald)",
+      "id": "stop_area:OEE:SA:CTP22450"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP25389"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "8400919-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP25389"
+          }
+        ],
+        "name": "Tamme",
+        "links": [],
+        "coord": {
+          "lat": "58.359913",
+          "lon": "25.403068"
+        },
+        "label": "Tamme (Viljandi vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Viljandi vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.366047",
+              "lon": "25.587748"
+            },
+            "label": "Viljandi vald",
+            "id": "admin:osm:354299",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP25389"
+      },
+      "name": "Tamme (Viljandi vald)",
+      "id": "stop_area:OEE:SA:CTP25389"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP21151"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "8400421-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP21151"
+          }
+        ],
+        "name": "Loodi kauplus",
+        "links": [],
+        "coord": {
+          "lat": "58.285717",
+          "lon": "25.583737"
+        },
+        "label": "Loodi kauplus (Viljandi vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Viljandi vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.366047",
+              "lon": "25.587748"
+            },
+            "label": "Viljandi vald",
+            "id": "admin:osm:354299",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP21151"
+      },
+      "name": "Loodi kauplus (Viljandi vald)",
+      "id": "stop_area:OEE:SA:CTP21151"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP91919"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "8401051-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP91919"
+          }
+        ],
+        "name": "Vana-Võidu tee",
+        "links": [],
+        "coord": {
+          "lat": "58.383526",
+          "lon": "25.672374"
+        },
+        "label": "Vana-Võidu tee (Viljandi vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Viljandi vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.366047",
+              "lon": "25.587748"
+            },
+            "label": "Viljandi vald",
+            "id": "admin:osm:354299",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP91919"
+      },
+      "name": "Vana-Võidu tee (Viljandi vald)",
+      "id": "stop_area:OEE:SA:CTP91919"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP20781"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "7000185-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP20781"
+          }
+        ],
+        "name": "Kodila tee",
+        "links": [],
+        "coord": {
+          "lat": "59.024531",
+          "lon": "24.682651"
+        },
+        "label": "Kodila tee (Rapla vald) (Märjamaa vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Rapla vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.996082",
+              "lon": "24.799585"
+            },
+            "label": "Rapla vald",
+            "id": "admin:osm:351883",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Märjamaa vald",
+            "level": 8,
+            "coord": {
+              "lat": "58.904152",
+              "lon": "24.430487"
+            },
+            "label": "Märjamaa vald",
+            "id": "admin:osm:352332",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP20781"
+      },
+      "name": "Kodila tee (Rapla vald) (Märjamaa vald)",
+      "id": "stop_area:OEE:SA:CTP20781"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP1001"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "05701-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP1001"
+          }
+        ],
+        "name": "Valdeku",
+        "links": [],
+        "coord": {
+          "lat": "59.380876",
+          "lon": "24.70038"
+        },
+        "label": "Valdeku (Tallinna linn)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Tallinna linn",
+            "level": 8,
+            "coord": {
+              "lat": "59.437214",
+              "lon": "24.745367"
+            },
+            "label": "Tallinna linn",
+            "id": "admin:osm:350902",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP1001"
+      },
+      "name": "Valdeku (Tallinna linn)",
+      "id": "stop_area:OEE:SA:CTP1001"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP1489"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "16504-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP1489"
+          }
+        ],
+        "name": "Iru",
+        "links": [],
+        "coord": {
+          "lat": "59.460194",
+          "lon": "24.904722"
+        },
+        "label": "Iru (Tallinna linn) (Jõelähtme vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Tallinna linn",
+            "level": 8,
+            "coord": {
+              "lat": "59.437214",
+              "lon": "24.745367"
+            },
+            "label": "Tallinna linn",
+            "id": "admin:osm:350902",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Jõelähtme vald",
+            "level": 8,
+            "coord": {
+              "lat": "59.440685",
+              "lon": "25.144594"
+            },
+            "label": "Jõelähtme vald",
+            "id": "admin:osm:350208",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP1489"
+      },
+      "name": "Iru (Tallinna linn) (Jõelähtme vald)",
+      "id": "stop_area:OEE:SA:CTP1489"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEECTP129018"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "13602-1"
+          },
+          {
+            "type": "source",
+            "value": "CTP129018"
+          }
+        ],
+        "name": "Kanali tee",
+        "links": [],
+        "coord": {
+          "lat": "59.40821",
+          "lon": "24.80799"
+        },
+        "label": "Kanali tee (Tallinna linn) (Rae vald)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Tallinna linn",
+            "level": 8,
+            "coord": {
+              "lat": "59.437214",
+              "lon": "24.745367"
+            },
+            "label": "Tallinna linn",
+            "id": "admin:osm:350902",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Rae vald",
+            "level": 8,
+            "coord": {
+              "lat": "59.355839",
+              "lon": "24.902359"
+            },
+            "label": "Rae vald",
+            "id": "admin:osm:352240",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Tallinn",
+        "id": "stop_area:OEE:SA:CTP129018"
+      },
+      "name": "Kanali tee (Tallinna linn) (Rae vald)",
+      "id": "stop_area:OEE:SA:CTP129018"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/ee/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "ee",
+      "license": "OpenData",
+      "name": "Estonia"
+    },
+    {
+      "url": "http://www.mnt.ee",
+      "id": "OEE",
+      "license": "Terms of Use",
+      "name": "OEE - Estonia"
+    }
+  ]
+}

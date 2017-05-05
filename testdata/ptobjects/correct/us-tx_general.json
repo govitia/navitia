@@ -1,1 +1,418 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OCMCTP2233"},{"type":"gtfs_stop_code","value":"2233"},{"type":"source","value":"CTP2233"}],"name":"5500 Oltorf (Attorney General)","links":[],"coord":{"lat":"30.219068","lon":"-97.718317"},"label":"5500 Oltorf (Attorney General) (Austin)","administrative_regions":[{"insee":"","name":"Austin","level":8,"coord":{"lat":"30.271128","lon":"-97.74369799999999"},"label":"Austin","id":"admin:osm:113314","zip_code":""}],"timezone":"America\/Chicago","id":"stop_area:OCM:SA:CTP2233"},"name":"5500 Oltorf (Attorney General) (Austin)","id":"stop_area:OCM:SA:CTP2233"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OFWCTP3426"},{"type":"gtfs_stop_code","value":"3426"},{"type":"source","value":"CTP3426"}],"name":"N Riverside & General Worth","links":[],"coord":{"lat":"32.906579","lon":"-97.30709299999999"},"label":"N Riverside & General Worth","timezone":"America\/Chicago","id":"stop_area:OFW:SA:CTP3426"},"name":"N Riverside & General Worth","id":"stop_area:OFW:SA:CTP3426"},{"embedded_type":"line","line":{"code":"524","name":"GENERAL McMULLEN Frequent","links":[],"physical_modes":[{"name":"Bus","id":"physical_mode:Bus"}],"opening_time":"051000","geojson":{"type":"MultiLineString","coordinates":[]},"text_color":"000000","color":"E13C40","codes":[{"type":"external_code","value":"OSN524_merged_3266357"},{"type":"source","value":"524_merged_3266357"}],"closing_time":"222500","routes":[{"direction":{"embedded_type":"stop_area","quality":0,"stop_area":{"codes":[{"type":"external_code","value":"OSNCTP23953"},{"type":"gtfs_stop_code","value":"23953"},{"type":"source","value":"CTP23953"}],"name":"PALO ALTO COLLEGE","links":[],"coord":{"lat":"29.324556","lon":"-98.544095"},"label":"PALO ALTO COLLEGE (San Antonio)","timezone":"America\/Chicago","id":"stop_area:OSN:SA:CTP23953"},"name":"PALO ALTO COLLEGE (San Antonio)","id":"stop_area:OSN:SA:CTP23953"},"codes":[{"type":"external_code","value":"OSN524_merged_3266261"},{"type":"source","value":"524_merged_3266261"}],"name":"CROSSROADS PARK\/RIDE TERMINAL - PALO ALTO COLLEGE","links":[],"is_frequence":"False","geojson":{"type":"MultiLineString","coordinates":[]},"direction_type":"","id":"route:OSN:524_merged_3266261"},{"direction":{"embedded_type":"stop_area","quality":0,"stop_area":{"codes":[{"type":"external_code","value":"OSNCTP32266"},{"type":"gtfs_stop_code","value":"32266"},{"type":"source","value":"CTP32266"}],"name":"CROSSROADS PARK\/RIDE TERMINAL","links":[],"coord":{"lat":"29.493963","lon":"-98.548157"},"label":"CROSSROADS PARK\/RIDE TERMINAL (Balcones Heights)","timezone":"America\/Chicago","id":"stop_area:OSN:SA:CTP32266"},"name":"CROSSROADS PARK\/RIDE TERMINAL (Balcones Heights)","id":"stop_area:OSN:SA:CTP32266"},"codes":[{"type":"external_code","value":"OSN524_merged_3266261_R"},{"type":"source","value":"524_merged_3266261"}],"name":"PALO ALTO COLLEGE - CROSSROADS PARK\/RIDE TERMINAL","links":[],"is_frequence":"False","geojson":{"type":"MultiLineString","coordinates":[]},"direction_type":"","id":"route:OSN:524_merged_3266261_R"},{"direction":{"embedded_type":"stop_area","quality":0,"stop_area":{"codes":[{"type":"external_code","value":"OSNCTP23953"},{"type":"gtfs_stop_code","value":"23953"},{"type":"source","value":"CTP23953"}],"name":"PALO ALTO COLLEGE","links":[],"coord":{"lat":"29.324556","lon":"-98.544095"},"label":"PALO ALTO COLLEGE (San Antonio)","timezone":"America\/Chicago","id":"stop_area:OSN:SA:CTP23953"},"name":"PALO ALTO COLLEGE (San Antonio)","id":"stop_area:OSN:SA:CTP23953"},"codes":[{"type":"external_code","value":"OSN524_merged_3266357"},{"type":"source","value":"524_merged_3266357"}],"name":"CROSSROADS PARK\/RIDE TERMINAL - PALO ALTO COLLEGE","links":[],"is_frequence":"False","geojson":{"type":"MultiLineString","coordinates":[]},"direction_type":"","id":"route:OSN:524_merged_3266357"},{"direction":{"embedded_type":"stop_area","quality":0,"stop_area":{"codes":[{"type":"external_code","value":"OSNCTP32266"},{"type":"gtfs_stop_code","value":"32266"},{"type":"source","value":"CTP32266"}],"name":"CROSSROADS PARK\/RIDE TERMINAL","links":[],"coord":{"lat":"29.493963","lon":"-98.548157"},"label":"CROSSROADS PARK\/RIDE TERMINAL (Balcones Heights)","timezone":"America\/Chicago","id":"stop_area:OSN:SA:CTP32266"},"name":"CROSSROADS PARK\/RIDE TERMINAL (Balcones Heights)","id":"stop_area:OSN:SA:CTP32266"},"codes":[{"type":"external_code","value":"OSN524_merged_3266357_R"},{"type":"source","value":"524_merged_3266357"}],"name":"PALO ALTO COLLEGE - CROSSROADS PARK\/RIDE TERMINAL","links":[],"is_frequence":"False","geojson":{"type":"MultiLineString","coordinates":[]},"direction_type":"","id":"route:OSN:524_merged_3266357_R"}],"commercial_mode":{"name":"Bus","id":"commercial_mode:bus"},"id":"line:OSN:524_merged_3266357","network":{"codes":[{"type":"external_code","value":"OSN1"},{"type":"external_code","value":"sanantonio"},{"type":"source","value":"1"},{"type":"source","value":"sanantonio"}],"name":"VIA Metropolitan Transit - San Antonio","links":[],"id":"network:sanantonio"}},"quality":0,"id":"line:OSN:524_merged_3266357","name":"VIA Metropolitan Transit - San Antonio Bus 524 (GENERAL McMULLEN Frequent)"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-tx\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-tx\/physical_modes\/{physical_modes.id}","type":"physical_modes","rel":"physical_modes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-tx\/commercial_modes\/{commercial_mode.id}","type":"commercial_mode","rel":"commercial_modes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-tx\/networks\/{network.id}","type":"network","rel":"networks","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-tx\/routes\/{routes.id}","type":"routes","rel":"routes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-tx\/lines\/{line.id}","type":"line","rel":"lines","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"us-tx","license":"OpenData","name":"USA - Texas"},{"url":"https:\/\/data.texas.gov\/Capital-Metro\/Capital-Metro-Google-Transit\/r4v4-vz24","id":"OCM","license":"unknow","name":"OCM - Austin Capital Metro"},{"url":"http:\/\/www.the-t.com\/TransitDataGTFS.aspx","id":"OFW","license":"unknow","name":"OFW - Fort Worth Transportation Authority"},{"url":"http:\/\/www.viainfo.net\/Opportunities\/DevLicense.aspx","id":"OSN","license":"specific","name":"OSN - San Antonio VIA Metropolitan Transit"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OCMCTP2233"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2233"
+          },
+          {
+            "type": "source",
+            "value": "CTP2233"
+          }
+        ],
+        "name": "5500 Oltorf (Attorney General)",
+        "links": [],
+        "coord": {
+          "lat": "30.219068",
+          "lon": "-97.718317"
+        },
+        "label": "5500 Oltorf (Attorney General) (Austin)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Austin",
+            "level": 8,
+            "coord": {
+              "lat": "30.271128",
+              "lon": "-97.74369799999999"
+            },
+            "label": "Austin",
+            "id": "admin:osm:113314",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Chicago",
+        "id": "stop_area:OCM:SA:CTP2233"
+      },
+      "name": "5500 Oltorf (Attorney General) (Austin)",
+      "id": "stop_area:OCM:SA:CTP2233"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OFWCTP3426"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3426"
+          },
+          {
+            "type": "source",
+            "value": "CTP3426"
+          }
+        ],
+        "name": "N Riverside & General Worth",
+        "links": [],
+        "coord": {
+          "lat": "32.906579",
+          "lon": "-97.30709299999999"
+        },
+        "label": "N Riverside & General Worth",
+        "timezone": "America/Chicago",
+        "id": "stop_area:OFW:SA:CTP3426"
+      },
+      "name": "N Riverside & General Worth",
+      "id": "stop_area:OFW:SA:CTP3426"
+    },
+    {
+      "embedded_type": "line",
+      "line": {
+        "code": "524",
+        "name": "GENERAL McMULLEN Frequent",
+        "links": [],
+        "physical_modes": [
+          {
+            "name": "Bus",
+            "id": "physical_mode:Bus"
+          }
+        ],
+        "opening_time": "051000",
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "text_color": "000000",
+        "color": "E13C40",
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OSN524_merged_3266357"
+          },
+          {
+            "type": "source",
+            "value": "524_merged_3266357"
+          }
+        ],
+        "closing_time": "222500",
+        "routes": [
+          {
+            "direction": {
+              "embedded_type": "stop_area",
+              "quality": 0,
+              "stop_area": {
+                "codes": [
+                  {
+                    "type": "external_code",
+                    "value": "OSNCTP23953"
+                  },
+                  {
+                    "type": "gtfs_stop_code",
+                    "value": "23953"
+                  },
+                  {
+                    "type": "source",
+                    "value": "CTP23953"
+                  }
+                ],
+                "name": "PALO ALTO COLLEGE",
+                "links": [],
+                "coord": {
+                  "lat": "29.324556",
+                  "lon": "-98.544095"
+                },
+                "label": "PALO ALTO COLLEGE (San Antonio)",
+                "timezone": "America/Chicago",
+                "id": "stop_area:OSN:SA:CTP23953"
+              },
+              "name": "PALO ALTO COLLEGE (San Antonio)",
+              "id": "stop_area:OSN:SA:CTP23953"
+            },
+            "codes": [
+              {
+                "type": "external_code",
+                "value": "OSN524_merged_3266261"
+              },
+              {
+                "type": "source",
+                "value": "524_merged_3266261"
+              }
+            ],
+            "name": "CROSSROADS PARK/RIDE TERMINAL - PALO ALTO COLLEGE",
+            "links": [],
+            "is_frequence": "False",
+            "geojson": {
+              "type": "MultiLineString",
+              "coordinates": []
+            },
+            "direction_type": "",
+            "id": "route:OSN:524_merged_3266261"
+          },
+          {
+            "direction": {
+              "embedded_type": "stop_area",
+              "quality": 0,
+              "stop_area": {
+                "codes": [
+                  {
+                    "type": "external_code",
+                    "value": "OSNCTP32266"
+                  },
+                  {
+                    "type": "gtfs_stop_code",
+                    "value": "32266"
+                  },
+                  {
+                    "type": "source",
+                    "value": "CTP32266"
+                  }
+                ],
+                "name": "CROSSROADS PARK/RIDE TERMINAL",
+                "links": [],
+                "coord": {
+                  "lat": "29.493963",
+                  "lon": "-98.548157"
+                },
+                "label": "CROSSROADS PARK/RIDE TERMINAL (Balcones Heights)",
+                "timezone": "America/Chicago",
+                "id": "stop_area:OSN:SA:CTP32266"
+              },
+              "name": "CROSSROADS PARK/RIDE TERMINAL (Balcones Heights)",
+              "id": "stop_area:OSN:SA:CTP32266"
+            },
+            "codes": [
+              {
+                "type": "external_code",
+                "value": "OSN524_merged_3266261_R"
+              },
+              {
+                "type": "source",
+                "value": "524_merged_3266261"
+              }
+            ],
+            "name": "PALO ALTO COLLEGE - CROSSROADS PARK/RIDE TERMINAL",
+            "links": [],
+            "is_frequence": "False",
+            "geojson": {
+              "type": "MultiLineString",
+              "coordinates": []
+            },
+            "direction_type": "",
+            "id": "route:OSN:524_merged_3266261_R"
+          },
+          {
+            "direction": {
+              "embedded_type": "stop_area",
+              "quality": 0,
+              "stop_area": {
+                "codes": [
+                  {
+                    "type": "external_code",
+                    "value": "OSNCTP23953"
+                  },
+                  {
+                    "type": "gtfs_stop_code",
+                    "value": "23953"
+                  },
+                  {
+                    "type": "source",
+                    "value": "CTP23953"
+                  }
+                ],
+                "name": "PALO ALTO COLLEGE",
+                "links": [],
+                "coord": {
+                  "lat": "29.324556",
+                  "lon": "-98.544095"
+                },
+                "label": "PALO ALTO COLLEGE (San Antonio)",
+                "timezone": "America/Chicago",
+                "id": "stop_area:OSN:SA:CTP23953"
+              },
+              "name": "PALO ALTO COLLEGE (San Antonio)",
+              "id": "stop_area:OSN:SA:CTP23953"
+            },
+            "codes": [
+              {
+                "type": "external_code",
+                "value": "OSN524_merged_3266357"
+              },
+              {
+                "type": "source",
+                "value": "524_merged_3266357"
+              }
+            ],
+            "name": "CROSSROADS PARK/RIDE TERMINAL - PALO ALTO COLLEGE",
+            "links": [],
+            "is_frequence": "False",
+            "geojson": {
+              "type": "MultiLineString",
+              "coordinates": []
+            },
+            "direction_type": "",
+            "id": "route:OSN:524_merged_3266357"
+          },
+          {
+            "direction": {
+              "embedded_type": "stop_area",
+              "quality": 0,
+              "stop_area": {
+                "codes": [
+                  {
+                    "type": "external_code",
+                    "value": "OSNCTP32266"
+                  },
+                  {
+                    "type": "gtfs_stop_code",
+                    "value": "32266"
+                  },
+                  {
+                    "type": "source",
+                    "value": "CTP32266"
+                  }
+                ],
+                "name": "CROSSROADS PARK/RIDE TERMINAL",
+                "links": [],
+                "coord": {
+                  "lat": "29.493963",
+                  "lon": "-98.548157"
+                },
+                "label": "CROSSROADS PARK/RIDE TERMINAL (Balcones Heights)",
+                "timezone": "America/Chicago",
+                "id": "stop_area:OSN:SA:CTP32266"
+              },
+              "name": "CROSSROADS PARK/RIDE TERMINAL (Balcones Heights)",
+              "id": "stop_area:OSN:SA:CTP32266"
+            },
+            "codes": [
+              {
+                "type": "external_code",
+                "value": "OSN524_merged_3266357_R"
+              },
+              {
+                "type": "source",
+                "value": "524_merged_3266357"
+              }
+            ],
+            "name": "PALO ALTO COLLEGE - CROSSROADS PARK/RIDE TERMINAL",
+            "links": [],
+            "is_frequence": "False",
+            "geojson": {
+              "type": "MultiLineString",
+              "coordinates": []
+            },
+            "direction_type": "",
+            "id": "route:OSN:524_merged_3266357_R"
+          }
+        ],
+        "commercial_mode": {
+          "name": "Bus",
+          "id": "commercial_mode:bus"
+        },
+        "id": "line:OSN:524_merged_3266357",
+        "network": {
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OSN1"
+            },
+            {
+              "type": "external_code",
+              "value": "sanantonio"
+            },
+            {
+              "type": "source",
+              "value": "1"
+            },
+            {
+              "type": "source",
+              "value": "sanantonio"
+            }
+          ],
+          "name": "VIA Metropolitan Transit - San Antonio",
+          "links": [],
+          "id": "network:sanantonio"
+        }
+      },
+      "quality": 0,
+      "id": "line:OSN:524_merged_3266357",
+      "name": "VIA Metropolitan Transit - San Antonio Bus 524 (GENERAL McMULLEN Frequent)"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-tx/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-tx/physical_modes/{physical_modes.id}",
+      "type": "physical_modes",
+      "rel": "physical_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-tx/commercial_modes/{commercial_mode.id}",
+      "type": "commercial_mode",
+      "rel": "commercial_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-tx/networks/{network.id}",
+      "type": "network",
+      "rel": "networks",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-tx/routes/{routes.id}",
+      "type": "routes",
+      "rel": "routes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-tx/lines/{line.id}",
+      "type": "line",
+      "rel": "lines",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "us-tx",
+      "license": "OpenData",
+      "name": "USA - Texas"
+    },
+    {
+      "url": "https://data.texas.gov/Capital-Metro/Capital-Metro-Google-Transit/r4v4-vz24",
+      "id": "OCM",
+      "license": "unknow",
+      "name": "OCM - Austin Capital Metro"
+    },
+    {
+      "url": "http://www.the-t.com/TransitDataGTFS.aspx",
+      "id": "OFW",
+      "license": "unknow",
+      "name": "OFW - Fort Worth Transportation Authority"
+    },
+    {
+      "url": "http://www.viainfo.net/Opportunities/DevLicense.aspx",
+      "id": "OSN",
+      "license": "specific",
+      "name": "OSN - San Antonio VIA Metropolitan Transit"
+    }
+  ]
+}

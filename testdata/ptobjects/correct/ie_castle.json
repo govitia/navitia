@@ -1,1 +1,655 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"OEACTP8510B556211"},{"type":"external_code","value":"OSGCTP8510B556211"},{"type":"source","value":"CTP8510B556211"}],"name":"Castlebaldwin Supermacs","links":[],"coord":{"lat":"54.080146","lon":"-8.377105999999999"},"label":"Castlebaldwin Supermacs (Municipal District of Ballymote \u2013 Tubbercurry)","administrative_regions":[{"insee":"","name":"Municipal District of Ballymote \u2013 Tubbercurry","level":8,"coord":{"lat":"54.11376","lon":"-8.668691000000001"},"label":"Municipal District of Ballymote \u2013 Tubbercurry","id":"admin:osm:5504279","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OSG:SA:CTP8510B556211"},"name":"Castlebaldwin Supermacs (Municipal District of Ballymote \u2013 Tubbercurry)","id":"stop_area:OSG:SA:CTP8510B556211"},{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"OBHCTP8260B136421"},{"type":"external_code","value":"OEACTP8260B136421"},{"type":"external_code","value":"OSKCTP826000030"},{"type":"source","value":"CTP826000030"},{"type":"source","value":"CTP8260B136421"}],"name":"The Castle Inn, Leinster Street","links":[],"coord":{"lat":"52.992214","lon":"-6.984185"},"label":"The Castle Inn, Leinster Street (Athy Municipal District)","administrative_regions":[{"insee":"","name":"Athy Municipal District","level":8,"coord":{"lat":"53.013755","lon":"-6.899768"},"label":"Athy Municipal District","id":"admin:osm:5857133","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OSK:SA:CTP826000030"},"name":"The Castle Inn, Leinster Street (Athy Municipal District)","id":"stop_area:OSK:SA:CTP826000030"},{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"OBHCTP8260PB001005"},{"type":"external_code","value":"OEACTP8260PB001005"},{"type":"external_code","value":"OSGCTP8260B1355802"},{"type":"external_code","value":"OSKCTP8260PB001005"},{"type":"source","value":"CTP8260B1355802"},{"type":"source","value":"CTP8260PB001005"}],"name":"The Castle Inn, Leinster Street","links":[],"coord":{"lat":"52.991461","lon":"-6.987569"},"label":"The Castle Inn, Leinster Street (Athy Municipal District)","administrative_regions":[{"insee":"","name":"Athy Municipal District","level":8,"coord":{"lat":"53.013755","lon":"-6.899768"},"label":"Athy Municipal District","id":"admin:osm:5857133","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OSG:SA:CTP8260B1355802"},"name":"The Castle Inn, Leinster Street (Athy Municipal District)","id":"stop_area:OSG:SA:CTP8260B1355802"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OBHCTP8280B2560501"},{"type":"external_code","value":"OBHCTP8280B339911"},{"type":"external_code","value":"OEACTP8280B2560501"},{"type":"external_code","value":"OEACTP8280B339911"},{"type":"external_code","value":"OGGCTP8280B2560501"},{"type":"external_code","value":"OGGCTP8280B339911"},{"type":"external_code","value":"OSGCTP8280B2560501"},{"type":"external_code","value":"OSGCTP8280B339911"},{"type":"source","value":"CTP8280B2560501"},{"type":"source","value":"CTP8280B339911"}],"name":"Crettyard (Southbound)","links":[],"coord":{"lat":"52.84182","lon":"-7.13403"},"label":"Crettyard (Southbound) (Castlecomer Municipal District)","administrative_regions":[{"insee":"","name":"Clogh","level":9,"coord":{"lat":"52.85955","lon":"-7.190901"},"label":"Clogh","id":"admin:osm:6524970","zip_code":""},{"insee":"","name":"Castlecomer Municipal District","level":8,"coord":{"lat":"52.738361","lon":"-7.314207"},"label":"Castlecomer Municipal District","id":"admin:osm:6800860","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OSG:SA:CTP8280B2560501"},"name":"Crettyard (Southbound) (Castlecomer Municipal District)","id":"stop_area:OSG:SA:CTP8280B2560501"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OEACTP8510B1782301"},{"type":"source","value":"CTP8510B1782301"}],"name":"Castlebaldwin, Castlebaldwin","links":[],"coord":{"lat":"54.078893","lon":"-8.375398000000001"},"label":"Castlebaldwin, Castlebaldwin (Municipal District of Ballymote \u2013 Tubbercurry)","administrative_regions":[{"insee":"","name":"Municipal District of Ballymote \u2013 Tubbercurry","level":8,"coord":{"lat":"54.11376","lon":"-8.668691000000001"},"label":"Municipal District of Ballymote \u2013 Tubbercurry","id":"admin:osm:5504279","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OEA:SA:CTP8510B1782301"},"name":"Castlebaldwin, Castlebaldwin (Municipal District of Ballymote \u2013 Tubbercurry)","id":"stop_area:OEA:SA:CTP8510B1782301"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OKECTP8260PB001118"},{"type":"source","value":"CTP8260PB001118"}],"name":"Castledermot, Castledermot","links":[],"coord":{"lat":"52.912505","lon":"-6.837636"},"label":"Castledermot, Castledermot (Athy Municipal District)","administrative_regions":[{"insee":"","name":"Athy Municipal District","level":8,"coord":{"lat":"53.013755","lon":"-6.899768"},"label":"Athy Municipal District","id":"admin:osm:5857133","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OKE:SA:CTP8260PB001118"},"name":"Castledermot, Castledermot (Athy Municipal District)","id":"stop_area:OKE:SA:CTP8260PB001118"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OIKCTP8260B1341501"},{"type":"external_code","value":"OSKCTP8260B1341501"},{"type":"source","value":"CTP8260B1341501"}],"name":"Castledermot, Castledermot Rs","links":[],"coord":{"lat":"52.913705","lon":"-6.837143"},"label":"Castledermot, Castledermot Rs (Athy Municipal District)","administrative_regions":[{"insee":"","name":"Athy Municipal District","level":8,"coord":{"lat":"53.013755","lon":"-6.899768"},"label":"Athy Municipal District","id":"admin:osm:5857133","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OSK:SA:CTP8260B1341501"},"name":"Castledermot, Castledermot Rs (Athy Municipal District)","id":"stop_area:OSK:SA:CTP8260B1341501"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OKECTP8260PB001090"},{"type":"source","value":"CTP8260PB001090"}],"name":"Sallins, Castlefen Sallins","links":[],"coord":{"lat":"53.256031","lon":"-6.667754"},"label":"Sallins, Castlefen Sallins (Naas Municipal District)","administrative_regions":[{"insee":"","name":"Naas Municipal District","level":8,"coord":{"lat":"53.195143","lon":"-6.650565"},"label":"Naas Municipal District","id":"admin:osm:5857138","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OKE:SA:CTP8260PB001090"},"name":"Sallins, Castlefen Sallins (Naas Municipal District)","id":"stop_area:OKE:SA:CTP8260PB001090"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OEACTP8460B551281"},{"type":"source","value":"CTP8460B551281"}],"name":"Castlegar (Church)","links":[],"coord":{"lat":"53.295427","lon":"-9.015014000000001"},"label":"Castlegar (Church) (Galway Municipal District)","administrative_regions":[{"insee":"","name":"Galway Municipal District","level":8,"coord":{"lat":"53.283354","lon":"-9.049461000000001"},"label":"Galway Municipal District","id":"admin:osm:3872297","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OEA:SA:CTP8460B551281"},"name":"Castlegar (Church) (Galway Municipal District)","id":"stop_area:OEA:SA:CTP8460B551281"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OBKCTP8470PB003706"},{"type":"source","value":"CTP8470PB003706"}],"name":"Cloonacauneen, Castlegar Galway","links":[],"coord":{"lat":"53.299374","lon":"-9.008566999999999"},"label":"Cloonacauneen, Castlegar Galway (Galway Municipal District)","administrative_regions":[{"insee":"","name":"Galway Municipal District","level":8,"coord":{"lat":"53.283354","lon":"-9.049461000000001"},"label":"Galway Municipal District","id":"admin:osm:3872297","zip_code":""}],"timezone":"Europe\/Dublin","id":"stop_area:OBK:SA:CTP8470PB003706"},"name":"Cloonacauneen, Castlegar Galway (Galway Municipal District)","id":"stop_area:OBK:SA:CTP8470PB003706"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/ie\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"ie","license":"CC","name":"Transport For Ireland"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OAI","license":"CC","name":"OAI - Air Coach"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OBH","license":"CC","name":"OBH - Bernard Kavanagh"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OBK","license":"CC","name":"OBK - Burkes"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OCG","license":"CC","name":"OCG - C Madigan"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"ODB","license":"CC","name":"ODB - Dublin Bus"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"ODC","license":"CC","name":"ODC - Dublin Coach"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OEA","license":"CC","name":"OEA - Bus Eireann"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OED","license":"CC","name":"OED - Ed Moore"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OFS","license":"CC","name":"OFS - Ferries"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OGG","license":"CC","name":"OGG - Buggy"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OGH","license":"CC","name":"OGH - McGrath"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OIE","license":"CC","name":"OIE - Slieve Bloom"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OIK","license":"CC","name":"OIK - Local Link"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OIR","license":"CC","name":"OIR - Irish Rail"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OJJ","license":"CC","name":"OJJ - JJ Kavanagh"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OKE","license":"CC","name":"OKE - Kenneallys"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OKI","license":"CC","name":"OKI - Kilbride"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OKN","license":"CC","name":"OKN - Kearns"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"ONI","license":"CC","name":"ONI - NiteLinks"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"ONN","license":"CC","name":"ONN - Finnegans"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OOA","license":"CC","name":"OOA - M and A Coaches"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OOO","license":"CC","name":"OOO - Mortons"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OSG","license":"CC","name":"OSG - Single Route Operators"},{"url":"http:\/\/www.transportforireland.ie\/transitData\/PT_Data.html","id":"OWX","license":"CC","name":"OWX - Wexford Bus"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEACTP8510B556211"
+          },
+          {
+            "type": "external_code",
+            "value": "OSGCTP8510B556211"
+          },
+          {
+            "type": "source",
+            "value": "CTP8510B556211"
+          }
+        ],
+        "name": "Castlebaldwin Supermacs",
+        "links": [],
+        "coord": {
+          "lat": "54.080146",
+          "lon": "-8.377105999999999"
+        },
+        "label": "Castlebaldwin Supermacs (Municipal District of Ballymote – Tubbercurry)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Municipal District of Ballymote – Tubbercurry",
+            "level": 8,
+            "coord": {
+              "lat": "54.11376",
+              "lon": "-8.668691000000001"
+            },
+            "label": "Municipal District of Ballymote – Tubbercurry",
+            "id": "admin:osm:5504279",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OSG:SA:CTP8510B556211"
+      },
+      "name": "Castlebaldwin Supermacs (Municipal District of Ballymote – Tubbercurry)",
+      "id": "stop_area:OSG:SA:CTP8510B556211"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBHCTP8260B136421"
+          },
+          {
+            "type": "external_code",
+            "value": "OEACTP8260B136421"
+          },
+          {
+            "type": "external_code",
+            "value": "OSKCTP826000030"
+          },
+          {
+            "type": "source",
+            "value": "CTP826000030"
+          },
+          {
+            "type": "source",
+            "value": "CTP8260B136421"
+          }
+        ],
+        "name": "The Castle Inn, Leinster Street",
+        "links": [],
+        "coord": {
+          "lat": "52.992214",
+          "lon": "-6.984185"
+        },
+        "label": "The Castle Inn, Leinster Street (Athy Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Athy Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.013755",
+              "lon": "-6.899768"
+            },
+            "label": "Athy Municipal District",
+            "id": "admin:osm:5857133",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OSK:SA:CTP826000030"
+      },
+      "name": "The Castle Inn, Leinster Street (Athy Municipal District)",
+      "id": "stop_area:OSK:SA:CTP826000030"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBHCTP8260PB001005"
+          },
+          {
+            "type": "external_code",
+            "value": "OEACTP8260PB001005"
+          },
+          {
+            "type": "external_code",
+            "value": "OSGCTP8260B1355802"
+          },
+          {
+            "type": "external_code",
+            "value": "OSKCTP8260PB001005"
+          },
+          {
+            "type": "source",
+            "value": "CTP8260B1355802"
+          },
+          {
+            "type": "source",
+            "value": "CTP8260PB001005"
+          }
+        ],
+        "name": "The Castle Inn, Leinster Street",
+        "links": [],
+        "coord": {
+          "lat": "52.991461",
+          "lon": "-6.987569"
+        },
+        "label": "The Castle Inn, Leinster Street (Athy Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Athy Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.013755",
+              "lon": "-6.899768"
+            },
+            "label": "Athy Municipal District",
+            "id": "admin:osm:5857133",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OSG:SA:CTP8260B1355802"
+      },
+      "name": "The Castle Inn, Leinster Street (Athy Municipal District)",
+      "id": "stop_area:OSG:SA:CTP8260B1355802"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBHCTP8280B2560501"
+          },
+          {
+            "type": "external_code",
+            "value": "OBHCTP8280B339911"
+          },
+          {
+            "type": "external_code",
+            "value": "OEACTP8280B2560501"
+          },
+          {
+            "type": "external_code",
+            "value": "OEACTP8280B339911"
+          },
+          {
+            "type": "external_code",
+            "value": "OGGCTP8280B2560501"
+          },
+          {
+            "type": "external_code",
+            "value": "OGGCTP8280B339911"
+          },
+          {
+            "type": "external_code",
+            "value": "OSGCTP8280B2560501"
+          },
+          {
+            "type": "external_code",
+            "value": "OSGCTP8280B339911"
+          },
+          {
+            "type": "source",
+            "value": "CTP8280B2560501"
+          },
+          {
+            "type": "source",
+            "value": "CTP8280B339911"
+          }
+        ],
+        "name": "Crettyard (Southbound)",
+        "links": [],
+        "coord": {
+          "lat": "52.84182",
+          "lon": "-7.13403"
+        },
+        "label": "Crettyard (Southbound) (Castlecomer Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Clogh",
+            "level": 9,
+            "coord": {
+              "lat": "52.85955",
+              "lon": "-7.190901"
+            },
+            "label": "Clogh",
+            "id": "admin:osm:6524970",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Castlecomer Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "52.738361",
+              "lon": "-7.314207"
+            },
+            "label": "Castlecomer Municipal District",
+            "id": "admin:osm:6800860",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OSG:SA:CTP8280B2560501"
+      },
+      "name": "Crettyard (Southbound) (Castlecomer Municipal District)",
+      "id": "stop_area:OSG:SA:CTP8280B2560501"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEACTP8510B1782301"
+          },
+          {
+            "type": "source",
+            "value": "CTP8510B1782301"
+          }
+        ],
+        "name": "Castlebaldwin, Castlebaldwin",
+        "links": [],
+        "coord": {
+          "lat": "54.078893",
+          "lon": "-8.375398000000001"
+        },
+        "label": "Castlebaldwin, Castlebaldwin (Municipal District of Ballymote – Tubbercurry)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Municipal District of Ballymote – Tubbercurry",
+            "level": 8,
+            "coord": {
+              "lat": "54.11376",
+              "lon": "-8.668691000000001"
+            },
+            "label": "Municipal District of Ballymote – Tubbercurry",
+            "id": "admin:osm:5504279",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OEA:SA:CTP8510B1782301"
+      },
+      "name": "Castlebaldwin, Castlebaldwin (Municipal District of Ballymote – Tubbercurry)",
+      "id": "stop_area:OEA:SA:CTP8510B1782301"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKECTP8260PB001118"
+          },
+          {
+            "type": "source",
+            "value": "CTP8260PB001118"
+          }
+        ],
+        "name": "Castledermot, Castledermot",
+        "links": [],
+        "coord": {
+          "lat": "52.912505",
+          "lon": "-6.837636"
+        },
+        "label": "Castledermot, Castledermot (Athy Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Athy Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.013755",
+              "lon": "-6.899768"
+            },
+            "label": "Athy Municipal District",
+            "id": "admin:osm:5857133",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OKE:SA:CTP8260PB001118"
+      },
+      "name": "Castledermot, Castledermot (Athy Municipal District)",
+      "id": "stop_area:OKE:SA:CTP8260PB001118"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIKCTP8260B1341501"
+          },
+          {
+            "type": "external_code",
+            "value": "OSKCTP8260B1341501"
+          },
+          {
+            "type": "source",
+            "value": "CTP8260B1341501"
+          }
+        ],
+        "name": "Castledermot, Castledermot Rs",
+        "links": [],
+        "coord": {
+          "lat": "52.913705",
+          "lon": "-6.837143"
+        },
+        "label": "Castledermot, Castledermot Rs (Athy Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Athy Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.013755",
+              "lon": "-6.899768"
+            },
+            "label": "Athy Municipal District",
+            "id": "admin:osm:5857133",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OSK:SA:CTP8260B1341501"
+      },
+      "name": "Castledermot, Castledermot Rs (Athy Municipal District)",
+      "id": "stop_area:OSK:SA:CTP8260B1341501"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKECTP8260PB001090"
+          },
+          {
+            "type": "source",
+            "value": "CTP8260PB001090"
+          }
+        ],
+        "name": "Sallins, Castlefen Sallins",
+        "links": [],
+        "coord": {
+          "lat": "53.256031",
+          "lon": "-6.667754"
+        },
+        "label": "Sallins, Castlefen Sallins (Naas Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Naas Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.195143",
+              "lon": "-6.650565"
+            },
+            "label": "Naas Municipal District",
+            "id": "admin:osm:5857138",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OKE:SA:CTP8260PB001090"
+      },
+      "name": "Sallins, Castlefen Sallins (Naas Municipal District)",
+      "id": "stop_area:OKE:SA:CTP8260PB001090"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OEACTP8460B551281"
+          },
+          {
+            "type": "source",
+            "value": "CTP8460B551281"
+          }
+        ],
+        "name": "Castlegar (Church)",
+        "links": [],
+        "coord": {
+          "lat": "53.295427",
+          "lon": "-9.015014000000001"
+        },
+        "label": "Castlegar (Church) (Galway Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Galway Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.283354",
+              "lon": "-9.049461000000001"
+            },
+            "label": "Galway Municipal District",
+            "id": "admin:osm:3872297",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OEA:SA:CTP8460B551281"
+      },
+      "name": "Castlegar (Church) (Galway Municipal District)",
+      "id": "stop_area:OEA:SA:CTP8460B551281"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBKCTP8470PB003706"
+          },
+          {
+            "type": "source",
+            "value": "CTP8470PB003706"
+          }
+        ],
+        "name": "Cloonacauneen, Castlegar Galway",
+        "links": [],
+        "coord": {
+          "lat": "53.299374",
+          "lon": "-9.008566999999999"
+        },
+        "label": "Cloonacauneen, Castlegar Galway (Galway Municipal District)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Galway Municipal District",
+            "level": 8,
+            "coord": {
+              "lat": "53.283354",
+              "lon": "-9.049461000000001"
+            },
+            "label": "Galway Municipal District",
+            "id": "admin:osm:3872297",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Dublin",
+        "id": "stop_area:OBK:SA:CTP8470PB003706"
+      },
+      "name": "Cloonacauneen, Castlegar Galway (Galway Municipal District)",
+      "id": "stop_area:OBK:SA:CTP8470PB003706"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/ie/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "ie",
+      "license": "CC",
+      "name": "Transport For Ireland"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OAI",
+      "license": "CC",
+      "name": "OAI - Air Coach"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OBH",
+      "license": "CC",
+      "name": "OBH - Bernard Kavanagh"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OBK",
+      "license": "CC",
+      "name": "OBK - Burkes"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OCG",
+      "license": "CC",
+      "name": "OCG - C Madigan"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "ODB",
+      "license": "CC",
+      "name": "ODB - Dublin Bus"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "ODC",
+      "license": "CC",
+      "name": "ODC - Dublin Coach"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OEA",
+      "license": "CC",
+      "name": "OEA - Bus Eireann"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OED",
+      "license": "CC",
+      "name": "OED - Ed Moore"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OFS",
+      "license": "CC",
+      "name": "OFS - Ferries"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OGG",
+      "license": "CC",
+      "name": "OGG - Buggy"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OGH",
+      "license": "CC",
+      "name": "OGH - McGrath"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OIE",
+      "license": "CC",
+      "name": "OIE - Slieve Bloom"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OIK",
+      "license": "CC",
+      "name": "OIK - Local Link"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OIR",
+      "license": "CC",
+      "name": "OIR - Irish Rail"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OJJ",
+      "license": "CC",
+      "name": "OJJ - JJ Kavanagh"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OKE",
+      "license": "CC",
+      "name": "OKE - Kenneallys"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OKI",
+      "license": "CC",
+      "name": "OKI - Kilbride"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OKN",
+      "license": "CC",
+      "name": "OKN - Kearns"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "ONI",
+      "license": "CC",
+      "name": "ONI - NiteLinks"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "ONN",
+      "license": "CC",
+      "name": "ONN - Finnegans"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OOA",
+      "license": "CC",
+      "name": "OOA - M and A Coaches"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OOO",
+      "license": "CC",
+      "name": "OOO - Mortons"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OSG",
+      "license": "CC",
+      "name": "OSG - Single Route Operators"
+    },
+    {
+      "url": "http://www.transportforireland.ie/transitData/PT_Data.html",
+      "id": "OWX",
+      "license": "CC",
+      "name": "OWX - Wexford Bus"
+    }
+  ]
+}

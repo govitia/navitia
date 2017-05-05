@@ -1,1 +1,473 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP358941"},{"type":"gtfs_stop_code","value":"57002560"},{"type":"source","value":"CTP358941"}],"name":"Amsterdam, Dam","links":[],"coord":{"lat":"52.373125","lon":"4.890078"},"label":"Amsterdam, Dam (Amsterdam)","administrative_regions":[{"insee":"","name":"Amsterdam","level":8,"coord":{"lat":"52.37101","lon":"4.900111"},"label":"Amsterdam","id":"admin:osm:47811","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP358941"},"name":"Amsterdam, Dam (Amsterdam)","id":"stop_area:OAM:SA:CTP358941"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA2359"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"NLSA2359"}],"name":"Amsterdam, Dam","links":[],"coord":{"lat":"52.374167","lon":"4.894486"},"label":"Amsterdam, Dam (Amsterdam)","administrative_regions":[{"insee":"","name":"Amsterdam","level":8,"coord":{"lat":"52.37101","lon":"4.900111"},"label":"Amsterdam","id":"admin:osm:47811","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA2359"},"name":"Amsterdam, Dam (Amsterdam)","id":"stop_area:OAM:SA:NLSA2359"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP559133"},{"type":"gtfs_stop_code","value":"HA0790"},{"type":"source","value":"CTP559133"}],"name":"Rotterdam, Damstraat","links":[],"coord":{"lat":"51.908474","lon":"4.507474"},"label":"Rotterdam, Damstraat (Rotterdam)","administrative_regions":[{"insee":"","name":"Rotterdam","level":8,"coord":{"lat":"51.922894","lon":"4.463172"},"label":"Rotterdam","id":"admin:osm:324431","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP559133"},"name":"Rotterdam, Damstraat (Rotterdam)","id":"stop_area:OAM:SA:CTP559133"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA122139"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"NLSA122139"}],"name":"Almere Buiten, Damsluisweg","links":[],"coord":{"lat":"52.410454","lon":"5.251634"},"label":"Almere Buiten, Damsluisweg (Almere)","administrative_regions":[{"insee":"","name":"Almere","level":8,"coord":{"lat":"52.374451","lon":"5.21233"},"label":"Almere","id":"admin:osm:409764","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA122139"},"name":"Almere Buiten, Damsluisweg (Almere)","id":"stop_area:OAM:SA:NLSA122139"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA122214"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"NLSA122214"}],"name":"Eindhoven, Witte Dame","links":[],"coord":{"lat":"51.439998","lon":"5.475137"},"label":"Eindhoven, Witte Dame (Eindhoven)","administrative_regions":[{"insee":"","name":"Eindhoven","level":8,"coord":{"lat":"51.439529","lon":"5.478059"},"label":"Eindhoven","id":"admin:osm:47504","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA122214"},"name":"Eindhoven, Witte Dame (Eindhoven)","id":"stop_area:OAM:SA:NLSA122214"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA9478"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"NLSA9478"}],"name":"Leidschendam, Damlaan","links":[],"coord":{"lat":"52.083308","lon":"4.393942"},"label":"Leidschendam, Damlaan (Leidschendam-Voorburg)","administrative_regions":[{"insee":"","name":"Leidschendam-Voorburg","level":8,"coord":{"lat":"52.086166","lon":"4.394677"},"label":"Leidschendam-Voorburg","id":"admin:osm:444355","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA9478"},"name":"Leidschendam, Damlaan (Leidschendam-Voorburg)","id":"stop_area:OAM:SA:NLSA9478"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA198030"},{"type":"source","value":"NLSA198030"}],"name":"Amersfoort, Damespolder","links":[],"coord":{"lat":"52.198352","lon":"5.428224"},"label":"Amersfoort, Damespolder (Amersfoort)","administrative_regions":[{"insee":"","name":"Amersfoort","level":8,"coord":{"lat":"52.15625","lon":"5.389694"},"label":"Amersfoort","id":"admin:osm:419152","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA198030"},"name":"Amersfoort, Damespolder (Amersfoort)","id":"stop_area:OAM:SA:NLSA198030"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP80854"},{"type":"gtfs_stop_code","value":"54441190"},{"type":"source","value":"CTP80854"}],"name":"Leiden, Damlaan","links":[],"coord":{"lat":"52.159842","lon":"4.470166"},"label":"Leiden, Damlaan (Leiden)","administrative_regions":[{"insee":"","name":"Leiden","level":8,"coord":{"lat":"52.159863","lon":"4.482427"},"label":"Leiden","id":"admin:osm:444400","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP80854"},"name":"Leiden, Damlaan (Leiden)","id":"stop_area:OAM:SA:CTP80854"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA158629"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"NLSA158629"}],"name":"Enschede, Dr. J. van Damstraat","links":[],"coord":{"lat":"52.234494","lon":"6.88756"},"label":"Enschede, Dr. J. van Damstraat (Enschede)","administrative_regions":[{"insee":"","name":"Enschede","level":8,"coord":{"lat":"52.217949","lon":"6.893586"},"label":"Enschede","id":"admin:osm:415473","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA158629"},"name":"Enschede, Dr. J. van Damstraat (Enschede)","id":"stop_area:OAM:SA:NLSA158629"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP323171"},{"type":"gtfs_stop_code","value":"73008200"},{"type":"source","value":"CTP323171"}],"name":"Tilburg, Burg. Damsstraat","links":[],"coord":{"lat":"51.550438","lon":"5.059344"},"label":"Tilburg, Burg. Damsstraat (Tilburg)","administrative_regions":[{"insee":"","name":"Tilburg","level":8,"coord":{"lat":"51.558472","lon":"5.083076"},"label":"Tilburg","id":"admin:osm:299231","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP323171"},"name":"Tilburg, Burg. Damsstraat (Tilburg)","id":"stop_area:OAM:SA:CTP323171"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/nl\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"nl","license":"OpenData","name":"Netherlands"},{"url":"http:\/\/ovapi.nl","id":"OAM","license":"Terms of Use","name":"OAM - Amsterdam"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP358941"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "57002560"
+          },
+          {
+            "type": "source",
+            "value": "CTP358941"
+          }
+        ],
+        "name": "Amsterdam, Dam",
+        "links": [],
+        "coord": {
+          "lat": "52.373125",
+          "lon": "4.890078"
+        },
+        "label": "Amsterdam, Dam (Amsterdam)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Amsterdam",
+            "level": 8,
+            "coord": {
+              "lat": "52.37101",
+              "lon": "4.900111"
+            },
+            "label": "Amsterdam",
+            "id": "admin:osm:47811",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP358941"
+      },
+      "name": "Amsterdam, Dam (Amsterdam)",
+      "id": "stop_area:OAM:SA:CTP358941"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA2359"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "NLSA2359"
+          }
+        ],
+        "name": "Amsterdam, Dam",
+        "links": [],
+        "coord": {
+          "lat": "52.374167",
+          "lon": "4.894486"
+        },
+        "label": "Amsterdam, Dam (Amsterdam)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Amsterdam",
+            "level": 8,
+            "coord": {
+              "lat": "52.37101",
+              "lon": "4.900111"
+            },
+            "label": "Amsterdam",
+            "id": "admin:osm:47811",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA2359"
+      },
+      "name": "Amsterdam, Dam (Amsterdam)",
+      "id": "stop_area:OAM:SA:NLSA2359"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP559133"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "HA0790"
+          },
+          {
+            "type": "source",
+            "value": "CTP559133"
+          }
+        ],
+        "name": "Rotterdam, Damstraat",
+        "links": [],
+        "coord": {
+          "lat": "51.908474",
+          "lon": "4.507474"
+        },
+        "label": "Rotterdam, Damstraat (Rotterdam)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Rotterdam",
+            "level": 8,
+            "coord": {
+              "lat": "51.922894",
+              "lon": "4.463172"
+            },
+            "label": "Rotterdam",
+            "id": "admin:osm:324431",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP559133"
+      },
+      "name": "Rotterdam, Damstraat (Rotterdam)",
+      "id": "stop_area:OAM:SA:CTP559133"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA122139"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "NLSA122139"
+          }
+        ],
+        "name": "Almere Buiten, Damsluisweg",
+        "links": [],
+        "coord": {
+          "lat": "52.410454",
+          "lon": "5.251634"
+        },
+        "label": "Almere Buiten, Damsluisweg (Almere)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Almere",
+            "level": 8,
+            "coord": {
+              "lat": "52.374451",
+              "lon": "5.21233"
+            },
+            "label": "Almere",
+            "id": "admin:osm:409764",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA122139"
+      },
+      "name": "Almere Buiten, Damsluisweg (Almere)",
+      "id": "stop_area:OAM:SA:NLSA122139"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA122214"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "NLSA122214"
+          }
+        ],
+        "name": "Eindhoven, Witte Dame",
+        "links": [],
+        "coord": {
+          "lat": "51.439998",
+          "lon": "5.475137"
+        },
+        "label": "Eindhoven, Witte Dame (Eindhoven)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Eindhoven",
+            "level": 8,
+            "coord": {
+              "lat": "51.439529",
+              "lon": "5.478059"
+            },
+            "label": "Eindhoven",
+            "id": "admin:osm:47504",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA122214"
+      },
+      "name": "Eindhoven, Witte Dame (Eindhoven)",
+      "id": "stop_area:OAM:SA:NLSA122214"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA9478"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "NLSA9478"
+          }
+        ],
+        "name": "Leidschendam, Damlaan",
+        "links": [],
+        "coord": {
+          "lat": "52.083308",
+          "lon": "4.393942"
+        },
+        "label": "Leidschendam, Damlaan (Leidschendam-Voorburg)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Leidschendam-Voorburg",
+            "level": 8,
+            "coord": {
+              "lat": "52.086166",
+              "lon": "4.394677"
+            },
+            "label": "Leidschendam-Voorburg",
+            "id": "admin:osm:444355",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA9478"
+      },
+      "name": "Leidschendam, Damlaan (Leidschendam-Voorburg)",
+      "id": "stop_area:OAM:SA:NLSA9478"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA198030"
+          },
+          {
+            "type": "source",
+            "value": "NLSA198030"
+          }
+        ],
+        "name": "Amersfoort, Damespolder",
+        "links": [],
+        "coord": {
+          "lat": "52.198352",
+          "lon": "5.428224"
+        },
+        "label": "Amersfoort, Damespolder (Amersfoort)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Amersfoort",
+            "level": 8,
+            "coord": {
+              "lat": "52.15625",
+              "lon": "5.389694"
+            },
+            "label": "Amersfoort",
+            "id": "admin:osm:419152",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA198030"
+      },
+      "name": "Amersfoort, Damespolder (Amersfoort)",
+      "id": "stop_area:OAM:SA:NLSA198030"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP80854"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "54441190"
+          },
+          {
+            "type": "source",
+            "value": "CTP80854"
+          }
+        ],
+        "name": "Leiden, Damlaan",
+        "links": [],
+        "coord": {
+          "lat": "52.159842",
+          "lon": "4.470166"
+        },
+        "label": "Leiden, Damlaan (Leiden)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Leiden",
+            "level": 8,
+            "coord": {
+              "lat": "52.159863",
+              "lon": "4.482427"
+            },
+            "label": "Leiden",
+            "id": "admin:osm:444400",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP80854"
+      },
+      "name": "Leiden, Damlaan (Leiden)",
+      "id": "stop_area:OAM:SA:CTP80854"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA158629"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "NLSA158629"
+          }
+        ],
+        "name": "Enschede, Dr. J. van Damstraat",
+        "links": [],
+        "coord": {
+          "lat": "52.234494",
+          "lon": "6.88756"
+        },
+        "label": "Enschede, Dr. J. van Damstraat (Enschede)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Enschede",
+            "level": 8,
+            "coord": {
+              "lat": "52.217949",
+              "lon": "6.893586"
+            },
+            "label": "Enschede",
+            "id": "admin:osm:415473",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA158629"
+      },
+      "name": "Enschede, Dr. J. van Damstraat (Enschede)",
+      "id": "stop_area:OAM:SA:NLSA158629"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP323171"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "73008200"
+          },
+          {
+            "type": "source",
+            "value": "CTP323171"
+          }
+        ],
+        "name": "Tilburg, Burg. Damsstraat",
+        "links": [],
+        "coord": {
+          "lat": "51.550438",
+          "lon": "5.059344"
+        },
+        "label": "Tilburg, Burg. Damsstraat (Tilburg)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Tilburg",
+            "level": 8,
+            "coord": {
+              "lat": "51.558472",
+              "lon": "5.083076"
+            },
+            "label": "Tilburg",
+            "id": "admin:osm:299231",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP323171"
+      },
+      "name": "Tilburg, Burg. Damsstraat (Tilburg)",
+      "id": "stop_area:OAM:SA:CTP323171"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/nl/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "nl",
+      "license": "OpenData",
+      "name": "Netherlands"
+    },
+    {
+      "url": "http://ovapi.nl",
+      "id": "OAM",
+      "license": "Terms of Use",
+      "name": "OAM - Amsterdam"
+    }
+  ]
+}

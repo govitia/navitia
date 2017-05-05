@@ -1,1 +1,337 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OAU51429"},{"type":"gtfs_stop_code","value":"51429"},{"type":"source","value":"51429"}],"name":"Boyd Ave\/Kiwi Esp","links":[],"coord":{"lat":"-36.94151","lon":"174.77625"},"label":"Boyd Ave\/Kiwi Esp","timezone":"Pacific\/Auckland","id":"stop_area:OAU:SA:51429"},"name":"Boyd Ave\/Kiwi Esp","id":"stop_area:OAU:SA:51429"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OAU51430"},{"type":"gtfs_stop_code","value":"51430"},{"type":"source","value":"51430"}],"name":"Kiwi Esp\/Seaforth Ave","links":[],"coord":{"lat":"-36.94043","lon":"174.77303"},"label":"Kiwi Esp\/Seaforth Ave","timezone":"Pacific\/Auckland","id":"stop_area:OAU:SA:51430"},"name":"Kiwi Esp\/Seaforth Ave","id":"stop_area:OAU:SA:51430"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OAU51431"},{"type":"gtfs_stop_code","value":"51431"},{"type":"source","value":"51431"}],"name":"Kiwi Esp\/Yorkton Rise","links":[],"coord":{"lat":"-36.94158","lon":"174.76797"},"label":"Kiwi Esp\/Yorkton Rise","timezone":"Pacific\/Auckland","id":"stop_area:OAU:SA:51431"},"name":"Kiwi Esp\/Yorkton Rise","id":"stop_area:OAU:SA:51431"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OAU11400"},{"type":"gtfs_stop_code","value":"11400"},{"type":"source","value":"11400"}],"name":"Mt Albert Rd and Kiwitea","links":[],"coord":{"lat":"-36.89999","lon":"174.73528"},"label":"Mt Albert Rd and Kiwitea","timezone":"Pacific\/Auckland","id":"stop_area:OAU:SA:11400"},"name":"Mt Albert Rd and Kiwitea","id":"stop_area:OAU:SA:11400"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OAU41008"},{"type":"gtfs_stop_code","value":"41008"},{"type":"source","value":"41008"}],"name":"Calliope Rd and Kiwi","links":[],"coord":{"lat":"-36.82889","lon":"174.7898"},"label":"Calliope Rd and Kiwi","timezone":"Pacific\/Auckland","id":"stop_area:OAU:SA:41008"},"name":"Calliope Rd and Kiwi","id":"stop_area:OAU:SA:41008"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OAU21150"},{"type":"gtfs_stop_code","value":"21150"},{"type":"source","value":"21150"}],"name":"Henderson Valley Rd (Kiwi Valley)","links":[],"coord":{"lat":"-36.89594","lon":"174.60043"},"label":"Henderson Valley Rd (Kiwi Valley)","timezone":"Pacific\/Auckland","id":"stop_area:OAU:SA:21150"},"name":"Henderson Valley Rd (Kiwi Valley)","id":"stop_area:OAU:SA:21150"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OWTCTP3266"},{"type":"gtfs_stop_code","value":"3266"},{"type":"source","value":"CTP3266"}],"name":"Ngauranga Gorge (Kiwi Point)","links":[],"coord":{"lat":"-41.23835","lon":"174.805611"},"label":"Ngauranga Gorge (Kiwi Point)","timezone":"Pacific\/Auckland","id":"stop_area:OWT:SA:CTP3266"},"name":"Ngauranga Gorge (Kiwi Point)","id":"stop_area:OWT:SA:CTP3266"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OWTCTP1308"},{"type":"gtfs_stop_code","value":"1308"},{"type":"source","value":"CTP1308"}],"name":"Raumati Road at Kiwi Road","links":[],"coord":{"lat":"-40.920312","lon":"174.986101"},"label":"Raumati Road at Kiwi Road","timezone":"Pacific\/Auckland","id":"stop_area:OWT:SA:CTP1308"},"name":"Raumati Road at Kiwi Road","id":"stop_area:OWT:SA:CTP1308"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OWTCTP1378"},{"type":"gtfs_stop_code","value":"1378"},{"type":"source","value":"CTP1378"}],"name":"Raumati Road at Kiwi Road (near 37)","links":[],"coord":{"lat":"-40.920252","lon":"174.986265"},"label":"Raumati Road at Kiwi Road (near 37)","timezone":"Pacific\/Auckland","id":"stop_area:OWT:SA:CTP1378"},"name":"Raumati Road at Kiwi Road (near 37)","id":"stop_area:OWT:SA:CTP1378"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OWTCTP9464"},{"type":"gtfs_stop_code","value":"9464"},{"type":"source","value":"CTP9464"}],"name":"Fergusson Drive at Kiwi Street (near 275)","links":[],"coord":{"lat":"-41.143389","lon":"175.019271"},"label":"Fergusson Drive at Kiwi Street (near 275)","timezone":"Pacific\/Auckland","id":"stop_area:OWT:SA:CTP9464"},"name":"Fergusson Drive at Kiwi Street (near 275)","id":"stop_area:OWT:SA:CTP9464"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/nz\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"nz","license":"OpenData","name":"New Zealand"},{"url":"https:\/\/www.metlink.org.nz","id":"OWT","license":"Terms of Use","name":"OWT - Wellington"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAU51429"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "51429"
+          },
+          {
+            "type": "source",
+            "value": "51429"
+          }
+        ],
+        "name": "Boyd Ave/Kiwi Esp",
+        "links": [],
+        "coord": {
+          "lat": "-36.94151",
+          "lon": "174.77625"
+        },
+        "label": "Boyd Ave/Kiwi Esp",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OAU:SA:51429"
+      },
+      "name": "Boyd Ave/Kiwi Esp",
+      "id": "stop_area:OAU:SA:51429"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAU51430"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "51430"
+          },
+          {
+            "type": "source",
+            "value": "51430"
+          }
+        ],
+        "name": "Kiwi Esp/Seaforth Ave",
+        "links": [],
+        "coord": {
+          "lat": "-36.94043",
+          "lon": "174.77303"
+        },
+        "label": "Kiwi Esp/Seaforth Ave",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OAU:SA:51430"
+      },
+      "name": "Kiwi Esp/Seaforth Ave",
+      "id": "stop_area:OAU:SA:51430"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAU51431"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "51431"
+          },
+          {
+            "type": "source",
+            "value": "51431"
+          }
+        ],
+        "name": "Kiwi Esp/Yorkton Rise",
+        "links": [],
+        "coord": {
+          "lat": "-36.94158",
+          "lon": "174.76797"
+        },
+        "label": "Kiwi Esp/Yorkton Rise",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OAU:SA:51431"
+      },
+      "name": "Kiwi Esp/Yorkton Rise",
+      "id": "stop_area:OAU:SA:51431"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAU11400"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "11400"
+          },
+          {
+            "type": "source",
+            "value": "11400"
+          }
+        ],
+        "name": "Mt Albert Rd and Kiwitea",
+        "links": [],
+        "coord": {
+          "lat": "-36.89999",
+          "lon": "174.73528"
+        },
+        "label": "Mt Albert Rd and Kiwitea",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OAU:SA:11400"
+      },
+      "name": "Mt Albert Rd and Kiwitea",
+      "id": "stop_area:OAU:SA:11400"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAU41008"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "41008"
+          },
+          {
+            "type": "source",
+            "value": "41008"
+          }
+        ],
+        "name": "Calliope Rd and Kiwi",
+        "links": [],
+        "coord": {
+          "lat": "-36.82889",
+          "lon": "174.7898"
+        },
+        "label": "Calliope Rd and Kiwi",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OAU:SA:41008"
+      },
+      "name": "Calliope Rd and Kiwi",
+      "id": "stop_area:OAU:SA:41008"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAU21150"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "21150"
+          },
+          {
+            "type": "source",
+            "value": "21150"
+          }
+        ],
+        "name": "Henderson Valley Rd (Kiwi Valley)",
+        "links": [],
+        "coord": {
+          "lat": "-36.89594",
+          "lon": "174.60043"
+        },
+        "label": "Henderson Valley Rd (Kiwi Valley)",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OAU:SA:21150"
+      },
+      "name": "Henderson Valley Rd (Kiwi Valley)",
+      "id": "stop_area:OAU:SA:21150"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWTCTP3266"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3266"
+          },
+          {
+            "type": "source",
+            "value": "CTP3266"
+          }
+        ],
+        "name": "Ngauranga Gorge (Kiwi Point)",
+        "links": [],
+        "coord": {
+          "lat": "-41.23835",
+          "lon": "174.805611"
+        },
+        "label": "Ngauranga Gorge (Kiwi Point)",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OWT:SA:CTP3266"
+      },
+      "name": "Ngauranga Gorge (Kiwi Point)",
+      "id": "stop_area:OWT:SA:CTP3266"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWTCTP1308"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "1308"
+          },
+          {
+            "type": "source",
+            "value": "CTP1308"
+          }
+        ],
+        "name": "Raumati Road at Kiwi Road",
+        "links": [],
+        "coord": {
+          "lat": "-40.920312",
+          "lon": "174.986101"
+        },
+        "label": "Raumati Road at Kiwi Road",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OWT:SA:CTP1308"
+      },
+      "name": "Raumati Road at Kiwi Road",
+      "id": "stop_area:OWT:SA:CTP1308"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWTCTP1378"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "1378"
+          },
+          {
+            "type": "source",
+            "value": "CTP1378"
+          }
+        ],
+        "name": "Raumati Road at Kiwi Road (near 37)",
+        "links": [],
+        "coord": {
+          "lat": "-40.920252",
+          "lon": "174.986265"
+        },
+        "label": "Raumati Road at Kiwi Road (near 37)",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OWT:SA:CTP1378"
+      },
+      "name": "Raumati Road at Kiwi Road (near 37)",
+      "id": "stop_area:OWT:SA:CTP1378"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWTCTP9464"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "9464"
+          },
+          {
+            "type": "source",
+            "value": "CTP9464"
+          }
+        ],
+        "name": "Fergusson Drive at Kiwi Street (near 275)",
+        "links": [],
+        "coord": {
+          "lat": "-41.143389",
+          "lon": "175.019271"
+        },
+        "label": "Fergusson Drive at Kiwi Street (near 275)",
+        "timezone": "Pacific/Auckland",
+        "id": "stop_area:OWT:SA:CTP9464"
+      },
+      "name": "Fergusson Drive at Kiwi Street (near 275)",
+      "id": "stop_area:OWT:SA:CTP9464"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/nz/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "nz",
+      "license": "OpenData",
+      "name": "New Zealand"
+    },
+    {
+      "url": "https://www.metlink.org.nz",
+      "id": "OWT",
+      "license": "Terms of Use",
+      "name": "OWT - Wellington"
+    }
+  ]
+}

@@ -1,1 +1,32 @@
-{"disruptions":[],"links":[],"places":[{"embedded_type":"administrative_region","quality":100,"administrative_region":{"insee":"22215","name":"Ploufragan","level":8,"coord":{"lat":"48.491386","lon":"-2.793444"},"label":"Ploufragan","id":"admin:fr:22215","zip_code":""},"id":"admin:fr:22215","name":"Ploufragan"}],"feed_publishers":[{"url":"http:\/\/www.breizhgo.com","id":"fr-bre","license":"Private","name":"Breizhgo"}]}
+{
+  "disruptions": [],
+  "links": [],
+  "places": [
+    {
+      "embedded_type": "administrative_region",
+      "quality": 100,
+      "administrative_region": {
+        "insee": "22215",
+        "name": "Ploufragan",
+        "level": 8,
+        "coord": {
+          "lat": "48.491386",
+          "lon": "-2.793444"
+        },
+        "label": "Ploufragan",
+        "id": "admin:fr:22215",
+        "zip_code": ""
+      },
+      "id": "admin:fr:22215",
+      "name": "Ploufragan"
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.breizhgo.com",
+      "id": "fr-bre",
+      "license": "Private",
+      "name": "Breizhgo"
+    }
+  ]
+}

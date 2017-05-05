@@ -1,1 +1,613 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"ONACROU"},{"type":"source","value":"StopArea:CROU"}],"name":"Chemin Rouge","links":[],"coord":{"lat":"47.251878","lon":"-1.517633"},"label":"Chemin Rouge (Nantes)","administrative_regions":[{"insee":"44109","name":"Nantes","level":8,"coord":{"lat":"47.218636","lon":"-1.554136"},"label":"Nantes (44000-44300)","id":"admin:fr:44109","zip_code":"44000;44100;44200;44300"}],"timezone":"Europe\/Paris","id":"stop_area:ONA:SA:CROU"},"name":"Chemin Rouge (Nantes)","id":"stop_area:ONA:SA:CROU"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OBICTP4CHEM_1"},{"type":"source","value":"CTP4CHEM_1"}],"name":"4 Chemins","links":[],"coord":{"lat":"48.405392","lon":"-4.477817"},"label":"4 Chemins (Brest)","administrative_regions":[{"insee":"29019","name":"Brest","level":8,"coord":{"lat":"48.39053","lon":"-4.486008"},"label":"Brest (29200)","id":"admin:fr:29019","zip_code":"29200"}],"timezone":"Europe\/Paris","id":"stop_area:OBI:SA:CTP4CHEM_1"},"name":"4 Chemins (Brest)","id":"stop_area:OBI:SA:CTP4CHEM_1"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"ONACBLE"},{"type":"source","value":"StopArea:CBLE"}],"name":"Chemin Bleu","links":[],"coord":{"lat":"47.178228","lon":"-1.525012"},"label":"Chemin Bleu (Vertou)","administrative_regions":[{"insee":"44215","name":"Vertou","level":8,"coord":{"lat":"47.168442","lon":"-1.472159"},"label":"Vertou (44120)","id":"admin:fr:44215","zip_code":"44120"}],"timezone":"Europe\/Paris","id":"stop_area:ONA:SA:CBLE"},"name":"Chemin Bleu (Vertou)","id":"stop_area:ONA:SA:CBLE"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OPLAST-12012-A-12012-R"},{"type":"source","value":"AST-12012-A-12012-R"}],"name":"Cinq Chemins de Valais","links":[],"coord":{"lat":"47.315907","lon":"-1.689257"},"label":"Cinq Chemins de Valais (Vigneux-de-Bretagne)","administrative_regions":[{"insee":"44217","name":"Vigneux-de-Bretagne","level":8,"coord":{"lat":"47.32679","lon":"-1.736875"},"label":"Vigneux-de-Bretagne (44360)","id":"admin:fr:44217","zip_code":"44360"}],"timezone":"Europe\/Paris","id":"stop_area:OPL:SA:AST-12012-A-12012-R"},"name":"Cinq Chemins de Valais (Vigneux-de-Bretagne)","id":"stop_area:OPL:SA:AST-12012-A-12012-R"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OANzone_CROIX_DE_CHEMINEE"},{"type":"source","value":"zone_CROIX_DE_CHEMINEE"}],"name":"CROIX DE CHEMINEE","links":[],"coord":{"lat":"47.467733","lon":"-0.502891"},"label":"CROIX DE CHEMINEE (Saint-Barth\u00e9lemy-d'Anjou)","administrative_regions":[{"insee":"49267","name":"Saint-Barth\u00e9lemy-d'Anjou","level":8,"coord":{"lat":"47.468307","lon":"-0.493294"},"label":"Saint-Barth\u00e9lemy-d'Anjou (49124)","id":"admin:fr:49267","zip_code":"49124"}],"timezone":"Europe\/Paris","id":"stop_area:OAN:SA:zone_CROIX_DE_CHEMINEE"},"name":"CROIX DE CHEMINEE (Saint-Barth\u00e9lemy-d'Anjou)","id":"stop_area:OAN:SA:zone_CROIX_DE_CHEMINEE"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"ORECTP3904"},{"type":"gtfs_stop_code","value":"3904"},{"type":"source","value":"CTP3904"}],"name":"Chemin Vert","links":[],"coord":{"lat":"48.012935","lon":"-1.702976"},"label":"Chemin Vert (Pont-P\u00e9an)","administrative_regions":[{"insee":"35363","name":"Pont-P\u00e9an","level":8,"coord":{"lat":"48.013107","lon":"-1.70231"},"label":"Pont-P\u00e9an (35131)","id":"admin:fr:35363","zip_code":"35131"}],"timezone":"Europe\/Paris","id":"stop_area:ORE:SA:CTP3904"},"name":"Chemin Vert (Pont-P\u00e9an)","id":"stop_area:ORE:SA:CTP3904"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OPLAST-tempSCO3-A-tempSCO3-R"},{"type":"source","value":"AST-tempSCO3-A-tempSCO3-R"}],"name":"Chemin Arent\u00e9es","links":[],"coord":{"lat":"47.148458","lon":"-1.556057"},"label":"Chemin Arent\u00e9es (Pont-Saint-Martin)","administrative_regions":[{"insee":"44130","name":"Pont-Saint-Martin","level":8,"coord":{"lat":"47.123135","lon":"-1.583989"},"label":"Pont-Saint-Martin (44860)","id":"admin:fr:44130","zip_code":"44860"}],"timezone":"Europe\/Paris","id":"stop_area:OPL:SA:AST-tempSCO3-A-tempSCO3-R"},"name":"Chemin Arent\u00e9es (Pont-Saint-Martin)","id":"stop_area:OPL:SA:AST-tempSCO3-A-tempSCO3-R"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"SINOCE87414276"},{"type":"external_code","value":"STEOCE87414276"},{"type":"source","value":"StopArea:OCE87414276"}],"name":"Guiscriff-5-Chemins","links":[],"coord":{"lat":"48.067492","lon":"-3.661953"},"label":"Guiscriff-5-Chemins (Guiscriff)","administrative_regions":[{"insee":"56081","name":"Guiscriff","level":8,"coord":{"lat":"48.04837","lon":"-3.644828"},"label":"Guiscriff (56560)","id":"admin:fr:56081","zip_code":"56560"}],"timezone":"Europe\/Paris","id":"stop_area:SIN:SA:OCE87414276"},"name":"Guiscriff-5-Chemins (Guiscriff)","id":"stop_area:SIN:SA:OCE87414276"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"ONAGRCH"},{"type":"source","value":"StopArea:GRCH"}],"name":"Grand chemin","links":[],"coord":{"lat":"47.197353","lon":"-1.784087"},"label":"Grand chemin (Le Pellerin)","administrative_regions":[{"insee":"44120","name":"Le Pellerin","level":8,"coord":{"lat":"47.199924","lon":"-1.755036"},"label":"Le Pellerin (44640)","id":"admin:fr:44120","zip_code":"44640"}],"timezone":"Europe\/Paris","id":"stop_area:ONA:SA:GRCH"},"name":"Grand chemin (Le Pellerin)","id":"stop_area:ONA:SA:GRCH"},{"embedded_type":"line","line":{"code":"","name":"Carhaix - Guiscriff-5-Chemins","links":[],"physical_modes":[{"name":"Bus","id":"physical_mode:Bus"}],"opening_time":"070400","geojson":{"type":"MultiLineString","coordinates":[]},"text_color":"","color":"","codes":[{"type":"external_code","value":"STEOCESN-87473504-87414276STEOCESN"},{"type":"source","value":"OCESN-87473504-87414276"}],"closing_time":"070400","routes":[{"direction":{"embedded_type":"stop_area","quality":0,"stop_area":{"codes":[{"type":"external_code","value":"SINOCE87473504"},{"type":"external_code","value":"STEOCE87473504"},{"type":"source","value":"StopArea:OCE87473504"}],"name":"gare de Carhaix","links":[],"coord":{"lat":"48.275812","lon":"-3.56411"},"label":"gare de Carhaix (Carhaix-Plouguer)","timezone":"Europe\/Paris","id":"stop_area:SIN:SA:OCE87473504"},"name":"gare de Carhaix (Carhaix-Plouguer)","id":"stop_area:SIN:SA:OCE87473504"},"codes":[{"type":"external_code","value":"STEOCESN-87473504-87414276"},{"type":"source","value":"OCESN-87473504-87414276"}],"name":"Guiscriff-5-Chemins - gare de Carhaix","links":[],"is_frequence":"False","geojson":{"type":"MultiLineString","coordinates":[]},"direction_type":"","id":"route:STE:OCESN-87473504-87414276"}],"commercial_mode":{"name":"Bus","id":"commercial_mode:GTFS3"},"id":"line:STE:OCESN-87473504-87414276STEOCESN","network":{"codes":[{"type":"external_code","value":"SINOCENI"},{"type":"external_code","value":"SINOCESN"},{"type":"external_code","value":"sncf"},{"type":"external_code","value":"STEOCENI"},{"type":"external_code","value":"STEOCESN"},{"type":"external_code","value":"STTOCESN"},{"type":"source","value":"OCENI"},{"type":"source","value":"OCESN"},{"type":"source","value":"sncf"}],"name":"SNCF","links":[],"id":"network:sncf"}},"quality":0,"id":"line:STE:OCESN-87473504-87414276STEOCESN","name":"SNCF Bus  (Carhaix - Guiscriff-5-Chemins)"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-nw\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-nw\/physical_modes\/{physical_modes.id}","type":"physical_modes","rel":"physical_modes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-nw\/commercial_modes\/{commercial_mode.id}","type":"commercial_mode","rel":"commercial_modes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-nw\/networks\/{network.id}","type":"network","rel":"networks","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-nw\/routes\/{routes.id}","type":"routes","rel":"routes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-nw\/lines\/{line.id}","type":"line","rel":"lines","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"fr-nw","license":"OpenData","name":"France North West Quarter"},{"url":"http:\/\/data.angers.fr\/","id":"OAN","license":"ODbL","name":"OAN - Angers Loire M\u00e9tropole"},{"url":"https:\/\/geo.pays-de-brest.fr","id":"OBI","license":"LO-OL","name":"OBI - Bibus - Keolis Brest"},{"url":"http:\/\/data.nantes.fr\/","id":"ONA","license":"ODbL","name":"ONA - TAN Nantes metropole"},{"url":"http:\/\/data.loire-atlantique.fr\/","id":"OPL","license":"ODbL","name":"OPL - Lila pays de la Loire"},{"url":"https:\/\/data.explore.star.fr","id":"ORE","license":"ODbL","name":"ORE - STAR Rennes"},{"url":"https:\/\/ressources.data.sncf.com","id":"SIN","license":"SNCF Open Data","name":"SIN - SNCF INTERCITE OPEN DATA"},{"url":"https:\/\/ressources.data.sncf.com","id":"STE","license":"SNCF Open Data","name":"STE - SNCF TER OPEN DATA"},{"url":"https:\/\/ressources.data.sncf.com","id":"STT","license":"SNCF Open Data","name":"STT - SNCF TRAM TRAINS"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ONACROU"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:CROU"
+          }
+        ],
+        "name": "Chemin Rouge",
+        "links": [],
+        "coord": {
+          "lat": "47.251878",
+          "lon": "-1.517633"
+        },
+        "label": "Chemin Rouge (Nantes)",
+        "administrative_regions": [
+          {
+            "insee": "44109",
+            "name": "Nantes",
+            "level": 8,
+            "coord": {
+              "lat": "47.218636",
+              "lon": "-1.554136"
+            },
+            "label": "Nantes (44000-44300)",
+            "id": "admin:fr:44109",
+            "zip_code": "44000;44100;44200;44300"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:ONA:SA:CROU"
+      },
+      "name": "Chemin Rouge (Nantes)",
+      "id": "stop_area:ONA:SA:CROU"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBICTP4CHEM_1"
+          },
+          {
+            "type": "source",
+            "value": "CTP4CHEM_1"
+          }
+        ],
+        "name": "4 Chemins",
+        "links": [],
+        "coord": {
+          "lat": "48.405392",
+          "lon": "-4.477817"
+        },
+        "label": "4 Chemins (Brest)",
+        "administrative_regions": [
+          {
+            "insee": "29019",
+            "name": "Brest",
+            "level": 8,
+            "coord": {
+              "lat": "48.39053",
+              "lon": "-4.486008"
+            },
+            "label": "Brest (29200)",
+            "id": "admin:fr:29019",
+            "zip_code": "29200"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OBI:SA:CTP4CHEM_1"
+      },
+      "name": "4 Chemins (Brest)",
+      "id": "stop_area:OBI:SA:CTP4CHEM_1"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ONACBLE"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:CBLE"
+          }
+        ],
+        "name": "Chemin Bleu",
+        "links": [],
+        "coord": {
+          "lat": "47.178228",
+          "lon": "-1.525012"
+        },
+        "label": "Chemin Bleu (Vertou)",
+        "administrative_regions": [
+          {
+            "insee": "44215",
+            "name": "Vertou",
+            "level": 8,
+            "coord": {
+              "lat": "47.168442",
+              "lon": "-1.472159"
+            },
+            "label": "Vertou (44120)",
+            "id": "admin:fr:44215",
+            "zip_code": "44120"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:ONA:SA:CBLE"
+      },
+      "name": "Chemin Bleu (Vertou)",
+      "id": "stop_area:ONA:SA:CBLE"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OPLAST-12012-A-12012-R"
+          },
+          {
+            "type": "source",
+            "value": "AST-12012-A-12012-R"
+          }
+        ],
+        "name": "Cinq Chemins de Valais",
+        "links": [],
+        "coord": {
+          "lat": "47.315907",
+          "lon": "-1.689257"
+        },
+        "label": "Cinq Chemins de Valais (Vigneux-de-Bretagne)",
+        "administrative_regions": [
+          {
+            "insee": "44217",
+            "name": "Vigneux-de-Bretagne",
+            "level": 8,
+            "coord": {
+              "lat": "47.32679",
+              "lon": "-1.736875"
+            },
+            "label": "Vigneux-de-Bretagne (44360)",
+            "id": "admin:fr:44217",
+            "zip_code": "44360"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OPL:SA:AST-12012-A-12012-R"
+      },
+      "name": "Cinq Chemins de Valais (Vigneux-de-Bretagne)",
+      "id": "stop_area:OPL:SA:AST-12012-A-12012-R"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OANzone_CROIX_DE_CHEMINEE"
+          },
+          {
+            "type": "source",
+            "value": "zone_CROIX_DE_CHEMINEE"
+          }
+        ],
+        "name": "CROIX DE CHEMINEE",
+        "links": [],
+        "coord": {
+          "lat": "47.467733",
+          "lon": "-0.502891"
+        },
+        "label": "CROIX DE CHEMINEE (Saint-Barthélemy-d'Anjou)",
+        "administrative_regions": [
+          {
+            "insee": "49267",
+            "name": "Saint-Barthélemy-d'Anjou",
+            "level": 8,
+            "coord": {
+              "lat": "47.468307",
+              "lon": "-0.493294"
+            },
+            "label": "Saint-Barthélemy-d'Anjou (49124)",
+            "id": "admin:fr:49267",
+            "zip_code": "49124"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OAN:SA:zone_CROIX_DE_CHEMINEE"
+      },
+      "name": "CROIX DE CHEMINEE (Saint-Barthélemy-d'Anjou)",
+      "id": "stop_area:OAN:SA:zone_CROIX_DE_CHEMINEE"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORECTP3904"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3904"
+          },
+          {
+            "type": "source",
+            "value": "CTP3904"
+          }
+        ],
+        "name": "Chemin Vert",
+        "links": [],
+        "coord": {
+          "lat": "48.012935",
+          "lon": "-1.702976"
+        },
+        "label": "Chemin Vert (Pont-Péan)",
+        "administrative_regions": [
+          {
+            "insee": "35363",
+            "name": "Pont-Péan",
+            "level": 8,
+            "coord": {
+              "lat": "48.013107",
+              "lon": "-1.70231"
+            },
+            "label": "Pont-Péan (35131)",
+            "id": "admin:fr:35363",
+            "zip_code": "35131"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:ORE:SA:CTP3904"
+      },
+      "name": "Chemin Vert (Pont-Péan)",
+      "id": "stop_area:ORE:SA:CTP3904"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OPLAST-tempSCO3-A-tempSCO3-R"
+          },
+          {
+            "type": "source",
+            "value": "AST-tempSCO3-A-tempSCO3-R"
+          }
+        ],
+        "name": "Chemin Arentées",
+        "links": [],
+        "coord": {
+          "lat": "47.148458",
+          "lon": "-1.556057"
+        },
+        "label": "Chemin Arentées (Pont-Saint-Martin)",
+        "administrative_regions": [
+          {
+            "insee": "44130",
+            "name": "Pont-Saint-Martin",
+            "level": 8,
+            "coord": {
+              "lat": "47.123135",
+              "lon": "-1.583989"
+            },
+            "label": "Pont-Saint-Martin (44860)",
+            "id": "admin:fr:44130",
+            "zip_code": "44860"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OPL:SA:AST-tempSCO3-A-tempSCO3-R"
+      },
+      "name": "Chemin Arentées (Pont-Saint-Martin)",
+      "id": "stop_area:OPL:SA:AST-tempSCO3-A-tempSCO3-R"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "SINOCE87414276"
+          },
+          {
+            "type": "external_code",
+            "value": "STEOCE87414276"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:OCE87414276"
+          }
+        ],
+        "name": "Guiscriff-5-Chemins",
+        "links": [],
+        "coord": {
+          "lat": "48.067492",
+          "lon": "-3.661953"
+        },
+        "label": "Guiscriff-5-Chemins (Guiscriff)",
+        "administrative_regions": [
+          {
+            "insee": "56081",
+            "name": "Guiscriff",
+            "level": 8,
+            "coord": {
+              "lat": "48.04837",
+              "lon": "-3.644828"
+            },
+            "label": "Guiscriff (56560)",
+            "id": "admin:fr:56081",
+            "zip_code": "56560"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:SIN:SA:OCE87414276"
+      },
+      "name": "Guiscriff-5-Chemins (Guiscriff)",
+      "id": "stop_area:SIN:SA:OCE87414276"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ONAGRCH"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:GRCH"
+          }
+        ],
+        "name": "Grand chemin",
+        "links": [],
+        "coord": {
+          "lat": "47.197353",
+          "lon": "-1.784087"
+        },
+        "label": "Grand chemin (Le Pellerin)",
+        "administrative_regions": [
+          {
+            "insee": "44120",
+            "name": "Le Pellerin",
+            "level": 8,
+            "coord": {
+              "lat": "47.199924",
+              "lon": "-1.755036"
+            },
+            "label": "Le Pellerin (44640)",
+            "id": "admin:fr:44120",
+            "zip_code": "44640"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:ONA:SA:GRCH"
+      },
+      "name": "Grand chemin (Le Pellerin)",
+      "id": "stop_area:ONA:SA:GRCH"
+    },
+    {
+      "embedded_type": "line",
+      "line": {
+        "code": "",
+        "name": "Carhaix - Guiscriff-5-Chemins",
+        "links": [],
+        "physical_modes": [
+          {
+            "name": "Bus",
+            "id": "physical_mode:Bus"
+          }
+        ],
+        "opening_time": "070400",
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "text_color": "",
+        "color": "",
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "STEOCESN-87473504-87414276STEOCESN"
+          },
+          {
+            "type": "source",
+            "value": "OCESN-87473504-87414276"
+          }
+        ],
+        "closing_time": "070400",
+        "routes": [
+          {
+            "direction": {
+              "embedded_type": "stop_area",
+              "quality": 0,
+              "stop_area": {
+                "codes": [
+                  {
+                    "type": "external_code",
+                    "value": "SINOCE87473504"
+                  },
+                  {
+                    "type": "external_code",
+                    "value": "STEOCE87473504"
+                  },
+                  {
+                    "type": "source",
+                    "value": "StopArea:OCE87473504"
+                  }
+                ],
+                "name": "gare de Carhaix",
+                "links": [],
+                "coord": {
+                  "lat": "48.275812",
+                  "lon": "-3.56411"
+                },
+                "label": "gare de Carhaix (Carhaix-Plouguer)",
+                "timezone": "Europe/Paris",
+                "id": "stop_area:SIN:SA:OCE87473504"
+              },
+              "name": "gare de Carhaix (Carhaix-Plouguer)",
+              "id": "stop_area:SIN:SA:OCE87473504"
+            },
+            "codes": [
+              {
+                "type": "external_code",
+                "value": "STEOCESN-87473504-87414276"
+              },
+              {
+                "type": "source",
+                "value": "OCESN-87473504-87414276"
+              }
+            ],
+            "name": "Guiscriff-5-Chemins - gare de Carhaix",
+            "links": [],
+            "is_frequence": "False",
+            "geojson": {
+              "type": "MultiLineString",
+              "coordinates": []
+            },
+            "direction_type": "",
+            "id": "route:STE:OCESN-87473504-87414276"
+          }
+        ],
+        "commercial_mode": {
+          "name": "Bus",
+          "id": "commercial_mode:GTFS3"
+        },
+        "id": "line:STE:OCESN-87473504-87414276STEOCESN",
+        "network": {
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "SINOCENI"
+            },
+            {
+              "type": "external_code",
+              "value": "SINOCESN"
+            },
+            {
+              "type": "external_code",
+              "value": "sncf"
+            },
+            {
+              "type": "external_code",
+              "value": "STEOCENI"
+            },
+            {
+              "type": "external_code",
+              "value": "STEOCESN"
+            },
+            {
+              "type": "external_code",
+              "value": "STTOCESN"
+            },
+            {
+              "type": "source",
+              "value": "OCENI"
+            },
+            {
+              "type": "source",
+              "value": "OCESN"
+            },
+            {
+              "type": "source",
+              "value": "sncf"
+            }
+          ],
+          "name": "SNCF",
+          "links": [],
+          "id": "network:sncf"
+        }
+      },
+      "quality": 0,
+      "id": "line:STE:OCESN-87473504-87414276STEOCESN",
+      "name": "SNCF Bus  (Carhaix - Guiscriff-5-Chemins)"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-nw/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-nw/physical_modes/{physical_modes.id}",
+      "type": "physical_modes",
+      "rel": "physical_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-nw/commercial_modes/{commercial_mode.id}",
+      "type": "commercial_mode",
+      "rel": "commercial_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-nw/networks/{network.id}",
+      "type": "network",
+      "rel": "networks",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-nw/routes/{routes.id}",
+      "type": "routes",
+      "rel": "routes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-nw/lines/{line.id}",
+      "type": "line",
+      "rel": "lines",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "fr-nw",
+      "license": "OpenData",
+      "name": "France North West Quarter"
+    },
+    {
+      "url": "http://data.angers.fr/",
+      "id": "OAN",
+      "license": "ODbL",
+      "name": "OAN - Angers Loire Métropole"
+    },
+    {
+      "url": "https://geo.pays-de-brest.fr",
+      "id": "OBI",
+      "license": "LO-OL",
+      "name": "OBI - Bibus - Keolis Brest"
+    },
+    {
+      "url": "http://data.nantes.fr/",
+      "id": "ONA",
+      "license": "ODbL",
+      "name": "ONA - TAN Nantes metropole"
+    },
+    {
+      "url": "http://data.loire-atlantique.fr/",
+      "id": "OPL",
+      "license": "ODbL",
+      "name": "OPL - Lila pays de la Loire"
+    },
+    {
+      "url": "https://data.explore.star.fr",
+      "id": "ORE",
+      "license": "ODbL",
+      "name": "ORE - STAR Rennes"
+    },
+    {
+      "url": "https://ressources.data.sncf.com",
+      "id": "SIN",
+      "license": "SNCF Open Data",
+      "name": "SIN - SNCF INTERCITE OPEN DATA"
+    },
+    {
+      "url": "https://ressources.data.sncf.com",
+      "id": "STE",
+      "license": "SNCF Open Data",
+      "name": "STE - SNCF TER OPEN DATA"
+    },
+    {
+      "url": "https://ressources.data.sncf.com",
+      "id": "STT",
+      "license": "SNCF Open Data",
+      "name": "STT - SNCF TRAM TRAINS"
+    }
+  ]
+}

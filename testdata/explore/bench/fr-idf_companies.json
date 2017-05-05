@@ -1,1 +1,524 @@
-{"disruptions":[],"pagination":{"start_page":0,"items_on_page":123,"items_per_page":1000,"total_result":123},"companies":[{"name":"Arlequin","id":"company:OIF:274"},{"name":"Apolo 7","id":"company:OIF:369"},{"name":"Albatrans","id":"company:OIF:571"},{"name":"Actip\u00f4les","id":"company:OIF:303"},{"name":"AUTOCARS DOMINIQUE","id":"company:OIF:639"},{"name":"ADP","id":"company:OIF:658"},{"name":"Aubergenville","id":"company:OIF:783"},{"name":"Autobus du Fort","id":"company:OIF:448"},{"name":"Autocars Tourneux","id":"company:OIF:456"},{"name":"A\u00e9rial","id":"company:OIF:419"},{"name":"BUS O' Mureaux","id":"company:OIF:385"},{"name":"Bouff\u00e9mont","id":"company:OIF:726"},{"name":"Brie Bus","id":"company:OIF:450"},{"name":"Bus Haut Val d'Oise","id":"company:OIF:15"},{"name":"Bus en Seine","id":"company:OIF:14"},{"name":"Busval d'Oise","id":"company:OIF:758"},{"name":"CARS MOREAU","id":"company:OIF:30"},{"name":"CARS PERRIER","id":"company:OIF:418"},{"name":"CARS PERRON","id":"company:OIF:410"},{"name":"CARS SOEUR","id":"company:OIF:35"},{"name":"CEAT","id":"company:OIF:18"},{"name":"CIF","id":"company:OIF:339"},{"name":"CITALIEN","id":"company:OIF:531"},{"name":"CSO","id":"company:OIF:282"},{"name":"Cars ROSE","id":"company:OIF:33"},{"name":"Chavilbus","id":"company:OIF:780"},{"name":"Com'Bus","id":"company:OIF:302"},{"name":"Comete","id":"company:OIF:38"},{"name":"Com\u00e8te","id":"company:OIF:387"},{"name":"Conflans Ach\u00e8res","id":"company:OIF:611"},{"name":"Dourdanais","id":"company:OIF:746"},{"name":"Entre Seine et For\u00eat","id":"company:OIF:266"},{"name":"Express A14","id":"company:OIF:95"},{"name":"Fil\u00e9o","id":"company:OIF:319"},{"name":"Genovebus","id":"company:OIF:351"},{"name":"Go\u00eblys","id":"company:OIF:557"},{"name":"HOURTOULE","id":"company:OIF:405"},{"name":"Houdanais","id":"company:OIF:747"},{"name":"KVO","id":"company:OIF:651"},{"name":"Keolis Orly Rungis","id":"company:OIF:822"},{"name":"Keolis Seine Val-De-Marne","id":"company:OIF:829"},{"name":"LACROIX","id":"company:OIF:367"},{"name":"LE BUS DIRECT (cars air france)","id":"company:OIF:810"},{"name":"LES CARS BLEUS","id":"company:OIF:379"},{"name":"LOSAY VOYAGES","id":"company:OIF:422"},{"name":"MAGICAL SHUTTLE","id":"company:OIF:750"},{"name":"METRO","id":"company:OIF:439"},{"name":"MONTESSON LA BOUCLE","id":"company:OIF:397"},{"name":"Melibus","id":"company:OIF:364"},{"name":"Mobicaps","id":"company:OIF:361"},{"name":"Mobilien 27","id":"company:OIF:613"},{"name":"Mobilien 9518","id":"company:OIF:614"},{"name":"Navette","id":"company:OIF:441"},{"name":"Noctilien","id":"company:OIF:56"},{"name":"ORMONT TRANSPORT","id":"company:OIF:408"},{"name":"Orgebus","id":"company:OIF:434"},{"name":"PROCARS","id":"company:OIF:308"},{"name":"Paladin","id":"company:OIF:420"},{"name":"Paris Saclay","id":"company:OIF:816"},{"name":"Parisis","id":"company:OIF:366"},{"name":"Pays Cr\u00e9\u00e7ois","id":"company:OIF:375"},{"name":"Pays Fertois","id":"company:OIF:344"},{"name":"Pays de Meaux","id":"company:OIF:372"},{"name":"Pays de l'Ourcq","id":"company:OIF:376"},{"name":"Pep's","id":"company:OIF:377"},{"name":"Ph\u00e9bus","id":"company:OIF:285"},{"name":"Plateau de Brie","id":"company:OIF:417"},{"name":"R'bus","id":"company:OIF:295"},{"name":"RATP","id":"company:OIF:442"},{"name":"RER","id":"company:OIF:741"},{"name":"Rambouillet Interurbain","id":"company:OIF:753"},{"name":"Resalys","id":"company:OIF:330"},{"name":"R\u00e9seau du Canton de Perthes","id":"company:OIF:642"},{"name":"R\u00e9seau d\u00e9partemental de l'Oise","id":"company:OIF:275"},{"name":"SAVAC","id":"company:OIF:101"},{"name":"SITUS","id":"company:OIF:112"},{"name":"SIVOM---Maisons-Laffitte et Le Mesnil Le Roi","id":"company:OIF:612"},{"name":"SNCF","id":"company:OIF:354"},{"name":"SQYBUS","id":"company:OIF:678"},{"name":"STAVO","id":"company:OIF:406"},{"name":"STILL","id":"company:OIF:118"},{"name":"STIVO","id":"company:OIF:119"},{"name":"STRAV","id":"company:OIF:120"},{"name":"Scolaire Est Yvelines","id":"company:OIF:855"},{"name":"Seine Essonne Bus","id":"company:OIF:817"},{"name":"Seine S\u00e9nart Bus","id":"company:OIF:820"},{"name":"Seine et Marne Express","id":"company:OIF:105"},{"name":"Seine-Senart Bus","id":"company:OIF:808"},{"name":"Service Urbain de Villecresnes","id":"company:OIF:102"},{"name":"Sit'bus","id":"company:OIF:368"},{"name":"Siyonne","id":"company:OIF:388"},{"name":"Sol'R","id":"company:OIF:345"},{"name":"Stigo","id":"company:OIF:752"},{"name":"S\u00e9nart-Bus","id":"company:OIF:107"},{"name":"S\u00e9nart-Express","id":"company:OIF:108"},{"name":"TAM","id":"company:OIF:584"},{"name":"TER","id":"company:OIF:743"},{"name":"TICE","id":"company:OIF:471"},{"name":"TRA","id":"company:OIF:92"},{"name":"TRAIN","id":"company:OIF:742"},{"name":"TRAMWAY","id":"company:OIF:440"},{"name":"TRAMY","id":"company:OIF:346"},{"name":"TRANSPORTS DANIEL MEYER","id":"company:OIF:407"},{"name":"TVS","id":"company:OIF:426"},{"name":"Titus","id":"company:OIF:782"},{"name":"Trans Val d'Oise","id":"company:OIF:127"},{"name":"Trans Val de France","id":"company:OIF:447"},{"name":"Trans'Essonne","id":"company:OIF:349"},{"name":"Transdev Ile-de-France Br\u00e9tigny","id":"company:OIF:604"},{"name":"Transdev Ile-de-France Ecquevilly","id":"company:OIF:635"},{"name":"Transdev Ile-de-France Houdan","id":"company:OIF:605"},{"name":"Transdev Ile-de-France Lys","id":"company:OIF:848"},{"name":"Transdev Ile-de-France Montesson Les Rabaux","id":"company:OIF:661"},{"name":"Transdev Ile-de-France Vulaines","id":"company:OIF:708"},{"name":"Traverciel","id":"company:OIF:132"},{"name":"Ulys","id":"company:OIF:412"},{"name":"VIAMO-MELUN","id":"company:OIF:870"},{"name":"ValBus","id":"company:OIF:365"},{"name":"Valmy","id":"company:OIF:134"},{"name":"Valoise","id":"company:OIF:215"},{"name":"VyBus","id":"company:OIF:326"},{"name":"Yerres","id":"company:OIF:347"},{"name":"rbus","id":"company:OIF:507"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-idf\/companies\/{companies.id}","type":"companies","rel":"companies","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-idf\/companies?count=1000","type":"first","templated":false}],"feed_publishers":[{"url":"http:\/\/www.vianavigo.com","id":"OIF","license":"ODbL","name":"OIF - STIF Ile de France"}]}
+{
+  "disruptions": [],
+  "pagination": {
+    "start_page": 0,
+    "items_on_page": 123,
+    "items_per_page": 1000,
+    "total_result": 123
+  },
+  "companies": [
+    {
+      "name": "Arlequin",
+      "id": "company:OIF:274"
+    },
+    {
+      "name": "Apolo 7",
+      "id": "company:OIF:369"
+    },
+    {
+      "name": "Albatrans",
+      "id": "company:OIF:571"
+    },
+    {
+      "name": "Actipôles",
+      "id": "company:OIF:303"
+    },
+    {
+      "name": "AUTOCARS DOMINIQUE",
+      "id": "company:OIF:639"
+    },
+    {
+      "name": "ADP",
+      "id": "company:OIF:658"
+    },
+    {
+      "name": "Aubergenville",
+      "id": "company:OIF:783"
+    },
+    {
+      "name": "Autobus du Fort",
+      "id": "company:OIF:448"
+    },
+    {
+      "name": "Autocars Tourneux",
+      "id": "company:OIF:456"
+    },
+    {
+      "name": "Aérial",
+      "id": "company:OIF:419"
+    },
+    {
+      "name": "BUS O' Mureaux",
+      "id": "company:OIF:385"
+    },
+    {
+      "name": "Bouffémont",
+      "id": "company:OIF:726"
+    },
+    {
+      "name": "Brie Bus",
+      "id": "company:OIF:450"
+    },
+    {
+      "name": "Bus Haut Val d'Oise",
+      "id": "company:OIF:15"
+    },
+    {
+      "name": "Bus en Seine",
+      "id": "company:OIF:14"
+    },
+    {
+      "name": "Busval d'Oise",
+      "id": "company:OIF:758"
+    },
+    {
+      "name": "CARS MOREAU",
+      "id": "company:OIF:30"
+    },
+    {
+      "name": "CARS PERRIER",
+      "id": "company:OIF:418"
+    },
+    {
+      "name": "CARS PERRON",
+      "id": "company:OIF:410"
+    },
+    {
+      "name": "CARS SOEUR",
+      "id": "company:OIF:35"
+    },
+    {
+      "name": "CEAT",
+      "id": "company:OIF:18"
+    },
+    {
+      "name": "CIF",
+      "id": "company:OIF:339"
+    },
+    {
+      "name": "CITALIEN",
+      "id": "company:OIF:531"
+    },
+    {
+      "name": "CSO",
+      "id": "company:OIF:282"
+    },
+    {
+      "name": "Cars ROSE",
+      "id": "company:OIF:33"
+    },
+    {
+      "name": "Chavilbus",
+      "id": "company:OIF:780"
+    },
+    {
+      "name": "Com'Bus",
+      "id": "company:OIF:302"
+    },
+    {
+      "name": "Comete",
+      "id": "company:OIF:38"
+    },
+    {
+      "name": "Comète",
+      "id": "company:OIF:387"
+    },
+    {
+      "name": "Conflans Achères",
+      "id": "company:OIF:611"
+    },
+    {
+      "name": "Dourdanais",
+      "id": "company:OIF:746"
+    },
+    {
+      "name": "Entre Seine et Forêt",
+      "id": "company:OIF:266"
+    },
+    {
+      "name": "Express A14",
+      "id": "company:OIF:95"
+    },
+    {
+      "name": "Filéo",
+      "id": "company:OIF:319"
+    },
+    {
+      "name": "Genovebus",
+      "id": "company:OIF:351"
+    },
+    {
+      "name": "Goëlys",
+      "id": "company:OIF:557"
+    },
+    {
+      "name": "HOURTOULE",
+      "id": "company:OIF:405"
+    },
+    {
+      "name": "Houdanais",
+      "id": "company:OIF:747"
+    },
+    {
+      "name": "KVO",
+      "id": "company:OIF:651"
+    },
+    {
+      "name": "Keolis Orly Rungis",
+      "id": "company:OIF:822"
+    },
+    {
+      "name": "Keolis Seine Val-De-Marne",
+      "id": "company:OIF:829"
+    },
+    {
+      "name": "LACROIX",
+      "id": "company:OIF:367"
+    },
+    {
+      "name": "LE BUS DIRECT (cars air france)",
+      "id": "company:OIF:810"
+    },
+    {
+      "name": "LES CARS BLEUS",
+      "id": "company:OIF:379"
+    },
+    {
+      "name": "LOSAY VOYAGES",
+      "id": "company:OIF:422"
+    },
+    {
+      "name": "MAGICAL SHUTTLE",
+      "id": "company:OIF:750"
+    },
+    {
+      "name": "METRO",
+      "id": "company:OIF:439"
+    },
+    {
+      "name": "MONTESSON LA BOUCLE",
+      "id": "company:OIF:397"
+    },
+    {
+      "name": "Melibus",
+      "id": "company:OIF:364"
+    },
+    {
+      "name": "Mobicaps",
+      "id": "company:OIF:361"
+    },
+    {
+      "name": "Mobilien 27",
+      "id": "company:OIF:613"
+    },
+    {
+      "name": "Mobilien 9518",
+      "id": "company:OIF:614"
+    },
+    {
+      "name": "Navette",
+      "id": "company:OIF:441"
+    },
+    {
+      "name": "Noctilien",
+      "id": "company:OIF:56"
+    },
+    {
+      "name": "ORMONT TRANSPORT",
+      "id": "company:OIF:408"
+    },
+    {
+      "name": "Orgebus",
+      "id": "company:OIF:434"
+    },
+    {
+      "name": "PROCARS",
+      "id": "company:OIF:308"
+    },
+    {
+      "name": "Paladin",
+      "id": "company:OIF:420"
+    },
+    {
+      "name": "Paris Saclay",
+      "id": "company:OIF:816"
+    },
+    {
+      "name": "Parisis",
+      "id": "company:OIF:366"
+    },
+    {
+      "name": "Pays Créçois",
+      "id": "company:OIF:375"
+    },
+    {
+      "name": "Pays Fertois",
+      "id": "company:OIF:344"
+    },
+    {
+      "name": "Pays de Meaux",
+      "id": "company:OIF:372"
+    },
+    {
+      "name": "Pays de l'Ourcq",
+      "id": "company:OIF:376"
+    },
+    {
+      "name": "Pep's",
+      "id": "company:OIF:377"
+    },
+    {
+      "name": "Phébus",
+      "id": "company:OIF:285"
+    },
+    {
+      "name": "Plateau de Brie",
+      "id": "company:OIF:417"
+    },
+    {
+      "name": "R'bus",
+      "id": "company:OIF:295"
+    },
+    {
+      "name": "RATP",
+      "id": "company:OIF:442"
+    },
+    {
+      "name": "RER",
+      "id": "company:OIF:741"
+    },
+    {
+      "name": "Rambouillet Interurbain",
+      "id": "company:OIF:753"
+    },
+    {
+      "name": "Resalys",
+      "id": "company:OIF:330"
+    },
+    {
+      "name": "Réseau du Canton de Perthes",
+      "id": "company:OIF:642"
+    },
+    {
+      "name": "Réseau départemental de l'Oise",
+      "id": "company:OIF:275"
+    },
+    {
+      "name": "SAVAC",
+      "id": "company:OIF:101"
+    },
+    {
+      "name": "SITUS",
+      "id": "company:OIF:112"
+    },
+    {
+      "name": "SIVOM---Maisons-Laffitte et Le Mesnil Le Roi",
+      "id": "company:OIF:612"
+    },
+    {
+      "name": "SNCF",
+      "id": "company:OIF:354"
+    },
+    {
+      "name": "SQYBUS",
+      "id": "company:OIF:678"
+    },
+    {
+      "name": "STAVO",
+      "id": "company:OIF:406"
+    },
+    {
+      "name": "STILL",
+      "id": "company:OIF:118"
+    },
+    {
+      "name": "STIVO",
+      "id": "company:OIF:119"
+    },
+    {
+      "name": "STRAV",
+      "id": "company:OIF:120"
+    },
+    {
+      "name": "Scolaire Est Yvelines",
+      "id": "company:OIF:855"
+    },
+    {
+      "name": "Seine Essonne Bus",
+      "id": "company:OIF:817"
+    },
+    {
+      "name": "Seine Sénart Bus",
+      "id": "company:OIF:820"
+    },
+    {
+      "name": "Seine et Marne Express",
+      "id": "company:OIF:105"
+    },
+    {
+      "name": "Seine-Senart Bus",
+      "id": "company:OIF:808"
+    },
+    {
+      "name": "Service Urbain de Villecresnes",
+      "id": "company:OIF:102"
+    },
+    {
+      "name": "Sit'bus",
+      "id": "company:OIF:368"
+    },
+    {
+      "name": "Siyonne",
+      "id": "company:OIF:388"
+    },
+    {
+      "name": "Sol'R",
+      "id": "company:OIF:345"
+    },
+    {
+      "name": "Stigo",
+      "id": "company:OIF:752"
+    },
+    {
+      "name": "Sénart-Bus",
+      "id": "company:OIF:107"
+    },
+    {
+      "name": "Sénart-Express",
+      "id": "company:OIF:108"
+    },
+    {
+      "name": "TAM",
+      "id": "company:OIF:584"
+    },
+    {
+      "name": "TER",
+      "id": "company:OIF:743"
+    },
+    {
+      "name": "TICE",
+      "id": "company:OIF:471"
+    },
+    {
+      "name": "TRA",
+      "id": "company:OIF:92"
+    },
+    {
+      "name": "TRAIN",
+      "id": "company:OIF:742"
+    },
+    {
+      "name": "TRAMWAY",
+      "id": "company:OIF:440"
+    },
+    {
+      "name": "TRAMY",
+      "id": "company:OIF:346"
+    },
+    {
+      "name": "TRANSPORTS DANIEL MEYER",
+      "id": "company:OIF:407"
+    },
+    {
+      "name": "TVS",
+      "id": "company:OIF:426"
+    },
+    {
+      "name": "Titus",
+      "id": "company:OIF:782"
+    },
+    {
+      "name": "Trans Val d'Oise",
+      "id": "company:OIF:127"
+    },
+    {
+      "name": "Trans Val de France",
+      "id": "company:OIF:447"
+    },
+    {
+      "name": "Trans'Essonne",
+      "id": "company:OIF:349"
+    },
+    {
+      "name": "Transdev Ile-de-France Brétigny",
+      "id": "company:OIF:604"
+    },
+    {
+      "name": "Transdev Ile-de-France Ecquevilly",
+      "id": "company:OIF:635"
+    },
+    {
+      "name": "Transdev Ile-de-France Houdan",
+      "id": "company:OIF:605"
+    },
+    {
+      "name": "Transdev Ile-de-France Lys",
+      "id": "company:OIF:848"
+    },
+    {
+      "name": "Transdev Ile-de-France Montesson Les Rabaux",
+      "id": "company:OIF:661"
+    },
+    {
+      "name": "Transdev Ile-de-France Vulaines",
+      "id": "company:OIF:708"
+    },
+    {
+      "name": "Traverciel",
+      "id": "company:OIF:132"
+    },
+    {
+      "name": "Ulys",
+      "id": "company:OIF:412"
+    },
+    {
+      "name": "VIAMO-MELUN",
+      "id": "company:OIF:870"
+    },
+    {
+      "name": "ValBus",
+      "id": "company:OIF:365"
+    },
+    {
+      "name": "Valmy",
+      "id": "company:OIF:134"
+    },
+    {
+      "name": "Valoise",
+      "id": "company:OIF:215"
+    },
+    {
+      "name": "VyBus",
+      "id": "company:OIF:326"
+    },
+    {
+      "name": "Yerres",
+      "id": "company:OIF:347"
+    },
+    {
+      "name": "rbus",
+      "id": "company:OIF:507"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-idf/companies/{companies.id}",
+      "type": "companies",
+      "rel": "companies",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-idf/companies?count=1000",
+      "type": "first",
+      "templated": false
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.vianavigo.com",
+      "id": "OIF",
+      "license": "ODbL",
+      "name": "OIF - STIF Ile de France"
+    }
+  ]
+}

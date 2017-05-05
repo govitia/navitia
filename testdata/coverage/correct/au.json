@@ -1,1 +1,167 @@
-{"regions":[{"status":"running","dataset_created_at":"20170408T083820","name":"Australia","start_production_date":"20170307","shape":"MULTIPOLYGON(((104.8717 -34.58607,106.371 -26.80933,118.0167 -16.56567,131.6035 -9.92458,139.1872 -10.62093,142.0445 -9.462762,144.7455 -10.35593,145.0949 -12.78362,148.4044 -18.26679,152.6561 -18.60755,156.0377 -23.99792,155.6286 -27.56699,148.3016 -45.95665,104.8717 -34.58607)))","end_production_date":"20170708","error":null,"last_load_at":"20170411T015022","id":"au"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/addresses","type":"addresses","rel":"addresses","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/contributors","type":"contributors","rel":"contributors","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/companies","type":"companies","rel":"companies","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/connections","type":"connections","rel":"connections","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/vehicle_journeys","type":"vehicle_journeys","rel":"vehicle_journeys","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/networks","type":"networks","rel":"networks","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/commercial_modes","type":"commercial_modes","rel":"commercial_modes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/physical_modes","type":"physical_modes","rel":"physical_modes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/disruptions","type":"disruptions","rel":"disruptions","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/pois","type":"pois","rel":"pois","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/stop_points","type":"stop_points","rel":"stop_points","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/poi_types","type":"poi_types","rel":"poi_types","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/datasets","type":"datasets","rel":"datasets","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/journey_pattern_points","type":"journey_pattern_points","rel":"journey_pattern_points","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/lines","type":"lines","rel":"lines","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/coord","type":"coord","rel":"coord","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/stop_areas","type":"stop_areas","rel":"stop_areas","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/coords","type":"coords","rel":"coords","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/journey_patterns","type":"journey_patterns","rel":"journey_patterns","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/routes","type":"routes","rel":"routes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/trips","type":"trips","rel":"trips","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/line_groups","type":"line_groups","rel":"line_groups","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/places","type":"places","rel":"places","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/journeys","type":"journeys","rel":"journeys","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/au\/","type":"coverage","rel":"coverage","templated":true}]}
+{
+  "regions": [
+    {
+      "status": "running",
+      "dataset_created_at": "20170408T083820",
+      "name": "Australia",
+      "start_production_date": "20170307",
+      "shape": "MULTIPOLYGON(((104.8717 -34.58607,106.371 -26.80933,118.0167 -16.56567,131.6035 -9.92458,139.1872 -10.62093,142.0445 -9.462762,144.7455 -10.35593,145.0949 -12.78362,148.4044 -18.26679,152.6561 -18.60755,156.0377 -23.99792,155.6286 -27.56699,148.3016 -45.95665,104.8717 -34.58607)))",
+      "end_production_date": "20170708",
+      "error": null,
+      "last_load_at": "20170411T015022",
+      "id": "au"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/addresses",
+      "type": "addresses",
+      "rel": "addresses",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/contributors",
+      "type": "contributors",
+      "rel": "contributors",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/companies",
+      "type": "companies",
+      "rel": "companies",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/connections",
+      "type": "connections",
+      "rel": "connections",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/vehicle_journeys",
+      "type": "vehicle_journeys",
+      "rel": "vehicle_journeys",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/networks",
+      "type": "networks",
+      "rel": "networks",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/commercial_modes",
+      "type": "commercial_modes",
+      "rel": "commercial_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/physical_modes",
+      "type": "physical_modes",
+      "rel": "physical_modes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/disruptions",
+      "type": "disruptions",
+      "rel": "disruptions",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/pois",
+      "type": "pois",
+      "rel": "pois",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/stop_points",
+      "type": "stop_points",
+      "rel": "stop_points",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/poi_types",
+      "type": "poi_types",
+      "rel": "poi_types",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/datasets",
+      "type": "datasets",
+      "rel": "datasets",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/journey_pattern_points",
+      "type": "journey_pattern_points",
+      "rel": "journey_pattern_points",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/lines",
+      "type": "lines",
+      "rel": "lines",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/coord",
+      "type": "coord",
+      "rel": "coord",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/stop_areas",
+      "type": "stop_areas",
+      "rel": "stop_areas",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/coords",
+      "type": "coords",
+      "rel": "coords",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/journey_patterns",
+      "type": "journey_patterns",
+      "rel": "journey_patterns",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/routes",
+      "type": "routes",
+      "rel": "routes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/trips",
+      "type": "trips",
+      "rel": "trips",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/line_groups",
+      "type": "line_groups",
+      "rel": "line_groups",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/places",
+      "type": "places",
+      "rel": "places",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/journeys",
+      "type": "journeys",
+      "rel": "journeys",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/au/",
+      "type": "coverage",
+      "rel": "coverage",
+      "templated": true
+    }
+  ]
+}

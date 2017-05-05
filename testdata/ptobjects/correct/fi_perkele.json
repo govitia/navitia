@@ -1,1 +1,567 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":76,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP187934"},{"type":"external_code","value":"OKACTP190173"},{"type":"external_code","value":"OUUCTP187934"},{"type":"external_code","value":"OUUCTP190173"},{"type":"gtfs_stop_code","value":"2710"},{"type":"gtfs_stop_code","value":"2711"},{"type":"source","value":"CTP187934"},{"type":"source","value":"CTP190173"}],"name":"Kirkonm\u00e4ki P","links":[],"coord":{"lat":"64.91432399999999","lon":"25.486628"},"label":"Kirkonm\u00e4ki P (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP187934"},"name":"Kirkonm\u00e4ki P (Kempele)","id":"stop_area:OUU:SA:CTP187934"},{"embedded_type":"stop_area","quality":77,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP150051"},{"type":"external_code","value":"OUUCTP150051"},{"type":"gtfs_stop_code","value":"2790"},{"type":"source","value":"CTP150051"}],"name":"Kerttula E","links":[],"coord":{"lat":"64.886821","lon":"25.563866"},"label":"Kerttula E (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP150051"},"name":"Kerttula E (Kempele)","id":"stop_area:OUU:SA:CTP150051"},{"embedded_type":"stop_area","quality":77,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP150050"},{"type":"external_code","value":"OUUCTP150050"},{"type":"gtfs_stop_code","value":"2787"},{"type":"source","value":"CTP150050"}],"name":"Kerttula P","links":[],"coord":{"lat":"64.88749199999999","lon":"25.562817"},"label":"Kerttula P (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP150050"},"name":"Kerttula P (Kempele)","id":"stop_area:OUU:SA:CTP150050"},{"embedded_type":"stop_area","quality":76,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP150057"},{"type":"external_code","value":"OUUCTP150057"},{"type":"gtfs_stop_code","value":"2808"},{"type":"source","value":"CTP150057"}],"name":"Palonper\u00e4 E","links":[],"coord":{"lat":"64.873231","lon":"25.583647"},"label":"Palonper\u00e4 E (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP150057"},"name":"Palonper\u00e4 E (Kempele)","id":"stop_area:OUU:SA:CTP150057"},{"embedded_type":"stop_area","quality":76,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP150056"},{"type":"external_code","value":"OUUCTP150056"},{"type":"gtfs_stop_code","value":"2807"},{"type":"source","value":"CTP150056"}],"name":"Palonper\u00e4 P","links":[],"coord":{"lat":"64.873929","lon":"25.582576"},"label":"Palonper\u00e4 P (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP150056"},"name":"Palonper\u00e4 P (Kempele)","id":"stop_area:OUU:SA:CTP150056"},{"embedded_type":"stop_area","quality":74,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP150059"},{"type":"external_code","value":"OUUCTP150059"},{"type":"gtfs_stop_code","value":"2814"},{"type":"source","value":"CTP150059"}],"name":"Ketolanper\u00e4 E","links":[],"coord":{"lat":"64.86881200000001","lon":"25.588795"},"label":"Ketolanper\u00e4 E (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP150059"},"name":"Ketolanper\u00e4 E (Kempele)","id":"stop_area:OUU:SA:CTP150059"},{"embedded_type":"stop_area","quality":74,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP150058"},{"type":"external_code","value":"OUUCTP150058"},{"type":"gtfs_stop_code","value":"2813"},{"type":"source","value":"CTP150058"}],"name":"Ketolanper\u00e4 P","links":[],"coord":{"lat":"64.869575","lon":"25.587953"},"label":"Ketolanper\u00e4 P (Kempele)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP150058"},"name":"Ketolanper\u00e4 P (Kempele)","id":"stop_area:OUU:SA:CTP150058"},{"embedded_type":"stop_area","quality":69,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP101578"},{"type":"external_code","value":"OUUCTP101578"},{"type":"gtfs_stop_code","value":"2601"},{"type":"source","value":"CTP101578"}],"name":"Kuivalanper\u00e4 E","links":[],"coord":{"lat":"64.936847","lon":"25.512898"},"label":"Kuivalanper\u00e4 E (Kempele) (Oulu)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""},{"insee":"","name":"Oulu","level":8,"coord":{"lat":"65.011871","lon":"25.47168"},"label":"Oulu","id":"admin:osm:2711874","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP101578"},"name":"Kuivalanper\u00e4 E (Kempele) (Oulu)","id":"stop_area:OUU:SA:CTP101578"},{"embedded_type":"stop_area","quality":69,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP101577"},{"type":"external_code","value":"OUUCTP101577"},{"type":"gtfs_stop_code","value":"2600"},{"type":"source","value":"CTP101577"}],"name":"Kuivalanper\u00e4 P","links":[],"coord":{"lat":"64.937782","lon":"25.514051"},"label":"Kuivalanper\u00e4 P (Kempele) (Oulu)","administrative_regions":[{"insee":"","name":"Kempele","level":8,"coord":{"lat":"64.912453","lon":"25.510822"},"label":"Kempele","id":"admin:osm:2513124","zip_code":""},{"insee":"","name":"Oulu","level":8,"coord":{"lat":"65.011871","lon":"25.47168"},"label":"Oulu","id":"admin:osm:2711874","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OUU:SA:CTP101577"},"name":"Kuivalanper\u00e4 P (Kempele) (Oulu)","id":"stop_area:OUU:SA:CTP101577"},{"embedded_type":"stop_area","quality":73,"stop_area":{"codes":[{"type":"external_code","value":"OKACTP3200"},{"type":"source","value":"CTP3200"}],"name":"K-Supermarket Ellen","links":[],"coord":{"lat":"60.466911","lon":"22.032555"},"label":"K-Supermarket Ellen (Naantali)","administrative_regions":[{"insee":"","name":"Naantali","level":8,"coord":{"lat":"60.468868","lon":"22.029114"},"label":"Naantali","id":"admin:osm:2376175","zip_code":""}],"timezone":"Europe\/Helsinki","id":"stop_area:OKA:SA:CTP3200"},"name":"K-Supermarket Ellen (Naantali)","id":"stop_area:OKA:SA:CTP3200"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fi\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"fi","license":"OpenData","name":"Finland"},{"url":"http:\/\/developer.reittiopas.fi","id":"OFI","license":"Terms of Use","name":"OFI - Helsinski"},{"url":"http:\/\/developer.reittiopas.fi","id":"OKA","license":"Terms of Use","name":"OKA - matka"},{"url":"http:\/\/developer.reittiopas.fi","id":"OPM","license":"Terms of Use","name":"OPM - tampere"},{"url":"http:\/\/developer.reittiopas.fi","id":"OUU","license":"Terms of Use","name":"OUU - oulu"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 76,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP187934"
+          },
+          {
+            "type": "external_code",
+            "value": "OKACTP190173"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP187934"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP190173"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2710"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2711"
+          },
+          {
+            "type": "source",
+            "value": "CTP187934"
+          },
+          {
+            "type": "source",
+            "value": "CTP190173"
+          }
+        ],
+        "name": "Kirkonmäki P",
+        "links": [],
+        "coord": {
+          "lat": "64.91432399999999",
+          "lon": "25.486628"
+        },
+        "label": "Kirkonmäki P (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP187934"
+      },
+      "name": "Kirkonmäki P (Kempele)",
+      "id": "stop_area:OUU:SA:CTP187934"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 77,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP150051"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP150051"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2790"
+          },
+          {
+            "type": "source",
+            "value": "CTP150051"
+          }
+        ],
+        "name": "Kerttula E",
+        "links": [],
+        "coord": {
+          "lat": "64.886821",
+          "lon": "25.563866"
+        },
+        "label": "Kerttula E (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP150051"
+      },
+      "name": "Kerttula E (Kempele)",
+      "id": "stop_area:OUU:SA:CTP150051"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 77,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP150050"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP150050"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2787"
+          },
+          {
+            "type": "source",
+            "value": "CTP150050"
+          }
+        ],
+        "name": "Kerttula P",
+        "links": [],
+        "coord": {
+          "lat": "64.88749199999999",
+          "lon": "25.562817"
+        },
+        "label": "Kerttula P (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP150050"
+      },
+      "name": "Kerttula P (Kempele)",
+      "id": "stop_area:OUU:SA:CTP150050"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 76,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP150057"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP150057"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2808"
+          },
+          {
+            "type": "source",
+            "value": "CTP150057"
+          }
+        ],
+        "name": "Palonperä E",
+        "links": [],
+        "coord": {
+          "lat": "64.873231",
+          "lon": "25.583647"
+        },
+        "label": "Palonperä E (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP150057"
+      },
+      "name": "Palonperä E (Kempele)",
+      "id": "stop_area:OUU:SA:CTP150057"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 76,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP150056"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP150056"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2807"
+          },
+          {
+            "type": "source",
+            "value": "CTP150056"
+          }
+        ],
+        "name": "Palonperä P",
+        "links": [],
+        "coord": {
+          "lat": "64.873929",
+          "lon": "25.582576"
+        },
+        "label": "Palonperä P (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP150056"
+      },
+      "name": "Palonperä P (Kempele)",
+      "id": "stop_area:OUU:SA:CTP150056"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 74,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP150059"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP150059"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2814"
+          },
+          {
+            "type": "source",
+            "value": "CTP150059"
+          }
+        ],
+        "name": "Ketolanperä E",
+        "links": [],
+        "coord": {
+          "lat": "64.86881200000001",
+          "lon": "25.588795"
+        },
+        "label": "Ketolanperä E (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP150059"
+      },
+      "name": "Ketolanperä E (Kempele)",
+      "id": "stop_area:OUU:SA:CTP150059"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 74,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP150058"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP150058"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2813"
+          },
+          {
+            "type": "source",
+            "value": "CTP150058"
+          }
+        ],
+        "name": "Ketolanperä P",
+        "links": [],
+        "coord": {
+          "lat": "64.869575",
+          "lon": "25.587953"
+        },
+        "label": "Ketolanperä P (Kempele)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP150058"
+      },
+      "name": "Ketolanperä P (Kempele)",
+      "id": "stop_area:OUU:SA:CTP150058"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 69,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP101578"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP101578"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2601"
+          },
+          {
+            "type": "source",
+            "value": "CTP101578"
+          }
+        ],
+        "name": "Kuivalanperä E",
+        "links": [],
+        "coord": {
+          "lat": "64.936847",
+          "lon": "25.512898"
+        },
+        "label": "Kuivalanperä E (Kempele) (Oulu)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Oulu",
+            "level": 8,
+            "coord": {
+              "lat": "65.011871",
+              "lon": "25.47168"
+            },
+            "label": "Oulu",
+            "id": "admin:osm:2711874",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP101578"
+      },
+      "name": "Kuivalanperä E (Kempele) (Oulu)",
+      "id": "stop_area:OUU:SA:CTP101578"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 69,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP101577"
+          },
+          {
+            "type": "external_code",
+            "value": "OUUCTP101577"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2600"
+          },
+          {
+            "type": "source",
+            "value": "CTP101577"
+          }
+        ],
+        "name": "Kuivalanperä P",
+        "links": [],
+        "coord": {
+          "lat": "64.937782",
+          "lon": "25.514051"
+        },
+        "label": "Kuivalanperä P (Kempele) (Oulu)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Kempele",
+            "level": 8,
+            "coord": {
+              "lat": "64.912453",
+              "lon": "25.510822"
+            },
+            "label": "Kempele",
+            "id": "admin:osm:2513124",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Oulu",
+            "level": 8,
+            "coord": {
+              "lat": "65.011871",
+              "lon": "25.47168"
+            },
+            "label": "Oulu",
+            "id": "admin:osm:2711874",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OUU:SA:CTP101577"
+      },
+      "name": "Kuivalanperä P (Kempele) (Oulu)",
+      "id": "stop_area:OUU:SA:CTP101577"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 73,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKACTP3200"
+          },
+          {
+            "type": "source",
+            "value": "CTP3200"
+          }
+        ],
+        "name": "K-Supermarket Ellen",
+        "links": [],
+        "coord": {
+          "lat": "60.466911",
+          "lon": "22.032555"
+        },
+        "label": "K-Supermarket Ellen (Naantali)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Naantali",
+            "level": 8,
+            "coord": {
+              "lat": "60.468868",
+              "lon": "22.029114"
+            },
+            "label": "Naantali",
+            "id": "admin:osm:2376175",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Helsinki",
+        "id": "stop_area:OKA:SA:CTP3200"
+      },
+      "name": "K-Supermarket Ellen (Naantali)",
+      "id": "stop_area:OKA:SA:CTP3200"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/fi/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "fi",
+      "license": "OpenData",
+      "name": "Finland"
+    },
+    {
+      "url": "http://developer.reittiopas.fi",
+      "id": "OFI",
+      "license": "Terms of Use",
+      "name": "OFI - Helsinski"
+    },
+    {
+      "url": "http://developer.reittiopas.fi",
+      "id": "OKA",
+      "license": "Terms of Use",
+      "name": "OKA - matka"
+    },
+    {
+      "url": "http://developer.reittiopas.fi",
+      "id": "OPM",
+      "license": "Terms of Use",
+      "name": "OPM - tampere"
+    },
+    {
+      "url": "http://developer.reittiopas.fi",
+      "id": "OUU",
+      "license": "Terms of Use",
+      "name": "OUU - oulu"
+    }
+  ]
+}

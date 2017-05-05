@@ -1,1 +1,1931 @@
-{"disruptions":[],"pagination":{"start_page":0,"items_on_page":123,"items_per_page":1000,"total_result":123},"networks":[{"codes":[{"type":"external_code","value":"OIF354"},{"type":"external_code","value":"sncf"},{"type":"source","value":"354"},{"type":"source","value":"sncf"}],"name":"SNCF","links":[],"id":"network:sncf"},{"codes":[{"type":"external_code","value":"OIF658"},{"type":"source","value":"658"}],"name":"ADP","links":[],"id":"network:OIF:658"},{"codes":[{"type":"external_code","value":"OIF639"},{"type":"source","value":"639"}],"name":"AUTOCARS DOMINIQUE","links":[],"id":"network:OIF:639"},{"codes":[{"type":"external_code","value":"OIF303"},{"type":"source","value":"303"}],"name":"Actip\u00f4les","links":[],"id":"network:OIF:303"},{"codes":[{"type":"external_code","value":"OIF571"},{"type":"source","value":"571"}],"name":"Albatrans","links":[],"id":"network:OIF:571"},{"codes":[{"type":"external_code","value":"OIF369"},{"type":"source","value":"369"}],"name":"Apolo 7","links":[],"id":"network:OIF:369"},{"codes":[{"type":"external_code","value":"OIF274"},{"type":"source","value":"274"}],"name":"Arlequin","links":[],"id":"network:OIF:274"},{"codes":[{"type":"external_code","value":"OIF783"},{"type":"source","value":"783"}],"name":"Aubergenville","links":[],"id":"network:OIF:783"},{"codes":[{"type":"external_code","value":"OIF448"},{"type":"source","value":"448"}],"name":"Autobus du Fort","links":[],"id":"network:OIF:448"},{"codes":[{"type":"external_code","value":"OIF456"},{"type":"source","value":"456"}],"name":"Autocars Tourneux","links":[],"id":"network:OIF:456"},{"codes":[{"type":"external_code","value":"OIF419"},{"type":"source","value":"419"}],"name":"A\u00e9rial","links":[],"id":"network:OIF:419"},{"codes":[{"type":"external_code","value":"OIF385"},{"type":"source","value":"385"}],"name":"BUS O' Mureaux","links":[],"id":"network:OIF:385"},{"codes":[{"type":"external_code","value":"OIF726"},{"type":"source","value":"726"}],"name":"Bouff\u00e9mont","links":[],"id":"network:OIF:726"},{"codes":[{"type":"external_code","value":"OIF450"},{"type":"source","value":"450"}],"name":"Brie Bus","links":[],"id":"network:OIF:450"},{"codes":[{"type":"external_code","value":"OIF15"},{"type":"source","value":"15"}],"name":"Bus Haut Val d'Oise","links":[],"id":"network:OIF:15"},{"codes":[{"type":"external_code","value":"OIF14"},{"type":"source","value":"14"}],"name":"Bus en Seine","links":[],"id":"network:OIF:14"},{"codes":[{"type":"external_code","value":"OIF758"},{"type":"source","value":"758"}],"name":"Busval d'Oise","links":[],"id":"network:OIF:758"},{"codes":[{"type":"external_code","value":"OIF30"},{"type":"source","value":"30"}],"name":"CARS MOREAU","links":[],"id":"network:OIF:30"},{"codes":[{"type":"external_code","value":"OIF418"},{"type":"source","value":"418"}],"name":"CARS PERRIER","links":[],"id":"network:OIF:418"},{"codes":[{"type":"external_code","value":"OIF410"},{"type":"source","value":"410"}],"name":"CARS PERRON","links":[],"id":"network:OIF:410"},{"codes":[{"type":"external_code","value":"OIF35"},{"type":"source","value":"35"}],"name":"CARS SOEUR","links":[],"id":"network:OIF:35"},{"codes":[{"type":"external_code","value":"OIF18"},{"type":"source","value":"18"}],"name":"CEAT","links":[],"id":"network:OIF:18"},{"codes":[{"type":"external_code","value":"OIF339"},{"type":"source","value":"339"}],"name":"CIF","links":[],"id":"network:OIF:339"},{"codes":[{"type":"external_code","value":"OIF531"},{"type":"source","value":"531"}],"name":"CITALIEN","links":[],"id":"network:OIF:531"},{"codes":[{"type":"external_code","value":"OIF282"},{"type":"source","value":"282"}],"name":"CSO","links":[],"id":"network:OIF:282"},{"codes":[{"type":"external_code","value":"OIF33"},{"type":"source","value":"33"}],"name":"Cars ROSE","links":[],"id":"network:OIF:33"},{"codes":[{"type":"external_code","value":"OIF780"},{"type":"source","value":"780"}],"name":"Chavilbus","links":[],"id":"network:OIF:780"},{"codes":[{"type":"external_code","value":"OIF302"},{"type":"source","value":"302"}],"name":"Com'Bus","links":[],"id":"network:OIF:302"},{"codes":[{"type":"external_code","value":"OIF38"},{"type":"source","value":"38"}],"name":"Comete","links":[],"id":"network:OIF:38"},{"codes":[{"type":"external_code","value":"OIF387"},{"type":"source","value":"387"}],"name":"Com\u00e8te","links":[],"id":"network:OIF:387"},{"codes":[{"type":"external_code","value":"OIF611"},{"type":"source","value":"611"}],"name":"Conflans Ach\u00e8res","links":[],"id":"network:OIF:611"},{"codes":[{"type":"external_code","value":"OIF746"},{"type":"source","value":"746"}],"name":"Dourdanais","links":[],"id":"network:OIF:746"},{"codes":[{"type":"external_code","value":"OIF266"},{"type":"source","value":"266"}],"name":"Entre Seine et For\u00eat","links":[],"id":"network:OIF:266"},{"codes":[{"type":"external_code","value":"OIF95"},{"type":"source","value":"95"}],"name":"Express A14","links":[],"id":"network:OIF:95"},{"codes":[{"type":"external_code","value":"OIF319"},{"type":"source","value":"319"}],"name":"Fil\u00e9o","links":[],"id":"network:OIF:319"},{"codes":[{"type":"external_code","value":"OIF351"},{"type":"source","value":"351"}],"name":"Genovebus","links":[],"id":"network:OIF:351"},{"codes":[{"type":"external_code","value":"OIF557"},{"type":"source","value":"557"}],"name":"Go\u00eblys","links":[],"id":"network:OIF:557"},{"codes":[{"type":"external_code","value":"OIF405"},{"type":"source","value":"405"}],"name":"HOURTOULE","links":[],"id":"network:OIF:405"},{"codes":[{"type":"external_code","value":"OIF747"},{"type":"source","value":"747"}],"name":"Houdanais","links":[],"id":"network:OIF:747"},{"codes":[{"type":"external_code","value":"OIF651"},{"type":"source","value":"651"}],"name":"KVO","links":[],"id":"network:OIF:651"},{"codes":[{"type":"external_code","value":"OIF822"},{"type":"source","value":"822"}],"name":"Keolis Orly Rungis","links":[],"id":"network:OIF:822"},{"codes":[{"type":"external_code","value":"OIF829"},{"type":"source","value":"829"}],"name":"Keolis Seine Val-De-Marne","links":[],"id":"network:OIF:829"},{"codes":[{"type":"external_code","value":"OIF367"},{"type":"source","value":"367"}],"name":"LACROIX","links":[],"id":"network:OIF:367"},{"codes":[{"type":"external_code","value":"OIF810"},{"type":"source","value":"810"}],"name":"LE BUS DIRECT (cars air france)","links":[],"id":"network:OIF:810"},{"codes":[{"type":"external_code","value":"OIF379"},{"type":"source","value":"379"}],"name":"LES CARS BLEUS","links":[],"id":"network:OIF:379"},{"codes":[{"type":"external_code","value":"OIF422"},{"type":"source","value":"422"}],"name":"LOSAY VOYAGES","links":[],"id":"network:OIF:422"},{"codes":[{"type":"external_code","value":"OIF750"},{"type":"source","value":"750"}],"name":"MAGICAL SHUTTLE","links":[],"id":"network:OIF:750"},{"codes":[{"type":"external_code","value":"OIF439"},{"type":"source","value":"439"}],"name":"METRO","links":[],"id":"network:OIF:439"},{"codes":[{"type":"external_code","value":"OIF397"},{"type":"source","value":"397"}],"name":"MONTESSON LA BOUCLE","links":[],"id":"network:OIF:397"},{"codes":[{"type":"external_code","value":"OIF364"},{"type":"source","value":"364"}],"name":"Melibus","links":[],"id":"network:OIF:364"},{"codes":[{"type":"external_code","value":"OIF361"},{"type":"source","value":"361"}],"name":"Mobicaps","links":[],"id":"network:OIF:361"},{"codes":[{"type":"external_code","value":"OIF613"},{"type":"source","value":"613"}],"name":"Mobilien 27","links":[],"id":"network:OIF:613"},{"codes":[{"type":"external_code","value":"OIF614"},{"type":"source","value":"614"}],"name":"Mobilien 9518","links":[],"id":"network:OIF:614"},{"codes":[{"type":"external_code","value":"OIF441"},{"type":"source","value":"441"}],"name":"Navette","links":[],"id":"network:OIF:441"},{"codes":[{"type":"external_code","value":"OIF56"},{"type":"source","value":"56"}],"name":"Noctilien","links":[],"id":"network:OIF:56"},{"codes":[{"type":"external_code","value":"OIF408"},{"type":"source","value":"408"}],"name":"ORMONT TRANSPORT","links":[],"id":"network:OIF:408"},{"codes":[{"type":"external_code","value":"OIF434"},{"type":"source","value":"434"}],"name":"Orgebus","links":[],"id":"network:OIF:434"},{"codes":[{"type":"external_code","value":"OIF308"},{"type":"source","value":"308"}],"name":"PROCARS","links":[],"id":"network:OIF:308"},{"codes":[{"type":"external_code","value":"OIF420"},{"type":"source","value":"420"}],"name":"Paladin","links":[],"id":"network:OIF:420"},{"codes":[{"type":"external_code","value":"OIF816"},{"type":"source","value":"816"}],"name":"Paris Saclay","links":[],"id":"network:OIF:816"},{"codes":[{"type":"external_code","value":"OIF366"},{"type":"source","value":"366"}],"name":"Parisis","links":[],"id":"network:OIF:366"},{"codes":[{"type":"external_code","value":"OIF375"},{"type":"source","value":"375"}],"name":"Pays Cr\u00e9\u00e7ois","links":[],"id":"network:OIF:375"},{"codes":[{"type":"external_code","value":"OIF344"},{"type":"source","value":"344"}],"name":"Pays Fertois","links":[],"id":"network:OIF:344"},{"codes":[{"type":"external_code","value":"OIF372"},{"type":"source","value":"372"}],"name":"Pays de Meaux","links":[],"id":"network:OIF:372"},{"codes":[{"type":"external_code","value":"OIF376"},{"type":"source","value":"376"}],"name":"Pays de l'Ourcq","links":[],"id":"network:OIF:376"},{"codes":[{"type":"external_code","value":"OIF377"},{"type":"source","value":"377"}],"name":"Pep's","links":[],"id":"network:OIF:377"},{"codes":[{"type":"external_code","value":"OIF285"},{"type":"source","value":"285"}],"name":"Ph\u00e9bus","links":[],"id":"network:OIF:285"},{"codes":[{"type":"external_code","value":"OIF417"},{"type":"source","value":"417"}],"name":"Plateau de Brie","links":[],"id":"network:OIF:417"},{"codes":[{"type":"external_code","value":"OIF295"},{"type":"source","value":"295"}],"name":"R'bus","links":[],"id":"network:OIF:295"},{"codes":[{"type":"external_code","value":"OIF442"},{"type":"external_code","value":"RTP"},{"type":"source","value":"442"},{"type":"source","value":"RTP"}],"name":"RATP","links":[],"id":"network:RTP"},{"codes":[{"type":"external_code","value":"OIF741"},{"type":"external_code","value":"RER"},{"type":"source","value":"741"},{"type":"source","value":"RER"}],"name":"RER","links":[],"id":"network:RER"},{"codes":[{"type":"external_code","value":"OIF753"},{"type":"source","value":"753"}],"name":"Rambouillet Interurbain","links":[],"id":"network:OIF:753"},{"codes":[{"type":"external_code","value":"OIF330"},{"type":"source","value":"330"}],"name":"Resalys","links":[],"id":"network:OIF:330"},{"codes":[{"type":"external_code","value":"OIF642"},{"type":"source","value":"642"}],"name":"R\u00e9seau du Canton de Perthes","links":[],"id":"network:OIF:642"},{"codes":[{"type":"external_code","value":"OIF275"},{"type":"source","value":"275"}],"name":"R\u00e9seau d\u00e9partemental de l'Oise","links":[],"id":"network:OIF:275"},{"codes":[{"type":"external_code","value":"OIF101"},{"type":"source","value":"101"}],"name":"SAVAC","links":[],"id":"network:OIF:101"},{"codes":[{"type":"external_code","value":"OIF112"},{"type":"source","value":"112"}],"name":"SITUS","links":[],"id":"network:OIF:112"},{"codes":[{"type":"external_code","value":"OIF612"},{"type":"source","value":"612"}],"name":"SIVOM---Maisons-Laffitte et Le Mesnil Le Roi","links":[],"id":"network:OIF:612"},{"codes":[{"type":"external_code","value":"OIF678"},{"type":"source","value":"678"}],"name":"SQYBUS","links":[],"id":"network:OIF:678"},{"codes":[{"type":"external_code","value":"OIF406"},{"type":"source","value":"406"}],"name":"STAVO","links":[],"id":"network:OIF:406"},{"codes":[{"type":"external_code","value":"OIF118"},{"type":"source","value":"118"}],"name":"STILL","links":[],"id":"network:OIF:118"},{"codes":[{"type":"external_code","value":"OIF119"},{"type":"source","value":"119"}],"name":"STIVO","links":[],"id":"network:OIF:119"},{"codes":[{"type":"external_code","value":"OIF120"},{"type":"source","value":"120"}],"name":"STRAV","links":[],"id":"network:OIF:120"},{"codes":[{"type":"external_code","value":"OIF855"},{"type":"source","value":"855"}],"name":"Scolaire Est Yvelines","links":[],"id":"network:OIF:855"},{"codes":[{"type":"external_code","value":"OIF817"},{"type":"source","value":"817"}],"name":"Seine Essonne Bus","links":[],"id":"network:OIF:817"},{"codes":[{"type":"external_code","value":"OIF820"},{"type":"source","value":"820"}],"name":"Seine S\u00e9nart Bus","links":[],"id":"network:OIF:820"},{"codes":[{"type":"external_code","value":"OIF105"},{"type":"source","value":"105"}],"name":"Seine et Marne Express","links":[],"id":"network:OIF:105"},{"codes":[{"type":"external_code","value":"OIF808"},{"type":"source","value":"808"}],"name":"Seine-Senart Bus","links":[],"id":"network:OIF:808"},{"codes":[{"type":"external_code","value":"OIF102"},{"type":"source","value":"102"}],"name":"Service Urbain de Villecresnes","links":[],"id":"network:OIF:102"},{"codes":[{"type":"external_code","value":"OIF368"},{"type":"source","value":"368"}],"name":"Sit'bus","links":[],"id":"network:OIF:368"},{"codes":[{"type":"external_code","value":"OIF388"},{"type":"source","value":"388"}],"name":"Siyonne","links":[],"id":"network:OIF:388"},{"codes":[{"type":"external_code","value":"OIF345"},{"type":"source","value":"345"}],"name":"Sol'R","links":[],"id":"network:OIF:345"},{"codes":[{"type":"external_code","value":"OIF752"},{"type":"source","value":"752"}],"name":"Stigo","links":[],"id":"network:OIF:752"},{"codes":[{"type":"external_code","value":"OIF107"},{"type":"source","value":"107"}],"name":"S\u00e9nart-Bus","links":[],"id":"network:OIF:107"},{"codes":[{"type":"external_code","value":"OIF108"},{"type":"source","value":"108"}],"name":"S\u00e9nart-Express","links":[],"id":"network:OIF:108"},{"codes":[{"type":"external_code","value":"OIF584"},{"type":"source","value":"584"}],"name":"TAM","links":[],"id":"network:OIF:584"},{"codes":[{"type":"external_code","value":"OIF743"},{"type":"external_code","value":"TER"},{"type":"source","value":"743"},{"type":"source","value":"TER"}],"name":"TER","links":[],"id":"network:TER"},{"codes":[{"type":"external_code","value":"OIF471"},{"type":"source","value":"471"}],"name":"TICE","links":[],"id":"network:OIF:471"},{"codes":[{"type":"external_code","value":"OIF92"},{"type":"source","value":"92"}],"name":"TRA","links":[],"id":"network:OIF:92"},{"codes":[{"type":"external_code","value":"OIF346"},{"type":"source","value":"346"}],"name":"TRAMY","links":[],"id":"network:OIF:346"},{"codes":[{"type":"external_code","value":"OIF407"},{"type":"source","value":"407"}],"name":"TRANSPORTS DANIEL MEYER","links":[],"id":"network:OIF:407"},{"codes":[{"type":"external_code","value":"OIF426"},{"type":"source","value":"426"}],"name":"TVS","links":[],"id":"network:OIF:426"},{"codes":[{"type":"external_code","value":"OIF782"},{"type":"source","value":"782"}],"name":"Titus","links":[],"id":"network:OIF:782"},{"codes":[{"type":"external_code","value":"OIF440"},{"type":"external_code","value":"TRAM"},{"type":"source","value":"440"},{"type":"source","value":"TRAM"}],"name":"Tramway","links":[],"id":"network:TRAM"},{"codes":[{"type":"external_code","value":"OIF127"},{"type":"source","value":"127"}],"name":"Trans Val d'Oise","links":[],"id":"network:OIF:127"},{"codes":[{"type":"external_code","value":"OIF447"},{"type":"source","value":"447"}],"name":"Trans Val de France","links":[],"id":"network:OIF:447"},{"codes":[{"type":"external_code","value":"OIF349"},{"type":"source","value":"349"}],"name":"Trans'Essonne","links":[],"id":"network:OIF:349"},{"codes":[{"type":"external_code","value":"OIF604"},{"type":"source","value":"604"}],"name":"Transdev Ile-de-France Br\u00e9tigny","links":[],"id":"network:OIF:604"},{"codes":[{"type":"external_code","value":"OIF635"},{"type":"source","value":"635"}],"name":"Transdev Ile-de-France Ecquevilly","links":[],"id":"network:OIF:635"},{"codes":[{"type":"external_code","value":"OIF605"},{"type":"source","value":"605"}],"name":"Transdev Ile-de-France Houdan","links":[],"id":"network:OIF:605"},{"codes":[{"type":"external_code","value":"OIF848"},{"type":"source","value":"848"}],"name":"Transdev Ile-de-France Lys","links":[],"id":"network:OIF:848"},{"codes":[{"type":"external_code","value":"OIF661"},{"type":"source","value":"661"}],"name":"Transdev Ile-de-France Montesson Les Rabaux","links":[],"id":"network:OIF:661"},{"codes":[{"type":"external_code","value":"OIF708"},{"type":"source","value":"708"}],"name":"Transdev Ile-de-France Vulaines","links":[],"id":"network:OIF:708"},{"codes":[{"type":"external_code","value":"OIF742"},{"type":"external_code","value":"TN"},{"type":"source","value":"742"},{"type":"source","value":"TN"}],"name":"Transilien","links":[],"id":"network:TN"},{"codes":[{"type":"external_code","value":"OIF132"},{"type":"source","value":"132"}],"name":"Traverciel","links":[],"id":"network:OIF:132"},{"codes":[{"type":"external_code","value":"OIF412"},{"type":"source","value":"412"}],"name":"Ulys","links":[],"id":"network:OIF:412"},{"codes":[{"type":"external_code","value":"OIF870"},{"type":"source","value":"870"}],"name":"VIAMO-MELUN","links":[],"id":"network:OIF:870"},{"codes":[{"type":"external_code","value":"OIF365"},{"type":"source","value":"365"}],"name":"ValBus","links":[],"id":"network:OIF:365"},{"codes":[{"type":"external_code","value":"OIF134"},{"type":"source","value":"134"}],"name":"Valmy","links":[],"id":"network:OIF:134"},{"codes":[{"type":"external_code","value":"OIF215"},{"type":"source","value":"215"}],"name":"Valoise","links":[],"id":"network:OIF:215"},{"codes":[{"type":"external_code","value":"OIF326"},{"type":"source","value":"326"}],"name":"VyBus","links":[],"id":"network:OIF:326"},{"codes":[{"type":"external_code","value":"OIF347"},{"type":"source","value":"347"}],"name":"Yerres","links":[],"id":"network:OIF:347"},{"codes":[{"type":"external_code","value":"OIF507"},{"type":"source","value":"507"}],"name":"rbus","links":[],"id":"network:OIF:507"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-idf\/networks\/{networks.id}","type":"networks","rel":"networks","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-idf\/networks\/{networks.id}\/traffic_reports","type":"disruption","rel":"disruptions","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-idf\/networks?count=1000","type":"first","templated":false}],"feed_publishers":[{"url":"http:\/\/www.vianavigo.com","id":"OIF","license":"ODbL","name":"OIF - STIF Ile de France"}]}
+{
+  "disruptions": [],
+  "pagination": {
+    "start_page": 0,
+    "items_on_page": 123,
+    "items_per_page": 1000,
+    "total_result": 123
+  },
+  "networks": [
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF354"
+        },
+        {
+          "type": "external_code",
+          "value": "sncf"
+        },
+        {
+          "type": "source",
+          "value": "354"
+        },
+        {
+          "type": "source",
+          "value": "sncf"
+        }
+      ],
+      "name": "SNCF",
+      "links": [],
+      "id": "network:sncf"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF658"
+        },
+        {
+          "type": "source",
+          "value": "658"
+        }
+      ],
+      "name": "ADP",
+      "links": [],
+      "id": "network:OIF:658"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF639"
+        },
+        {
+          "type": "source",
+          "value": "639"
+        }
+      ],
+      "name": "AUTOCARS DOMINIQUE",
+      "links": [],
+      "id": "network:OIF:639"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF303"
+        },
+        {
+          "type": "source",
+          "value": "303"
+        }
+      ],
+      "name": "Actipôles",
+      "links": [],
+      "id": "network:OIF:303"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF571"
+        },
+        {
+          "type": "source",
+          "value": "571"
+        }
+      ],
+      "name": "Albatrans",
+      "links": [],
+      "id": "network:OIF:571"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF369"
+        },
+        {
+          "type": "source",
+          "value": "369"
+        }
+      ],
+      "name": "Apolo 7",
+      "links": [],
+      "id": "network:OIF:369"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF274"
+        },
+        {
+          "type": "source",
+          "value": "274"
+        }
+      ],
+      "name": "Arlequin",
+      "links": [],
+      "id": "network:OIF:274"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF783"
+        },
+        {
+          "type": "source",
+          "value": "783"
+        }
+      ],
+      "name": "Aubergenville",
+      "links": [],
+      "id": "network:OIF:783"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF448"
+        },
+        {
+          "type": "source",
+          "value": "448"
+        }
+      ],
+      "name": "Autobus du Fort",
+      "links": [],
+      "id": "network:OIF:448"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF456"
+        },
+        {
+          "type": "source",
+          "value": "456"
+        }
+      ],
+      "name": "Autocars Tourneux",
+      "links": [],
+      "id": "network:OIF:456"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF419"
+        },
+        {
+          "type": "source",
+          "value": "419"
+        }
+      ],
+      "name": "Aérial",
+      "links": [],
+      "id": "network:OIF:419"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF385"
+        },
+        {
+          "type": "source",
+          "value": "385"
+        }
+      ],
+      "name": "BUS O' Mureaux",
+      "links": [],
+      "id": "network:OIF:385"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF726"
+        },
+        {
+          "type": "source",
+          "value": "726"
+        }
+      ],
+      "name": "Bouffémont",
+      "links": [],
+      "id": "network:OIF:726"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF450"
+        },
+        {
+          "type": "source",
+          "value": "450"
+        }
+      ],
+      "name": "Brie Bus",
+      "links": [],
+      "id": "network:OIF:450"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF15"
+        },
+        {
+          "type": "source",
+          "value": "15"
+        }
+      ],
+      "name": "Bus Haut Val d'Oise",
+      "links": [],
+      "id": "network:OIF:15"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF14"
+        },
+        {
+          "type": "source",
+          "value": "14"
+        }
+      ],
+      "name": "Bus en Seine",
+      "links": [],
+      "id": "network:OIF:14"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF758"
+        },
+        {
+          "type": "source",
+          "value": "758"
+        }
+      ],
+      "name": "Busval d'Oise",
+      "links": [],
+      "id": "network:OIF:758"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF30"
+        },
+        {
+          "type": "source",
+          "value": "30"
+        }
+      ],
+      "name": "CARS MOREAU",
+      "links": [],
+      "id": "network:OIF:30"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF418"
+        },
+        {
+          "type": "source",
+          "value": "418"
+        }
+      ],
+      "name": "CARS PERRIER",
+      "links": [],
+      "id": "network:OIF:418"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF410"
+        },
+        {
+          "type": "source",
+          "value": "410"
+        }
+      ],
+      "name": "CARS PERRON",
+      "links": [],
+      "id": "network:OIF:410"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF35"
+        },
+        {
+          "type": "source",
+          "value": "35"
+        }
+      ],
+      "name": "CARS SOEUR",
+      "links": [],
+      "id": "network:OIF:35"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF18"
+        },
+        {
+          "type": "source",
+          "value": "18"
+        }
+      ],
+      "name": "CEAT",
+      "links": [],
+      "id": "network:OIF:18"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF339"
+        },
+        {
+          "type": "source",
+          "value": "339"
+        }
+      ],
+      "name": "CIF",
+      "links": [],
+      "id": "network:OIF:339"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF531"
+        },
+        {
+          "type": "source",
+          "value": "531"
+        }
+      ],
+      "name": "CITALIEN",
+      "links": [],
+      "id": "network:OIF:531"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF282"
+        },
+        {
+          "type": "source",
+          "value": "282"
+        }
+      ],
+      "name": "CSO",
+      "links": [],
+      "id": "network:OIF:282"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF33"
+        },
+        {
+          "type": "source",
+          "value": "33"
+        }
+      ],
+      "name": "Cars ROSE",
+      "links": [],
+      "id": "network:OIF:33"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF780"
+        },
+        {
+          "type": "source",
+          "value": "780"
+        }
+      ],
+      "name": "Chavilbus",
+      "links": [],
+      "id": "network:OIF:780"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF302"
+        },
+        {
+          "type": "source",
+          "value": "302"
+        }
+      ],
+      "name": "Com'Bus",
+      "links": [],
+      "id": "network:OIF:302"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF38"
+        },
+        {
+          "type": "source",
+          "value": "38"
+        }
+      ],
+      "name": "Comete",
+      "links": [],
+      "id": "network:OIF:38"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF387"
+        },
+        {
+          "type": "source",
+          "value": "387"
+        }
+      ],
+      "name": "Comète",
+      "links": [],
+      "id": "network:OIF:387"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF611"
+        },
+        {
+          "type": "source",
+          "value": "611"
+        }
+      ],
+      "name": "Conflans Achères",
+      "links": [],
+      "id": "network:OIF:611"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF746"
+        },
+        {
+          "type": "source",
+          "value": "746"
+        }
+      ],
+      "name": "Dourdanais",
+      "links": [],
+      "id": "network:OIF:746"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF266"
+        },
+        {
+          "type": "source",
+          "value": "266"
+        }
+      ],
+      "name": "Entre Seine et Forêt",
+      "links": [],
+      "id": "network:OIF:266"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF95"
+        },
+        {
+          "type": "source",
+          "value": "95"
+        }
+      ],
+      "name": "Express A14",
+      "links": [],
+      "id": "network:OIF:95"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF319"
+        },
+        {
+          "type": "source",
+          "value": "319"
+        }
+      ],
+      "name": "Filéo",
+      "links": [],
+      "id": "network:OIF:319"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF351"
+        },
+        {
+          "type": "source",
+          "value": "351"
+        }
+      ],
+      "name": "Genovebus",
+      "links": [],
+      "id": "network:OIF:351"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF557"
+        },
+        {
+          "type": "source",
+          "value": "557"
+        }
+      ],
+      "name": "Goëlys",
+      "links": [],
+      "id": "network:OIF:557"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF405"
+        },
+        {
+          "type": "source",
+          "value": "405"
+        }
+      ],
+      "name": "HOURTOULE",
+      "links": [],
+      "id": "network:OIF:405"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF747"
+        },
+        {
+          "type": "source",
+          "value": "747"
+        }
+      ],
+      "name": "Houdanais",
+      "links": [],
+      "id": "network:OIF:747"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF651"
+        },
+        {
+          "type": "source",
+          "value": "651"
+        }
+      ],
+      "name": "KVO",
+      "links": [],
+      "id": "network:OIF:651"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF822"
+        },
+        {
+          "type": "source",
+          "value": "822"
+        }
+      ],
+      "name": "Keolis Orly Rungis",
+      "links": [],
+      "id": "network:OIF:822"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF829"
+        },
+        {
+          "type": "source",
+          "value": "829"
+        }
+      ],
+      "name": "Keolis Seine Val-De-Marne",
+      "links": [],
+      "id": "network:OIF:829"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF367"
+        },
+        {
+          "type": "source",
+          "value": "367"
+        }
+      ],
+      "name": "LACROIX",
+      "links": [],
+      "id": "network:OIF:367"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF810"
+        },
+        {
+          "type": "source",
+          "value": "810"
+        }
+      ],
+      "name": "LE BUS DIRECT (cars air france)",
+      "links": [],
+      "id": "network:OIF:810"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF379"
+        },
+        {
+          "type": "source",
+          "value": "379"
+        }
+      ],
+      "name": "LES CARS BLEUS",
+      "links": [],
+      "id": "network:OIF:379"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF422"
+        },
+        {
+          "type": "source",
+          "value": "422"
+        }
+      ],
+      "name": "LOSAY VOYAGES",
+      "links": [],
+      "id": "network:OIF:422"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF750"
+        },
+        {
+          "type": "source",
+          "value": "750"
+        }
+      ],
+      "name": "MAGICAL SHUTTLE",
+      "links": [],
+      "id": "network:OIF:750"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF439"
+        },
+        {
+          "type": "source",
+          "value": "439"
+        }
+      ],
+      "name": "METRO",
+      "links": [],
+      "id": "network:OIF:439"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF397"
+        },
+        {
+          "type": "source",
+          "value": "397"
+        }
+      ],
+      "name": "MONTESSON LA BOUCLE",
+      "links": [],
+      "id": "network:OIF:397"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF364"
+        },
+        {
+          "type": "source",
+          "value": "364"
+        }
+      ],
+      "name": "Melibus",
+      "links": [],
+      "id": "network:OIF:364"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF361"
+        },
+        {
+          "type": "source",
+          "value": "361"
+        }
+      ],
+      "name": "Mobicaps",
+      "links": [],
+      "id": "network:OIF:361"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF613"
+        },
+        {
+          "type": "source",
+          "value": "613"
+        }
+      ],
+      "name": "Mobilien 27",
+      "links": [],
+      "id": "network:OIF:613"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF614"
+        },
+        {
+          "type": "source",
+          "value": "614"
+        }
+      ],
+      "name": "Mobilien 9518",
+      "links": [],
+      "id": "network:OIF:614"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF441"
+        },
+        {
+          "type": "source",
+          "value": "441"
+        }
+      ],
+      "name": "Navette",
+      "links": [],
+      "id": "network:OIF:441"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF56"
+        },
+        {
+          "type": "source",
+          "value": "56"
+        }
+      ],
+      "name": "Noctilien",
+      "links": [],
+      "id": "network:OIF:56"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF408"
+        },
+        {
+          "type": "source",
+          "value": "408"
+        }
+      ],
+      "name": "ORMONT TRANSPORT",
+      "links": [],
+      "id": "network:OIF:408"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF434"
+        },
+        {
+          "type": "source",
+          "value": "434"
+        }
+      ],
+      "name": "Orgebus",
+      "links": [],
+      "id": "network:OIF:434"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF308"
+        },
+        {
+          "type": "source",
+          "value": "308"
+        }
+      ],
+      "name": "PROCARS",
+      "links": [],
+      "id": "network:OIF:308"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF420"
+        },
+        {
+          "type": "source",
+          "value": "420"
+        }
+      ],
+      "name": "Paladin",
+      "links": [],
+      "id": "network:OIF:420"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF816"
+        },
+        {
+          "type": "source",
+          "value": "816"
+        }
+      ],
+      "name": "Paris Saclay",
+      "links": [],
+      "id": "network:OIF:816"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF366"
+        },
+        {
+          "type": "source",
+          "value": "366"
+        }
+      ],
+      "name": "Parisis",
+      "links": [],
+      "id": "network:OIF:366"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF375"
+        },
+        {
+          "type": "source",
+          "value": "375"
+        }
+      ],
+      "name": "Pays Créçois",
+      "links": [],
+      "id": "network:OIF:375"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF344"
+        },
+        {
+          "type": "source",
+          "value": "344"
+        }
+      ],
+      "name": "Pays Fertois",
+      "links": [],
+      "id": "network:OIF:344"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF372"
+        },
+        {
+          "type": "source",
+          "value": "372"
+        }
+      ],
+      "name": "Pays de Meaux",
+      "links": [],
+      "id": "network:OIF:372"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF376"
+        },
+        {
+          "type": "source",
+          "value": "376"
+        }
+      ],
+      "name": "Pays de l'Ourcq",
+      "links": [],
+      "id": "network:OIF:376"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF377"
+        },
+        {
+          "type": "source",
+          "value": "377"
+        }
+      ],
+      "name": "Pep's",
+      "links": [],
+      "id": "network:OIF:377"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF285"
+        },
+        {
+          "type": "source",
+          "value": "285"
+        }
+      ],
+      "name": "Phébus",
+      "links": [],
+      "id": "network:OIF:285"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF417"
+        },
+        {
+          "type": "source",
+          "value": "417"
+        }
+      ],
+      "name": "Plateau de Brie",
+      "links": [],
+      "id": "network:OIF:417"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF295"
+        },
+        {
+          "type": "source",
+          "value": "295"
+        }
+      ],
+      "name": "R'bus",
+      "links": [],
+      "id": "network:OIF:295"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF442"
+        },
+        {
+          "type": "external_code",
+          "value": "RTP"
+        },
+        {
+          "type": "source",
+          "value": "442"
+        },
+        {
+          "type": "source",
+          "value": "RTP"
+        }
+      ],
+      "name": "RATP",
+      "links": [],
+      "id": "network:RTP"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF741"
+        },
+        {
+          "type": "external_code",
+          "value": "RER"
+        },
+        {
+          "type": "source",
+          "value": "741"
+        },
+        {
+          "type": "source",
+          "value": "RER"
+        }
+      ],
+      "name": "RER",
+      "links": [],
+      "id": "network:RER"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF753"
+        },
+        {
+          "type": "source",
+          "value": "753"
+        }
+      ],
+      "name": "Rambouillet Interurbain",
+      "links": [],
+      "id": "network:OIF:753"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF330"
+        },
+        {
+          "type": "source",
+          "value": "330"
+        }
+      ],
+      "name": "Resalys",
+      "links": [],
+      "id": "network:OIF:330"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF642"
+        },
+        {
+          "type": "source",
+          "value": "642"
+        }
+      ],
+      "name": "Réseau du Canton de Perthes",
+      "links": [],
+      "id": "network:OIF:642"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF275"
+        },
+        {
+          "type": "source",
+          "value": "275"
+        }
+      ],
+      "name": "Réseau départemental de l'Oise",
+      "links": [],
+      "id": "network:OIF:275"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF101"
+        },
+        {
+          "type": "source",
+          "value": "101"
+        }
+      ],
+      "name": "SAVAC",
+      "links": [],
+      "id": "network:OIF:101"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF112"
+        },
+        {
+          "type": "source",
+          "value": "112"
+        }
+      ],
+      "name": "SITUS",
+      "links": [],
+      "id": "network:OIF:112"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF612"
+        },
+        {
+          "type": "source",
+          "value": "612"
+        }
+      ],
+      "name": "SIVOM---Maisons-Laffitte et Le Mesnil Le Roi",
+      "links": [],
+      "id": "network:OIF:612"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF678"
+        },
+        {
+          "type": "source",
+          "value": "678"
+        }
+      ],
+      "name": "SQYBUS",
+      "links": [],
+      "id": "network:OIF:678"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF406"
+        },
+        {
+          "type": "source",
+          "value": "406"
+        }
+      ],
+      "name": "STAVO",
+      "links": [],
+      "id": "network:OIF:406"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF118"
+        },
+        {
+          "type": "source",
+          "value": "118"
+        }
+      ],
+      "name": "STILL",
+      "links": [],
+      "id": "network:OIF:118"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF119"
+        },
+        {
+          "type": "source",
+          "value": "119"
+        }
+      ],
+      "name": "STIVO",
+      "links": [],
+      "id": "network:OIF:119"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF120"
+        },
+        {
+          "type": "source",
+          "value": "120"
+        }
+      ],
+      "name": "STRAV",
+      "links": [],
+      "id": "network:OIF:120"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF855"
+        },
+        {
+          "type": "source",
+          "value": "855"
+        }
+      ],
+      "name": "Scolaire Est Yvelines",
+      "links": [],
+      "id": "network:OIF:855"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF817"
+        },
+        {
+          "type": "source",
+          "value": "817"
+        }
+      ],
+      "name": "Seine Essonne Bus",
+      "links": [],
+      "id": "network:OIF:817"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF820"
+        },
+        {
+          "type": "source",
+          "value": "820"
+        }
+      ],
+      "name": "Seine Sénart Bus",
+      "links": [],
+      "id": "network:OIF:820"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF105"
+        },
+        {
+          "type": "source",
+          "value": "105"
+        }
+      ],
+      "name": "Seine et Marne Express",
+      "links": [],
+      "id": "network:OIF:105"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF808"
+        },
+        {
+          "type": "source",
+          "value": "808"
+        }
+      ],
+      "name": "Seine-Senart Bus",
+      "links": [],
+      "id": "network:OIF:808"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF102"
+        },
+        {
+          "type": "source",
+          "value": "102"
+        }
+      ],
+      "name": "Service Urbain de Villecresnes",
+      "links": [],
+      "id": "network:OIF:102"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF368"
+        },
+        {
+          "type": "source",
+          "value": "368"
+        }
+      ],
+      "name": "Sit'bus",
+      "links": [],
+      "id": "network:OIF:368"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF388"
+        },
+        {
+          "type": "source",
+          "value": "388"
+        }
+      ],
+      "name": "Siyonne",
+      "links": [],
+      "id": "network:OIF:388"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF345"
+        },
+        {
+          "type": "source",
+          "value": "345"
+        }
+      ],
+      "name": "Sol'R",
+      "links": [],
+      "id": "network:OIF:345"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF752"
+        },
+        {
+          "type": "source",
+          "value": "752"
+        }
+      ],
+      "name": "Stigo",
+      "links": [],
+      "id": "network:OIF:752"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF107"
+        },
+        {
+          "type": "source",
+          "value": "107"
+        }
+      ],
+      "name": "Sénart-Bus",
+      "links": [],
+      "id": "network:OIF:107"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF108"
+        },
+        {
+          "type": "source",
+          "value": "108"
+        }
+      ],
+      "name": "Sénart-Express",
+      "links": [],
+      "id": "network:OIF:108"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF584"
+        },
+        {
+          "type": "source",
+          "value": "584"
+        }
+      ],
+      "name": "TAM",
+      "links": [],
+      "id": "network:OIF:584"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF743"
+        },
+        {
+          "type": "external_code",
+          "value": "TER"
+        },
+        {
+          "type": "source",
+          "value": "743"
+        },
+        {
+          "type": "source",
+          "value": "TER"
+        }
+      ],
+      "name": "TER",
+      "links": [],
+      "id": "network:TER"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF471"
+        },
+        {
+          "type": "source",
+          "value": "471"
+        }
+      ],
+      "name": "TICE",
+      "links": [],
+      "id": "network:OIF:471"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF92"
+        },
+        {
+          "type": "source",
+          "value": "92"
+        }
+      ],
+      "name": "TRA",
+      "links": [],
+      "id": "network:OIF:92"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF346"
+        },
+        {
+          "type": "source",
+          "value": "346"
+        }
+      ],
+      "name": "TRAMY",
+      "links": [],
+      "id": "network:OIF:346"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF407"
+        },
+        {
+          "type": "source",
+          "value": "407"
+        }
+      ],
+      "name": "TRANSPORTS DANIEL MEYER",
+      "links": [],
+      "id": "network:OIF:407"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF426"
+        },
+        {
+          "type": "source",
+          "value": "426"
+        }
+      ],
+      "name": "TVS",
+      "links": [],
+      "id": "network:OIF:426"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF782"
+        },
+        {
+          "type": "source",
+          "value": "782"
+        }
+      ],
+      "name": "Titus",
+      "links": [],
+      "id": "network:OIF:782"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF440"
+        },
+        {
+          "type": "external_code",
+          "value": "TRAM"
+        },
+        {
+          "type": "source",
+          "value": "440"
+        },
+        {
+          "type": "source",
+          "value": "TRAM"
+        }
+      ],
+      "name": "Tramway",
+      "links": [],
+      "id": "network:TRAM"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF127"
+        },
+        {
+          "type": "source",
+          "value": "127"
+        }
+      ],
+      "name": "Trans Val d'Oise",
+      "links": [],
+      "id": "network:OIF:127"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF447"
+        },
+        {
+          "type": "source",
+          "value": "447"
+        }
+      ],
+      "name": "Trans Val de France",
+      "links": [],
+      "id": "network:OIF:447"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF349"
+        },
+        {
+          "type": "source",
+          "value": "349"
+        }
+      ],
+      "name": "Trans'Essonne",
+      "links": [],
+      "id": "network:OIF:349"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF604"
+        },
+        {
+          "type": "source",
+          "value": "604"
+        }
+      ],
+      "name": "Transdev Ile-de-France Brétigny",
+      "links": [],
+      "id": "network:OIF:604"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF635"
+        },
+        {
+          "type": "source",
+          "value": "635"
+        }
+      ],
+      "name": "Transdev Ile-de-France Ecquevilly",
+      "links": [],
+      "id": "network:OIF:635"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF605"
+        },
+        {
+          "type": "source",
+          "value": "605"
+        }
+      ],
+      "name": "Transdev Ile-de-France Houdan",
+      "links": [],
+      "id": "network:OIF:605"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF848"
+        },
+        {
+          "type": "source",
+          "value": "848"
+        }
+      ],
+      "name": "Transdev Ile-de-France Lys",
+      "links": [],
+      "id": "network:OIF:848"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF661"
+        },
+        {
+          "type": "source",
+          "value": "661"
+        }
+      ],
+      "name": "Transdev Ile-de-France Montesson Les Rabaux",
+      "links": [],
+      "id": "network:OIF:661"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF708"
+        },
+        {
+          "type": "source",
+          "value": "708"
+        }
+      ],
+      "name": "Transdev Ile-de-France Vulaines",
+      "links": [],
+      "id": "network:OIF:708"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF742"
+        },
+        {
+          "type": "external_code",
+          "value": "TN"
+        },
+        {
+          "type": "source",
+          "value": "742"
+        },
+        {
+          "type": "source",
+          "value": "TN"
+        }
+      ],
+      "name": "Transilien",
+      "links": [],
+      "id": "network:TN"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF132"
+        },
+        {
+          "type": "source",
+          "value": "132"
+        }
+      ],
+      "name": "Traverciel",
+      "links": [],
+      "id": "network:OIF:132"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF412"
+        },
+        {
+          "type": "source",
+          "value": "412"
+        }
+      ],
+      "name": "Ulys",
+      "links": [],
+      "id": "network:OIF:412"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF870"
+        },
+        {
+          "type": "source",
+          "value": "870"
+        }
+      ],
+      "name": "VIAMO-MELUN",
+      "links": [],
+      "id": "network:OIF:870"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF365"
+        },
+        {
+          "type": "source",
+          "value": "365"
+        }
+      ],
+      "name": "ValBus",
+      "links": [],
+      "id": "network:OIF:365"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF134"
+        },
+        {
+          "type": "source",
+          "value": "134"
+        }
+      ],
+      "name": "Valmy",
+      "links": [],
+      "id": "network:OIF:134"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF215"
+        },
+        {
+          "type": "source",
+          "value": "215"
+        }
+      ],
+      "name": "Valoise",
+      "links": [],
+      "id": "network:OIF:215"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF326"
+        },
+        {
+          "type": "source",
+          "value": "326"
+        }
+      ],
+      "name": "VyBus",
+      "links": [],
+      "id": "network:OIF:326"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF347"
+        },
+        {
+          "type": "source",
+          "value": "347"
+        }
+      ],
+      "name": "Yerres",
+      "links": [],
+      "id": "network:OIF:347"
+    },
+    {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF507"
+        },
+        {
+          "type": "source",
+          "value": "507"
+        }
+      ],
+      "name": "rbus",
+      "links": [],
+      "id": "network:OIF:507"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-idf/networks/{networks.id}",
+      "type": "networks",
+      "rel": "networks",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-idf/networks/{networks.id}/traffic_reports",
+      "type": "disruption",
+      "rel": "disruptions",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-idf/networks?count=1000",
+      "type": "first",
+      "templated": false
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.vianavigo.com",
+      "id": "OIF",
+      "license": "ODbL",
+      "name": "OIF - STIF Ile de France"
+    }
+  ]
+}

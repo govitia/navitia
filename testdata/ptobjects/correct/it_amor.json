@@ -1,1 +1,391 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP72760"},{"type":"gtfs_stop_code","value":"72760"},{"type":"source","value":"CTP72760"}],"name":"ARDEATINA\/DIVINO AMORE","links":[],"coord":{"lat":"41.776351","lon":"12.544675"},"label":"ARDEATINA\/DIVINO AMORE (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP72760"},"name":"ARDEATINA\/DIVINO AMORE (Roma)","id":"stop_area:ORA:SA:CTP72760"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP72835"},{"type":"gtfs_stop_code","value":"72835"},{"type":"source","value":"CTP72835"}],"name":"SANTUARIO DIVINO AMORE","links":[],"coord":{"lat":"41.776948","lon":"12.542572"},"label":"SANTUARIO DIVINO AMORE (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP72835"},"name":"SANTUARIO DIVINO AMORE (Roma)","id":"stop_area:ORA:SA:CTP72835"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP73635"},{"type":"gtfs_stop_code","value":"73635"},{"type":"source","value":"CTP73635"}],"name":"ARDEATINA\/STAZ. DIVINO AMORE","links":[],"coord":{"lat":"41.771051","lon":"12.555276"},"label":"ARDEATINA\/STAZ. DIVINO AMORE (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP73635"},"name":"ARDEATINA\/STAZ. DIVINO AMORE (Roma)","id":"stop_area:ORA:SA:CTP73635"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OMICTP10495"},{"type":"source","value":"CTP10495"}],"name":"via amoretti via lessona","links":[],"coord":{"lat":"45.518581","lon":"9.135878999999999"},"label":"via amoretti via lessona (Milano)","administrative_regions":[{"insee":"","name":"Milano","level":8,"coord":{"lat":"45.466797","lon":"9.190536"},"label":"Milano","id":"admin:osm:44915","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OMI:SA:CTP10495"},"name":"via amoretti via lessona (Milano)","id":"stop_area:OMI:SA:CTP10495"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OMICTP10740"},{"type":"source","value":"CTP10740"}],"name":"via amoretti via pascarella","links":[],"coord":{"lat":"45.519286","lon":"9.141095"},"label":"via amoretti via pascarella (Milano)","administrative_regions":[{"insee":"","name":"Milano","level":8,"coord":{"lat":"45.466797","lon":"9.190536"},"label":"Milano","id":"admin:osm:44915","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OMI:SA:CTP10740"},"name":"via amoretti via pascarella (Milano)","id":"stop_area:OMI:SA:CTP10740"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OMICTP10737"},{"type":"source","value":"CTP10737"}],"name":"via amoretti via antona traversi","links":[],"coord":{"lat":"45.519014","lon":"9.138854"},"label":"via amoretti via antona traversi (Milano)","administrative_regions":[{"insee":"","name":"Milano","level":8,"coord":{"lat":"45.466797","lon":"9.190536"},"label":"Milano","id":"admin:osm:44915","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OMI:SA:CTP10737"},"name":"via amoretti via antona traversi (Milano)","id":"stop_area:OMI:SA:CTP10737"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OIBCTP73205"},{"type":"source","value":"CTP73205"}],"name":"PIEVE AMORE","links":[],"coord":{"lat":"44.304605","lon":"11.042724"},"label":"PIEVE AMORE (Vergato)","administrative_regions":[{"insee":"","name":"Vergato","level":8,"coord":{"lat":"44.282658","lon":"11.10731"},"label":"Vergato","id":"admin:osm:42979","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OIB:SA:CTP73205"},"name":"PIEVE AMORE (Vergato)","id":"stop_area:OIB:SA:CTP73205"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OIBCTP73213"},{"type":"source","value":"CTP73213"}],"name":"AMORE SAN SALVATORE","links":[],"coord":{"lat":"44.297053","lon":"11.040492"},"label":"AMORE SAN SALVATORE (Vergato) (Castel d'Aiano)","administrative_regions":[{"insee":"","name":"Vergato","level":8,"coord":{"lat":"44.282658","lon":"11.10731"},"label":"Vergato","id":"admin:osm:42979","zip_code":""},{"insee":"","name":"Castel d'Aiano","level":8,"coord":{"lat":"44.27586","lon":"10.999407"},"label":"Castel d'Aiano","id":"admin:osm:42999","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OIB:SA:CTP73213"},"name":"AMORE SAN SALVATORE (Vergato) (Castel d'Aiano)","id":"stop_area:OIB:SA:CTP73213"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/it\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"it","license":"OpenData","name":"Italie"},{"url":"www.tper.it","id":"OIB","license":"CC Italia","name":"OIB - Bologna"},{"url":"https:\/\/amat-mi.it","id":"OMI","license":"CC","name":"OMI - Milano"},{"url":"http:\/\/www.agenziamobilita.roma.it","id":"ORA","license":"CC Italia","name":"ORA - Trasporto pubblico de Roma"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP72760"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "72760"
+          },
+          {
+            "type": "source",
+            "value": "CTP72760"
+          }
+        ],
+        "name": "ARDEATINA/DIVINO AMORE",
+        "links": [],
+        "coord": {
+          "lat": "41.776351",
+          "lon": "12.544675"
+        },
+        "label": "ARDEATINA/DIVINO AMORE (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP72760"
+      },
+      "name": "ARDEATINA/DIVINO AMORE (Roma)",
+      "id": "stop_area:ORA:SA:CTP72760"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP72835"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "72835"
+          },
+          {
+            "type": "source",
+            "value": "CTP72835"
+          }
+        ],
+        "name": "SANTUARIO DIVINO AMORE",
+        "links": [],
+        "coord": {
+          "lat": "41.776948",
+          "lon": "12.542572"
+        },
+        "label": "SANTUARIO DIVINO AMORE (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP72835"
+      },
+      "name": "SANTUARIO DIVINO AMORE (Roma)",
+      "id": "stop_area:ORA:SA:CTP72835"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP73635"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "73635"
+          },
+          {
+            "type": "source",
+            "value": "CTP73635"
+          }
+        ],
+        "name": "ARDEATINA/STAZ. DIVINO AMORE",
+        "links": [],
+        "coord": {
+          "lat": "41.771051",
+          "lon": "12.555276"
+        },
+        "label": "ARDEATINA/STAZ. DIVINO AMORE (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP73635"
+      },
+      "name": "ARDEATINA/STAZ. DIVINO AMORE (Roma)",
+      "id": "stop_area:ORA:SA:CTP73635"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OMICTP10495"
+          },
+          {
+            "type": "source",
+            "value": "CTP10495"
+          }
+        ],
+        "name": "via amoretti via lessona",
+        "links": [],
+        "coord": {
+          "lat": "45.518581",
+          "lon": "9.135878999999999"
+        },
+        "label": "via amoretti via lessona (Milano)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Milano",
+            "level": 8,
+            "coord": {
+              "lat": "45.466797",
+              "lon": "9.190536"
+            },
+            "label": "Milano",
+            "id": "admin:osm:44915",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OMI:SA:CTP10495"
+      },
+      "name": "via amoretti via lessona (Milano)",
+      "id": "stop_area:OMI:SA:CTP10495"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OMICTP10740"
+          },
+          {
+            "type": "source",
+            "value": "CTP10740"
+          }
+        ],
+        "name": "via amoretti via pascarella",
+        "links": [],
+        "coord": {
+          "lat": "45.519286",
+          "lon": "9.141095"
+        },
+        "label": "via amoretti via pascarella (Milano)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Milano",
+            "level": 8,
+            "coord": {
+              "lat": "45.466797",
+              "lon": "9.190536"
+            },
+            "label": "Milano",
+            "id": "admin:osm:44915",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OMI:SA:CTP10740"
+      },
+      "name": "via amoretti via pascarella (Milano)",
+      "id": "stop_area:OMI:SA:CTP10740"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OMICTP10737"
+          },
+          {
+            "type": "source",
+            "value": "CTP10737"
+          }
+        ],
+        "name": "via amoretti via antona traversi",
+        "links": [],
+        "coord": {
+          "lat": "45.519014",
+          "lon": "9.138854"
+        },
+        "label": "via amoretti via antona traversi (Milano)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Milano",
+            "level": 8,
+            "coord": {
+              "lat": "45.466797",
+              "lon": "9.190536"
+            },
+            "label": "Milano",
+            "id": "admin:osm:44915",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OMI:SA:CTP10737"
+      },
+      "name": "via amoretti via antona traversi (Milano)",
+      "id": "stop_area:OMI:SA:CTP10737"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIBCTP73205"
+          },
+          {
+            "type": "source",
+            "value": "CTP73205"
+          }
+        ],
+        "name": "PIEVE AMORE",
+        "links": [],
+        "coord": {
+          "lat": "44.304605",
+          "lon": "11.042724"
+        },
+        "label": "PIEVE AMORE (Vergato)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Vergato",
+            "level": 8,
+            "coord": {
+              "lat": "44.282658",
+              "lon": "11.10731"
+            },
+            "label": "Vergato",
+            "id": "admin:osm:42979",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OIB:SA:CTP73205"
+      },
+      "name": "PIEVE AMORE (Vergato)",
+      "id": "stop_area:OIB:SA:CTP73205"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIBCTP73213"
+          },
+          {
+            "type": "source",
+            "value": "CTP73213"
+          }
+        ],
+        "name": "AMORE SAN SALVATORE",
+        "links": [],
+        "coord": {
+          "lat": "44.297053",
+          "lon": "11.040492"
+        },
+        "label": "AMORE SAN SALVATORE (Vergato) (Castel d'Aiano)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Vergato",
+            "level": 8,
+            "coord": {
+              "lat": "44.282658",
+              "lon": "11.10731"
+            },
+            "label": "Vergato",
+            "id": "admin:osm:42979",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Castel d'Aiano",
+            "level": 8,
+            "coord": {
+              "lat": "44.27586",
+              "lon": "10.999407"
+            },
+            "label": "Castel d'Aiano",
+            "id": "admin:osm:42999",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OIB:SA:CTP73213"
+      },
+      "name": "AMORE SAN SALVATORE (Vergato) (Castel d'Aiano)",
+      "id": "stop_area:OIB:SA:CTP73213"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/it/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "it",
+      "license": "OpenData",
+      "name": "Italie"
+    },
+    {
+      "url": "www.tper.it",
+      "id": "OIB",
+      "license": "CC Italia",
+      "name": "OIB - Bologna"
+    },
+    {
+      "url": "https://amat-mi.it",
+      "id": "OMI",
+      "license": "CC",
+      "name": "OMI - Milano"
+    },
+    {
+      "url": "http://www.agenziamobilita.roma.it",
+      "id": "ORA",
+      "license": "CC Italia",
+      "name": "ORA - Trasporto pubblico de Roma"
+    }
+  ]
+}

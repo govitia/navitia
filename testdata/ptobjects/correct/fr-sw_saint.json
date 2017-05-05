@@ -1,1 +1,549 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OTL1970324837184772"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"1970324837184772"}],"name":"Saint Cyprien - R\u00e9publique","links":[],"coord":{"lat":"43.5978","lon":"1.43079"},"label":"Saint Cyprien - R\u00e9publique (Toulouse)","administrative_regions":[{"insee":"31555","name":"Toulouse","level":8,"coord":{"lat":"43.604462","lon":"1.444246"},"label":"Toulouse (31000-31500)","id":"admin:fr:31555","zip_code":"31000;31100;31200;31300;31400;31500"}],"timezone":"Europe\/Paris","id":"stop_area:OTL:SA:1970324837184772"},"name":"Saint Cyprien - R\u00e9publique (Toulouse)","id":"stop_area:OTL:SA:1970324837184772"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OTL1970324838348800"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"1970324838348800"}],"name":"Ramonville M\u00e9tro","links":[],"coord":{"lat":"43.5559","lon":"1.47711"},"label":"Ramonville M\u00e9tro (Ramonville-Saint-Agne)","administrative_regions":[{"insee":"31446","name":"Ramonville-Saint-Agne","level":8,"coord":{"lat":"43.546055","lon":"1.47491"},"label":"Ramonville-Saint-Agne (31520)","id":"admin:fr:31446","zip_code":"31520"}],"timezone":"Europe\/Paris","id":"stop_area:OTL:SA:1970324838348800"},"name":"Ramonville M\u00e9tro (Ramonville-Saint-Agne)","id":"stop_area:OTL:SA:1970324838348800"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OTL1970324837184617"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"1970324837184617"}],"name":"Saint Agne Gare SNCF","links":[],"coord":{"lat":"43.5802","lon":"1.44936"},"label":"Saint Agne Gare SNCF (Toulouse)","administrative_regions":[{"insee":"31555","name":"Toulouse","level":8,"coord":{"lat":"43.604462","lon":"1.444246"},"label":"Toulouse (31000-31500)","id":"admin:fr:31555","zip_code":"31000;31100;31200;31300;31400;31500"}],"timezone":"Europe\/Paris","id":"stop_area:OTL:SA:1970324837184617"},"name":"Saint Agne Gare SNCF (Toulouse)","id":"stop_area:OTL:SA:1970324837184617"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OTL1970324837185941"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"1970324837185941"}],"name":"St-Michel - Marcel Langer","links":[],"coord":{"lat":"43.5861","lon":"1.44704"},"label":"St-Michel - Marcel Langer (Toulouse)","administrative_regions":[{"insee":"31555","name":"Toulouse","level":8,"coord":{"lat":"43.604462","lon":"1.444246"},"label":"Toulouse (31000-31500)","id":"admin:fr:31555","zip_code":"31000;31100;31200;31300;31400;31500"}],"timezone":"Europe\/Paris","id":"stop_area:OTL:SA:1970324837185941"},"name":"St-Michel - Marcel Langer (Toulouse)","id":"stop_area:OTL:SA:1970324837185941"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OTL1970324837186293"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"1970324837186293"}],"name":"Clotasses","links":[],"coord":{"lat":"43.5552","lon":"1.46738"},"label":"Clotasses (Toulouse) (Ramonville-Saint-Agne)","administrative_regions":[{"insee":"31555","name":"Toulouse","level":8,"coord":{"lat":"43.604462","lon":"1.444246"},"label":"Toulouse (31000-31500)","id":"admin:fr:31555","zip_code":"31000;31100;31200;31300;31400;31500"},{"insee":"31446","name":"Ramonville-Saint-Agne","level":8,"coord":{"lat":"43.546055","lon":"1.47491"},"label":"Ramonville-Saint-Agne (31520)","id":"admin:fr:31446","zip_code":"31520"}],"timezone":"Europe\/Paris","id":"stop_area:OTL:SA:1970324837186293"},"name":"Clotasses (Toulouse) (Ramonville-Saint-Agne)","id":"stop_area:OTL:SA:1970324837186293"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OBOSMICH"},{"type":"external_code","value":"OBXSMICH"},{"type":"gtfs_stop_code","value":"SMICH"},{"type":"source","value":"SMICH"}],"name":"Saint-Michel","links":[],"coord":{"lat":"44.834476","lon":"-0.563384"},"label":"Saint-Michel (Bordeaux)","administrative_regions":[{"insee":"33063","name":"Bordeaux","level":8,"coord":{"lat":"44.841225","lon":"-0.580036"},"label":"Bordeaux (33000)","id":"admin:fr:33063","zip_code":"33000"}],"timezone":"Europe\/Paris","id":"stop_area:OBX:SA:SMICH"},"name":"Saint-Michel (Bordeaux)","id":"stop_area:OBX:SA:SMICH"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OBOCROIX"},{"type":"external_code","value":"OBXCROIX"},{"type":"gtfs_stop_code","value":"CROIX"},{"type":"source","value":"CROIX"}],"name":"Sainte-Croix","links":[],"coord":{"lat":"44.831841","lon":"-0.55943"},"label":"Sainte-Croix (Bordeaux)","administrative_regions":[{"insee":"33063","name":"Bordeaux","level":8,"coord":{"lat":"44.841225","lon":"-0.580036"},"label":"Bordeaux (33000)","id":"admin:fr:33063","zip_code":"33000"}],"timezone":"Europe\/Paris","id":"stop_area:OBX:SA:CROIX"},"name":"Sainte-Croix (Bordeaux)","id":"stop_area:OBX:SA:CROIX"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OBOBGENE"},{"type":"external_code","value":"OBXBGENE"},{"type":"gtfs_stop_code","value":"BGENE"},{"type":"source","value":"BGENE"}],"name":"Barri\u00e8re Saint-Gen\u00e8s","links":[],"coord":{"lat":"44.821172","lon":"-0.582851"},"label":"Barri\u00e8re Saint-Gen\u00e8s (Bordeaux) (Talence)","administrative_regions":[{"insee":"33063","name":"Bordeaux","level":8,"coord":{"lat":"44.841225","lon":"-0.580036"},"label":"Bordeaux (33000)","id":"admin:fr:33063","zip_code":"33000"},{"insee":"33522","name":"Talence","level":8,"coord":{"lat":"44.808842","lon":"-0.587962"},"label":"Talence (33400)","id":"admin:fr:33522","zip_code":"33400"}],"timezone":"Europe\/Paris","id":"stop_area:OBX:SA:BGENE"},"name":"Barri\u00e8re Saint-Gen\u00e8s (Bordeaux) (Talence)","id":"stop_area:OBX:SA:BGENE"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"SINOCE87581009"},{"type":"external_code","value":"STEOCE87581009"},{"type":"source","value":"StopArea:OCE87581009"}],"name":"gare de Bordeaux-St-Jean","links":[],"coord":{"lat":"44.82654","lon":"-0.556194"},"label":"gare de Bordeaux-St-Jean (Bordeaux)","administrative_regions":[{"insee":"33063","name":"Bordeaux","level":8,"coord":{"lat":"44.841225","lon":"-0.580036"},"label":"Bordeaux (33000)","id":"admin:fr:33063","zip_code":"33000"}],"timezone":"Europe\/Paris","id":"stop_area:SIN:SA:OCE87581009"},"name":"gare de Bordeaux-St-Jean (Bordeaux)","id":"stop_area:SIN:SA:OCE87581009"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OBOSTJEAN"},{"type":"gtfs_stop_code","value":"STJEAN"},{"type":"source","value":"STJEAN"}],"name":"Gare Saint-Jean","links":[],"coord":{"lat":"44.825443","lon":"-0.556992"},"label":"Gare Saint-Jean (Bordeaux)","administrative_regions":[{"insee":"33063","name":"Bordeaux","level":8,"coord":{"lat":"44.841225","lon":"-0.580036"},"label":"Bordeaux (33000)","id":"admin:fr:33063","zip_code":"33000"}],"timezone":"Europe\/Paris","id":"stop_area:OBO:SA:STJEAN"},"name":"Gare Saint-Jean (Bordeaux)","id":"stop_area:OBO:SA:STJEAN"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-sw\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"https:\/\/data.haute-garonne.fr\/explore\/dataset\/lignes-regulieres-format-gtfs\/","id":"AEC","license":"ODbL","name":"AEC - Arc-en-ciel"},{"url":"http:\/\/catalogue.datalocale.fr\/","id":"O33","license":"ODbL","name":"O33 - Transgironde"},{"url":"http:\/\/data.bordeaux-metropole.fr\/","id":"OBO","license":"ODbL","name":"OBO - Bordeaux"},{"url":"http:\/\/data.bordeaux-metropole.fr\/","id":"OBX","license":"ODbL","name":"OBX - Bordeaux tramway"},{"url":"https:\/\/data.toulouse-metropole.fr","id":"OTL","license":"ODbL","name":"OTL - Tisseo Toulouse"},{"url":"http:\/\/www.carabus-transport.com","id":"OYN","license":"LO-OL","name":"OYN - Royan"},{"url":"https:\/\/ressources.data.sncf.com","id":"SIN","license":"SNCF Open Data","name":"SIN - SNCF INTERCITE OPEN DATA"},{"url":"https:\/\/ressources.data.sncf.com","id":"STE","license":"SNCF Open Data","name":"STE - SNCF TER OPEN DATA"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OTL1970324837184772"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "1970324837184772"
+          }
+        ],
+        "name": "Saint Cyprien - République",
+        "links": [],
+        "coord": {
+          "lat": "43.5978",
+          "lon": "1.43079"
+        },
+        "label": "Saint Cyprien - République (Toulouse)",
+        "administrative_regions": [
+          {
+            "insee": "31555",
+            "name": "Toulouse",
+            "level": 8,
+            "coord": {
+              "lat": "43.604462",
+              "lon": "1.444246"
+            },
+            "label": "Toulouse (31000-31500)",
+            "id": "admin:fr:31555",
+            "zip_code": "31000;31100;31200;31300;31400;31500"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OTL:SA:1970324837184772"
+      },
+      "name": "Saint Cyprien - République (Toulouse)",
+      "id": "stop_area:OTL:SA:1970324837184772"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OTL1970324838348800"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "1970324838348800"
+          }
+        ],
+        "name": "Ramonville Métro",
+        "links": [],
+        "coord": {
+          "lat": "43.5559",
+          "lon": "1.47711"
+        },
+        "label": "Ramonville Métro (Ramonville-Saint-Agne)",
+        "administrative_regions": [
+          {
+            "insee": "31446",
+            "name": "Ramonville-Saint-Agne",
+            "level": 8,
+            "coord": {
+              "lat": "43.546055",
+              "lon": "1.47491"
+            },
+            "label": "Ramonville-Saint-Agne (31520)",
+            "id": "admin:fr:31446",
+            "zip_code": "31520"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OTL:SA:1970324838348800"
+      },
+      "name": "Ramonville Métro (Ramonville-Saint-Agne)",
+      "id": "stop_area:OTL:SA:1970324838348800"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OTL1970324837184617"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "1970324837184617"
+          }
+        ],
+        "name": "Saint Agne Gare SNCF",
+        "links": [],
+        "coord": {
+          "lat": "43.5802",
+          "lon": "1.44936"
+        },
+        "label": "Saint Agne Gare SNCF (Toulouse)",
+        "administrative_regions": [
+          {
+            "insee": "31555",
+            "name": "Toulouse",
+            "level": 8,
+            "coord": {
+              "lat": "43.604462",
+              "lon": "1.444246"
+            },
+            "label": "Toulouse (31000-31500)",
+            "id": "admin:fr:31555",
+            "zip_code": "31000;31100;31200;31300;31400;31500"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OTL:SA:1970324837184617"
+      },
+      "name": "Saint Agne Gare SNCF (Toulouse)",
+      "id": "stop_area:OTL:SA:1970324837184617"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OTL1970324837185941"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "1970324837185941"
+          }
+        ],
+        "name": "St-Michel - Marcel Langer",
+        "links": [],
+        "coord": {
+          "lat": "43.5861",
+          "lon": "1.44704"
+        },
+        "label": "St-Michel - Marcel Langer (Toulouse)",
+        "administrative_regions": [
+          {
+            "insee": "31555",
+            "name": "Toulouse",
+            "level": 8,
+            "coord": {
+              "lat": "43.604462",
+              "lon": "1.444246"
+            },
+            "label": "Toulouse (31000-31500)",
+            "id": "admin:fr:31555",
+            "zip_code": "31000;31100;31200;31300;31400;31500"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OTL:SA:1970324837185941"
+      },
+      "name": "St-Michel - Marcel Langer (Toulouse)",
+      "id": "stop_area:OTL:SA:1970324837185941"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OTL1970324837186293"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "1970324837186293"
+          }
+        ],
+        "name": "Clotasses",
+        "links": [],
+        "coord": {
+          "lat": "43.5552",
+          "lon": "1.46738"
+        },
+        "label": "Clotasses (Toulouse) (Ramonville-Saint-Agne)",
+        "administrative_regions": [
+          {
+            "insee": "31555",
+            "name": "Toulouse",
+            "level": 8,
+            "coord": {
+              "lat": "43.604462",
+              "lon": "1.444246"
+            },
+            "label": "Toulouse (31000-31500)",
+            "id": "admin:fr:31555",
+            "zip_code": "31000;31100;31200;31300;31400;31500"
+          },
+          {
+            "insee": "31446",
+            "name": "Ramonville-Saint-Agne",
+            "level": 8,
+            "coord": {
+              "lat": "43.546055",
+              "lon": "1.47491"
+            },
+            "label": "Ramonville-Saint-Agne (31520)",
+            "id": "admin:fr:31446",
+            "zip_code": "31520"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OTL:SA:1970324837186293"
+      },
+      "name": "Clotasses (Toulouse) (Ramonville-Saint-Agne)",
+      "id": "stop_area:OTL:SA:1970324837186293"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBOSMICH"
+          },
+          {
+            "type": "external_code",
+            "value": "OBXSMICH"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "SMICH"
+          },
+          {
+            "type": "source",
+            "value": "SMICH"
+          }
+        ],
+        "name": "Saint-Michel",
+        "links": [],
+        "coord": {
+          "lat": "44.834476",
+          "lon": "-0.563384"
+        },
+        "label": "Saint-Michel (Bordeaux)",
+        "administrative_regions": [
+          {
+            "insee": "33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "coord": {
+              "lat": "44.841225",
+              "lon": "-0.580036"
+            },
+            "label": "Bordeaux (33000)",
+            "id": "admin:fr:33063",
+            "zip_code": "33000"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OBX:SA:SMICH"
+      },
+      "name": "Saint-Michel (Bordeaux)",
+      "id": "stop_area:OBX:SA:SMICH"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBOCROIX"
+          },
+          {
+            "type": "external_code",
+            "value": "OBXCROIX"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "CROIX"
+          },
+          {
+            "type": "source",
+            "value": "CROIX"
+          }
+        ],
+        "name": "Sainte-Croix",
+        "links": [],
+        "coord": {
+          "lat": "44.831841",
+          "lon": "-0.55943"
+        },
+        "label": "Sainte-Croix (Bordeaux)",
+        "administrative_regions": [
+          {
+            "insee": "33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "coord": {
+              "lat": "44.841225",
+              "lon": "-0.580036"
+            },
+            "label": "Bordeaux (33000)",
+            "id": "admin:fr:33063",
+            "zip_code": "33000"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OBX:SA:CROIX"
+      },
+      "name": "Sainte-Croix (Bordeaux)",
+      "id": "stop_area:OBX:SA:CROIX"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBOBGENE"
+          },
+          {
+            "type": "external_code",
+            "value": "OBXBGENE"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "BGENE"
+          },
+          {
+            "type": "source",
+            "value": "BGENE"
+          }
+        ],
+        "name": "Barrière Saint-Genès",
+        "links": [],
+        "coord": {
+          "lat": "44.821172",
+          "lon": "-0.582851"
+        },
+        "label": "Barrière Saint-Genès (Bordeaux) (Talence)",
+        "administrative_regions": [
+          {
+            "insee": "33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "coord": {
+              "lat": "44.841225",
+              "lon": "-0.580036"
+            },
+            "label": "Bordeaux (33000)",
+            "id": "admin:fr:33063",
+            "zip_code": "33000"
+          },
+          {
+            "insee": "33522",
+            "name": "Talence",
+            "level": 8,
+            "coord": {
+              "lat": "44.808842",
+              "lon": "-0.587962"
+            },
+            "label": "Talence (33400)",
+            "id": "admin:fr:33522",
+            "zip_code": "33400"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OBX:SA:BGENE"
+      },
+      "name": "Barrière Saint-Genès (Bordeaux) (Talence)",
+      "id": "stop_area:OBX:SA:BGENE"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "SINOCE87581009"
+          },
+          {
+            "type": "external_code",
+            "value": "STEOCE87581009"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:OCE87581009"
+          }
+        ],
+        "name": "gare de Bordeaux-St-Jean",
+        "links": [],
+        "coord": {
+          "lat": "44.82654",
+          "lon": "-0.556194"
+        },
+        "label": "gare de Bordeaux-St-Jean (Bordeaux)",
+        "administrative_regions": [
+          {
+            "insee": "33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "coord": {
+              "lat": "44.841225",
+              "lon": "-0.580036"
+            },
+            "label": "Bordeaux (33000)",
+            "id": "admin:fr:33063",
+            "zip_code": "33000"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:SIN:SA:OCE87581009"
+      },
+      "name": "gare de Bordeaux-St-Jean (Bordeaux)",
+      "id": "stop_area:SIN:SA:OCE87581009"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBOSTJEAN"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "STJEAN"
+          },
+          {
+            "type": "source",
+            "value": "STJEAN"
+          }
+        ],
+        "name": "Gare Saint-Jean",
+        "links": [],
+        "coord": {
+          "lat": "44.825443",
+          "lon": "-0.556992"
+        },
+        "label": "Gare Saint-Jean (Bordeaux)",
+        "administrative_regions": [
+          {
+            "insee": "33063",
+            "name": "Bordeaux",
+            "level": 8,
+            "coord": {
+              "lat": "44.841225",
+              "lon": "-0.580036"
+            },
+            "label": "Bordeaux (33000)",
+            "id": "admin:fr:33063",
+            "zip_code": "33000"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OBO:SA:STJEAN"
+      },
+      "name": "Gare Saint-Jean (Bordeaux)",
+      "id": "stop_area:OBO:SA:STJEAN"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-sw/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "https://data.haute-garonne.fr/explore/dataset/lignes-regulieres-format-gtfs/",
+      "id": "AEC",
+      "license": "ODbL",
+      "name": "AEC - Arc-en-ciel"
+    },
+    {
+      "url": "http://catalogue.datalocale.fr/",
+      "id": "O33",
+      "license": "ODbL",
+      "name": "O33 - Transgironde"
+    },
+    {
+      "url": "http://data.bordeaux-metropole.fr/",
+      "id": "OBO",
+      "license": "ODbL",
+      "name": "OBO - Bordeaux"
+    },
+    {
+      "url": "http://data.bordeaux-metropole.fr/",
+      "id": "OBX",
+      "license": "ODbL",
+      "name": "OBX - Bordeaux tramway"
+    },
+    {
+      "url": "https://data.toulouse-metropole.fr",
+      "id": "OTL",
+      "license": "ODbL",
+      "name": "OTL - Tisseo Toulouse"
+    },
+    {
+      "url": "http://www.carabus-transport.com",
+      "id": "OYN",
+      "license": "LO-OL",
+      "name": "OYN - Royan"
+    },
+    {
+      "url": "https://ressources.data.sncf.com",
+      "id": "SIN",
+      "license": "SNCF Open Data",
+      "name": "SIN - SNCF INTERCITE OPEN DATA"
+    },
+    {
+      "url": "https://ressources.data.sncf.com",
+      "id": "STE",
+      "license": "SNCF Open Data",
+      "name": "STE - SNCF TER OPEN DATA"
+    }
+  ]
+}

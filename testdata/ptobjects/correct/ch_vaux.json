@@ -1,1 +1,264 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OCHCTP8591995"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP8591995"}],"name":"Lausanne, Bois de Vaux","links":[],"coord":{"lat":"46.519427","lon":"6.599796"},"label":"Lausanne, Bois de Vaux (Lausanne)","administrative_regions":[{"insee":"","name":"Lausanne","level":8,"coord":{"lat":"46.521828","lon":"6.632702"},"label":"Lausanne","id":"admin:osm:1685018","zip_code":""}],"timezone":"Europe\/Zurich","id":"stop_area:OCH:SA:CTP8591995"},"name":"Lausanne, Bois de Vaux (Lausanne)","id":"stop_area:OCH:SA:CTP8591995"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OCHCTP8582213"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP8582213"}],"name":"La Neuveville, Ruis de Vaux","links":[],"coord":{"lat":"47.061835","lon":"7.086222"},"label":"La Neuveville, Ruis de Vaux (La Neuveville) (Le Landeron)","administrative_regions":[{"insee":"","name":"La Neuveville","level":8,"coord":{"lat":"47.075306","lon":"7.101584"},"label":"La Neuveville","id":"admin:osm:1682521","zip_code":""},{"insee":"","name":"Le Landeron","level":8,"coord":{"lat":"47.064331","lon":"7.057531"},"label":"Le Landeron","id":"admin:osm:1685505","zip_code":""}],"timezone":"Europe\/Zurich","id":"stop_area:OCH:SA:CTP8582213"},"name":"La Neuveville, Ruis de Vaux (La Neuveville) (Le Landeron)","id":"stop_area:OCH:SA:CTP8582213"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OCHCTP8570075"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP8570075"}],"name":"Vaux-sur-Morges, Bugnon","links":[],"coord":{"lat":"46.539826","lon":"6.453724"},"label":"Vaux-sur-Morges, Bugnon (Vaux-sur-Morges)","administrative_regions":[{"insee":"","name":"Vaux-sur-Morges","level":8,"coord":{"lat":"46.538498","lon":"6.46391"},"label":"Vaux-sur-Morges (1126)","id":"admin:osm:1685177","zip_code":"1126"}],"timezone":"Europe\/Zurich","id":"stop_area:OCH:SA:CTP8570075"},"name":"Vaux-sur-Morges, Bugnon (Vaux-sur-Morges)","id":"stop_area:OCH:SA:CTP8570075"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OCHCTP8570074"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP8570074"}],"name":"Vaux-sur-Morges, village","links":[],"coord":{"lat":"46.535538","lon":"6.46341"},"label":"Vaux-sur-Morges, village (Vaux-sur-Morges)","administrative_regions":[{"insee":"","name":"Vaux-sur-Morges","level":8,"coord":{"lat":"46.538498","lon":"6.46391"},"label":"Vaux-sur-Morges (1126)","id":"admin:osm:1685177","zip_code":"1126"}],"timezone":"Europe\/Zurich","id":"stop_area:OCH:SA:CTP8570074"},"name":"Vaux-sur-Morges, village (Vaux-sur-Morges)","id":"stop_area:OCH:SA:CTP8570074"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OCHCTP8592285"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP8592285"}],"name":"Vaux-sur-Morges, bif. Bugnon","links":[],"coord":{"lat":"46.533702","lon":"6.469622"},"label":"Vaux-sur-Morges, bif. Bugnon (Vaux-sur-Morges)","administrative_regions":[{"insee":"","name":"Vaux-sur-Morges","level":8,"coord":{"lat":"46.538498","lon":"6.46391"},"label":"Vaux-sur-Morges (1126)","id":"admin:osm:1685177","zip_code":"1126"}],"timezone":"Europe\/Zurich","id":"stop_area:OCH:SA:CTP8592285"},"name":"Vaux-sur-Morges, bif. Bugnon (Vaux-sur-Morges)","id":"stop_area:OCH:SA:CTP8592285"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/ch\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"http:\/\/www.sbb.ch","id":"ch","license":"Specifics Terms and conditions","name":"Switzerland public transit"},{"url":"http:\/\/gtfs.geops.ch","id":"OCH","license":"Terms of Use","name":"OCH - National Switzerland"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OCHCTP8591995"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP8591995"
+          }
+        ],
+        "name": "Lausanne, Bois de Vaux",
+        "links": [],
+        "coord": {
+          "lat": "46.519427",
+          "lon": "6.599796"
+        },
+        "label": "Lausanne, Bois de Vaux (Lausanne)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Lausanne",
+            "level": 8,
+            "coord": {
+              "lat": "46.521828",
+              "lon": "6.632702"
+            },
+            "label": "Lausanne",
+            "id": "admin:osm:1685018",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Zurich",
+        "id": "stop_area:OCH:SA:CTP8591995"
+      },
+      "name": "Lausanne, Bois de Vaux (Lausanne)",
+      "id": "stop_area:OCH:SA:CTP8591995"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OCHCTP8582213"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP8582213"
+          }
+        ],
+        "name": "La Neuveville, Ruis de Vaux",
+        "links": [],
+        "coord": {
+          "lat": "47.061835",
+          "lon": "7.086222"
+        },
+        "label": "La Neuveville, Ruis de Vaux (La Neuveville) (Le Landeron)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "La Neuveville",
+            "level": 8,
+            "coord": {
+              "lat": "47.075306",
+              "lon": "7.101584"
+            },
+            "label": "La Neuveville",
+            "id": "admin:osm:1682521",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Le Landeron",
+            "level": 8,
+            "coord": {
+              "lat": "47.064331",
+              "lon": "7.057531"
+            },
+            "label": "Le Landeron",
+            "id": "admin:osm:1685505",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Zurich",
+        "id": "stop_area:OCH:SA:CTP8582213"
+      },
+      "name": "La Neuveville, Ruis de Vaux (La Neuveville) (Le Landeron)",
+      "id": "stop_area:OCH:SA:CTP8582213"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OCHCTP8570075"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP8570075"
+          }
+        ],
+        "name": "Vaux-sur-Morges, Bugnon",
+        "links": [],
+        "coord": {
+          "lat": "46.539826",
+          "lon": "6.453724"
+        },
+        "label": "Vaux-sur-Morges, Bugnon (Vaux-sur-Morges)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Vaux-sur-Morges",
+            "level": 8,
+            "coord": {
+              "lat": "46.538498",
+              "lon": "6.46391"
+            },
+            "label": "Vaux-sur-Morges (1126)",
+            "id": "admin:osm:1685177",
+            "zip_code": "1126"
+          }
+        ],
+        "timezone": "Europe/Zurich",
+        "id": "stop_area:OCH:SA:CTP8570075"
+      },
+      "name": "Vaux-sur-Morges, Bugnon (Vaux-sur-Morges)",
+      "id": "stop_area:OCH:SA:CTP8570075"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OCHCTP8570074"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP8570074"
+          }
+        ],
+        "name": "Vaux-sur-Morges, village",
+        "links": [],
+        "coord": {
+          "lat": "46.535538",
+          "lon": "6.46341"
+        },
+        "label": "Vaux-sur-Morges, village (Vaux-sur-Morges)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Vaux-sur-Morges",
+            "level": 8,
+            "coord": {
+              "lat": "46.538498",
+              "lon": "6.46391"
+            },
+            "label": "Vaux-sur-Morges (1126)",
+            "id": "admin:osm:1685177",
+            "zip_code": "1126"
+          }
+        ],
+        "timezone": "Europe/Zurich",
+        "id": "stop_area:OCH:SA:CTP8570074"
+      },
+      "name": "Vaux-sur-Morges, village (Vaux-sur-Morges)",
+      "id": "stop_area:OCH:SA:CTP8570074"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OCHCTP8592285"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP8592285"
+          }
+        ],
+        "name": "Vaux-sur-Morges, bif. Bugnon",
+        "links": [],
+        "coord": {
+          "lat": "46.533702",
+          "lon": "6.469622"
+        },
+        "label": "Vaux-sur-Morges, bif. Bugnon (Vaux-sur-Morges)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Vaux-sur-Morges",
+            "level": 8,
+            "coord": {
+              "lat": "46.538498",
+              "lon": "6.46391"
+            },
+            "label": "Vaux-sur-Morges (1126)",
+            "id": "admin:osm:1685177",
+            "zip_code": "1126"
+          }
+        ],
+        "timezone": "Europe/Zurich",
+        "id": "stop_area:OCH:SA:CTP8592285"
+      },
+      "name": "Vaux-sur-Morges, bif. Bugnon (Vaux-sur-Morges)",
+      "id": "stop_area:OCH:SA:CTP8592285"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/ch/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.sbb.ch",
+      "id": "ch",
+      "license": "Specifics Terms and conditions",
+      "name": "Switzerland public transit"
+    },
+    {
+      "url": "http://gtfs.geops.ch",
+      "id": "OCH",
+      "license": "Terms of Use",
+      "name": "OCH - National Switzerland"
+    }
+  ]
+}

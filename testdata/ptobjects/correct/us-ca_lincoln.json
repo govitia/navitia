@@ -1,1 +1,515 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP3248"},{"type":"external_code","value":"OLDCTP9022"},{"type":"gtfs_stop_code","value":"3248"},{"type":"source","value":"CTP3248"},{"type":"source","value":"CTP9022"}],"name":"Mindanao \/ Lincoln","links":[],"coord":{"lat":"33.980671","lon":"-118.438744"},"label":"Mindanao \/ Lincoln (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP3248"},"name":"Mindanao \/ Lincoln (Los Angeles)","id":"stop_area:LAB:SA:CTP3248"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP7803"},{"type":"gtfs_stop_code","value":"7803"},{"type":"source","value":"CTP7803"}],"name":"Manchester \/ Lincoln","links":[],"coord":{"lat":"33.959679","lon":"-118.418343"},"label":"Manchester \/ Lincoln (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP7803"},"name":"Manchester \/ Lincoln (Los Angeles)","id":"stop_area:LAB:SA:CTP7803"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP5629"},{"type":"gtfs_stop_code","value":"5629"},{"type":"source","value":"CTP5629"}],"name":"Venice \/ Lincoln","links":[],"coord":{"lat":"33.994038","lon":"-118.452263"},"label":"Venice \/ Lincoln (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP5629"},"name":"Venice \/ Lincoln (Los Angeles)","id":"stop_area:LAB:SA:CTP5629"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP473"},{"type":"gtfs_stop_code","value":"473"},{"type":"source","value":"CTP473"}],"name":"Lincoln Park \/ Altura","links":[],"coord":{"lat":"34.075523","lon":"-118.202896"},"label":"Lincoln Park \/ Altura (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP473"},"name":"Lincoln Park \/ Altura (Los Angeles)","id":"stop_area:LAB:SA:CTP473"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP2981"},{"type":"gtfs_stop_code","value":"2981"},{"type":"source","value":"CTP2981"}],"name":"Lincoln Park \/ Flora","links":[],"coord":{"lat":"34.080326","lon":"-118.202766"},"label":"Lincoln Park \/ Flora (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP2981"},"name":"Lincoln Park \/ Flora (Los Angeles)","id":"stop_area:LAB:SA:CTP2981"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP2983"},{"type":"gtfs_stop_code","value":"2983"},{"type":"source","value":"CTP2983"}],"name":"Lincoln Park \/ Pomona","links":[],"coord":{"lat":"34.078541","lon":"-118.202721"},"label":"Lincoln Park \/ Pomona (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP2983"},"name":"Lincoln Park \/ Pomona (Los Angeles)","id":"stop_area:LAB:SA:CTP2983"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP3801"},{"type":"gtfs_stop_code","value":"3801"},{"type":"source","value":"CTP3801"}],"name":"Mission \/ Lincoln Park","links":[],"coord":{"lat":"34.067669","lon":"-118.202347"},"label":"Mission \/ Lincoln Park (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP3801"},"name":"Mission \/ Lincoln Park (Los Angeles)","id":"stop_area:LAB:SA:CTP3801"},{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"LABCTP300"},{"type":"gtfs_stop_code","value":"300"},{"type":"source","value":"CTP300"}],"name":"Ave 26 \/ Lacy - Lincoln \/ Cypress Station","links":[],"coord":{"lat":"34.081799","lon":"-118.220131"},"label":"Ave 26 \/ Lacy - Lincoln \/ Cypress Station (Los Angeles)","administrative_regions":[{"insee":"","name":"Los Angeles","level":8,"coord":{"lat":"34.053719","lon":"-118.242729"},"label":"Los Angeles","id":"admin:osm:207359","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:LAB:SA:CTP300"},"name":"Ave 26 \/ Lacy - Lincoln \/ Cypress Station (Los Angeles)","id":"stop_area:LAB:SA:CTP300"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"CA1CTP491"},{"type":"gtfs_stop_code","value":"491"},{"type":"source","value":"CTP491"}],"name":"LINCOLN-ANAHEIM","links":[],"coord":{"lat":"33.83714","lon":"-117.9131"},"label":"LINCOLN-ANAHEIM (Anaheim)","administrative_regions":[{"insee":"","name":"Anaheim","level":8,"coord":{"lat":"33.83884","lon":"-117.857692"},"label":"Anaheim","id":"admin:osm:253985","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:CA1:SA:CTP491"},"name":"LINCOLN-ANAHEIM (Anaheim)","id":"stop_area:CA1:SA:CTP491"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OSCCTP962"},{"type":"gtfs_stop_code","value":"60962"},{"type":"source","value":"CTP962"}],"name":"CURTNER & LINCOLN","links":[],"coord":{"lat":"37.289447","lon":"-121.889052"},"label":"CURTNER & LINCOLN (San Jos\u00e9)","administrative_regions":[{"insee":"","name":"San Jos\u00e9","level":8,"coord":{"lat":"37.301588","lon":"-121.848875"},"label":"San Jos\u00e9","id":"admin:osm:112143","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OSC:SA:CTP962"},"name":"CURTNER & LINCOLN (San Jos\u00e9)","id":"stop_area:OSC:SA:CTP962"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-ca\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"us-ca","license":"OpenData","name":"USA - California"},{"url":"","id":"LAB","license":"http:\/\/developer.metro.net\/terms-and-conditions\/","name":"LAB - Los Angeles Bus"},{"url":"","id":"LAR","license":"http:\/\/developer.metro.net\/terms-and-conditions\/","name":"LAR - Los Angeles Rail"},{"url":"","id":"OLD","license":"Terms of use","name":"OLD - LA DOT"},{"url":"","id":"OSC","license":"Terms of use","name":"OSC - Santa Clara"},{"url":"","id":"OSF","license":"Terms of use","name":"OSF - San Francisco"},{"url":"http:\/\/data.trilliumtransit.com\/gtfs\/yubasutter-ca-us\/","id":"OYU","license":"Terms of use","name":"OYU - Yuba-Sutter"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP3248"
+          },
+          {
+            "type": "external_code",
+            "value": "OLDCTP9022"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3248"
+          },
+          {
+            "type": "source",
+            "value": "CTP3248"
+          },
+          {
+            "type": "source",
+            "value": "CTP9022"
+          }
+        ],
+        "name": "Mindanao / Lincoln",
+        "links": [],
+        "coord": {
+          "lat": "33.980671",
+          "lon": "-118.438744"
+        },
+        "label": "Mindanao / Lincoln (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP3248"
+      },
+      "name": "Mindanao / Lincoln (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP3248"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP7803"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "7803"
+          },
+          {
+            "type": "source",
+            "value": "CTP7803"
+          }
+        ],
+        "name": "Manchester / Lincoln",
+        "links": [],
+        "coord": {
+          "lat": "33.959679",
+          "lon": "-118.418343"
+        },
+        "label": "Manchester / Lincoln (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP7803"
+      },
+      "name": "Manchester / Lincoln (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP7803"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP5629"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "5629"
+          },
+          {
+            "type": "source",
+            "value": "CTP5629"
+          }
+        ],
+        "name": "Venice / Lincoln",
+        "links": [],
+        "coord": {
+          "lat": "33.994038",
+          "lon": "-118.452263"
+        },
+        "label": "Venice / Lincoln (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP5629"
+      },
+      "name": "Venice / Lincoln (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP5629"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP473"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "473"
+          },
+          {
+            "type": "source",
+            "value": "CTP473"
+          }
+        ],
+        "name": "Lincoln Park / Altura",
+        "links": [],
+        "coord": {
+          "lat": "34.075523",
+          "lon": "-118.202896"
+        },
+        "label": "Lincoln Park / Altura (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP473"
+      },
+      "name": "Lincoln Park / Altura (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP473"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP2981"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2981"
+          },
+          {
+            "type": "source",
+            "value": "CTP2981"
+          }
+        ],
+        "name": "Lincoln Park / Flora",
+        "links": [],
+        "coord": {
+          "lat": "34.080326",
+          "lon": "-118.202766"
+        },
+        "label": "Lincoln Park / Flora (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP2981"
+      },
+      "name": "Lincoln Park / Flora (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP2981"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP2983"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "2983"
+          },
+          {
+            "type": "source",
+            "value": "CTP2983"
+          }
+        ],
+        "name": "Lincoln Park / Pomona",
+        "links": [],
+        "coord": {
+          "lat": "34.078541",
+          "lon": "-118.202721"
+        },
+        "label": "Lincoln Park / Pomona (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP2983"
+      },
+      "name": "Lincoln Park / Pomona (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP2983"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP3801"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3801"
+          },
+          {
+            "type": "source",
+            "value": "CTP3801"
+          }
+        ],
+        "name": "Mission / Lincoln Park",
+        "links": [],
+        "coord": {
+          "lat": "34.067669",
+          "lon": "-118.202347"
+        },
+        "label": "Mission / Lincoln Park (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP3801"
+      },
+      "name": "Mission / Lincoln Park (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP3801"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "LABCTP300"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "300"
+          },
+          {
+            "type": "source",
+            "value": "CTP300"
+          }
+        ],
+        "name": "Ave 26 / Lacy - Lincoln / Cypress Station",
+        "links": [],
+        "coord": {
+          "lat": "34.081799",
+          "lon": "-118.220131"
+        },
+        "label": "Ave 26 / Lacy - Lincoln / Cypress Station (Los Angeles)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Los Angeles",
+            "level": 8,
+            "coord": {
+              "lat": "34.053719",
+              "lon": "-118.242729"
+            },
+            "label": "Los Angeles",
+            "id": "admin:osm:207359",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:LAB:SA:CTP300"
+      },
+      "name": "Ave 26 / Lacy - Lincoln / Cypress Station (Los Angeles)",
+      "id": "stop_area:LAB:SA:CTP300"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "CA1CTP491"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "491"
+          },
+          {
+            "type": "source",
+            "value": "CTP491"
+          }
+        ],
+        "name": "LINCOLN-ANAHEIM",
+        "links": [],
+        "coord": {
+          "lat": "33.83714",
+          "lon": "-117.9131"
+        },
+        "label": "LINCOLN-ANAHEIM (Anaheim)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Anaheim",
+            "level": 8,
+            "coord": {
+              "lat": "33.83884",
+              "lon": "-117.857692"
+            },
+            "label": "Anaheim",
+            "id": "admin:osm:253985",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:CA1:SA:CTP491"
+      },
+      "name": "LINCOLN-ANAHEIM (Anaheim)",
+      "id": "stop_area:CA1:SA:CTP491"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OSCCTP962"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "60962"
+          },
+          {
+            "type": "source",
+            "value": "CTP962"
+          }
+        ],
+        "name": "CURTNER & LINCOLN",
+        "links": [],
+        "coord": {
+          "lat": "37.289447",
+          "lon": "-121.889052"
+        },
+        "label": "CURTNER & LINCOLN (San José)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "San José",
+            "level": 8,
+            "coord": {
+              "lat": "37.301588",
+              "lon": "-121.848875"
+            },
+            "label": "San José",
+            "id": "admin:osm:112143",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OSC:SA:CTP962"
+      },
+      "name": "CURTNER & LINCOLN (San José)",
+      "id": "stop_area:OSC:SA:CTP962"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-ca/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "us-ca",
+      "license": "OpenData",
+      "name": "USA - California"
+    },
+    {
+      "url": "",
+      "id": "LAB",
+      "license": "http://developer.metro.net/terms-and-conditions/",
+      "name": "LAB - Los Angeles Bus"
+    },
+    {
+      "url": "",
+      "id": "LAR",
+      "license": "http://developer.metro.net/terms-and-conditions/",
+      "name": "LAR - Los Angeles Rail"
+    },
+    {
+      "url": "",
+      "id": "OLD",
+      "license": "Terms of use",
+      "name": "OLD - LA DOT"
+    },
+    {
+      "url": "",
+      "id": "OSC",
+      "license": "Terms of use",
+      "name": "OSC - Santa Clara"
+    },
+    {
+      "url": "",
+      "id": "OSF",
+      "license": "Terms of use",
+      "name": "OSF - San Francisco"
+    },
+    {
+      "url": "http://data.trilliumtransit.com/gtfs/yubasutter-ca-us/",
+      "id": "OYU",
+      "license": "Terms of use",
+      "name": "OYU - Yuba-Sutter"
+    }
+  ]
+}

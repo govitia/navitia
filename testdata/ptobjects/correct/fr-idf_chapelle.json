@@ -1,1 +1,431 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OIF59513"},{"type":"source","value":"StopArea:59513"}],"name":"Porte de la Chapelle","links":[],"coord":{"lat":"48.898114","lon":"2.358823"},"label":"Porte de la Chapelle (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:59513"},"name":"Porte de la Chapelle (Paris)","id":"stop_area:OIF:SA:59513"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OIF59218"},{"type":"source","value":"StopArea:59218"}],"name":"La Chapelle","links":[],"coord":{"lat":"48.884483","lon":"2.359993"},"label":"La Chapelle (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:59218"},"name":"La Chapelle (Paris)","id":"stop_area:OIF:SA:59218"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OIF59:3749763"},{"type":"source","value":"StopArea:59:3749763"}],"name":"Chapelle \/ Cailli\u00e9","links":[],"coord":{"lat":"48.88457","lon":"2.364079"},"label":"Chapelle \/ Cailli\u00e9 (Paris)","administrative_regions":[{"insee":"75056","name":"Paris","level":8,"coord":{"lat":"48.856609","lon":"2.351499"},"label":"Paris","id":"admin:fr:75056","zip_code":""}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:59:3749763"},"name":"Chapelle \/ Cailli\u00e9 (Paris)","id":"stop_area:OIF:SA:59:3749763"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OIF2:163"},{"type":"source","value":"StopArea:2:163"}],"name":"Rond-Point de la Chapelle","links":[],"coord":{"lat":"48.821826","lon":"2.142274"},"label":"Rond-Point de la Chapelle (Versailles)","administrative_regions":[{"insee":"78646","name":"Versailles","level":8,"coord":{"lat":"48.803539","lon":"2.126688"},"label":"Versailles (78000)","id":"admin:fr:78646","zip_code":"78000"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:2:163"},"name":"Rond-Point de la Chapelle (Versailles)","id":"stop_area:OIF:SA:2:163"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OIF59:4109850"},{"type":"source","value":"StopArea:59:4109850"}],"name":"La Chapelle","links":[],"coord":{"lat":"48.870407","lon":"2.199815"},"label":"La Chapelle (Rueil-Malmaison)","administrative_regions":[{"insee":"92063","name":"Rueil-Malmaison","level":8,"coord":{"lat":"48.869389","lon":"2.180883"},"label":"Rueil-Malmaison (92500)","id":"admin:fr:92063","zip_code":"92500"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:59:4109850"},"name":"La Chapelle (Rueil-Malmaison)","id":"stop_area:OIF:SA:59:4109850"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OIF59:4614545"},{"type":"source","value":"StopArea:59:4614545"}],"name":"Rue de la Chapelle","links":[],"coord":{"lat":"48.833956","lon":"2.565993"},"label":"Rue de la Chapelle (Noisy-le-Grand)","administrative_regions":[{"insee":"93051","name":"Noisy-le-Grand","level":8,"coord":{"lat":"48.849396","lon":"2.551957"},"label":"Noisy-le-Grand (93160)","id":"admin:fr:93051","zip_code":"93160"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:59:4614545"},"name":"Rue de la Chapelle (Noisy-le-Grand)","id":"stop_area:OIF:SA:59:4614545"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OIF41:5996"},{"type":"source","value":"StopArea:41:5996"}],"name":"Chapelle de la Villedieu","links":[],"coord":{"lat":"48.766838","lon":"1.965138"},"label":"Chapelle de la Villedieu (\u00c9lancourt)","administrative_regions":[{"insee":"78208","name":"\u00c9lancourt","level":8,"coord":{"lat":"48.76812","lon":"1.949351"},"label":"\u00c9lancourt (78990)","id":"admin:fr:78208","zip_code":"78990"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:41:5996"},"name":"Chapelle de la Villedieu (\u00c9lancourt)","id":"stop_area:OIF:SA:41:5996"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OIF67:9017"},{"type":"source","value":"StopArea:67:9017"}],"name":"Chapelle Saint-Laurent","links":[],"coord":{"lat":"48.52346","lon":"2.014328"},"label":"Chapelle Saint-Laurent (Dourdan)","administrative_regions":[{"insee":"91200","name":"Dourdan","level":8,"coord":{"lat":"48.530968","lon":"2.010899"},"label":"Dourdan (91410)","id":"admin:fr:91200","zip_code":"91410"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:67:9017"},"name":"Chapelle Saint-Laurent (Dourdan)","id":"stop_area:OIF:SA:67:9017"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OIF40:377"},{"type":"source","value":"StopArea:40:377"}],"name":"La Chapelle","links":[],"coord":{"lat":"49.059723","lon":"2.127546"},"label":"La Chapelle (Saint-Ouen-l'Aum\u00f4ne)","administrative_regions":[{"insee":"95572","name":"Saint-Ouen-l'Aum\u00f4ne","level":8,"coord":{"lat":"49.044765","lon":"2.105984"},"label":"Saint-Ouen-l'Aum\u00f4ne (95310)","id":"admin:fr:95572","zip_code":"95310"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:40:377"},"name":"La Chapelle (Saint-Ouen-l'Aum\u00f4ne)","id":"stop_area:OIF:SA:40:377"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OIF88:835"},{"type":"source","value":"StopArea:88:835"}],"name":"Chapellerie","links":[],"coord":{"lat":"49.038039","lon":"2.455427"},"label":"Chapellerie (Goussainville)","administrative_regions":[{"insee":"95280","name":"Goussainville","level":8,"coord":{"lat":"49.032314","lon":"2.473362"},"label":"Goussainville (95190)","id":"admin:fr:95280","zip_code":"95190"}],"timezone":"Europe\/Paris","id":"stop_area:OIF:SA:88:835"},"name":"Chapellerie (Goussainville)","id":"stop_area:OIF:SA:88:835"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/fr-idf\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"http:\/\/www.vianavigo.com","id":"OIF","license":"ODbL","name":"OIF - STIF Ile de France"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59513"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59513"
+          }
+        ],
+        "name": "Porte de la Chapelle",
+        "links": [],
+        "coord": {
+          "lat": "48.898114",
+          "lon": "2.358823"
+        },
+        "label": "Porte de la Chapelle (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59513"
+      },
+      "name": "Porte de la Chapelle (Paris)",
+      "id": "stop_area:OIF:SA:59513"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59218"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59218"
+          }
+        ],
+        "name": "La Chapelle",
+        "links": [],
+        "coord": {
+          "lat": "48.884483",
+          "lon": "2.359993"
+        },
+        "label": "La Chapelle (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59218"
+      },
+      "name": "La Chapelle (Paris)",
+      "id": "stop_area:OIF:SA:59218"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59:3749763"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59:3749763"
+          }
+        ],
+        "name": "Chapelle / Caillié",
+        "links": [],
+        "coord": {
+          "lat": "48.88457",
+          "lon": "2.364079"
+        },
+        "label": "Chapelle / Caillié (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59:3749763"
+      },
+      "name": "Chapelle / Caillié (Paris)",
+      "id": "stop_area:OIF:SA:59:3749763"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF2:163"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:2:163"
+          }
+        ],
+        "name": "Rond-Point de la Chapelle",
+        "links": [],
+        "coord": {
+          "lat": "48.821826",
+          "lon": "2.142274"
+        },
+        "label": "Rond-Point de la Chapelle (Versailles)",
+        "administrative_regions": [
+          {
+            "insee": "78646",
+            "name": "Versailles",
+            "level": 8,
+            "coord": {
+              "lat": "48.803539",
+              "lon": "2.126688"
+            },
+            "label": "Versailles (78000)",
+            "id": "admin:fr:78646",
+            "zip_code": "78000"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:2:163"
+      },
+      "name": "Rond-Point de la Chapelle (Versailles)",
+      "id": "stop_area:OIF:SA:2:163"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59:4109850"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59:4109850"
+          }
+        ],
+        "name": "La Chapelle",
+        "links": [],
+        "coord": {
+          "lat": "48.870407",
+          "lon": "2.199815"
+        },
+        "label": "La Chapelle (Rueil-Malmaison)",
+        "administrative_regions": [
+          {
+            "insee": "92063",
+            "name": "Rueil-Malmaison",
+            "level": 8,
+            "coord": {
+              "lat": "48.869389",
+              "lon": "2.180883"
+            },
+            "label": "Rueil-Malmaison (92500)",
+            "id": "admin:fr:92063",
+            "zip_code": "92500"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59:4109850"
+      },
+      "name": "La Chapelle (Rueil-Malmaison)",
+      "id": "stop_area:OIF:SA:59:4109850"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59:4614545"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59:4614545"
+          }
+        ],
+        "name": "Rue de la Chapelle",
+        "links": [],
+        "coord": {
+          "lat": "48.833956",
+          "lon": "2.565993"
+        },
+        "label": "Rue de la Chapelle (Noisy-le-Grand)",
+        "administrative_regions": [
+          {
+            "insee": "93051",
+            "name": "Noisy-le-Grand",
+            "level": 8,
+            "coord": {
+              "lat": "48.849396",
+              "lon": "2.551957"
+            },
+            "label": "Noisy-le-Grand (93160)",
+            "id": "admin:fr:93051",
+            "zip_code": "93160"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59:4614545"
+      },
+      "name": "Rue de la Chapelle (Noisy-le-Grand)",
+      "id": "stop_area:OIF:SA:59:4614545"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF41:5996"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:41:5996"
+          }
+        ],
+        "name": "Chapelle de la Villedieu",
+        "links": [],
+        "coord": {
+          "lat": "48.766838",
+          "lon": "1.965138"
+        },
+        "label": "Chapelle de la Villedieu (Élancourt)",
+        "administrative_regions": [
+          {
+            "insee": "78208",
+            "name": "Élancourt",
+            "level": 8,
+            "coord": {
+              "lat": "48.76812",
+              "lon": "1.949351"
+            },
+            "label": "Élancourt (78990)",
+            "id": "admin:fr:78208",
+            "zip_code": "78990"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:41:5996"
+      },
+      "name": "Chapelle de la Villedieu (Élancourt)",
+      "id": "stop_area:OIF:SA:41:5996"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF67:9017"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:67:9017"
+          }
+        ],
+        "name": "Chapelle Saint-Laurent",
+        "links": [],
+        "coord": {
+          "lat": "48.52346",
+          "lon": "2.014328"
+        },
+        "label": "Chapelle Saint-Laurent (Dourdan)",
+        "administrative_regions": [
+          {
+            "insee": "91200",
+            "name": "Dourdan",
+            "level": 8,
+            "coord": {
+              "lat": "48.530968",
+              "lon": "2.010899"
+            },
+            "label": "Dourdan (91410)",
+            "id": "admin:fr:91200",
+            "zip_code": "91410"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:67:9017"
+      },
+      "name": "Chapelle Saint-Laurent (Dourdan)",
+      "id": "stop_area:OIF:SA:67:9017"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF40:377"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:40:377"
+          }
+        ],
+        "name": "La Chapelle",
+        "links": [],
+        "coord": {
+          "lat": "49.059723",
+          "lon": "2.127546"
+        },
+        "label": "La Chapelle (Saint-Ouen-l'Aumône)",
+        "administrative_regions": [
+          {
+            "insee": "95572",
+            "name": "Saint-Ouen-l'Aumône",
+            "level": 8,
+            "coord": {
+              "lat": "49.044765",
+              "lon": "2.105984"
+            },
+            "label": "Saint-Ouen-l'Aumône (95310)",
+            "id": "admin:fr:95572",
+            "zip_code": "95310"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:40:377"
+      },
+      "name": "La Chapelle (Saint-Ouen-l'Aumône)",
+      "id": "stop_area:OIF:SA:40:377"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF88:835"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:88:835"
+          }
+        ],
+        "name": "Chapellerie",
+        "links": [],
+        "coord": {
+          "lat": "49.038039",
+          "lon": "2.455427"
+        },
+        "label": "Chapellerie (Goussainville)",
+        "administrative_regions": [
+          {
+            "insee": "95280",
+            "name": "Goussainville",
+            "level": 8,
+            "coord": {
+              "lat": "49.032314",
+              "lon": "2.473362"
+            },
+            "label": "Goussainville (95190)",
+            "id": "admin:fr:95280",
+            "zip_code": "95190"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:88:835"
+      },
+      "name": "Chapellerie (Goussainville)",
+      "id": "stop_area:OIF:SA:88:835"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/fr-idf/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.vianavigo.com",
+      "id": "OIF",
+      "license": "ODbL",
+      "name": "OIF - STIF Ile de France"
+    }
+  ]
+}

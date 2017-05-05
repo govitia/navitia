@@ -1,1 +1,328 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OWYTEC:H4ty405"},{"type":"source","value":"stoparea:TEC:H4ty405"}],"name":"TOURNAI Avenue De Gaulle","links":[],"coord":{"lat":"50.605997","lon":"3.378614"},"label":"TOURNAI Avenue De Gaulle (Tournai)","administrative_regions":[{"insee":"","name":"Tournai","level":8,"coord":{"lat":"50.605659","lon":"3.387825"},"label":"Tournai","id":"admin:osm:2162970","zip_code":""}],"timezone":"Europe\/Brussels","id":"stop_area:OWY:SA:TEC:H4ty405"},"name":"TOURNAI Avenue De Gaulle (Tournai)","id":"stop_area:OWY:SA:TEC:H4ty405"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OWYTEC:LNEgaul"},{"type":"source","value":"stoparea:TEC:LNEgaul"}],"name":"NESSONVAUX Rue G\u00e9n\u00e9ral de Gaulle","links":[],"coord":{"lat":"50.571844","lon":"5.738282"},"label":"NESSONVAUX Rue G\u00e9n\u00e9ral de Gaulle (Trooz)","administrative_regions":[{"insee":"","name":"Trooz","level":8,"coord":{"lat":"50.569843","lon":"5.693142"},"label":"Trooz (4870)","id":"admin:osm:2435520","zip_code":"4870"}],"timezone":"Europe\/Brussels","id":"stop_area:OWY:SA:TEC:LNEgaul"},"name":"NESSONVAUX Rue G\u00e9n\u00e9ral de Gaulle (Trooz)","id":"stop_area:OWY:SA:TEC:LNEgaul"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OWYTEC:H4wa150"},{"type":"source","value":"stoparea:TEC:H4wa150"}],"name":"WATTRELOS De Gaulle","links":[],"coord":{"lat":"50.703297","lon":"3.219607"},"label":"WATTRELOS De Gaulle (Mouscron)","administrative_regions":[{"insee":"","name":"Mouscron","level":8,"coord":{"lat":"50.743336","lon":"3.213909"},"label":"Mouscron (7700-7712)","id":"admin:osm:1920616","zip_code":"7700;7711;7712"}],"timezone":"Europe\/Brussels","id":"stop_area:OWY:SA:TEC:H4wa150"},"name":"WATTRELOS De Gaulle (Mouscron)","id":"stop_area:OWY:SA:TEC:H4wa150"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OWYTEC:Lrogene"},{"type":"source","value":"stoparea:TEC:Lrogene"}],"name":"ROMSEE Rue G\u00e9n\u00e9ral de Gaulle","links":[],"coord":{"lat":"50.60786","lon":"5.658222"},"label":"ROMSEE Rue G\u00e9n\u00e9ral de Gaulle (Fl\u00e9ron)","administrative_regions":[{"insee":"","name":"Fl\u00e9ron","level":8,"coord":{"lat":"50.616837","lon":"5.683221"},"label":"Fl\u00e9ron (4620-4624)","id":"admin:osm:2437275","zip_code":"4620;4621;4623;4624"}],"timezone":"Europe\/Brussels","id":"stop_area:OWY:SA:TEC:Lrogene"},"name":"ROMSEE Rue G\u00e9n\u00e9ral de Gaulle (Fl\u00e9ron)","id":"stop_area:OWY:SA:TEC:Lrogene"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OBY8727149"},{"type":"source","value":"8727149"}],"name":"A\u00e9roport Charles-de-Gaulle TGV","links":[],"coord":{"lat":"49.003955","lon":"2.571123"},"label":"A\u00e9roport Charles-de-Gaulle TGV (Tremblay-en-France)","administrative_regions":[{"insee":"93073","name":"Tremblay-en-France","level":8,"coord":{"lat":"48.980202","lon":"2.558955"},"label":"Tremblay-en-France (93290)","id":"admin:fr:93073","zip_code":"93290"}],"timezone":"Europe\/Brussels","id":"stop_area:OBY:SA:8727149"},"name":"A\u00e9roport Charles-de-Gaulle TGV (Tremblay-en-France)","id":"stop_area:OBY:SA:8727149"},{"embedded_type":"route","route":{"direction":{"embedded_type":"stop_area","quality":0,"stop_area":{"codes":[{"type":"external_code","value":"OWYTEC:LlgLEOP"},{"type":"source","value":"stoparea:TEC:LlgLEOP"}],"name":"LIEGE Gare L\u00e9opold","links":[],"coord":{"lat":"50.644919","lon":"5.575338"},"label":"LIEGE Gare L\u00e9opold (Li\u00e8ge)","timezone":"Europe\/Brussels","id":"stop_area:OWY:SA:TEC:LlgLEOP"},"name":"LIEGE Gare L\u00e9opold (Li\u00e8ge)","id":"stop_area:OWY:SA:TEC:LlgLEOP"},"codes":[{"type":"external_code","value":"OWYTEC:LV:10"},{"type":"source","value":"TEC:LV:10"}],"name":"Romsee Rue G\u00e9n\u00e9ral de Gaulle - Liege Gare L\u00e9opold","links":[],"is_frequence":"False","geojson":{"type":"MultiLineString","coordinates":[]},"direction_type":"","line":{"code":"10","name":"Navette de La Hulpe","links":[],"color":"","geojson":{"type":"MultiLineString","coordinates":[]},"text_color":"","codes":[{"type":"external_code","value":"OWYTEC:BW:10"},{"type":"source","value":"TEC:BW:10"}],"closing_time":"004500","opening_time":"044100","id":"line:OWY:TEC:BW:10"},"id":"route:OWY:TEC:LV:10"},"quality":0,"id":"route:OWY:TEC:LV:10","name":"TEC Walloon bus company Bus 10 (Romsee Rue G\u00e9n\u00e9ral de Gaulle - Liege Gare L\u00e9opold)"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/be\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/be\/routes\/{route.id}","type":"route","rel":"routes","templated":true},{"href":"https:\/\/api.navitia.io\/v1\/coverage\/be\/lines\/{line.id}","type":"line","rel":"lines","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"be","license":"OpenData","name":"Belgium"},{"url":"https:\/\/hello.irail.be","id":"OBY","license":"Terms of Use","name":"OBY - NMBS\/SNCB Belgian railway"},{"url":"gtfs.ovapi.nl","id":"OWY","license":"LO-OL","name":"OWY - TEC Walloon bus company"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWYTEC:H4ty405"
+          },
+          {
+            "type": "source",
+            "value": "stoparea:TEC:H4ty405"
+          }
+        ],
+        "name": "TOURNAI Avenue De Gaulle",
+        "links": [],
+        "coord": {
+          "lat": "50.605997",
+          "lon": "3.378614"
+        },
+        "label": "TOURNAI Avenue De Gaulle (Tournai)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Tournai",
+            "level": 8,
+            "coord": {
+              "lat": "50.605659",
+              "lon": "3.387825"
+            },
+            "label": "Tournai",
+            "id": "admin:osm:2162970",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Brussels",
+        "id": "stop_area:OWY:SA:TEC:H4ty405"
+      },
+      "name": "TOURNAI Avenue De Gaulle (Tournai)",
+      "id": "stop_area:OWY:SA:TEC:H4ty405"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWYTEC:LNEgaul"
+          },
+          {
+            "type": "source",
+            "value": "stoparea:TEC:LNEgaul"
+          }
+        ],
+        "name": "NESSONVAUX Rue Général de Gaulle",
+        "links": [],
+        "coord": {
+          "lat": "50.571844",
+          "lon": "5.738282"
+        },
+        "label": "NESSONVAUX Rue Général de Gaulle (Trooz)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Trooz",
+            "level": 8,
+            "coord": {
+              "lat": "50.569843",
+              "lon": "5.693142"
+            },
+            "label": "Trooz (4870)",
+            "id": "admin:osm:2435520",
+            "zip_code": "4870"
+          }
+        ],
+        "timezone": "Europe/Brussels",
+        "id": "stop_area:OWY:SA:TEC:LNEgaul"
+      },
+      "name": "NESSONVAUX Rue Général de Gaulle (Trooz)",
+      "id": "stop_area:OWY:SA:TEC:LNEgaul"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWYTEC:H4wa150"
+          },
+          {
+            "type": "source",
+            "value": "stoparea:TEC:H4wa150"
+          }
+        ],
+        "name": "WATTRELOS De Gaulle",
+        "links": [],
+        "coord": {
+          "lat": "50.703297",
+          "lon": "3.219607"
+        },
+        "label": "WATTRELOS De Gaulle (Mouscron)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Mouscron",
+            "level": 8,
+            "coord": {
+              "lat": "50.743336",
+              "lon": "3.213909"
+            },
+            "label": "Mouscron (7700-7712)",
+            "id": "admin:osm:1920616",
+            "zip_code": "7700;7711;7712"
+          }
+        ],
+        "timezone": "Europe/Brussels",
+        "id": "stop_area:OWY:SA:TEC:H4wa150"
+      },
+      "name": "WATTRELOS De Gaulle (Mouscron)",
+      "id": "stop_area:OWY:SA:TEC:H4wa150"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWYTEC:Lrogene"
+          },
+          {
+            "type": "source",
+            "value": "stoparea:TEC:Lrogene"
+          }
+        ],
+        "name": "ROMSEE Rue Général de Gaulle",
+        "links": [],
+        "coord": {
+          "lat": "50.60786",
+          "lon": "5.658222"
+        },
+        "label": "ROMSEE Rue Général de Gaulle (Fléron)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Fléron",
+            "level": 8,
+            "coord": {
+              "lat": "50.616837",
+              "lon": "5.683221"
+            },
+            "label": "Fléron (4620-4624)",
+            "id": "admin:osm:2437275",
+            "zip_code": "4620;4621;4623;4624"
+          }
+        ],
+        "timezone": "Europe/Brussels",
+        "id": "stop_area:OWY:SA:TEC:Lrogene"
+      },
+      "name": "ROMSEE Rue Général de Gaulle (Fléron)",
+      "id": "stop_area:OWY:SA:TEC:Lrogene"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OBY8727149"
+          },
+          {
+            "type": "source",
+            "value": "8727149"
+          }
+        ],
+        "name": "Aéroport Charles-de-Gaulle TGV",
+        "links": [],
+        "coord": {
+          "lat": "49.003955",
+          "lon": "2.571123"
+        },
+        "label": "Aéroport Charles-de-Gaulle TGV (Tremblay-en-France)",
+        "administrative_regions": [
+          {
+            "insee": "93073",
+            "name": "Tremblay-en-France",
+            "level": 8,
+            "coord": {
+              "lat": "48.980202",
+              "lon": "2.558955"
+            },
+            "label": "Tremblay-en-France (93290)",
+            "id": "admin:fr:93073",
+            "zip_code": "93290"
+          }
+        ],
+        "timezone": "Europe/Brussels",
+        "id": "stop_area:OBY:SA:8727149"
+      },
+      "name": "Aéroport Charles-de-Gaulle TGV (Tremblay-en-France)",
+      "id": "stop_area:OBY:SA:8727149"
+    },
+    {
+      "embedded_type": "route",
+      "route": {
+        "direction": {
+          "embedded_type": "stop_area",
+          "quality": 0,
+          "stop_area": {
+            "codes": [
+              {
+                "type": "external_code",
+                "value": "OWYTEC:LlgLEOP"
+              },
+              {
+                "type": "source",
+                "value": "stoparea:TEC:LlgLEOP"
+              }
+            ],
+            "name": "LIEGE Gare Léopold",
+            "links": [],
+            "coord": {
+              "lat": "50.644919",
+              "lon": "5.575338"
+            },
+            "label": "LIEGE Gare Léopold (Liège)",
+            "timezone": "Europe/Brussels",
+            "id": "stop_area:OWY:SA:TEC:LlgLEOP"
+          },
+          "name": "LIEGE Gare Léopold (Liège)",
+          "id": "stop_area:OWY:SA:TEC:LlgLEOP"
+        },
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OWYTEC:LV:10"
+          },
+          {
+            "type": "source",
+            "value": "TEC:LV:10"
+          }
+        ],
+        "name": "Romsee Rue Général de Gaulle - Liege Gare Léopold",
+        "links": [],
+        "is_frequence": "False",
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "direction_type": "",
+        "line": {
+          "code": "10",
+          "name": "Navette de La Hulpe",
+          "links": [],
+          "color": "",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "",
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OWYTEC:BW:10"
+            },
+            {
+              "type": "source",
+              "value": "TEC:BW:10"
+            }
+          ],
+          "closing_time": "004500",
+          "opening_time": "044100",
+          "id": "line:OWY:TEC:BW:10"
+        },
+        "id": "route:OWY:TEC:LV:10"
+      },
+      "quality": 0,
+      "id": "route:OWY:TEC:LV:10",
+      "name": "TEC Walloon bus company Bus 10 (Romsee Rue Général de Gaulle - Liege Gare Léopold)"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/be/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/be/routes/{route.id}",
+      "type": "route",
+      "rel": "routes",
+      "templated": true
+    },
+    {
+      "href": "https://api.navitia.io/v1/coverage/be/lines/{line.id}",
+      "type": "line",
+      "rel": "lines",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "be",
+      "license": "OpenData",
+      "name": "Belgium"
+    },
+    {
+      "url": "https://hello.irail.be",
+      "id": "OBY",
+      "license": "Terms of Use",
+      "name": "OBY - NMBS/SNCB Belgian railway"
+    },
+    {
+      "url": "gtfs.ovapi.nl",
+      "id": "OWY",
+      "license": "LO-OL",
+      "name": "OWY - TEC Walloon bus company"
+    }
+  ]
+}

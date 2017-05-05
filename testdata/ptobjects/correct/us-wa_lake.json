@@ -1,1 +1,471 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP71160"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP71160"}],"name":"West Lake Sammamish Pkwy NE & 180th Ave NE","links":[],"coord":{"lat":"47.639927","lon":"-122.099899"},"label":"West Lake Sammamish Pkwy NE & 180th Ave NE (Redmond)","administrative_regions":[{"insee":"","name":"Redmond","level":8,"coord":{"lat":"47.675864","lon":"-122.116276"},"label":"Redmond","id":"admin:osm:237376","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP71160"},"name":"West Lake Sammamish Pkwy NE & 180th Ave NE (Redmond)","id":"stop_area:OKC:SA:CTP71160"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP27300"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP27300"}],"name":"Lake Dell Ave & 32nd Ave","links":[],"coord":{"lat":"47.602264","lon":"-122.291153"},"label":"Lake Dell Ave & 32nd Ave (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP27300"},"name":"Lake Dell Ave & 32nd Ave (Seattle)","id":"stop_area:OKC:SA:CTP27300"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP27230"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP27230"}],"name":"Lakeside Ave S & S Leschi Pl","links":[],"coord":{"lat":"47.599598","lon":"-122.286224"},"label":"Lakeside Ave S & S Leschi Pl (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP27230"},"name":"Lakeside Ave S & S Leschi Pl (Seattle)","id":"stop_area:OKC:SA:CTP27230"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP38200"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP38200"}],"name":"Lake City Way NE & 24th Ave NE","links":[],"coord":{"lat":"47.704357","lon":"-122.301712"},"label":"Lake City Way NE & 24th Ave NE (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP38200"},"name":"Lake City Way NE & 24th Ave NE (Seattle)","id":"stop_area:OKC:SA:CTP38200"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP27200"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP27200"}],"name":"Lakeside Ave S & S Charles St","links":[],"coord":{"lat":"47.594772","lon":"-122.287697"},"label":"Lakeside Ave S & S Charles St (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP27200"},"name":"Lakeside Ave S & S Charles St (Seattle)","id":"stop_area:OKC:SA:CTP27200"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP27180"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP27180"}],"name":"Lakeside Ave S & S Day St","links":[],"coord":{"lat":"47.59013","lon":"-122.28643"},"label":"Lakeside Ave S & S Day St (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP27180"},"name":"Lakeside Ave S & S Day St (Seattle)","id":"stop_area:OKC:SA:CTP27180"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP27190"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP27190"}],"name":"Lakeside Ave S & S Judkins St","links":[],"coord":{"lat":"47.592396","lon":"-122.287483"},"label":"Lakeside Ave S & S Judkins St (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP27190"},"name":"Lakeside Ave S & S Judkins St (Seattle)","id":"stop_area:OKC:SA:CTP27190"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP27210"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP27210"}],"name":"Lakeside Ave S & S Lane St","links":[],"coord":{"lat":"47.596542","lon":"-122.287369"},"label":"Lakeside Ave S & S Lane St (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP27210"},"name":"Lakeside Ave S & S Lane St (Seattle)","id":"stop_area:OKC:SA:CTP27210"},{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP12310"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP12310"}],"name":"E Madison St & Lake Washington Blvd","links":[],"coord":{"lat":"47.625919","lon":"-122.292725"},"label":"E Madison St & Lake Washington Blvd (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP12310"},"name":"E Madison St & Lake Washington Blvd (Seattle)","id":"stop_area:OKC:SA:CTP12310"},{"embedded_type":"stop_area","quality":30,"stop_area":{"codes":[{"type":"external_code","value":"OKCCTP35690"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"CTP35690"}],"name":"East Green Lake Dr N & Orin Ct N","links":[],"coord":{"lat":"47.683811","lon":"-122.334541"},"label":"East Green Lake Dr N & Orin Ct N (Seattle)","administrative_regions":[{"insee":"","name":"Seattle","level":8,"coord":{"lat":"47.619644","lon":"-122.351276"},"label":"Seattle","id":"admin:osm:237385","zip_code":""}],"timezone":"America\/Los_Angeles","id":"stop_area:OKC:SA:CTP35690"},"name":"East Green Lake Dr N & Orin Ct N (Seattle)","id":"stop_area:OKC:SA:CTP35690"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/us-wa\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"us-wa","license":"OpenData","name":"USA - Washington"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP71160"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP71160"
+          }
+        ],
+        "name": "West Lake Sammamish Pkwy NE & 180th Ave NE",
+        "links": [],
+        "coord": {
+          "lat": "47.639927",
+          "lon": "-122.099899"
+        },
+        "label": "West Lake Sammamish Pkwy NE & 180th Ave NE (Redmond)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Redmond",
+            "level": 8,
+            "coord": {
+              "lat": "47.675864",
+              "lon": "-122.116276"
+            },
+            "label": "Redmond",
+            "id": "admin:osm:237376",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP71160"
+      },
+      "name": "West Lake Sammamish Pkwy NE & 180th Ave NE (Redmond)",
+      "id": "stop_area:OKC:SA:CTP71160"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP27300"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP27300"
+          }
+        ],
+        "name": "Lake Dell Ave & 32nd Ave",
+        "links": [],
+        "coord": {
+          "lat": "47.602264",
+          "lon": "-122.291153"
+        },
+        "label": "Lake Dell Ave & 32nd Ave (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP27300"
+      },
+      "name": "Lake Dell Ave & 32nd Ave (Seattle)",
+      "id": "stop_area:OKC:SA:CTP27300"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP27230"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP27230"
+          }
+        ],
+        "name": "Lakeside Ave S & S Leschi Pl",
+        "links": [],
+        "coord": {
+          "lat": "47.599598",
+          "lon": "-122.286224"
+        },
+        "label": "Lakeside Ave S & S Leschi Pl (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP27230"
+      },
+      "name": "Lakeside Ave S & S Leschi Pl (Seattle)",
+      "id": "stop_area:OKC:SA:CTP27230"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP38200"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP38200"
+          }
+        ],
+        "name": "Lake City Way NE & 24th Ave NE",
+        "links": [],
+        "coord": {
+          "lat": "47.704357",
+          "lon": "-122.301712"
+        },
+        "label": "Lake City Way NE & 24th Ave NE (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP38200"
+      },
+      "name": "Lake City Way NE & 24th Ave NE (Seattle)",
+      "id": "stop_area:OKC:SA:CTP38200"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP27200"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP27200"
+          }
+        ],
+        "name": "Lakeside Ave S & S Charles St",
+        "links": [],
+        "coord": {
+          "lat": "47.594772",
+          "lon": "-122.287697"
+        },
+        "label": "Lakeside Ave S & S Charles St (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP27200"
+      },
+      "name": "Lakeside Ave S & S Charles St (Seattle)",
+      "id": "stop_area:OKC:SA:CTP27200"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP27180"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP27180"
+          }
+        ],
+        "name": "Lakeside Ave S & S Day St",
+        "links": [],
+        "coord": {
+          "lat": "47.59013",
+          "lon": "-122.28643"
+        },
+        "label": "Lakeside Ave S & S Day St (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP27180"
+      },
+      "name": "Lakeside Ave S & S Day St (Seattle)",
+      "id": "stop_area:OKC:SA:CTP27180"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP27190"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP27190"
+          }
+        ],
+        "name": "Lakeside Ave S & S Judkins St",
+        "links": [],
+        "coord": {
+          "lat": "47.592396",
+          "lon": "-122.287483"
+        },
+        "label": "Lakeside Ave S & S Judkins St (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP27190"
+      },
+      "name": "Lakeside Ave S & S Judkins St (Seattle)",
+      "id": "stop_area:OKC:SA:CTP27190"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP27210"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP27210"
+          }
+        ],
+        "name": "Lakeside Ave S & S Lane St",
+        "links": [],
+        "coord": {
+          "lat": "47.596542",
+          "lon": "-122.287369"
+        },
+        "label": "Lakeside Ave S & S Lane St (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP27210"
+      },
+      "name": "Lakeside Ave S & S Lane St (Seattle)",
+      "id": "stop_area:OKC:SA:CTP27210"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP12310"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP12310"
+          }
+        ],
+        "name": "E Madison St & Lake Washington Blvd",
+        "links": [],
+        "coord": {
+          "lat": "47.625919",
+          "lon": "-122.292725"
+        },
+        "label": "E Madison St & Lake Washington Blvd (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP12310"
+      },
+      "name": "E Madison St & Lake Washington Blvd (Seattle)",
+      "id": "stop_area:OKC:SA:CTP12310"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 30,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OKCCTP35690"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "CTP35690"
+          }
+        ],
+        "name": "East Green Lake Dr N & Orin Ct N",
+        "links": [],
+        "coord": {
+          "lat": "47.683811",
+          "lon": "-122.334541"
+        },
+        "label": "East Green Lake Dr N & Orin Ct N (Seattle)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Seattle",
+            "level": 8,
+            "coord": {
+              "lat": "47.619644",
+              "lon": "-122.351276"
+            },
+            "label": "Seattle",
+            "id": "admin:osm:237385",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "America/Los_Angeles",
+        "id": "stop_area:OKC:SA:CTP35690"
+      },
+      "name": "East Green Lake Dr N & Orin Ct N (Seattle)",
+      "id": "stop_area:OKC:SA:CTP35690"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/us-wa/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "us-wa",
+      "license": "OpenData",
+      "name": "USA - Washington"
+    }
+  ]
+}

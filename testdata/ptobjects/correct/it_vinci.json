@@ -1,1 +1,589 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP20423"},{"type":"gtfs_stop_code","value":"20423"},{"type":"source","value":"CTP20423"}],"name":"VINCI","links":[],"coord":{"lat":"41.938177","lon":"12.419366"},"label":"VINCI (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP20423"},"name":"VINCI (Roma)","id":"stop_area:ORA:SA:CTP20423"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP70762"},{"type":"gtfs_stop_code","value":"70762"},{"type":"source","value":"CTP70762"}],"name":"COSTANTINO\/LEONARDO DA VINCI","links":[],"coord":{"lat":"41.857788","lon":"12.481271"},"label":"COSTANTINO\/LEONARDO DA VINCI (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP70762"},"name":"COSTANTINO\/LEONARDO DA VINCI (Roma)","id":"stop_area:ORA:SA:CTP70762"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP78625"},{"type":"gtfs_stop_code","value":"78625"},{"type":"source","value":"CTP78625"}],"name":"LEONARDO DA VINCI\/GALLIENO","links":[],"coord":{"lat":"41.855105","lon":"12.480845"},"label":"LEONARDO DA VINCI\/GALLIENO (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP78625"},"name":"LEONARDO DA VINCI\/GALLIENO (Roma)","id":"stop_area:ORA:SA:CTP78625"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP78626"},{"type":"gtfs_stop_code","value":"78626"},{"type":"source","value":"CTP78626"}],"name":"LEONARDO DA VINCI\/ANTONINO PIO","links":[],"coord":{"lat":"41.853061","lon":"12.480383"},"label":"LEONARDO DA VINCI\/ANTONINO PIO (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP78626"},"name":"LEONARDO DA VINCI\/ANTONINO PIO (Roma)","id":"stop_area:ORA:SA:CTP78626"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"ORACTP70764"},{"type":"gtfs_stop_code","value":"70764"},{"type":"source","value":"CTP70764"}],"name":"L.GO LEONARDO DA VINCI","links":[],"coord":{"lat":"41.8568","lon":"12.481062"},"label":"L.GO LEONARDO DA VINCI (Roma)","administrative_regions":[{"insee":"","name":"Roma","level":8,"coord":{"lat":"41.893345","lon":"12.483071"},"label":"Roma","id":"admin:osm:41485","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:ORA:SA:CTP70764"},"name":"L.GO LEONARDO DA VINCI (Roma)","id":"stop_area:ORA:SA:CTP70764"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OMICTP12489"},{"type":"source","value":"CTP12489"}],"name":"p.za leonardo da vinci (politecnico)","links":[],"coord":{"lat":"45.479096","lon":"9.225702"},"label":"p.za leonardo da vinci (politecnico) (Milano)","administrative_regions":[{"insee":"","name":"Milano","level":8,"coord":{"lat":"45.466797","lon":"9.190536"},"label":"Milano","id":"admin:osm:44915","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OMI:SA:CTP12489"},"name":"p.za leonardo da vinci (politecnico) (Milano)","id":"stop_area:OMI:SA:CTP12489"},{"embedded_type":"stop_area","quality":40,"stop_area":{"codes":[{"type":"external_code","value":"OMICTP12486"},{"type":"source","value":"CTP12486"}],"name":"via pascoli p.za l. da vinci","links":[],"coord":{"lat":"45.477125","lon":"9.225595"},"label":"via pascoli p.za l. da vinci (Milano)","administrative_regions":[{"insee":"","name":"Milano","level":8,"coord":{"lat":"45.466797","lon":"9.190536"},"label":"Milano","id":"admin:osm:44915","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OMI:SA:CTP12486"},"name":"via pascoli p.za l. da vinci (Milano)","id":"stop_area:OMI:SA:CTP12486"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OZECTP532"},{"type":"gtfs_stop_code","value":"0001VG"},{"type":"source","value":"CTP532"}],"name":"Trento-V.Giusti-L. Da Vinci","links":[],"coord":{"lat":"46.063168","lon":"11.119074"},"label":"Trento-V.Giusti-L. Da Vinci (Trento, Trient)","administrative_regions":[{"insee":"","name":"Trento, Trient","level":8,"coord":{"lat":"46.066422","lon":"11.12576"},"label":"Trento, Trient","id":"admin:osm:46663","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OZE:SA:CTP532"},"name":"Trento-V.Giusti-L. Da Vinci (Trento, Trient)","id":"stop_area:OZE:SA:CTP532"},{"embedded_type":"stop_area","quality":50,"stop_area":{"codes":[{"type":"external_code","value":"OPTCTPITRP-ST0011200040"},{"type":"external_code","value":"OTOCTP51984006"},{"type":"external_code","value":"OTOCTP51984007"},{"type":"external_code","value":"OTOCTP52021004"},{"type":"gtfs_stop_code","value":"0011200040"},{"type":"gtfs_stop_code","value":"1219"},{"type":"gtfs_stop_code","value":"3472"},{"type":"gtfs_stop_code","value":"3473"},{"type":"source","value":"CTP51984006"},{"type":"source","value":"CTP51984007"},{"type":"source","value":"CTP52021004"},{"type":"source","value":"CTPITRP-ST0011200040"}],"name":"GRUGLIASCO - VIA LEONARDO DA VINCI  3","links":[],"coord":{"lat":"45.054956","lon":"7.586619"},"label":"GRUGLIASCO - VIA LEONARDO DA VINCI  3 (Grugliasco)","administrative_regions":[{"insee":"","name":"Grugliasco","level":8,"coord":{"lat":"45.068047","lon":"7.57762"},"label":"Grugliasco","id":"admin:osm:44143","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OPT:SA:CTPITRP-ST0011200040"},"name":"GRUGLIASCO - VIA LEONARDO DA VINCI  3 (Grugliasco)","id":"stop_area:OPT:SA:CTPITRP-ST0011200040"},{"embedded_type":"stop_area","quality":60,"stop_area":{"codes":[{"type":"external_code","value":"OPOCTP984"},{"type":"external_code","value":"OPOCTP991"},{"type":"gtfs_stop_code","value":"984"},{"type":"gtfs_stop_code","value":"991"},{"type":"source","value":"CTP984"},{"type":"source","value":"CTP991"}],"name":"LEONARDO DA VINCI - CAMILLIANI","links":[],"coord":{"lat":"38.127452","lon":"13.324388"},"label":"LEONARDO DA VINCI - CAMILLIANI (Palermo)","administrative_regions":[{"insee":"","name":"Palermo","level":8,"coord":{"lat":"38.111271","lon":"13.353442"},"label":"Palermo","id":"admin:osm:39513","zip_code":""}],"timezone":"Europe\/Rome","id":"stop_area:OPO:SA:CTP984"},"name":"LEONARDO DA VINCI - CAMILLIANI (Palermo)","id":"stop_area:OPO:SA:CTP984"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/it\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"it","license":"OpenData","name":"Italie"},{"url":"http:\/\/www.sardegnamobilita.it\/opengovernment\/opendata\/","id":"AOL","license":"Terms of use","name":"AOL - ASPO_Olbia"},{"url":"http:\/\/www.sardegnamobilita.it\/opengovernment\/opendata\/","id":"ARS","license":"Terms of use","name":"ARS - ARST_extraurbano"},{"url":"www.tper.it","id":"OFY","license":"CC Italia","name":"OFY - Ferrara"},{"url":"www.tper.it","id":"OIB","license":"CC Italia","name":"OIB - Bologna"},{"url":"https:\/\/amat-mi.it","id":"OMI","license":"CC","name":"OMI - Milano"},{"url":"http:\/\/www.ctpi.it\/","id":"OPC","license":"Terms of use","name":"OPC - Varese CIVA"},{"url":"http:\/\/www.comune.palermo.it","id":"OPO","license":"CC","name":"OPO - Palermo"},{"url":"http:\/\/www.dati.piemonte.it","id":"OPT","license":"CC","name":"OPT - Piemonte"},{"url":"http:\/\/www.agenziamobilita.roma.it","id":"ORA","license":"CC Italia","name":"ORA - Trasporto pubblico de Roma"},{"url":"http:\/\/www.trenord.it\/","id":"OTD","license":"IODL","name":"OTD - lombardy trenord"},{"url":"www.5t.torino.it","id":"OTO","license":"Terms of Use","name":"OTO - Torino"},{"url":"http:\/\/dati.venezia.it","id":"OVE","license":"CC","name":"OVE - Venezia - automobilistico"},{"url":"http:\/\/www.ttesercizio.it","id":"OZE","license":"CC","name":"OZE - Trento Extraurbano"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP20423"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "20423"
+          },
+          {
+            "type": "source",
+            "value": "CTP20423"
+          }
+        ],
+        "name": "VINCI",
+        "links": [],
+        "coord": {
+          "lat": "41.938177",
+          "lon": "12.419366"
+        },
+        "label": "VINCI (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP20423"
+      },
+      "name": "VINCI (Roma)",
+      "id": "stop_area:ORA:SA:CTP20423"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP70762"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "70762"
+          },
+          {
+            "type": "source",
+            "value": "CTP70762"
+          }
+        ],
+        "name": "COSTANTINO/LEONARDO DA VINCI",
+        "links": [],
+        "coord": {
+          "lat": "41.857788",
+          "lon": "12.481271"
+        },
+        "label": "COSTANTINO/LEONARDO DA VINCI (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP70762"
+      },
+      "name": "COSTANTINO/LEONARDO DA VINCI (Roma)",
+      "id": "stop_area:ORA:SA:CTP70762"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP78625"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "78625"
+          },
+          {
+            "type": "source",
+            "value": "CTP78625"
+          }
+        ],
+        "name": "LEONARDO DA VINCI/GALLIENO",
+        "links": [],
+        "coord": {
+          "lat": "41.855105",
+          "lon": "12.480845"
+        },
+        "label": "LEONARDO DA VINCI/GALLIENO (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP78625"
+      },
+      "name": "LEONARDO DA VINCI/GALLIENO (Roma)",
+      "id": "stop_area:ORA:SA:CTP78625"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP78626"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "78626"
+          },
+          {
+            "type": "source",
+            "value": "CTP78626"
+          }
+        ],
+        "name": "LEONARDO DA VINCI/ANTONINO PIO",
+        "links": [],
+        "coord": {
+          "lat": "41.853061",
+          "lon": "12.480383"
+        },
+        "label": "LEONARDO DA VINCI/ANTONINO PIO (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP78626"
+      },
+      "name": "LEONARDO DA VINCI/ANTONINO PIO (Roma)",
+      "id": "stop_area:ORA:SA:CTP78626"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "ORACTP70764"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "70764"
+          },
+          {
+            "type": "source",
+            "value": "CTP70764"
+          }
+        ],
+        "name": "L.GO LEONARDO DA VINCI",
+        "links": [],
+        "coord": {
+          "lat": "41.8568",
+          "lon": "12.481062"
+        },
+        "label": "L.GO LEONARDO DA VINCI (Roma)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Roma",
+            "level": 8,
+            "coord": {
+              "lat": "41.893345",
+              "lon": "12.483071"
+            },
+            "label": "Roma",
+            "id": "admin:osm:41485",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:ORA:SA:CTP70764"
+      },
+      "name": "L.GO LEONARDO DA VINCI (Roma)",
+      "id": "stop_area:ORA:SA:CTP70764"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OMICTP12489"
+          },
+          {
+            "type": "source",
+            "value": "CTP12489"
+          }
+        ],
+        "name": "p.za leonardo da vinci (politecnico)",
+        "links": [],
+        "coord": {
+          "lat": "45.479096",
+          "lon": "9.225702"
+        },
+        "label": "p.za leonardo da vinci (politecnico) (Milano)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Milano",
+            "level": 8,
+            "coord": {
+              "lat": "45.466797",
+              "lon": "9.190536"
+            },
+            "label": "Milano",
+            "id": "admin:osm:44915",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OMI:SA:CTP12489"
+      },
+      "name": "p.za leonardo da vinci (politecnico) (Milano)",
+      "id": "stop_area:OMI:SA:CTP12489"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 40,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OMICTP12486"
+          },
+          {
+            "type": "source",
+            "value": "CTP12486"
+          }
+        ],
+        "name": "via pascoli p.za l. da vinci",
+        "links": [],
+        "coord": {
+          "lat": "45.477125",
+          "lon": "9.225595"
+        },
+        "label": "via pascoli p.za l. da vinci (Milano)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Milano",
+            "level": 8,
+            "coord": {
+              "lat": "45.466797",
+              "lon": "9.190536"
+            },
+            "label": "Milano",
+            "id": "admin:osm:44915",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OMI:SA:CTP12486"
+      },
+      "name": "via pascoli p.za l. da vinci (Milano)",
+      "id": "stop_area:OMI:SA:CTP12486"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OZECTP532"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "0001VG"
+          },
+          {
+            "type": "source",
+            "value": "CTP532"
+          }
+        ],
+        "name": "Trento-V.Giusti-L. Da Vinci",
+        "links": [],
+        "coord": {
+          "lat": "46.063168",
+          "lon": "11.119074"
+        },
+        "label": "Trento-V.Giusti-L. Da Vinci (Trento, Trient)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Trento, Trient",
+            "level": 8,
+            "coord": {
+              "lat": "46.066422",
+              "lon": "11.12576"
+            },
+            "label": "Trento, Trient",
+            "id": "admin:osm:46663",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OZE:SA:CTP532"
+      },
+      "name": "Trento-V.Giusti-L. Da Vinci (Trento, Trient)",
+      "id": "stop_area:OZE:SA:CTP532"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 50,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OPTCTPITRP-ST0011200040"
+          },
+          {
+            "type": "external_code",
+            "value": "OTOCTP51984006"
+          },
+          {
+            "type": "external_code",
+            "value": "OTOCTP51984007"
+          },
+          {
+            "type": "external_code",
+            "value": "OTOCTP52021004"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "0011200040"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "1219"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3472"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "3473"
+          },
+          {
+            "type": "source",
+            "value": "CTP51984006"
+          },
+          {
+            "type": "source",
+            "value": "CTP51984007"
+          },
+          {
+            "type": "source",
+            "value": "CTP52021004"
+          },
+          {
+            "type": "source",
+            "value": "CTPITRP-ST0011200040"
+          }
+        ],
+        "name": "GRUGLIASCO - VIA LEONARDO DA VINCI  3",
+        "links": [],
+        "coord": {
+          "lat": "45.054956",
+          "lon": "7.586619"
+        },
+        "label": "GRUGLIASCO - VIA LEONARDO DA VINCI  3 (Grugliasco)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Grugliasco",
+            "level": 8,
+            "coord": {
+              "lat": "45.068047",
+              "lon": "7.57762"
+            },
+            "label": "Grugliasco",
+            "id": "admin:osm:44143",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OPT:SA:CTPITRP-ST0011200040"
+      },
+      "name": "GRUGLIASCO - VIA LEONARDO DA VINCI  3 (Grugliasco)",
+      "id": "stop_area:OPT:SA:CTPITRP-ST0011200040"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 60,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OPOCTP984"
+          },
+          {
+            "type": "external_code",
+            "value": "OPOCTP991"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "984"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "991"
+          },
+          {
+            "type": "source",
+            "value": "CTP984"
+          },
+          {
+            "type": "source",
+            "value": "CTP991"
+          }
+        ],
+        "name": "LEONARDO DA VINCI - CAMILLIANI",
+        "links": [],
+        "coord": {
+          "lat": "38.127452",
+          "lon": "13.324388"
+        },
+        "label": "LEONARDO DA VINCI - CAMILLIANI (Palermo)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Palermo",
+            "level": 8,
+            "coord": {
+              "lat": "38.111271",
+              "lon": "13.353442"
+            },
+            "label": "Palermo",
+            "id": "admin:osm:39513",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Rome",
+        "id": "stop_area:OPO:SA:CTP984"
+      },
+      "name": "LEONARDO DA VINCI - CAMILLIANI (Palermo)",
+      "id": "stop_area:OPO:SA:CTP984"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/it/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "it",
+      "license": "OpenData",
+      "name": "Italie"
+    },
+    {
+      "url": "http://www.sardegnamobilita.it/opengovernment/opendata/",
+      "id": "AOL",
+      "license": "Terms of use",
+      "name": "AOL - ASPO_Olbia"
+    },
+    {
+      "url": "http://www.sardegnamobilita.it/opengovernment/opendata/",
+      "id": "ARS",
+      "license": "Terms of use",
+      "name": "ARS - ARST_extraurbano"
+    },
+    {
+      "url": "www.tper.it",
+      "id": "OFY",
+      "license": "CC Italia",
+      "name": "OFY - Ferrara"
+    },
+    {
+      "url": "www.tper.it",
+      "id": "OIB",
+      "license": "CC Italia",
+      "name": "OIB - Bologna"
+    },
+    {
+      "url": "https://amat-mi.it",
+      "id": "OMI",
+      "license": "CC",
+      "name": "OMI - Milano"
+    },
+    {
+      "url": "http://www.ctpi.it/",
+      "id": "OPC",
+      "license": "Terms of use",
+      "name": "OPC - Varese CIVA"
+    },
+    {
+      "url": "http://www.comune.palermo.it",
+      "id": "OPO",
+      "license": "CC",
+      "name": "OPO - Palermo"
+    },
+    {
+      "url": "http://www.dati.piemonte.it",
+      "id": "OPT",
+      "license": "CC",
+      "name": "OPT - Piemonte"
+    },
+    {
+      "url": "http://www.agenziamobilita.roma.it",
+      "id": "ORA",
+      "license": "CC Italia",
+      "name": "ORA - Trasporto pubblico de Roma"
+    },
+    {
+      "url": "http://www.trenord.it/",
+      "id": "OTD",
+      "license": "IODL",
+      "name": "OTD - lombardy trenord"
+    },
+    {
+      "url": "www.5t.torino.it",
+      "id": "OTO",
+      "license": "Terms of Use",
+      "name": "OTO - Torino"
+    },
+    {
+      "url": "http://dati.venezia.it",
+      "id": "OVE",
+      "license": "CC",
+      "name": "OVE - Venezia - automobilistico"
+    },
+    {
+      "url": "http://www.ttesercizio.it",
+      "id": "OZE",
+      "license": "CC",
+      "name": "OZE - Trento Extraurbano"
+    }
+  ]
+}

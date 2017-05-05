@@ -1,1 +1,467 @@
-{"disruptions":[],"pt_objects":[{"embedded_type":"stop_area","quality":100,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA17806"},{"type":"gtfs_stop_code","value":"gd"},{"type":"source","value":"NLSA17806"}],"name":"Gouda","links":[],"coord":{"lat":"52.016955","lon":"4.705415"},"label":"Gouda (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA17806"},"name":"Gouda (Gouda)","id":"stop_area:OAM:SA:NLSA17806"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA197861"},{"type":"source","value":"NLSA197861"}],"name":"Gouda, Station","links":[],"coord":{"lat":"52.016872","lon":"4.707603"},"label":"Gouda, Station (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA197861"},"name":"Gouda, Station (Gouda)","id":"stop_area:OAM:SA:NLSA197861"},{"embedded_type":"stop_area","quality":70,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP678074"},{"type":"gtfs_stop_code","value":"53511022"},{"type":"source","value":"CTP678074"}],"name":"Gouda, Ridder van Catsweg","links":[],"coord":{"lat":"52.020133","lon":"4.708871"},"label":"Gouda, Ridder van Catsweg (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP678074"},"name":"Gouda, Ridder van Catsweg (Gouda)","id":"stop_area:OAM:SA:CTP678074"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA18171"},{"type":"gtfs_stop_code","value":"gdg"},{"type":"source","value":"NLSA18171"}],"name":"Gouda Goverwelle","links":[],"coord":{"lat":"52.01466","lon":"4.742462"},"label":"Gouda Goverwelle (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA18171"},"name":"Gouda Goverwelle (Gouda)","id":"stop_area:OAM:SA:NLSA18171"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP81997"},{"type":"gtfs_stop_code","value":"53510810"},{"type":"source","value":"CTP81997"}],"name":"Gouda, Doelenbrug","links":[],"coord":{"lat":"52.010276","lon":"4.715794"},"label":"Gouda, Doelenbrug (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP81997"},"name":"Gouda, Doelenbrug (Gouda)","id":"stop_area:OAM:SA:CTP81997"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA26517"},{"type":"gtfs_stop_code","value":""},{"type":"source","value":"NLSA26517"}],"name":"Gouda, Stolwijkersluis","links":[],"coord":{"lat":"52.005125","lon":"4.722046"},"label":"Gouda, Stolwijkersluis (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA26517"},"name":"Gouda, Stolwijkersluis (Gouda)","id":"stop_area:OAM:SA:NLSA26517"},{"embedded_type":"stop_area","quality":90,"stop_area":{"name":"Gouda, Tiendewegbrug","links":[],"coord":{"lat":"52.012108","lon":"4.715358"},"label":"Gouda, Tiendewegbrug (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP82439"},"name":"Gouda, Tiendewegbrug (Gouda)","id":"stop_area:OAM:SA:CTP82439"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMNLSA201312"},{"type":"source","value":"NLSA201312"}],"name":"Gouda, Westergouwe","links":[],"coord":{"lat":"52.004076","lon":"4.686759"},"label":"Gouda, Westergouwe (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:NLSA201312"},"name":"Gouda, Westergouwe (Gouda)","id":"stop_area:OAM:SA:NLSA201312"},{"embedded_type":"stop_area","quality":90,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP82039"},{"type":"gtfs_stop_code","value":"53513130"},{"type":"source","value":"CTP82039"}],"name":"Gouda, Bleulandweg","links":[],"coord":{"lat":"52.020181","lon":"4.701557"},"label":"Gouda, Bleulandweg (Gouda)","administrative_regions":[{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP82039"},"name":"Gouda, Bleulandweg (Gouda)","id":"stop_area:OAM:SA:CTP82039"},{"embedded_type":"stop_area","quality":80,"stop_area":{"codes":[{"type":"external_code","value":"OAMCTP82658"},{"type":"gtfs_stop_code","value":"54700180"},{"type":"source","value":"CTP82658"}],"name":"Gouda, Viaduct","links":[],"coord":{"lat":"52.023311","lon":"4.671743"},"label":"Gouda, Viaduct (Waddinxveen) (Gouda)","administrative_regions":[{"insee":"","name":"Waddinxveen","level":8,"coord":{"lat":"52.044846","lon":"4.655207"},"label":"Waddinxveen","id":"admin:osm:443776","zip_code":""},{"insee":"","name":"Gouda","level":8,"coord":{"lat":"52.011494","lon":"4.710609"},"label":"Gouda","id":"admin:osm:300795","zip_code":""}],"timezone":"Europe\/Amsterdam","id":"stop_area:OAM:SA:CTP82658"},"name":"Gouda, Viaduct (Waddinxveen) (Gouda)","id":"stop_area:OAM:SA:CTP82658"}],"links":[{"href":"https:\/\/api.navitia.io\/v1\/coverage\/nl\/stop_areas\/{stop_area.id}","type":"stop_area","rel":"stop_areas","templated":true}],"feed_publishers":[{"url":"navitia.io","id":"nl","license":"OpenData","name":"Netherlands"},{"url":"http:\/\/ovapi.nl","id":"OAM","license":"Terms of Use","name":"OAM - Amsterdam"}]}
+{
+  "disruptions": [],
+  "pt_objects": [
+    {
+      "embedded_type": "stop_area",
+      "quality": 100,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA17806"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "gd"
+          },
+          {
+            "type": "source",
+            "value": "NLSA17806"
+          }
+        ],
+        "name": "Gouda",
+        "links": [],
+        "coord": {
+          "lat": "52.016955",
+          "lon": "4.705415"
+        },
+        "label": "Gouda (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA17806"
+      },
+      "name": "Gouda (Gouda)",
+      "id": "stop_area:OAM:SA:NLSA17806"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA197861"
+          },
+          {
+            "type": "source",
+            "value": "NLSA197861"
+          }
+        ],
+        "name": "Gouda, Station",
+        "links": [],
+        "coord": {
+          "lat": "52.016872",
+          "lon": "4.707603"
+        },
+        "label": "Gouda, Station (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA197861"
+      },
+      "name": "Gouda, Station (Gouda)",
+      "id": "stop_area:OAM:SA:NLSA197861"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP678074"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "53511022"
+          },
+          {
+            "type": "source",
+            "value": "CTP678074"
+          }
+        ],
+        "name": "Gouda, Ridder van Catsweg",
+        "links": [],
+        "coord": {
+          "lat": "52.020133",
+          "lon": "4.708871"
+        },
+        "label": "Gouda, Ridder van Catsweg (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP678074"
+      },
+      "name": "Gouda, Ridder van Catsweg (Gouda)",
+      "id": "stop_area:OAM:SA:CTP678074"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA18171"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "gdg"
+          },
+          {
+            "type": "source",
+            "value": "NLSA18171"
+          }
+        ],
+        "name": "Gouda Goverwelle",
+        "links": [],
+        "coord": {
+          "lat": "52.01466",
+          "lon": "4.742462"
+        },
+        "label": "Gouda Goverwelle (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA18171"
+      },
+      "name": "Gouda Goverwelle (Gouda)",
+      "id": "stop_area:OAM:SA:NLSA18171"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP81997"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "53510810"
+          },
+          {
+            "type": "source",
+            "value": "CTP81997"
+          }
+        ],
+        "name": "Gouda, Doelenbrug",
+        "links": [],
+        "coord": {
+          "lat": "52.010276",
+          "lon": "4.715794"
+        },
+        "label": "Gouda, Doelenbrug (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP81997"
+      },
+      "name": "Gouda, Doelenbrug (Gouda)",
+      "id": "stop_area:OAM:SA:CTP81997"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA26517"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": ""
+          },
+          {
+            "type": "source",
+            "value": "NLSA26517"
+          }
+        ],
+        "name": "Gouda, Stolwijkersluis",
+        "links": [],
+        "coord": {
+          "lat": "52.005125",
+          "lon": "4.722046"
+        },
+        "label": "Gouda, Stolwijkersluis (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA26517"
+      },
+      "name": "Gouda, Stolwijkersluis (Gouda)",
+      "id": "stop_area:OAM:SA:NLSA26517"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "name": "Gouda, Tiendewegbrug",
+        "links": [],
+        "coord": {
+          "lat": "52.012108",
+          "lon": "4.715358"
+        },
+        "label": "Gouda, Tiendewegbrug (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP82439"
+      },
+      "name": "Gouda, Tiendewegbrug (Gouda)",
+      "id": "stop_area:OAM:SA:CTP82439"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMNLSA201312"
+          },
+          {
+            "type": "source",
+            "value": "NLSA201312"
+          }
+        ],
+        "name": "Gouda, Westergouwe",
+        "links": [],
+        "coord": {
+          "lat": "52.004076",
+          "lon": "4.686759"
+        },
+        "label": "Gouda, Westergouwe (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:NLSA201312"
+      },
+      "name": "Gouda, Westergouwe (Gouda)",
+      "id": "stop_area:OAM:SA:NLSA201312"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP82039"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "53513130"
+          },
+          {
+            "type": "source",
+            "value": "CTP82039"
+          }
+        ],
+        "name": "Gouda, Bleulandweg",
+        "links": [],
+        "coord": {
+          "lat": "52.020181",
+          "lon": "4.701557"
+        },
+        "label": "Gouda, Bleulandweg (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP82039"
+      },
+      "name": "Gouda, Bleulandweg (Gouda)",
+      "id": "stop_area:OAM:SA:CTP82039"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OAMCTP82658"
+          },
+          {
+            "type": "gtfs_stop_code",
+            "value": "54700180"
+          },
+          {
+            "type": "source",
+            "value": "CTP82658"
+          }
+        ],
+        "name": "Gouda, Viaduct",
+        "links": [],
+        "coord": {
+          "lat": "52.023311",
+          "lon": "4.671743"
+        },
+        "label": "Gouda, Viaduct (Waddinxveen) (Gouda)",
+        "administrative_regions": [
+          {
+            "insee": "",
+            "name": "Waddinxveen",
+            "level": 8,
+            "coord": {
+              "lat": "52.044846",
+              "lon": "4.655207"
+            },
+            "label": "Waddinxveen",
+            "id": "admin:osm:443776",
+            "zip_code": ""
+          },
+          {
+            "insee": "",
+            "name": "Gouda",
+            "level": 8,
+            "coord": {
+              "lat": "52.011494",
+              "lon": "4.710609"
+            },
+            "label": "Gouda",
+            "id": "admin:osm:300795",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "id": "stop_area:OAM:SA:CTP82658"
+      },
+      "name": "Gouda, Viaduct (Waddinxveen) (Gouda)",
+      "id": "stop_area:OAM:SA:CTP82658"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.navitia.io/v1/coverage/nl/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "navitia.io",
+      "id": "nl",
+      "license": "OpenData",
+      "name": "Netherlands"
+    },
+    {
+      "url": "http://ovapi.nl",
+      "id": "OAM",
+      "license": "Terms of Use",
+      "name": "OAM - Amsterdam"
+    }
+  ]
+}

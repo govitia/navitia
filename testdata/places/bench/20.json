@@ -1,1 +1,374 @@
-{"disruptions":[],"links":[],"places":[{"embedded_type":"administrative_region","quality":100,"administrative_region":{"insee":"22215","name":"Ploufragan","level":8,"coord":{"lat":"48.491386","lon":"-2.793444"},"label":"Ploufragan","id":"admin:fr:22215","zip_code":""},"id":"admin:fr:22215","name":"Ploufragan"},{"embedded_type":"administrative_region","quality":100,"administrative_region":{"insee":"29169","name":"Plogonnec","level":8,"coord":{"lat":"48.077648","lon":"-4.191576"},"label":"Plogonnec","id":"admin:fr:29169","zip_code":""},"id":"admin:fr:29169","name":"Plogonnec"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"56162","name":"Pl\u0153meur","level":8,"coord":{"lat":"47.735458","lon":"-3.427053"},"label":"Pl\u0153meur (56270)","id":"admin:fr:56162","zip_code":"56270"},"id":"admin:fr:56162","name":"Pl\u0153meur (56270)"},{"embedded_type":"administrative_region","quality":80,"administrative_region":{"insee":"29189","name":"Plougastel-Daoulas","level":8,"coord":{"lat":"48.374229","lon":"-4.369678"},"label":"Plougastel-Daoulas (29470)","id":"admin:fr:29189","zip_code":"29470"},"id":"admin:fr:29189","name":"Plougastel-Daoulas (29470)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29195","name":"Plouguerneau","level":8,"coord":{"lat":"48.605015","lon":"-4.502321"},"label":"Plouguerneau (29880)","id":"admin:fr:29195","zip_code":"29880"},"id":"admin:fr:29195","name":"Plouguerneau (29880)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29212","name":"Plouzan\u00e9","level":8,"coord":{"lat":"48.381718","lon":"-4.621204"},"label":"Plouzan\u00e9 (29280)","id":"admin:fr:29212","zip_code":"29280"},"id":"admin:fr:29212","name":"Plouzan\u00e9 (29280)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"56165","name":"Plo\u00ebrmel","level":8,"coord":{"lat":"47.932377","lon":"-2.398079"},"label":"Plo\u00ebrmel (56800)","id":"admin:fr:56165","zip_code":"56800"},"id":"admin:fr:56165","name":"Plo\u00ebrmel (56800)"},{"embedded_type":"administrative_region","quality":80,"administrative_region":{"insee":"29024","name":"Carhaix-Plouguer","level":8,"coord":{"lat":"48.276501","lon":"-3.571147"},"label":"Carhaix-Plouguer (29270)","id":"admin:fr:29024","zip_code":"29270"},"id":"admin:fr:29024","name":"Carhaix-Plouguer (29270)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29179","name":"Ploudaniel","level":8,"coord":{"lat":"48.536896","lon":"-4.31018"},"label":"Ploudaniel (29260)","id":"admin:fr:29179","zip_code":"29260"},"id":"admin:fr:29179","name":"Ploudaniel (29260)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29197","name":"Plouhinec","level":8,"coord":{"lat":"48.015362","lon":"-4.487786"},"label":"Plouhinec (29780)","id":"admin:fr:29197","zip_code":"29780"},"id":"admin:fr:29197","name":"Plouhinec (29780)"},{"embedded_type":"administrative_region","quality":80,"administrative_region":{"insee":"29174","name":"Plon\u00e9our-Lanvern","level":8,"coord":{"lat":"47.903084","lon":"-4.282612"},"label":"Plon\u00e9our-Lanvern (29720)","id":"admin:fr:29174","zip_code":"29720"},"id":"admin:fr:29174","name":"Plon\u00e9our-Lanvern (29720)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29191","name":"Plougonven","level":8,"coord":{"lat":"48.521263","lon":"-3.712213"},"label":"Plougonven (29640)","id":"admin:fr:29191","zip_code":"29640"},"id":"admin:fr:29191","name":"Plougonven (29640)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"56169","name":"Plouhinec","level":8,"coord":{"lat":"47.691289","lon":"-3.231666"},"label":"Plouhinec (56680)","id":"admin:fr:56169","zip_code":"56680"},"id":"admin:fr:56169","name":"Plouhinec (56680)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29198","name":"Plouider","level":8,"coord":{"lat":"48.607998","lon":"-4.298723"},"label":"Plouider (29260)","id":"admin:fr:29198","zip_code":"29260"},"id":"admin:fr:29198","name":"Plouider (29260)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29199","name":"Plouigneau","level":8,"coord":{"lat":"48.567703","lon":"-3.701145"},"label":"Plouigneau (29610)","id":"admin:fr:29199","zip_code":"29610"},"id":"admin:fr:29199","name":"Plouigneau (29610)"},{"embedded_type":"administrative_region","quality":80,"administrative_region":{"insee":"29175","name":"Plon\u00e9vez-du-Faou","level":8,"coord":{"lat":"48.253216","lon":"-3.825967"},"label":"Plon\u00e9vez-du-Faou (29530)","id":"admin:fr:29175","zip_code":"29530"},"id":"admin:fr:29175","name":"Plon\u00e9vez-du-Faou (29530)"},{"embedded_type":"administrative_region","quality":80,"administrative_region":{"insee":"29206","name":"Ploun\u00e9vez-Lochrist","level":8,"coord":{"lat":"48.617466","lon":"-4.211006"},"label":"Ploun\u00e9vez-Lochrist (29430)","id":"admin:fr:29206","zip_code":"29430"},"id":"admin:fr:29206","name":"Ploun\u00e9vez-Lochrist (29430)"},{"embedded_type":"administrative_region","quality":80,"administrative_region":{"insee":"29207","name":"Plourin-l\u00e8s-Morlaix","level":8,"coord":{"lat":"48.536861","lon":"-3.787953"},"label":"Plourin-l\u00e8s-Morlaix (29600)","id":"admin:fr:29207","zip_code":"29600"},"id":"admin:fr:29207","name":"Plourin-l\u00e8s-Morlaix (29600)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29171","name":"Plomeur","level":8,"coord":{"lat":"47.841103","lon":"-4.28355"},"label":"Plomeur (29120)","id":"admin:fr:29171","zip_code":"29120"},"id":"admin:fr:29171","name":"Plomeur (29120)"},{"embedded_type":"administrative_region","quality":90,"administrative_region":{"insee":"29172","name":"Plomodiern","level":8,"coord":{"lat":"48.181072","lon":"-4.233288"},"label":"Plomodiern (29550)","id":"admin:fr:29172","zip_code":"29550"},"id":"admin:fr:29172","name":"Plomodiern (29550)"}],"feed_publishers":[{"url":"http:\/\/www.breizhgo.com","id":"fr-bre","license":"Private","name":"Breizhgo"}]}
+{
+  "disruptions": [],
+  "links": [],
+  "places": [
+    {
+      "embedded_type": "administrative_region",
+      "quality": 100,
+      "administrative_region": {
+        "insee": "22215",
+        "name": "Ploufragan",
+        "level": 8,
+        "coord": {
+          "lat": "48.491386",
+          "lon": "-2.793444"
+        },
+        "label": "Ploufragan",
+        "id": "admin:fr:22215",
+        "zip_code": ""
+      },
+      "id": "admin:fr:22215",
+      "name": "Ploufragan"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 100,
+      "administrative_region": {
+        "insee": "29169",
+        "name": "Plogonnec",
+        "level": 8,
+        "coord": {
+          "lat": "48.077648",
+          "lon": "-4.191576"
+        },
+        "label": "Plogonnec",
+        "id": "admin:fr:29169",
+        "zip_code": ""
+      },
+      "id": "admin:fr:29169",
+      "name": "Plogonnec"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "56162",
+        "name": "Plœmeur",
+        "level": 8,
+        "coord": {
+          "lat": "47.735458",
+          "lon": "-3.427053"
+        },
+        "label": "Plœmeur (56270)",
+        "id": "admin:fr:56162",
+        "zip_code": "56270"
+      },
+      "id": "admin:fr:56162",
+      "name": "Plœmeur (56270)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 80,
+      "administrative_region": {
+        "insee": "29189",
+        "name": "Plougastel-Daoulas",
+        "level": 8,
+        "coord": {
+          "lat": "48.374229",
+          "lon": "-4.369678"
+        },
+        "label": "Plougastel-Daoulas (29470)",
+        "id": "admin:fr:29189",
+        "zip_code": "29470"
+      },
+      "id": "admin:fr:29189",
+      "name": "Plougastel-Daoulas (29470)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29195",
+        "name": "Plouguerneau",
+        "level": 8,
+        "coord": {
+          "lat": "48.605015",
+          "lon": "-4.502321"
+        },
+        "label": "Plouguerneau (29880)",
+        "id": "admin:fr:29195",
+        "zip_code": "29880"
+      },
+      "id": "admin:fr:29195",
+      "name": "Plouguerneau (29880)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29212",
+        "name": "Plouzané",
+        "level": 8,
+        "coord": {
+          "lat": "48.381718",
+          "lon": "-4.621204"
+        },
+        "label": "Plouzané (29280)",
+        "id": "admin:fr:29212",
+        "zip_code": "29280"
+      },
+      "id": "admin:fr:29212",
+      "name": "Plouzané (29280)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "56165",
+        "name": "Ploërmel",
+        "level": 8,
+        "coord": {
+          "lat": "47.932377",
+          "lon": "-2.398079"
+        },
+        "label": "Ploërmel (56800)",
+        "id": "admin:fr:56165",
+        "zip_code": "56800"
+      },
+      "id": "admin:fr:56165",
+      "name": "Ploërmel (56800)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 80,
+      "administrative_region": {
+        "insee": "29024",
+        "name": "Carhaix-Plouguer",
+        "level": 8,
+        "coord": {
+          "lat": "48.276501",
+          "lon": "-3.571147"
+        },
+        "label": "Carhaix-Plouguer (29270)",
+        "id": "admin:fr:29024",
+        "zip_code": "29270"
+      },
+      "id": "admin:fr:29024",
+      "name": "Carhaix-Plouguer (29270)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29179",
+        "name": "Ploudaniel",
+        "level": 8,
+        "coord": {
+          "lat": "48.536896",
+          "lon": "-4.31018"
+        },
+        "label": "Ploudaniel (29260)",
+        "id": "admin:fr:29179",
+        "zip_code": "29260"
+      },
+      "id": "admin:fr:29179",
+      "name": "Ploudaniel (29260)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29197",
+        "name": "Plouhinec",
+        "level": 8,
+        "coord": {
+          "lat": "48.015362",
+          "lon": "-4.487786"
+        },
+        "label": "Plouhinec (29780)",
+        "id": "admin:fr:29197",
+        "zip_code": "29780"
+      },
+      "id": "admin:fr:29197",
+      "name": "Plouhinec (29780)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 80,
+      "administrative_region": {
+        "insee": "29174",
+        "name": "Plonéour-Lanvern",
+        "level": 8,
+        "coord": {
+          "lat": "47.903084",
+          "lon": "-4.282612"
+        },
+        "label": "Plonéour-Lanvern (29720)",
+        "id": "admin:fr:29174",
+        "zip_code": "29720"
+      },
+      "id": "admin:fr:29174",
+      "name": "Plonéour-Lanvern (29720)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29191",
+        "name": "Plougonven",
+        "level": 8,
+        "coord": {
+          "lat": "48.521263",
+          "lon": "-3.712213"
+        },
+        "label": "Plougonven (29640)",
+        "id": "admin:fr:29191",
+        "zip_code": "29640"
+      },
+      "id": "admin:fr:29191",
+      "name": "Plougonven (29640)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "56169",
+        "name": "Plouhinec",
+        "level": 8,
+        "coord": {
+          "lat": "47.691289",
+          "lon": "-3.231666"
+        },
+        "label": "Plouhinec (56680)",
+        "id": "admin:fr:56169",
+        "zip_code": "56680"
+      },
+      "id": "admin:fr:56169",
+      "name": "Plouhinec (56680)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29198",
+        "name": "Plouider",
+        "level": 8,
+        "coord": {
+          "lat": "48.607998",
+          "lon": "-4.298723"
+        },
+        "label": "Plouider (29260)",
+        "id": "admin:fr:29198",
+        "zip_code": "29260"
+      },
+      "id": "admin:fr:29198",
+      "name": "Plouider (29260)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29199",
+        "name": "Plouigneau",
+        "level": 8,
+        "coord": {
+          "lat": "48.567703",
+          "lon": "-3.701145"
+        },
+        "label": "Plouigneau (29610)",
+        "id": "admin:fr:29199",
+        "zip_code": "29610"
+      },
+      "id": "admin:fr:29199",
+      "name": "Plouigneau (29610)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 80,
+      "administrative_region": {
+        "insee": "29175",
+        "name": "Plonévez-du-Faou",
+        "level": 8,
+        "coord": {
+          "lat": "48.253216",
+          "lon": "-3.825967"
+        },
+        "label": "Plonévez-du-Faou (29530)",
+        "id": "admin:fr:29175",
+        "zip_code": "29530"
+      },
+      "id": "admin:fr:29175",
+      "name": "Plonévez-du-Faou (29530)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 80,
+      "administrative_region": {
+        "insee": "29206",
+        "name": "Plounévez-Lochrist",
+        "level": 8,
+        "coord": {
+          "lat": "48.617466",
+          "lon": "-4.211006"
+        },
+        "label": "Plounévez-Lochrist (29430)",
+        "id": "admin:fr:29206",
+        "zip_code": "29430"
+      },
+      "id": "admin:fr:29206",
+      "name": "Plounévez-Lochrist (29430)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 80,
+      "administrative_region": {
+        "insee": "29207",
+        "name": "Plourin-lès-Morlaix",
+        "level": 8,
+        "coord": {
+          "lat": "48.536861",
+          "lon": "-3.787953"
+        },
+        "label": "Plourin-lès-Morlaix (29600)",
+        "id": "admin:fr:29207",
+        "zip_code": "29600"
+      },
+      "id": "admin:fr:29207",
+      "name": "Plourin-lès-Morlaix (29600)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29171",
+        "name": "Plomeur",
+        "level": 8,
+        "coord": {
+          "lat": "47.841103",
+          "lon": "-4.28355"
+        },
+        "label": "Plomeur (29120)",
+        "id": "admin:fr:29171",
+        "zip_code": "29120"
+      },
+      "id": "admin:fr:29171",
+      "name": "Plomeur (29120)"
+    },
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "29172",
+        "name": "Plomodiern",
+        "level": 8,
+        "coord": {
+          "lat": "48.181072",
+          "lon": "-4.233288"
+        },
+        "label": "Plomodiern (29550)",
+        "id": "admin:fr:29172",
+        "zip_code": "29550"
+      },
+      "id": "admin:fr:29172",
+      "name": "Plomodiern (29550)"
+    }
+  ],
+  "feed_publishers": [
+    {
+      "url": "http://www.breizhgo.com",
+      "id": "fr-bre",
+      "license": "Private",
+      "name": "Breizhgo"
+    }
+  ]
+}
