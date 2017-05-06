@@ -1,0 +1,2 @@
+cat fr-bre_disruptions.json | jq --compact-output '.disruptions[]' | split -l 1 - disruptions-
+for i in ./*;do jq '.' ./splitting | sponge ./splitting.json; done
