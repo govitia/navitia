@@ -23,3 +23,8 @@ func (l *Logging) sending() {
 func (l *Logging) parsing() {
 	l.Received = time.Now()
 }
+
+// Waiting returns the time spent waiting for a response from the server
+func (l *Logging) Waiting() time.Duration {
+	return l.Received.Sub(l.Sent)
+}
