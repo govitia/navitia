@@ -5,8 +5,8 @@ This is navitia -dev.
 
 ## Dependencies
 
-- It needs at least go 1.7 to work as we use context & tests use testing.T.Run for subtests.
-- The dependencies are directly pulled in by `go get`, but for you
+- It needs at least go 1.8 to work.
+- The dependencies are directly pulled in by `go get`.
 
 ## Install
 
