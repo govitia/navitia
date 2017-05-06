@@ -16,6 +16,7 @@ func Test_Regions_Online(t *testing.T) {
 	ctx := context.Background()
 	req := RegionRequest{
 		Count: 1000, // We want the biggest count to cause the biggest stress
+		Depth: 3,    // Same thing
 	}
 
 	// Run the query with GeoJSON

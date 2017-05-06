@@ -26,6 +26,9 @@ func Test_PTObjects_Online(t *testing.T) {
 
 		// Set count to 1000
 		Count: 1000,
+
+		// Let's stress-test
+		Depth: 3,
 	}
 
 	// Create the root context

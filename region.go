@@ -30,6 +30,10 @@ type RegionRequest struct {
 	// BUG: Count doesn't work, server-side.
 	Count uint
 
+	// Depth can expand the data by making it more verbose.
+	// Acceptable values are 0 (light), 1 (regular), 2 (rich), 3 (verbose)
+	Depth uint8
+
 	// Enables Geo data (in MKT format) in the reply. Geo objects can be large and slower to parse.
 	Geo bool
 }

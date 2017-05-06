@@ -72,6 +72,10 @@ type ConnectionsRequest struct {
 	// Default value is 10 results
 	Count uint
 
+	// Depth can expand the data by making it more verbose.
+	// Acceptable values are 0 (light), 1 (regular), 2 (rich), 3 (verbose)
+	Depth uint8
+
 	// ForbiddenURIs
 	Forbidden []types.ID
 

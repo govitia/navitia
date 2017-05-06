@@ -17,6 +17,7 @@ func Test_PlacesNearby_Online(t *testing.T) {
 
 	params := PlacesNearbyRequest{
 		Count: 1000, // We want the biggest count to cause the biggest stress
+		Depth: 3,    // Same thing
 	}
 	coords := types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
 

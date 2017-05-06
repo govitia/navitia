@@ -15,6 +15,7 @@ func Test_Explore_Online(t *testing.T) {
 
 	params := ExploreRequest{
 		Count: 1000, // We want the biggest count to cause the biggest stress
+		Depth: 3,    // Same reasoning
 	}
 	scope := testSession.Scope("fr-idf")
 

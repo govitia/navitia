@@ -57,6 +57,10 @@ type PlacesRequest struct {
 
 	// Maximum amount of results
 	Count uint
+
+	// Depth can expand the data by making it more verbose.
+	// Acceptable values are 0 (light), 1 (regular), 2 (rich), 3 (verbose)
+	Depth uint8
 }
 
 // toURL formats a Places request to url

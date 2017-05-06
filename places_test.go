@@ -19,6 +19,7 @@ func Test_Places_Online(t *testing.T) {
 	query := "avenue"
 	opt := PlacesRequest{
 		Count: 1000, // We want the biggest count to cause the biggest stress
+		Depth: 3,    // Same thing
 	}
 
 	// Create the root context

@@ -26,6 +26,7 @@ func Test_ConnectionsSA_Online(t *testing.T) {
 	// Common request (for now)
 	req := ConnectionsRequest{
 		Count: 1000, // We want the biggest count to cause the biggest stress
+		Depth: 3,    // Same reasoning
 	}
 
 	// Create the run function generator, allowing us to run this in parallel
