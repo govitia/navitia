@@ -53,6 +53,8 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 		return errors.Wrapf(err, "error while executing request (for %s)", url)
 	case resp.StatusCode != 200:
 		return parseRemoteError(resp)
+	case resp.ContentLength >= s.maxResponseSize:
+		return errors.Errorf("request: advertised respone size (%dMb) bigger than the set maximum (%dMb)", resp.ContentLength/(1000*1000), s.maxResponseSize/(1000*1000))
 	}
 
 	// Check for cancellation
