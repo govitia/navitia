@@ -1,0 +1,86 @@
+{
+  "disruption_id": "a0e49514-25a9-11e7-bdc9-005056a44da2",
+  "status": "active",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "d5cdd95a-2b55-11e7-aff3-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170427T162500",
+      "end": "20170512T185959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de travaux de voirie route du Loc'h, à partir du lundi 24 Avril 2017 et pour 3 semaines, la ligne 5 est déviée en direction d'Ergué Armel Mairie.  Les arrêts Bécharles et Eglantine sont reportés au poteau provisoire situé à l'entrée du rond point de Bécharles. L'arrêt Kermoguer est reporté à l'arrêt Croix des Gardiens.",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170427T162852",
+  "uri": "d5cdd95a-2b55-11e7-aff3-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "5",
+          "name": "Ergué-Armel Mairie – Gourvily",
+          "links": [],
+          "color": "f1471d",
+          "id": "line:QUI:5",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "5"
+            },
+            {
+              "type": "external_code",
+              "value": "QUI5"
+            },
+            {
+              "type": "source",
+              "value": "5"
+            }
+          ],
+          "closing_time": "204300",
+          "opening_time": "064900",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:5",
+        "name": "QUB - Quimper Communauté Bus 5 (Ergué-Armel Mairie – Gourvily)"
+      }
+    }
+  ],
+  "id": "d5cdd95a-2b55-11e7-aff3-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Travaux",
+  "disruption_uri": "a0e49514-25a9-11e7-bdc9-005056a44da2"
+}

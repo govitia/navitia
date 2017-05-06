@@ -1,0 +1,93 @@
+{
+  "disruption_id": "c611fa9a-13dc-11e7-9ba0-005056a44da2",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Avertissement",
+    "effect": "UNKNOWN_EFFECT"
+  },
+  "impact_id": "c612682c-13dc-11e7-9ba0-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170402T000100",
+      "end": "20170402T235859"
+    }
+  ],
+  "messages": [
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000649\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    },
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000649\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/type",
+        "id": "abd97a80-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "Message EMAIL"
+      }
+    }
+  ],
+  "updated_at": "20170328T193420",
+  "uri": "c612682c-13dc-11e7-9ba0-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "25",
+          "name": "Roscoff - Lesneven (Brest)",
+          "links": [],
+          "color": "172983",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "FFFFFF",
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "C29225"
+            },
+            {
+              "type": "source",
+              "value": "225"
+            }
+          ],
+          "closing_time": "193000",
+          "opening_time": "060200",
+          "id": "line:C29:225"
+        },
+        "quality": 0,
+        "id": "line:C29:225",
+        "name": "Penn ar Bed - Département du Finistère Autocar 25 (Roscoff - Lesneven (Brest))"
+      }
+    }
+  ],
+  "id": "c612682c-13dc-11e7-9ba0-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "c611fa9a-13dc-11e7-9ba0-005056a44da2"
+}

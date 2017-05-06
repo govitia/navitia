@@ -1,0 +1,86 @@
+{
+  "disruption_id": "871666f6-30d2-11e7-a09f-005056a47b86",
+  "status": "future",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "8716e2ac-30d2-11e7-a09f-005056a47b86",
+  "application_periods": [
+    {
+      "begin": "20170505T155500",
+      "end": "20170602T195459"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de travaux rue du Frout, le mardi 09 Mai à partir de 09h00 et pour 4 semaines, la ligne 5 est déviée. L'arrêt \"Saint-Corentin\" est reporté à l'arrêt \"Résistance\".Les arrêts \"Hôtel de Ville\" et \"Réguaires\" sont reportés à l?arrêt \"Dupleix\".",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170504T160402",
+  "uri": "8716e2ac-30d2-11e7-a09f-005056a47b86",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "5",
+          "name": "Ergué-Armel Mairie – Gourvily",
+          "links": [],
+          "color": "f1471d",
+          "id": "line:QUI:5",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "5"
+            },
+            {
+              "type": "external_code",
+              "value": "QUI5"
+            },
+            {
+              "type": "source",
+              "value": "5"
+            }
+          ],
+          "closing_time": "204300",
+          "opening_time": "064900",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:5",
+        "name": "QUB - Quimper Communauté Bus 5 (Ergué-Armel Mairie – Gourvily)"
+      }
+    }
+  ],
+  "id": "8716e2ac-30d2-11e7-a09f-005056a47b86",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Travaux",
+  "disruption_uri": "871666f6-30d2-11e7-a09f-005056a47b86"
+}

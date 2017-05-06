@@ -1,0 +1,86 @@
+{
+  "disruption_id": "86665086-2b55-11e7-9fe0-005056a47b86",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "b7519c46-2b55-11e7-9fe0-005056a47b86",
+  "application_periods": [
+    {
+      "begin": "20170427T162500",
+      "end": "20170429T195959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de la manifestation « 50 ans de War'l Leur », samedi 29 avril 2017 à partir de 14h, le passage par la place Saint Corentin et la rue du Frout n'est pas effectué, la ligne 6 est déviée. L'arrêt Saint-Corentin est reporté à l?arrêt Résistance. L'arrêt Hôtel de Ville et Réguaires sont reportés à l'arrêt Dupleix.",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170427T162801",
+  "uri": "b7519c46-2b55-11e7-9fe0-005056a47b86",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "6",
+          "name": "Moulin Vert – Mercoeur",
+          "links": [],
+          "color": "b3b36b",
+          "id": "line:QUI:6",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "6"
+            },
+            {
+              "type": "external_code",
+              "value": "QUI6"
+            },
+            {
+              "type": "source",
+              "value": "6"
+            }
+          ],
+          "closing_time": "193700",
+          "opening_time": "065000",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:6",
+        "name": "QUB - Quimper Communauté Bus 6 (Moulin Vert – Mercoeur)"
+      }
+    }
+  ],
+  "id": "b7519c46-2b55-11e7-9fe0-005056a47b86",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "86665086-2b55-11e7-9fe0-005056a47b86"
+}

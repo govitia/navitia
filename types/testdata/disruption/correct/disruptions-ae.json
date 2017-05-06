@@ -1,0 +1,86 @@
+{
+  "disruption_id": "57fd3392-2b53-11e7-8190-005056a47b86",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "7be3cff4-2b54-11e7-843b-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170427T161500",
+      "end": "20170429T195959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de la manifestation « 50 ans de War'l Leur », samedi 29 avril 2017 à partir de 14h, le passage par la place Saint Corentin et la rue du Frout n'est pas effectué, la ligne 10 est déviée. L'arrêt Saint-Corentin est reporté à l'arrêt Résistance. L'arrêt Hôtel de Ville est reporté à l'arrêt Poste Centrale.",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170427T161911",
+  "uri": "7be3cff4-2b54-11e7-843b-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "10",
+          "name": "Prat Ar Rouz – Kervouyec",
+          "links": [],
+          "color": "a4705a",
+          "id": "line:QUI:10",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "10"
+            },
+            {
+              "type": "external_code",
+              "value": "QUI10"
+            },
+            {
+              "type": "source",
+              "value": "10"
+            }
+          ],
+          "closing_time": "194500",
+          "opening_time": "064700",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:10",
+        "name": "QUB - Quimper Communauté Bus 10 (Prat Ar Rouz – Kervouyec)"
+      }
+    }
+  ],
+  "id": "7be3cff4-2b54-11e7-843b-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "57fd3392-2b53-11e7-8190-005056a47b86"
+}

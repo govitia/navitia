@@ -1,0 +1,93 @@
+{
+  "disruption_id": "52ca08f8-20f6-11e7-83fb-005056a44da2",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Avertissement",
+    "effect": "UNKNOWN_EFFECT"
+  },
+  "impact_id": "52ca6f50-20f6-11e7-83fb-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170416T000100",
+      "end": "20170417T235859"
+    }
+  ],
+  "messages": [
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000658\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    },
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000658\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/type",
+        "id": "abd97a80-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "Message EMAIL"
+      }
+    }
+  ],
+  "updated_at": "20170414T113958",
+  "uri": "52ca6f50-20f6-11e7-83fb-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "20",
+          "name": "Plouguerneau, Lilia - Brest, Gare Routière",
+          "links": [],
+          "color": "E2007A",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "FFFFFF",
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "C29220"
+            },
+            {
+              "type": "source",
+              "value": "220"
+            }
+          ],
+          "closing_time": "200500",
+          "opening_time": "055500",
+          "id": "line:C29:220"
+        },
+        "quality": 0,
+        "id": "line:C29:220",
+        "name": "Penn ar Bed - Département du Finistère Autocar 20 (Plouguerneau, Lilia - Brest, Gare Routière)"
+      }
+    }
+  ],
+  "id": "52ca6f50-20f6-11e7-83fb-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "52ca08f8-20f6-11e7-83fb-005056a44da2"
+}

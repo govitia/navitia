@@ -1,0 +1,86 @@
+{
+  "disruption_id": "ba30b312-2041-11e7-96ed-005056a44da2",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "cda3d69c-2044-11e7-b154-005056a47b86",
+  "application_periods": [
+    {
+      "begin": "20170413T142500",
+      "end": "20170415T185959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de la course cycliste « Le Tour du Finistère », Samedi 15 Avril 2017 à partir de 14h00 et jusqu'à 18h00, la ligne 10 est déviée dans les 2 sens.  Les arrêts Kervouyec, Métairie Neuve et Ti Pont sont reportés au poteau provisoire situé avenue de Bécharles. L'arrêt Cité Administrative est reporté à l'arrêt Croix des Gardiens.",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170413T142914",
+  "uri": "cda3d69c-2044-11e7-b154-005056a47b86",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "10",
+          "name": "Prat Ar Rouz – Kervouyec",
+          "links": [],
+          "color": "a4705a",
+          "id": "line:QUI:10",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "10"
+            },
+            {
+              "type": "external_code",
+              "value": "QUI10"
+            },
+            {
+              "type": "source",
+              "value": "10"
+            }
+          ],
+          "closing_time": "194500",
+          "opening_time": "064700",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:10",
+        "name": "QUB - Quimper Communauté Bus 10 (Prat Ar Rouz – Kervouyec)"
+      }
+    }
+  ],
+  "id": "cda3d69c-2044-11e7-b154-005056a47b86",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "ba30b312-2041-11e7-96ed-005056a44da2"
+}

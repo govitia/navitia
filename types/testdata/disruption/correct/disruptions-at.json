@@ -1,0 +1,86 @@
+{
+  "disruption_id": "ea72a9c8-15e1-11e7-b9f6-005056a47b86",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "41965c7c-15e2-11e7-b863-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170331T091500",
+      "end": "20170402T181959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de la course pédestre «Brin d'Avoine», dimanche 2 Avril 2017 de 13h30 à 18h00, la ligne A effectue sont terminus à l'arrêt Université et est déviée dans les deux sens.  Les arrêts L'Orangerie et Président Sadate sont reportés aux arrêts Delta Les arrêts Glann Odet, Creac'h Gwen, Base de Loisirs et Piscine Aquarive sont reportés au poteau provisoire placé au terminus Université.",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170331T091837",
+  "uri": "41965c7c-15e2-11e7-b863-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "A",
+          "name": "Ligne A (dimanche)",
+          "links": [],
+          "color": "d91920",
+          "id": "line:QUI:A",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "A"
+            },
+            {
+              "type": "external_code",
+              "value": "QUIA"
+            },
+            {
+              "type": "source",
+              "value": "A"
+            }
+          ],
+          "closing_time": "193100",
+          "opening_time": "132300",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:A",
+        "name": "QUB - Quimper Communauté Bus A (Ligne A (dimanche))"
+      }
+    }
+  ],
+  "id": "41965c7c-15e2-11e7-b863-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "ea72a9c8-15e1-11e7-b9f6-005056a47b86"
+}

@@ -1,0 +1,93 @@
+{
+  "disruption_id": "625e90fe-fe96-11e6-b5a5-005056a44da2",
+  "status": "active",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Avertissement",
+    "effect": "UNKNOWN_EFFECT"
+  },
+  "impact_id": "625f0584-fe96-11e6-b5a5-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170306T083000",
+      "end": "20170512T225959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000633\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    },
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000633\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/type",
+        "id": "abd97a80-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "Message EMAIL"
+      }
+    }
+  ],
+  "updated_at": "20170301T164733",
+  "uri": "625f0584-fe96-11e6-b5a5-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "26",
+          "name": "Landerneau - Lesneven",
+          "links": [],
+          "color": "85D0F0",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "FFFFFF",
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "C29226"
+            },
+            {
+              "type": "source",
+              "value": "226"
+            }
+          ],
+          "closing_time": "183500",
+          "opening_time": "071000",
+          "id": "line:C29:226"
+        },
+        "quality": 0,
+        "id": "line:C29:226",
+        "name": "Penn ar Bed - Département du Finistère Autocar 26 (Landerneau - Lesneven)"
+      }
+    }
+  ],
+  "id": "625f0584-fe96-11e6-b5a5-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "625e90fe-fe96-11e6-b5a5-005056a44da2"
+}

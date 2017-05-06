@@ -1,0 +1,86 @@
+{
+  "disruption_id": "0e8eb51c-2042-11e7-82a5-005056a47b86",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Bloqué",
+    "effect": "NO_SERVICE"
+  },
+  "impact_id": "3301b808-2043-11e7-aa24-005056a44da2",
+  "application_periods": [
+    {
+      "begin": "20170415T140000",
+      "end": "20170415T185959"
+    }
+  ],
+  "messages": [
+    {
+      "text": "En raison de la course cycliste « Le Tour du Finistère », Samedi 15 Avril 2017 à partir de 14h00 et jusqu?à 18h00, la ligne 7 est déviée dans les 2 sens.  Les arrêts Kerbrat, F. Foch, Croix des Gardiens, Le Pavillon et Maison de l?Agriculture en direction de Penvillers ne sont pas desservis. Les arrêts Penvillers, Maison de l'Agriculture, Le Pavillon, Croix des Gardiens, F. Foch et Kerbrat en direction d'Ergué Gabéric Bourg sont reportés à l?arrêt Place de Penvillers.",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    }
+  ],
+  "updated_at": "20170413T141745",
+  "uri": "3301b808-2043-11e7-aa24-005056a44da2",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "7",
+          "name": "Penvillers – Ergué-Gabéric Bourg",
+          "links": [],
+          "color": "12b0b3",
+          "id": "line:QUI:7",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "000000",
+          "codes": [
+            {
+              "type": "Timeo_Qub",
+              "value": "7"
+            },
+            {
+              "type": "external_code",
+              "value": "QUI7"
+            },
+            {
+              "type": "source",
+              "value": "7"
+            }
+          ],
+          "closing_time": "194500",
+          "opening_time": "064300",
+          "properties": [
+            {
+              "name": "realtime_system",
+              "value": "Timeo_Qub"
+            }
+          ]
+        },
+        "quality": 0,
+        "id": "line:QUI:7",
+        "name": "QUB - Quimper Communauté Bus 7 (Penvillers – Ergué-Gabéric Bourg)"
+      }
+    }
+  ],
+  "id": "3301b808-2043-11e7-aa24-005056a44da2",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "0e8eb51c-2042-11e7-82a5-005056a47b86"
+}

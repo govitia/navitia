@@ -1,0 +1,93 @@
+{
+  "disruption_id": "e116d69a-156b-11e7-b562-005056a47b86",
+  "status": "past",
+  "severity": {
+    "color": "",
+    "priority": 0,
+    "name": "Avertissement",
+    "effect": "UNKNOWN_EFFECT"
+  },
+  "impact_id": "e117751e-156b-11e7-b562-005056a47b86",
+  "application_periods": [
+    {
+      "begin": "20170401T160000",
+      "end": "20170401T181459"
+    }
+  ],
+  "messages": [
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000651\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/html",
+        "id": "abc68290-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "web et mobile"
+      }
+    },
+    {
+      "text": "<a href=\"http://www.viaoo29.fr/perturbation/?rub_code=17&pert_exploit=2000651\">Tous les détails sur Viaoo29.fr</a>",
+      "channel": {
+        "content_type": "text/type",
+        "id": "abd97a80-ac79-11e4-b7e0-005056a47b86",
+        "types": [
+          "web",
+          "sms",
+          "email",
+          "mobile",
+          "notification",
+          "twitter",
+          "facebook"
+        ],
+        "name": "Message EMAIL"
+      }
+    }
+  ],
+  "updated_at": "20170330T191114",
+  "uri": "e117751e-156b-11e7-b562-005056a47b86",
+  "impacted_objects": [
+    {
+      "pt_object": {
+        "embedded_type": "line",
+        "line": {
+          "code": "23",
+          "name": "Kerlouan - Lesneven (Brest)",
+          "links": [],
+          "color": "97BF0D",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "text_color": "FFFFFF",
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "C29223"
+            },
+            {
+              "type": "source",
+              "value": "223"
+            }
+          ],
+          "closing_time": "195300",
+          "opening_time": "061700",
+          "id": "line:C29:223"
+        },
+        "quality": 0,
+        "id": "line:C29:223",
+        "name": "Penn ar Bed - Département du Finistère Autocar 23 (Kerlouan - Lesneven (Brest))"
+      }
+    }
+  ],
+  "id": "e117751e-156b-11e7-b562-005056a47b86",
+  "contributor": "shortterm.at_fr-bre",
+  "cause": "Perturbation",
+  "disruption_uri": "e116d69a-156b-11e7-b562-005056a47b86"
+}
