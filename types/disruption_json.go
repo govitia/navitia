@@ -3,6 +3,7 @@ package types
 import (
 	"encoding/json"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -39,7 +40,8 @@ func (d *Disruption) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Disruption", b}
+	gen := unmarshal.NewGenerator("Disruption", &b)
+	defer gen.Close()
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -48,9 +50,9 @@ func (d *Disruption) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now we process the Update time
-	d.LastUpdated, err = parseDateTime(data.LastUpdated)
+	d.LastUpdated, err = unmarshal.ParseDateTime(data.LastUpdated)
 	if err != nil {
-		return gen.err(err, "LastUpdated", "updated_at", data.LastUpdated, "parseDateTime failed")
+		return gen.Gen(err, "LastUpdated", "updated_at", data.LastUpdated, "unmarshal.ParseDateTime failed")
 	}
 
 	// Finished !
@@ -68,7 +70,8 @@ func (p *Period) UnmarshalJSON(b []byte) error {
 	}{}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Period", b}
+	gen := unmarshal.NewGenerator("Period", &b)
+	defer gen.Close()
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -77,13 +80,13 @@ func (p *Period) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now we process the times.
-	p.Begin, err = parseDateTime(data.Begin)
+	p.Begin, err = unmarshal.ParseDateTime(data.Begin)
 	if err != nil {
-		return gen.err(err, "Begin", "begin", data.Begin, "parseDateTime failed")
+		return gen.Gen(err, "Begin", "begin", data.Begin, "unmarshal.ParseDateTime failed")
 	}
-	p.End, err = parseDateTime(data.End)
+	p.End, err = unmarshal.ParseDateTime(data.End)
 	if err != nil {
-		return gen.err(err, "End", "end", data.End, "parseDateTime failed")
+		return gen.Gen(err, "End", "end", data.End, "unmarshal.ParseDateTime failed")
 	}
 
 	// Finished !
@@ -109,7 +112,8 @@ func (s *Severity) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Severity", b}
+	gen := unmarshal.NewGenerator("Severity", &b)
+	defer gen.Close()
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -121,7 +125,7 @@ func (s *Severity) UnmarshalJSON(b []byte) error {
 	if str := data.Color; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return gen.err(err, "Color", "color", str, "error in parseColor")
+			return gen.Gen(err, "Color", "color", str, "error in parseColor")
 		}
 		s.Color = clr
 	}

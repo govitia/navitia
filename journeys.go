@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/aabizri/navitia/types"
 )
 
@@ -146,7 +147,7 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	}
 
 	if datetime := req.Date; !datetime.IsZero() {
-		str := datetime.Format(types.DateTimeFormat)
+		str := datetime.Format(unmarshal.DateTimeFormat)
 		params.Add("datetime", str)
 		if req.DateIsArrival {
 			params.Add("datetime_represents", "arrival")

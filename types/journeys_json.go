@@ -5,6 +5,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 	"golang.org/x/text/currency"
 )
@@ -54,23 +55,24 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Journey", b}
+	gen := unmarshal.NewGenerator("Journey", &b)
+	defer gen.Close()
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
 	j.Duration = time.Duration(data.Duration) * time.Second
 
-	// For departure, requested and arrival, we use parseDateTime
-	j.Departure, err = parseDateTime(data.Departure)
+	// For departure, requested and arrival, we use unmarshal.ParseDateTime
+	j.Departure, err = unmarshal.ParseDateTime(data.Departure)
 	if err != nil {
-		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return gen.Gen(err, "Departure", "departure_date_time", data.Departure, "unmarshal.ParseDateTime failed")
 	}
-	j.Requested, err = parseDateTime(data.Requested)
+	j.Requested, err = unmarshal.ParseDateTime(data.Requested)
 	if err != nil {
-		return gen.err(err, "Requested", "requested_date_time", data.Requested, "parseDateTime failed")
+		return gen.Gen(err, "Requested", "requested_date_time", data.Requested, "unmarshal.ParseDateTime failed")
 	}
-	j.Arrival, err = parseDateTime(data.Arrival)
+	j.Arrival, err = unmarshal.ParseDateTime(data.Arrival)
 	if err != nil {
-		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+		return gen.Gen(err, "Arrival", "arrival_date_time", data.Arrival, "unmarshal.ParseDateTime failed")
 	}
 
 	return nil
@@ -97,7 +99,8 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"Fare", b}
+	gen := unmarshal.NewGenerator("Fare", &b)
+	defer gen.Close()
 
 	// Let's convert the cost now
 	// If we have no defined fare, let's skip that part
@@ -108,7 +111,7 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 	// First get the currency unit
 	unit, err := currency.ParseISO(data.Cost.Currency)
 	if err != nil {
-		return gen.err(err, "Total", "cost.currency", data.Cost.Currency, "error while retrieving currency unit via currency.ParseISO")
+		return gen.Gen(err, "Total", "cost.currency", data.Cost.Currency, "error while retrieving currency unit via currency.ParseISO")
 	}
 
 	// Now let's create the correct amount
@@ -135,12 +138,13 @@ func (c *CO2Emissions) UnmarshalJSON(b []byte) error {
 	}
 
 	// Let's create the error generator
-	gen := unmarshalErrorMaker{"CO2Emissions", b}
+	gen := unmarshal.NewGenerator("CO2Emissions", &b)
+	defer gen.Close()
 
 	// Now parse the value
 	f, err := strconv.ParseFloat(data.Value, 64)
 	if err != nil {
-		return gen.err(err, "Value", "value", data.Value, "error in strconv.ParseFloat")
+		return gen.Gen(err, "Value", "value", data.Value, "error in strconv.ParseFloat")
 	}
 	c.Value = f
 

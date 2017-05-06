@@ -3,6 +3,7 @@ package types
 import (
 	"encoding/json"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -44,21 +45,22 @@ func (d *Display) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Display", b}
+	gen := unmarshal.NewGenerator("Display", &b)
+	defer gen.Close()
 
 	// Now process the values
 	// We expect a color string length of 6 because it should be coded in hexadecimal
 	if str := data.Color; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return gen.err(err, "Color", "color", str, "error in parseColor")
+			return gen.Gen(err, "Color", "color", str, "error in parseColor")
 		}
 		d.Color = clr
 	}
 	if str := data.TextColor; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return gen.err(err, "TextColor", "text_color", str, "error in parseColor")
+			return gen.Gen(err, "TextColor", "text_color", str, "error in parseColor")
 		}
 		d.TextColor = clr
 	}

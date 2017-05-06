@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"strconv"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -34,7 +35,8 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Line", b}
+	gen := unmarshal.NewGenerator("Line", &b)
+	defer gen.Close()
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -48,7 +50,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	if str := data.Color; len(str) == 6 {
 		clr, err := parseColor(str)
 		if err != nil {
-			return gen.err(err, "Color", "color", str, "error in parseColor")
+			return gen.Gen(err, "Color", "color", str, "error in parseColor")
 		}
 		l.Color = clr
 	}
@@ -76,19 +78,20 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 		}
 		return uint8(h64), uint8(m64), uint8(s64), nil
 	}
+	
 	// We expect as well a 6-character long value
 	if str := data.OpeningTime; len(str) == 6 {
 		t := &l.OpeningTime
 		t.Hours, t.Minutes, t.Seconds, err = parseTime(str)
 		if err != nil {
-			return gen.err(err, "OpeningTime", "opening_time", str, "error in parseTime")
+			return gen.Gen(err, "OpeningTime", "opening_time", str, "error in parseTime")
 		}
 	}
 	if str := data.ClosingTime; len(str) == 6 {
 		t := &l.ClosingTime
 		t.Hours, t.Minutes, t.Seconds, err = parseTime(str)
 		if err != nil {
-			return gen.err(err, "ClosingTime", "closing_time", str, "error in parseTime")
+			return gen.Gen(err, "ClosingTime", "closing_time", str, "error in parseTime")
 		}
 	}
 

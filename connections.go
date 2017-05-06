@@ -9,6 +9,7 @@ import (
 	"unsafe"
 
 	"github.com/aabizri/navitia/types"
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -90,7 +91,7 @@ func (req ConnectionsRequest) toURL() (url.Values, error) {
 	values := url.Values{}
 
 	if datetime := req.From; !datetime.IsZero() {
-		str := datetime.Format(types.DateTimeFormat)
+		str := datetime.Format(unmarshal.DateTimeFormat)
 		values.Add("datetime", str)
 	}
 

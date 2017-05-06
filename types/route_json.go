@@ -3,6 +3,7 @@ package types
 import (
 	"encoding/json"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -27,7 +28,8 @@ func (r *Route) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Route", b}
+	gen := unmarshal.NewGenerator("Route", &b)
+	defer gen.Close()
 
 	// Now unmarshall the raw data into the analogous structure
 	err := json.Unmarshal(b, data)
@@ -42,7 +44,7 @@ func (r *Route) UnmarshalJSON(b []byte) error {
 	case data.Frequence == "false" || data.Frequence == "False":
 		r.Frequence = false
 	default:
-		return gen.err(nil, "Frequence", "is_frequency", data.Frequence, `String is neither True, true, False or false`)
+		return gen.Gen(nil, "Frequence", "is_frequency", data.Frequence, `String is neither True, true, False or false`)
 	}
 
 	return nil

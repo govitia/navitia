@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"strconv"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -22,16 +23,17 @@ func (c *Coordinates) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Coordinates", b}
+	gen := unmarshal.NewGenerator("Coordinates", &b)
+	defer gen.Close()
 
 	// Now parse the values
 	c.Longitude, err = strconv.ParseFloat(data.Longitude, 64)
 	if err != nil {
-		return gen.err(err, "Longitude", "lon", data.Longitude, "error in strconv.ParseFloat")
+		return gen.Gen(err, "Longitude", "lon", data.Longitude, "error in strconv.ParseFloat")
 	}
 	c.Latitude, err = strconv.ParseFloat(data.Latitude, 64)
 	if err != nil {
-		return gen.err(err, "Latitude", "lat", data.Latitude, "error in strconv.ParseFloat")
+		return gen.Gen(err, "Latitude", "lat", data.Latitude, "error in strconv.ParseFloat")
 	}
 
 	return nil

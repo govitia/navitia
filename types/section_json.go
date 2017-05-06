@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 	"github.com/twpayne/go-geom"
 	"github.com/twpayne/go-geom/encoding/geojson"
@@ -55,16 +56,17 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Section", b}
+	gen := unmarshal.NewGenerator("Section", &b)
+	defer gen.Close()
 
-	// For departure and arrival, we use parseDateTime
-	s.Departure, err = parseDateTime(data.Departure)
+	// For departure and arrival, we use unmarshal.ParseDateTime
+	s.Departure, err = unmarshal.ParseDateTime(data.Departure)
 	if err != nil {
-		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return gen.Gen(err, "Departure", "departure_date_time", data.Departure, "unmarshal.ParseDateTime failed")
 	}
-	s.Arrival, err = parseDateTime(data.Arrival)
+	s.Arrival, err = unmarshal.ParseDateTime(data.Arrival)
 	if err != nil {
-		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+		return gen.Gen(err, "Arrival", "arrival_date_time", data.Arrival, "unmarshal.ParseDateTime failed")
 	}
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
@@ -74,18 +76,18 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	if data.Geo != nil {
 		// Catch an error !
 		if data.Geo.Coordinates == nil {
-			return gen.err(nil, "Geo", "geojson", data.Geo, "Geo.Coordinates is nil, can't continue as that will cause a panic")
+			return gen.Gen(nil, "Geo", "geojson", data.Geo, "Geo.Coordinates is nil, can't continue as that will cause a panic")
 		}
 
 		// Let's decode it
 		geot, err := data.Geo.Decode()
 		if err != nil {
-			return gen.err(err, "Geo", "geojson", data.Geo, "Geo.Decode() failed")
+			return gen.Gen(err, "Geo", "geojson", data.Geo, "Geo.Decode() failed")
 		}
 		// And let's assert the type
 		geo, ok := geot.(*geom.LineString)
 		if !ok {
-			return gen.err(err, "Geo", "geojson", data.Geo, "Geo type assertion failed!")
+			return gen.Gen(err, "Geo", "geojson", data.Geo, "Geo type assertion failed!")
 		}
 		// Now let's assign it
 		s.Geo = geo
@@ -109,16 +111,17 @@ func (ptdt *PTDateTime) UnmarshalJSON(b []byte) error {
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"PTDateTime", b}
+	gen := unmarshal.NewGenerator("PTDateTime", &b)
+	defer gen.Close()
 
-	// Now we use parseDateTime
-	ptdt.Departure, err = parseDateTime(data.Departure)
+	// Now we use unmarshal.ParseDateTime
+	ptdt.Departure, err = unmarshal.ParseDateTime(data.Departure)
 	if err != nil {
-		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+		return gen.Gen(err, "Departure", "departure_date_time", data.Departure, "unmarshal.ParseDateTime failed")
 	}
-	ptdt.Arrival, err = parseDateTime(data.Arrival)
+	ptdt.Arrival, err = unmarshal.ParseDateTime(data.Arrival)
 	if err != nil {
-		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+		return gen.Gen(err, "Arrival", "arrival_date_time", data.Arrival, "unmarshal.ParseDateTime failed")
 	}
 
 	return nil

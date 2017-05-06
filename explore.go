@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/aabizri/navitia/types"
+	"github.com/aabizri/navitia/internal/unmarshal"
 	"github.com/pkg/errors"
 )
 
@@ -169,14 +170,14 @@ func (req ExploreRequest) toURL() (url.Values, error) {
 
 	// Deal with since and/or until, checking that the interval is correct
 	if since := req.Since; !since.IsZero() {
-		sinceStr := since.Format(types.DateTimeFormat)
+		sinceStr := since.Format(unmarshal.DateTimeFormat)
 		params["since"] = []string{sinceStr}
 	}
 	if until := req.Until; !until.IsZero() {
 		if until.After(req.Since) {
 			return params, errors.New("toURL: until date is after before date")
 		}
-		untilStr := until.Format(types.DateTimeFormat)
+		untilStr := until.Format(unmarshal.DateTimeFormat)
 		params["until"] = []string{untilStr}
 	}
 	return params, nil
