@@ -1,0 +1,1418 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "22801"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:3747837"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:3747837"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845634",
+      "lon": "2.372869"
+    },
+    "label": "Gare de Lyon - Diderot (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:3747837",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100100057:57OIF442"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100100057:57_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:RTP"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170507T172200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793174-1_220138-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793174-1_220138-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T173200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793176-1_220140-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793176-1_220140-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T174200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793178-1_220142-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793178-1_220142-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T175300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793180-1_220144-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793180-1_220144-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T180400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793182-1_220146-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793182-1_220146-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T181500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793184-1_220148-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793184-1_220148-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T182600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793186-1_220150-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793186-1_220150-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T183700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793188-1_220152-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793188-1_220152-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T184800",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793190-1_220154-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793190-1_220154-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T185400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793085-1_220049-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793085-1_220049-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T185800",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793192-1_220156-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793192-1_220156-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T190900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793194-1_220158-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793194-1_220158-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T192000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793196-1_220160-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793196-1_220160-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T193400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793198-1_220162-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793198-1_220162-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T194900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793200-1_220164-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793200-1_220164-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T200300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793202-1_220166-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793202-1_220166-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T201700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793204-1_220168-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793204-1_220168-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T203100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793206-1_220170-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793206-1_220170-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T204400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793208-1_220172-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793208-1_220172-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T210000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793210-1_220174-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793210-1_220174-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T211600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793212-1_220176-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793212-1_220176-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T213500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793214-1_220178-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793214-1_220178-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T215400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793216-1_220180-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793216-1_220180-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T221400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793218-1_220182-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793218-1_220182-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T223400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793220-1_220184-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793220-1_220184-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T225300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793222-1_220186-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793222-1_220186-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T231200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793224-1_220188-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793224-1_220188-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T233200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793226-1_220190-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793226-1_220190-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T235200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793228-1_220192-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793228-1_220192-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T001200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793230-1_220194-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793230-1_220194-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T003200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793232-1_220196-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793232-1_220196-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T005200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793234-1_220198-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793234-1_220198-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T070900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793077-1_220041-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793077-1_220041-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T072200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793080-1_220044-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793080-1_220044-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T073300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793083-1_220047-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793083-1_220047-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T074400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793086-1_220050-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793086-1_220050-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T075600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793088-1_220052-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793088-1_220052-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T080800",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793090-1_220054-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793090-1_220054-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T082100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793092-1_220056-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793092-1_220056-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T083600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793094-1_220058-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793094-1_220058-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T085000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793096-1_220060-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793096-1_220060-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T090500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793098-1_220062-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793098-1_220062-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T091900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793100-1_220064-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793100-1_220064-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T093400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793102-1_220066-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793102-1_220066-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T094800",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793104-1_220068-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793104-1_220068-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T100300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793106-1_220070-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793106-1_220070-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T101700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793108-1_220072-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793108-1_220072-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T103200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793110-1_220074-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793110-1_220074-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T104600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793112-1_220076-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793112-1_220076-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T110100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793114-1_220078-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793114-1_220078-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T111500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793116-1_220080-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793116-1_220080-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T113000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793118-1_220082-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793118-1_220082-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T114500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793120-1_220084-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793120-1_220084-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T120000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793122-1_220086-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793122-1_220086-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T120900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793075-1_220039-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793075-1_220039-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T121500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793124-1_220088-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793124-1_220088-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T123000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793126-1_220090-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793126-1_220090-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T124500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793128-1_220092-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793128-1_220092-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T130000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793130-1_220094-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793130-1_220094-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T131500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793132-1_220096-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793132-1_220096-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T132900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793134-1_220098-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793134-1_220098-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T134200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793136-1_220100-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793136-1_220100-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T135500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793138-1_220102-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793138-1_220102-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T140700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793140-1_220104-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793140-1_220104-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T141800",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793142-1_220106-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793142-1_220106-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T142900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793144-1_220108-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793144-1_220108-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T144000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793146-1_220110-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793146-1_220110-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T144700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793079-1_220043-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793079-1_220043-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T145300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793148-1_220112-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793148-1_220112-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T150500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793150-1_220114-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793150-1_220114-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T151700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793152-1_220116-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793152-1_220116-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T152400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793082-1_220046-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793082-1_220046-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T153000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793154-1_220118-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793154-1_220118-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T154200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793156-1_220120-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793156-1_220120-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T155400",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793158-1_220122-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793158-1_220122-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T160500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793160-1_220124-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793160-1_220124-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T161600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793162-1_220126-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793162-1_220126-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T162700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793164-1_220128-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793164-1_220128-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T163900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793166-1_220130-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793166-1_220130-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T165100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793168-1_220132-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793168-1_220132-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T170200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793170-1_220134-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793170-1_220134-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T171200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82793172-1_220136-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82793172-1_220136-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59435"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59435"
+          }
+        ],
+        "name": "Porte de Bagnolet",
+        "links": [],
+        "coord": {
+          "lat": "48.864137",
+          "lon": "2.409245"
+        },
+        "label": "Porte de Bagnolet (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59435"
+      },
+      "name": "Porte de Bagnolet (Paris)",
+      "id": "stop_area:OIF:SA:59435"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100100057:57_R"
+      },
+      {
+        "type": "source",
+        "value": "100100057:57"
+      }
+    ],
+    "name": "Laplace RER. - Porte de Bagnolet - Louis Ganne",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "57",
+      "name": "Porte de Bagnolet Louis Ganne - Laplace",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "054000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "9c983a",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01094"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100100057:57OIF442"
+        },
+        {
+          "type": "source",
+          "value": "100100057:57"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01094"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100100057:57OIF442"
+        },
+        {
+          "type": "source",
+          "value": "100100057:57"
+        }
+      ],
+      "closing_time": "003500",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8775866"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8775866"
+                }
+              ],
+              "name": "Gare de Laplace",
+              "links": [],
+              "coord": {
+                "lat": "48.808071",
+                "lon": "2.334528"
+              },
+              "label": "Gare de Laplace (Arcueil)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8775866"
+            },
+            "name": "Gare de Laplace (Arcueil)",
+            "id": "stop_area:OIF:SA:8775866"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100100057:57"
+            },
+            {
+              "type": "source",
+              "value": "100100057:57"
+            }
+          ],
+          "name": "Porte de Bagnolet - Louis Ganne - Laplace RER",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100100057:57"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59435"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59435"
+                }
+              ],
+              "name": "Porte de Bagnolet",
+              "links": [],
+              "coord": {
+                "lat": "48.864137",
+                "lon": "2.409245"
+              },
+              "label": "Porte de Bagnolet (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59435"
+            },
+            "name": "Porte de Bagnolet (Paris)",
+            "id": "stop_area:OIF:SA:59435"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100100057:57_R"
+            },
+            {
+              "type": "source",
+              "value": "100100057:57"
+            }
+          ],
+          "name": "Laplace RER. - Porte de Bagnolet - Louis Ganne",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100100057:57_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100100057:57OIF442",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF442"
+          },
+          {
+            "type": "external_code",
+            "value": "RTP"
+          },
+          {
+            "type": "source",
+            "value": "442"
+          },
+          {
+            "type": "source",
+            "value": "RTP"
+          }
+        ],
+        "name": "RATP",
+        "links": [],
+        "id": "network:RTP"
+      }
+    },
+    "id": "route:OIF:100100057:57_R"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Porte de Bagnolet (Paris)",
+    "code": "57",
+    "network": "RATP",
+    "links": [],
+    "color": "9c983a",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "57"
+  }
+}

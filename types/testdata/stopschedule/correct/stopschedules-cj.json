@@ -1,0 +1,428 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "34156"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:5675643"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:5675643"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot.",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845707",
+      "lon": "2.371398"
+    },
+    "label": "Gare de Lyon - Diderot. (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:5675643",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100987763:N32OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100987763:N32_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T004600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174605-1_310566-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174605-1_310566-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T014600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174607-1_310568-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174607-1_310568-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T024600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174608-1_310569-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174608-1_310569-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T034600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174609-1_310570-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174609-1_310570-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T044600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174610-1_310571-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174610-1_310571-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T054600",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:4066273503347087651",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174606-1_310567-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174606-1_310567-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8775820"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8775820"
+          }
+        ],
+        "name": "Gare de Boissy Saint-Léger",
+        "links": [],
+        "coord": {
+          "lat": "48.75354",
+          "lon": "2.505655"
+        },
+        "label": "Gare de Boissy Saint-Léger (Boissy-Saint-Léger)",
+        "administrative_regions": [
+          {
+            "insee": "94004",
+            "name": "Boissy-Saint-Léger",
+            "level": 8,
+            "coord": {
+              "lat": "48.749889",
+              "lon": "2.512104"
+            },
+            "label": "Boissy-Saint-Léger (94470)",
+            "id": "admin:fr:94004",
+            "zip_code": "94470"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8775820"
+      },
+      "name": "Gare de Boissy Saint-Léger (Boissy-Saint-Léger)",
+      "id": "stop_area:OIF:SA:8775820"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100987763:N32_R"
+      },
+      {
+        "type": "source",
+        "value": "100987763:N32"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot - Boissy-Saint-Léger RER",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N32",
+      "name": "Gare de Lyon - Boissy-St-Léger",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "000100",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "dfb03a",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01404"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987763:N32OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987763:N32"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01404"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987763:N32OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987763:N32"
+        }
+      ],
+      "closing_time": "054500",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987763:N32"
+            },
+            {
+              "type": "source",
+              "value": "100987763:N32"
+            }
+          ],
+          "name": "Boissy-Saint-Léger RER - Gare de Lyon",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987763:N32"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8775820"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8775820"
+                }
+              ],
+              "name": "Gare de Boissy Saint-Léger",
+              "links": [],
+              "coord": {
+                "lat": "48.75354",
+                "lon": "2.505655"
+              },
+              "label": "Gare de Boissy Saint-Léger (Boissy-Saint-Léger)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8775820"
+            },
+            "name": "Gare de Boissy Saint-Léger (Boissy-Saint-Léger)",
+            "id": "stop_area:OIF:SA:8775820"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987763:N32_R"
+            },
+            {
+              "type": "source",
+              "value": "100987763:N32"
+            }
+          ],
+          "name": "Gare de Lyon - Diderot - Boissy-Saint-Léger RER",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987763:N32_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100987763:N32OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:100987763:N32_R"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Boissy Saint-Léger (Boissy-Saint-Léger)",
+    "code": "N32",
+    "network": "Noctilien",
+    "links": [],
+    "color": "dfb03a",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N32"
+  }
+}

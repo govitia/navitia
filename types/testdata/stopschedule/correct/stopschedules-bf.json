@@ -1,0 +1,1450 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "39393"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:3716926"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:3716926"
+      }
+    ],
+    "name": "Gare de Lyon",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.843747",
+      "lon": "2.373644"
+    },
+    "label": "Gare de Lyon (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:3716926",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100100024:24OIF442"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100100024:24_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:RTP"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170507T171900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077004-1_278510-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077004-1_278510-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T173400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973761-1_263363-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973761-1_263363-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T174900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973762-1_263364-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973762-1_263364-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T180400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973763-1_263365-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973763-1_263365-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T181900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973764-1_263366-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973764-1_263366-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T183400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973765-1_263367-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973765-1_263367-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T184800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973766-1_263368-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973766-1_263368-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T190300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973767-1_263369-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973767-1_263369-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T191800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077005-1_278511-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077005-1_278511-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T193300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077006-1_278512-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077006-1_278512-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T194700",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077007-1_278513-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077007-1_278513-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T200200",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077008-1_278514-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077008-1_278514-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T202700",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077009-1_278515-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077009-1_278515-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T205100",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077010-1_278516-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077010-1_278516-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T212300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077031-1_278527-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077031-1_278527-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T215600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077032-1_278528-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077032-1_278528-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T222900",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077033-1_278529-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077033-1_278529-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T230300",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077034-1_278530-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077034-1_278530-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T233800",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077035-1_278531-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077035-1_278531-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T001200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077036-1_278532-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077036-1_278532-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T004600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077037-1_278533-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077037-1_278533-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T071900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076985-1_278491-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076985-1_278491-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T073900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076986-1_278492-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076986-1_278492-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T075900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076987-1_278493-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076987-1_278493-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T081400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973724-1_263343-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973724-1_263343-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T082900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973725-1_263344-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973725-1_263344-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T084500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973726-1_263345-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973726-1_263345-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T090000",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076988-1_278494-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076988-1_278494-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T091500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973728-1_263346-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973728-1_263346-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T093100",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973729-1_263347-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973729-1_263347-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T094600",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973730-1_263348-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973730-1_263348-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T100100",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973731-1_263349-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973731-1_263349-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T101700",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973732-1_263350-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973732-1_263350-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T103200",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973733-1_263351-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973733-1_263351-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T104700",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973734-1_263352-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973734-1_263352-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T110300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973735-1_263353-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973735-1_263353-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T111800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973736-1_263354-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973736-1_263354-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T113300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973737-1_263355-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973737-1_263355-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T114800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973738-1_263356-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973738-1_263356-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T120300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973739-1_263357-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973739-1_263357-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T121800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973740-1_263358-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973740-1_263358-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T123300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973741-1_263359-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973741-1_263359-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T124800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973742-1_263360-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973742-1_263360-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T130300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973743-1_263361-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973743-1_263361-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T131800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82973744-1_263362-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82973744-1_263362-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T133300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076989-1_278495-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076989-1_278495-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T134800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076990-1_278496-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076990-1_278496-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T140300",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076991-1_278497-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076991-1_278497-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T141800",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076992-1_278498-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076992-1_278498-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T143400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076993-1_278499-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076993-1_278499-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T144900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076994-1_278500-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076994-1_278500-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T150400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076995-1_278501-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076995-1_278501-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T151900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076996-1_278502-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076996-1_278502-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T153400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076997-1_278503-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076997-1_278503-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T154900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076998-1_278504-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076998-1_278504-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T160400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83076999-1_278505-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83076999-1_278505-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T161900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077000-1_278506-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077000-1_278506-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T163400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077001-1_278507-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077001-1_278507-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T164900",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077002-1_278508-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077002-1_278508-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T170400",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:11955775258317098670",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83077003-1_278509-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83077003-1_278509-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8754700"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8754700"
+          }
+        ],
+        "name": "Gare d'Austerlitz",
+        "links": [],
+        "coord": {
+          "lat": "48.843578",
+          "lon": "2.364651"
+        },
+        "label": "Gare d'Austerlitz (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8754700"
+      },
+      "name": "Gare d'Austerlitz (Paris)",
+      "id": "stop_area:OIF:SA:8754700"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100100024:24_R"
+      },
+      {
+        "type": "source",
+        "value": "100100024:24"
+      }
+    ],
+    "name": "École Vétérinaire de Maisons-Alfort - Métro - Gare d'Austerlitz",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "24",
+      "name": "Gare St-Lazare - Maubert-Mutualité - Gare d'Austerlitz - Ecole Vétérinaire de Maisons-Alfort",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "054500",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "bb4b9c",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01075"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100100024:24OIF442"
+        },
+        {
+          "type": "source",
+          "value": "100100024:24"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01075"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100100024:24OIF442"
+        },
+        {
+          "type": "source",
+          "value": "100100024:24"
+        }
+      ],
+      "closing_time": "010500",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59565"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59565"
+                }
+              ],
+              "name": "École Vétérinaire de Maisons Alfort",
+              "links": [],
+              "coord": {
+                "lat": "48.814605",
+                "lon": "2.421842"
+              },
+              "label": "École Vétérinaire de Maisons Alfort (Maisons-Alfort)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59565"
+            },
+            "name": "École Vétérinaire de Maisons Alfort (Maisons-Alfort)",
+            "id": "stop_area:OIF:SA:59565"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100100024:24"
+            },
+            {
+              "type": "source",
+              "value": "100100024:24"
+            }
+          ],
+          "name": "Gare d'Austerlitz - École Vétérinaire de Maisons-Alfort",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100100024:24"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8754700"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8754700"
+                }
+              ],
+              "name": "Gare d'Austerlitz",
+              "links": [],
+              "coord": {
+                "lat": "48.843578",
+                "lon": "2.364651"
+              },
+              "label": "Gare d'Austerlitz (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8754700"
+            },
+            "name": "Gare d'Austerlitz (Paris)",
+            "id": "stop_area:OIF:SA:8754700"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100100024:24_R"
+            },
+            {
+              "type": "source",
+              "value": "100100024:24"
+            }
+          ],
+          "name": "École Vétérinaire de Maisons-Alfort - Métro - Gare d'Austerlitz",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100100024:24_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100100024:24OIF442",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF442"
+          },
+          {
+            "type": "external_code",
+            "value": "RTP"
+          },
+          {
+            "type": "source",
+            "value": "442"
+          },
+          {
+            "type": "source",
+            "value": "RTP"
+          }
+        ],
+        "name": "RATP",
+        "links": [],
+        "id": "network:RTP"
+      }
+    },
+    "id": "route:OIF:100100024:24_R"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare d'Austerlitz (Paris)",
+    "code": "24",
+    "network": "RATP",
+    "links": [],
+    "color": "bb4b9c",
+    "commercial_mode": "Bus",
+    "text_color": "FFFFFF",
+    "label": "24"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "36281"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:3673587"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:3673587"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845985",
+      "lon": "2.373999"
+    },
+    "label": "Gare de Lyon - Diderot (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:3673587",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100987780:N11OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100987780:N11"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T004700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171672-1_309086-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171672-1_309086-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T005700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171674-1_309088-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171674-1_309088-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T010700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171676-1_309090-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171676-1_309090-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T011700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171678-1_309092-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171678-1_309092-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T012700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171680-1_309094-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171680-1_309094-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T013700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171682-1_309096-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171682-1_309096-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T014700",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83171684-1_309098-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83171684-1_309098-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T015600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174960-1_310921-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174960-1_310921-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T020600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174961-1_310922-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174961-1_310922-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T021600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174962-1_310923-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174962-1_310923-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T022600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174963-1_310924-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174963-1_310924-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T023600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174964-1_310925-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174964-1_310925-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T024600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174965-1_310926-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174965-1_310926-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T025600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174966-1_310927-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174966-1_310927-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T030600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174967-1_310928-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174967-1_310928-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T031600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174968-1_310929-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174968-1_310929-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T032600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174969-1_310930-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174969-1_310930-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T033600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174970-1_310931-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174970-1_310931-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T034600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174971-1_310932-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174971-1_310932-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T035600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174972-1_310933-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174972-1_310933-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T040600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174973-1_310934-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174973-1_310934-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T041600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174974-1_310935-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174974-1_310935-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T042600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174975-1_310936-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174975-1_310936-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T043600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174976-1_310937-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174976-1_310937-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T044600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174977-1_310938-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174977-1_310938-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T045600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174978-1_310939-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174978-1_310939-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T050600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174979-1_310940-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174979-1_310940-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T051600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174980-1_310941-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174980-1_310941-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T052600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174981-1_310942-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174981-1_310942-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T053600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174982-1_310943-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174982-1_310943-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59661"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59661"
+          }
+        ],
+        "name": "Pont de Neuilly",
+        "links": [],
+        "coord": {
+          "lat": "48.885444",
+          "lon": "2.25981"
+        },
+        "label": "Pont de Neuilly (Neuilly-sur-Seine)",
+        "administrative_regions": [
+          {
+            "insee": "92051",
+            "name": "Neuilly-sur-Seine",
+            "level": 8,
+            "coord": {
+              "lat": "48.884682",
+              "lon": "2.269565"
+            },
+            "label": "Neuilly-sur-Seine (92200)",
+            "id": "admin:fr:92051",
+            "zip_code": "92200"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59661"
+      },
+      "name": "Pont de Neuilly (Neuilly-sur-Seine)",
+      "id": "stop_area:OIF:SA:59661"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100987780:N11"
+      },
+      {
+        "type": "source",
+        "value": "100987780:N11"
+      }
+    ],
+    "name": "Château de Vincennes - Pont de Neuilly - Métro",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N11",
+      "name": "Pont de Neuilly - Château de Vincennes",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "003000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "f68f4b",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01415"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987780:N11OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987780:N11"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01415"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987780:N11OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987780:N11"
+        }
+      ],
+      "closing_time": "052000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59661"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59661"
+                }
+              ],
+              "name": "Pont de Neuilly",
+              "links": [],
+              "coord": {
+                "lat": "48.885444",
+                "lon": "2.25981"
+              },
+              "label": "Pont de Neuilly (Neuilly-sur-Seine)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59661"
+            },
+            "name": "Pont de Neuilly (Neuilly-sur-Seine)",
+            "id": "stop_area:OIF:SA:59661"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987780:N11"
+            },
+            {
+              "type": "source",
+              "value": "100987780:N11"
+            }
+          ],
+          "name": "Château de Vincennes - Pont de Neuilly - Métro",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987780:N11"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59595"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59595"
+                }
+              ],
+              "name": "Château de Vincennes",
+              "links": [],
+              "coord": {
+                "lat": "48.844186",
+                "lon": "2.441157"
+              },
+              "label": "Château de Vincennes (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59595"
+            },
+            "name": "Château de Vincennes (Paris)",
+            "id": "stop_area:OIF:SA:59595"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987780:N11_R"
+            },
+            {
+              "type": "source",
+              "value": "100987780:N11"
+            }
+          ],
+          "name": "Pont de Neuilly - Métro - Château de Vincennes",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987780:N11_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100987780:N11OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:100987780:N11"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Pont de Neuilly (Neuilly-sur-Seine)",
+    "code": "N11",
+    "network": "Noctilien",
+    "links": [],
+    "color": "f68f4b",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N11"
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41516"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8758820:800:N131"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8758820:800:N131"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845401",
+      "lon": "2.371929"
+    },
+    "label": "Gare de Lyon Noctilien (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8758820:800:N131",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:N131OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:N131"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T013500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83204057-1_324335-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83204057-1_324335-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T023500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83204058-1_324336-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83204058-1_324336-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T033500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83204055-1_324333-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83204055-1_324333-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T043500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83204056-1_324334-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83204056-1_324334-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8754519"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8754519"
+          }
+        ],
+        "name": "Gare de Brétigny",
+        "links": [],
+        "coord": {
+          "lat": "48.606914",
+          "lon": "2.301907"
+        },
+        "label": "Gare de Brétigny (Brétigny-sur-Orge)",
+        "administrative_regions": [
+          {
+            "insee": "91103",
+            "name": "Brétigny-sur-Orge",
+            "level": 8,
+            "coord": {
+              "lat": "48.607975",
+              "lon": "2.305175"
+            },
+            "label": "Brétigny-sur-Orge (91220)",
+            "id": "admin:fr:91103",
+            "zip_code": "91220"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8754519"
+      },
+      "name": "Gare de Brétigny (Brétigny-sur-Orge)",
+      "id": "stop_area:OIF:SA:8754519"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:N131"
+      },
+      {
+        "type": "source",
+        "value": "800:N131"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien - Brétigny Noctilien",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N131",
+      "name": "Gare de Lyon - Brétigny RER",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "013500",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "ffe300",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01636"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N131OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N131"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01636"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N131OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N131"
+        }
+      ],
+      "closing_time": "043500",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8754519"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8754519"
+                }
+              ],
+              "name": "Gare de Brétigny",
+              "links": [],
+              "coord": {
+                "lat": "48.606914",
+                "lon": "2.301907"
+              },
+              "label": "Gare de Brétigny (Brétigny-sur-Orge)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8754519"
+            },
+            "name": "Gare de Brétigny (Brétigny-sur-Orge)",
+            "id": "stop_area:OIF:SA:8754519"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N131"
+            },
+            {
+              "type": "source",
+              "value": "800:N131"
+            }
+          ],
+          "name": "Gare de Lyon Noctilien - Brétigny Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N131"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N131_R"
+            },
+            {
+              "type": "source",
+              "value": "800:N131"
+            }
+          ],
+          "name": "Brétigny Noctilien - Gare de Lyon Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N131_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:800:N131OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:800:N131"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Brétigny (Brétigny-sur-Orge)",
+    "code": "N131",
+    "network": "Noctilien",
+    "links": [],
+    "color": "ffe300",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N131"
+  }
+}

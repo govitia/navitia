@@ -66,3 +66,9 @@ type Code struct {
 	Type  string
 	Value string
 }
+
+// A Note holds information about a response and its associated data.
+type Note struct {
+	ID    ID     `json:"id"`
+	Value string `json:"value"`
+}
