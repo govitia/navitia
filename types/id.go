@@ -28,23 +28,25 @@ var typeNames = map[string]bool{
 	"company":         true,
 	"admin":           true,
 	"stop_point":      true,
+	"poi":             true,
+	"poi_type":        true,
 }
 
 // Type gets the type of object this ID refers to.
 //
-// Possible types: network, line, route, stop_area, commercial_mode, physical_mode, company, admin, stop_point.
+// Possible types: network, line, route, stop_area, commercial_mode, physical_mode, company, admin, stop_point, poi & poi_type.
 //
 // This is just guessing, if no type is found, type returns an empty string.
-func (id ID) Type() string {
+func (id ID) Type() (string, error) {
 	splitted := strings.Split(string(id), ":")
 	if len(splitted) == 0 {
-		return ""
+		return "", errors.Errorf("ID.Type: couldn't retrieve ressource type from ID (no dividing \":\")")
 	}
 
 	possible := splitted[0]
 	if typeNames[possible] {
-		return possible
+		return possible, nil
 	}
 
-	return ""
+	return "", errors.Errorf("ID.Type: couldn't retrieve ressource type from ID (matching from \"%s\" failed)", possible)
 }

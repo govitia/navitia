@@ -86,7 +86,7 @@ func (s *Session) PlacesNearby(ctx context.Context, coords types.Coordinates, re
 // PlacesNearby searches for places near a point in a specific coverage.
 func (scope *Scope) PlacesNearby(ctx context.Context, coords types.Coordinates, req PlacesNearbyRequest) (*PlacesNearbyResults, error) {
 	// Build the url
-	url := scope.baseURL + "/" + string(coords.ID()) + "/" + placesNearbyEndpoint
+	url := scope.baseURL + "/coord/" + string(coords.ID()) + "/" + placesNearbyEndpoint
 
 	// Call & return
 	return scope.session.placesNearby(ctx, url, req)
