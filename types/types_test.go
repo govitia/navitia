@@ -52,4 +52,6 @@ var typesList = []string{
 	"line",
 	"network",
 	"company",
+	"stopschedule",
+	"disruption",
 }
