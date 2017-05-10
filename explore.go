@@ -213,3 +213,13 @@ func (scope *Scope) Explore(ctx context.Context, selector string, opts ExploreRe
 	// Call
 	return scope.session.explore(ctx, url, opts)
 }
+
+// ExploreResource searches in all elements of the given selector (lines, networks, etc.) linked to a resource inside a scope, returning a list of ptObjects
+// of the specific type.
+func (scope *Scope) ExploreResource(ctx context.Context, resId types.ID, selector string, opts ExploreRequest) (*ExploreResults, error) {
+	// Create the URL
+	url := scope.baseURL + "/" + resId.Type() + "s/" + string(resId) + "/" + selector
+
+	// Call
+	return scope.session.explore(ctx, url, opts)
+}
