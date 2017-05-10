@@ -6,6 +6,7 @@ import (
 	"testing"
 
 	"github.com/aabizri/navitia/testutils"
+	"github.com/aabizri/navitia/types"
 )
 
 func Test_Explore_Online(t *testing.T) {
@@ -27,6 +28,30 @@ func Test_Explore_Online(t *testing.T) {
 		t.Fatalf("error in Explore: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 	}
 
+}
+
+func Test_ExploreResource_Online(t *testing.T) {
+	if *apiKey == "" {
+		t.Skip(skipNoKey)
+	}
+
+	params := ExploreRequest{
+		Count: 1000, // We want the biggest count to cause the biggest stress
+		Depth: 3,    // Same reasoning
+	}
+	scope := testSession.Scope("fr-idf")
+
+	// Test this ID only
+	var resID types.ID = "line:OIF:066066020:AOIF364"
+
+	// Create the root context
+	ctx := context.Background()
+
+	// Call
+	res, err := scope.ExploreResource(ctx, resID, RoutesSelector, params)
+	if err != nil {
+		t.Fatalf("error in ExploreResource: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
+	}
 }
 
 /*

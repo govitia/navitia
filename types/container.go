@@ -20,6 +20,10 @@ const (
 	EmbeddedNetwork               = "network"               // This is a PT Object
 	EmbeddedCommercialMode        = "commercial_mode"       // This is a PT Object
 	EmbeddedTrip                  = "trip"                  // This is a PT Object
+	EmbeddedPhysicalMode          = "physical_mode"
+	EmbeddedCompany               = "company"
+	EmbeddedDisruption            = "disruption"
+	EmbeddedVehicleJourney        = "vehicle_journey"
 )
 
 // EmbeddedTypes lists all the possible embedded types you can find in a Container
