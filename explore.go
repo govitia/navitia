@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/aabizri/navitia/types"
 	"github.com/aabizri/navitia/internal/unmarshal"
+	"github.com/aabizri/navitia/types"
 	"github.com/pkg/errors"
 )
 
@@ -205,10 +205,45 @@ const (
 	DisruptionsSelector     = "disruptions"
 )
 
+// resourceTypeToSelector allows us to convert from a resource type to a selector
+var resourceTypeToSelector = map[string]string{
+	types.EmbeddedNetwork:        NetworksSelector,
+	types.EmbeddedLine:           LinesSelector,
+	types.EmbeddedRoute:          RoutesSelector,
+	types.EmbeddedStopPoint:      StopPointsSelector,
+	types.EmbeddedStopArea:       StopAreasSelector,
+	types.EmbeddedCommercialMode: CommercialModesSelector,
+	types.EmbeddedPhysicalMode:   PhysicalModesSelector,
+	types.EmbeddedCompany:        CompaniesSelector,
+	types.EmbeddedVehicleJourney: VehicleJourneysSelector,
+	types.EmbeddedDisruption:     DisruptionsSelector,
+}
+
 // Explore searches in all elements of the given selector (lines, networks, etc.) within a scope, returning a list of ptObjects of the specific type.
 func (scope *Scope) Explore(ctx context.Context, selector string, opts ExploreRequest) (*ExploreResults, error) {
 	// Create the URL
 	url := scope.baseURL + "/" + selector
+
+	// Call
+	return scope.session.explore(ctx, url, opts)
+}
+
+// ExploreResource searches in all elements of the given selector (lines, networks, etc.) linked to a resource inside a scope, returning a list of ptObjects
+// of the specific type.
+func (scope *Scope) ExploreResource(ctx context.Context, resID types.ID, selector string, opts ExploreRequest) (*ExploreResults, error) {
+	// Extract the type
+	resType, err := resID.Type()
+	if err != nil {
+		return nil, errors.Wrapf(err, "ExploreResource: couldn't extract type from resource ID \"%s\"", resID)
+	}
+	// Get the selector equivalent
+	typeSelector, ok := resourceTypeToSelector[resType]
+	if !ok {
+		return nil, errors.Errorf("ExploreResource: couldn't find the typeSelector equivalent to the resource type identified (\"%s\")", resType)
+	}
+
+	// Create the URL
+	url := scope.baseURL + "/" + typeSelector + "/" + string(resID) + "/" + selector
 
 	// Call
 	return scope.session.explore(ctx, url, opts)
