@@ -237,13 +237,13 @@ func (scope *Scope) ExploreResource(ctx context.Context, resID types.ID, selecto
 		return nil, errors.Wrapf(err, "ExploreResource: couldn't extract type from resource ID \"%s\"", resID)
 	}
 	// Get the selector equivalent
-	selector, ok := resourceTypeToSelector[resType]
+	typeSelector, ok := resourceTypeToSelector[resType]
 	if !ok {
-		return nil, errors.Errorf("ExploreResource: couldn't find the selector equivalent to the resource type identified (\"%s\")", resType)
+		return nil, errors.Errorf("ExploreResource: couldn't find the typeSelector equivalent to the resource type identified (\"%s\")", resType)
 	}
 
 	// Create the URL
-	url := scope.baseURL + "/" + selector + "/" + string(resID) + "/" + selector
+	url := scope.baseURL + "/" + typeSelector + "/" + string(resID) + "/" + selector
 
 	// Call
 	return scope.session.explore(ctx, url, opts)
