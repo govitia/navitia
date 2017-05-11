@@ -12,6 +12,7 @@ import (
 	"github.com/pkg/errors"
 )
 
+// StopSchedulesResults holds the results from a StopSchedules request
 type StopSchedulesResults struct {
 	StopSchedules []types.StopSchedule `json:"stop_schedules"`
 
@@ -24,6 +25,7 @@ type StopSchedulesResults struct {
 	Logging
 }
 
+// StopSchedulesRequest are the optional parameters for a StopSchedules request
 type StopSchedulesRequest struct {
 	// The date/time from which the results will be returned
 	// Default value: Now
