@@ -1,0 +1,396 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41516"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8758820:800:N133"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8758820:800:N133"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845401",
+      "lon": "2.371929"
+    },
+    "label": "Gare de Lyon Noctilien (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8758820:800:N133",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:N133OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:N133"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T010000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83202898-1_323737-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83202898-1_323737-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T020000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83202899-1_323738-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83202899-1_323738-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T030000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83202896-1_323735-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83202896-1_323735-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T040000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83202897-1_323736-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83202897-1_323736-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8754524"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8754524"
+          }
+        ],
+        "name": "Gare de Juvisy",
+        "links": [],
+        "coord": {
+          "lat": "48.689525",
+          "lon": "2.383472"
+        },
+        "label": "Gare de Juvisy (Juvisy-sur-Orge)",
+        "administrative_regions": [
+          {
+            "insee": "91326",
+            "name": "Juvisy-sur-Orge",
+            "level": 8,
+            "coord": {
+              "lat": "48.690407",
+              "lon": "2.373809"
+            },
+            "label": "Juvisy-sur-Orge (91260)",
+            "id": "admin:fr:91326",
+            "zip_code": "91260"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8754524"
+      },
+      "name": "Gare de Juvisy (Juvisy-sur-Orge)",
+      "id": "stop_area:OIF:SA:8754524"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:N133"
+      },
+      {
+        "type": "source",
+        "value": "800:N133"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien - Juvisy Noctilien",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N133",
+      "name": "Gare de Lyon - Juvisy",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "012000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "ffe300",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01645"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N133OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N133"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01645"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N133OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N133"
+        }
+      ],
+      "closing_time": "042000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8754524"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8754524"
+                }
+              ],
+              "name": "Gare de Juvisy",
+              "links": [],
+              "coord": {
+                "lat": "48.689525",
+                "lon": "2.383472"
+              },
+              "label": "Gare de Juvisy (Juvisy-sur-Orge)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8754524"
+            },
+            "name": "Gare de Juvisy (Juvisy-sur-Orge)",
+            "id": "stop_area:OIF:SA:8754524"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N133"
+            },
+            {
+              "type": "source",
+              "value": "800:N133"
+            }
+          ],
+          "name": "Gare de Lyon Noctilien - Juvisy Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N133"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N133_R"
+            },
+            {
+              "type": "source",
+              "value": "800:N133"
+            }
+          ],
+          "name": "Juvisy Noctilien - Gare de Lyon Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N133_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:800:N133OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:800:N133"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Juvisy (Juvisy-sur-Orge)",
+    "code": "N133",
+    "network": "Noctilien",
+    "links": [],
+    "color": "ffe300",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N133"
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41396"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8768600:800:TER"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8768600:800:TER"
+      }
+    ],
+    "name": "Gare de Lyon",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Train",
+        "id": "physical_mode:Train"
+      }
+    ],
+    "coord": {
+      "lat": "48.844266",
+      "lon": "2.373755"
+    },
+    "label": "Gare de Lyon (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Train",
+        "id": "commercial_mode:train"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8768600:800:TER",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:TER:TEROIF743"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:TER:TER"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:train"
+    },
+    {
+      "type": "network",
+      "id": "network:TER"
+    }
+  ],
+  "date_times": [],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8727100"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8727100"
+          }
+        ],
+        "name": "Gare du Nord",
+        "links": [],
+        "coord": {
+          "lat": "48.880315",
+          "lon": "2.356595"
+        },
+        "label": "Gare du Nord (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8727100"
+      },
+      "name": "Gare du Nord (Paris)",
+      "id": "stop_area:OIF:SA:8727100"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:TER:TER"
+      },
+      {
+        "type": "source",
+        "value": "800:TER:TER"
+      }
+    ],
+    "name": "Gare du Nord Grandes Lignes - Gare du Nord Grandes Lignes",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "TER",
+      "name": "TER",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Train",
+          "id": "physical_mode:Train"
+        }
+      ],
+      "opening_time": "040100",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "000000",
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF800:TER:TEROIF743"
+        },
+        {
+          "type": "source",
+          "value": "800:TER:TER"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:TER:TEROIF743"
+        },
+        {
+          "type": "source",
+          "value": "800:TER:TER"
+        }
+      ],
+      "closing_time": "002000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8727100"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8727100"
+                }
+              ],
+              "name": "Gare du Nord",
+              "links": [],
+              "coord": {
+                "lat": "48.880315",
+                "lon": "2.356595"
+              },
+              "label": "Gare du Nord (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8727100"
+            },
+            "name": "Gare du Nord (Paris)",
+            "id": "stop_area:OIF:SA:8727100"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:TER:TER"
+            },
+            {
+              "type": "source",
+              "value": "800:TER:TER"
+            }
+          ],
+          "name": "Gare du Nord Grandes Lignes - Gare du Nord Grandes Lignes",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:TER:TER"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Train",
+        "id": "commercial_mode:train"
+      },
+      "id": "line:OIF:800:TER:TEROIF743",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF743"
+          },
+          {
+            "type": "external_code",
+            "value": "TER"
+          },
+          {
+            "type": "source",
+            "value": "743"
+          },
+          {
+            "type": "source",
+            "value": "TER"
+          }
+        ],
+        "name": "TER",
+        "links": [],
+        "id": "network:TER"
+      }
+    },
+    "id": "route:OIF:800:TER:TER"
+  },
+  "additional_informations": "no_departure_this_day",
+  "display_informations": {
+    "direction": "Gare du Nord (Paris)",
+    "code": "TER",
+    "network": "TER",
+    "links": [],
+    "color": "000000",
+    "commercial_mode": "Train",
+    "text_color": "FFFFFF",
+    "label": "TER"
+  }
+}

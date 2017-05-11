@@ -1,0 +1,570 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "40031"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:5150763"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:5150763"
+      }
+    ],
+    "name": "Gare de Lyon - Van Gogh",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845176",
+      "lon": "2.37167"
+    },
+    "label": "Gare de Lyon - Van Gogh (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:5150763",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100987759:N31OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100987759:N31"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T003000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174536-1_310497-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174536-1_310497-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T005500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:9439782441847381165",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83169896-1_308554-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83169896-1_308554-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T012500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174537-1_310498-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174537-1_310498-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T015500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:9439782441847381165",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83169902-1_308559-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83169902-1_308559-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T022500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174538-1_310499-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174538-1_310499-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T025500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:9439782441847381165",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83169904-1_308560-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83169904-1_308560-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T032500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174539-1_310500-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174539-1_310500-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T035500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:9439782441847381165",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83169906-1_308561-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83169906-1_308561-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T042500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174540-1_310501-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174540-1_310501-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T045500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:9439782441847381165",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174541-1_310502-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174541-1_310502-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T052500",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:9439782441847381165",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174535-1_310496-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174535-1_310496-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T054000",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:1142884285299343121",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83169901-1_308558-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83169901-1_308558-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59675"
+          },
+          {
+            "type": "external_code",
+            "value": "OIF59841"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59675"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59841"
+          }
+        ],
+        "name": "Aéroport Orly Sud",
+        "links": [],
+        "coord": {
+          "lat": "48.728923",
+          "lon": "2.369364"
+        },
+        "label": "Aéroport Orly Sud (Orly) (Paray-Vieille-Poste)",
+        "administrative_regions": [
+          {
+            "insee": "94054",
+            "name": "Orly",
+            "level": 8,
+            "coord": {
+              "lat": "48.745319",
+              "lon": "2.395143"
+            },
+            "label": "Orly (94310)",
+            "id": "admin:fr:94054",
+            "zip_code": "94310"
+          },
+          {
+            "insee": "91479",
+            "name": "Paray-Vieille-Poste",
+            "level": 8,
+            "coord": {
+              "lat": "48.712608",
+              "lon": "2.363783"
+            },
+            "label": "Paray-Vieille-Poste (91550)",
+            "id": "admin:fr:91479",
+            "zip_code": "91550"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59675"
+      },
+      "name": "Aéroport Orly Sud (Orly) (Paray-Vieille-Poste)",
+      "id": "stop_area:OIF:SA:59675"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100987759:N31"
+      },
+      {
+        "type": "source",
+        "value": "100987759:N31"
+      }
+    ],
+    "name": "Gare de Lyon - Van Gogh - Aéroport d'Orly-Terminal Sud",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N31",
+      "name": "Gare de Lyon - Juvisy",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "234000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "f59cb3",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01400"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987759:N31OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987759:N31"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01400"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987759:N31OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987759:N31"
+        }
+      ],
+      "closing_time": "054000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59675"
+                },
+                {
+                  "type": "external_code",
+                  "value": "OIF59841"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59675"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59841"
+                }
+              ],
+              "name": "Aéroport Orly Sud",
+              "links": [],
+              "coord": {
+                "lat": "48.728923",
+                "lon": "2.369364"
+              },
+              "label": "Aéroport Orly Sud (Orly) (Paray-Vieille-Poste)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59675"
+            },
+            "name": "Aéroport Orly Sud (Orly) (Paray-Vieille-Poste)",
+            "id": "stop_area:OIF:SA:59675"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987759:N31"
+            },
+            {
+              "type": "source",
+              "value": "100987759:N31"
+            }
+          ],
+          "name": "Gare de Lyon - Van Gogh - Aéroport d'Orly-Terminal Sud",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987759:N31"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987759:N31_R"
+            },
+            {
+              "type": "source",
+              "value": "100987759:N31"
+            }
+          ],
+          "name": "Aéroport d'Orly-Terminal Sud - Gare de Lyon",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987759:N31_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100987759:N31OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:100987759:N31"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Aéroport Orly Sud (Paray-Vieille-Poste)",
+    "code": "N31",
+    "network": "Noctilien",
+    "links": [],
+    "color": "f59cb3",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N31"
+  }
+}

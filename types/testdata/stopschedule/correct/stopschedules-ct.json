@@ -1,0 +1,343 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41516"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8758820:800:N134"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8758820:800:N134"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845401",
+      "lon": "2.371929"
+    },
+    "label": "Gare de Lyon Noctilien (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8758820:800:N134",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:N134OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:N134_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8768600"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8768600"
+          }
+        ],
+        "name": "Gare de Lyon",
+        "links": [],
+        "coord": {
+          "lat": "48.844825",
+          "lon": "2.373039"
+        },
+        "label": "Gare de Lyon (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8768600"
+      },
+      "name": "Gare de Lyon (Paris)",
+      "id": "stop_area:OIF:SA:8768600"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:N134_R"
+      },
+      {
+        "type": "source",
+        "value": "800:N134"
+      }
+    ],
+    "name": "Combs la Ville Quincy Noctilien - Gare de Lyon Noctilien",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N134",
+      "name": "Gare de Lyon - Combs la Ville",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "013000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "3ca342",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01646"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N134OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N134"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01646"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N134OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N134"
+        }
+      ],
+      "closing_time": "033000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768214"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768214"
+                }
+              ],
+              "name": "Gare de Combs la Ville Quincy",
+              "links": [],
+              "coord": {
+                "lat": "48.667592",
+                "lon": "2.548057"
+              },
+              "label": "Gare de Combs la Ville Quincy (Combs-la-Ville)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768214"
+            },
+            "name": "Gare de Combs la Ville Quincy (Combs-la-Ville)",
+            "id": "stop_area:OIF:SA:8768214"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N134"
+            },
+            {
+              "type": "source",
+              "value": "800:N134"
+            }
+          ],
+          "name": "Gare de Lyon Noctilien - Combs la Ville Quincy Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N134"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N134_R"
+            },
+            {
+              "type": "source",
+              "value": "800:N134"
+            }
+          ],
+          "name": "Combs la Ville Quincy Noctilien - Gare de Lyon Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N134_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:800:N134OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:800:N134_R"
+  },
+  "additional_informations": "terminus",
+  "display_informations": {
+    "direction": "Gare de Lyon (Paris)",
+    "code": "N134",
+    "network": "Noctilien",
+    "links": [],
+    "color": "3ca342",
+    "commercial_mode": "Bus",
+    "text_color": "FFFFFF",
+    "label": "N134"
+  }
+}

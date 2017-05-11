@@ -1,0 +1,396 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41516"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8758820:800:N130"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8758820:800:N130"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845401",
+      "lon": "2.371929"
+    },
+    "label": "Gare de Lyon Noctilien (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8758820:800:N130",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:N130OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:N130"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T011000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201462-1_323148-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201462-1_323148-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T021000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201463-1_323149-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201463-1_323149-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T031000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201460-1_323146-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201460-1_323146-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T043000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201461-1_323147-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201461-1_323147-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8775499"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8775499"
+          }
+        ],
+        "name": "Gare de Marne la Vallée Chessy",
+        "links": [],
+        "coord": {
+          "lat": "48.871094",
+          "lon": "2.78373"
+        },
+        "label": "Gare de Marne la Vallée Chessy (Chessy)",
+        "administrative_regions": [
+          {
+            "insee": "77111",
+            "name": "Chessy",
+            "level": 8,
+            "coord": {
+              "lat": "48.880978",
+              "lon": "2.767047"
+            },
+            "label": "Chessy (77700)",
+            "id": "admin:fr:77111",
+            "zip_code": "77700"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8775499"
+      },
+      "name": "Gare de Marne la Vallée Chessy (Chessy)",
+      "id": "stop_area:OIF:SA:8775499"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:N130"
+      },
+      {
+        "type": "source",
+        "value": "800:N130"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien - Marne la Vallée Chessy Noctilien",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N130",
+      "name": "Gare de Lyon - Marne-la-Vallée - Chessy RER",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "003000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "eb282f",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01634"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N130OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N130"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01634"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N130OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N130"
+        }
+      ],
+      "closing_time": "043000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8775499"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8775499"
+                }
+              ],
+              "name": "Gare de Marne la Vallée Chessy",
+              "links": [],
+              "coord": {
+                "lat": "48.871094",
+                "lon": "2.78373"
+              },
+              "label": "Gare de Marne la Vallée Chessy (Chessy)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8775499"
+            },
+            "name": "Gare de Marne la Vallée Chessy (Chessy)",
+            "id": "stop_area:OIF:SA:8775499"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N130"
+            },
+            {
+              "type": "source",
+              "value": "800:N130"
+            }
+          ],
+          "name": "Gare de Lyon Noctilien - Marne la Vallée Chessy Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N130"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N130_R"
+            },
+            {
+              "type": "source",
+              "value": "800:N130"
+            }
+          ],
+          "name": "Marne la Vallée Chessy Noctilien - Gare de Lyon Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N130_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:800:N130OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:800:N130"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Marne la Vallée Chessy (Chessy)",
+    "code": "N130",
+    "network": "Noctilien",
+    "links": [],
+    "color": "eb282f",
+    "commercial_mode": "Bus",
+    "text_color": "FFFFFF",
+    "label": "N130"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "22801"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:3747837"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:3747837"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845634",
+      "lon": "2.372869"
+    },
+    "label": "Gare de Lyon - Diderot (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:3747837",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100987781:N16OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100987781:N16_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T011000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175036-1_310997-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175036-1_310997-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T012000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175037-1_310998-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175037-1_310998-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T013000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175038-1_310999-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175038-1_310999-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T014000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175039-1_311000-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175039-1_311000-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T015000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175040-1_311001-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175040-1_311001-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T020000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175041-1_311002-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175041-1_311002-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T021000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175042-1_311003-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175042-1_311003-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T022100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175043-1_311004-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175043-1_311004-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T023100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175044-1_311005-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175044-1_311005-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T024200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175045-1_311006-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175045-1_311006-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T025200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175046-1_311007-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175046-1_311007-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T030200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175047-1_311008-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175047-1_311008-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T031200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175048-1_311009-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175048-1_311009-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T032200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175049-1_311010-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175049-1_311010-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T033200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175050-1_311011-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175050-1_311011-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T034200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175051-1_311012-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175051-1_311012-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T035200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175052-1_311013-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175052-1_311013-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T040200",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175053-1_311014-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175053-1_311014-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T041100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175054-1_311015-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175054-1_311015-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T042100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175055-1_311016-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175055-1_311016-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T043100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175056-1_311017-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175056-1_311017-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T044100",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175057-1_311018-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175057-1_311018-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T045000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175058-1_311019-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175058-1_311019-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T050000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175059-1_311020-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175059-1_311020-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T051000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175060-1_311021-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175060-1_311021-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T052000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175061-1_311022-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175061-1_311022-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T053000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175062-1_311023-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175062-1_311023-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T054000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175063-1_311024-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175063-1_311024-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T055000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175064-1_311025-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175064-1_311025-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T060000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83175065-1_311026-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83175065-1_311026-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF59507"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:59507"
+          }
+        ],
+        "name": "Mairie de Montreuil",
+        "links": [],
+        "coord": {
+          "lat": "48.862245",
+          "lon": "2.441619"
+        },
+        "label": "Mairie de Montreuil (Montreuil)",
+        "administrative_regions": [
+          {
+            "insee": "93048",
+            "name": "Montreuil",
+            "level": 8,
+            "coord": {
+              "lat": "48.862335",
+              "lon": "2.441218"
+            },
+            "label": "Montreuil (93100)",
+            "id": "admin:fr:93048",
+            "zip_code": "93100"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:59507"
+      },
+      "name": "Mairie de Montreuil (Montreuil)",
+      "id": "stop_area:OIF:SA:59507"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100987781:N16_R"
+      },
+      {
+        "type": "source",
+        "value": "100987781:N16"
+      }
+    ],
+    "name": "Pont de Levallois - Métro - Mairie de Montreuil",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N16",
+      "name": "Mairie de Montreuil - Pont de Levallois",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "003000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "cec92a",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01416"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987781:N16OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987781:N16"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01416"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987781:N16OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987781:N16"
+        }
+      ],
+      "closing_time": "054000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59589"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59589"
+                }
+              ],
+              "name": "Pont de Levallois - Bécon",
+              "links": [],
+              "coord": {
+                "lat": "48.897058",
+                "lon": "2.280495"
+              },
+              "label": "Pont de Levallois - Bécon (Levallois-Perret)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59589"
+            },
+            "name": "Pont de Levallois - Bécon (Levallois-Perret)",
+            "id": "stop_area:OIF:SA:59589"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987781:N16"
+            },
+            {
+              "type": "source",
+              "value": "100987781:N16"
+            }
+          ],
+          "name": "Mairie de Montreuil - Rouget de Lisle - Pont de Levallois - Métro",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987781:N16"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF59507"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:59507"
+                }
+              ],
+              "name": "Mairie de Montreuil",
+              "links": [],
+              "coord": {
+                "lat": "48.862245",
+                "lon": "2.441619"
+              },
+              "label": "Mairie de Montreuil (Montreuil)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:59507"
+            },
+            "name": "Mairie de Montreuil (Montreuil)",
+            "id": "stop_area:OIF:SA:59507"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987781:N16_R"
+            },
+            {
+              "type": "source",
+              "value": "100987781:N16"
+            }
+          ],
+          "name": "Pont de Levallois - Métro - Mairie de Montreuil",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987781:N16_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100987781:N16OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:100987781:N16_R"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Mairie de Montreuil (Montreuil)",
+    "code": "N16",
+    "network": "Noctilien",
+    "links": [],
+    "color": "cec92a",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N16"
+  }
+}

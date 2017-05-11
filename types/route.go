@@ -22,3 +22,24 @@ type Route struct {
 	// Note: As direction is a Place, it can be a POI in some data
 	Direction Container
 }
+
+// A RouteSchedule is a schedule of Routes, sort of like a timetable.
+//
+// see http://doc.navitia.io/#route-schedule
+type RouteSchedule struct {
+	// Useful information about the route to display
+	Display Display
+
+	// The Table holds the info
+	Table Table
+}
+
+// A Table is the schedule table
+//
+// See http://doc.navitia.io/#table
+type Table struct {
+	Headers struct{}
+
+	// Those are the stops for the corresponding route
+
+}

@@ -1,0 +1,786 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "4962"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF14:405"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:14:405"
+      }
+    ],
+    "name": "Gare de Lyon",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845796",
+      "lon": "2.373686"
+    },
+    "label": "Gare de Lyon (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:14:405",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:098098004:DIRECT4OIF810"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:098098004:DIRECT4_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:810"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170507T172000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469700-1_180314-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469700-1_180314-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T175000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469701-1_180315-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469701-1_180315-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T182000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469702-1_180316-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469702-1_180316-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T185000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469703-1_180317-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469703-1_180317-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T192000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469704-1_180318-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469704-1_180318-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T195000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469705-1_180319-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469705-1_180319-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T202000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469706-1_180320-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469706-1_180320-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T205000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469707-1_180321-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469707-1_180321-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T212000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469708-1_180322-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469708-1_180322-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T215000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469709-1_180323-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469709-1_180323-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T222000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469710-1_180324-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469710-1_180324-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T225000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469711-1_180325-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469711-1_180325-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170507T232000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469896-1_180465-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469896-1_180465-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T065000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469580-1_180201-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469580-1_180201-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T072000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469680-1_180294-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469680-1_180294-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T075000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469681-1_180295-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469681-1_180295-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T082000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469682-1_180296-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469682-1_180296-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T085000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469683-1_180297-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469683-1_180297-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T092000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469684-1_180298-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469684-1_180298-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T095000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469685-1_180299-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469685-1_180299-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T102000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469686-1_180300-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469686-1_180300-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T105000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469687-1_180301-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469687-1_180301-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T112000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469688-1_180302-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469688-1_180302-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T115000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469689-1_180303-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469689-1_180303-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T122000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469690-1_180304-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469690-1_180304-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T125000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469691-1_180305-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469691-1_180305-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T132000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469692-1_180306-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469692-1_180306-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T135000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469693-1_180307-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469693-1_180307-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T142000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469694-1_180308-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469694-1_180308-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T145000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469695-1_180309-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469695-1_180309-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T152000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469696-1_180310-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469696-1_180310-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T155000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469697-1_180311-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469697-1_180311-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T162000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469698-1_180312-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469698-1_180312-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T165000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:82469699-1_180313-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:82469699-1_180313-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8739100"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8739100"
+          }
+        ],
+        "name": "Gare Montparnasse",
+        "links": [],
+        "coord": {
+          "lat": "48.842397",
+          "lon": "2.321714"
+        },
+        "label": "Gare Montparnasse (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8739100"
+      },
+      "name": "Gare Montparnasse (Paris)",
+      "id": "stop_area:OIF:SA:8739100"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF098098004:DIRECT4_R"
+      },
+      {
+        "type": "source",
+        "value": "098098004:DIRECT4"
+      }
+    ],
+    "name": "CDG 2E/2F - Gare Montparnasse",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "DIRECT 4",
+      "name": "LE BUS DIRECT ligne 4",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "053000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "000000",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01068"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF098098004:DIRECT4OIF810"
+        },
+        {
+          "type": "source",
+          "value": "098098004:DIRECT4"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01068"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF098098004:DIRECT4OIF810"
+        },
+        {
+          "type": "source",
+          "value": "098098004:DIRECT4"
+        }
+      ],
+      "closing_time": "223000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8700147"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8700147"
+                }
+              ],
+              "name": "Aéroport CDG Terminal 2 TGV",
+              "links": [],
+              "coord": {
+                "lat": "49.004105",
+                "lon": "2.568967"
+              },
+              "label": "Aéroport CDG Terminal 2 TGV (Tremblay-en-France) (Le Mesnil-Amelot)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8700147"
+            },
+            "name": "Aéroport CDG Terminal 2 TGV (Tremblay-en-France) (Le Mesnil-Amelot)",
+            "id": "stop_area:OIF:SA:8700147"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF098098004:DIRECT4"
+            },
+            {
+              "type": "source",
+              "value": "098098004:DIRECT4"
+            }
+          ],
+          "name": "Gare Montparnasse - CDG 2E/2F",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:098098004:DIRECT4"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8739100"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8739100"
+                }
+              ],
+              "name": "Gare Montparnasse",
+              "links": [],
+              "coord": {
+                "lat": "48.842397",
+                "lon": "2.321714"
+              },
+              "label": "Gare Montparnasse (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8739100"
+            },
+            "name": "Gare Montparnasse (Paris)",
+            "id": "stop_area:OIF:SA:8739100"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF098098004:DIRECT4_R"
+            },
+            {
+              "type": "source",
+              "value": "098098004:DIRECT4"
+            }
+          ],
+          "name": "CDG 2E/2F - Gare Montparnasse",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:098098004:DIRECT4_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:098098004:DIRECT4OIF810",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF810"
+          },
+          {
+            "type": "source",
+            "value": "810"
+          }
+        ],
+        "name": "LE BUS DIRECT (cars air france)",
+        "links": [],
+        "id": "network:OIF:810"
+      }
+    },
+    "id": "route:OIF:098098004:DIRECT4_R"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare Montparnasse (Paris)",
+    "code": "DIRECT 4",
+    "network": "LE BUS DIRECT (cars air france)",
+    "links": [],
+    "color": "000000",
+    "commercial_mode": "Bus",
+    "text_color": "FFFFFF",
+    "label": "DIRECT 4"
+  }
+}

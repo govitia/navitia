@@ -1,0 +1,421 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41516"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8758820:800:N132"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8758820:800:N132"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845401",
+      "lon": "2.371929"
+    },
+    "label": "Gare de Lyon Noctilien (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8758820:800:N132",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:N132OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:N132"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T013000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83206087-1_325648-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83206087-1_325648-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T020000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83206091-1_325649-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83206091-1_325649-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T023000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83206083-1_325645-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83206083-1_325645-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T033000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83206084-1_325646-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83206084-1_325646-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T043000",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83206085-1_325647-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83206085-1_325647-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8768200"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8768200"
+          }
+        ],
+        "name": "Gare de Melun",
+        "links": [],
+        "coord": {
+          "lat": "48.527165",
+          "lon": "2.654868"
+        },
+        "label": "Gare de Melun (Melun) (La Rochette)",
+        "administrative_regions": [
+          {
+            "insee": "77288",
+            "name": "Melun",
+            "level": 8,
+            "coord": {
+              "lat": "48.539925",
+              "lon": "2.660816"
+            },
+            "label": "Melun (77000)",
+            "id": "admin:fr:77288",
+            "zip_code": "77000"
+          },
+          {
+            "insee": "77389",
+            "name": "La Rochette",
+            "level": 8,
+            "coord": {
+              "lat": "48.504501",
+              "lon": "2.662898"
+            },
+            "label": "La Rochette (77000)",
+            "id": "admin:fr:77389",
+            "zip_code": "77000"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8768200"
+      },
+      "name": "Gare de Melun (Melun) (La Rochette)",
+      "id": "stop_area:OIF:SA:8768200"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:N132"
+      },
+      {
+        "type": "source",
+        "value": "800:N132"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien - Melun Noctilien",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N132",
+      "name": "Gare de Lyon - Melun RER",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "012000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "3ca342",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01633"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N132OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N132"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01633"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N132OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N132"
+        }
+      ],
+      "closing_time": "043000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768200"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768200"
+                }
+              ],
+              "name": "Gare de Melun",
+              "links": [],
+              "coord": {
+                "lat": "48.527165",
+                "lon": "2.654868"
+              },
+              "label": "Gare de Melun (Melun) (La Rochette)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768200"
+            },
+            "name": "Gare de Melun (Melun) (La Rochette)",
+            "id": "stop_area:OIF:SA:8768200"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N132"
+            },
+            {
+              "type": "source",
+              "value": "800:N132"
+            }
+          ],
+          "name": "Gare de Lyon Noctilien - Melun Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N132"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N132_R"
+            },
+            {
+              "type": "source",
+              "value": "800:N132"
+            }
+          ],
+          "name": "Melun Noctilien - Gare de Lyon Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N132_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:800:N132OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:800:N132"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Melun (La Rochette)",
+    "code": "N132",
+    "network": "Noctilien",
+    "links": [],
+    "color": "3ca342",
+    "commercial_mode": "Bus",
+    "text_color": "FFFFFF",
+    "label": "N132"
+  }
+}

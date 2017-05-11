@@ -1,0 +1,343 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "421409"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:3716895"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:3716895"
+      }
+    ],
+    "name": "Gare de Lyon",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.843693",
+      "lon": "2.373303"
+    },
+    "label": "Gare de Lyon (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:3716895",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100987758:N33OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100987758:N33"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8768600"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8768600"
+          }
+        ],
+        "name": "Gare de Lyon",
+        "links": [],
+        "coord": {
+          "lat": "48.844825",
+          "lon": "2.373039"
+        },
+        "label": "Gare de Lyon (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856609",
+              "lon": "2.351499"
+            },
+            "label": "Paris",
+            "id": "admin:fr:75056",
+            "zip_code": ""
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8768600"
+      },
+      "name": "Gare de Lyon (Paris)",
+      "id": "stop_area:OIF:SA:8768600"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100987758:N33"
+      },
+      {
+        "type": "source",
+        "value": "100987758:N33"
+      }
+    ],
+    "name": "Villiers-sur-Marne - le Plessis-Trévise RER - Gare de Lyon",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N33",
+      "name": "Gare de Lyon - Villiers-sur-Marne-Le-Plessis-Trévise",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "235500",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "f68f4b",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01399"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987758:N33OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987758:N33"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01399"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987758:N33OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987758:N33"
+        }
+      ],
+      "closing_time": "053000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987758:N33"
+            },
+            {
+              "type": "source",
+              "value": "100987758:N33"
+            }
+          ],
+          "name": "Villiers-sur-Marne - le Plessis-Trévise RER - Gare de Lyon",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987758:N33"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8711379"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8711379"
+                }
+              ],
+              "name": "Gare de Villiers sur Marne Plessis Trévise",
+              "links": [],
+              "coord": {
+                "lat": "48.823443",
+                "lon": "2.542727"
+              },
+              "label": "Gare de Villiers sur Marne Plessis Trévise (Villiers-sur-Marne)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8711379"
+            },
+            "name": "Gare de Villiers sur Marne Plessis Trévise (Villiers-sur-Marne)",
+            "id": "stop_area:OIF:SA:8711379"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987758:N33_R"
+            },
+            {
+              "type": "source",
+              "value": "100987758:N33"
+            }
+          ],
+          "name": "Gare de Lyon - Diderot - Villiers-sur-Marne - le Plessis-Trévise RER",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987758:N33_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100987758:N33OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:100987758:N33"
+  },
+  "additional_informations": "terminus",
+  "display_informations": {
+    "direction": "Gare de Lyon (Paris)",
+    "code": "N33",
+    "network": "Noctilien",
+    "links": [],
+    "color": "f68f4b",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N33"
+  }
+}

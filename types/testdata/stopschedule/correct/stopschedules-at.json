@@ -1,0 +1,440 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "22494"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF59:3673588"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:59:3673588"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.84568",
+      "lon": "2.371248"
+    },
+    "label": "Gare de Lyon - Diderot (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:59:3673588",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:100987773:N35OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:100987773:N35_R"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T001600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174775-1_310736-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174775-1_310736-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T011600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174777-1_310738-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174777-1_310738-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T021600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174778-1_310739-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174778-1_310739-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T031600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174779-1_310740-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174779-1_310740-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T041600",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174780-1_310741-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174780-1_310741-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T051600",
+      "additional_informations": [],
+      "links": [
+        {
+          "internal": true,
+          "type": "notes",
+          "id": "destination:4066273503347087651",
+          "rel": "notes"
+        },
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83174776-1_310737-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83174776-1_310737-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8711374"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8711374"
+          }
+        ],
+        "name": "Gare de Nogent le Perreux",
+        "links": [],
+        "coord": {
+          "lat": "48.838687",
+          "lon": "2.494308"
+        },
+        "label": "Gare de Nogent le Perreux (Le Perreux-sur-Marne) (Nogent-sur-Marne)",
+        "administrative_regions": [
+          {
+            "insee": "94058",
+            "name": "Le Perreux-sur-Marne",
+            "level": 8,
+            "coord": {
+              "lat": "48.840626",
+              "lon": "2.507711"
+            },
+            "label": "Le Perreux-sur-Marne (94170)",
+            "id": "admin:fr:94058",
+            "zip_code": "94170"
+          },
+          {
+            "insee": "94052",
+            "name": "Nogent-sur-Marne",
+            "level": 8,
+            "coord": {
+              "lat": "48.835304",
+              "lon": "2.481031"
+            },
+            "label": "Nogent-sur-Marne (94130)",
+            "id": "admin:fr:94052",
+            "zip_code": "94130"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8711374"
+      },
+      "name": "Gare de Nogent le Perreux (Le Perreux-sur-Marne) (Nogent-sur-Marne)",
+      "id": "stop_area:OIF:SA:8711374"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF100987773:N35_R"
+      },
+      {
+        "type": "source",
+        "value": "100987773:N35"
+      }
+    ],
+    "name": "Gare de Lyon - Diderot. - Nogent-le-Perreux RER",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N35",
+      "name": "Gare de Lyon - Nogent-Le Perreux",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "234500",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "000000",
+      "color": "ffcd02",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01412"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987773:N35OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987773:N35"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01412"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF100987773:N35OIF56"
+        },
+        {
+          "type": "source",
+          "value": "100987773:N35"
+        }
+      ],
+      "closing_time": "051500",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768600"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768600"
+                }
+              ],
+              "name": "Gare de Lyon",
+              "links": [],
+              "coord": {
+                "lat": "48.844825",
+                "lon": "2.373039"
+              },
+              "label": "Gare de Lyon (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768600"
+            },
+            "name": "Gare de Lyon (Paris)",
+            "id": "stop_area:OIF:SA:8768600"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987773:N35"
+            },
+            {
+              "type": "source",
+              "value": "100987773:N35"
+            }
+          ],
+          "name": "Nogent-le-Perreux RER - Gare de Lyon - Diderot",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987773:N35"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8711374"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8711374"
+                }
+              ],
+              "name": "Gare de Nogent le Perreux",
+              "links": [],
+              "coord": {
+                "lat": "48.838687",
+                "lon": "2.494308"
+              },
+              "label": "Gare de Nogent le Perreux (Le Perreux-sur-Marne) (Nogent-sur-Marne)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8711374"
+            },
+            "name": "Gare de Nogent le Perreux (Le Perreux-sur-Marne) (Nogent-sur-Marne)",
+            "id": "stop_area:OIF:SA:8711374"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF100987773:N35_R"
+            },
+            {
+              "type": "source",
+              "value": "100987773:N35"
+            }
+          ],
+          "name": "Gare de Lyon - Diderot. - Nogent-le-Perreux RER",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:100987773:N35_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:100987773:N35OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:100987773:N35_R"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Nogent le Perreux (Nogent-sur-Marne)",
+    "code": "N35",
+    "network": "Noctilien",
+    "links": [],
+    "color": "ffcd02",
+    "commercial_mode": "Bus",
+    "text_color": "000000",
+    "label": "N35"
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "stop_point": {
+    "codes": [
+      {
+        "type": "ZDEr_ID_REF_A",
+        "value": "41516"
+      },
+      {
+        "type": "external_code",
+        "value": "OIF8758820:800:N144"
+      },
+      {
+        "type": "source",
+        "value": "StopPoint:8758820:800:N144"
+      }
+    ],
+    "name": "Gare de Lyon Noctilien",
+    "links": [],
+    "physical_modes": [
+      {
+        "name": "Bus",
+        "id": "physical_mode:Bus"
+      }
+    ],
+    "coord": {
+      "lat": "48.845401",
+      "lon": "2.371929"
+    },
+    "label": "Gare de Lyon Noctilien (Paris)",
+    "equipments": [],
+    "commercial_modes": [
+      {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      }
+    ],
+    "administrative_regions": [
+      {
+        "insee": "75056",
+        "name": "Paris",
+        "level": 8,
+        "coord": {
+          "lat": "48.856609",
+          "lon": "2.351499"
+        },
+        "label": "Paris",
+        "id": "admin:fr:75056",
+        "zip_code": ""
+      }
+    ],
+    "id": "stop_point:OIF:SP:8758820:800:N144",
+    "stop_area": {
+      "codes": [
+        {
+          "type": "external_code",
+          "value": "OIF8768600"
+        },
+        {
+          "type": "source",
+          "value": "StopArea:8768600"
+        }
+      ],
+      "name": "Gare de Lyon",
+      "links": [],
+      "coord": {
+        "lat": "48.844825",
+        "lon": "2.373039"
+      },
+      "label": "Gare de Lyon (Paris)",
+      "administrative_regions": [
+        {
+          "insee": "75056",
+          "name": "Paris",
+          "level": 8,
+          "coord": {
+            "lat": "48.856609",
+            "lon": "2.351499"
+          },
+          "label": "Paris",
+          "id": "admin:fr:75056",
+          "zip_code": ""
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "id": "stop_area:OIF:SA:8768600"
+    }
+  },
+  "links": [
+    {
+      "type": "line",
+      "id": "line:OIF:800:N144OIF56"
+    },
+    {
+      "type": "route",
+      "id": "route:OIF:800:N144"
+    },
+    {
+      "type": "commercial_mode",
+      "id": "commercial_mode:bus"
+    },
+    {
+      "type": "network",
+      "id": "network:OIF:56"
+    }
+  ],
+  "date_times": [
+    {
+      "date_time": "20170508T013500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201921-1_323409-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201921-1_323409-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T020500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201919-1_323407-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201919-1_323407-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T023500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201922-1_323410-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201922-1_323410-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T033500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201920-1_323408-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201920-1_323408-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    },
+    {
+      "date_time": "20170508T043500",
+      "additional_informations": [],
+      "links": [
+        {
+          "type": "vehicle_journey",
+          "value": "vehicle_journey:OIF:83201918-1_323406-1",
+          "rel": "vehicle_journeys",
+          "id": "vehicle_journey:OIF:83201918-1_323406-1"
+        }
+      ],
+      "data_freshness": "base_schedule"
+    }
+  ],
+  "route": {
+    "direction": {
+      "embedded_type": "stop_area",
+      "quality": 0,
+      "stop_area": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF8768100"
+          },
+          {
+            "type": "source",
+            "value": "StopArea:8768100"
+          }
+        ],
+        "name": "Gare de Corbeil Essonnes",
+        "links": [],
+        "coord": {
+          "lat": "48.613767",
+          "lon": "2.47308"
+        },
+        "label": "Gare de Corbeil Essonnes (Corbeil-Essonnes)",
+        "administrative_regions": [
+          {
+            "insee": "91174",
+            "name": "Corbeil-Essonnes",
+            "level": 8,
+            "coord": {
+              "lat": "48.61377",
+              "lon": "2.480341"
+            },
+            "label": "Corbeil-Essonnes (91100)",
+            "id": "admin:fr:91174",
+            "zip_code": "91100"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:OIF:SA:8768100"
+      },
+      "name": "Gare de Corbeil Essonnes (Corbeil-Essonnes)",
+      "id": "stop_area:OIF:SA:8768100"
+    },
+    "codes": [
+      {
+        "type": "external_code",
+        "value": "OIF800:N144"
+      },
+      {
+        "type": "source",
+        "value": "800:N144"
+      }
+    ],
+    "name": "Gare de l'Est Noctilien - Corbeil Essonnes Noctilien",
+    "links": [],
+    "is_frequence": "False",
+    "geojson": {
+      "type": "MultiLineString",
+      "coordinates": []
+    },
+    "direction_type": "",
+    "line": {
+      "code": "N144",
+      "name": "Gare de l'Est - Corbeil Essonnes",
+      "links": [],
+      "physical_modes": [
+        {
+          "name": "Bus",
+          "id": "physical_mode:Bus"
+        }
+      ],
+      "opening_time": "001000",
+      "geojson": {
+        "type": "MultiLineString",
+        "coordinates": []
+      },
+      "text_color": "FFFFFF",
+      "color": "3ca342",
+      "codes": [
+        {
+          "type": "codifligne",
+          "value": "C01643"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N144OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N144"
+        },
+        {
+          "type": "codifligne",
+          "value": "C01643"
+        },
+        {
+          "type": "external_code",
+          "value": "OIF800:N144OIF56"
+        },
+        {
+          "type": "source",
+          "value": "800:N144"
+        }
+      ],
+      "closing_time": "041000",
+      "routes": [
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8768100"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8768100"
+                }
+              ],
+              "name": "Gare de Corbeil Essonnes",
+              "links": [],
+              "coord": {
+                "lat": "48.613767",
+                "lon": "2.47308"
+              },
+              "label": "Gare de Corbeil Essonnes (Corbeil-Essonnes)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8768100"
+            },
+            "name": "Gare de Corbeil Essonnes (Corbeil-Essonnes)",
+            "id": "stop_area:OIF:SA:8768100"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N144"
+            },
+            {
+              "type": "source",
+              "value": "800:N144"
+            }
+          ],
+          "name": "Gare de l'Est Noctilien - Corbeil Essonnes Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N144"
+        },
+        {
+          "direction": {
+            "embedded_type": "stop_area",
+            "quality": 0,
+            "stop_area": {
+              "codes": [
+                {
+                  "type": "external_code",
+                  "value": "OIF8711300"
+                },
+                {
+                  "type": "source",
+                  "value": "StopArea:8711300"
+                }
+              ],
+              "name": "Gare de l'Est",
+              "links": [],
+              "coord": {
+                "lat": "48.876419",
+                "lon": "2.358437"
+              },
+              "label": "Gare de l'Est (Paris)",
+              "timezone": "Europe/Paris",
+              "id": "stop_area:OIF:SA:8711300"
+            },
+            "name": "Gare de l'Est (Paris)",
+            "id": "stop_area:OIF:SA:8711300"
+          },
+          "codes": [
+            {
+              "type": "external_code",
+              "value": "OIF800:N144_R"
+            },
+            {
+              "type": "source",
+              "value": "800:N144"
+            }
+          ],
+          "name": "Corbeil Essonnes Noctilien - Gare de l'Est Noctilien",
+          "links": [],
+          "is_frequence": "False",
+          "geojson": {
+            "type": "MultiLineString",
+            "coordinates": []
+          },
+          "direction_type": "",
+          "id": "route:OIF:800:N144_R"
+        }
+      ],
+      "commercial_mode": {
+        "name": "Bus",
+        "id": "commercial_mode:bus"
+      },
+      "id": "line:OIF:800:N144OIF56",
+      "network": {
+        "codes": [
+          {
+            "type": "external_code",
+            "value": "OIF56"
+          },
+          {
+            "type": "source",
+            "value": "56"
+          }
+        ],
+        "name": "Noctilien",
+        "links": [],
+        "id": "network:OIF:56"
+      }
+    },
+    "id": "route:OIF:800:N144"
+  },
+  "additional_informations": null,
+  "display_informations": {
+    "direction": "Gare de Corbeil Essonnes (Corbeil-Essonnes)",
+    "code": "N144",
+    "network": "Noctilien",
+    "links": [],
+    "color": "3ca342",
+    "commercial_mode": "Bus",
+    "text_color": "FFFFFF",
+    "label": "N144"
+  }
+}
