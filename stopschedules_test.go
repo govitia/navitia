@@ -46,7 +46,7 @@ func Test_StopSchedules_Online(t *testing.T) {
 	t.Run("StopSchedulesCoords", func(t *testing.T) {
 		res, err := scope.StopSchedulesCoords(ctx, coords, opts)
 		if err != nil {
-			t.Fatalf("error in StopSchedules: %v\n\tCoordinates: %s\n\tParameters: %#v\n\tReceived: %#v", err, coords.ID(), opts, res)
+			t.Fatalf("error in StopSchedulesCoords: %v\n\tCoordinates: %s\n\tParameters: %#v\n\tReceived: %#v", err, coords.ID(), opts, res)
 		}
 	})
 
