@@ -87,7 +87,12 @@ func (s *Session) stopSchedules(ctx context.Context, url string, opts StopSchedu
 // StopSchedules returns the stop schedules for a specific resource. For the coordinates-enabled method, see StopSchedulesCoords.
 func (scope *Scope) StopSchedules(ctx context.Context, resID types.ID, opts StopSchedulesRequest) (*StopSchedulesResults, error) {
 	// Build the URL
-	url := scope.baseURL + "/" + resID.Type() + "/" + string(resID) + "/" + stopSchedulesEndpoint
+	resType, err := resID.Type()
+	if err != nil {
+		return nil, errors.Wrapf(err, "StopSchedules: couldn't extract resource type from resource id \"%s\"", resID)
+	}
+	resSelector := resourceTypeToSelector[resType]
+	url := scope.baseURL + "/" + resSelector + "/" + string(resID) + "/" + stopSchedulesEndpoint
 
 	// Call and return
 	return scope.session.stopSchedules(ctx, url, opts)
@@ -96,7 +101,8 @@ func (scope *Scope) StopSchedules(ctx context.Context, resID types.ID, opts Stop
 // StopSchedulesExplicit returns the stop schedules for a specific resource given an explcit resource type.
 func (scope *Scope) StopSchedulesExplicit(ctx context.Context, resType string, resID types.ID, opts StopSchedulesRequest) (*StopSchedulesResults, error) {
 	// Build the URL
-	url := scope.baseURL + "/" + resType + "/" + string(resID) + "/" + stopSchedulesEndpoint
+	resSelector := resourceTypeToSelector[resType]
+	url := scope.baseURL + "/" + resSelector + "/" + string(resID) + "/" + stopSchedulesEndpoint
 
 	// Call and return
 	return scope.session.stopSchedules(ctx, url, opts)
