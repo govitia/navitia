@@ -123,3 +123,20 @@ func (ptdt *PTDateTime) UnmarshalJSON(b []byte) error {
 
 	return nil
 }
+
+func (st *StopTime) UnmarshalJSON(b []byte) error {
+	data := struct{
+		StopPoint StopPoint `json:"stop_point"`
+	}{}
+	err := json.Unmarshal(b, &data)
+	if err != nil {
+		return errors.Wrap(err, "Error while unmarshalling stop time")
+	}
+	st.StopPoint = data.StopPoint
+
+	err = json.Unmarshal(b, &st.PTDateTime)
+	if err != nil {
+		return errors.Wrap(err, "Error while unmarshalling stop time")
+	}
+	return nil
+}
