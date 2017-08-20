@@ -21,6 +21,7 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
 	data := &struct {
 		Duration  int64 `json:"duration"`
+		Durations map[string]int64 `json:"durations"`
 		Transfers *uint `json:"nb_transfers"`
 
 		Departure string `json:"departure_date_time"`
@@ -58,6 +59,11 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 
 	// As the given duration is in second, let's multiply it by one second to have the correct value
 	j.Duration = time.Duration(data.Duration) * time.Second
+
+	j.Durations = make(map[string]time.Duration)
+	for k, v := range data.Durations {
+		j.Durations[k] = time.Duration(v) * time.Second
+	}
 
 	// For departure, requested and arrival, we use parseDateTime
 	j.Departure, err = parseDateTime(data.Departure)

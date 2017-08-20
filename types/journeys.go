@@ -44,6 +44,7 @@ var JourneyQualifications = []JourneyQualification{
 // A Journey holds information about a possible journey
 type Journey struct {
 	Duration  time.Duration
+	Durations map[string]time.Duration
 	Transfers uint
 
 	Departure time.Time
