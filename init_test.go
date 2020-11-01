@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-const skipNoKey string = "No api key supplied, skipping (provide one using -key flag)"
+const skipNoKey = "No api key supplied, skipping (provide one using -key flag)"
 
 var (
 	apiKey      = flag.String("key", "", "API Key to use for testing")

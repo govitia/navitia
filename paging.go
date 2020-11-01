@@ -19,8 +19,7 @@ type Paging struct {
 // createPagingFunc creates a paging func (either Previous or Next)
 func createPagingFunc(url string) func(ctx context.Context, s *Session, res results) error {
 	f := func(ctx context.Context, s *Session, res results) error {
-		err := s.requestURL(ctx, url, res)
-		return err
+		return s.requestURL(ctx, url, res)
 	}
 	return f
 }

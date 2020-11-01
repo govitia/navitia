@@ -1,7 +1,7 @@
 # navitia is a Go client for the [navitia](navitia.io) API for public transit & transportation
-[![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=master)](https://travis-ci.org/aabizri/navitia) [![Go Report Card](https://goreportcard.com/badge/github.com/aabizri/navitia)](https://goreportcard.com/report/github.com/aabizri/navitia) [![GoDoc](https://godoc.org/github.com/aabizri/navitia?status.svg)](https://godoc.org/github.com/aabizri/navitia)
+[![Build Status](https://travis-ci.org/aabizri/navitia.svg?branch=master)](https://travis-ci.org/aabizri/navitia) [![Go Report Card](https://goreportcard.com/badge/github.com/govitia/navitia)](https://goreportcard.com/report/github.com/govitia/navitia) [![GoDoc](https://godoc.org/github.com/govitia/navitia?status.svg)](https://godoc.org/github.com/govitia/navitia)
 
-This is navitia v0.2.
+This is govitia/navitia golang API.
 
 ## Dependencies
 
@@ -10,7 +10,7 @@ This is navitia v0.2.
 
 ## Install
 
-`go get -u github.com/aabizri/navitia`
+`go get -u github.com/govitia/navitia`
 
 ## Coverage
 
@@ -18,6 +18,18 @@ This is navitia v0.2.
 - Journeys [/journeys]: This computes journeys or isochrone tables. [(navitia.io doc)](http://doc.navitia.io/#journeys)
 - Places [/places]: Allows you to search in all geographical objects using their names, returning a list of places. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-geographical-objects)
 
+## Changelog
+ 
+### 0.3.0
+#### Added
+- Vehicle journey type and route
+- Go mod file
+- `headsign` filter for jourey and vehicle_journey requests
+#### Fixed
+- Code style issues
+- Gitignore missing files
+- Some types were omitted but necessary
+ 
 ## Getting started
 
 ### Creating a new session
@@ -31,8 +43,8 @@ session, err := navitia.New(APIKEY)
 
 ```golang
 import(
-	"github.com/aabizri/navitia"
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia"
+	"github.com/govitia/navitia/types"
 	"context"
 )
 
@@ -58,7 +70,7 @@ if places := res.Places; len(places) != 0 {
 
 ```golang
 import(
-	"github.com/aabizri/navitia"
+	"github.com/govitia/navitia"
 	"fmt"
 	"context"
 )
@@ -109,8 +121,8 @@ When you wish to make some requests requiring a specific coverage, or have more 
 
 ```golang
 import (
-	"github.com/aabizri/navitia"
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia"
+	"github.com/govitia/navitia/types"
 	"context"
 )
 
@@ -128,7 +140,7 @@ res, _ := scope.Places(context.Background(),req)
 
 ### Going further
 
-Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/aabizri/navitia)
+Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/govitia/navitia)
 
 ## What's new in v0.2 ?
 

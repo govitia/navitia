@@ -6,9 +6,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/aabizri/navitia"
-	"github.com/aabizri/navitia/types"
 	"github.com/fatih/color"
+
+	"github.com/govitia/navitia"
+	"github.com/govitia/navitia/types"
 )
 
 // PlacesResultsConf stores configuration for pretty-printing
@@ -43,11 +44,13 @@ func (conf PlacesResultsConf) PrettyWrite(pr *navitia.PlacesResults, out io.Writ
 		// Launch !
 		go func(p types.Container) {
 			defer wg.Done()
-			err := conf.Place.ContainerWrite(&p, buf)
-			_, err = buf.WriteString("\n")
 
-			// TODO: Deal with errors
-			_ = err
+			if err := conf.Place.ContainerWrite(&p, buf); err != nil {
+				panic(err)
+			}
+
+			_, err := buf.WriteString("\n")
+			panic(err)
 		}(p)
 	}
 

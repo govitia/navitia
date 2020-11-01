@@ -8,8 +8,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/aabizri/navitia/types"
 	"github.com/pkg/errors"
+
+	"github.com/govitia/navitia/types"
 )
 
 // A Connection is either a Departure or an Arrival
@@ -17,7 +18,7 @@ type Connection struct {
 	Display   types.Display
 	StopPoint types.StopPoint
 	Route     types.Route
-	//StopDateTime
+	// StopDateTime
 }
 
 // ConnectionsResults holds the results of a departures or arrivals request.
@@ -135,49 +136,49 @@ const (
 // DeparturesSA requests the departures for a given StopArea
 func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
+	scopeURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
 
-	return scope.session.connections(ctx, url, req)
+	return scope.session.connections(ctx, scopeURL, req)
 }
 
 // DeparturesSP requests the departures for a given StopPoint
 func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
+	scopeURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
 
-	return scope.session.connections(ctx, url, req)
+	return scope.session.connections(ctx, scopeURL, req)
 }
 
 // DeparturesC requests the departures from a point described by coordinates.
 func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
 	// Create the URL
 	coordsQ := string(coords.ID())
-	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
+	scopeURL := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
 
-	return s.connections(ctx, url, req)
+	return s.connections(ctx, scopeURL, req)
 }
 
 // ArrivalsSA requests the arrivals for a given StopArea in a given region.
 func (scope *Scope) ArrivalsSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
+	scopeURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
 
-	return scope.session.connections(ctx, url, req)
+	return scope.session.connections(ctx, scopeURL, req)
 }
 
 // ArrivalsSP requests the arrivals for a given StopPoint in a given region.
 func (scope *Scope) ArrivalsSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
+	scopeURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
 
-	return scope.session.connections(ctx, url, req)
+	return scope.session.connections(ctx, scopeURL, req)
 }
 
 // ArrivalsC requests the arrivals from a point described by coordinates.
 func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
 	// Create the URL
 	coordsQ := string(coords.ID())
-	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint
+	scopeURL := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint
 
-	return s.connections(ctx, url, req)
+	return s.connections(ctx, scopeURL, req)
 }

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia/types"
 )
 
 func Test_Places(t *testing.T) {
@@ -30,8 +30,13 @@ func Test_Places(t *testing.T) {
 
 	// Run a search with proximity
 	t.Run("proximity", func(t *testing.T) {
-		params.Around = types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
+		params.Around = types.Coordinates{
+			Latitude:  48.847002,
+			Longitude: 2.377310,
+		}
+
 		res, err := testSession.Places(ctx, params)
+
 		if err != nil {
 			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 		}

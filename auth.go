@@ -5,7 +5,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia/types"
 )
 
 const (
@@ -45,7 +45,7 @@ func New(key string) (*Session, error) {
 }
 
 // NewCustom creates a custom new session given an API key, URL to api base & http client
-func NewCustom(key string, url string, client *http.Client) (*Session, error) {
+func NewCustom(key, url string, client *http.Client) (*Session, error) {
 	return &Session{
 		APIKey:  key,
 		APIURL:  url,

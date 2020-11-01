@@ -23,7 +23,7 @@ func loadContainers() error {
 
 		err := c.UnmarshalJSON(datum)
 		if err != nil {
-			return fmt.Errorf("Error while unmarshalling: %v", err)
+			return fmt.Errorf("error while unmarshalling: %v", err)
 		}
 
 		cs[name] = c

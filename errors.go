@@ -16,15 +16,15 @@ const (
 	// 404 Errors
 
 	RemoteErrDateOutOfBounds       RemoteErrorID = "date_out_of_bounds"         // When the given date is out of bounds of the production dates of the region
-	RemoteErrNoOrigin                            = "no_origin"                  // Couldn’t find an origin for the journeys
-	RemoteErrNoDestination                       = "no_destination"             // Couldn’t find an destination for the journeys
-	RemoteErrNoOriginNoDestination               = "nor_origin_nor_destination" // Couldn’t find an origin nor a destination for the journeys
-	RemoteErrUnknownObject                       = "unknown_object"             // Unknown Object
+	RemoteErrNoOrigin              RemoteErrorID = "no_origin"                  // Couldn’t find an origin for the journeys
+	RemoteErrNoDestination         RemoteErrorID = "no_destination"             // Couldn’t find an destination for the journeys
+	RemoteErrNoOriginNoDestination RemoteErrorID = "nor_origin_nor_destination" // Couldn’t find an origin nor a destination for the journeys
+	RemoteErrUnknownObject         RemoteErrorID = "unknown_object"             // Unknown Object
 
 	// 400 Errors
 
-	RemoteErrBadFilter     = "bad_filter"      // Bad filter (with custom filter)
-	RemoteErrUnableToParse = "unable_to_parse" // Unable to parse mal-formed custom filter"
+	RemoteErrBadFilter     RemoteErrorID = "bad_filter"      // Bad filter (with custom filter)
+	RemoteErrUnableToParse RemoteErrorID = "unable_to_parse" // Unable to parse mal-formed custom filter"
 )
 
 // remoteErrorsDescriptions contains human-readable descriptions for a given remote error ID
@@ -50,7 +50,6 @@ type RemoteError struct {
 // Error formats the error in a human-readable format
 // Also allows it to satisfy the error interface
 func (err RemoteError) Error() string {
-
 	var s string
 
 	// If this is a 40x error then use our information about errors

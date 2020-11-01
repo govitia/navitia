@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia/types"
 )
 
 const regionEndpoint string = "coverage"
@@ -61,10 +61,10 @@ func (s *Session) region(ctx context.Context, url string, params RegionRequest) 
 // It is context aware.
 func (s *Session) Regions(ctx context.Context, req RegionRequest) (*RegionResults, error) {
 	// Create the URL
-	url := s.APIURL + "/" + regionEndpoint
+	reqURL := s.APIURL + "/" + regionEndpoint
 
 	// Call and return
-	return s.region(ctx, url, req)
+	return s.region(ctx, reqURL, req)
 }
 
 // RegionByID provides information about a specific region.
@@ -74,10 +74,10 @@ func (s *Session) Regions(ctx context.Context, req RegionRequest) (*RegionResult
 // It is context aware.
 func (s *Session) RegionByID(ctx context.Context, req RegionRequest, id types.ID) (*RegionResults, error) {
 	// Build the URL
-	url := s.APIURL + "/" + regionEndpoint + "/" + string(id)
+	reqURL := s.APIURL + "/" + regionEndpoint + "/" + string(id)
 
 	// Call and return
-	return s.region(ctx, url, req)
+	return s.region(ctx, reqURL, req)
 }
 
 // RegionByPos provides information about the region englobing the specific position.
@@ -86,8 +86,8 @@ func (s *Session) RegionByID(ctx context.Context, req RegionRequest, id types.ID
 func (s *Session) RegionByPos(ctx context.Context, req RegionRequest, coords types.Coordinates) (*RegionResults, error) {
 	// Build the URL
 	coordsQ := string(coords.ID())
-	url := s.APIURL + "/" + regionEndpoint + "/" + coordsQ
+	reqURL := s.APIURL + "/" + regionEndpoint + "/" + coordsQ
 
 	// Call and return
-	return s.region(ctx, url, req)
+	return s.region(ctx, reqURL, req)
 }

@@ -13,8 +13,8 @@ import (
 //
 // Warning: types.Journey.From / types.Journey.To aren't guaranteed to be filled.
 // Based on very basic inspection, it seems they aren't filled when there are sections...
-type JourneyResults struct {
-	Journeys []types.Journey `json:"journeys"`
+type VehicleJourneyResults struct {
+	VehicleJourneys []types.VehicleJourney `json:"vehicle_journeys"`
 
 	Paging Paging `json:"links"`
 
@@ -24,12 +24,12 @@ type JourneyResults struct {
 }
 
 // Count returns the number of results available in a JourneyResults
-func (jr *JourneyResults) Count() int {
-	return len(jr.Journeys)
+func (jr *VehicleJourneyResults) Count() int {
+	return len(jr.VehicleJourneys)
 }
 
 // JourneyRequest contain the parameters needed to make a Journey request
-type JourneyRequest struct {
+type VehicleJourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
 	From types.ID
@@ -53,7 +53,8 @@ type JourneyRequest struct {
 	Allowed []types.ID
 
 	// Force the first section mode if it isn't a public transport mode
-	// Note: The parameter is inclusive, not exclusive. As such if you want to forbid a mode you have to include all modes except that one.
+	// Note: The parameter is inclusive, not exclusive. As such if you want to forbid a mode
+	// you have to include all modes except that one.
 	FirstSectionModes []string
 
 	// Same, but for the last section
@@ -94,7 +95,7 @@ type JourneyRequest struct {
 
 // toURL formats a journey request to url
 // Should be refactored using a switch statement
-func (req JourneyRequest) toURL() (url.Values, error) {
+func (req VehicleJourneyRequest) toURL() (url.Values, error) {
 	params := url.Values{}
 
 	// Define a few useful functions
@@ -199,28 +200,26 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 }
 
 // journeys is the internal function used by Journeys functions
-func (s *Session) journeys(ctx context.Context, url string, req JourneyRequest) (*JourneyResults, error) {
-	var results = &JourneyResults{session: s}
+func (s *Session) vehicleJourneys(ctx context.Context, url string, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
+	var results = &VehicleJourneyResults{session: s}
 	err := s.request(ctx, url, req, results)
 	return results, err
 }
 
-const journeysEndpoint string = "journeys"
+const vehicleJourneysEndpoint string = "vehicle_journeys"
 
 // Journeys computes a list of journeys according to the parameters given
-func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
+func (s *Session) VehicleJourneys(ctx context.Context, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
 	// Create the URL
-	reqURL := s.APIURL + "/" + journeysEndpoint
+	reqURL := s.APIURL + "/" + vehicleJourneysEndpoint
 
-	// Call
-	return s.journeys(ctx, reqURL, req)
+	return s.vehicleJourneys(ctx, reqURL, req)
 }
 
-// Journeys computes a list of journeys according to the parameters given in a specific scope
-func (scope *Scope) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
+// Journeys coputes a list of journeys according to the parameters given in a specific scope
+func (scope *Scope) VehicleJourneys(ctx context.Context, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
 	// Create the URL
-	reqURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + journeysEndpoint
+	reqURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + vehicleJourneysEndpoint
 
-	// Call
-	return scope.session.journeys(ctx, reqURL, req)
+	return scope.session.vehicleJourneys(ctx, reqURL, req)
 }

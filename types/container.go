@@ -8,18 +8,18 @@ import (
 	"github.com/pkg/errors"
 )
 
-// these are the types that can be embedded
+// these are the types that can be embedded.
 const (
-	EmbeddedStopArea       string = "stop_area"             // This is a Place & a PT Object
-	EmbeddedPOI                   = "poi"                   // This is a place
-	EmbeddedAddress               = "address"               // This is a place
-	EmbeddedStopPoint             = "stop_point"            // This is a place
-	EmbeddedAdmin                 = "administrative_region" // This is a place
-	EmbeddedLine                  = "line"                  // This is a PT Object
-	EmbeddedRoute                 = "route"                 // This is a PT Object
-	EmbeddedNetwork               = "network"               // This is a PT Object
-	EmbeddedCommercialMode        = "commercial_mode"       // This is a PT Object
-	EmbeddedTrip                  = "trip"                  // This is a PT Object
+	EmbeddedStopArea       = "stop_area"             // This is a Place & a PT Object
+	EmbeddedPOI            = "poi"                   // This is a place
+	EmbeddedAddress        = "address"               // This is a place
+	EmbeddedStopPoint      = "stop_point"            // This is a place
+	EmbeddedAdmin          = "administrative_region" // This is a place
+	EmbeddedLine           = "line"                  // This is a PT Object
+	EmbeddedRoute          = "route"                 // This is a PT Object
+	EmbeddedNetwork        = "network"               // This is a PT Object
+	EmbeddedCommercialMode = "commercial_mode"       // This is a PT Object
+	EmbeddedTrip           = "trip"                  // This is a PT Object
 )
 
 // EmbeddedTypes lists all the possible embedded types you can find in a Container
@@ -36,7 +36,7 @@ var EmbeddedTypes = [...]string{
 	EmbeddedTrip,
 }
 
-// embeddedTypesPlace stores a list of embedded types you can find in a container containing a Place
+// embeddedTypesPlace stores a list of embedded types you can find in a container containing a Place.
 var embeddedTypesPlace = [...]string{
 	EmbeddedStopArea,
 	EmbeddedPOI,
@@ -45,7 +45,7 @@ var embeddedTypesPlace = [...]string{
 	EmbeddedAdmin,
 }
 
-// embeddedTypesPTObject stores a list of embedded types you can find in a container containing a PTObject
+// embeddedTypesPTObject stores a list of embedded types you can find in a container containing a PTObject.
 var embeddedTypesPTObject = [...]string{
 	EmbeddedStopArea,
 	EmbeddedLine,
@@ -78,13 +78,22 @@ type Container struct {
 // IsPlace returns true if the container's content is a Place
 func (c *Container) IsPlace() bool {
 	t := c.EmbeddedType
-	return t == EmbeddedStopArea || t == EmbeddedPOI || t == EmbeddedAddress || t == EmbeddedStopPoint || t == EmbeddedAdmin
+	return t == EmbeddedStopArea ||
+		t == EmbeddedPOI ||
+		t == EmbeddedAddress ||
+		t == EmbeddedStopPoint ||
+		t == EmbeddedAdmin
 }
 
 // IsPTObject returns true if the container's content is a PTObject
 func (c *Container) IsPTObject() bool {
 	t := c.EmbeddedType
-	return t == EmbeddedStopArea || t == EmbeddedLine || t == EmbeddedRoute || t == EmbeddedNetwork || t == EmbeddedCommercialMode || t == EmbeddedTrip
+	return t == EmbeddedStopArea ||
+		t == EmbeddedLine ||
+		t == EmbeddedRoute ||
+		t == EmbeddedNetwork ||
+		t == EmbeddedCommercialMode ||
+		t == EmbeddedTrip
 }
 
 // ErrInvalidContainer is returned after a check on a Container
@@ -143,7 +152,7 @@ func (c *Container) Check() error {
 	err := ErrInvalidContainer{}
 
 	// Check for zero ID
-	err.NoID = (c.ID == "")
+	err.NoID = c.ID == ""
 
 	// Check if the embedded type is empty & there is a non-empty embedded content inside, that's an error
 	if c.EmbeddedType == "" && (len(c.embeddedJSON) != 0 || c.embeddedObject != nil) {

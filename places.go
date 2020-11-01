@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia/types"
 )
 
 // PlacesResults doesn't have pagination, as the remote API doesn't support it.
@@ -34,9 +34,7 @@ func (pr *PlacesResults) Less(i, j int) bool {
 
 // Swap swaps the Place of index i and the Place of index j
 func (pr *PlacesResults) Swap(i, j int) {
-	tmp := pr.Places[i]
-	pr.Places[i] = pr.Places[j]
-	pr.Places[j] = tmp
+	pr.Places[i], pr.Places[j] = pr.Places[j], pr.Places[i]
 }
 
 // PlacesRequest is the query you need to build before passing it to Places
@@ -105,10 +103,10 @@ const placesEndpoint = "places"
 // It is context aware.
 func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
-	url := s.APIURL + "/" + placesEndpoint
+	reqURL := s.APIURL + "/" + placesEndpoint
 
 	// Call
-	return s.places(ctx, url, params)
+	return s.places(ctx, reqURL, params)
 }
 
 // Places searches in all geographical objects within a coverage using their names, returning a list of places.
@@ -116,8 +114,8 @@ func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResu
 // It is context aware.
 func (scope *Scope) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
 	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
+	reqURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
 
 	// Call
-	return scope.session.places(ctx, url, params)
+	return scope.session.places(ctx, reqURL, params)
 }

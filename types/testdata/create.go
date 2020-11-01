@@ -171,7 +171,8 @@ func main() {
 			// Get file stat
 			stat, err := file.Stat()
 			if err != nil {
-				fmt.Printf("Error while retrieving file stat: %v\n")
+				fmt.Printf("Error while retrieving file stat: %v\n", err)
+				continue
 			}
 
 			// Now for each Journey, create a new file and write to it

@@ -12,6 +12,7 @@ import (
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
+	t.Helper()
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
@@ -19,7 +20,7 @@ func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
 			t.Parallel()
 
 			// Create a pointer to a new value of the type indicated in resultsType
-			var res interface{} = reflect.New(resultsType).Interface()
+			var res = reflect.New(resultsType).Interface()
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
 			err := json.Unmarshal(data, res)

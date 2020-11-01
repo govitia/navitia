@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"io"
+	"log"
 	"net/http"
 	"net/url"
 
@@ -27,13 +28,10 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	res.creating()
 
 	// Create the request
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 	if err != nil {
 		return errors.Wrapf(err, "couldn't create new request (for %s)", url)
 	}
-
-	// Add context to the request
-	req = req.WithContext(ctx)
 
 	// Add basic auth
 	req.SetBasicAuth(s.APIKey, "")
@@ -46,12 +44,16 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	if err != nil {
 		return errors.Wrap(err, "error while executing request")
 	}
-	if resp.StatusCode != 200 {
+	if resp.StatusCode != http.StatusOK {
 		return parseRemoteError(resp)
 	}
 
 	// Defer the close
-	defer resp.Body.Close()
+	defer func() {
+		if err := resp.Body.Close(); err != nil {
+			log.Println(err)
+		}
+	}()
 
 	// Check for cancellation
 	select {
@@ -82,8 +84,8 @@ func (s *Session) request(ctx context.Context, baseURL string, query query, res 
 	if err != nil {
 		return errors.Wrap(err, "error while retrieving url values to be encoded")
 	}
-	url := baseURL + "?" + values.Encode()
+	reqURL := baseURL + "?" + values.Encode()
 
 	// Call requestURL
-	return s.requestURL(ctx, url, res)
+	return s.requestURL(ctx, reqURL, res)
 }

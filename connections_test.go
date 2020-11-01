@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/aabizri/navitia/types"
+	"github.com/govitia/navitia/types"
 )
 
 func TestConnectionsSA(t *testing.T) {
@@ -59,7 +59,6 @@ func TestConnectionsSA(t *testing.T) {
 		t.Run(name+"_departures", depFunc)
 		t.Run(name+"_arrivals", arrFunc)
 	}
-
 }
 
 // Test_ConnectionsResults_Unmarshal tests unmarshalling for ConnectionsResults.

@@ -159,7 +159,6 @@ func getCategory(path string) (typeTestData, error) {
 
 // load loads the file structing into the testData
 func load() error {
-
 	subDirsInfo, err := listCategoryDirs(testDataPath)
 	if err != nil {
 		return err

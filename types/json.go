@@ -74,7 +74,13 @@ func (err UnmarshalError) Cause() error {
 
 // Error implements error
 func (err UnmarshalError) Error() string {
-	msg := fmt.Sprintf("(*%s).UnmarshalJSON: Unmarshalling %s (json: \"%s\") with value \"%v\" failed", err.Type, err.Name, err.Key, err.Value)
+	msg := fmt.Sprintf(
+		"(*%s).UnmarshalJSON: Unmarshalling %s (json: \"%s\") with value \"%v\" failed",
+		err.Type,
+		err.Name,
+		err.Key,
+		err.Value)
+
 	if err.Message != "" {
 		msg += ": " + err.Message
 	}
