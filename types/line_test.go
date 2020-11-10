@@ -27,7 +27,7 @@ func BenchmarkLineUnmarshal(b *testing.B) {
 	runGen := func(in []byte) func(*testing.B) {
 		return func(b *testing.B) {
 			for i := 0; i < b.N; i++ {
-				var l = &Line{}
+				l := &Line{}
 				_ = l.UnmarshalJSON(in)
 			}
 		}

@@ -1,16 +1,15 @@
 package navitia
 
 import (
-	"context"
 	"net/url"
-	"sort"
-	"strconv"
 
 	"github.com/govitia/navitia/types"
+	"github.com/govitia/navitia/utils"
 )
 
+const placesEndpoint = "places"
+
 // PlacesResults doesn't have pagination, as the remote API doesn't support it.
-//
 // PlacesResults can be sorted, it implements sort.Interface.
 type PlacesResults struct {
 	Places []types.Container `json:"places"`
@@ -26,7 +25,6 @@ func (pr *PlacesResults) Len() int {
 }
 
 // Less reports if the quality of the Place with the index i is less than that of the Place with the index j
-//
 // Note: In most use cases, that's the opposite of the desired behaviour, so simply use sort.Reverse and ta-da !
 func (pr *PlacesResults) Less(i, j int) bool {
 	return pr.Places[i].Quality < pr.Places[j].Quality
@@ -60,62 +58,18 @@ type PlacesRequest struct {
 
 // toURL formats a Places request to url
 func (req PlacesRequest) toURL() (url.Values, error) {
-	params := url.Values{
-		"q": []string{req.Query},
-	}
+	rb := utils.NewRequestBuilder()
 
-	if len(req.Types) != 0 {
-		params["type[]"] = req.Types
-	}
-
-	if len(req.AdminURI) != 0 {
-		params["admin_uri[]"] = req.AdminURI
-	}
+	rb.AddString("q", req.Query)
+	rb.AddStringSlice("type[]", req.Types)
+	rb.AddStringSlice("admin_uri[]", req.AdminURI)
 
 	if !req.Geo {
-		params["disable_geojson"] = []string{"true"}
+		rb.AddString("disable_geojson", "true")
 	}
 
 	if req.Count != 0 {
-		countStr := strconv.FormatUint(uint64(req.Count), 10)
-		params["count"] = []string{countStr}
+		rb.AddUInt("count", req.Count)
 	}
-	return params, nil
-}
-
-// places is the internal function used by Places functions
-func (s *Session) places(ctx context.Context, url string, params PlacesRequest) (*PlacesResults, error) {
-	var results = &PlacesResults{session: s}
-	err := s.request(ctx, url, params, results)
-
-	// Sort the places if quality is defined on the results, no need to expand some call
-	// Justification for the if condition: If at least of of the results quality is 0, then all of them are 0.
-	if results.Len() != 0 && results.Places[0].Quality != 0 {
-		sort.Sort(sort.Reverse(results))
-	}
-	return results, err
-}
-
-const placesEndpoint = "places"
-
-// Places searches in all geographical objects using their names, returning a list of corresponding places.
-//
-// It is context aware.
-func (s *Session) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
-	// Create the URL
-	reqURL := s.APIURL + "/" + placesEndpoint
-
-	// Call
-	return s.places(ctx, reqURL, params)
-}
-
-// Places searches in all geographical objects within a coverage using their names, returning a list of places.
-//
-// It is context aware.
-func (scope *Scope) Places(ctx context.Context, params PlacesRequest) (*PlacesResults, error) {
-	// Create the URL
-	reqURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + placesEndpoint
-
-	// Call
-	return scope.session.places(ctx, reqURL, params)
+	return rb.Values(), nil
 }

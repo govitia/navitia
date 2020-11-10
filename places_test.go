@@ -36,7 +36,6 @@ func Test_Places(t *testing.T) {
 		}
 
 		res, err := testSession.Places(ctx, params)
-
 		if err != nil {
 			t.Fatalf("error in Places: %v\n\tParameters: %#v\n\tReceived: %#v", err, params, res)
 		}

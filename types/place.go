@@ -31,6 +31,8 @@ type StopArea struct {
 
 	// Stop points countained in this stop area
 	StopPoints []StopPoint `json:"stop_points"`
+
+	Timezone string `json:"timezone"`
 }
 
 // A POIType codes for the type of the point of interest
@@ -79,6 +81,8 @@ type StopPoint struct {
 	// Name of the stop point
 	Name string `json:"name"`
 
+	Label string `json:"label"`
+
 	// Coordinates of the stop point
 	Coord Coordinates `json:"coord"`
 
@@ -90,6 +94,14 @@ type StopPoint struct {
 
 	// Stop Area countaining the stop point
 	StopArea *StopArea `json:"stop_area"`
+
+	CommercialModes []CommercialMode `json:"commercial_modes"`
+
+	Links []Link `json:"links"`
+
+	PhysicalModes []PhysicalMode `json:"physical_modes"`
+
+	FareZone FareZone `json:"fare_zone"`
 }
 
 // An Admin represents an administrative region: a region under the control/responsibility of a specific organisation.
@@ -111,4 +123,6 @@ type Admin struct {
 
 	// Zip code of the administrative region
 	ZipCode string `json:"zip_code"`
+
+	Insee string `json:"insee"`
 }

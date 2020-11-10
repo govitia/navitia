@@ -20,7 +20,7 @@ func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
 			t.Parallel()
 
 			// Create a pointer to a new value of the type indicated in resultsType
-			var res = reflect.New(resultsType).Interface()
+			res := reflect.New(resultsType).Interface()
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
 			err := json.Unmarshal(data, res)

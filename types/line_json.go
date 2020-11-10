@@ -37,8 +37,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	gen := unmarshalErrorMaker{"Line", b}
 
 	// Now unmarshall the raw data into the analogous structure
-	err := json.Unmarshal(b, data)
-	if err != nil {
+	if err := json.Unmarshal(b, data); err != nil {
 		return errors.Wrap(err, "Line.UnmarshalJSON: error while unmarshalling Line")
 	}
 
@@ -79,6 +78,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	// We expect as well a 6-character long value
 	if str := data.OpeningTime; len(str) == 6 {
 		t := &l.OpeningTime
+		var err error
 		t.Hours, t.Minutes, t.Seconds, err = parseTime(str)
 		if err != nil {
 			return gen.err(err, "OpeningTime", "opening_time", str, "error in parseTime")
@@ -86,6 +86,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	}
 	if str := data.ClosingTime; len(str) == 6 {
 		t := &l.ClosingTime
+		var err error
 		t.Hours, t.Minutes, t.Seconds, err = parseTime(str)
 		if err != nil {
 			return gen.err(err, "ClosingTime", "closing_time", str, "error in parseTime")

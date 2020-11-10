@@ -48,8 +48,7 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now unmarshall the raw data into the analogous structure
-	err := json.Unmarshal(b, data)
-	if err != nil {
+	if err := json.Unmarshal(b, data); err != nil {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
 
@@ -59,6 +58,7 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	// As the given duration is in second, let's multiply it by one second to have the correct value
 	j.Duration = time.Duration(data.Duration) * time.Second
 
+	var err error
 	// For departure, requested and arrival, we use parseDateTime
 	j.Departure, err = parseDateTime(data.Departure)
 	if err != nil {
@@ -91,8 +91,7 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now unmarshall the raw data into the analogous structure
-	err := json.Unmarshal(b, data)
-	if err != nil {
+	if err := json.Unmarshal(b, data); err != nil {
 		return errors.Wrap(err, "Error while unmarshalling journey")
 	}
 
@@ -129,8 +128,7 @@ func (c *CO2Emissions) UnmarshalJSON(b []byte) error {
 	}
 
 	// Now unmarshall the raw data into the analogous structure
-	err := json.Unmarshal(b, data)
-	if err != nil {
+	if err := json.Unmarshal(b, data); err != nil {
 		return errors.Wrap(err, "Error while unmarshalling CO2Emissions")
 	}
 

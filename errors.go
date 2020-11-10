@@ -68,7 +68,7 @@ func (err RemoteError) Error() string {
 
 // parseRemoteError parses a non 200 OK status-coded response and returns the error
 func parseRemoteError(resp *http.Response) error {
-	var remoteErr = &RemoteError{StatusCode: resp.StatusCode}
+	remoteErr := &RemoteError{StatusCode: resp.StatusCode}
 
 	// Parse it
 	dec := json.NewDecoder(resp.Body)

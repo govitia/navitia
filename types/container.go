@@ -60,10 +60,10 @@ type Object interface{}
 
 // A Container holds an Object, which can be a Place or a PT Object
 type Container struct {
-	ID           ID
-	Name         string
-	EmbeddedType string
-	Quality      int
+	ID           ID     `json:"id"`
+	Name         string `json:"name"`
+	EmbeddedType string `json:"embedded_type"`
+	Quality      int    `json:"quality"`
 
 	embeddedJSON json.RawMessage
 

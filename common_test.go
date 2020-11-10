@@ -21,7 +21,7 @@ func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
 
 			// Create a pointer to a new value of the type indicated in resultsType
 			// We know it is a results, so we assert it, this way we don't get any silent fails.
-			var res = reflect.New(resultsType).Interface().(results)
+			res := reflect.New(resultsType).Interface().(results)
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
 			err := json.Unmarshal(data, res)

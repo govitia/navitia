@@ -16,6 +16,13 @@ type Paging struct {
 	Previous func(ctx context.Context, s *Session, res results) error
 }
 
+type link struct {
+	Href      string
+	Rel       string
+	Templated bool
+	Type      string
+}
+
 // createPagingFunc creates a paging func (either Previous or Next)
 func createPagingFunc(url string) func(ctx context.Context, s *Session, res results) error {
 	f := func(ctx context.Context, s *Session, res results) error {
@@ -42,13 +49,5 @@ func (p *Paging) UnmarshalJSON(b []byte) error {
 		}
 	}
 
-	// Return
 	return nil
-}
-
-type link struct {
-	Href      string
-	Rel       string
-	Templated bool
-	Type      string
 }

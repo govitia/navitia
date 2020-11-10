@@ -88,7 +88,6 @@ func (r *Region) UnmarshalJSON(b []byte) error {
 	}
 
 	return nil
-
 }
 
 // convertWktMPtoGeomMP converts a wkt MultiPolygon to a geom MultiPolygon
@@ -98,11 +97,11 @@ func convertWktMPtoGeomMP(in *wkt.MultiPolygon) (*geom.MultiPolygon, error) {
 	mp := geom.NewMultiPolygon(geom.XY)
 
 	// Then let's iterate through the polygons, and convert each of them from wkt.Coord to geom.Coord
-	var multipolygonCoords = make([][][]geom.Coord, len(in.Polygons))
+	multipolygonCoords := make([][][]geom.Coord, len(in.Polygons))
 	for i, k := range in.Polygons {
-		var polygonCoords = make([][]geom.Coord, len(k))
+		polygonCoords := make([][]geom.Coord, len(k))
 		for j, l := range k {
-			var coords = make([]geom.Coord, len(l))
+			coords := make([]geom.Coord, len(l))
 			for n, m := range l {
 				coord := make(geom.Coord, 2)
 				coord[0] = m.X

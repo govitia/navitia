@@ -61,7 +61,7 @@ type Journey struct {
 
 	Fare Fare
 
-	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
+	// Status from the whole journey taking into acount the most disturbing information retrieved on every object used
 	Status Effect
 }
 

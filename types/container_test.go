@@ -19,7 +19,7 @@ func loadContainers() error {
 	cs := make(map[string]*Container, len(corpus))
 	// For each of them, unmarshal and add to containers
 	for name, datum := range corpus {
-		var c = &Container{}
+		c := &Container{}
 
 		err := c.UnmarshalJSON(datum)
 		if err != nil {
@@ -108,7 +108,7 @@ func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 		without = func(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				// Unmarshal a Journey
-				var c = &Container{}
+				c := &Container{}
 				_ = c.UnmarshalJSON(in)
 			}
 		}
@@ -116,7 +116,7 @@ func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 		with = func(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				// Unmarshal a Journey
-				var c = &Container{}
+				c := &Container{}
 				_ = c.UnmarshalJSON(in)
 
 				_, _ = c.Object()
@@ -127,7 +127,7 @@ func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				// Unmarshal a Journey
 				b.StopTimer()
-				var c = &Container{}
+				c := &Container{}
 				_ = c.UnmarshalJSON(in)
 				b.StartTimer()
 				_, _ = c.Object()
@@ -169,7 +169,7 @@ func BenchmarkContainer_Check(b *testing.B) {
 
 	// Loop over all corpus
 	for name, datum := range data {
-		var c = Container{}
+		c := Container{}
 
 		err := json.Unmarshal(datum, &c)
 		if err != nil {

@@ -34,7 +34,7 @@ func (conf PlacesResultsConf) PrettyWrite(pr *navitia.PlacesResults, out io.Writ
 
 	// Iterate through the places, printing them
 	for i, p := range pr.Places {
-		var base = []byte(color.New(color.FgCyan).Sprintf("#%d: ", i))
+		base := []byte(color.New(color.FgCyan).Sprintf("#%d: ", i))
 		buf := bytes.NewBuffer(base)
 		buffers[i] = buf
 

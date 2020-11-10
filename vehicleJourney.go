@@ -1,12 +1,11 @@
 package navitia
 
 import (
-	"context"
 	"net/url"
-	"strconv"
 	"time"
 
 	"github.com/govitia/navitia/types"
+	"github.com/govitia/navitia/utils"
 )
 
 // JourneyResults contains the results of a Journey request
@@ -15,6 +14,8 @@ import (
 // Based on very basic inspection, it seems they aren't filled when there are sections...
 type VehicleJourneyResults struct {
 	VehicleJourneys []types.VehicleJourney `json:"vehicle_journeys"`
+
+	Disruptions []types.Disruption `json:"disruptions"`
 
 	Paging Paging `json:"links"`
 
@@ -28,8 +29,9 @@ func (jr *VehicleJourneyResults) Count() int {
 	return len(jr.VehicleJourneys)
 }
 
-// JourneyRequest contain the parameters needed to make a Journey request
+// VehicleJourneyRequest contain the parameters needed to make a Journey request
 type VehicleJourneyRequest struct {
+	ID types.ID
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
 	From types.ID
@@ -91,135 +93,69 @@ type VehicleJourneyRequest struct {
 	// Headsign If given, add a filter on the vehicle journeys that has the
 	// given value as headsign (on vehicle journey itself or at a stop time).
 	Headsign string
+
+	// Since If given, filter on a period, optional.
+	Since time.Time
+	// Until, like Since, filter on a period, optional too.
+	Until time.Time
 }
 
 // toURL formats a journey request to url
 // Should be refactored using a switch statement
 func (req VehicleJourneyRequest) toURL() (url.Values, error) {
-	params := url.Values{}
-
-	// Define a few useful functions
-	addUint := func(key string, amount uint64) {
-		if amount != 0 {
-			str := strconv.FormatUint(amount, 10)
-			params.Add(key, str)
-		}
-	}
-	addInt := func(key string, amount int64) {
-		if amount != 0 {
-			str := strconv.FormatInt(amount, 10)
-			params.Add(key, str)
-		}
-	}
-	addString := func(key string, str string) {
-		if str != "" {
-			params.Add(key, str)
-		}
-	}
-	addIDSlice := func(key string, ids []types.ID) {
-		if len(ids) != 0 {
-			for _, id := range ids {
-				params.Add(key, string(id))
-			}
-		}
-	}
-	addModes := func(key string, modes []string) {
-		if len(modes) != 0 {
-			for _, mode := range modes {
-				params.Add(key, mode)
-			}
-		}
-	}
-	addFloat := func(key string, amount float64) {
-		if amount != 0 {
-			speedStr := strconv.FormatFloat(amount, 'f', 3, 64)
-			params.Add(key, speedStr)
-		}
-	}
+	rb := utils.NewRequestBuilder()
 
 	// Encode the from and to
-	if from := req.From; from != "" {
-		params.Add("from", string(from))
-	}
-	if to := req.To; to != "" {
-		params.Add("to", string(to))
-	}
+	rb.AddString("from", string(req.From))
+	rb.AddString("to", string(req.To))
 
-	if datetime := req.Date; !datetime.IsZero() {
-		str := datetime.Format(types.DateTimeFormat)
-		params.Add("datetime", str)
+	if !req.Date.IsZero() {
+		rb.AddDateTime("datetime", req.Date)
 		if req.DateIsArrival {
-			params.Add("datetime_represents", "arrival")
+			rb.AddString("datetime_represents", "arrival")
 		}
 	}
 
-	addString("traveler_type", string(req.Traveler))
-
-	addString("data_freshness", string(req.Freshness))
-
-	addIDSlice("forbidden_uris[]", req.Forbidden)
-
-	addIDSlice("allowed_id[]", req.Allowed)
-
-	addModes("first_section_mode[]", req.FirstSectionModes)
-
-	addModes("last_section_mode[]", req.LastSectionModes)
+	rb.AddString("traveler_type", string(req.Traveler))
+	rb.AddString("data_freshness", string(req.Freshness))
+	rb.AddIDSlice("forbidden_uris[]", req.Forbidden)
+	rb.AddIDSlice("allowed_id[]", req.Allowed)
+	rb.AddMode("first_section_mode[]", req.FirstSectionModes)
+	rb.AddMode("last_section_mode[]", req.LastSectionModes)
 
 	// max_duration_to_pt
-	addInt("max_duration_to_pt", int64(req.MaxDurationToPT/time.Second))
+	rb.AddInt("max_duration_to_pt", int(req.MaxDurationToPT/time.Second))
 
 	// walking_speed, bike_speed, bss_speed & car_speed
-	addFloat("walking_speed", req.WalkingSpeed)
-	addFloat("bike_speed", req.BikeSpeed)
-	addFloat("bss_speed", req.BikeShareSpeed)
-	addFloat("car_speed", req.CarSpeed)
+	rb.AddFloat64("walking_speed", req.WalkingSpeed)
+	rb.AddFloat64("bike_speed", req.BikeSpeed)
+	rb.AddFloat64("bss_speed", req.BikeShareSpeed)
+	rb.AddFloat64("car_speed", req.CarSpeed)
 
 	// If count is defined don't bother with the minimimal and maximum amount of items to return
 	if count := req.Count; count != 0 {
-		addUint("count", uint64(count))
+		rb.AddUInt("count", count)
 	} else {
-		addUint("min_nb_journeys", uint64(req.MinJourneys))
-		addUint("max_nb_journeys", uint64(req.MaxJourneys))
+		rb.AddUInt("min_nb_journeys", req.MinJourneys)
+		rb.AddUInt("max_nb_journeys", req.MaxJourneys)
 	}
 
 	// max_nb_transfers
-	addUint("max_nb_transfers", uint64(req.MaxTransfers))
+	rb.AddUInt("max_nb_transfers", req.MaxTransfers)
 
 	// max_duration
-	addInt("max_duration", int64(req.MaxDuration/time.Second))
+	rb.AddInt("max_duration", int(req.MaxDuration/time.Second))
 
 	// headsign
-	addString("headsign", req.Headsign)
+	rb.AddString("headsign", req.Headsign)
 
 	// wheelchair
 	if req.Wheelchair {
-		params.Add("wheelchair", "true")
+		rb.AddString("wheelchair", "true")
 	}
 
-	return params, nil
-}
+	rb.AddDateTime("since", req.Since)
+	rb.AddDateTime("until", req.Until)
 
-// journeys is the internal function used by Journeys functions
-func (s *Session) vehicleJourneys(ctx context.Context, url string, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
-	var results = &VehicleJourneyResults{session: s}
-	err := s.request(ctx, url, req, results)
-	return results, err
-}
-
-const vehicleJourneysEndpoint string = "vehicle_journeys"
-
-// Journeys computes a list of journeys according to the parameters given
-func (s *Session) VehicleJourneys(ctx context.Context, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
-	// Create the URL
-	reqURL := s.APIURL + "/" + vehicleJourneysEndpoint
-
-	return s.vehicleJourneys(ctx, reqURL, req)
-}
-
-// Journeys coputes a list of journeys according to the parameters given in a specific scope
-func (scope *Scope) VehicleJourneys(ctx context.Context, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
-	// Create the URL
-	reqURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + vehicleJourneysEndpoint
-
-	return scope.session.vehicleJourneys(ctx, reqURL, req)
+	return rb.Values(), nil
 }

@@ -3,7 +3,7 @@
 package types
 
 func FuzzContainer(data []byte) int {
-	var c = &Container{}
+	c := &Container{}
 
 	// Let's unmarshal, this is not our job so "bleh"
 	err := c.UnmarshalJSON(data)
