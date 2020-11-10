@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/aabizri/navitia/types"
 	"github.com/fatih/color"
+
+	"github.com/govitia/navitia/types"
 )
 
 var modeEmoji = map[string]string{
@@ -30,9 +31,9 @@ var modeEmoji = map[string]string{
 	"Bus":   "🚍",
 
 	// Classic Modes: Walking, biking or bikesharing
-	string(types.ModeWalking):   "🚶",
-	string(types.ModeBike):      "🚴",
-	string(types.ModeBikeShare): "🚴",
+	types.ModeWalking:   "🚶",
+	types.ModeBike:      "🚴",
+	types.ModeBikeShare: "🚴",
 }
 
 // SectionConf stores configuration for pretty-printing a types.Section
@@ -60,13 +61,22 @@ func (conf SectionConf) PrettyWrite(s *types.Section, out io.Writer) error {
 	}
 
 	var middle string
+
 	switch {
 	case s.Mode != "":
-		middle = modeEmoji[string(s.Mode)]
+		middle = modeEmoji[s.Mode]
 	case s.Display.PhysicalMode != "":
 		middle = modeEmoji[string(s.Display.PhysicalMode)] + s.Display.Label
 	}
-	msg := fmt.Sprintf("\t%s (%s)\t%s➡️%s\n", conf.Mode.Sprint(middle), conf.Duration.Sprint(s.Duration.String()), conf.From.Sprint(s.From.Name), conf.To.Sprint(s.To.Name))
+
+	const msgFmt = "\t%s (%s)\t%s➡️%s\n"
+	msg := fmt.Sprintf(
+		msgFmt,
+		conf.Mode.Sprint(middle),
+		conf.Duration.Sprint(s.Duration.String()),
+		conf.From.Sprint(s.From.Name),
+		conf.To.Sprint(s.To.Name),
+	)
 
 	_, err := out.Write([]byte(msg))
 	return err

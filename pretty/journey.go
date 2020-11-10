@@ -7,8 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/aabizri/navitia/types"
 	"github.com/fatih/color"
+
+	"github.com/govitia/navitia/types"
 )
 
 const timeLayout = "15:04"
@@ -35,7 +36,13 @@ var DefaultJourneyConf = JourneyConf{
 // PrettyWrite writes a pretty-printed types.Journey to out
 func (conf JourneyConf) PrettyWrite(j *types.Journey, out io.Writer) error {
 	// Build the envellope
-	msg := fmt.Sprintf("%s ➡️ %s | %s\n", conf.Departure.Sprint(j.Departure.Format(conf.DateTimeLayout)), conf.Arrival.Sprint(j.Arrival.Format(conf.DateTimeLayout)), conf.Duration.Sprint(j.Duration.String()))
+	const msgFmt = "%s ➡️ %s | %s\n"
+	msg := fmt.Sprintf(
+		msgFmt,
+		conf.Departure.Sprint(j.Departure.Format(conf.DateTimeLayout)),
+		conf.Arrival.Sprint(j.Arrival.Format(conf.DateTimeLayout)),
+		conf.Duration.Sprint(j.Duration.String()),
+	)
 
 	// Buffers to line-up the reads, sequentially
 	buffers := make([]io.Reader, len(j.Sections))

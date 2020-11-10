@@ -1,2 +1,25 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.log
+*.log.gz
+*.zip
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+/out/
+
+# modules
+/vendor/
+
+# jetbrains
+/.idea/
+/.vscode/
+
 Fuzz*
-.vscode

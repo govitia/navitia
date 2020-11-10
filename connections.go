@@ -1,15 +1,14 @@
 package navitia
 
 import (
-	"context"
 	"encoding/json"
 	"net/url"
-	"strconv"
 	"time"
-	"unsafe"
 
-	"github.com/aabizri/navitia/types"
 	"github.com/pkg/errors"
+
+	"github.com/govitia/navitia/types"
+	"github.com/govitia/navitia/utils"
 )
 
 // A Connection is either a Departure or an Arrival
@@ -17,16 +16,14 @@ type Connection struct {
 	Display   types.Display
 	StopPoint types.StopPoint
 	Route     types.Route
-	//StopDateTime
+	// StopDateTime
 }
 
 // ConnectionsResults holds the results of a departures or arrivals request.
 type ConnectionsResults struct {
 	Connections []Connection
-
-	Paging Paging `json:"links"`
-
-	Logging `json:"-"`
+	Paging      Paging `json:"links"`
+	Logging     `json:"-"`
 }
 
 // UnmarshalJSON implements unmarshalling for ConnectionsResults.
@@ -67,14 +64,10 @@ type ConnectionsRequest struct {
 	// From what time on do you want to see the results ?
 	From time.Time
 
-	// Maximum duration between From and the retrieved results.
-	//
-	// Default value is 24 hours
+	// Maximum duration between From and the retrieved results (default 24h)
 	Duration time.Duration
 
-	// The maximum amount of results
-	//
-	// Default value is 10 results
+	// The maximum amount of results (default 10)
 	Count uint
 
 	// ForbiddenURIs
@@ -88,96 +81,30 @@ type ConnectionsRequest struct {
 }
 
 func (req ConnectionsRequest) toURL() (url.Values, error) {
-	values := url.Values{}
+	rb := utils.NewRequestBuilder()
 
-	if datetime := req.From; !datetime.IsZero() {
-		str := datetime.Format(types.DateTimeFormat)
-		values.Add("datetime", str)
-	}
+	rb.AddDateTime("datetime", req.From)
 
 	// If count is defined don't bother with the minimimal and maximum amount of items to return
-	if count := req.Count; count != 0 {
-		countStr := strconv.FormatUint(uint64(count), 10)
-		values.Add("count", countStr)
+	if req.Count != 0 {
+		rb.AddUInt("count", req.Count)
 	}
 
 	// Deal with the forbidden URIs
-	if forbidden := req.Forbidden; len(forbidden) != 0 {
-		magic := *(*[]string)(unsafe.Pointer(&forbidden))
-		values["forbidden_uris[]"] = magic
-	}
+	rb.AddIDSlice("forbidden_uris[]", req.Forbidden)
 
 	// Set the freshness
-	if freshness := req.Freshness; freshness != "" {
-		values.Add("data_freshness", string(freshness))
-	}
+	rb.AddString("data_freshness", string(req.Freshness))
 
 	// Add GEO
 	if !req.Geo {
-		values.Add("disable_geojson", "true")
+		rb.AddString("disable_geojson", "true")
 	}
 
-	return values, nil
-}
-
-// departures is the internal function used by Departures & Arrivals functions
-func (s *Session) connections(ctx context.Context, url string, req ConnectionsRequest) (*ConnectionsResults, error) {
-	var results = &ConnectionsResults{}
-	err := s.request(ctx, url, req, results)
-	return results, err
+	return rb.Values(), nil
 }
 
 const (
 	departuresEndpoint string = "departures"
 	arrivalsEndpoint          = "arrivals"
 )
-
-// DeparturesSA requests the departures for a given StopArea
-func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
-	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
-
-	return scope.session.connections(ctx, url, req)
-}
-
-// DeparturesSP requests the departures for a given StopPoint
-func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
-	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
-
-	return scope.session.connections(ctx, url, req)
-}
-
-// DeparturesC requests the departures from a point described by coordinates.
-func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
-	// Create the URL
-	coordsQ := string(coords.ID())
-	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
-
-	return s.connections(ctx, url, req)
-}
-
-// ArrivalsSA requests the arrivals for a given StopArea in a given region.
-func (scope *Scope) ArrivalsSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
-	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + arrivalsEndpoint
-
-	return scope.session.connections(ctx, url, req)
-}
-
-// ArrivalsSP requests the arrivals for a given StopPoint in a given region.
-func (scope *Scope) ArrivalsSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
-	// Create the URL
-	url := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + arrivalsEndpoint
-
-	return scope.session.connections(ctx, url, req)
-}
-
-// ArrivalsC requests the arrivals from a point described by coordinates.
-func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
-	// Create the URL
-	coordsQ := string(coords.ID())
-	url := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint
-
-	return s.connections(ctx, url, req)
-}

@@ -12,16 +12,16 @@ type JourneyQualification string
 // JourneyXXX qualify journeys
 const (
 	JourneyBest          JourneyQualification = "best"
-	JourneyRapid                              = "rapid"
-	JourneyComfort                            = "comfort"
-	JourneyCar                                = "car"
-	JourneyLessWalk                           = "less_fallback_walk"
-	JourneyLessBike                           = "less_fallback_bike"
-	JourneyLessBikeShare                      = "less_fallback_bss"
-	JourneyFastest                            = "fastest"
-	JourneyNoPTWalk                           = "non_pt_walk"
-	JourneyNoPTBike                           = "non_pt_bike"
-	JourneyNoPTBikeShare                      = "non_pt_bss"
+	JourneyRapid         JourneyQualification = "rapid"
+	JourneyComfort       JourneyQualification = "comfort"
+	JourneyCar           JourneyQualification = "car"
+	JourneyLessWalk      JourneyQualification = "less_fallback_walk"
+	JourneyLessBike      JourneyQualification = "less_fallback_bike"
+	JourneyLessBikeShare JourneyQualification = "less_fallback_bss"
+	JourneyFastest       JourneyQualification = "fastest"
+	JourneyNoPTWalk      JourneyQualification = "non_pt_walk"
+	JourneyNoPTBike      JourneyQualification = "non_pt_bike"
+	JourneyNoPTBikeShare JourneyQualification = "non_pt_bss"
 )
 
 // JourneyQualifications is a user-friendly slice of all journey qualification
@@ -61,7 +61,7 @@ type Journey struct {
 
 	Fare Fare
 
-	//Status from the whole journey taking into acount the most disturbing information retrieved on every object used
+	// Status from the whole journey taking into acount the most disturbing information retrieved on every object used
 	Status Effect
 }
 
@@ -87,14 +87,14 @@ const (
 	TravelerStandard TravelerType = "standard"
 
 	// A slow walker
-	TravelerSlowWalker = "slow_walker"
+	TravelerSlowWalker TravelerType = "slow_walker"
 
 	// A fast walker
-	TravelerFastWalker = "fast_walker"
+	TravelerFastWalker TravelerType = "fast_walker"
 
 	// A Traveler with luggage
-	TravelerWithLuggage = "luggage"
+	TravelerWithLuggage TravelerType = "luggage"
 
 	// A Traveler in a wheelchair
-	TravelerInWheelchair = "wheelchair"
+	TravelerInWheelchair TravelerType = "wheelchair"
 )

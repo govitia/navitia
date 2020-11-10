@@ -7,6 +7,6 @@ type PTObject interface{}
 //
 // An example : a train, routing a Paris to Lyon itinerary every day at 06h29, is the “Trip” named “6641”.
 type Trip struct {
-	ID   ID
-	Name string
+	ID   ID     `json:"id"`
+	Name string `json:"name"`
 }

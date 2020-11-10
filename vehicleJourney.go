@@ -8,25 +8,30 @@ import (
 	"github.com/govitia/navitia/utils"
 )
 
-const journeysEndpoint = "journeys"
-
-// JourneyResults contains the results of a Journey request.
+// JourneyResults contains the results of a Journey request
+//
 // Warning: types.Journey.From / types.Journey.To aren't guaranteed to be filled.
 // Based on very basic inspection, it seems they aren't filled when there are sections...
-type JourneyResults struct {
-	Journeys []types.Journey `json:"journeys"`
-	Paging   Paging          `json:"links"`
-	Logging  `json:"-"`
-	session  *Session
+type VehicleJourneyResults struct {
+	VehicleJourneys []types.VehicleJourney `json:"vehicle_journeys"`
+
+	Disruptions []types.Disruption `json:"disruptions"`
+
+	Paging Paging `json:"links"`
+
+	Logging `json:"-"`
+
+	session *Session
 }
 
 // Count returns the number of results available in a JourneyResults
-func (jr *JourneyResults) Count() int {
-	return len(jr.Journeys)
+func (jr *VehicleJourneyResults) Count() int {
+	return len(jr.VehicleJourneys)
 }
 
-// JourneyRequest contain the parameters needed to make a Journey request
-type JourneyRequest struct {
+// VehicleJourneyRequest contain the parameters needed to make a Journey request
+type VehicleJourneyRequest struct {
+	ID types.ID
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
 	From types.ID
@@ -50,7 +55,8 @@ type JourneyRequest struct {
 	Allowed []types.ID
 
 	// Force the first section mode if it isn't a public transport mode
-	// Note: The parameter is inclusive, not exclusive. As such if you want to forbid a mode you have to include all modes except that one.
+	// Note: The parameter is inclusive, not exclusive. As such if you want to forbid a mode
+	// you have to include all modes except that one.
 	FirstSectionModes []string
 
 	// Same, but for the last section
@@ -87,11 +93,16 @@ type JourneyRequest struct {
 	// Headsign If given, add a filter on the vehicle journeys that has the
 	// given value as headsign (on vehicle journey itself or at a stop time).
 	Headsign string
+
+	// Since If given, filter on a period, optional.
+	Since time.Time
+	// Until, like Since, filter on a period, optional too.
+	Until time.Time
 }
 
 // toURL formats a journey request to url
 // Should be refactored using a switch statement
-func (req JourneyRequest) toURL() (url.Values, error) {
+func (req VehicleJourneyRequest) toURL() (url.Values, error) {
 	rb := utils.NewRequestBuilder()
 
 	// Encode the from and to
@@ -122,8 +133,8 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	rb.AddFloat64("car_speed", req.CarSpeed)
 
 	// If count is defined don't bother with the minimimal and maximum amount of items to return
-	if req.Count != 0 {
-		rb.AddUInt("count", req.Count)
+	if count := req.Count; count != 0 {
+		rb.AddUInt("count", count)
 	} else {
 		rb.AddUInt("min_nb_journeys", req.MinJourneys)
 		rb.AddUInt("max_nb_journeys", req.MaxJourneys)
@@ -142,6 +153,9 @@ func (req JourneyRequest) toURL() (url.Values, error) {
 	if req.Wheelchair {
 		rb.AddString("wheelchair", "true")
 	}
+
+	rb.AddDateTime("since", req.Since)
+	rb.AddDateTime("until", req.Until)
 
 	return rb.Values(), nil
 }

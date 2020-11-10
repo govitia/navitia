@@ -3,7 +3,7 @@
 package types
 
 func FuzzRegion(data []byte) int {
-	var r = &Region{}
+	r := &Region{}
 
 	// Let's unmarshal
 	err := r.UnmarshalJSON(data)

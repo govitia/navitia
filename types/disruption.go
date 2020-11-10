@@ -59,7 +59,7 @@ type Disruption struct {
 	InputImpactID ID
 
 	// Severity gives some categorization element
-	Severity Severity
+	Severity Severity `json:"severity"`
 
 	// Dates where the current disruption is active
 	Periods []Period
@@ -71,7 +71,7 @@ type Disruption struct {
 	LastUpdated time.Time
 
 	// Objects impacted
-	Impacted []ImpactedObject
+	Impacted []ImpactedObject `json:"impacted_stops"`
 
 	// The cause of that disruption
 	Cause string
@@ -79,6 +79,8 @@ type Disruption struct {
 	// The category of the disruption.
 	// Optional.
 	Category string
+
+	DisruptionID string `json:"disruption_id"`
 }
 
 // A Message contains the text to be provided to the traveler.
@@ -128,7 +130,7 @@ type ImpactedSection struct {
 // An ImpactedStop records the impact to a stop
 type ImpactedStop struct {
 	// The impacted stop point of the trip
-	Point StopPoint
+	Point StopPoint `json:"stop_point"`
 
 	// New departure hour (format HHMMSS) of the trip on this stop point
 	NewDeparture string
@@ -143,11 +145,35 @@ type ImpactedStop struct {
 	BaseArrival string
 
 	// Cause of the modification
-	Cause string
+	Cause string `json:"cause"`
 
 	// Effect on that StopPoint
 	// Can be "added", "deleted", "delayed"
 	Effect string
+
+	AmendedArrivalTime string `json:"amended_arrival_time"`
+
+	StopTimeEffect string `json:"stop_time_effect"`
+
+	DepartureStatus string `json:"departure_status"`
+
+	IsDetour bool `json:"is_detour"`
+
+	AmendedDepartureTime string `json:"amended_departure_time"`
+
+	BaseArrivalTime string `json:"base_arrival_time"`
+
+	BaseDepartureTime string `json:"base_departure_time"`
+
+	ArrivalStatus string `json:"arrival_status"`
+}
+
+type PTObjectDisruptions struct {
+	EmbeddedType string `json:"embedded_type"`
+	ID           string `json:"id"`
+	Quality      int    `json:"quality"`
+	Name         string `json:"name"`
+	Trip         Trip   `json:"trip"`
 }
 
 // Period of effect
@@ -159,14 +185,14 @@ type Period struct {
 // Severity object can be used to make visual grouping.
 type Severity struct {
 	// Name of severity
-	Name string
+	Name string `json:"name"`
 
 	// Priority of the severity. Given by the agency. 0 is the strongest priority, a nil Priority means its undefined (duh).
-	Priority *int
+	Priority *int `json:"priority"`
 
 	// HTML color for classification
-	Color color.Color
+	Color color.Color `json:"color"`
 
 	// Effect: Normalized value of the effect on the public transport object
-	Effect Effect
+	Effect Effect `json:"effect"`
 }

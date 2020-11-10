@@ -12,6 +12,7 @@ import (
 // 	If we expect no errors but we get one, the test fails
 //	If we expect an error but we don't get one, the test fails
 func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
+	t.Helper()
 	// Create the run function generator, allowing us to run this in parallel
 	rgen := func(data []byte, correct bool) func(t *testing.T) {
 		return func(t *testing.T) {
@@ -20,7 +21,7 @@ func testUnmarshal(t *testing.T, data typeTestData, resultsType reflect.Type) {
 
 			// Create a pointer to a new value of the type indicated in resultsType
 			// We know it is a results, so we assert it, this way we don't get any silent fails.
-			var res results = reflect.New(resultsType).Interface().(results)
+			res := reflect.New(resultsType).Interface().(results)
 
 			// We use encoding/json's unmarshaller, as we don't have one for this type
 			err := json.Unmarshal(data, res)

@@ -88,7 +88,7 @@ func extractCorpus(path string) (map[string][]byte, error) {
 	}
 
 	// Create the data
-	var corpus = make(map[string][]byte, len(files))
+	corpus := make(map[string][]byte, len(files))
 
 	// For each of them, populate testpairs
 	for _, finfo := range files {
@@ -120,7 +120,7 @@ func extractCorpus(path string) (map[string][]byte, error) {
 // getPertinentSubdirs, given a dir in a category subdirectory, returns the awaited values
 func getCategory(path string) (typeTestData, error) {
 	// Create the data
-	var data = typeTestData{}
+	data := typeTestData{}
 
 	// List the subdirs
 	subdirs, err := ioutil.ReadDir(path)
@@ -159,7 +159,6 @@ func getCategory(path string) (typeTestData, error) {
 
 // load loads the file structing into the testData
 func load() error {
-
 	subDirsInfo, err := listCategoryDirs(testDataPath)
 	if err != nil {
 		return err

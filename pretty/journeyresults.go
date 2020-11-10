@@ -5,9 +5,10 @@ import (
 	"io"
 	"sync"
 
-	"github.com/aabizri/navitia"
-	"github.com/aabizri/navitia/types"
 	"github.com/fatih/color"
+
+	"github.com/govitia/navitia"
+	"github.com/govitia/navitia/types"
 )
 
 // JourneyResultsConf stores configuration for pretty-printing a navitia.JourneyResults

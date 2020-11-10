@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/aabizri/navitia/types"
 	"github.com/fatih/color"
+
+	"github.com/govitia/navitia/types"
 )
 
 // ContainerConf stores configuration for use in ContainerWrite
@@ -36,8 +37,17 @@ func (conf ContainerConf) ContainerWrite(c *types.Container, out io.Writer) erro
 	if c.Quality != 0 {
 		msg = conf.Quality.Sprintf("[%d%%] ", c.Quality)
 	}
-	msg += fmt.Sprintf("(%s)\t%s", conf.Type.Sprint(placeTypeToName[c.EmbeddedType]), conf.Name.Sprint(c.Name))
-	out.Write([]byte(msg))
+
+	const msgFmt = "(%s)\t%s"
+	msg += fmt.Sprintf(
+		msgFmt,
+		conf.Type.Sprint(placeTypeToName[c.EmbeddedType]),
+		conf.Name.Sprint(c.Name),
+	)
+
+	if _, err := out.Write([]byte(msg)); err != nil {
+		return err
+	}
 
 	return nil
 }

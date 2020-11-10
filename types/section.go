@@ -48,36 +48,36 @@ const (
 	SectionPublicTransport SectionType = "public_transport"
 
 	// Street section
-	SectionStreetNetwork = "street_network"
+	SectionStreetNetwork SectionType = "street_network"
 
 	// Waiting section between transport
-	SectionWaiting = "waiting"
+	SectionWaiting SectionType = "waiting"
 
 	// This “stay in the vehicle” section occurs when the traveller has to stay in the vehicle when the bus change its routing.
-	SectionStayIn = "stay_in"
+	SectionStayIn SectionType = "stay_in"
 
 	// Transfer section
-	SectionTransfer = "transfer"
+	SectionTransfer SectionType = "transfer"
 
 	// Teleportation section. Used when starting or arriving to a city or a stoparea (“potato shaped” objects) Useful to make navitia idempotent.
 	// Warning: Be careful: no Path nor Geo items in this case
-	SectionCrowFly = "crow_fly"
+	SectionCrowFly SectionType = "crow_fly"
 
 	// Vehicle may not drive along: traveler will have to call agency to confirm journey
 	// Also sometimes called ODT
-	SectionOnDemandTransport = "on_demand_transport"
+	SectionOnDemandTransport SectionType = "on_demand_transport"
 
 	// Taking a bike from a bike sharing system (bss)
-	SectionBikeShareRent = "bss_rent"
+	SectionBikeShareRent SectionType = "bss_rent"
 
 	// Putting back a bike from a bike sharing system (bss)
-	SectionBikeSharePutBack = "bss_put_back"
+	SectionBikeSharePutBack SectionType = "bss_put_back"
 
 	// Boarding on plane
-	SectionBoarding = "boarding"
+	SectionBoarding SectionType = "boarding"
 
 	// Landing off the plane
-	SectionLanding = "landing"
+	SectionLanding SectionType = "landing"
 )
 
 // SectionTypes is the type of a section
@@ -101,7 +101,19 @@ type StopTime struct {
 	PTDateTime PTDateTime
 
 	// The stop point in question
-	StopPoint StopPoint
+	StopPoint StopPoint `json:"stop_point"`
+
+	DropOffAllowed bool `json:"drop_off_allowed"`
+
+	UTCDepartureTime string `json:"utc_departure_time"`
+
+	Headsign string `json:"headsign"`
+
+	UTCArrivalTime string `json:"utc_arrival_time"`
+
+	PickupAllowed bool `json:"pickup_allowed"`
+
+	DepartureTime string `json:"departure_time"`
 }
 
 // A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport)
@@ -113,14 +125,14 @@ const (
 	PTMethodRegular PTMethod = "regular"
 
 	// PTMethodDateTimeEstimated: No on-demand transport. However, line has at least one estimated date time.
-	PTMethodDateTimeEstimated = "had_date_time_estimated"
+	PTMethodDateTimeEstimated PTMethod = "had_date_time_estimated"
 
 	// PTMethodODTStopTime: Line does not contain any estimated stop times, nor zonal stop point location. But you will have to call to take it.
-	PTMethodODTStopTime = "odt_with_stop_time"
+	PTMethodODTStopTime PTMethod = "odt_with_stop_time"
 
 	// PTMethodODTStopPoint: Line can contain some estimated stop times, but no zonal stop point location. And you will have to call to take it.
-	PTMethodODTStopPoint = "odt_with_stop_point"
+	PTMethodODTStopPoint PTMethod = "odt_with_stop_point"
 
 	// PTMethodODTZone: Line can contain some estimated stop times, and zonal stop point location. And you will have to call to take it. Well, not really a public transport line, more a cab…
-	PTMethodODTZone = "odt_with_zone"
+	PTMethodODTZone PTMethod = "odt_with_zone"
 )
