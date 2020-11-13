@@ -31,7 +31,7 @@ func (scope *Scope) ArrivalsSP(ctx context.Context, req ConnectionsRequest, reso
 }
 
 // ArrivalsC requests the arrivals from a point described by coordinates.
-func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
+func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords types.Coord) (*ConnectionsResults, error) {
 	// Create the URL
 	coordsQ := string(coords.ID())
 	scopeURL := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + arrivalsEndpoint

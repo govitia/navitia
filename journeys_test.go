@@ -29,7 +29,7 @@ func Test_Journeys(t *testing.T) {
 	ctx := context.Background()
 
 	req := JourneyRequest{}
-	coords := types.Coordinates{Latitude: 48.847002, Longitude: 2.377310}
+	coords := types.Coord{Latitude: 48.847002, Longitude: 2.377310}
 	req.From = coords.ID()
 
 	res, err := testSession.Journeys(ctx, req)
@@ -46,8 +46,8 @@ func Test_Journeys_Paging(t *testing.T) {
 	ctx := context.Background()
 
 	params := JourneyRequest{
-		From: types.Coordinates{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
-		To:   types.Coordinates{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
+		From: types.Coord{Latitude: 48.842716, Longitude: 2.384471}.ID(), // 110 Avenue Daumesnil (Paris)
+		To:   types.Coord{Latitude: 48.867305, Longitude: 2.352005}.ID(), // 10 Rue du Caire (Paris)
 	}
 
 	res, err := testSession.Journeys(ctx, params)

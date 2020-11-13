@@ -74,7 +74,7 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	if data.Geo != nil {
 		// Catch an error !
 		if data.Geo.Coordinates == nil {
-			return gen.err(nil, "Geo", "geojson", data.Geo, "Geo.Coordinates is nil, can't continue as that will cause a panic")
+			return gen.err(nil, "Geo", "geojson", data.Geo, "Geo.Coord is nil, can't continue as that will cause a panic")
 		}
 
 		// Let's decode it

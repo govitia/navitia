@@ -23,8 +23,8 @@ type StopArea struct {
 	// If you don't know what to display, display the label
 	Label string `json:"label"`
 
-	// Coordinates of the stop area
-	Coord Coordinates `json:"coord"`
+	// Coord of the stop area
+	Coord Coord `json:"coord"`
 
 	// Administrative regions of the stop area in which is placed the stop area
 	Admins []Admin `json:"administrative_regions"`
@@ -64,8 +64,8 @@ type Address struct {
 	// If you don't know what to display, display the label
 	Label string `json:"label"`
 
-	// Coordinates of the address
-	Coord Coordinates `json:"coord"`
+	// Coord of the address
+	Coord Coord `json:"coord"`
 
 	// House number of the address
 	HouseNumber uint `json:"house_number"`
@@ -83,8 +83,8 @@ type StopPoint struct {
 
 	Label string `json:"label"`
 
-	// Coordinates of the stop point
-	Coord Coordinates `json:"coord"`
+	// Coord of the stop point
+	Coord Coord `json:"coord"`
 
 	// Administrative regions of the stop point
 	Admins []Admin `json:"administrative_regions"`
@@ -115,8 +115,8 @@ type Admin struct {
 	// If you don't know what to display, display the label
 	Label string `json:"label"`
 
-	// Coordinates of the administrative region
-	Coord Coordinates `json:"coord"`
+	// Coord of the administrative region
+	Coord Coord `json:"coord"`
 
 	// Level of the administrative region
 	Level int `json:"level"`

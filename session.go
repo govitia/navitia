@@ -76,7 +76,7 @@ func (s *Session) Departures(ctx context.Context, req DeparturesRequest) (*Depar
 }
 
 // DeparturesC requests the departures from a point described by coordinates.
-func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coords types.Coordinates) (*ConnectionsResults, error) {
+func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coords types.Coord) (*ConnectionsResults, error) {
 	// Create the URL
 	coordsQ := string(coords.ID())
 	scopeURL := s.APIURL + "/coverage/" + coordsQ + "/coords/" + coordsQ + "/" + departuresEndpoint
@@ -153,7 +153,7 @@ func (s *Session) RegionByID(ctx context.Context, req RegionRequest, id types.ID
 
 // RegionByPos provides information about the region englobing the specific position.
 // It is context aware.
-func (s *Session) RegionByPos(ctx context.Context, req RegionRequest, coords types.Coordinates) (*RegionResults, error) {
+func (s *Session) RegionByPos(ctx context.Context, req RegionRequest, coords types.Coord) (*RegionResults, error) {
 	// Build the URL
 	coordsQ := string(coords.ID())
 	reqURL := s.APIURL + "/" + regionEndpoint + "/" + coordsQ

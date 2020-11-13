@@ -50,7 +50,7 @@ type PlacesRequest struct {
 	Geo bool
 
 	// If given, it will prioritise objects around these coordinates
-	Around types.Coordinates
+	Around types.Coord
 
 	// Maximum amount of results
 	Count uint
