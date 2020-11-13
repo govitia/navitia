@@ -30,7 +30,7 @@ func Test_Places(t *testing.T) {
 
 	// Run a search with proximity
 	t.Run("proximity", func(t *testing.T) {
-		params.Around = types.Coord{
+		params.Around = types.Coordinates{
 			Latitude:  48.847002,
 			Longitude: 2.377310,
 		}

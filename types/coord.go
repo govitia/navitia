@@ -6,36 +6,36 @@ import (
 	"strconv"
 )
 
-// Coord code for coordinates used throughout the API.
-// This is the Go representation of "Coord". It implements Place.
+// Coordinates code for coordinates used throughout the API.
+// This is the Go representation of "Coordinates". It implements Place.
 // See http://doc.navitia.io/#standard-objects.
-type Coord struct {
+type Coordinates struct {
 	Longitude float64 `json:"lon"`
 	Latitude  float64 `json:"lat"`
 }
 
-// jsonCoord define the JSON implementation of Coord struct
-type jsonCoord struct {
+// jsonCoordinates define the JSON implementation of Coordinates struct
+type jsonCoordinates struct {
 	Latitude  string `json:"lat"`
 	Longitude string `json:"lon"`
 }
 
 // ID formats coordinates for use in queries as an ID.
-func (c Coord) ID() ID {
+func (c Coordinates) ID() ID {
 	return ID(fmt.Sprintf("%3.3f;%3.3f", c.Longitude, c.Latitude))
 }
 
-// UnmarshalJSON implements json.Unmarshaller for a Coord
-func (c *Coord) UnmarshalJSON(b []byte) error {
-	var data jsonCoord
+// UnmarshalJSON implements json.Unmarshaller for a Coordinates
+func (c *Coordinates) UnmarshalJSON(b []byte) error {
+	var data jsonCoordinates
 
 	err := json.Unmarshal(b, &data)
 	if err != nil {
-		return fmt.Errorf("error while unmarshalling Coord struct : %w", err)
+		return fmt.Errorf("error while unmarshalling Coordinates struct : %w", err)
 	}
 
 	// Create the error generator
-	gen := unmarshalErrorMaker{"Coord", b}
+	gen := unmarshalErrorMaker{"Coordinates", b}
 
 	// Now parse the values
 	c.Longitude, err = strconv.ParseFloat(data.Longitude, 64)
