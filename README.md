@@ -133,7 +133,3 @@ res, _ := scope.Places(context.Background(),req)
 ### Going further
 
 Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/govitia/navitia)
-
-## Footnotes
-
-I made this project as I wanted to explore and push my go skills, and I'm really up for you to contribute ! Send me a pull request and/or contact me if you have any questions! ( [@aabizri](https://twitter.com/aabizri) on twitter)
