@@ -1,7 +1,8 @@
 package types
 
 import (
-	"image/color"
+	"encoding/json"
+	"fmt"
 	"time"
 )
 
@@ -43,129 +44,43 @@ const (
 
 // A Disruption reports the specifics of a Disruption
 type Disruption struct {
-	// ID of the Disruption
-	ID ID `json:"id"`
+	ID ID `json:"id"` // ID of the Disruption
 
 	// State of the disruption.
 	// The state is computed using the application_periods of the disruption and the current time of the query.
-	//
 	// It can be either "Past", "Active" or "Future"
 	Status string `json:"status"`
 
-	// For traceability, ID of original input disruption
-	InputDisruptionID ID
-
-	// For traceability: Id of original input impact
-	InputImpactID ID
-
-	// Severity gives some categorization element
-	Severity Severity `json:"severity"`
-
-	// Dates where the current disruption is active
-	Periods []Period
-
-	// Text to provide to the traveller
-	Messages []Message
-
-	// Last Update of that disruption
-	LastUpdated time.Time
-
-	// Objects impacted
-	Impacted []ImpactedObject `json:"impacted_stops"`
-
-	// The cause of that disruption
-	Cause string
-
-	// The category of the disruption.
-	// Optional.
-	Category string
-
-	DisruptionID string `json:"disruption_id"`
+	InputDisruptionID ID               // For traceability, ID of original input disruption
+	InputImpactID     ID               // For traceability: Id of original input impact
+	Severity          Severity         `json:"severity"` // Severity gives some categorization element
+	Periods           []Period         // Dates where the current disruption is active
+	Messages          []Message        // Text to provide to the traveller
+	LastUpdated       time.Time        // Last Update of that disruption
+	Impacted          []ImpactedObject `json:"impacted_stops"` // Objects impacted
+	Cause             string           // The cause of that disruption
+	Category          string           // The category of the disruption, optional.
+	DisruptionID      string           `json:"disruption_id"`
 }
 
-// A Message contains the text to be provided to the traveler.
-type Message struct {
-	// The message to bring to the traveler
-	Text string `json:"text"`
+// jsonDisruption define the JSON implementation of Disruption struct
+// We define some of the value as pointers to the real values,
+// allowing us to bypass copying in cases where we don't need to process the data.
+type jsonDisruption struct {
+	// The references
+	ID                *ID               `json:"id"`
+	Status            *string           `json:"status"`
+	InputDisruptionID *ID               `json:"disruption_id"`
+	InputImpactID     *ID               `json:"impact_id"`
+	Severity          *Severity         `json:"severity"`
+	Periods           *[]Period         `json:"application_periods"`
+	Messages          *[]Message        `json:"messages"`
+	Impacted          *[]ImpactedObject `json:"impacted_objects"`
+	Cause             *string           `json:"cause"`
+	Category          *string           `json:"category"`
 
-	// The destination media for this Message.
-	Channel *Channel `json:"channel"`
-}
-
-// A Channel is a destination media for a message.
-type Channel struct {
-	// ID of the address
-	ID ID `json:"id"`
-
-	// Content Type (text/html etc.) RFC1341.4
-	ContentType string `json:"content_type"`
-
-	// Name of the channel
-	Name string `json:"name"`
-
-	// Types ?
-	Types []string `json:"types,omitempty"`
-}
-
-// An ImpactedObject describes a PTObject impacted by a Disruption with some additional info.
-type ImpactedObject struct {
-	// The impacted public transport object
-	Object Container `json:"pt_object"`
-
-	// Only for line section impact, the impacted section
-	ImpactedSection ImpactedSection `json:"impacted_section"`
-
-	// Only for Trip delay, the list of delays, stop by stop
-	ImpactedStops []ImpactedStop `json:"impacted_stops"`
-}
-
-// An ImpactedSection records the impact to a section
-type ImpactedSection struct {
-	// The start of the disruption, spatially
-	From Container `json:"from"`
-	// Until this point
-	To Container `json:"to"`
-}
-
-// An ImpactedStop records the impact to a stop
-type ImpactedStop struct {
-	// The impacted stop point of the trip
-	Point StopPoint `json:"stop_point"`
-
-	// New departure hour (format HHMMSS) of the trip on this stop point
-	NewDeparture string
-
-	// New arrival hour (format HHMMSS) of the trip on this stop point
-	NewArrival string
-
-	// Base departure hour (format HHMMSS) of the trip on this stop point
-	BaseDeparture string
-
-	// Base arrival hour (format HHMMSS) of the trip on this stop point
-	BaseArrival string
-
-	// Cause of the modification
-	Cause string `json:"cause"`
-
-	// Effect on that StopPoint
-	// Can be "added", "deleted", "delayed"
-	Effect string
-
-	AmendedArrivalTime string `json:"amended_arrival_time"`
-
-	StopTimeEffect string `json:"stop_time_effect"`
-
-	DepartureStatus string `json:"departure_status"`
-
-	IsDetour bool `json:"is_detour"`
-
-	AmendedDepartureTime string `json:"amended_departure_time"`
-
-	BaseArrivalTime string `json:"base_arrival_time"`
-
-	BaseDepartureTime string `json:"base_departure_time"`
-
-	ArrivalStatus string `json:"arrival_status"`
+	// Those we will process
+	LastUpdated string `json:"updated_at"`
 }
 
 type PTObjectDisruptions struct {
@@ -176,23 +91,36 @@ type PTObjectDisruptions struct {
 	Trip         Trip   `json:"trip"`
 }
 
-// Period of effect
-type Period struct {
-	Begin time.Time `json:"begin"`
-	End   time.Time `json:"end"`
-}
+// UnmarshalJSON implements json.Unmarshaller for a Disruption
+func (d *Disruption) UnmarshalJSON(b []byte) error {
+	data := &jsonDisruption{
+		ID:                &d.ID,
+		Status:            &d.Status,
+		InputDisruptionID: &d.InputDisruptionID,
+		InputImpactID:     &d.InputImpactID,
+		Severity:          &d.Severity,
+		Periods:           &d.Periods,
+		Messages:          &d.Messages,
+		Impacted:          &d.Impacted,
+		Cause:             &d.Cause,
+		Category:          &d.Category,
+	}
 
-// Severity object can be used to make visual grouping.
-type Severity struct {
-	// Name of severity
-	Name string `json:"name"`
+	// Let's create the error generator
+	gen := unmarshalErrorMaker{"Disruption", b}
 
-	// Priority of the severity. Given by the agency. 0 is the strongest priority, a nil Priority means its undefined (duh).
-	Priority *int `json:"priority"`
+	// Now unmarshall the raw data into the analogous structure
+	err := json.Unmarshal(b, data)
+	if err != nil {
+		return fmt.Errorf("error while unmarshalling Disruption: %w", err)
+	}
 
-	// HTML color for classification
-	Color color.Color `json:"color"`
+	// Now we process the Update time
+	d.LastUpdated, err = parseDateTime(data.LastUpdated)
+	if err != nil {
+		return gen.err(err, "LastUpdated", "updated_at", data.LastUpdated, "parseDateTime failed")
+	}
 
-	// Effect: Normalized value of the effect on the public transport object
-	Effect Effect `json:"effect"`
+	// Finished !
+	return nil
 }

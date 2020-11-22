@@ -1,42 +1,51 @@
 package types
 
 import (
+	"encoding/json"
+	"fmt"
 	"time"
 
 	"github.com/twpayne/go-geom"
+	"github.com/twpayne/go-geom/encoding/geojson"
 )
 
 // A Section holds information about a specific section
 type Section struct {
-	Type SectionType
-	ID   ID
-	Mode string
+	Type       SectionType
+	ID         ID
+	Mode       string
+	From       Container
+	To         Container
+	Departure  time.Time        // Departure time
+	Arrival    time.Time        // Arrival time
+	Duration   time.Duration    // Duration of travel
+	Path       []PathSegment    // The path taken by this section
+	Geo        *geom.LineString // The path in geojson format
+	StopTimes  []StopTime       // List of the stop times of this section
+	Display    Display          // Information to display
+	Additional []PTMethod       // Additional informations, from what I can see this is always a PTMethod
+}
 
-	// From & To
-	From Container
-	To   Container
+// jsonSection define the JSON implementation of Section struct
+// We define some of the value as pointers to the real values,
+// allowing us to bypass copying in cases where we don't need to process the data.
+type jsonSection struct {
+	// Pointers to the corresponding real values
+	Type       *SectionType   `json:"type"`
+	ID         *ID            `json:"id"`
+	From       *Container     `json:"from"`
+	To         *Container     `json:"to"`
+	Mode       *string        `json:"mode"`
+	StopTimes  *[]StopTime    `json:"stop_date_times"`
+	Display    *Display       `json:"display_informations"`
+	Additional *[]PTMethod    `json:"additional_informations"`
+	Path       *[]PathSegment `json:"path"`
 
-	// Arrival time & departure time
-	Departure time.Time
-	Arrival   time.Time
-
-	// Duration of travel
-	Duration time.Duration
-
-	// The path taken by this section
-	Path []PathSegment
-
-	// The path in geojson format
-	Geo *geom.LineString
-
-	// List of the stop times of this section
-	StopTimes []StopTime
-
-	// Information to display
-	Display Display
-
-	// Additional informations, from what I can see this is always a PTMethod
-	Additional []PTMethod
+	// Values to process
+	Departure string            `json:"departure_date_time"`
+	Arrival   string            `json:"arrival_date_time"`
+	Duration  int64             `json:"duration"`
+	Geo       *geojson.Geometry `json:"geojson"`
 }
 
 // A SectionType codifies the type of section that can be encountered
@@ -98,22 +107,14 @@ var SectionTypes = map[SectionType]string{
 // A StopTime stores info about a stop in a route: when the vehicle comes in, when it comes out, and what stop it is.
 type StopTime struct {
 	// The PTDateTime of the stop, this stores the info about the arrival & departure
-	PTDateTime PTDateTime
-
-	// The stop point in question
-	StopPoint StopPoint `json:"stop_point"`
-
-	DropOffAllowed bool `json:"drop_off_allowed"`
-
-	UTCDepartureTime string `json:"utc_departure_time"`
-
-	Headsign string `json:"headsign"`
-
-	UTCArrivalTime string `json:"utc_arrival_time"`
-
-	PickupAllowed bool `json:"pickup_allowed"`
-
-	DepartureTime string `json:"departure_time"`
+	PTDateTime       PTDateTime
+	StopPoint        StopPoint `json:"stop_point"` // The stop point in question
+	DropOffAllowed   bool      `json:"drop_off_allowed"`
+	UTCDepartureTime string    `json:"utc_departure_time"`
+	Headsign         string    `json:"headsign"`
+	UTCArrivalTime   string    `json:"utc_arrival_time"`
+	PickupAllowed    bool      `json:"pickup_allowed"`
+	DepartureTime    string    `json:"departure_time"`
 }
 
 // A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport)
@@ -136,3 +137,99 @@ const (
 	// PTMethodODTZone: Line can contain some estimated stop times, and zonal stop point location. And you will have to call to take it. Well, not really a public transport line, more a cab…
 	PTMethodODTZone PTMethod = "odt_with_zone"
 )
+
+/*
+UnmarshalJSON implements json.Unmarshaller for a Section
+
+Behaviour:
+	- If "from" is empty, then don't populate the From field.
+	- Same for "to"
+*/
+func (s *Section) UnmarshalJSON(b []byte) error {
+	data := &jsonSection{
+		Type:       &s.Type,
+		ID:         &s.ID,
+		From:       &s.From,
+		To:         &s.To,
+		Mode:       &s.Mode,
+		Display:    &s.Display,
+		Additional: &s.Additional,
+		StopTimes:  &s.StopTimes,
+		Path:       &s.Path,
+	}
+
+	// Now unmarshall the raw data into the analogous structure
+	err := json.Unmarshal(b, data)
+	if err != nil {
+		return fmt.Errorf("error while unmarshalling Section: %w", err)
+	}
+
+	// Create the error generator
+	gen := unmarshalErrorMaker{"Section", b}
+
+	// For departure and arrival, we use parseDateTime
+	s.Departure, err = parseDateTime(data.Departure)
+	if err != nil {
+		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+	}
+	s.Arrival, err = parseDateTime(data.Arrival)
+	if err != nil {
+		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+	}
+
+	// As the given duration is in second, let's multiply it by one second to have the correct value
+	s.Duration = time.Duration(data.Duration) * time.Second
+
+	// Now let's deal with the geom
+	if data.Geo != nil {
+		// Catch an error !
+		if data.Geo.Coordinates == nil {
+			return gen.err(nil, "Geo", "geojson", data.Geo, "Geo.Coordinates is nil, can't continue as that will cause a panic")
+		}
+
+		// Let's decode it
+		geot, err := data.Geo.Decode()
+		if err != nil {
+			return gen.err(err, "Geo", "geojson", data.Geo, "Geo.Decode() failed")
+		}
+		// And let's assert the type
+		geo, ok := geot.(*geom.LineString)
+		if !ok {
+			return gen.err(err, "Geo", "geojson", data.Geo, "Geo type assertion failed!")
+		}
+		// Now let's assign it
+		s.Geo = geo
+	}
+
+	return nil
+}
+
+// UnmarshalJSON implements json.Unmarshaller for a PTDateTime
+func (ptdt *PTDateTime) UnmarshalJSON(b []byte) error {
+	// First let's create the analogous structure
+	data := &struct {
+		Departure string `json:"departure_date_time"`
+		Arrival   string `json:"arrival_date_time"`
+	}{}
+
+	// Now unmarshall the raw data into the analogous structure
+	err := json.Unmarshal(b, data)
+	if err != nil {
+		return fmt.Errorf("error while unmarshalling PTDateTime: %w", err)
+	}
+
+	// Create the error generator
+	gen := unmarshalErrorMaker{"PTDateTime", b}
+
+	// Now we use parseDateTime
+	ptdt.Departure, err = parseDateTime(data.Departure)
+	if err != nil {
+		return gen.err(err, "Departure", "departure_date_time", data.Departure, "parseDateTime failed")
+	}
+	ptdt.Arrival, err = parseDateTime(data.Arrival)
+	if err != nil {
+		return gen.err(err, "Arrival", "arrival_date_time", data.Arrival, "parseDateTime failed")
+	}
+
+	return nil
+}
