@@ -8,7 +8,7 @@ import (
 	"github.com/twpayne/go-geom"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for a Region
+// UnmarshalJSON implements json.Unmarshaller for a Region.
 func (r *Region) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	data := &struct {
@@ -90,7 +90,7 @@ func (r *Region) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-// convertWktMPtoGeomMP converts a wkt MultiPolygon to a geom MultiPolygon
+// convertWktMPtoGeomMP converts a wkt MultiPolygon to a geom MultiPolygon.
 func convertWktMPtoGeomMP(in *wkt.MultiPolygon) (*geom.MultiPolygon, error) {
 	// Now let's convert it to a geom format
 	// First let's create the geom.MultiPolygon

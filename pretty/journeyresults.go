@@ -11,19 +11,19 @@ import (
 	"github.com/govitia/navitia/types"
 )
 
-// JourneyResultsConf stores configuration for pretty-printing a navitia.JourneyResults
+// JourneyResultsConf stores configuration for pretty-printing a navitia.JourneyResults.
 type JourneyResultsConf struct {
 	Count   *color.Color
 	Journey JourneyConf
 }
 
-// DefaultJourneyResultsConf holds a default, quite good configuration
+// DefaultJourneyResultsConf holds a default, quite good configuration.
 var DefaultJourneyResultsConf = JourneyResultsConf{
 	Count:   color.New(color.FgBlack),
 	Journey: DefaultJourneyConf,
 }
 
-// PrettyWrite writes a pretty-printed navitia.JourneyResults to out
+// PrettyWrite writes a pretty-printed navitia.JourneyResults to out.
 func (conf JourneyResultsConf) PrettyWrite(jr *navitia.JourneyResults, out io.Writer) error {
 	// Buffers to line-up the reads, sequentially
 	buffers := make([]io.Reader, jr.Count())

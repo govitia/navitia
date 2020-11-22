@@ -13,7 +13,7 @@ type RequestBuilder struct {
 	params *url.Values
 }
 
-// NewRequestBuilder create and return a new instance of RequestBuilder
+// NewRequestBuilder create and return a new instance of RequestBuilder.
 func NewRequestBuilder() RequestBuilder {
 	return RequestBuilder{params: &url.Values{}}
 }
@@ -58,7 +58,7 @@ func (rb RequestBuilder) AddIDSlice(key string, ids []types.ID) {
 	}
 }
 
-// AddMode add a mode list to the request
+// AddMode add a mode list to the request.
 func (rb RequestBuilder) AddMode(key string, modes []string) {
 	if len(modes) != 0 {
 		for _, mode := range modes {
@@ -67,14 +67,14 @@ func (rb RequestBuilder) AddMode(key string, modes []string) {
 	}
 }
 
-// AddDate add a date time to the request (YYYYMMDDThhmmss)
+// AddDate add a date time to the request (YYYYMMDDThhmmss).
 func (rb RequestBuilder) AddDateTime(key string, date time.Time) {
 	if !date.IsZero() {
 		rb.params.Add(key, date.Format(types.DateTimeFormat))
 	}
 }
 
-// Values return value of url.Values
+// Values return value of url.Values.
 func (rb RequestBuilder) Values() url.Values {
 	return *rb.params
 }

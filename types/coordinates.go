@@ -14,7 +14,7 @@ type Coordinates struct {
 	Latitude  float64 `json:"lat"`
 }
 
-// ID formats coordinates for use in queries as an ID
+// ID formats coordinates for use in queries as an ID.
 func (c Coordinates) ID() ID {
 	return ID(fmt.Sprintf("%3.3f;%3.3f", c.Longitude, c.Latitude))
 }

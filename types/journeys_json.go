@@ -76,7 +76,7 @@ func (j *Journey) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-// UnmarshalJSON implements json.Unmarshaller for a Fare
+// UnmarshalJSON implements json.Unmarshaller for a Fare.
 func (f *Fare) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
@@ -116,7 +116,7 @@ func (f *Fare) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-// UnmarshalJSON implements json.Unmarshaller for CO2Emissions
+// UnmarshalJSON implements json.Unmarshaller for CO2Emissions.
 func (c *CO2Emissions) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data

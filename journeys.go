@@ -20,12 +20,12 @@ type JourneyResults struct {
 	session  *Session
 }
 
-// Count returns the number of results available in a JourneyResults
+// Count returns the number of results available in a JourneyResults.
 func (jr *JourneyResults) Count() int {
 	return len(jr.Journeys)
 }
 
-// JourneyRequest contain the parameters needed to make a Journey request
+// JourneyRequest contain the parameters needed to make a Journey request.
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
@@ -90,7 +90,7 @@ type JourneyRequest struct {
 }
 
 // toURL formats a journey request to url
-// Should be refactored using a switch statement
+// Should be refactored using a switch statement.
 func (req JourneyRequest) toURL() (url.Values, error) {
 	rb := utils.NewRequestBuilder()
 

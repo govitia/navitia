@@ -17,7 +17,7 @@ func Test_Region_Unmarshal(t *testing.T) {
 	testUnmarshal(t, testData["region"], reflect.TypeOf(Region{}))
 }
 
-// TestRegionUnmarshal_ShapeInvalidMKT tests known invalid MKT (well-known text) -encoded Region.Shape inputs for (*Region).UnmarshalJSON
+// TestRegionUnmarshal_ShapeInvalidMKT tests known invalid MKT (well-known text) -encoded Region.Shape inputs for (*Region).UnmarshalJSON.
 func TestRegionUnmarshal_ShapeInvalidMKT(t *testing.T) {
 	// Shapes
 	shapes := [...]string{
@@ -42,7 +42,7 @@ func TestRegionUnmarshal_ShapeInvalidMKT(t *testing.T) {
 	}
 }
 
-// BenchmarkRegionUnmarshal benchmarks Region unmarshalling via subbenchmarks
+// BenchmarkRegionUnmarshal benchmarks Region unmarshalling via subbenchmarks.
 func BenchmarkRegionUnmarshal(b *testing.B) {
 	// Get the bench data
 	data := testData["region"].bench

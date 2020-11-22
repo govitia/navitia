@@ -6,7 +6,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for Route
+// UnmarshalJSON implements json.Unmarshaller for Route.
 func (r *Route) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data

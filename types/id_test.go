@@ -2,7 +2,7 @@ package types
 
 import "testing"
 
-// TestIDCheck checks if ID.Check returns an error when given an empty ID
+// TestIDCheck checks if ID.Check returns an error when given an empty ID.
 func TestIDCheck(t *testing.T) {
 	id := ID("")
 	if id.Check() == nil {

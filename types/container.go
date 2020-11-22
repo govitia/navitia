@@ -22,7 +22,7 @@ const (
 	EmbeddedTrip           = "trip"                  // This is a PT Object
 )
 
-// EmbeddedTypes lists all the possible embedded types you can find in a Container
+// EmbeddedTypes lists all the possible embedded types you can find in a Container.
 var EmbeddedTypes = [...]string{
 	EmbeddedStopArea,
 	EmbeddedPOI,
@@ -55,10 +55,10 @@ var embeddedTypesPTObject = [...]string{
 	EmbeddedTrip,
 }
 
-// An Object is what is contained by a Container
+// An Object is what is contained by a Container.
 type Object interface{}
 
-// A Container holds an Object, which can be a Place or a PT Object
+// A Container holds an Object, which can be a Place or a PT Object.
 type Container struct {
 	ID           ID     `json:"id"`
 	Name         string `json:"name"`
@@ -75,7 +75,7 @@ type Container struct {
 	mu *sync.RWMutex
 }
 
-// IsPlace returns true if the container's content is a Place
+// IsPlace returns true if the container's content is a Place.
 func (c *Container) IsPlace() bool {
 	t := c.EmbeddedType
 	return t == EmbeddedStopArea ||
@@ -85,7 +85,7 @@ func (c *Container) IsPlace() bool {
 		t == EmbeddedAdmin
 }
 
-// IsPTObject returns true if the container's content is a PTObject
+// IsPTObject returns true if the container's content is a PTObject.
 func (c *Container) IsPTObject() bool {
 	t := c.EmbeddedType
 	return t == EmbeddedStopArea ||
@@ -96,7 +96,7 @@ func (c *Container) IsPTObject() bool {
 		t == EmbeddedTrip
 }
 
-// ErrInvalidContainer is returned after a check on a Container
+// ErrInvalidContainer is returned after a check on a Container.
 type ErrInvalidContainer struct {
 	// If the Container has a zero ID.
 	NoID bool
@@ -108,7 +108,7 @@ type ErrInvalidContainer struct {
 	UnknownEmbeddedType bool
 }
 
-// Error satisfies the error interface
+// Error satisfies the error interface.
 func (err ErrInvalidContainer) Error() string {
 	// Count the number of anomalies
 	var anomalies uint
@@ -131,7 +131,7 @@ func (err ErrInvalidContainer) Error() string {
 	return fmt.Sprintf(msg, anomalies)
 }
 
-// Empty returns true if the container is empty (zero value)
+// Empty returns true if the container is empty (zero value).
 func (c *Container) Empty() bool {
 	return c.ID == "" && c.Name == "" && c.EmbeddedType == "" && c.Quality == 0 && len(c.embeddedJSON) == 0 && c.embeddedObject == nil
 }
@@ -243,7 +243,7 @@ func (c *Container) Object() (Object, error) {
 
 // Place returns the Place contained in the container if that is what's inside
 //
-// If the Object isn't a Place or the Container is empty or invalid, Place returns an error
+// If the Object isn't a Place or the Container is empty or invalid, Place returns an error.
 func (c *Container) Place() (Place, error) {
 	// Check if its a Place
 	if !c.IsPlace() {
@@ -262,7 +262,7 @@ func (c *Container) Place() (Place, error) {
 
 // PTObject returns the PTObject contained in the container if that is what's inside
 //
-// If the Object isn't a PTObject or the Container is empty or invalid, Place returns an error
+// If the Object isn't a PTObject or the Container is empty or invalid, Place returns an error.
 func (c *Container) PTObject() (PTObject, error) {
 	// Check if its a Place
 	if !c.IsPTObject() {

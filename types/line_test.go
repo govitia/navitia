@@ -15,7 +15,7 @@ func Test_Line_Unmarshal(t *testing.T) {
 	testUnmarshal(t, testData["line"], reflect.TypeOf(Line{}))
 }
 
-// BenchmarkLineUnmarshal benchmarks Line unmarshalling via subbenchmarks
+// BenchmarkLineUnmarshal benchmarks Line unmarshalling via subbenchmarks.
 func BenchmarkLineUnmarshal(b *testing.B) {
 	// Get the bench data
 	data := testData["line"].bench

@@ -24,12 +24,12 @@ type VehicleJourneyResults struct {
 	session *Session
 }
 
-// Count returns the number of results available in a JourneyResults
+// Count returns the number of results available in a JourneyResults.
 func (jr *VehicleJourneyResults) Count() int {
 	return len(jr.VehicleJourneys)
 }
 
-// VehicleJourneyRequest contain the parameters needed to make a Journey request
+// VehicleJourneyRequest contain the parameters needed to make a Journey request.
 type VehicleJourneyRequest struct {
 	ID types.ID
 	// There must be at least one From or To parameter defined
@@ -101,7 +101,7 @@ type VehicleJourneyRequest struct {
 }
 
 // toURL formats a journey request to url
-// Should be refactored using a switch statement
+// Should be refactored using a switch statement.
 func (req VehicleJourneyRequest) toURL() (url.Values, error) {
 	rb := utils.NewRequestBuilder()
 

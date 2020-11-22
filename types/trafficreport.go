@@ -4,7 +4,7 @@ package types
 // Named "traffic_report" in the Navitia doc
 //
 // See http://doc.navitia.io/#traffic-reports
-// TODO: Add the internal links
+// TODO: Add the internal links.
 type TrafficReport struct {
 	// Main object (network) and links within its own disruptions
 	Network Network `json:"network"`

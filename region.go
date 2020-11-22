@@ -10,7 +10,7 @@ import (
 const regionEndpoint string = "coverage"
 
 // A RegionResults holds results for a coverage query
-// This Results doesn't support paging :(
+// This Results doesn't support paging :(.
 type RegionResults struct {
 	// The list of regions retrieved
 	Regions []types.Region `json:"Regions"`
@@ -22,7 +22,7 @@ type RegionResults struct {
 	session *Session
 }
 
-// RegionRequest contains the parameters needed to make a Coverage request
+// RegionRequest contains the parameters needed to make a Coverage request.
 type RegionRequest struct {
 	// Count is the number of items to return, if count=0, then it will return the default number
 	// BUG: Count doesn't work, server-side.
