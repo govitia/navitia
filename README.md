@@ -21,6 +21,10 @@ This is govitia/navitia golang API.
 ## Changelog
  
 [Changelog](CHANGELOG.md)
+
+## Contributing
+
+[Contributing guide](CONTRIBUTING.md)
  
 ## Getting started
 
