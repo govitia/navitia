@@ -13,13 +13,13 @@ import (
 const (
 	// DateTimeFormat is the format used by the Navitia Api for use with time pkg.
 	DateTimeFormat string = "20060102T150405" // YYYYMMDDThhmmss
-	// DateFormat is when there is no time info
+	// DateFormat is when there is no time info.
 	DateFormat string = "20060102"
 )
 
 // parseDateTime parses a time formatted under iso-date-time as indicated in the Navitia api.
 // This is simply parsing a date formatted under the standard ISO 8601.
-// If the given string is empty (i.e ""), then the zero value of time.Time will be returned
+// If the given string is empty (i.e ""), then the zero value of time.Time will be returned.
 func parseDateTime(datetime string) (time.Time, error) {
 	// If there's no datetime given, just return the zero value
 	if datetime == "" || datetime == "not-a-date-time" {
@@ -43,7 +43,7 @@ func parseDateTime(datetime string) (time.Time, error) {
 }
 
 // UnmarshalError is returned when unmarshalling fails
-// It implements both error and github.com/pkg/errors's causer
+// It implements both error and github.com/pkg/errors's causer.
 type UnmarshalError struct {
 	// Type on which the unmarshaller where the error occurred works
 	Type string
@@ -67,12 +67,12 @@ type UnmarshalError struct {
 	JSON []byte
 }
 
-// Cause implements github.com/pkg/error's causer
+// Cause implements github.com/pkg/error's causer.
 func (err UnmarshalError) Cause() error {
 	return err.Underlying
 }
 
-// Error implements error
+// Error implements error.
 func (err UnmarshalError) Error() string {
 	msg := fmt.Sprintf(
 		"(*%s).UnmarshalJSON: Unmarshalling %s (json: \"%s\") with value \"%v\" failed",
@@ -90,13 +90,13 @@ func (err UnmarshalError) Error() string {
 	return msg
 }
 
-// unmarshalErrorer allows us to make better error messages
+// unmarshalErrorer allows us to make better error messages.
 type unmarshalErrorMaker struct {
 	Type string
 	JSON []byte
 }
 
-// err creates a new UnmarshalError
+// err creates a new UnmarshalError.
 func (gen unmarshalErrorMaker) err(underlyingErr error, name string, key string, value interface{}, message string) error {
 	return UnmarshalError{
 		Type:       gen.Type,

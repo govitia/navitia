@@ -20,12 +20,12 @@ type JourneyResults struct {
 	session  *Session
 }
 
-// Count returns the number of results available in a JourneyResults
+// Count returns the number of results available in a JourneyResults.
 func (jr *JourneyResults) Count() int {
 	return len(jr.Journeys)
 }
 
-// JourneyRequest contain the parameters needed to make a Journey request
+// JourneyRequest contain the parameters needed to make a Journey request.
 type JourneyRequest struct {
 	// There must be at least one From or To parameter defined
 	// When used with just one of them, the resulting Journey won't have a populated Sections field.
@@ -33,8 +33,7 @@ type JourneyRequest struct {
 	To   types.ID
 
 	// When do you want to depart ? Or is DateIsArrival when do you want to arrive at your destination.
-	Date          time.Time
-	DateIsArrival bool
+	Date time.Time
 
 	// The traveller's type
 	Traveler types.TravelerType
@@ -81,16 +80,18 @@ type JourneyRequest struct {
 	// Maximum duration of a trip
 	MaxDuration time.Duration // To seconds
 
-	// Wheelchair restricts the answer to accessible public transports
-	Wheelchair bool
-
 	// Headsign If given, add a filter on the vehicle journeys that has the
 	// given value as headsign (on vehicle journey itself or at a stop time).
 	Headsign string
+
+	// Wheelchair restricts the answer to accessible public transports
+	Wheelchair bool
+
+	DateIsArrival bool
 }
 
 // toURL formats a journey request to url
-// Should be refactored using a switch statement
+// Should be refactored using a switch statement.
 func (req JourneyRequest) toURL() (url.Values, error) {
 	rb := utils.NewRequestBuilder()
 

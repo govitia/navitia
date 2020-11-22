@@ -6,7 +6,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for a Disruption
+// UnmarshalJSON implements json.Unmarshaller for a Disruption.
 func (d *Disruption) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
@@ -57,7 +57,7 @@ func (d *Disruption) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-// UnmarshalJSON implements json.Unmarshaller for a Period
+// UnmarshalJSON implements json.Unmarshaller for a Period.
 func (p *Period) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data
@@ -90,7 +90,7 @@ func (p *Period) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-// UnmarshalJSON implements json.Unmarshaller for a Severity
+// UnmarshalJSON implements json.Unmarshaller for a Severity.
 func (s *Severity) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	// We define some of the value as pointers to the real values, allowing us to bypass copying in cases where we don't need to process the data

@@ -14,12 +14,12 @@ type DeparturesResults struct {
 	session    *Session
 }
 
-// Count returns the number of results available in a Departures
+// Count returns the number of results available in a Departures.
 func (dr *DeparturesResults) Count() int {
 	return len(dr.Departures)
 }
 
-// DeparturesRequest contain the parameters needed to make a departures
+// DeparturesRequest contain the parameters needed to make a departures.
 type DeparturesRequest struct {
 	StopArea string
 }

@@ -15,7 +15,7 @@ func Test_Journey_Unmarshal(t *testing.T) {
 	testUnmarshal(t, testData["journey"], reflect.TypeOf(Journey{}))
 }
 
-// BenchmarkJourney_UnmarshalJSON benchmarks Journey unmarshalling via subbenchmarks
+// BenchmarkJourney_UnmarshalJSON benchmarks Journey unmarshalling via subbenchmarks.
 func BenchmarkJourney_UnmarshalJSON(b *testing.B) {
 	// Get the bench data
 	data := testData["journey"].bench

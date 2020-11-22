@@ -36,7 +36,7 @@ var modeEmoji = map[string]string{
 	types.ModeBikeShare: "🚴",
 }
 
-// SectionConf stores configuration for pretty-printing a types.Section
+// SectionConf stores configuration for pretty-printing a types.Section.
 type SectionConf struct {
 	Mode     *color.Color
 	Duration *color.Color
@@ -45,7 +45,7 @@ type SectionConf struct {
 	Emoji    bool
 }
 
-// DefaultSectionConf holds a default, quite good configuration
+// DefaultSectionConf holds a default, quite good configuration.
 var DefaultSectionConf = SectionConf{
 	Mode:     color.New(color.FgGreen),
 	Duration: color.New(color.FgMagenta),
@@ -53,7 +53,7 @@ var DefaultSectionConf = SectionConf{
 	To:       color.New(color.FgBlue),
 }
 
-// PrettyWrite writes a pretty-printed types.Section to out
+// PrettyWrite writes a pretty-printed types.Section to out.
 func (conf SectionConf) PrettyWrite(s *types.Section, out io.Writer) error {
 	// if there's no from or no to, finish now
 	if s.From.Name == "" || s.To.Name == "" {

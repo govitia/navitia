@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// Paging holds potential Previous / Next functions
+// Paging holds potential Previous / Next functions.
 type Paging struct {
 	// Next results
 	Next func(ctx context.Context, s *Session, res results) error
@@ -23,7 +23,7 @@ type link struct {
 	Type      string
 }
 
-// createPagingFunc creates a paging func (either Previous or Next)
+// createPagingFunc creates a paging func (either Previous or Next).
 func createPagingFunc(url string) func(ctx context.Context, s *Session, res results) error {
 	f := func(ctx context.Context, s *Session, res results) error {
 		return s.requestURL(ctx, url, res)
@@ -31,7 +31,7 @@ func createPagingFunc(url string) func(ctx context.Context, s *Session, res resu
 	return f
 }
 
-// UnmarshalJSON unmarshals a Paging type from a Links data structure
+// UnmarshalJSON unmarshals a Paging type from a Links data structure.
 func (p *Paging) UnmarshalJSON(b []byte) error {
 	var links []link
 	err := json.Unmarshal(b, &links)

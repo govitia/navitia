@@ -8,12 +8,12 @@ import (
 	"github.com/pkg/errors"
 )
 
-// RemoteErrorID is an ID for a remote error
+// RemoteErrorID is an ID for a remote error.
 type RemoteErrorID string
 
-// RemoteErrXXX are the known error ids that can be returned by the navitia server
+// RemoteErrXXX are the known error ids that can be returned by the navitia server.
 const (
-	// 404 Errors
+	// 404 Errors.
 
 	RemoteErrDateOutOfBounds       RemoteErrorID = "date_out_of_bounds"         // When the given date is out of bounds of the production dates of the region
 	RemoteErrNoOrigin              RemoteErrorID = "no_origin"                  // Couldn’t find an origin for the journeys
@@ -21,7 +21,7 @@ const (
 	RemoteErrNoOriginNoDestination RemoteErrorID = "nor_origin_nor_destination" // Couldn’t find an origin nor a destination for the journeys
 	RemoteErrUnknownObject         RemoteErrorID = "unknown_object"             // Unknown Object
 
-	// 400 Errors
+	// 400 Errors.
 
 	RemoteErrBadFilter     RemoteErrorID = "bad_filter"      // Bad filter (with custom filter)
 	RemoteErrUnableToParse RemoteErrorID = "unable_to_parse" // Unable to parse mal-formed custom filter"
@@ -29,7 +29,7 @@ const (
 
 // remoteErrorsDescriptions contains human-readable descriptions for a given remote error ID
 //
-// Can also be used as a list of known error IDs
+// Can also be used as a list of known error IDs.
 var remoteErrorsDescriptions = map[RemoteErrorID]string{
 	RemoteErrDateOutOfBounds:       "When the given date is out of bounds of the production dates of the region",
 	RemoteErrNoOrigin:              "Couldn’t find an origin for the journeys",
@@ -40,7 +40,7 @@ var remoteErrorsDescriptions = map[RemoteErrorID]string{
 	RemoteErrUnableToParse:         "Unable to parse mal-formed custom filter",
 }
 
-// A RemoteError represents an error sent by the server
+// A RemoteError represents an error sent by the server.
 type RemoteError struct {
 	StatusCode int
 	ID         RemoteErrorID `json:"id"`
@@ -48,7 +48,7 @@ type RemoteError struct {
 }
 
 // Error formats the error in a human-readable format
-// Also allows it to satisfy the error interface
+// Also allows it to satisfy the error interface.
 func (err RemoteError) Error() string {
 	var s string
 
@@ -66,7 +66,7 @@ func (err RemoteError) Error() string {
 	return s
 }
 
-// parseRemoteError parses a non 200 OK status-coded response and returns the error
+// parseRemoteError parses a non 200 OK status-coded response and returns the error.
 func parseRemoteError(resp *http.Response) error {
 	remoteErr := &RemoteError{StatusCode: resp.StatusCode}
 

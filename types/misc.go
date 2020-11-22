@@ -8,10 +8,10 @@ import (
 	"github.com/pkg/errors"
 )
 
-// DataFreshness codes for a specific data freshness requirement: realtime or base_schedule
+// DataFreshness codes for a specific data freshness requirement: realtime or base_schedule.
 type DataFreshness string
 
-// parseColor, given a hex code #RRGGBB returns a color.NRGBA
+// parseColor, given a hex code #RRGGBB returns a color.NRGBA.
 func parseColor(str string) (color.NRGBA, error) {
 	var clr color.NRGBA
 
@@ -40,7 +40,7 @@ func parseColor(str string) (color.NRGBA, error) {
 }
 
 const (
-	// DataFreshnessRealTime means you'll get undisrupted journeys
+	// DataFreshnessRealTime means you'll get undisrupted journeys.
 	DataFreshnessRealTime DataFreshness = "realtime"
 	// DataFreshnessBaseSchedule means you can get disrupted journeys in the response.
 	DataFreshnessBaseSchedule = "base_schedule"

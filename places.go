@@ -30,12 +30,12 @@ func (pr *PlacesResults) Less(i, j int) bool {
 	return pr.Places[i].Quality < pr.Places[j].Quality
 }
 
-// Swap swaps the Place of index i and the Place of index j
+// Swap swaps the Place of index i and the Place of index j.
 func (pr *PlacesResults) Swap(i, j int) {
 	pr.Places[i], pr.Places[j] = pr.Places[j], pr.Places[i]
 }
 
-// PlacesRequest is the query you need to build before passing it to Places
+// PlacesRequest is the query you need to build before passing it to Places.
 type PlacesRequest struct {
 	Query string // The search item
 
@@ -56,7 +56,7 @@ type PlacesRequest struct {
 	Count uint
 }
 
-// toURL formats a Places request to url
+// toURL formats a Places request to url.
 func (req PlacesRequest) toURL() (url.Values, error) {
 	rb := utils.NewRequestBuilder()
 

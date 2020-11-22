@@ -1,9 +1,9 @@
 package types
 
-// An Equipment codes for specific equipment the public transport object has
+// An Equipment codes for specific equipment the public transport object has.
 type Equipment string
 
-// EquipmentWheelchairAccessibility are known equipments
+// EquipmentWheelchairAccessibility are known equipments.
 const (
 	EquipmentWheelchairAccessibility Equipment = "has_wheelchair_accessibility"
 	EquipmentBikeAccepted            Equipment = "has_bike_accepted"
@@ -20,7 +20,7 @@ const (
 	EquipmentBikeDepot               Equipment = "has_bike_depot"
 )
 
-// knownEquipments lists all the known equipments
+// knownEquipments lists all the known equipments.
 var knownEquipments = [...]Equipment{
 	EquipmentWheelchairAccessibility,
 	EquipmentBikeAccepted,
@@ -37,7 +37,7 @@ var knownEquipments = [...]Equipment{
 	EquipmentBikeDepot,
 }
 
-// Known reports whether an equipment is known
+// Known reports whether an equipment is known.
 func (eq Equipment) Known() bool {
 	for _, k := range knownEquipments {
 		if eq == k {

@@ -39,7 +39,7 @@ type testPair struct {
 	correct interface{}
 }
 
-// Convert testing mechanism to known compare + corpus runs
+// Convert testing mechanism to known compare + corpus runs.
 type typeTestData struct {
 	known     map[string]testPair // Hardcoded map of pairs of JSON data / the Go representation they should have
 	correct   map[string][]byte   // Map of known correct files to be parsed (they should _not_ return an error)
@@ -47,11 +47,11 @@ type typeTestData struct {
 	bench     map[string][]byte   // Descriptions -> File
 }
 
-// testData stores a map which maps each category to their data
+// testData stores a map which maps each category to their data.
 var testData = make(map[string]typeTestData, len(typesList))
 
 // this is the list of potential types
-// must be lower case
+// must be lower case.
 var typesList = [...]string{
 	"journey",
 	"coverage",
@@ -62,7 +62,7 @@ var typesList = [...]string{
 	"company",
 }
 
-// listCategoryDirs retrieves the subdirectories under the main testdata directory
+// listCategoryDirs retrieves the subdirectories under the main testdata directory.
 func listCategoryDirs(path string) ([]os.FileInfo, error) {
 	mainSubdirs, err := ioutil.ReadDir(path)
 	if err != nil {
@@ -82,7 +82,7 @@ func listCategoryDirs(path string) ([]os.FileInfo, error) {
 	return subDirsInfo, nil
 }
 
-// extractCorpus extracts a corpus
+// extractCorpus extracts a corpus.
 func extractCorpus(path string) (map[string][]byte, error) {
 	// List the files
 	files, err := ioutil.ReadDir(path)
@@ -120,7 +120,7 @@ func extractCorpus(path string) (map[string][]byte, error) {
 	return corpus, nil
 }
 
-// getPertinentSubdirs, given a dir in a category subdirectory, returns the awaited values
+// getPertinentSubdirs, given a dir in a category subdirectory, returns the awaited values.
 func getCategory(path string) (typeTestData, error) {
 	// Create the data
 	data := typeTestData{}
@@ -160,7 +160,7 @@ func getCategory(path string) (typeTestData, error) {
 	return data, nil
 }
 
-// load loads the file structing into the testData
+// load loads the file structing into the testData.
 func load() error {
 	subDirsInfo, err := listCategoryDirs(testDataPath)
 	if err != nil {

@@ -6,7 +6,7 @@ import (
 	"github.com/twpayne/go-geom"
 )
 
-// A Section holds information about a specific section
+// A Section holds information about a specific section.
 type Section struct {
 	Type SectionType
 	ID   ID
@@ -39,48 +39,48 @@ type Section struct {
 	Additional []PTMethod
 }
 
-// A SectionType codifies the type of section that can be encountered
+// A SectionType codifies the type of section that can be encountered.
 type SectionType string
 
-// These are the types of sections that can be returned from the API
+// These are the types of sections that can be returned from the API.
 const (
-	// Public transport section
+	// Public transport section.
 	SectionPublicTransport SectionType = "public_transport"
 
-	// Street section
+	// Street section.
 	SectionStreetNetwork SectionType = "street_network"
 
-	// Waiting section between transport
+	// Waiting section between transport.
 	SectionWaiting SectionType = "waiting"
 
 	// This “stay in the vehicle” section occurs when the traveller has to stay in the vehicle when the bus change its routing.
 	SectionStayIn SectionType = "stay_in"
 
-	// Transfer section
+	// Transfer section.
 	SectionTransfer SectionType = "transfer"
 
 	// Teleportation section. Used when starting or arriving to a city or a stoparea (“potato shaped” objects) Useful to make navitia idempotent.
-	// Warning: Be careful: no Path nor Geo items in this case
+	// Warning: Be careful: no Path nor Geo items in this case.
 	SectionCrowFly SectionType = "crow_fly"
 
 	// Vehicle may not drive along: traveler will have to call agency to confirm journey
-	// Also sometimes called ODT
+	// Also sometimes called ODT.
 	SectionOnDemandTransport SectionType = "on_demand_transport"
 
-	// Taking a bike from a bike sharing system (bss)
+	// Taking a bike from a bike sharing system (bss).
 	SectionBikeShareRent SectionType = "bss_rent"
 
-	// Putting back a bike from a bike sharing system (bss)
+	// Putting back a bike from a bike sharing system (bss).
 	SectionBikeSharePutBack SectionType = "bss_put_back"
 
-	// Boarding on plane
+	// Boarding on plane.
 	SectionBoarding SectionType = "boarding"
 
-	// Landing off the plane
+	// Landing off the plane.
 	SectionLanding SectionType = "landing"
 )
 
-// SectionTypes is the type of a section
+// SectionTypes is the type of a section.
 var SectionTypes = map[SectionType]string{
 	SectionPublicTransport:   "Public transport section",
 	SectionStreetNetwork:     "Street section",
@@ -103,23 +103,23 @@ type StopTime struct {
 	// The stop point in question
 	StopPoint StopPoint `json:"stop_point"`
 
-	DropOffAllowed bool `json:"drop_off_allowed"`
-
 	UTCDepartureTime string `json:"utc_departure_time"`
 
 	Headsign string `json:"headsign"`
 
 	UTCArrivalTime string `json:"utc_arrival_time"`
 
+	DepartureTime string `json:"departure_time"`
+
 	PickupAllowed bool `json:"pickup_allowed"`
 
-	DepartureTime string `json:"departure_time"`
+	DropOffAllowed bool `json:"drop_off_allowed"`
 }
 
-// A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport)
+// A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport).
 type PTMethod string
 
-// PTMethodXXX codes for known PTMethod
+// PTMethodXXX codes for known PTMethod.
 const (
 	// PTMethodRegular: No on-demand transport. Line does not contain any estimated stop times, nor zonal stop point location. No need to call too.
 	PTMethodRegular PTMethod = "regular"
@@ -133,6 +133,6 @@ const (
 	// PTMethodODTStopPoint: Line can contain some estimated stop times, but no zonal stop point location. And you will have to call to take it.
 	PTMethodODTStopPoint PTMethod = "odt_with_stop_point"
 
-	// PTMethodODTZone: Line can contain some estimated stop times, and zonal stop point location. And you will have to call to take it. Well, not really a public transport line, more a cab…
+	// PTMethodODTZone: Line can contain some estimated stop times, and zonal stop point location. And you will have to call to take it. Well, not really a public transport line, more a cab….
 	PTMethodODTZone PTMethod = "odt_with_zone"
 )

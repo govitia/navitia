@@ -9,14 +9,14 @@ import (
 	"github.com/govitia/navitia/types"
 )
 
-// ContainerConf stores configuration for use in ContainerWrite
+// ContainerConf stores configuration for use in ContainerWrite.
 type ContainerConf struct {
 	Quality *color.Color
 	Type    *color.Color
 	Name    *color.Color
 }
 
-// DefaultContainerConf holds a default, quite good configuration
+// DefaultContainerConf holds a default, quite good configuration.
 var DefaultContainerConf = ContainerConf{
 	Quality: color.New(color.FgMagenta),
 	Type:    color.New(color.FgGreen),

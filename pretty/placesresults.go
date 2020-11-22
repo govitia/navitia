@@ -12,13 +12,13 @@ import (
 	"github.com/govitia/navitia/types"
 )
 
-// PlacesResultsConf stores configuration for pretty-printing
+// PlacesResultsConf stores configuration for pretty-printing.
 type PlacesResultsConf struct {
 	Count *color.Color
 	Place ContainerConf
 }
 
-// DefaultPlacesResultsConf holds a default, quite good configuration
+// DefaultPlacesResultsConf holds a default, quite good configuration.
 var DefaultPlacesResultsConf = PlacesResultsConf{
 	Count: color.New(color.Italic),
 	Place: DefaultContainerConf,

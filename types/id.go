@@ -9,7 +9,7 @@ import (
 // An ID is used throughout the library, it is something used by the navitia API and useful to communicate with it.
 type ID string
 
-// Check for ID validity
+// Check for ID validity.
 func (id ID) Check() error {
 	if len(id) == 0 {
 		return errors.Errorf("ID invalid: an empty string \"\" is not a valid ID")
@@ -17,7 +17,7 @@ func (id ID) Check() error {
 	return nil
 }
 
-// typeNames stores navitia-side name of types that may appear in IDs
+// typeNames stores navitia-side name of types that may appear in IDs.
 var typeNames = map[string]bool{
 	"network":         true,
 	"line":            true,

@@ -94,7 +94,7 @@ func (s *Section) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
-// UnmarshalJSON implements json.Unmarshaller for a PTDateTime
+// UnmarshalJSON implements json.Unmarshaller for a PTDateTime.
 func (ptdt *PTDateTime) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	data := &struct {

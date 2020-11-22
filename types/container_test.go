@@ -8,7 +8,7 @@ import (
 
 var containers map[string]*Container
 
-// loadContainers loads the containers in their final form for testing
+// loadContainers loads the containers in their final form for testing.
 func loadContainers() error {
 	// Get the input
 	corpus := testData["container"].correct
@@ -34,7 +34,7 @@ func loadContainers() error {
 	return nil
 }
 
-// TestContainer_Object_NoCompare tests the Container.Object method
+// TestContainer_Object_NoCompare tests the Container.Object method.
 func TestContainer_Object_NoCompare(t *testing.T) {
 	// Get the input
 	data := containers
@@ -66,7 +66,7 @@ func TestContainer_Object_NoCompare(t *testing.T) {
 	}
 }
 
-// TestContainer_Check_NoCompare tests the Container.Check method
+// TestContainer_Check_NoCompare tests the Container.Check method.
 func TestContainer_Check_NoCompare(t *testing.T) {
 	// Get the input
 	data := containers
@@ -94,7 +94,7 @@ func TestContainer_Check_NoCompare(t *testing.T) {
 	}
 }
 
-// BenchmarkContainer_UnmarshalJSON benchmarks Container.UnmarshalJSON through benchmarks
+// BenchmarkContainer_UnmarshalJSON benchmarks Container.UnmarshalJSON through benchmarks.
 func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 	// Get the bench data
 	data := testData["container"].bench
@@ -149,7 +149,7 @@ func BenchmarkContainer_UnmarshalJSON(b *testing.B) {
 	}
 }
 
-// BenchmarkContainer_Check benchmarks Container.Check through subbenchmarks
+// BenchmarkContainer_Check benchmarks Container.Check through subbenchmarks.
 func BenchmarkContainer_Check(b *testing.B) {
 	// Get the bench data
 	data := testData["container"].bench
@@ -184,7 +184,7 @@ func BenchmarkContainer_Check(b *testing.B) {
 	}
 }
 
-// TestContainer_IsXXX tests (*Container).IsPlace and (*Container).IsPTObject
+// TestContainer_IsXXX tests (*Container).IsPlace and (*Container).IsPTObject.
 func TestContainer_IsXXX(t *testing.T) {
 	t.Run("IsPlace", func(t *testing.T) {
 		for _, et := range embeddedTypesPlace {
@@ -221,7 +221,7 @@ func TestContainer_IsXXX(t *testing.T) {
 	})
 }
 
-// TestContainer_Empty tests that (*Container).Empty reports correctly whether or not the container is truly empty
+// TestContainer_Empty tests that (*Container).Empty reports correctly whether or not the container is truly empty.
 func TestContainer_Empty(t *testing.T) {
 	emptyContainer := Container{}
 	nonEmptyContainers := []Container{

@@ -9,7 +9,7 @@ import (
 // A JourneyQualification qualifies a Journey, see const declaration.
 type JourneyQualification string
 
-// JourneyXXX qualify journeys
+// JourneyXXX qualify journeys.
 const (
 	JourneyBest          JourneyQualification = "best"
 	JourneyRapid         JourneyQualification = "rapid"
@@ -26,7 +26,7 @@ const (
 
 // JourneyQualifications is a user-friendly slice of all journey qualification
 //
-// As it might be used in requests, this is exported
+// As it might be used in requests, this is exported.
 var JourneyQualifications = []JourneyQualification{
 	JourneyBest,
 	JourneyRapid,
@@ -41,7 +41,7 @@ var JourneyQualifications = []JourneyQualification{
 	JourneyNoPTBikeShare,
 }
 
-// A Journey holds information about a possible journey
+// A Journey holds information about a possible journey.
 type Journey struct {
 	Duration  time.Duration
 	Transfers uint
@@ -71,30 +71,30 @@ type CO2Emissions struct {
 	Value float64
 }
 
-// Fare is the fare of some thing
+// Fare is the fare of some thing.
 type Fare struct {
 	Total currency.Amount
 	Found bool
 }
 
 // TravelerType is a Traveler's type
-// Defines speeds & accessibility values for different types of people
+// Defines speeds & accessibility values for different types of people.
 type TravelerType string
 
-// The defined types of the api
+// The defined types of the api.
 const (
-	// A standard Traveler
+	// A standard Traveler.
 	TravelerStandard TravelerType = "standard"
 
-	// A slow walker
+	// A slow walker.
 	TravelerSlowWalker TravelerType = "slow_walker"
 
-	// A fast walker
+	// A fast walker.
 	TravelerFastWalker TravelerType = "fast_walker"
 
-	// A Traveler with luggage
+	// A Traveler with luggage.
 	TravelerWithLuggage TravelerType = "luggage"
 
-	// A Traveler in a wheelchair
+	// A Traveler in a wheelchair.
 	TravelerInWheelchair TravelerType = "wheelchair"
 )

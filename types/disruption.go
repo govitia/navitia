@@ -8,10 +8,10 @@ import (
 // Effect codes for known journey status information
 // For example, reduced service, detours or moved stops.
 //
-// See https://developers.google.com/transit/gtfs-realtime/reference/Effect for more information
+// See https://developers.google.com/transit/gtfs-realtime/reference/Effect for more information.
 type Effect string
 
-// JourneyStatusXXX are known JourneyStatuse
+// JourneyStatusXXX are known JourneyStatuse.
 const (
 	// Service suspended.
 	EffectNoService Effect = "NO_SERVICE"
@@ -41,7 +41,7 @@ const (
 	JourneyStatusStopMoved = "STOP_MOVED"
 )
 
-// A Disruption reports the specifics of a Disruption
+// A Disruption reports the specifics of a Disruption.
 type Disruption struct {
 	// ID of the Disruption
 	ID ID `json:"id"`
@@ -119,7 +119,7 @@ type ImpactedObject struct {
 	ImpactedStops []ImpactedStop `json:"impacted_stops"`
 }
 
-// An ImpactedSection records the impact to a section
+// An ImpactedSection records the impact to a section.
 type ImpactedSection struct {
 	// The start of the disruption, spatially
 	From Container `json:"from"`
@@ -127,7 +127,7 @@ type ImpactedSection struct {
 	To Container `json:"to"`
 }
 
-// An ImpactedStop records the impact to a stop
+// An ImpactedStop records the impact to a stop.
 type ImpactedStop struct {
 	// The impacted stop point of the trip
 	Point StopPoint `json:"stop_point"`
@@ -176,7 +176,7 @@ type PTObjectDisruptions struct {
 	Trip         Trip   `json:"trip"`
 }
 
-// Period of effect
+// Period of effect.
 type Period struct {
 	Begin time.Time `json:"begin"`
 	End   time.Time `json:"end"`

@@ -16,17 +16,17 @@ import (
 )
 
 const (
-	// default Navitia REST service
+	// default Navitia REST service.
 	defaultAPIURL = "https://api.navitia.io/v1"
 
 	// Maximum size of response in bytes
-	// 10 megabytes
+	// 10 megabytes.
 	maxSize int64 = 10e6
 )
 
 var defaultClient = &http.Client{}
 
-// Session holds a current session, it is thread-safe
+// Session holds a current session, it is thread-safe.
 type Session struct {
 	APIKey string
 	APIURL string
@@ -43,7 +43,7 @@ func New(key string) (*Session, error) {
 	return NewCustom(key, path.Clean(defaultAPIURL), defaultClient)
 }
 
-// NewCustom creates a custom new session given an API key, URL to api base & http client
+// NewCustom creates a custom new session given an API key, URL to api base & http client.
 func NewCustom(key, url string, client *http.Client) (*Session, error) {
 	return &Session{
 		APIKey:  key,
@@ -53,21 +53,21 @@ func NewCustom(key, url string, client *http.Client) (*Session, error) {
 	}, nil
 }
 
-// departures is the internal function used by Departures & Arrivals functions
+// departures is the internal function used by Departures & Arrivals functions.
 func (s *Session) connections(ctx context.Context, url string, req ConnectionsRequest) (*ConnectionsResults, error) {
 	results := &ConnectionsResults{}
 	err := s.request(ctx, url, req, results)
 	return results, err
 }
 
-// departures is the internal function used by Journeys functions
+// departures is the internal function used by Journeys functions.
 func (s *Session) departures(ctx context.Context, url string, req DeparturesRequest) (*DeparturesResults, error) {
 	results := &DeparturesResults{session: s}
 	err := s.request(ctx, url, req, results)
 	return results, err
 }
 
-// Departures computes a list of Departures according to the parameters given
+// Departures computes a list of Departures according to the parameters given.
 func (s *Session) Departures(ctx context.Context, req DeparturesRequest) (*DeparturesResults, error) {
 	// Create the URL
 	reqURL := s.APIURL + "/" + departuresEndpoint
@@ -84,14 +84,14 @@ func (s *Session) DeparturesC(ctx context.Context, req ConnectionsRequest, coord
 	return s.connections(ctx, scopeURL, req)
 }
 
-// journeys is the internal function used by Journeys functions
+// journeys is the internal function used by Journeys functions.
 func (s *Session) journeys(ctx context.Context, url string, req JourneyRequest) (*JourneyResults, error) {
 	results := &JourneyResults{session: s}
 	err := s.request(ctx, url, req, results)
 	return results, err
 }
 
-// Journeys computes a list of journeys according to the parameters given
+// Journeys computes a list of journeys according to the parameters given.
 func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
 	reqURL := s.APIURL + "/" + journeysEndpoint
@@ -100,7 +100,7 @@ func (s *Session) Journeys(ctx context.Context, req JourneyRequest) (*JourneyRes
 	return s.journeys(ctx, reqURL, req)
 }
 
-// places is the internal function used by Places functions
+// places is the internal function used by Places functions.
 func (s *Session) places(ctx context.Context, url string, params PlacesRequest) (*PlacesResults, error) {
 	results := &PlacesResults{session: s}
 	err := s.request(ctx, url, params, results)
@@ -216,7 +216,7 @@ func (s *Session) requestURL(ctx context.Context, url string, res results) error
 	return err
 }
 
-// request does a request given a url, query and results to populate
+// request does a request given a url, query and results to populate.
 func (s *Session) request(ctx context.Context, baseURL string, query query, res results) error {
 	// Encode the parameters
 	values, err := query.toURL()
@@ -234,7 +234,7 @@ func (s *Session) Scope(region types.ID) *Scope {
 	return &Scope{region: region, session: s}
 }
 
-// vehicleJourneys is the internal function used by VehicleJourneys functions
+// vehicleJourneys is the internal function used by VehicleJourneys functions.
 func (s *Session) vehicleJourneys(ctx context.Context, url string, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
 	results := &VehicleJourneyResults{session: s}
 	err := s.request(ctx, url, req, results)
@@ -243,7 +243,7 @@ func (s *Session) vehicleJourneys(ctx context.Context, url string, req VehicleJo
 
 const vehicleJourneysEndpoint string = "vehicle_journeys"
 
-// VehicleJourneys computes a list of VehicleJourneys according to the parameters given
+// VehicleJourneys computes a list of VehicleJourneys according to the parameters given.
 func (s *Session) VehicleJourneys(ctx context.Context, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
 	// Create the URL
 	reqURL := s.APIURL + "/" + vehicleJourneysEndpoint

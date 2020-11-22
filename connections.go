@@ -11,7 +11,7 @@ import (
 	"github.com/govitia/navitia/utils"
 )
 
-// A Connection is either a Departure or an Arrival
+// A Connection is either a Departure or an Arrival.
 type Connection struct {
 	Display   types.Display
 	StopPoint types.StopPoint

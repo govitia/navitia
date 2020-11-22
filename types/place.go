@@ -35,7 +35,7 @@ type StopArea struct {
 	Timezone string `json:"timezone"`
 }
 
-// A POIType codes for the type of the point of interest
+// A POIType codes for the type of the point of interest.
 type POIType struct {
 	ID   ID     `json:"id"`
 	Name string `json:"name"`

@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// UnmarshalJSON implements json.Unmarshaller for a Coordinates
+// UnmarshalJSON implements json.Unmarshaller for a Coordinates.
 func (c *Coordinates) UnmarshalJSON(b []byte) error {
 	// First let's create the analogous structure
 	data := &struct {

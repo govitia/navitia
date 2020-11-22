@@ -14,7 +14,7 @@ import (
 
 const timeLayout = "15:04"
 
-// JourneyConf stores configuration for pretty-printing a types.Journey
+// JourneyConf stores configuration for pretty-printing a types.Journey.
 type JourneyConf struct {
 	Departure      *color.Color
 	Arrival        *color.Color
@@ -24,7 +24,7 @@ type JourneyConf struct {
 	Section SectionConf
 }
 
-// DefaultJourneyConf holds a default, quite good configuration
+// DefaultJourneyConf holds a default, quite good configuration.
 var DefaultJourneyConf = JourneyConf{
 	Departure:      color.New(color.FgRed),
 	Arrival:        color.New(color.FgRed),
@@ -33,7 +33,7 @@ var DefaultJourneyConf = JourneyConf{
 	Section:        DefaultSectionConf,
 }
 
-// PrettyWrite writes a pretty-printed types.Journey to out
+// PrettyWrite writes a pretty-printed types.Journey to out.
 func (conf JourneyConf) PrettyWrite(j *types.Journey, out io.Writer) error {
 	// Build the envellope
 	const msgFmt = "%s ➡️ %s | %s\n"

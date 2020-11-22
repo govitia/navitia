@@ -39,7 +39,7 @@ func (s *Session) ArrivalsC(ctx context.Context, req ConnectionsRequest, coords 
 	return s.connections(ctx, scopeURL, req)
 }
 
-// Departures computes a list of Departures according to the parameters given in a specific scope
+// Departures computes a list of Departures according to the parameters given in a specific scope.
 func (scope *Scope) Departures(ctx context.Context, req DeparturesRequest) (*DeparturesResults, error) {
 	// there is a special case for departures stop areas, it needs to be added before any parameters
 	filterByVJ := ""
@@ -53,7 +53,7 @@ func (scope *Scope) Departures(ctx context.Context, req DeparturesRequest) (*Dep
 	return scope.session.departures(ctx, reqURL, req)
 }
 
-// DeparturesSA requests the departures for a given StopArea
+// DeparturesSA requests the departures for a given StopArea.
 func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
 	scopeURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_areas/" + string(resource) + "/" + departuresEndpoint
@@ -61,7 +61,7 @@ func (scope *Scope) DeparturesSA(ctx context.Context, req ConnectionsRequest, re
 	return scope.session.connections(ctx, scopeURL, req)
 }
 
-// DeparturesSP requests the departures for a given StopPoint
+// DeparturesSP requests the departures for a given StopPoint.
 func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, resource types.ID) (*ConnectionsResults, error) {
 	// Create the URL
 	scopeURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/stop_points/" + string(resource) + "/" + departuresEndpoint
@@ -69,7 +69,7 @@ func (scope *Scope) DeparturesSP(ctx context.Context, req ConnectionsRequest, re
 	return scope.session.connections(ctx, scopeURL, req)
 }
 
-// Journeys computes a list of journeys according to the parameters given in a specific scope
+// Journeys computes a list of journeys according to the parameters given in a specific scope.
 func (scope *Scope) Journeys(ctx context.Context, req JourneyRequest) (*JourneyResults, error) {
 	// Create the URL
 	reqURL := scope.session.APIURL + "/coverage/" + string(scope.region) + "/" + journeysEndpoint
@@ -88,7 +88,7 @@ func (scope *Scope) Places(ctx context.Context, params PlacesRequest) (*PlacesRe
 	return scope.session.places(ctx, reqURL, params)
 }
 
-// VehicleJourneys computes a list of VehicleJourneys according to the parameters given in a specific scope
+// VehicleJourneys computes a list of VehicleJourneys according to the parameters given in a specific scope.
 func (scope *Scope) VehicleJourneys(ctx context.Context, req VehicleJourneyRequest) (*VehicleJourneyResults, error) {
 	// there is a special case for vehicle journey ID, it needs to be added before any parameters
 	filterByVJ := ""

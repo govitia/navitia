@@ -2,7 +2,7 @@ package types
 
 import "time"
 
-// A PathSegment (called Path item in the Navitia API) is a part of a path
+// A PathSegment (called Path item in the Navitia API) is a part of a path.
 type PathSegment struct {
 	// The Length of the segment
 	Length uint `json:"length"`

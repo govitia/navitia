@@ -1,12 +1,12 @@
 package types
 
-// ModeXXX are known non-public transportation mode
+// ModeXXX are known non-public transportation mode.
 const (
 	ModeWalking = "walking"
 	ModeBike    = "bike"
 	ModeCar     = "car"
 
-	// Not used in Section
+	// Not used in Section.
 	ModeBikeShare = "bss"
 )
 
@@ -46,7 +46,7 @@ type PhysicalMode struct {
 	CommercialModes []CommercialMode `json:"commercial_mode"`
 }
 
-// PhysicalModeXXX are the possible physical modes in ID form
+// PhysicalModeXXX are the possible physical modes in ID form.
 const (
 	PhysicalModeAir               ID = "physical_mode:Air"
 	PhysicalModeBoat              ID = "physical_mode:Boat"

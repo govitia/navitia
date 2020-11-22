@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// UnmarshalJSON satisfies the json.Unmarshaller interface
+// UnmarshalJSON satisfies the json.Unmarshaller interface.
 func (c *Container) UnmarshalJSON(b []byte) error {
 	// Set up a mutex
 	c.mu = &sync.RWMutex{}
