@@ -103,17 +103,17 @@ type StopTime struct {
 	// The stop point in question
 	StopPoint StopPoint `json:"stop_point"`
 
-	DropOffAllowed bool `json:"drop_off_allowed"`
-
 	UTCDepartureTime string `json:"utc_departure_time"`
 
 	Headsign string `json:"headsign"`
 
 	UTCArrivalTime string `json:"utc_arrival_time"`
 
+	DepartureTime string `json:"departure_time"`
+
 	PickupAllowed bool `json:"pickup_allowed"`
 
-	DepartureTime string `json:"departure_time"`
+	DropOffAllowed bool `json:"drop_off_allowed"`
 }
 
 // A PTMethod is a Public Transportation method: it can be regular, estimated times or ODT (on-demand transport).

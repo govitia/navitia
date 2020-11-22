@@ -38,8 +38,7 @@ type VehicleJourneyRequest struct {
 	To   types.ID
 
 	// When do you want to depart ? Or is DateIsArrival when do you want to arrive at your destination.
-	Date          time.Time
-	DateIsArrival bool
+	Date time.Time
 
 	// The traveller's type
 	Traveler types.TravelerType
@@ -87,9 +86,6 @@ type VehicleJourneyRequest struct {
 	// Maximum duration of a trip
 	MaxDuration time.Duration // To seconds
 
-	// Wheelchair restricts the answer to accessible public transports
-	Wheelchair bool
-
 	// Headsign If given, add a filter on the vehicle journeys that has the
 	// given value as headsign (on vehicle journey itself or at a stop time).
 	Headsign string
@@ -98,6 +94,11 @@ type VehicleJourneyRequest struct {
 	Since time.Time
 	// Until, like Since, filter on a period, optional too.
 	Until time.Time
+
+	// Wheelchair restricts the answer to accessible public transports
+	Wheelchair bool
+
+	DateIsArrival bool
 }
 
 // toURL formats a journey request to url
