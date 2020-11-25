@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message WeekPattern {
+  bool monday = 1;
+  bool tuesday = 2;
+  bool wednesday = 3;
+  bool thursday = 4;
+  bool friday = 5;
+  bool saturday = 6;
+  bool sunday = 7;
+}

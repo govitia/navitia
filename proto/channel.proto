@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Channel {
+  string id = 1;
+  string content_type = 2;
+  string name = 3;
+  repeated string types = 4;
+}
