@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "color.proto";
+import "mode.proto";
+import "container.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message GeoJSON {
+  string type = 1;
+}
+
+message Route {
+  string id = 1;
+  string name = 2;
+  bool is_frequence = 3;
+  Container direction = 4;
+  repeated PhysicalMode physical_modes = 5;
+  GeoJSON geo_json = 6;
+}
+
+message SwitchingTime {
+  uint32 hours = 1;
+  uint32 minutes = 2;
+  uint32 seconds = 3;
+}
+
+message Line {
+  string id = 1;
+  string name = 2;
+  string code = 3;
+  Color color = 4;
+  SwitchingTime opening_time = 5;
+  SwitchingTime closing_time = 6;
+  repeated Route routes = 7;
+  CommercialMode commercial_mode = 8;
+  repeated PhysicalMode physical_modes = 9;
+}

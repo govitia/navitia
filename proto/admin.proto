@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "coord.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Admin {
+  string id = 1;
+  string name = 2;
+  string label = 3;
+  Coordinates coord = 4;
+  int32 level = 5;
+  string zip_code = 6;
+  string insee = 7;
+}

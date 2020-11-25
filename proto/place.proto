@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "coord.proto";
+import "admin.proto";
+import "mode.proto";
+import "link.proto";
+import "fareZone.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message StopPoint {
+  string id = 1;
+  string name = 2;
+  string label = 3;
+  Coordinates coord = 4;
+  Admin administrative_regions = 5;
+  repeated string equipment = 6;
+  StopArea stop_area = 7;
+  CommercialMode commercial_modes = 8;
+  repeated Link links = 9;
+  repeated PhysicalMode physical_modes = 10;
+  FareZone fare_node = 11;
+}
+
+message StopArea {
+  string id = 1;
+  string name = 2;
+  string label = 3;
+  Coordinates coord = 4;
+  repeated Admin administrative_regions = 5;
+  StopPoint stop_points = 6;
+  string timezone = 7;
+}
