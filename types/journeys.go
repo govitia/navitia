@@ -65,7 +65,7 @@ type Journey struct {
 	Status Effect
 }
 
-// jsonJourney define the JSON implementation of Journey struct
+// jsonJourney define the JSON implementation of Journey types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonJourney struct {
@@ -94,7 +94,7 @@ type CO2Emissions struct {
 	Value float64
 }
 
-// jsonCO2Emissions define the JSON implementation of CO2Emissions struct
+// jsonCO2Emissions define the JSON implementation of CO2Emissions types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonCO2Emissions struct {

@@ -63,7 +63,7 @@ type Disruption struct {
 	DisruptionID      string           `json:"disruption_id"`
 }
 
-// jsonDisruption define the JSON implementation of Disruption struct
+// jsonDisruption define the JSON implementation of Disruption types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonDisruption struct {

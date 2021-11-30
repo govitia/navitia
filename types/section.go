@@ -26,7 +26,7 @@ type Section struct {
 	Additional []PTMethod       // Additional informations, from what I can see this is always a PTMethod
 }
 
-// jsonSection define the JSON implementation of Section struct
+// jsonSection define the JSON implementation of Section types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonSection struct {

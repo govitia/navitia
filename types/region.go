@@ -30,7 +30,7 @@ type Region struct {
 	Error string `json:"error"`
 }
 
-// jsonRegion define the JSON implementation of Region struct
+// jsonRegion define the JSON implementation of Region types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonRegion struct {
