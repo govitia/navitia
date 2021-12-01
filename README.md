@@ -5,7 +5,7 @@ This is govitia/navitia golang API.
 
 ## Dependencies
 
-- It needs at least go 1.7 to work as we use context & tests use testing.T.Run for subtests.
+- It needs at least go 1.15 to work as we use context & tests use testing.T.Run for subtests.
 - The dependencies are directly pulled in by `go get`, but for you
 
 ## Install
@@ -18,18 +18,6 @@ This is govitia/navitia golang API.
 - Journeys [/journeys]: This computes journeys or isochrone tables. [(navitia.io doc)](http://doc.navitia.io/#journeys)
 - Places [/places]: Allows you to search in all geographical objects using their names, returning a list of places. [(navitia.io doc)](http://doc.navitia.io/#autocomplete-on-geographical-objects)
 
-## Changelog
- 
-### 0.3.0
-#### Added
-- Vehicle journey type and route
-- Go mod file
-- `headsign` filter for jourey and vehicle_journey requests
-#### Fixed
-- Code style issues
-- Gitignore missing files
-- Some types were omitted but necessary
- 
 ## Getting started
 
 ### Creating a new session
@@ -142,24 +130,8 @@ res, _ := scope.Places(context.Background(),req)
 
 Obviously, this is a very simple example of what navitia can do, [check out the documentation !](https://godoc.org/github.com/govitia/navitia)
 
-## What's new in v0.2 ?
-
-- **Pretty-printing !** via the `pretty` subpackage
-- Paging support
-- Bugfix where the response body was never closed
-- Limited the size of responses
-- `Coverage` has been renamed to `Regions`
-- `Regions` (ex-`Coverage`), `RegionByPos` and `RegionByID` have a new parameter needed: `RegionRequest`
-- No more `Session.Use`
-- Un-export `RemoteErrorsDescriptions`
-- PlacesResults support `sort.Interface`
-- `PlacesResults` has a new method, `Count`
-- No more `String` methods: use pretty !
-- New `JourneyResults.Count` to count the number of journeys in the results
-- And others, see `git log`
-- Exported EmbeddedTypes
-- Overhauled testing subsystem
-
-## Footnotes
+## Message from the original author 
 
 I made this project as I wanted to explore and push my go skills, and I'm really up for you to contribute ! Send me a pull request and/or contact me if you have any questions! ( [@aabizri](https://twitter.com/aabizri) on twitter)
+
+Contact: Alexandre A. Bizri <alexandre@bizri.fr>
