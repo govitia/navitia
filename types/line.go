@@ -37,7 +37,7 @@ type Line struct {
 	PhysicalModes  []PhysicalMode `json:"physical_modes"`  // PhysicalModes of the line
 }
 
-// jsonLine define the JSON implementation of Line struct.
+// jsonLine define the JSON implementation of Line types.
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonLine struct {
@@ -66,7 +66,7 @@ func (l *Line) UnmarshalJSON(b []byte) error {
 	}
 
 	if err := json.Unmarshal(b, &data); err != nil {
-		return fmt.Errorf("error while unmarshalling Line struct : %w", err)
+		return fmt.Errorf("error while unmarshalling Line types : %w", err)
 	}
 
 	// Create the error generator

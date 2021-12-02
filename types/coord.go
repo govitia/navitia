@@ -14,7 +14,7 @@ type Coordinates struct {
 	Latitude  float64 `json:"lat"`
 }
 
-// jsonCoordinates define the JSON implementation of Coordinates struct
+// jsonCoordinates define the JSON implementation of Coordinates types
 type jsonCoordinates struct {
 	Latitude  string `json:"lat"`
 	Longitude string `json:"lon"`
@@ -31,7 +31,7 @@ func (c *Coordinates) UnmarshalJSON(b []byte) error {
 
 	err := json.Unmarshal(b, &data)
 	if err != nil {
-		return fmt.Errorf("error while unmarshalling Coordinates struct : %w", err)
+		return fmt.Errorf("error while unmarshalling Coordinates types : %w", err)
 	}
 
 	// Create the error generator

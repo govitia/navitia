@@ -23,7 +23,7 @@ type Display struct {
 	TripShortName  string      `json:"trip_short_name"` // TripShoerName short name of the current trip
 }
 
-// jsonDisplay define the JSON implementation of Display struct
+// jsonDisplay define the JSON implementation of Display types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonDisplay struct {

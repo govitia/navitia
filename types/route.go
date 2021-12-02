@@ -18,7 +18,7 @@ type Route struct {
 	GeoJSON       GeoJSON        `json:"geo_json"`
 }
 
-// jsonRoute define the JSON implementation of Route struct
+// jsonRoute define the JSON implementation of Route types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonRoute struct {

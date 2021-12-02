@@ -140,7 +140,7 @@ func (c *Container) Empty() bool {
 //
 // An empty Container is valid. But those cases aren't:
 // 	- If the Container has an empty ID.
-// 	- If the Container has an empty EmbeddedType & a non-empty embedded struct inside.
+// 	- If the Container has an empty EmbeddedType & a non-empty embedded types inside.
 // 	- If the Container has an unknown EmbeddedType.
 func (c *Container) Check() error {
 	// Check if the container is empty

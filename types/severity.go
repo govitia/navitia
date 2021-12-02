@@ -21,7 +21,7 @@ type Severity struct {
 	Effect Effect `json:"effect"`
 }
 
-// jsonSeverity define the JSON implementation of Severity struct
+// jsonSeverity define the JSON implementation of Severity types
 // We define some of the value as pointers to the real values,
 // allowing us to bypass copying in cases where we don't need to process the data.
 type jsonSeverity struct {
