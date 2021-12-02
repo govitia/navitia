@@ -12,6 +12,6 @@ type AdministrativeRegion struct {
 	// If you don't know what to display, display the label.
 	Label   string `json:"label"`
 	Coord   Coord  `json:"coord"`
-	Level   int    `json:"level"`
-	ZipCode string `json:"zip_code"`
+	Level   int    `json:"level"`    // Level of the admin
+	ZipCode string `json:"zip_code"` // Zip code of the admin
 }
