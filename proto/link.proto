@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Link {
+  string href = 1;
+  string type = 2;
+  string rel = 3;
+  bool templated = 4;
+}

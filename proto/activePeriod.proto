@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message ActivePeriod {
+  string begin = 1;
+  string end = 2;
+}

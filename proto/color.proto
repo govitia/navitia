@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Color {
+  int32 r = 1;
+  int32 g = 2;
+  int32 b = 3;
+
+  google.protobuf.FloatValue a = 4;
+}

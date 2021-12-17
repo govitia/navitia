@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "display.proto";
+import "place.proto";
+import "route.proto";
+import "link.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Departure {
+  Display display_informations = 1;
+  StopPoint stop_point = 2;
+  Route route = 3;
+  repeated Link links = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message FareZone {
+  string name = 1;
+}

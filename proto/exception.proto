@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Exception {
+  string type = 1;
+  google.protobuf.Timestamp datetime = 2;
+}

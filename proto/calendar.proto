@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "activePeriod.proto";
+import "weekPattern.proto";
+import "exception.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Calendar {
+  repeated ActivePeriod active_periods = 1;
+  WeekPattern week_pattern = 2;
+  Exception exceptions = 3;
+}

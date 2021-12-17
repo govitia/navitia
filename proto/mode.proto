@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message CommercialMode {
+  string id = 1;
+  string name = 2;
+  repeated PhysicalMode physical_modes = 3;
+}
+
+message PhysicalMode {
+  string id = 1;
+  string name = 2;
+  repeated CommercialMode commercial_mode = 3;
+}

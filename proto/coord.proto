@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Coordinates {
+  double lat = 1;
+  double lon = 2;
+}

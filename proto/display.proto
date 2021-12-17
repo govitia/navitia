@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "color.proto";
+
+option go_package = "github.com/govitia/navitia/rpc";
+
+package rpc;
+
+message Display {
+  string headsign = 1;
+  string network = 2;
+  string direction = 3;
+  string commercial_mode = 4;
+  string physical_mode = 5;
+  string label = 6;
+  Color color = 7;
+  Color text_color = 8;
+  string code = 9;
+  string description = 10;
+  repeated string equipments = 11;
+  string name = 12;
+  string trip_short_name = 13;
+}
